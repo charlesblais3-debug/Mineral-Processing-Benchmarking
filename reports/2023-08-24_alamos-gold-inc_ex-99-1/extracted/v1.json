@@ -1,0 +1,648 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Lynn Lake",
+  "title": "Feasibility Study Update NI 43-101 Technical Report for the Lynn Lake Project",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2023-08-22",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Manitoba",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 231,
+  "quote": "Leaching and conventional carbon-in-pulp (CIP) adsorption"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 8000,
+   "unit": "t/d",
+   "statistic": "design",
+   "context": {
+    "availability_pct": 92
+   },
+   "page": 233,
+   "quote": "Plant Throughput, Average | t/d | 8,000"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.92,
+   "unit": "Mt/a",
+   "statistic": "design",
+   "page": 233,
+   "quote": "Ore Throughput | Mt/a | 2.92"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "statistic": "design",
+   "page": 233,
+   "quote": "Process Plant Availability | % | 92"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 17.0,
+   "unit": "years",
+   "page": 336,
+   "quote": "Mine Life | Years | 17.0"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "metal": "Au",
+   "value": 2.43,
+   "unit": "g/t",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Gordon"
+   },
+   "page": 233,
+   "quote": "Gordon Ore Gold Grade, LOM Average | g/t | 2.43"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "metal": "Au",
+   "value": 1.34,
+   "unit": "g/t",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "MacLellan"
+   },
+   "page": 233,
+   "quote": "MacLellan Ore Gold Grade, LOM Average | g/t | 1.34"
+  },
+  {
+   "parameter": "recovery_lom",
+   "metal": "Au",
+   "value": 92.6,
+   "unit": "%",
+   "statistic": "design",
+   "context": {
+    "ore_type": "Gordon",
+    "to_product": "dore"
+   },
+   "page": 233,
+   "quote": "Gordon, Overall Recovery Gold After Losses | % | 92.6"
+  },
+  {
+   "parameter": "recovery_lom",
+   "metal": "Au",
+   "value": 93.5,
+   "unit": "%",
+   "statistic": "design",
+   "context": {
+    "ore_type": "MacLellan",
+    "to_product": "dore"
+   },
+   "page": 233,
+   "quote": "MacLellan, Overall Recovery Gold After Losses | % | 93.5"
+  },
+  {
+   "parameter": "recovery_lom",
+   "metal": "Ag",
+   "value": 48,
+   "unit": "%",
+   "statistic": "design",
+   "context": {
+    "ore_type": "MacLellan",
+    "to_product": "dore"
+   },
+   "page": 233,
+   "quote": "MacLellan, Overall Recovery Silver After Losses | % | 48"
+  },
+  {
+   "parameter": "payable_production",
+   "metal": "Au",
+   "value": 135100,
+   "unit": "oz",
+   "statistic": "lom_average",
+   "context": {
+    "period": "full years"
+   },
+   "page": 336,
+   "quote": "Au Production (Life of Mine) | Average oz per year | 135,100"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.5,
+   "unit": "kWh/t",
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 75,
+    "n_samples": 71,
+    "statistic_note": "design value, 75th percentile"
+   },
+   "page": 113,
+   "quote": "Bond ball and rod work indices used in design are 16.5 and 20.2 kWh/t respectively"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.8,
+   "unit": "kWh/t",
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 75,
+    "n_samples": 71
+   },
+   "page": 112,
+   "quote": "Overall Average | 3.04 | 3.00 | 3.00 | 28.0 | 0.25 | 12.9 | 13.6 | 18.6 | 14.8 | 0.29"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 20.2,
+   "unit": "kWh/t",
+   "statistic": "p75",
+   "context": {
+    "n_samples": 15,
+    "statistic_note": "design value, 75th percentile"
+   },
+   "page": 113,
+   "quote": "Bond ball and rod work indices used in design are 16.5 and 20.2 kWh/t respectively"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 18.6,
+   "unit": "kWh/t",
+   "statistic": "mean",
+   "context": {
+    "n_samples": 15
+   },
+   "page": 112,
+   "quote": "Overall Average | 3.04 | 3.00 | 3.00 | 28.0 | 0.25 | 12.9 | 13.6 | 18.6 | 14.8 | 0.29"
+  },
+  {
+   "parameter": "cwi",
+   "value": 13.6,
+   "unit": "kWh/t",
+   "statistic": "mean",
+   "context": {
+    "n_samples": 6
+   },
+   "page": 112,
+   "quote": "Overall Average | 3.04 | 3.00 | 3.00 | 28.0 | 0.25 | 12.9 | 13.6 | 18.6 | 14.8 | 0.29"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.29,
+   "unit": "g",
+   "statistic": "mean",
+   "context": {
+    "n_samples": 15
+   },
+   "page": 112,
+   "quote": "Overall Average | 3.04 | 3.00 | 3.00 | 28.0 | 0.25 | 12.9 | 13.6 | 18.6 | 14.8 | 0.29"
+  },
+  {
+   "parameter": "axb",
+   "value": 28.0,
+   "unit": "-",
+   "statistic": "mean",
+   "context": {
+    "test": "JK DWT when available, otherwise SMC",
+    "n_samples": 71
+   },
+   "page": 112,
+   "quote": "Overall Average | 3.04 | 3.00 | 3.00 | 28.0 | 0.25 | 12.9 | 13.6 | 18.6 | 14.8 | 0.29"
+  },
+  {
+   "parameter": "axb",
+   "value": 24.6,
+   "unit": "-",
+   "statistic": "p25",
+   "context": {
+    "statistic_note": "design value, 25th percentile"
+   },
+   "page": 113,
+   "quote": "Axb was established at the 25th percentile of the competency distribution at 24.6"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "statistic": "design",
+   "page": 233,
+   "quote": "Product Particle Size, at 80% passing (P80) | µm | 75"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 3.5,
+   "unit": "MW",
+   "context": {
+    "mills": "SAG 7.3 m x 3.7 m EGL"
+   },
+   "page": 238,
+   "quote": "SAG Mill | 3.5 MW, 7.3 m diameter with 3.7 m effective grinding length (EGL)"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 6.5,
+   "unit": "MW",
+   "context": {
+    "mills": "Ball 6.1 m x 9.1 m EGL"
+   },
+   "page": 238,
+   "quote": "Ball Mill | 6.5 MW, 6.1 diameter with 9.1 m EGL"
+  },
+  {
+   "parameter": "leach_residence_h",
+   "value": 40,
+   "unit": "h",
+   "statistic": "design",
+   "page": 233,
+   "quote": "Leaching Residence Time, design | h | 40"
+  },
+  {
+   "parameter": "metal_price",
+   "metal": "Au",
+   "value": 1675,
+   "unit": "USD/oz",
+   "page": 336,
+   "quote": "US$1,675/oz gold, US$22.50/oz silver and a $0.75 USD/CAD exchange rate"
+  },
+  {
+   "parameter": "metal_price",
+   "metal": "Ag",
+   "value": 22.5,
+   "unit": "USD/oz",
+   "page": 336,
+   "quote": "US$1,675/oz gold, US$22.50/oz silver and a $0.75 USD/CAD exchange rate"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.75,
+   "unit": "USD/CAD",
+   "context": {
+    "pair": "USD/CAD"
+   },
+   "page": 336,
+   "quote": "US$1,675/oz gold, US$22.50/oz silver and a $0.75 USD/CAD exchange rate"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 427.9,
+   "unit": "MUSD",
+   "context": {
+    "discount_rate_pct": 5
+   },
+   "page": 339,
+   "quote": "after-tax net present value at 5% (NPV5%) of $570.5 M (US$427.9 M)"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 16.6,
+   "unit": "%",
+   "page": 340,
+   "quote": "After-Tax IRR | % | 16.6% | 16.6%"
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.7,
+   "unit": "years",
+   "page": 340,
+   "quote": "After-Tax Payback | Years | 3.7 | 3.7"
+  },
+  {
+   "parameter": "cash_cost",
+   "metal": "Au",
+   "value": 722,
+   "unit": "USD/oz",
+   "page": 340,
+   "quote": "Total Cash Cost | US$/oz | 722"
+  },
+  {
+   "parameter": "aisc",
+   "metal": "Au",
+   "value": 814,
+   "unit": "USD/oz",
+   "context": {
+    "scope": "mine site"
+   },
+   "page": 340,
+   "quote": "Mine Site All-In Sustaining Cost | US$/oz | 814"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Infrastructure",
+   "value": 82.1,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Mine Infrastructure | $68.1 | $14.0 | $82.1"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner Pre-stripping",
+   "value": 40.8,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Owner Pre-stripping | $20.1 | $20.7 | $40.8"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Initial Capital Lease Payment",
+   "value": 33.0,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Mining Initial Capital Lease Payment | $22.8 | $10.2 | $33.0"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 189.0,
+   "multiplier": "M",
+   "includes_indirects": 0,
+   "page": 319,
+   "quote": "Process Plant | $189.0 | $189.0"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Utilities and Services",
+   "value": 46.3,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Utilities and Services | $40.5 | $5.8 | $46.3"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Management",
+   "value": 51.3,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Tailings Management | $51.3 | $51.3"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-site Infrastructure",
+   "value": 141.2,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "On-site Infrastructure | $90.6 | $50.5 | $141.2"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site Infrastructure",
+   "value": 35.9,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Off-site Infrastructure: | $35.9 | $35.9"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Costs",
+   "value": 619.5,
+   "multiplier": "M",
+   "is_subtotal": true,
+   "page": 319,
+   "quote": "Subtotal Direct Costs | $518.3 | $101.2 | $619.5"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM and Consulting Services",
+   "value": 18.6,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "EPCM and Consulting Services | $18.6"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Freight",
+   "value": 10.3,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Freight | $10.3"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Temporary Construction Facilities and Utilities",
+   "value": 92.3,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Temporary Construction Facilities and Utilities | $92.3"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "First Fills and Opening Stocks",
+   "value": 8.4,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "First Fills and Opening Stocks | $8.4"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Indirect Costs",
+   "value": 129.6,
+   "multiplier": "M",
+   "is_subtotal": true,
+   "page": 319,
+   "quote": "Subtotal Indirect Costs | $129.6"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Contingency",
+   "value": 70.7,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Project Contingency | $70.7"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Cost",
+   "value": 22.6,
+   "multiplier": "M",
+   "page": 319,
+   "quote": "Owner's Cost | $22.6"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital",
+   "value": 842.4,
+   "multiplier": "M",
+   "is_total": true,
+   "page": 319,
+   "quote": "Total Initial Capital | $842.4"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital, Rehabilitation and Closure Costs",
+   "value": 267.6,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated",
+   "page": 340,
+   "quote": "Sustaining Capital, Rehabilitation and Closure Costs | $M | 267.6 | 200.7"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure costs",
+   "value": 36.0,
+   "multiplier": "M",
+   "page": 327,
+   "quote": "A mine closure costs of $36.0 M covers"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 22.35,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "page": 327,
+   "quote": "1,064.2 | 22.35 | 51%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Highway Haulage (Gordon hauled ore averaged over full mill tonnage)",
+   "value": 1.56,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "page": 327,
+   "quote": "74.2 | 1.56 | 4%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 14.33,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "page": 327,
+   "quote": "Processing | 682.0 | 14.33 | 32%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 7.2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "page": 327,
+   "quote": "General and Administration | 342.9 | 7.20 | 16%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "External Refining",
+   "value": 0.15,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "page": 327,
+   "quote": "External Refining | 7.1 | 0.15 | <1%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal",
+   "value": 45.59,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_subtotal": true,
+   "page": 327,
+   "quote": "Subtotal | 2,170.4 | 45.59 | 103%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties and Silver Credits",
+   "value": -1.38,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "page": 327,
+   "quote": "Royalties and Silver Credits | -65.6 | -1.38 | -3%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 44.21,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "page": 327,
+   "quote": "Total Operating Costs | 2,104.9 | 44.21 | 100%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labour (O&M)",
+   "value": 3.71,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "page": 331,
+   "quote": "Labour (O&M) | 176.4 | 3.71 | 26%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power",
+   "value": 1.82,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "page": 331,
+   "quote": "Power | 86.6 | 1.82 | 13%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Reagents",
+   "value": 5.08,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "page": 331,
+   "quote": "Reagents | 241.8 | 5.08 | 35%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Steel Liners and Ball Media",
+   "value": 1.6,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "page": 331,
+   "quote": "Steel Liners and Ball Media | 76.2 | 1.60 | 11%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Utilities",
+   "value": 0.16,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "page": 331,
+   "quote": "Utilities | 7.6 | 0.16 | 1%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance",
+   "value": 1.72,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "page": 331,
+   "quote": "Maintenance | 81.9 | 1.72 | 12%"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Laboratory and Assays",
+   "value": 0.24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "page": 331,
+   "quote": "Laboratory and Assays | 11.4 | 0.24 | 2%"
+  }
+ ]
+}

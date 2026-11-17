@@ -55,11 +55,13 @@ parameters:
   npv_after_tax:       { group: economics, label: After-tax NPV, unit: MUSD, module: economics, v1: true, context: [discount_rate_pct] }
   irr_after_tax:       { group: economics, label: After-tax IRR, unit: "%", range: [-50, 300], module: economics, v1: true }
   payback_years:       { group: economics, label: Payback period, unit: years, range: [0, 40], module: economics, v1: true }
+  cash_cost:           { group: economics, label: Total cash cost, unit: native_price, per_metal: true, module: economics, v1: true }
+  aisc:                { group: economics, label: All-in sustaining cost, unit: native_price, per_metal: true, module: economics, v1: true }
   exchange_rate:       { group: economics, label: Study FX assumption, unit: native, module: economics, v1: true, context: [pair] }
 
 # Values every fact can carry (columns, not context keys)
 fact_fields:
-  statistic: [mean, median, p75, p80, p90, design, min, max, single, lom_average, steady_state]
+  statistic: [mean, median, p25, p75, p80, p90, design, min, max, single, lom_average, steady_state]
   basis:     [estimate, actual]
 
 # Native units allowed per metal (normalized to these)

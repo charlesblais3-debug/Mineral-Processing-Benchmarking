@@ -5,6 +5,8 @@ Commands
   check-config   validate the YAML taxonomies
   map-cost       try the cost mapper:  python -m pipeline map-cost initial_capex "Grinding area 200"
   discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N]
+  parse          download + parse one catalog URL:  python -m pipeline parse <url>
+  load           validate an extraction and load it:  python -m pipeline load <report_id>
   classify       sort catalog rows into is_report / not_report / unsure   [--status new]
 """
 from __future__ import annotations
@@ -70,6 +72,17 @@ def main(argv: list[str]) -> int:
         from pipeline.discover import classify
         status = argv[argv.index("--status") + 1] if "--status" in argv else "new"
         print(classify.run(only_status=status))
+    elif cmd == "parse" and len(argv) == 2:
+        from pipeline import catalog
+        from pipeline.parse import document
+        rows = catalog.read()
+        print(document.process(rows.get(argv[1], {"url": argv[1]})))
+    elif cmd == "load" and len(argv) == 2:
+        from pipeline.extract.load import load_report
+        res = load_report(argv[1])
+        for p in res.pop("problems"):
+            print("  ✗", p)
+        print(res)
     elif cmd == "map-cost" and len(argv) == 3:
         print(taxonomy.map_cost_label(argv[2], argv[1]))
     else:

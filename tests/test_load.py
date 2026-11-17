@@ -1,0 +1,53 @@
+import json
+
+from pipeline.db.init_db import init_db
+from pipeline.extract import load
+
+
+def make_report(tmp_path, monkeypatch, costs, facts):
+    monkeypatch.setattr(load, "REPORTS", tmp_path)
+    rdir = tmp_path / "r1"
+    (rdir / "parsed" / "pages").mkdir(parents=True)
+    (rdir / "extracted").mkdir()
+    (rdir / "parsed" / "pages" / "0001.md").write_text(
+        "Plant Throughput | t/d | 8,000\nProcess Plant | $189.0\nOther | $11.0\nTotal Initial Capital | $200.0\n"
+        "BWi design 16.5 kWh/st", encoding="utf-8")
+    (rdir / "source.json").write_text(json.dumps({"url": "u", "sha256": "x", "issuer": "I"}))
+    (rdir / "extracted" / "v1.json").write_text(json.dumps({
+        "report": {"project": "Test Project", "currency": "CAD", "primary_commodity": "Au"},
+        "facts": facts, "costs": costs}))
+    return init_db(tmp_path / "t.db")
+
+
+GOOD_COSTS = [
+    {"cost_type": "initial_capex", "raw_label": "Process Plant", "value": 189.0, "page": 1, "quote": "Process Plant | $189.0"},
+    {"cost_type": "initial_capex", "raw_label": "Other", "value": 11.0, "page": 1, "quote": "Other | $11.0"},
+    {"cost_type": "initial_capex", "raw_label": "Total Initial Capital", "value": 200.0, "is_total": True, "page": 1,
+     "quote": "Total Initial Capital | $200.0"},
+]
+
+
+def test_good_report_loads_clean_and_converts_short_tons(tmp_path, monkeypatch):
+    con = make_report(tmp_path, monkeypatch, GOOD_COSTS, [
+        {"parameter": "throughput_tpd", "value": 8000, "unit": "t/d", "page": 1, "quote": "Plant Throughput | t/d | 8,000"},
+        {"parameter": "bwi_ball", "value": 16.5, "unit": "kWh/st", "page": 1, "quote": "BWi design 16.5 kWh/st"},
+    ])
+    res = load.load_report("r1", con)
+    assert res["problems"] == [] and res["facts_quote_verified"] == 2
+    vnorm = con.execute("SELECT value_norm FROM facts WHERE parameter_key='bwi_ball'").fetchone()[0]
+    assert abs(vnorm - 18.19) < 0.01
+    assert con.execute("SELECT value FROM cost_items WHERE raw_label='Process Plant'").fetchone()[0] == 189e6
+
+
+def test_bad_values_are_flagged(tmp_path, monkeypatch):
+    costs = [dict(GOOD_COSTS[0], value=289.0)] + GOOD_COSTS[1:]
+    con = make_report(tmp_path, monkeypatch, costs, [
+        {"parameter": "throughput_tpd", "value": 9000, "unit": "t/d", "page": 1, "quote": "Plant Throughput | t/d | 9,000"},
+        {"parameter": "bwi_ball", "value": 45, "unit": "kWh/t", "page": 1, "quote": "BWi design 16.5 kWh/st"},
+    ])
+    problems = " ".join(load.load_report("r1", con)["problems"])
+    assert "quote not found" in problems
+    assert "outside" in problems
+    assert "sum to" in problems
+    statuses = {r[0] for r in con.execute("SELECT review_status FROM facts")}
+    assert statuses == {"needs_review"}

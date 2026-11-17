@@ -12,7 +12,7 @@ capex:
     label: Mining
     l2:
       pre_production: { label: Pre-production / pre-strip, synonyms: [pre-strip, prestrip, pre-production mining, capitalized mining, capitalised mining, pre-production stripping] }
-      equipment:      { label: Mining equipment, synonyms: [mining fleet, mobile equipment, mine equipment, haul trucks] }
+      equipment:      { label: Mining equipment, synonyms: [mining fleet, mobile equipment, mine equipment, haul trucks, mining lease, equipment lease, lease payment] }
       ug_development: { label: Underground development, synonyms: [lateral development, vertical development, decline, ramp, shaft, capital development] }
       infrastructure: { label: Mine infrastructure, synonyms: [mine dewatering, mine services, mine infrastructure, ventilation] }
       other:          { label: Mining – other, synonyms: [mining, mine] }
@@ -21,7 +21,7 @@ capex:
     l2:
       comminution:    { label: Crushing & grinding, synonyms: [crushing, primary crusher, ore handling, stockpile, conveying, reclaim, grinding, milling, sag mill, ball mill, hpgr, comminution] }
       recovery:       { label: "Concentration & recovery", synonyms: [flotation, gravity, leach, cil, cip, carbon in leach, adsorption, heap leach pad, autoclave, pox, biox, albion, sx-ew, solvent extraction, electrowinning, thickening, thickener, filtration, concentrate handling, concentrate filter, dewatering, gold room, goldroom, refinery, elution, carbon regeneration, smelting, adr plant] }
-      general:        { label: Plant general & services, synonyms: [process plant, processing plant, concentrator, mill building, plant site, process facilities, plant general, reagents, reagent plant, plant services, air services, water services, cyanide destruction, detox] }
+      general:        { label: Plant general & services, synonyms: [process plant, processing plant, concentrator, mill building, plant site, process facilities, plant general, utilities, reagents, reagent plant, plant services, air services, water services, cyanide destruction, detox] }
   tailings_water:
     label: Tailings & Water
     l2:
@@ -34,19 +34,19 @@ capex:
       roads:          { label: Site roads, synonyms: [site roads, haul road, site development, earthworks, bulk earthworks] }
       buildings:      { label: Buildings, synonyms: [buildings, workshop, warehouse, administration building, truck shop] }
       camp:           { label: Camp, synonyms: [camp, accommodation, permanent camp] }
-      other:          { label: Infrastructure – other, synonyms: [infrastructure, site infrastructure, general site] }
+      other:          { label: Infrastructure – other, synonyms: [infrastructure, site infrastructure, general site, on-site infrastructure, onsite infrastructure] }
   offsite_infra:
     label: Off-site Infrastructure
     l2:
       power:          { label: Power line / generation, synonyms: [transmission line, power line, power plant, power station, grid connection, off-site power] }
       access:         { label: Access road, synonyms: [access road, off-site road] }
       port_rail:      { label: Port / rail, synonyms: [port, rail, load-out, concentrate terminal] }
-      other:          { label: Off-site – other, synonyms: [off-site, offsite] }
+      other:          { label: Off-site – other, synonyms: [off-site, offsite, off-site infrastructure, offsite infrastructure] }
   indirects:
     label: Indirects
     l2:
       epcm:           { label: EPCM / engineering, synonyms: [epcm, epc, engineering, procurement, construction management, detailed engineering] }
-      construction:   { label: Construction indirects, synonyms: [construction indirects, temporary facilities, construction camp, construction equipment, freight, logistics] }
+      construction:   { label: Construction indirects, synonyms: [construction indirects, temporary facilities, temporary construction, construction camp, construction equipment, freight, logistics] }
       first_fills_spares: { label: First fills & spares, synonyms: [first fills, initial fills, spares, capital spares, commissioning spares] }
       commissioning:  { label: Commissioning, synonyms: [commissioning, vendor representatives, start-up] }
       other:          { label: Indirects – other, synonyms: [indirect, indirects] }
@@ -77,7 +77,7 @@ opex:
   mining:
     label: Mining
     l2:
-      mining:         { label: Mining, synonyms: [mining, mine operations, open pit mining, underground mining, contractor mining] }
+      mining:         { label: Mining, synonyms: [mining, mine operations, open pit mining, underground mining, contractor mining, ore haul, haulage, rehandle] }
   processing:
     label: Processing
     l2:
@@ -86,7 +86,7 @@ opex:
       reagents:       { label: Reagents, synonyms: [reagents, cyanide, nacn, lime, collector, frother, flocculant, sulphuric acid] }
       media_liners:   { label: Grinding media & liners, synonyms: [grinding media, balls, liners, wear parts, crusher liners, hpgr tyres] }
       maintenance:    { label: Maintenance & consumables, synonyms: [maintenance, maintenance supplies, consumables, operating supplies, spares] }
-      other:          { label: Processing – other, synonyms: [processing, process, milling, plant operations, concentrator] }
+      other:          { label: Processing – other, synonyms: [processing, process, milling, plant operations, concentrator, utilities, laboratory, assay] }
   ga:
     label: G&A / Site
     l2:
