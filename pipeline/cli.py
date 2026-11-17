@@ -4,6 +4,8 @@ Commands
   init-db        create data/benchmark.db
   check-config   validate the YAML taxonomies
   map-cost       try the cost mapper:  python -m pipeline map-cost initial_capex "Grinding area 200"
+  discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N]
+  classify       sort catalog rows into is_report / not_report / unsure   [--status new]
 """
 from __future__ import annotations
 
@@ -60,6 +62,14 @@ def main(argv: list[str]) -> int:
             print("✗", p)
         print("config OK" if not problems else f"{len(problems)} problem(s)")
         return 1 if problems else 0
+    elif cmd == "discover-edgar":
+        from pipeline.discover import edgar
+        limit = int(argv[argv.index("--limit") + 1]) if "--limit" in argv else 2000
+        print(edgar.run(limit_per_query=limit))
+    elif cmd == "classify":
+        from pipeline.discover import classify
+        status = argv[argv.index("--status") + 1] if "--status" in argv else "new"
+        print(classify.run(only_status=status))
     elif cmd == "map-cost" and len(argv) == 3:
         print(taxonomy.map_cost_label(argv[2], argv[1]))
     else:

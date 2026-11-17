@@ -4,7 +4,7 @@
 version: 1
 
 polite_crawling:
-  user_agent: "MPBenchmark/0.1 (contact: SET_IN_.env)"   # EDGAR requires a real name + email: set CONTACT_EMAIL in .env
+  # User-Agent is "MPBenchmark/0.1 <CONTACT_NAME> <CONTACT_EMAIL>" from .env (SEC requires a contact)
   min_seconds_between_requests_per_domain: 3
   respect_robots_txt: true
   max_pdf_mb: 400
@@ -12,12 +12,19 @@ polite_crawling:
 edgar:
   enabled: true
   max_requests_per_second: 8      # SEC limit is 10
-  full_text_queries:
-    - '"technical report summary"'
-    - '"NI 43-101" "feasibility study"'
-    - '"NI 43-101" "preliminary economic assessment"'
-  exhibit_types: [EX-96, EX-96.1, EX-99]
-  sic_codes: [1000, 1040, 1090, 1400]
+  sic_codes: [1000, 1040, 1090, 1400, 6795]
+  # Named full-text queries (EDGAR matches quoted phrases exactly). Scoped to v1:
+  # gold CIL/CIP/gravity, copper flotation, nickel sulphide flotation.
+  queries:
+    trs_gold_cil:        '"technical report summary" gold "carbon-in-leach"'
+    trs_gold_cip:        '"technical report summary" gold "carbon-in-pulp"'
+    trs_gold_gravity:    '"technical report summary" gold "gravity concentrate"'
+    trs_copper_flot:     '"technical report summary" copper flotation concentrate'
+    trs_nickel_flot:     '"technical report summary" nickel flotation concentrate'
+    ni43101_gold_cil:    '"NI 43-101" "technical report" gold "carbon-in-leach"'
+    ni43101_gold_cip:    '"NI 43-101" "technical report" gold "carbon-in-pulp"'
+    ni43101_copper_flot: '"NI 43-101" "technical report" copper flotation concentrate'
+    ni43101_nickel_flot: '"NI 43-101" "technical report" nickel flotation concentrate'
 
 company_sites:
   enabled: true

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1178819/000117881923000097/ex991ni43-101technicalrepo.htm",
+  "source": "edgar",
+  "issuer": "ALAMOS GOLD INC  (AGI)",
+  "cik": "1178819",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-08-24",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-08-24_alamos-gold-inc_ex-99-1",
+  "sha256": "42bd8b92a44dc6f9257fd6bd9744f754b850c7e2623f88c455a660cea73b9216",
+  "bytes": 6185770,
+  "format": "html",
+  "pages": 359,
+  "parsed_on": "2026-11-17"
+}
