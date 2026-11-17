@@ -87,7 +87,7 @@ Mineral-Processing-Benchmarking/
 └── tests/golden/                    # hand-checked reports used to measure accuracy
 ```
 
-> **Storage note:** a few hundred reports at 10–200 MB each won't fit in git. `reports/**/report.pdf` is git-ignored and lives in free cloud storage (Cloudflare R2 or Google Drive, see §13) with an optional local copy. Metadata and parsed text *are* small enough to version.
+> **Storage note:** a few hundred reports at 10–200 MB each won't fit in git. `reports/**/report.pdf` is git-ignored and lives on your computer in `reports/`; back it up to any synced folder if you like. Metadata and parsed text *are* small enough to version.
 
 ---
 
@@ -327,9 +327,10 @@ Phases 1–2 and the taxonomy work in phase 0 can run in parallel. The UI can st
 - **Escalation index:** US BLS PPI (free).
 - **Hosting:** a free cloud setup (§13).
 
-**Still open:**
-1. **Extraction engine:** Claude Code subscription ($0), or a Claude API key (about $5–15 for 300 reports)? See §13.2.
-2. **PDF storage:** Cloudflare R2 or Google Drive? See §13.1.
+- **PDF storage:** on your computer, in `reports/` (git-ignored). Optional backup to any synced folder.
+- **Extraction engine:** Option A, Claude Code on your existing subscription (no API key).
+
+**How Option A runs:** you open Claude Code (desktop app or CLI) in the project folder on your computer. The Python pipeline does discovery, downloading, parsing and validation. Claude Code does the reading step: it takes each report's cached sections, writes `reports/<id>/extracted/<module>.json` following the schemas, and the pipeline validates the result (quote on page? within range? sums add up?) before loading it into the database. Each session processes a batch of reports, so usage limits only affect speed, not results.
 
 ---
 
@@ -340,10 +341,8 @@ Phases 1–2 and the taxonomy work in phase 0 can run in parallel. The UI can st
 | Piece | Free option | Free allowance | Fits? |
 |---|---|---|---|
 | Code, metadata, parsed text, database | **GitHub** (this repo, private) | Unlimited private repos | ✅ Parsed text and the SQLite DB are small |
-| PDF library (~300 reports ≈ 8–10 GB) | **Cloudflare R2** | 10 GB storage, no download fees | ✅ for v1; beyond that ≈ $0.015/GB-month (≈ $0.15/month per extra 10 GB) |
-| | *or* **Google Drive** | 15 GB (shared with Gmail) | ✅ easy to browse yourself; less convenient for the web viewer |
-| Running the pipeline | **GitHub Actions** | 2,000 min/month (private repo) | ✅ Fast text extraction first, Docling only on the ~15 % of pages in the target sections |
-| | *or* Claude Code cloud sessions like this one | Part of your subscription | ✅ |
+| PDF library (~300 reports ≈ 8–10 GB) | **Your computer** (`reports/`) | Your disk | ✅ Chosen. If the site is shared later, it links to each report's original URL instead of hosting PDFs |
+| Running the pipeline | **Your computer** + Claude Code | Your subscription | ✅ Chosen, because the PDFs live there |
 | Website | **Cloudflare Pages** + **Cloudflare Access** | Unlimited bandwidth; login for up to 50 users | ✅ |
 | Discovery | SEC EDGAR, company websites | Free, no key (EDGAR only asks for a contact name/email in the User-Agent) | ✅ |
 | | Brave Search API | Free tier with a monthly query cap | Optional; useful for filling gaps |
@@ -365,4 +364,4 @@ There's no LLM that is free, unlimited **and** accurate enough on messy engineer
 
 *How the estimate was made:* about 60–100k input tokens per report (only Items 13, 17, 21, 22 are sent, split into calls under 100k tokens), plus about 15–25k output tokens including reasoning. Prices used: Haiku 5.5 at $0.10 / $0.50 per million input/output tokens, Sonnet 5.5 at $2 / $10, Batch API at 50 % off. This gets re-measured on the 20-report pilot before anything bulk runs.
 
-**Recommendation:** run the **pilot (golden set) with option A, at $0**. That shows the real accuracy and token counts. If you then want the remaining reports done unattended, option B costs about the price of a lunch for all 300, with a hard spend cap. The extractor is built so you can switch between A, B and D without changing anything else.
+**Chosen: option A.** Original recommendation, kept for reference: run the **pilot (golden set) with option A, at $0**. That shows the real accuracy and token counts. If you then want the remaining reports done unattended, option B costs about the price of a lunch for all 300, with a hard spend cap. The extractor is built so you can switch between A, B and D without changing anything else.

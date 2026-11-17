@@ -1,0 +1,125 @@
+# Standard cost categories.
+# Every raw cost line from a report is mapped to ONE (cost_type, l1, l2).
+# The raw label is always kept in the database next to the mapping.
+# `synonyms` are matched case-insensitively as substrings, before any LLM classification.
+# Anything that can't be mapped goes to <l1>/other or other/unallocated and is flagged for review.
+# Never add a category just to fit one report: add a synonym instead.
+
+version: 1
+
+capex:
+  mining:
+    label: Mining
+    l2:
+      pre_production: { label: Pre-production / pre-strip, synonyms: [pre-strip, prestrip, pre-production mining, capitalized mining, capitalised mining, pre-production stripping] }
+      equipment:      { label: Mining equipment, synonyms: [mining fleet, mobile equipment, mine equipment, haul trucks] }
+      ug_development: { label: Underground development, synonyms: [lateral development, vertical development, decline, ramp, shaft, capital development] }
+      infrastructure: { label: Mine infrastructure, synonyms: [mine dewatering, mine services, mine infrastructure, ventilation] }
+      other:          { label: Mining – other, synonyms: [mining, mine] }
+  process:
+    label: Process Plant
+    l2:
+      crushing:       { label: Crushing & ore handling, synonyms: [crushing, primary crusher, ore handling, stockpile, conveying, reclaim] }
+      comminution:    { label: Grinding / comminution, synonyms: [grinding, milling, sag mill, ball mill, hpgr, comminution] }
+      concentration:  { label: "Concentration (flotation, gravity, leach/CIL)", synonyms: [flotation, gravity, leach, cil, cip, carbon in leach, adsorption, heap leach pad, autoclave, pox, biox, albion, sx-ew, solvent extraction, electrowinning] }
+      dewatering:     { label: Dewatering & filtration, synonyms: [thickening, thickener, filtration, concentrate handling, concentrate filter, dewatering] }
+      refinery:       { label: Refinery / gold room, synonyms: [gold room, goldroom, refinery, elution, carbon regeneration, smelting, adr plant] }
+      reagents_services: { label: Reagents & plant services, synonyms: [reagents, reagent plant, plant services, air services, water services, cyanide destruction, detox] }
+      general:        { label: Plant general, synonyms: [process plant, processing plant, concentrator, mill building, plant site, process facilities, plant general] }
+  tailings_water:
+    label: Tailings & Water
+    l2:
+      tailings:       { label: TSF / dry stack, synonyms: [tailings, tsf, tailings storage, dry stack, filtered tailings, tailings management] }
+      water:          { label: Water management, synonyms: [water management, water treatment, water treatment plant, diversion, collection pond] }
+  onsite_infra:
+    label: On-site Infrastructure
+    l2:
+      power:          { label: Power distribution, synonyms: [substation, power distribution, electrical distribution, site power] }
+      roads:          { label: Site roads, synonyms: [site roads, haul road, site development, earthworks, bulk earthworks] }
+      buildings:      { label: Buildings, synonyms: [buildings, workshop, warehouse, administration building, truck shop] }
+      camp:           { label: Camp, synonyms: [camp, accommodation, permanent camp] }
+      other:          { label: Infrastructure – other, synonyms: [infrastructure, site infrastructure, general site] }
+  offsite_infra:
+    label: Off-site Infrastructure
+    l2:
+      power:          { label: Power line / generation, synonyms: [transmission line, power line, power plant, power station, grid connection, off-site power] }
+      access:         { label: Access road, synonyms: [access road, off-site road] }
+      port_rail:      { label: Port / rail, synonyms: [port, rail, load-out, concentrate terminal] }
+      other:          { label: Off-site – other, synonyms: [off-site, offsite] }
+  indirects:
+    label: Indirects
+    l2:
+      epcm:           { label: EPCM / engineering, synonyms: [epcm, epc, engineering, procurement, construction management, detailed engineering] }
+      construction:   { label: Construction indirects, synonyms: [construction indirects, temporary facilities, construction camp, construction equipment, freight, logistics] }
+      first_fills_spares: { label: First fills & spares, synonyms: [first fills, initial fills, spares, capital spares, commissioning spares] }
+      commissioning:  { label: Commissioning, synonyms: [commissioning, vendor representatives, start-up] }
+      other:          { label: Indirects – other, synonyms: [indirect, indirects] }
+  owners:
+    label: Owner's Costs
+    l2:
+      owners:         { label: Owner's costs, synonyms: ["owner's cost", "owners cost", "owner's team", "pre-production g&a", "pre-production general"] }
+  contingency:
+    label: Contingency
+    l2:
+      contingency:    { label: Contingency, synonyms: [contingency, growth allowance] }
+  other:
+    label: Other / unallocated
+    l2:
+      unallocated:    { label: Unallocated, synonyms: [] }
+
+# Capital outside initial CAPEX. Same L1 split where the report gives it.
+sustaining:
+  label: Sustaining capital
+  uses_l1_from: capex
+  synonyms: [sustaining, sustaining capital, stay-in-business, sib]
+
+closure:
+  label: Closure & reclamation
+  synonyms: [closure, reclamation, rehabilitation, decommissioning, salvage]
+
+opex:
+  mining:
+    label: Mining
+    l2:
+      mining:         { label: Mining, synonyms: [mining, mine operations, open pit mining, underground mining, contractor mining] }
+  processing:
+    label: Processing
+    l2:
+      labour:         { label: Labour, synonyms: [labour, labor, personnel, manpower, salaries, wages] }
+      power:          { label: Power / energy, synonyms: [power, electricity, energy, fuel] }
+      reagents:       { label: Reagents, synonyms: [reagents, cyanide, nacn, lime, collector, frother, flocculant, sulphuric acid] }
+      media_liners:   { label: Grinding media & liners, synonyms: [grinding media, balls, liners, wear parts, crusher liners, hpgr tyres] }
+      maintenance:    { label: Maintenance & consumables, synonyms: [maintenance, maintenance supplies, consumables, operating supplies, spares] }
+      other:          { label: Processing – other, synonyms: [processing, process, milling, plant operations, concentrator] }
+  ga:
+    label: G&A / Site
+    l2:
+      ga:             { label: G&A, synonyms: [g&a, general and administrative, general & administrative, administration, site services, camp costs, site g&a] }
+  tailings_water:
+    label: Tailings & Water
+    l2:
+      tailings_water: { label: Tailings & water, synonyms: [tailings, tsf operations, water treatment, dry stack] }
+  offsite:
+    label: Off-site
+    l2:
+      transport:      { label: Concentrate / doré transport, synonyms: [transport, freight, shipping, trucking, ocean freight, concentrate transport] }
+      tc_rc:          { label: Treatment & refining charges, synonyms: [treatment charge, refining charge, tc/rc, tc, rc, smelting, refining] }
+      other:          { label: Off-site – other, synonyms: [insurance, marketing, representation] }
+  royalties_taxes:
+    label: Royalties & taxes (kept out of site OPEX)
+    l2:
+      royalties:      { label: Royalties, synonyms: [royalty, royalties, nsr, streaming] }
+      taxes:          { label: Production taxes, synonyms: [mining tax, production tax, export duty] }
+  other:
+    label: Other / unallocated
+    l2:
+      unallocated:    { label: Unallocated, synonyms: [] }
+
+# Allowed bases for a cost value. USD/t milled is the primary comparison basis.
+basis_units: [total, per_year, per_t_milled, per_t_mined, per_t_moved, per_oz_payable, per_lb_payable, per_t_concentrate]
+
+# Summary metrics reported by the study (stored as-is, not summed).
+summary_metrics:
+  site_opex_per_t: { label: Total site operating cost, unit: USD/t milled }
+  cash_cost:       { label: Cash cost (C1 or by-product), unit: USD/payable unit }
+  aisc:            { label: All-in sustaining cost, unit: USD/payable unit }

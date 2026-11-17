@@ -1,0 +1,33 @@
+# Golden set candidates: ~20 reports checked once by hand to measure extraction accuracy.
+# Chosen to cover each v1 commodity / flowsheet family / study level / standard.
+# Final picks are confirmed in phase 1 once discovery has found and downloaded the actual reports;
+# any candidate whose report can't be obtained automatically gets swapped for a similar project.
+
+selection_rules:
+  - at least 2 operating-mine reports (actual costs) per commodity
+  - at least 1 S-K 1300 report per commodity (tests the EDGAR path)
+  - at least 1 report with costs in CAD and 1 in AUD (tests currency handling)
+  - at least 1 older report giving Bond work index in kWh/short ton
+  - mix of comminution circuits (SABC, HPGR-ball, 3-stage crush + ball)
+
+candidates:
+  gold:   # CIL / gravity + CIL
+    - { project: Blackwater,      issuer: Artemis Gold,     country: Canada, why: "FS, gravity + CIL, large greenfield" }
+    - { project: Côté Gold,       issuer: IAMGOLD,          country: Canada, why: "HPGR + ball, gravity + CIL, now operating" }
+    - { project: Greenstone,      issuer: Equinox Gold,     country: Canada, why: "large CIP, recently built" }
+    - { project: Valentine,       issuer: Calibre Mining,   country: Canada, why: "gravity + CIL, Newfoundland" }
+    - { project: Back River (Goose), issuer: B2Gold,        country: Canada, why: "remote Arctic, CIL" }
+    - { project: TBD (S-K 1300 gold), issuer: TBD,          country: USA,    why: "EDGAR path" }
+    - { project: TBD (Australian JORC gold), issuer: TBD,   country: Australia, why: "AUD costs, JORC format" }
+  copper: # flotation
+    - { project: Kamoa-Kakula,    issuer: Ivanhoe Mines,    country: DRC,    why: "very large Cu flotation, operating" }
+    - { project: Josemaria,       issuer: Lundin Mining,    country: Argentina, why: "Cu-Au flotation FS" }
+    - { project: Casino,          issuer: Western Copper and Gold, country: Canada, why: "Cu-Au-Mo flotation, Yukon" }
+    - { project: Copper World,    issuer: Hudbay Minerals,  country: USA,    why: "S-K 1300 / NI 43-101" }
+    - { project: TBD (operating Cu concentrator), issuer: TBD, country: TBD, why: "actual costs" }
+    - { project: TBD (Cu-Mo selective flotation), issuer: TBD, country: TBD, why: "selective flotation" }
+  nickel: # sulphide flotation
+    - { project: Crawford,        issuer: Canada Nickel,    country: Canada, why: "large low-grade Ni sulphide FS" }
+    - { project: Dumont,          issuer: TBD (current owner), country: Canada, why: "low-grade Ni sulphide, Québec" }
+    - { project: Tamarack,        issuer: Talon Metals,     country: USA,    why: "high-grade Ni-Cu-Co" }
+    - { project: TBD (operating Ni concentrator), issuer: TBD, country: TBD, why: "actual costs" }

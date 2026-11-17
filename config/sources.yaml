@@ -1,0 +1,42 @@
+# Where the pipeline looks for reports. All sources here allow automated access.
+# SEDAR+ is deliberately absent: its terms prohibit automated access.
+
+version: 1
+
+polite_crawling:
+  user_agent: "MPBenchmark/0.1 (contact: SET_IN_.env)"   # EDGAR requires a real name + email: set CONTACT_EMAIL in .env
+  min_seconds_between_requests_per_domain: 3
+  respect_robots_txt: true
+  max_pdf_mb: 400
+
+edgar:
+  enabled: true
+  max_requests_per_second: 8      # SEC limit is 10
+  full_text_queries:
+    - '"technical report summary"'
+    - '"NI 43-101" "feasibility study"'
+    - '"NI 43-101" "preliminary economic assessment"'
+  exhibit_types: [EX-96, EX-96.1, EX-99]
+  sic_codes: [1000, 1040, 1090, 1400]
+
+company_sites:
+  enabled: true
+  seed_lists:
+    - tmx_mining_issuers       # TSX/TSXV mining issuer list (public Excel)
+    - asx_listed_companies     # ASX company list (public CSV), materials sector
+  link_patterns: ["technical report", "43-101", "ni43-101", "feasibility", "pre-feasibility", "prefeasibility", "preliminary economic assessment", "pea", "jorc"]
+
+search_api:
+  enabled: false               # optional; set BRAVE_API_KEY in .env to enable
+  queries:
+    - '"NI 43-101" "feasibility study" {commodity} {flowsheet} filetype:pdf'
+    - '"technical report" "{project}" filetype:pdf'
+
+inbox:
+  path: reports/_inbox
+
+# v1 scope (agreed): gold CIL/gravity first, then copper flotation, then nickel sulphide.
+scope_v1:
+  commodities: [Au, Cu, Ni]
+  study_levels: [PEA, PFS, FS, operating]
+  report_years_min: 2012

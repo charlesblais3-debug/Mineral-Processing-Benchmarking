@@ -1,0 +1,75 @@
+# Parameter dictionary: every value the pipeline extracts into the `facts` table.
+# Adding a parameter = add an entry here (+ add it to a module's instructions). No database change.
+#
+# Fields
+#   group          UI grouping
+#   unit           canonical unit (values are normalized to it; original unit is kept)
+#   range          plausibility range in canonical unit; values outside go to review
+#   per_metal      true = one value per metal (key gets a context.metal)
+#   context        allowed keys in the fact's context JSON (what makes values comparable)
+#   module         extraction module that fills it
+#   v1             in scope for the first iteration
+
+version: 1
+
+parameters:
+  # ---------- Scale ----------
+  throughput_tpd:      { group: scale, label: Nominal throughput, unit: t/d, range: [50, 400000], module: scale, v1: true, context: [phase, availability_pct] }
+  throughput_mtpa:     { group: scale, label: Nominal throughput, unit: Mt/a, range: [0.02, 150], module: scale, v1: true, context: [phase], derived_from: throughput_tpd }
+  lom_years:           { group: scale, label: Life of mine (processing), unit: years, range: [1, 80], module: scale, v1: true }
+  reserve_tonnes:      { group: scale, label: Mineral reserve (P&P), unit: Mt, range: [0.05, 20000], module: scale, v1: true }
+  reserve_grade:       { group: scale, label: Reserve grade, unit: native, per_metal: true, module: scale, v1: true }
+  mine_type:           { group: scale, label: Mine type, unit: enum, values: [open_pit, underground, open_pit_and_underground], module: scale, v1: true }
+  strip_ratio:         { group: scale, label: LOM strip ratio, unit: "t:t", range: [0, 30], module: scale, v1: true }
+
+  # ---------- Feed & metallurgy ----------
+  head_grade_lom:      { group: metallurgy, label: LOM average head grade, unit: native, per_metal: true, module: metallurgy, v1: true }
+  recovery_lom:        { group: metallurgy, label: LOM average recovery, unit: "%", range: [0, 100], per_metal: true, module: metallurgy, v1: true, context: [ore_type, to_product] }
+  conc_grade:          { group: metallurgy, label: Concentrate grade, unit: native, per_metal: true, module: metallurgy, v1: true, context: [concentrate] }
+  payable_production:  { group: metallurgy, label: Average annual payable production, unit: native_per_year, per_metal: true, module: metallurgy, v1: true, context: [period] }
+
+  # ---------- Comminution testwork ----------
+  # Measurement details matter: always fill `context` where the report gives it.
+  bwi_ball:            { group: comminution, label: Bond ball mill work index, unit: kWh/t, range: [4, 30], module: comminution, v1: true,
+                         context: [test, closing_screen_um, feed_size, n_samples, ore_type, lab, statistic_note] }
+  bwi_rod:             { group: comminution, label: Bond rod mill work index, unit: kWh/t, range: [4, 35], module: comminution, v1: true, context: [test, closing_screen_um, n_samples, ore_type, lab] }
+  cwi:                 { group: comminution, label: Bond crusher (impact) work index, unit: kWh/t, range: [2, 40], module: comminution, v1: true, context: [n_samples, ore_type, lab] }
+  ai:                  { group: comminution, label: Bond abrasion index, unit: g, range: [0, 1.2], module: comminution, v1: true, context: [n_samples, ore_type, lab] }
+  axb:                 { group: comminution, label: SMC / JK drop weight A×b, unit: "-", range: [10, 300], module: comminution, v1: true, context: [test, n_samples, ore_type, lab] }
+  dwi:                 { group: comminution, label: SMC drop weight index, unit: kWh/m3, range: [0.5, 20], module: comminution, v1: true, context: [n_samples, ore_type, lab] }
+  ta:                  { group: comminution, label: JK abrasion parameter ta, unit: "-", range: [0.1, 5], module: comminution, v1: false }
+  spi:                 { group: comminution, label: SAG power index (SPI), unit: min, range: [5, 400], module: comminution, v1: false }
+
+  # ---------- Process design ----------
+  grind_p80_um:        { group: design, label: Primary grind size P80, unit: µm, range: [20, 2000], module: design, v1: true }
+  regrind_p80_um:      { group: design, label: Regrind size P80, unit: µm, range: [5, 200], module: design, v1: true }
+  mill_power_mw:       { group: design, label: Installed grinding mill power, unit: MW, range: [0.2, 200], module: design, v1: true, context: [mills] }
+  specific_energy:     { group: design, label: Comminution specific energy, unit: kWh/t, range: [2, 60], module: design, v1: true, context: [scope] }  # scope: grinding_only | total_plant
+  plant_availability:  { group: design, label: Plant availability / utilization, unit: "%", range: [50, 98], module: design, v1: true }
+  leach_residence_h:   { group: design, label: Leach residence time, unit: h, range: [2, 200], module: design, v1: false }
+  nacn_kg_t:           { group: design, label: NaCN consumption, unit: kg/t, range: [0, 5], module: design, v1: false }
+  flot_mass_pull_pct:  { group: design, label: Flotation mass pull, unit: "%", range: [0, 50], module: design, v1: false }
+
+  # ---------- Economics (context for costs) ----------
+  metal_price:         { group: economics, label: Base case metal price, unit: native_price, per_metal: true, module: economics, v1: true }
+  npv_after_tax:       { group: economics, label: After-tax NPV, unit: MUSD, module: economics, v1: true, context: [discount_rate_pct] }
+  irr_after_tax:       { group: economics, label: After-tax IRR, unit: "%", range: [-50, 300], module: economics, v1: true }
+  payback_years:       { group: economics, label: Payback period, unit: years, range: [0, 40], module: economics, v1: true }
+  exchange_rate:       { group: economics, label: Study FX assumption, unit: native, module: economics, v1: true, context: [pair] }
+
+# Values every fact can carry (columns, not context keys)
+fact_fields:
+  statistic: [mean, median, p75, p80, p90, design, min, max, single, lom_average, steady_state]
+  basis:     [estimate, actual]
+
+# Native units allowed per metal (normalized to these)
+native_units:
+  Au: { grade: g/t, price: USD/oz, production: oz }
+  Ag: { grade: g/t, price: USD/oz, production: oz }
+  Cu: { grade: "%", price: USD/lb, production: lb }
+  Ni: { grade: "%", price: USD/lb, production: lb }
+  Co: { grade: "%", price: USD/lb, production: lb }
+  Mo: { grade: "%", price: USD/lb, production: lb }
+  Zn: { grade: "%", price: USD/lb, production: lb }
+  Pb: { grade: "%", price: USD/lb, production: lb }
+  PGM: { grade: g/t, price: USD/oz, production: oz }

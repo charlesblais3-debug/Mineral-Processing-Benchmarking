@@ -1,0 +1,18 @@
+# Report PDFs stay on your computer (too big for git). Metadata and parsed text are tracked.
+reports/**/*.pdf
+reports/_inbox/*
+!reports/_inbox/.gitkeep
+
+# Database is rebuilt from reports/ by the pipeline; exports are generated
+data/*.db
+data/*.db-*
+data/exports/*
+!data/exports/.gitkeep
+
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+node_modules/
+app/web/dist/

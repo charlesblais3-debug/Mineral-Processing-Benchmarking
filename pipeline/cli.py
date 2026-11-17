@@ -1,0 +1,72 @@
+"""Command line entry point:  python -m pipeline <command>
+
+Commands
+  init-db        create data/benchmark.db
+  check-config   validate the YAML taxonomies
+  map-cost       try the cost mapper:  python -m pipeline map-cost initial_capex "Grinding area 200"
+"""
+from __future__ import annotations
+
+import sys
+
+from pipeline import taxonomy
+from pipeline.db.init_db import DEFAULT_DB, init_db
+
+
+def check_config() -> list[str]:
+    problems: list[str] = []
+    params = taxonomy.load("parameters")["parameters"]
+    for key, p in params.items():
+        for field in ("group", "label", "unit", "module"):
+            if field not in p:
+                problems.append(f"parameters.{key}: missing '{field}'")
+        if "range" in p and not (isinstance(p["range"], list) and len(p["range"]) == 2 and p["range"][0] < p["range"][1]):
+            problems.append(f"parameters.{key}: bad range {p['range']}")
+
+    flow = taxonomy.load("flowsheet_taxonomy")
+    ops = set(flow["unit_ops"])
+    for item in flow["families"] + flow["comminution_circuits"]:
+        rule = item.get("rule", item)
+        for k in ("all", "any", "also_any", "none"):
+            for op in rule.get(k, []):
+                if op not in ops:
+                    problems.append(f"flowsheet {item['key']}: unknown unit op '{op}'")
+
+    costs = taxonomy.load("cost_taxonomy")
+    seen: dict[tuple[str, str], str] = {}
+    for tree in ("capex", "opex"):
+        for l1, node in costs[tree].items():
+            for l2, leaf in node.get("l2", {}).items():
+                for syn in leaf.get("synonyms", []):
+                    s = syn.lower()
+                    where = f"{l1}/{l2}"
+                    if (tree, s) in seen and seen[(tree, s)] != where:
+                        problems.append(f"cost {tree}: synonym '{syn}' in both {seen[(tree, s)]} and {where}")
+                    seen[(tree, s)] = where
+    return problems
+
+
+def main(argv: list[str]) -> int:
+    if not argv or argv[0] in ("-h", "--help"):
+        print(__doc__)
+        return 0
+    cmd = argv[0]
+    if cmd == "init-db":
+        init_db().close()
+        print(f"database ready: {DEFAULT_DB}")
+    elif cmd == "check-config":
+        problems = check_config()
+        for p in problems:
+            print("✗", p)
+        print("config OK" if not problems else f"{len(problems)} problem(s)")
+        return 1 if problems else 0
+    elif cmd == "map-cost" and len(argv) == 3:
+        print(taxonomy.map_cost_label(argv[2], argv[1]))
+    else:
+        print(__doc__)
+        return 2
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
