@@ -83,12 +83,11 @@ Mineral-Processing-Benchmarking/
 │   ├── flowsheet_taxonomy.yaml      # standard unit operations + flowsheet families
 │   └── sources.yaml                 # issuer lists, search queries, crawl settings
 ├── app/
-│   ├── api/                         # FastAPI: reads benchmark.db
-│   └── web/                         # React UI
+│   └── web/                         # React UI (static site; reads an export of benchmark.db)
 └── tests/golden/                    # hand-checked reports used to measure accuracy
 ```
 
-> **Storage note:** a few hundred reports at 10–200 MB each won't fit in git. `reports/**/report.pdf` is git-ignored and lives on your local disk or a synced drive (OneDrive, Dropbox, S3). Metadata and parsed text *are* small enough to version.
+> **Storage note:** a few hundred reports at 10–200 MB each won't fit in git. `reports/**/report.pdf` is git-ignored and lives in free cloud storage (Cloudflare R2 or Google Drive, see §13) with an optional local copy. Metadata and parsed text *are* small enough to version.
 
 ---
 
@@ -124,14 +123,15 @@ discover → acquire → parse → extract → normalize → validate → databa
 
 ### 4.4 Extract (LLM-based, schema-driven)
 - Each **extraction module** = (target sections) + (a Pydantic schema) + (instructions). Example: the `comminution` module reads Items 13 + 17 and returns a list of test results matching the schema.
-- An LLM (Claude via API) reads only the relevant sections, not the whole 500-page report, and returns JSON. **Each value must include the page number and a verbatim quote.** The validator then checks that the quote really appears on that page, which catches made-up values.
+- **The LLM is swappable** (see §13): a Claude Code session on your existing subscription (no API key), the Claude API, or another provider. Every option uses the same schema and the same validation, so results can be compared.
+- The LLM reads only the relevant sections, not the whole 500-page report, and returns JSON. **Each value must include the page number and a verbatim quote.** The validator then checks that the quote really appears on that page, which catches made-up values.
 - Uses the **Batch API** and **prompt caching** to cut cost substantially for bulk runs. Cost per report is measured on the pilot set before scaling.
 - Every value records the **extractor version**, so when a module improves you can re-run it and see what changed.
 
 ### 4.5 Normalize
 - **Units:** t/d ↔ Mtpa (using stated availability, or 365 d if not stated), **kWh/short ton → kWh/t (×1.1023)**. Many older reports give Bond Work Index in kWh/st, and mixing the two silently skews results by 10%. Also g/t ↔ oz/st, µm, and so on.
 - **Currency:** converted to USD at the report's effective date (Bank of Canada / FRED rates, free). The original currency and value are kept.
-- **Cost escalation:** costs are restated to a common base year with a selectable index (US BLS Producer Price Index, which is free, by default; CEPCI if you have a subscription). The UI can show both nominal and escalated values.
+- **Cost escalation:** costs are restated to a common base year using the **US BLS Producer Price Index**. It's free and fetched automatically from the BLS public API. Default series: PPI for mining machinery & equipment (capital costs) and PPI for final demand (operating costs). The index is set in a config file and can be swapped. The UI can show both nominal and escalated values.
 - **Cost categories:** each raw cost line is mapped to the standard taxonomy (§6) by synonym rules first and an LLM classifier second. The mapping confidence is stored, and low-confidence mappings go to review.
 - **Flowsheet:** unit operations are mapped to a controlled vocabulary, and a **flowsheet family** is derived from them (see §6.3).
 
@@ -267,9 +267,16 @@ All costs are shown in **escalated USD of a chosen base year** by default, with 
 
 ## 9. User interface
 
-**Stack:** React + Vite + Tailwind + shadcn/ui (clean, modern components) with **Apache ECharts** for interactive charts and **pdf.js** for the built-in report viewer. **FastAPI** serves the data from `benchmark.db`. It runs locally with one command and can be deployed later (e.g. Fly.io / Render) if you want to share it with clients or colleagues.
+**Stack:** React + Vite + Tailwind + shadcn/ui (clean, modern components) with **Apache ECharts** for interactive charts and **pdf.js** for the built-in report viewer.
 
-(Streamlit would be faster to build but harder to make look polished. We could use it for a throwaway prototype during the pipeline phase and build the real UI in React.)
+**It's a static site with no server.** The pipeline exports `benchmark.db` to a compact data file (Parquet/JSON, a few MB even for thousands of reports). The page loads that file and runs all filters, charts and regressions in the browser (using DuckDB-WASM if needed). This means:
+- free hosting on **Cloudflare Pages**, which also works from a private repo
+- it's private to you at first using **Cloudflare Access** (free for up to 50 users, email login), and sharing later means adding an email or making it public
+- nothing to keep running, patch or pay for
+
+The review queue (§9, screen 5) runs locally with `npm run review`, because it needs to write corrections back to the database.
+
+(Streamlit would be faster to build but harder to make look polished, and it needs a running server.)
 
 ### Screens (deliberately few)
 
@@ -312,10 +319,50 @@ Phases 1–2 and the taxonomy work in phase 0 can run in parallel. The UI can st
 
 ---
 
-## 12. Decisions needed from you before phase 0
+## 12. Decisions
 
-1. **Where should the PDF library live?** Local disk, OneDrive/Dropbox, or cloud storage (S3)? This cloud workspace is temporary, so the reports can't live only here.
-2. **Budget for APIs:** an Anthropic API key for extraction and a search API key (Brave or Exa). Both are pay-as-you-go. I'll measure the actual cost per report on the pilot set before any bulk run.
-3. **Who uses it:** just you (local app), or shared with colleagues/clients (hosted, with logins)?
-4. **Priority commodities and flowsheets** for the first 300 reports (my suggestion: gold CIL/gravity, copper flotation, then nickel sulphide).
-5. **Escalation index:** BLS PPI (free) or CEPCI (subscription)?
+**Made:**
+- **Users:** just you at first; the interface is a web page that can be shared later.
+- **First commodities:** gold (CIL/gravity), then copper flotation, then nickel sulphide.
+- **Escalation index:** US BLS PPI (free).
+- **Hosting:** a free cloud setup (§13).
+
+**Still open:**
+1. **Extraction engine:** Claude Code subscription ($0), or a Claude API key (about $5–15 for 300 reports)? See §13.2.
+2. **PDF storage:** Cloudflare R2 or Google Drive? See §13.1.
+
+---
+
+## 13. Running it in the cloud for free
+
+### 13.1 Free setup
+
+| Piece | Free option | Free allowance | Fits? |
+|---|---|---|---|
+| Code, metadata, parsed text, database | **GitHub** (this repo, private) | Unlimited private repos | ✅ Parsed text and the SQLite DB are small |
+| PDF library (~300 reports ≈ 8–10 GB) | **Cloudflare R2** | 10 GB storage, no download fees | ✅ for v1; beyond that ≈ $0.015/GB-month (≈ $0.15/month per extra 10 GB) |
+| | *or* **Google Drive** | 15 GB (shared with Gmail) | ✅ easy to browse yourself; less convenient for the web viewer |
+| Running the pipeline | **GitHub Actions** | 2,000 min/month (private repo) | ✅ Fast text extraction first, Docling only on the ~15 % of pages in the target sections |
+| | *or* Claude Code cloud sessions like this one | Part of your subscription | ✅ |
+| Website | **Cloudflare Pages** + **Cloudflare Access** | Unlimited bandwidth; login for up to 50 users | ✅ |
+| Discovery | SEC EDGAR, company websites | Free, no key (EDGAR only asks for a contact name/email in the User-Agent) | ✅ |
+| | Brave Search API | Free tier with a monthly query cap | Optional; useful for filling gaps |
+| FX and escalation data | Bank of Canada API (FX), BLS public API (PPI) | Free | ✅ |
+
+Some providers (e.g. Cloudflare) ask for a card on file even for free tiers. You aren't charged unless you go over the allowance, and a spending alert can be set.
+
+### 13.2 The extraction engine (the only part that isn't automatically free)
+
+There's no LLM that is free, unlimited **and** accurate enough on messy engineering tables. The real options:
+
+| Option | Cost for ~300 reports | Fully automatic? | Quality | Notes |
+|---|---|---|---|---|
+| **A. Claude Code on your existing subscription** | $0 extra | Partly. Runs in sessions like this one or on a schedule, a batch of reports at a time | High | No API key. Limited by your plan's usage limits, so 300 reports takes several sessions over days or weeks, not hours |
+| **B. Claude API, Haiku 5.5 + Batch API** | **≈ $5–15 total** (≈ 2–5 ¢/report) | Yes, hands-off | Good on headline values; checked against the golden set | Separate from your claude.ai subscription. Needs a Console account and API key, with a monthly spend limit you set |
+| **C. Claude API, Sonnet 5.5 + Batch API** | ≈ $60–120 total | Yes | Higher on complex tables | Use only for the fields where Haiku falls short on the golden set |
+| **D. Free-tier APIs** (e.g. Gemini free tier) | $0 | Yes, but throttled | Variable | Daily caps change often; free-tier data may be used by the provider for training (acceptable here since reports are public) |
+| **E. Local open-source model** (Ollama + Qwen/Llama) | $0, unlimited | Yes | Noticeably lower on tables and units | Needs a decent GPU; free cloud machines don't have one |
+
+*How the estimate was made:* about 60–100k input tokens per report (only Items 13, 17, 21, 22 are sent, split into calls under 100k tokens), plus about 15–25k output tokens including reasoning. Prices used: Haiku 5.5 at $0.10 / $0.50 per million input/output tokens, Sonnet 5.5 at $2 / $10, Batch API at 50 % off. This gets re-measured on the 20-report pilot before anything bulk runs.
+
+**Recommendation:** run the **pilot (golden set) with option A, at $0**. That shows the real accuracy and token counts. If you then want the remaining reports done unattended, option B costs about the price of a lunch for all 300, with a hard spend cap. The extractor is built so you can switch between A, B and D without changing anything else.
