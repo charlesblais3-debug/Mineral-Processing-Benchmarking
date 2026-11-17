@@ -201,7 +201,7 @@ These live in YAML, so you can edit them. Each category has a list of synonyms, 
 | Level 1 | Level 2 (as granular as the report allows) |
 |---|---|
 | **Mining** | Pre-production/pre-strip · Mining equipment · Underground development · Mine infrastructure |
-| **Process Plant** | Crushing & ore handling · Grinding/comminution · Concentration (flotation, gravity, leach/CIL) · Dewatering & filtration · Refinery/gold room · Reagents & services · Plant general |
+| **Process Plant** | Crushing & grinding · Concentration & recovery (flotation, gravity, leach, dewatering, gold room) · Plant general & services |
 | **Tailings & Water** | TSF / dry stack · Water management |
 | **On-site Infrastructure** | Power distribution · Roads · Buildings · Camp |
 | **Off-site Infrastructure** | Power line/generation · Access road · Port/rail |
@@ -227,9 +227,10 @@ Reports split these lines differently. Some include indirects inside "Process Pl
 Standard bases: **USD/t milled** (primary), USD/t mined (mining), and **USD/oz or USD/lb payable** (cash cost / AISC where reported).
 
 ### 6.3 Flowsheet families
-Derived from unit operations, so one project can carry several tags:
-`Gravity` · `CIL/CIP` · `Gravity + CIL` · `Heap leach (ADR/SX-EW)` · `Flotation (Cu/Cu-Au/Cu-Mo)` · `Flotation + concentrate leach (POX/Albion/BIOX)` · `Ni sulphide flotation` · `Ni laterite (HPAL/RKEF)` · `Polymetallic flotation (Pb-Zn-Ag)` · `Magnetic separation (Fe)` …
-Comminution circuit as its own tag: `SABC` · `SAG-Ball` · `HPGR-Ball` · `3-stage crush + ball` · `AG` …
+Derived from unit operations; one project can carry several tags. Families are **commodity-neutral**, so combine them with the commodity filter (e.g. Flotation + Cu):
+`Flotation` · `Flotation + concentrate leach (POX/Albion/BIOX)` · `Gravity + CIL/CIP` · `CIL/CIP` · `Heap leach` · `Gravity only` · `Pressure leach (HPAL)` · `Smelting (RKEF)` · `Magnetic separation`
+All flotation (any cell type: conventional, Jameson, column, coarse particle; any stage) is one unit operation.
+Comminution circuit as its own tag: `HPGR + ball` · `SABC` · `SAG + ball` · `Single-stage SAG` · `AG` · `3-stage crush + ball` · `Crush + rod + ball` · `Crush only`
 
 ---
 

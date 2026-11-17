@@ -13,6 +13,9 @@ def test_config_is_consistent():
 
 @pytest.mark.parametrize("label,cost_type,expected", [
     ("Area 200 – Grinding", "initial_capex", ("process", "comminution")),
+    ("Flotation", "initial_capex", ("process", "recovery")),
+    ("Gold Room", "initial_capex", ("process", "recovery")),
+    ("Reagents", "initial_capex", ("process", "general")),
     ("Pre-Strip", "initial_capex", ("mining", "pre_production")),
     ("Tailings Storage Facility", "initial_capex", ("tailings_water", "tailings")),
     ("EPCM", "initial_capex", ("indirects", "epcm")),
@@ -38,10 +41,14 @@ def test_flowsheet_gravity_cil():
 
 
 def test_flowsheet_copper_flotation_hpgr():
-    r = taxonomy.derive_flowsheet(["primary_gyratory", "hpgr", "ball_mill", "flotation_bulk", "regrind", "flotation_cleaner"], ["Cu", "Au"])
-    assert "flotation_cu" in r["families"]
-    assert "flotation_au" not in r["families"]
+    r = taxonomy.derive_flowsheet(["primary_gyratory", "hpgr", "ball_mill", "flotation", "regrind"], ["Cu", "Au"])
+    assert r["families"] == ["flotation"]
     assert r["comminution_circuit"] == "hpgr_ball"
+
+
+def test_flowsheet_flotation_pox_replaces_plain_flotation():
+    r = taxonomy.derive_flowsheet(["sag_mill", "ball_mill", "flotation", "pox", "cil"], ["Au"])
+    assert r["families"] == ["flotation_conc_leach", "cil_cip"]
 
 
 def test_flowsheet_unknown_unit_op_rejected():

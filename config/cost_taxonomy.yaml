@@ -5,7 +5,7 @@
 # Anything that can't be mapped goes to <l1>/other or other/unallocated and is flagged for review.
 # Never add a category just to fit one report: add a synonym instead.
 
-version: 1
+version: 2
 
 capex:
   mining:
@@ -19,13 +19,9 @@ capex:
   process:
     label: Process Plant
     l2:
-      crushing:       { label: Crushing & ore handling, synonyms: [crushing, primary crusher, ore handling, stockpile, conveying, reclaim] }
-      comminution:    { label: Grinding / comminution, synonyms: [grinding, milling, sag mill, ball mill, hpgr, comminution] }
-      concentration:  { label: "Concentration (flotation, gravity, leach/CIL)", synonyms: [flotation, gravity, leach, cil, cip, carbon in leach, adsorption, heap leach pad, autoclave, pox, biox, albion, sx-ew, solvent extraction, electrowinning] }
-      dewatering:     { label: Dewatering & filtration, synonyms: [thickening, thickener, filtration, concentrate handling, concentrate filter, dewatering] }
-      refinery:       { label: Refinery / gold room, synonyms: [gold room, goldroom, refinery, elution, carbon regeneration, smelting, adr plant] }
-      reagents_services: { label: Reagents & plant services, synonyms: [reagents, reagent plant, plant services, air services, water services, cyanide destruction, detox] }
-      general:        { label: Plant general, synonyms: [process plant, processing plant, concentrator, mill building, plant site, process facilities, plant general] }
+      comminution:    { label: Crushing & grinding, synonyms: [crushing, primary crusher, ore handling, stockpile, conveying, reclaim, grinding, milling, sag mill, ball mill, hpgr, comminution] }
+      recovery:       { label: "Concentration & recovery", synonyms: [flotation, gravity, leach, cil, cip, carbon in leach, adsorption, heap leach pad, autoclave, pox, biox, albion, sx-ew, solvent extraction, electrowinning, thickening, thickener, filtration, concentrate handling, concentrate filter, dewatering, gold room, goldroom, refinery, elution, carbon regeneration, smelting, adr plant] }
+      general:        { label: Plant general & services, synonyms: [process plant, processing plant, concentrator, mill building, plant site, process facilities, plant general, reagents, reagent plant, plant services, air services, water services, cyanide destruction, detox] }
   tailings_water:
     label: Tailings & Water
     l2:

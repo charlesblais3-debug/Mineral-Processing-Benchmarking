@@ -1,7 +1,8 @@
 # Controlled vocabulary for unit operations, and the rules that derive flowsheet families from them.
 # Extraction returns a list of unit_ops keys. Families and the comminution circuit are DERIVED, never typed by hand.
+# Families are commodity-neutral: filter by commodity separately (e.g. Flotation + Cu).
 
-version: 1
+version: 2
 
 unit_ops:
   # Comminution
@@ -15,29 +16,26 @@ unit_ops:
   ag_mill:            { label: AG mill, group: comminution }
   rod_mill:           { label: Rod mill, group: comminution }
   ball_mill:          { label: Ball mill, group: comminution }
-  vertical_mill:      { label: Vertical / stirred mill (regrind or fine grind), group: comminution }
+  vertical_mill:      { label: Vertical / stirred mill, group: comminution }
+  regrind:            { label: Regrind, group: comminution }
+  # Pre-concentration
   ore_sorting:        { label: Ore sorting, group: preconcentration }
   dms:                { label: Dense media separation, group: preconcentration }
   # Concentration
-  gravity:            { label: Gravity concentration (Knelson/Falcon/jig), group: concentration }
-  ilr:                { label: Intensive leach reactor (gravity concentrate), group: leach }
-  flotation_bulk:     { label: Bulk / rougher-scavenger flotation, group: concentration }
-  flotation_cleaner:  { label: Cleaner flotation, group: concentration }
-  flotation_selective: { label: "Selective / sequential flotation (e.g. Cu-Mo, Pb-Zn)", group: concentration }
-  jameson_cell:       { label: Jameson / column / pneumatic cells, group: concentration }
-  coarse_flotation:   { label: Coarse particle flotation (e.g. HydroFloat), group: concentration }
+  gravity:            { label: Gravity concentration, group: concentration }
+  flotation:          { label: Flotation (any cell type or stage), group: concentration }
   magnetic_sep:       { label: Magnetic separation, group: concentration }
-  regrind:            { label: Regrind, group: comminution }
   # Leach & recovery
   cil:                { label: Carbon-in-leach, group: leach }
   cip:                { label: Carbon-in-pulp, group: leach }
   tank_leach:         { label: Agitated tank leach (non-carbon), group: leach }
-  heap_leach:         { label: Heap leach, group: leach }
-  dump_leach:         { label: Dump leach, group: leach }
+  ilr:                { label: Intensive leach reactor, group: leach }
+  heap_leach:         { label: Heap / dump leach, group: leach }
   adr:                { label: ADR plant, group: recovery }
   merrill_crowe:      { label: Merrill-Crowe, group: recovery }
   elution_ew:         { label: Elution + electrowinning, group: recovery }
   sx_ew:              { label: SX-EW, group: recovery }
+  # Pre-treatment / hydromet / pyro
   pox:                { label: Pressure oxidation, group: pretreatment }
   biox:               { label: Bio-oxidation, group: pretreatment }
   albion:             { label: Albion process, group: pretreatment }
@@ -51,51 +49,47 @@ unit_ops:
   tails_thickener:    { label: Tailings thickening, group: dewatering }
   tails_filter:       { label: Tailings filtration (dry stack), group: dewatering }
 
-# Family rules: a report gets EVERY family whose rule matches (most specific listed first).
+# Family rules: a report gets EVERY family whose rule matches; more specific tags then
+# replace the general ones they contain (see `replaces`).
 # all: every key present · any / also_any: at least one of each list present · none: none present
-# commodity_any / commodity_none: checked against the project's primary + by-product commodities
 families:
   - key: flotation_conc_leach
-    label: Flotation + concentrate leach (POX/Albion/BIOX)
-    rule: { any: [pox, albion, biox], also_any: [flotation_bulk, flotation_cleaner, flotation_selective] }
+    label: Flotation + concentrate leach (POX / Albion / BIOX)
+    rule: { all: [flotation], any: [pox, albion, biox] }
+    replaces: [flotation]
+  - key: flotation
+    label: Flotation
+    rule: { all: [flotation] }
   - key: gravity_cil
     label: Gravity + CIL/CIP
     rule: { all: [gravity], any: [cil, cip] }
+    replaces: [cil_cip]
   - key: cil_cip
     label: CIL/CIP
     rule: { any: [cil, cip] }
   - key: heap_leach
-    label: Heap leach (ADR / SX-EW)
-    rule: { any: [heap_leach, dump_leach] }
-  - key: flotation_cu
-    label: Flotation (Cu / Cu-Au / Cu-Mo)
-    rule: { any: [flotation_bulk, flotation_cleaner, flotation_selective], commodity_any: [Cu] }
-  - key: flotation_ni
-    label: Ni sulphide flotation
-    rule: { any: [flotation_bulk, flotation_cleaner], commodity_any: [Ni] }
-  - key: flotation_polymetallic
-    label: Polymetallic flotation (Pb-Zn-Ag)
-    rule: { any: [flotation_selective], commodity_any: [Zn, Pb] }
-  - key: flotation_au
-    label: Gold flotation (concentrate sold or leached)
-    rule: { any: [flotation_bulk, flotation_cleaner], commodity_any: [Au], commodity_none: [Cu] }
+    label: Heap leach
+    rule: { any: [heap_leach] }
   - key: gravity_only
     label: Gravity only
-    rule: { all: [gravity], none: [cil, cip, tank_leach, flotation_bulk, heap_leach] }
-  - key: ni_laterite
-    label: Ni laterite (HPAL / RKEF)
-    rule: { any: [hpal, rkef] }
-  - key: magnetic_fe
-    label: Magnetic separation (Fe)
-    rule: { any: [magnetic_sep], commodity_any: [Fe] }
+    rule: { all: [gravity], none: [cil, cip, tank_leach, flotation, heap_leach] }
+  - key: pressure_leach
+    label: Pressure leach (HPAL)
+    rule: { any: [hpal] }
+  - key: smelting
+    label: Smelting (RKEF)
+    rule: { any: [rkef] }
+  - key: magnetic
+    label: Magnetic separation
+    rule: { any: [magnetic_sep] }
 
 # Comminution circuit tag: first matching rule wins.
 comminution_circuits:
   - { key: hpgr_ball,     label: HPGR + ball,           all: [hpgr, ball_mill] }
-  - { key: sabc,          label: SABC (SAG-ball-pebble crush), all: [sag_mill, ball_mill, pebble_crush] }
+  - { key: sabc,          label: SABC,                  all: [sag_mill, ball_mill, pebble_crush] }
   - { key: sag_ball,      label: SAG + ball,            all: [sag_mill, ball_mill] }
   - { key: sag_only,      label: Single-stage SAG,      all: [sag_mill], none: [ball_mill] }
-  - { key: ag,            label: AG (± pebble/ball),    all: [ag_mill] }
+  - { key: ag,            label: AG,                    all: [ag_mill] }
   - { key: crush_ball,    label: 3-stage crush + ball,  all: [tertiary_crush, ball_mill] }
   - { key: crush_rod_ball,label: Crush + rod + ball,    all: [rod_mill, ball_mill] }
-  - { key: crush_only,    label: Crush only (heap leach), any: [primary_jaw, primary_gyratory], none: [sag_mill, ag_mill, ball_mill, hpgr, rod_mill] }
+  - { key: crush_only,    label: Crush only,            any: [primary_jaw, primary_gyratory], none: [sag_mill, ag_mill, ball_mill, hpgr, rod_mill] }

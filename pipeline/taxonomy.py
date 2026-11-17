@@ -99,9 +99,9 @@ def derive_flowsheet(unit_ops: list[str], commodities: list[str]) -> dict:
     if unknown:
         raise ValueError(f"unknown unit ops (add to flowsheet_taxonomy.yaml): {unknown}")
     ops, comm = set(unit_ops), set(commodities)
-    families = [f["key"] for f in tax["families"] if _rule_matches(f["rule"], ops, comm)]
-    # "Gravity + CIL" is more specific than "CIL/CIP": keep only the specific tag
-    if "gravity_cil" in families and "cil_cip" in families:
-        families.remove("cil_cip")
+    matched = [f for f in tax["families"] if _rule_matches(f["rule"], ops, comm)]
+    # a specific tag (e.g. "Gravity + CIL") replaces the general one it contains ("CIL/CIP")
+    replaced = {r for f in matched for r in f.get("replaces", [])}
+    families = [f["key"] for f in matched if f["key"] not in replaced]
     circuit = next((c["key"] for c in tax["comminution_circuits"] if _rule_matches(c, ops, comm)), None)
     return {"families": families, "comminution_circuit": circuit}
