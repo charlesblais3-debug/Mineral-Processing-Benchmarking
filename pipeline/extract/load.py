@@ -187,6 +187,8 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
             problems.append(f"costs {key}: breakdown sums to {s:,.2f} but the line says {parent:,.2f}")
 
     con.commit()
+    from pipeline.normalize import costs as normalize_costs
+    normalize_costs.run(con)
     return {"report": report_id, "facts": n_facts, "facts_quote_verified": n_verified,
             "costs": n_costs, "problems": problems}
 

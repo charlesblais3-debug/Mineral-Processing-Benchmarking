@@ -66,3 +66,11 @@ def test_find_sections_skips_toc_and_ends_at_next_chapter():
     assert s["testwork"] == [2, 3]
     assert s["recovery"] == [4, 4]       # stops before chapter 18
     assert s["costs"][0] == 6
+
+
+def test_dedupe_title_key_ignores_exhibit_noise():
+    from pipeline.discover.dedupe import title_key
+    a = {"issuer": "ALAMOS GOLD INC  (AGI)", "note": "title: EX-99.1 Document NI 43-101 Technical Report for the Island Gold Mine, Dubreuilville"}
+    b = {"issuer": "ALAMOS GOLD INC  (AGI)", "note": "title: EXHIBIT 99.1 ex991.htm NI 43-101 Technical Report for the Island Gold Mine, Dubreuilville"}
+    c = {"issuer": "ALAMOS GOLD INC  (AGI)", "note": "title: EX-99.1 Document NI 43-101 Technical Report for the Mulatos Property"}
+    assert title_key(a) == title_key(b) != title_key(c)

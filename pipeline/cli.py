@@ -7,6 +7,7 @@ Commands
   discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N]
   parse          download + parse one catalog URL:  python -m pipeline parse <url>
   load           validate an extraction and load it:  python -m pipeline load <report_id>
+  dedupe         mark re-filed copies of the same report as duplicates (keeps latest)
   classify       sort catalog rows into is_report / not_report / unsure   [--status new]
 """
 from __future__ import annotations
@@ -83,6 +84,9 @@ def main(argv: list[str]) -> int:
         for p in res.pop("problems"):
             print("  ✗", p)
         print(res)
+    elif cmd == "dedupe":
+        from pipeline.discover import dedupe
+        print(dedupe.run())
     elif cmd == "map-cost" and len(argv) == 3:
         print(taxonomy.map_cost_label(argv[2], argv[1]))
     else:

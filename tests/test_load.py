@@ -51,3 +51,17 @@ def test_bad_values_are_flagged(tmp_path, monkeypatch):
     assert "sum to" in problems
     statuses = {r[0] for r in con.execute("SELECT review_status FROM facts")}
     assert statuses == {"needs_review"}
+
+
+def test_costs_converted_with_study_fx_and_escalated(tmp_path, monkeypatch):
+    con = make_report(tmp_path, monkeypatch, GOOD_COSTS, [
+        {"parameter": "exchange_rate", "value": 0.75, "unit": "USD/CAD", "context": {"pair": "USD/CAD"},
+         "page": 1, "quote": "Plant Throughput | t/d | 8,000"},
+    ])
+    con.execute("UPDATE reports SET cost_base_year=2022")
+    load.load_report("r1", con)
+    con.execute("UPDATE cost_items SET base_year=2022")
+    from pipeline.normalize import costs
+    costs.run(con, target_year=2022)
+    usd, esc = con.execute("SELECT value_usd, value_usd_escalated FROM cost_items WHERE raw_label='Process Plant'").fetchone()
+    assert usd == 189e6 * 0.75 and abs(esc - usd) < 1     # same year -> no escalation
