@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1178819/000117881926000044/ex991igd2026expansionstudy.htm",
+  "source": "edgar",
+  "issuer": "ALAMOS GOLD INC  (AGI)",
+  "cik": "1178819",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-03-20",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Island Gold",
+  "commodity": "",
+  "report_id": "2026-03-20_alamos-gold-inc_ex-99-1",
+  "sha256": "110c28308cbd6a8a06d1fd8a41de7657184bf3f6681d59b901e0d85753c4b027",
+  "bytes": 8449615,
+  "format": "html",
+  "pages": 389,
+  "parsed_on": "2026-11-17"
+}

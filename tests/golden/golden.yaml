@@ -1,0 +1,26 @@
+# Golden set v1: 20 reports checked once by hand to measure extraction accuracy.
+# All from SEC EDGAR. Projects only listed in Canada (Blackwater, Kamoa-Kakula, Josemaria, Crawford,
+# Tamarack...) come in with the company-website crawler and can be swapped in later.
+gold:
+  - { project: Lynn Lake,      level: FS,        url: "https://www.sec.gov/Archives/edgar/data/1178819/000117881923000097/ex991ni43-101technicalrepo.htm" }
+  - { project: Hardrock (Greenstone), level: FS, url: "https://www.sec.gov/Archives/edgar/data/1756607/000127956922000390/ex991.htm" }
+  - { project: Côté Gold,      level: FS/operating, url: "https://www.sec.gov/Archives/edgar/data/1203464/000106299322017835/exhibit99-1.htm" }
+  - { project: Rainy River,    level: operating, url: "https://www.sec.gov/Archives/edgar/data/800166/000127956925000140/ex991.htm" }
+  - { project: Detour Lake,    level: operating, url: "https://www.sec.gov/Archives/edgar/data/1713443/000106299321009838/exhibit99-1.htm" }
+  - { project: Kibali,         level: operating, url: "https://www.sec.gov/Archives/edgar/data/1973832/000197383226000064/kibalitechnicalreportsum.htm" }
+  - { project: Tropicana,      level: operating, url: "https://www.sec.gov/Archives/edgar/data/1067428/000162828022007863/a2021_-xtropicanaxxxtech.htm" }
+  - { project: Island Gold,    level: expansion study, url: "https://www.sec.gov/Archives/edgar/data/1178819/000117881926000044/ex991igd2026expansionstudy.htm" }
+  - { project: Young-Davidson, level: operating (2017), url: "https://www.sec.gov/Archives/edgar/data/1178819/000119312517032757/d266622dex991.htm" }
+copper:
+  - { project: Highland Valley Copper, level: operating, url: "https://www.sec.gov/Archives/edgar/data/886986/000110465925109328/tm2527845d6_ex99-1.htm" }
+  - { project: Santa Cruz,     level: PFS,       url: "https://www.sec.gov/Archives/edgar/data/1879016/000110465926109810/tm2625798d1_ex99-1.htm" }
+  - { project: Yellowhead,     level: FS,        url: "https://www.sec.gov/Archives/edgar/data/878518/000106299325016124/exhibit99-1.htm" }
+  - { project: Casino,         level: FS,        url: "https://www.sec.gov/Archives/edgar/data/1364125/000127956922001314/ex991.htm" }
+  - { project: Gibraltar,      level: operating, url: "https://www.sec.gov/Archives/edgar/data/878518/000127956922000495/ex991.htm" }
+  - { project: Mount Milligan, level: operating, url: "https://www.sec.gov/Archives/edgar/data/1854640/000110465925101266/tm2529040d1_ex99-1.htm" }
+  - { project: CSA,            level: operating (AUD), url: "https://www.sec.gov/Archives/edgar/data/1023514/000162828026068459/csa_copperxmines-k1300trs2.htm" }
+  - { project: Oyu Tolgoi,     level: operating, url: "https://www.sec.gov/Archives/edgar/data/863064/000162828023004989/exhibits-963otsxk1300trs.htm" }
+nickel:
+  - { project: Kabanga,        level: FS,        url: "https://www.sec.gov/Archives/edgar/data/1958217/000121390025065317/ea024921401ex96-1_lifezone.htm" }
+  - { project: Selkirk,        level: resource/PEA, url: "https://www.sec.gov/Archives/edgar/data/795800/000149315226038782/ex96-2.htm" }
+  - { project: NorthMet,       level: FS,        url: "https://www.sec.gov/Archives/edgar/data/866028/000106299322024587/exhibit99-1.htm" }

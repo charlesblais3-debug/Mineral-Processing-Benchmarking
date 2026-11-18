@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/863064/000162828023004989/exhibits-963otsxk1300trs.htm",
+  "source": "edgar",
+  "issuer": "RIO TINTO PLC  (RIO, RTPPF)",
+  "cik": "863064",
+  "form": "20-F",
+  "exhibit": "EX-96.3",
+  "filed": "2023-02-24",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Oyu Tolgoi",
+  "commodity": "",
+  "report_id": "2023-02-24_rio-tinto-plc_ex-96-3",
+  "sha256": "3490fc20568573ce72e05329c26b2e25b53d8707be916ad484659727945962d0",
+  "bytes": 487642,
+  "format": "html",
+  "pages": 52,
+  "parsed_on": "2026-11-18"
+}

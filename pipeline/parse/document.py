@@ -92,46 +92,93 @@ def pdf_to_pages(raw: bytes) -> list[str]:
 
 # ------------------------------------------------------------------ section map
 
-TOP_HEADING = re.compile(r"^\s*(?:section\s+)?(\d{1,2})(?:\.0)?\.?\s+([A-Z][^|]{3,90})$", re.I)
-PAGE_NUM = re.compile(r"^\s*(page\s+)?[\divxlc]{1,4}\s*$", re.I)
+NUMBERED = re.compile(r"^(?:item|section|chapter)?\s*(\d{1,2})(?:\.0)?\.?\s+([A-Za-z].{2,})$", re.I)
+PAGE_NUM = re.compile(r"^\s*(page\s+)?([\divxlc]{1,4}|\d{1,2}-\d{1,3})\s*$", re.I)
+LONG_SPLIT = re.compile(r"(?<=\S)\s+(?=\d{1,2}(?:\.\d{1,2}){0,2}\.?\s+[A-Z])")
+BARE_NUM = re.compile(r"^(?:item|section|chapter)?\s*\d{1,2}(?:\.0)?\.?$", re.I)
 
 
-def _headings(pages: list[str]):
-    """Yield (page_no, chapter_no, title) for top-level chapter headings, skipping table-of-contents lines."""
-    for pno, page in enumerate(pages, 1):
-        lines = page.splitlines()
-        for i, line in enumerate(lines):
-            m = TOP_HEADING.match(line)
-            if not m:
-                continue
-            title = m.group(2).strip()
-            if re.search(r"\.{3,}|\s\d{1,4}$", title):           # "Recovery Methods ..... 231"
-                continue
-            nxt = next((l for l in lines[i + 1:] if l.strip()), "")
-            if PAGE_NUM.match(nxt):                                  # ToC: heading then page number
-                continue
-            yield pno, int(m.group(1)), title
+def _lines(page: str) -> list[str]:
+    out = []
+    for line in page.splitlines():
+        cells = [c.strip() for c in line.split("|") if c.strip()]
+        if len(cells) > 2:          # a table row (e.g. QP responsibility table), not a heading
+            out.append(line.strip())
+            continue
+        line = " ".join(cells)
+        if len(line) > 300:  # badly structured HTML: whole page on one line
+            out.extend(x.strip() for x in LONG_SPLIT.split(line))
+        elif line:
+            out.append(line)
+    # "17." on one line and "Recovery Methods" on the next -> one heading line
+    merged: list[str] = []
+    for line in out:
+        if merged and BARE_NUM.match(merged[-1]) and not BARE_NUM.match(line) and not PAGE_NUM.match(line):
+            merged[-1] = f"{merged[-1]} {line}"
+        else:
+            merged.append(line)
+    return merged
+
+
+def _title_like(title: str) -> bool:
+    """Short, heading-shaped text (used to decide where a chapter ends)."""
+    if len(title) > 90 or title.endswith((".", ",", ";", ":")):
+        return False
+    words = [w for w in re.findall(r"[A-Za-z][A-Za-z'’-]*", title) if len(w) > 3]
+    return bool(words) and (title.isupper() or sum(w[0].isupper() for w in words) / len(words) >= 0.5)
+
+
+def _is_toc(title: str, nxt: str) -> bool:
+    head = title[:150]
+    return bool(re.search(r"\.{4,}|_{4,}", head) or re.search(r"\s\d{1,4}$", title) or PAGE_NUM.match(nxt or ""))
+
+
+def _is_toc_page(page: str) -> bool:
+    return sum(bool(re.search(SECTIONS[k], page, re.I)) for k in SECTION_ORDER) >= 5
 
 
 def find_sections(pages: list[str]) -> dict[str, list[int]]:
     """Return {section: [first_page, last_page]} (1-based, inclusive).
 
-    Uses numbered top-level chapter headings ("17 RECOVERY METHODS", "14.0 Processing and Recovery
-    Methods"). A section ends on the page before the next higher-numbered chapter starts.
+    1) Numbered chapter headings ("17 RECOVERY METHODS", "17. | Recovery Methods", "14 Processing and
+       recovery methods"), skipping table-of-contents entries.
+    2) Fallback for reports without numbers: a line that is exactly the chapter title.
+    A section ends before the next higher-numbered chapter or the next found section, whichever is first.
     """
-    heads = list(_headings(pages))
-    found: dict[str, tuple[int, int]] = {}
+    numbered: list[tuple[int, int, str]] = []
+    for pno, page in enumerate(pages, 1):
+        if _is_toc_page(page):
+            continue
+        lines = _lines(page)
+        for i, line in enumerate(lines):
+            m = NUMBERED.match(line)
+            if m and not _is_toc(m.group(2), lines[i + 1] if i + 1 < len(lines) else ""):
+                numbered.append((pno, int(m.group(1)), m.group(2)))
+
+    found: dict[str, tuple[int, int | None]] = {}
     for key in SECTION_ORDER:
         pat = re.compile(rf"^{SECTIONS[key]}\b", re.I)
-        for pno, num, title in heads:
-            if pat.search(title) and key not in found:
-                found[key] = (pno, num)
-                break
+        hit = next(((p, n) for p, n, t in numbered if pat.match(t)), None)
+        if hit is None:  # unnumbered fallback
+            exact = re.compile(rf"^{SECTIONS[key]}$", re.I)
+            for pno, page in enumerate(pages, 1):
+                if _is_toc_page(page):
+                    continue
+                lines = _lines(page)
+                if any(exact.match(l) and not PAGE_NUM.match(lines[i + 1] if i + 1 < len(lines) else "x")
+                       for i, l in enumerate(lines)):
+                    hit = (pno, None)
+                    break
+        if hit:
+            found[key] = hit
+
+    starts = sorted(p for p, _ in found.values())
     result = {}
     for key, (start, num) in found.items():
-        later = [p for p, n, _ in heads if p > start and n > num]
-        end = (min(later) - 1) if later else min(start + 60, len(pages))
-        result[key] = [start, max(start, end)]
+        # generous end: the next key section's start (over-including a few pages beats truncating)
+        ends = [p for p in starts if p > start]
+        end = (min(ends) - 1) if ends else len(pages)
+        result[key] = [start, max(start, min(end, start + 80))]
     return dict(sorted(result.items(), key=lambda kv: kv[1][0]))
 
 

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000127956922000390/ex991.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-03-17",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Hardrock (Greenstone)",
+  "commodity": "",
+  "report_id": "2022-03-17_equinox-gold-corp_ex-99-1",
+  "sha256": "db29e5dcbfd59285fe0170de0cd9552c207fd9b8f564e5f5fe3ef784b0bbce60",
+  "bytes": 6027285,
+  "format": "html",
+  "pages": 332,
+  "parsed_on": "2026-11-17"
+}

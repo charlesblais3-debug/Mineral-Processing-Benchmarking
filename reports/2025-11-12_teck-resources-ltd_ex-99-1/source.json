@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/886986/000110465925109328/tm2527845d6_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "TECK RESOURCES LTD  (TECK, TCKRF)",
+  "cik": "886986",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-11-12",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Highland Valley Copper",
+  "commodity": "",
+  "report_id": "2025-11-12_teck-resources-ltd_ex-99-1",
+  "sha256": "51788a3f208ef0a7dbdc375835214c3c97174d848e30d930494ead6e218a8cad",
+  "bytes": 4004847,
+  "format": "html",
+  "pages": 188,
+  "parsed_on": "2026-11-17"
+}

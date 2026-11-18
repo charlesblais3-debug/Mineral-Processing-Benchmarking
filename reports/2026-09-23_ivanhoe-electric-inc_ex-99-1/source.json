@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1879016/000110465926109810/tm2625798d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Ivanhoe Electric Inc.  (IE)",
+  "cik": "1879016",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-09-23",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "Santa Cruz",
+  "commodity": "",
+  "report_id": "2026-09-23_ivanhoe-electric-inc_ex-99-1",
+  "sha256": "f15ca4814e9e650fc6dde36f447d72ca9a0673e66ee62034ef6f89827dbd4c7c",
+  "bytes": 5037616,
+  "format": "html",
+  "pages": 200,
+  "parsed_on": "2026-11-18"
+}

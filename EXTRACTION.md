@@ -10,6 +10,7 @@ The loader (`python -m pipeline load <report_id>`) validates the file and writes
    `quote` is copied *verbatim* from that page, short (one table row or one sentence fragment) but containing the number.
    The loader rejects quotes it can't find on that page.
 3. **Read only the mapped sections** in `parsed/sections.json`: summary, testwork, recovery, costs, economics (reserves/mining for scale).
+   If a section is missing from the map, search all pages for its key tables (e.g. `grep -il "initial capital" parsed/pages/*.md`).
 4. **Keep the report's own units and currency.** The loader converts (kWh/st → kWh/t, CAD → USD, escalation).
 5. **Prefer LOM / design values** over single-year values. Say which in `statistic`.
 6. **Costs: copy each line of the summary cost tables**, using the report's wording in `raw_label`. Mark subtotals `is_subtotal: true` and the grand total `is_total: true`, so the loader can check that the lines add up. A breakdown of one line (e.g. Processing → labour, power, reagents) gets `part_of: "<that line's raw_label>"` and is checked against it. Only set `l1`/`l2` when the automatic mapping (`python -m pipeline map-cost <type> "<label>"`) would get it wrong.

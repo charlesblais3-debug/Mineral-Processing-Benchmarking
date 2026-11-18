@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1178819/000119312517032757/d266622dex991.htm",
+  "source": "edgar",
+  "issuer": "ALAMOS GOLD INC  (AGI)",
+  "cik": "1178819",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-02-07",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "Young-Davidson",
+  "commodity": "",
+  "report_id": "2017-02-07_alamos-gold-inc_ex-99-1",
+  "sha256": "13f9536b2e8416440f066eeef756e9558fa0eb15d682a5d02696d6668f8738b1",
+  "bytes": 1802616,
+  "format": "html",
+  "pages": 258,
+  "parsed_on": "2026-11-17"
+}

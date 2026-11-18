@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1203464/000106299322017835/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "IAMGOLD CORP  (IAG)",
+  "cik": "1203464",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-08-12",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Côté Gold",
+  "commodity": "",
+  "report_id": "2022-08-12_iamgold-corp_ex-99-1",
+  "sha256": "a5f2e4a6bf57cf14e4cd5928c8a7aea4f046164c4ee782117fccf9a793c1a866",
+  "bytes": 5108341,
+  "format": "html",
+  "pages": 425,
+  "parsed_on": "2026-11-17"
+}

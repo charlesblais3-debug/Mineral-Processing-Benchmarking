@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1067428/000162828022007863/a2021_-xtropicanaxxxtech.htm",
+  "source": "edgar",
+  "issuer": "ANGLOGOLD ASHANTI LTD",
+  "cik": "1067428",
+  "form": "6-K",
+  "exhibit": "EX-96.17",
+  "filed": "2022-03-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Tropicana",
+  "commodity": "",
+  "report_id": "2022-03-30_anglogold-ashanti-ltd_ex-96-17",
+  "sha256": "05f912ed089b83feaed1e897244a7c242cd58e02c8bf49bd1231708ba9d1ac03",
+  "bytes": 263831,
+  "format": "html",
+  "pages": 22,
+  "parsed_on": "2026-11-17"
+}

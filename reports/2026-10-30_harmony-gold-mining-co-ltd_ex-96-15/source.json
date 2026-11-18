@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828026068459/csa_copperxmines-k1300trs2.htm",
+  "source": "edgar",
+  "issuer": "HARMONY GOLD MINING CO LTD  (HMY, HGMCF)",
+  "cik": "1023514",
+  "form": "20-F",
+  "exhibit": "EX-96.15",
+  "filed": "2026-10-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "CSA",
+  "commodity": "",
+  "report_id": "2026-10-30_harmony-gold-mining-co-ltd_ex-96-15",
+  "sha256": "f001f48525d8770b829d4ae1ef527e56dc98e330e142366ed48ed3ae75fef757",
+  "bytes": 4903115,
+  "format": "html",
+  "pages": 121,
+  "parsed_on": "2026-11-18"
+}

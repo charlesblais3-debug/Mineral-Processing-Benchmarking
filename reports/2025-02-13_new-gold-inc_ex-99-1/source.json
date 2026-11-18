@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/800166/000127956925000140/ex991.htm",
+  "source": "edgar",
+  "issuer": "New Gold Inc. /FI  (NGD)",
+  "cik": "800166",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-02-13",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Rainy River",
+  "commodity": "",
+  "report_id": "2025-02-13_new-gold-inc_ex-99-1",
+  "sha256": "1a7494248a276d64ef6994d1ee4382bf1a2b42d084ebb4ab69ff89f193880202",
+  "bytes": 4209455,
+  "format": "html",
+  "pages": 188,
+  "parsed_on": "2026-11-17"
+}

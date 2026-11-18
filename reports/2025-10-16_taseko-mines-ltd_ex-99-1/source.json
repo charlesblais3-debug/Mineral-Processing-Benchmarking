@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/878518/000106299325016124/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "TASEKO MINES LTD  (TGB)",
+  "cik": "878518",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-10-16",
+  "standard": "",
+  "study_level": "FS",
+  "project": "Yellowhead",
+  "commodity": "",
+  "report_id": "2025-10-16_taseko-mines-ltd_ex-99-1",
+  "sha256": "5db22d77df19ca003eae237a1b46d336f66625c42acf8345ae70210907bbac5c",
+  "bytes": 1870876,
+  "format": "html",
+  "pages": 316,
+  "parsed_on": "2026-11-18"
+}

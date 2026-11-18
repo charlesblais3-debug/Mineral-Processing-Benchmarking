@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1958217/000121390025065317/ea024921401ex96-1_lifezone.htm",
+  "source": "edgar",
+  "issuer": "Lifezone Metals Ltd  (LZM, LZM-WT)",
+  "cik": "1958217",
+  "form": "6-K",
+  "exhibit": "EX-96.1",
+  "filed": "2025-07-18",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "Kabanga",
+  "commodity": "",
+  "report_id": "2025-07-18_lifezone-metals-ltd_ex-96-1",
+  "sha256": "bafa2e170726c2a5a2dcfa68b3d346c285ab83c4022f03da8086a2fb1dbfbbce",
+  "bytes": 5365610,
+  "format": "html",
+  "pages": 287,
+  "parsed_on": "2026-11-18"
+}

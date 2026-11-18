@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1364125/000127956922001314/ex991.htm",
+  "source": "edgar",
+  "issuer": "Western Copper & Gold Corp  (WRN)",
+  "cik": "1364125",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-08-09",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Casino",
+  "commodity": "",
+  "report_id": "2022-08-09_western-copper-gold-corp_ex-99-1",
+  "sha256": "87b517578e8c50a0c42561a4ab381b63fed4b00846e447b6171b109877aba733",
+  "bytes": 8244607,
+  "format": "html",
+  "pages": 277,
+  "parsed_on": "2026-11-18"
+}

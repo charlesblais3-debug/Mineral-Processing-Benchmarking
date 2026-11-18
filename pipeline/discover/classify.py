@@ -19,7 +19,7 @@ NOT_REPORT = [
     r"management information circular", r"material change report", r"annual report", r"form 20-f",
     r"form 40-f", r"investor presentation", r"letter to shareholders", r"underwriting agreement",
     r"certificate of qualified person",  # stand-alone QP certificate, not the report
-    r"\bpresentation\b", r"stock symbol", r"for further information", r"introductory notes", r"interim report", r"quarterly report", r"condensed (consolidated|interim)",
+    r"\bpresentation\b", r"stock symbol", r"\bannounces?\b", r"reports q[1-4]", r"production results", r"sustainability report", r"commences\b", r"for further information", r"introductory notes", r"interim report", r"quarterly report", r"condensed (consolidated|interim)",
 ]
 IS_REPORT = [
     r"technical report summary", r"ni 43-101 technical report", r"national instrument 43-101",
@@ -79,6 +79,21 @@ def classify_row(client: PoliteClient, row: dict) -> dict:
     if result["status"] != "not_report":
         result["note"] = (result["note"] + " " if result["note"] else "") + "title: " + title_snippet(text)
     return result
+
+
+def recheck_snippets() -> dict:
+    """Re-apply the NOT_REPORT rules to the saved title snippets (no downloads)."""
+    rows = catalog.read()
+    changed = 0
+    for r in rows.values():
+        if r["status"] in ("is_report", "unsure") and "title:" in r.get("note", ""):
+            head = r["note"].split("title:", 1)[1].lower()
+            hit = next((p for p in NOT_REPORT if re.search(p, head)), None)
+            if hit:
+                r["status"], r["note"] = "not_report", f"neg:{hit} | " + r["note"]
+                changed += 1
+    catalog.write(rows)
+    return {"reclassified_not_report": changed}
 
 
 def run(only_status: str = "new", workers: int = 6) -> dict:

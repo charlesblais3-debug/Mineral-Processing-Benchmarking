@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/795800/000149315226038782/ex96-2.htm",
+  "source": "edgar",
+  "issuer": "NexMetals Mining Corp.  (NEXM)",
+  "cik": "795800",
+  "form": "10-Q",
+  "exhibit": "EX-96.2",
+  "filed": "2026-08-17",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "Selkirk",
+  "commodity": "",
+  "report_id": "2026-08-17_nexmetals-mining-corp_ex-96-2",
+  "sha256": "7c192c82abc57d35543ad5eba28875b40ef3e5cea11e193a2895f2f726abc198",
+  "bytes": 2412929,
+  "format": "html",
+  "pages": 83,
+  "parsed_on": "2026-11-18"
+}

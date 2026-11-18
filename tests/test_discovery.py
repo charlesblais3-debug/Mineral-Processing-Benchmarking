@@ -52,7 +52,7 @@ def test_html_to_text():
     assert classify.to_text(b"<p>Gold&nbsp;<b>CIL</b></p><script>x()</script>") == "Gold CIL"
 
 
-def test_find_sections_skips_toc_and_ends_at_next_chapter():
+def test_find_sections_skips_toc_and_ends_before_next_key_section():
     from pipeline.parse.document import find_sections
     pages = [
         "TABLE OF CONTENTS\n13 MINERAL PROCESSING AND METALLURGICAL TESTING\n103\n17 RECOVERY METHODS\n231",
@@ -64,8 +64,19 @@ def test_find_sections_skips_toc_and_ends_at_next_chapter():
     ]
     s = find_sections(pages)
     assert s["testwork"] == [2, 3]
-    assert s["recovery"] == [4, 4]       # stops before chapter 18
+    assert s["recovery"] == [4, 5]       # generous: runs up to the next key section (costs)
     assert s["costs"][0] == 6
+
+
+def test_find_sections_handles_split_and_table_headings():
+    from pipeline.parse.document import find_sections
+    pages = [
+        "17 | Recovery Methods | J. Smith | Alamos",        # QP table row: not a heading
+        "17.\nRecovery Methods\nThe plant ...",              # number and title on separate lines
+        "21. | Capital and Operating Costs\nTable 21-1",     # number in its own table cell
+    ]
+    s = find_sections(pages)
+    assert s["recovery"][0] == 2 and s["costs"][0] == 3
 
 
 def test_dedupe_title_key_ignores_exhibit_noise():

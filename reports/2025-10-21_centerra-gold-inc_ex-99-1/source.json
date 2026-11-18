@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1854640/000110465925101266/tm2529040d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Centerra Gold Inc.  (CGAU)",
+  "cik": "1854640",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-10-21",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "Mount Milligan",
+  "commodity": "",
+  "report_id": "2025-10-21_centerra-gold-inc_ex-99-1",
+  "sha256": "884a0d9f60c610ae55f8a94a2dfd3a30710f224745cc413b64e6ccfdee855a86",
+  "bytes": 850611,
+  "format": "html",
+  "pages": 292,
+  "parsed_on": "2026-11-18"
+}

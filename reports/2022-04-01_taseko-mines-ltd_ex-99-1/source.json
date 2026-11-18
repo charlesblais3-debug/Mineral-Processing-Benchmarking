@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/878518/000127956922000495/ex991.htm",
+  "source": "edgar",
+  "issuer": "TASEKO MINES LTD  (TGB)",
+  "cik": "878518",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-04-01",
+  "standard": "",
+  "study_level": "",
+  "project": "Gibraltar",
+  "commodity": "",
+  "report_id": "2022-04-01_taseko-mines-ltd_ex-99-1",
+  "sha256": "d44b6f89ac416d7d85400feb8feb22e1674c477ee55cb2063869776f18a25470",
+  "bytes": 2143275,
+  "format": "html",
+  "pages": 100,
+  "parsed_on": "2026-11-18"
+}
