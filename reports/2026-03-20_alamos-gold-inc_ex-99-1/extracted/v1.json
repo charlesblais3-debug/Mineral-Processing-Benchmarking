@@ -1,0 +1,323 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Island Gold District",
+  "title": "Island Gold District 2026 Expansion Study NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2026-02-03",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: February 3, 2026",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "CAD"
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "gravity",
+   "tank_leach",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 280,
+  "quote": "SAG mill and ball mill circuits that produce a primary grind size P80 of 75 µm, gravity concentrators"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 20000,
+   "unit": "t/d",
+   "page": 280,
+   "quote": "bring the process capacity of the expanded Magino mill to 20,000 tpd",
+   "statistic": "design",
+   "context": {
+    "phase": "expansion"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.6,
+   "unit": "%",
+   "page": 280,
+   "quote": "an expected overall gold recovery of approximately 95.6%",
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "blended high-grade circuit"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 94.4,
+   "unit": "%",
+   "page": 280,
+   "quote": "Recovery – Gold % 88.0 94.4 94.4",
+   "metal": "Au",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "period": "2025, Magino mill"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "page": 280,
+   "quote": "produce a primary grind size P80 of 75 µm",
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 18,
+   "unit": "years",
+   "page": 357,
+   "quote": "Mine Life Years 18"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3200,
+   "unit": "USD/oz",
+   "page": 357,
+   "quote": "2030+ US$ 3,200/oz gold",
+   "metal": "Au",
+   "context": {
+    "note": "long-term; 4,000 (2026-27), 3,800 (2028), 3,600 (2029)"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.74,
+   "unit": "USD/CAD",
+   "page": 358,
+   "quote": "The foreign exchange rate of 0.74 US$:C$ was used.",
+   "context": {
+    "pair": "USD/CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth Capital",
+   "value": 951.1,
+   "page": 343,
+   "quote": "Growth Capital $ million 951.1",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 3164.9,
+   "page": 343,
+   "quote": "Sustaining Capital $ million 3,164.9",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 30.3,
+   "page": 348,
+   "quote": "Mine $/t milled 30.30",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 18.13,
+   "page": 348,
+   "quote": "Process $/t milled 18.13",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 12.41,
+   "page": 348,
+   "quote": "G&A $/t milled 12.41",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 60.84,
+   "page": 348,
+   "quote": "Total $/t milled 60.84",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground ($/t ore)",
+   "value": 134.66,
+   "page": 348,
+   "quote": "Underground $/t ore 134.66",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit ($/t mined)",
+   "value": 4.85,
+   "page": 348,
+   "quote": "Open Pit $/t mined 4.85",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Overhead",
+   "value": 4.62,
+   "page": 354,
+   "quote": "Process Overhead $/t milled 4.62",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Laboratory",
+   "value": 0.27,
+   "page": 354,
+   "quote": "Laboratory $/t milled 0.27",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "IG Crushing + Transport",
+   "value": 0.89,
+   "page": 354,
+   "quote": "IG Crushing + Transport $/t milled 0.89",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Comminution",
+   "value": 5.17,
+   "page": 354,
+   "quote": "Comminution $/t milled 5.17",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Thickening + Leaching",
+   "value": 1.79,
+   "page": 354,
+   "quote": "Thickening + Leaching $/t milled 1.79",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "CIP",
+   "value": 0.5,
+   "page": 354,
+   "quote": "CIP $/t milled 0.50",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Acid Wash/EW/Refinery",
+   "value": 0.05,
+   "page": 354,
+   "quote": "Acid Wash/EW/Refinery $/t milled 0.05",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "CN Destruction",
+   "value": 2.14,
+   "page": 354,
+   "quote": "CN Destruction $/t milled 2.14",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings",
+   "value": 0.06,
+   "page": 354,
+   "quote": "Tailings $/t milled 0.06",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Energy",
+   "value": 2.49,
+   "page": 354,
+   "quote": "Energy $/t milled 2.49",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Reagents/Air/Water",
+   "value": 0.12,
+   "page": 354,
+   "quote": "Reagents/Air/Water $/t milled 0.12",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "IG Milling",
+   "value": 0.21,
+   "page": 354,
+   "quote": "IG Milling $/t milled 0.21",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Allocations",
+   "value": -0.19,
+   "page": 354,
+   "quote": "Allocations $/t milled (0.19)",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Process"
+  }
+ ]
+}

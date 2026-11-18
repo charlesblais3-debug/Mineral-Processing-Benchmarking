@@ -35,6 +35,8 @@ def run(con: sqlite3.Connection, target_year: int | None = None) -> dict:
     fx_cache: dict[tuple[str, str], float | None] = {}
     for cid, rid, ctype, value, ccy, base_year, eff in rows:
         year = base_year or (int(eff[:4]) if eff else None)
+        if year and year > target_year:      # newer than the latest index year: treat as current dollars
+            year = target_year
         if (rid, ccy) not in fx_cache:
             fx_cache[(rid, ccy)] = 1.0 if ccy == "USD" else study_fx(con, rid, ccy)
         rate = fx_cache[(rid, ccy)] or (fx.get(ccy, {}).get(year) if year else None)
