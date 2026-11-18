@@ -1,0 +1,196 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "NorthMet",
+  "title": "NI 43-101 Technical Report, NorthMet Project",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2022-10-31",
+  "effective_date_page": 28,
+  "effective_date_quote": "effective date of this report is October 31, 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ni",
+   "Co",
+   "Pd",
+   "Pt",
+   "Au"
+  ],
+  "country": "USA",
+  "region": "Minnesota",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation"
+  ],
+  "page": 80,
+  "quote": "Pinion/Shell Power - Duty kW 12,900 7,490"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 32000,
+   "unit": "st/d",
+   "page": 20,
+   "quote": "32,000-short ton per day (STPD)",
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 20,
+   "unit": "years",
+   "page": 27,
+   "quote": "Life of Mine Yrs. 20"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.6,
+   "unit": "kWh/t",
+   "page": 79,
+   "quote": "Average kWh/t 15.6 15.2 15.6",
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Comp 1 (Comp 2: 15.2, Comp 3: 15.6)",
+    "n_samples": 3
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 13.2,
+   "unit": "kWh/t",
+   "page": 79,
+   "quote": "RWi kWh/t 13.2 13.0 13.9",
+   "statistic": "single",
+   "context": {
+    "ore_type": "Comp 1"
+   }
+  },
+  {
+   "parameter": "ai",
+   "value": 0.39,
+   "unit": "g",
+   "page": 79,
+   "quote": "Ai g 0.39 0.42 0.40",
+   "statistic": "single",
+   "context": {
+    "ore_type": "Comp 1"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 36.7,
+   "unit": "-",
+   "page": 79,
+   "quote": "A × b 36.7 38.0 35.6",
+   "statistic": "single",
+   "context": {
+    "test": "JK DWT",
+    "ore_type": "Comp 1"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 12.9,
+   "unit": "MW",
+   "page": 80,
+   "quote": "Pinion/Shell Power - Duty kW 12,900 7,490",
+   "context": {
+    "mills": "SAG 12.19 m x 6.86 m, duty pinion power"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 7.49,
+   "unit": "MW",
+   "page": 80,
+   "quote": "Pinion/Shell Power - Duty kW 12,900 7,490",
+   "context": {
+    "mills": "Ball 7.32 m x 11.28 m, duty pinion power"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 0.72,
+   "unit": "USD/lb",
+   "page": 27,
+   "quote": "Cash Costs: by-product $/lb. Cu 0.15 0.72",
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "by-product, Phase I LOM"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Project Capital (Phase I)",
+   "value": 1208,
+   "page": 26,
+   "quote": "Initial Project Capital $M 1,208 1,534",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "LOM Sustaining Capital",
+   "value": 345,
+   "page": 26,
+   "quote": "LOM Sustaining Capital $M 345",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining & Delivery to Plant",
+   "value": 4.37,
+   "page": 26,
+   "quote": "Mining & Delivery to Plant $/t processed 4.37",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 8.72,
+   "page": 26,
+   "quote": "Processing $/t processed 8.72",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.26,
+   "page": 26,
+   "quote": "G&A $/t processed 1.26",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 14.35,
+   "page": 26,
+   "quote": "Total $/t processed 14.35",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "is_total": true
+  }
+ ]
+}
