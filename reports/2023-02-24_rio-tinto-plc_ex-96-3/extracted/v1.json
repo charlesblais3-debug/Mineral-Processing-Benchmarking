@@ -1,0 +1,286 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Oyu Tolgoi",
+  "title": "Oyu Tolgoi Operations Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2022-12-31",
+  "effective_date_page": 1,
+  "effective_date_quote": "Oyu Tolgoi Operations Technical Report Summary – 31 December 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Mongolia",
+  "region": "South Gobi",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "vertical_mill",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 39,
+  "quote": "60” x 113” Fuller-Traylor gyratory"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 95000,
+   "unit": "t/d",
+   "page": 39,
+   "quote": "nameplate capacity of 95 kt/d",
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 20,
+   "unit": "MW",
+   "page": 40,
+   "quote": "2 of 38 ft x 23 ft SAG Mills (20 MW ea)",
+   "context": {
+    "mills": "2 SAG 38 ft x 23 ft, each"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 11.4,
+   "unit": "MW",
+   "page": 40,
+   "quote": "4 of 24 ft x 36.5 ft Ball Mills (11.4 MW ea)",
+   "context": {
+    "mills": "4 ball 24 ft x 36.5 ft, each"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "1000 Underground Mine",
+   "value": 3005,
+   "page": 5,
+   "quote": "1000 Underground Mine 3,005",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "3000 Concentrator Conversion",
+   "value": 167,
+   "page": 5,
+   "quote": "3000 Concentrator Conversion 167",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "5000 Utilities & Ancillaries",
+   "value": 149,
+   "page": 5,
+   "quote": "5000 Utilities & Ancillaries 149",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "6000 Offsite Facilities",
+   "value": 159,
+   "page": 5,
+   "quote": "6000 Offsite Facilities 159",
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "7000 Indirect Costs",
+   "value": 1563,
+   "page": 5,
+   "quote": "7000 Indirect Costs 1,563",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "8000 Owner's Costs",
+   "value": 2135,
+   "page": 5,
+   "quote": "8000 Owner's Costs 2,135",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "9000 Escalation, Growth & Contingency & Forex",
+   "value": 179,
+   "page": 5,
+   "quote": "9000 Escalation, Growth & Contingency & Forex 179",
+   "multiplier": "M",
+   "l1": "contingency",
+   "l2": "contingency"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total (Phase 2)",
+   "value": 7358,
+   "page": 5,
+   "quote": "Subtotal 3,877 Total 7,358",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit",
+   "value": 820,
+   "page": 5,
+   "quote": "Open Pit 99 233 820",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground",
+   "value": 2739,
+   "page": 5,
+   "quote": "Underground 1,365 2,231 2,739",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrator",
+   "value": 149,
+   "page": 5,
+   "quote": "Concentrator 33 61 149",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 829,
+   "page": 5,
+   "quote": "Tailings 159 299 829",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 255,
+   "page": 5,
+   "quote": "Infrastructure 93 110 255",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General and Administration, Other",
+   "value": 212,
+   "page": 5,
+   "quote": "General and Administration, Other 84 118 212",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital (before tax)",
+   "value": 5004,
+   "page": 5,
+   "quote": "Total Sustaining Capital (before tax) 1,832 3,151 5,004",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrator",
+   "value": 8271,
+   "page": 48,
+   "quote": "Concentrator ($M) 8,271",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Infrastructure",
+   "value": 2579,
+   "page": 48,
+   "quote": "Infrastructure ($M) 2,579",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga",
+   "l2": "ga",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2279,
+   "page": 48,
+   "quote": "G&A ($M) 2,279",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mine",
+   "value": 4817,
+   "page": 48,
+   "quote": "Open Pit Mine ($M) 4,817",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing and support total ($/t processed ore)",
+   "value": 10.69,
+   "page": 48,
+   "quote": "Total ($/t processed ore) 10.69",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mine ($/t TMM)",
+   "value": 1.61,
+   "page": 48,
+   "quote": "Open Pit Mine ($/t TMM) 1.61",
+   "multiplier": "",
+   "basis_unit": "per_t_moved",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine Closure",
+   "value": 1213,
+   "page": 48,
+   "quote": "Mine Closure ($M) 1,213",
+   "multiplier": "M"
+  }
+ ]
+}
