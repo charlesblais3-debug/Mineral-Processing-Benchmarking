@@ -6,6 +6,7 @@ Commands
   map-cost       try the cost mapper:  python -m pipeline map-cost initial_capex "Grinding area 200"
   discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N]
   parse          download + parse one catalog URL:  python -m pipeline parse <url>
+  scout          show likely value lines:  python -m pipeline scout <report_id> [capex opex ...]
   load           validate an extraction and load it:  python -m pipeline load <report_id>
   dedupe         mark re-filed copies of the same report as duplicates (keeps latest)
   classify       sort catalog rows into is_report / not_report / unsure   [--status new]
@@ -78,6 +79,9 @@ def main(argv: list[str]) -> int:
         from pipeline.parse import document
         rows = catalog.read()
         print(document.process(rows.get(argv[1], {"url": argv[1]})))
+    elif cmd == "scout" and len(argv) >= 2:
+        from pipeline.extract.scout import scout
+        print(scout(argv[1], argv[2:] or None))
     elif cmd == "load" and len(argv) == 2:
         from pipeline.extract.load import load_report
         res = load_report(argv[1])

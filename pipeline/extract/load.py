@@ -140,14 +140,21 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     sums: dict[str, float] = {}
     parents: dict[str, float] = {}        # breakdown checks: parent label -> value
     parts: dict[str, float] = {}
+    mapped: dict[str, tuple] = {}         # label -> (l1, l2), so breakdown lines can inherit their parent's category
     for c in data.get("costs", []):
         mult = MULTIPLIERS.get(c.get("multiplier", "M"), 1)
         value = c["value"] * mult
-        if c.get("l1"):
+        if c.get("is_total") or c.get("is_subtotal"):
+            l1, l2, method, conf = "total", None, "rule", 1.0      # totals are kept for checks, never categorized
+        elif c.get("l1"):
             l1, l2, method, conf = c["l1"], c.get("l2"), "llm", c.get("confidence", 0.8)
         else:
             m = taxonomy.map_cost_label(c["raw_label"], c["cost_type"])
             l1, l2, method, conf = m.l1, m.l2, m.method, m.confidence
+            parent = mapped.get(f"{c['cost_type']}/{c.get('basis_unit', 'total')}/{c.get('part_of')}")
+            if c.get("part_of") and parent and (l1 == "other" or l1 != parent[0]):
+                l1, l2, method, conf = parent[0], (l2 if l1 == parent[0] else "other"), "parent", 0.7
+        mapped[f"{c['cost_type']}/{c.get('basis_unit', 'total')}/{c['raw_label']}"] = (l1, l2)
         verified = quote_on_page(folder, c["page"], c["quote"])
         status = "auto_accepted" if verified and conf >= 0.6 else "needs_review"
         if not verified:
