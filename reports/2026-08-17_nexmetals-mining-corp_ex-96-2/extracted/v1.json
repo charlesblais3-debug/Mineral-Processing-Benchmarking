@@ -1,0 +1,71 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Selkirk",
+  "title": "Selkirk Nickel-Copper-PGE Project S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "effective_date": "2026-06-22",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: 22 June 2026",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co",
+   "Pt",
+   "Pd",
+   "Au",
+   "Ag"
+  ],
+  "country": "Botswana",
+  "region": "North East District",
+  "mine_type": "open_pit",
+  "project_status": "study"
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "page": 10,
+  "quote": "key unit operations, including crushing, grinding, and flotation"
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 54,
+   "unit": "%",
+   "page": 12,
+   "quote": "recoveries of 54%, 88%, 53%, 56%, 78%, 72% and 61%, respectively",
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "statistic_note": "recovery assumption used for Mineral Resource NSR, two-concentrate scenario"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88,
+   "unit": "%",
+   "page": 12,
+   "quote": "recoveries of 54%, 88%, 53%, 56%, 78%, 72% and 61%, respectively",
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "statistic_note": "recovery assumption used for Mineral Resource NSR, two-concentrate scenario"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 53,
+   "unit": "%",
+   "page": 12,
+   "quote": "recoveries of 54%, 88%, 53%, 56%, 78%, 72% and 61%, respectively",
+   "metal": "Co",
+   "statistic": "design",
+   "context": {
+    "statistic_note": "recovery assumption used for Mineral Resource NSR, two-concentrate scenario"
+   }
+  }
+ ],
+ "costs": []
+}

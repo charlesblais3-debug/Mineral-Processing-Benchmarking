@@ -156,7 +156,7 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
             value = value * 1.10231
             note = f"converted from {c['value']} per short ton"
         if c.get("is_total") or c.get("is_subtotal"):
-            l1, l2, method, conf = "total", None, "rule", 1.0      # totals are kept for checks, never categorized
+            l1, l2, method, conf = "total", ("grand_total" if c.get("is_total") else "subtotal"), "rule", 1.0
         elif c.get("l1"):
             l1, l2, method, conf = c["l1"], c.get("l2"), "llm", c.get("confidence", 0.8)
         else:
