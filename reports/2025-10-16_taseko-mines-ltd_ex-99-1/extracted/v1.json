@@ -1,0 +1,389 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Yellowhead",
+  "title": "Yellowhead Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2025-06-15",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective date: June 15 th , 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "vertical_mill",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 19,
+  "quote": "fed to two parallel SAG-ball mill circuits which produce feed for a single rougher flotation bank"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 90000,
+   "unit": "t/d",
+   "page": 212,
+   "quote": "Throughput tpd 90,000",
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 32.85,
+   "unit": "Mt/a",
+   "page": 212,
+   "quote": "Annual Throughput tpa 32,850,000",
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "page": 212,
+   "quote": "Grinding and Flotation Availability % 92",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "page": 212,
+   "quote": "Design Process Plant Copper Recovery % 90",
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 26,
+   "unit": "%",
+   "page": 212,
+   "quote": "Design Final Concentrate Grade % Cu 26",
+   "metal": "Cu",
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 6.6,
+   "unit": "kWh/t",
+   "page": 212,
+   "quote": "Crusher Work Index kWh/t 6.6",
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 11.8,
+   "unit": "kWh/t",
+   "page": 212,
+   "quote": "Bond Rod Mill Work Index kWh/t 11.8",
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13.2,
+   "unit": "kWh/t",
+   "page": 212,
+   "quote": "Bond Ball Mill Work Index kWh/t 13.2",
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "note": "testwork closing screens 74 µm (FLSmidth) and 106 µm (G&T) reported in Section 13"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 50.8,
+   "unit": "-",
+   "page": 212,
+   "quote": "A*b 50.8",
+   "statistic": "design",
+   "context": {
+    "test": "SMC"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 165,
+   "unit": "µm",
+   "page": 212,
+   "quote": "Ball Mill P80 Product Size µm 165",
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 25,
+   "unit": "µm",
+   "page": 212,
+   "quote": "Regrind P80 Product Size µm 25",
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 25,
+   "unit": "years",
+   "page": 23,
+   "quote": "supply a process plant with 90,000 tpd of ore for a period of at least 25 years",
+   "statistic": "min"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.25,
+   "unit": "USD/lb",
+   "page": 21,
+   "quote": "Copper Price US$4.25/lb",
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2400,
+   "unit": "USD/oz",
+   "page": 21,
+   "quote": "Gold Price US$2400/oz",
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.35,
+   "unit": "CAD/USD",
+   "page": 21,
+   "quote": "Foreign Exchange US$1.00 : C$1.35",
+   "context": {
+    "pair": "CAD/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2000,
+   "unit": "MCAD",
+   "page": 23,
+   "quote": "After-Tax NPV at 8% $2.0 billion",
+   "context": {
+    "discount_rate_pct": 8,
+    "currency": "CAD"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 21,
+   "unit": "%",
+   "page": 23,
+   "quote": "After-Tax Internal Rate of Return 21%"
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.3,
+   "unit": "years",
+   "page": 23,
+   "quote": "After-Tax Payback Period 3.3 years"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.9,
+   "unit": "USD/lb",
+   "page": 21,
+   "quote": "Total Operating Cost* 1.90",
+   "metal": "Cu",
+   "context": {
+    "note": "net of byproduct credits, includes offsite"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine and Support Infrastructure",
+   "value": 295,
+   "page": 20,
+   "quote": "Mine and Support Infrastructure 295",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrator and Support Infrastructure",
+   "value": 623,
+   "page": 20,
+   "quote": "Concentrator and Support Infrastructure 623",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings and Water Management Infrastructure",
+   "value": 213,
+   "page": 20,
+   "quote": "Tailings and Water Management Infrastructure 213",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Onsite Ancillary Infrastructure",
+   "value": 143,
+   "page": 20,
+   "quote": "Onsite Ancillary Infrastructure 143",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Offsite Infrastructure",
+   "value": 153,
+   "page": 20,
+   "quote": "Offsite Infrastructure 153",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Costs",
+   "value": 1427,
+   "page": 20,
+   "quote": "Subtotal Direct Costs 1,427",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 207,
+   "page": 20,
+   "quote": "Indirect Costs 207",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 52,
+   "page": 20,
+   "quote": "Owner's Costs 52",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 299,
+   "page": 20,
+   "quote": "Contingency 299",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Indirect Costs",
+   "value": 558,
+   "page": 20,
+   "quote": "Subtotal Indirect Costs 558",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital",
+   "value": 1985,
+   "page": 20,
+   "quote": "Total Initial Capital 1,985",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Water Treatment, TSF Construction & Water Management",
+   "value": 182,
+   "page": 21,
+   "quote": "Water Treatment, TSF Construction & Water Management 182",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Incremental Capital and Equipment Leases",
+   "value": 458,
+   "page": 21,
+   "quote": "Mine Incremental Capital and Equipment Leases 458",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General Sustaining Capital",
+   "value": 323,
+   "page": 21,
+   "quote": "General Sustaining Capital 323",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 963,
+   "page": 21,
+   "quote": "Total Sustaining Capital 963",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 6.06,
+   "page": 21,
+   "quote": "Mining 6.06",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 5.75,
+   "page": 21,
+   "quote": "Processing 5.75",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.07,
+   "page": 21,
+   "quote": "G&A 1.07",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Onsite Cost",
+   "value": 12.89,
+   "page": 21,
+   "quote": "Total Onsite Cost 12.89",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
