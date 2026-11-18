@@ -1,0 +1,338 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Casino",
+  "title": "Casino Project Form 43-101F1 Technical Report, Feasibility Study",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2021-06-13",
+  "effective_date_page": 1,
+  "effective_date_quote": "13 June 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Mo",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Yukon",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2021
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter",
+   "heap_leach",
+   "adr"
+  ],
+  "page": 211,
+  "quote": "Grinding, Classification & Pebble Crushing"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 120000,
+   "unit": "t/d",
+   "page": 150,
+   "quote": "Overall Plant Feed t/d 120,000",
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 43.8,
+   "unit": "Mt/a",
+   "page": 150,
+   "quote": "Overall Plant Feed t/y 43,800,000",
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 93,
+   "unit": "%",
+   "page": 150,
+   "quote": "Grinding and Flotation Plant Availability % 93",
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.189,
+   "unit": "%",
+   "page": 150,
+   "quote": "Copper (Cu) % 0.189",
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.217,
+   "unit": "g/t",
+   "page": 150,
+   "quote": "Gold g/t 0.217",
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.5,
+   "unit": "kWh/t",
+   "page": 150,
+   "quote": "Bond Ball Mill Work Index kWh/t 14.5",
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill (standard)"
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 9.9,
+   "unit": "kWh/t",
+   "page": 150,
+   "quote": "Bond Rod Mill Work Index kWh/t 9.9",
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.265,
+   "unit": "g",
+   "page": 150,
+   "quote": "Abrasion Index (Average) - 0.265",
+   "statistic": "mean"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.6,
+   "unit": "USD/lb",
+   "page": 217,
+   "quote": "US$3.60 per pound of copper",
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1700,
+   "unit": "USD/oz",
+   "page": 217,
+   "quote": "US$1,700 per oz of gold",
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.8,
+   "unit": "USD/CAD",
+   "page": 217,
+   "quote": "with an exchange rate of US$0.80 per CAD$",
+   "context": {
+    "pair": "USD/CAD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2334,
+   "unit": "MCAD",
+   "page": 219,
+   "quote": "Base Case (LTP) $10,019 $4,059 $2,334",
+   "context": {
+    "discount_rate_pct": 8,
+    "currency": "CAD"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 18.1,
+   "unit": "%",
+   "page": 219,
+   "quote": "18.1% after taxes with a payback period of 3.3 years"
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.3,
+   "unit": "years",
+   "page": 219,
+   "quote": "18.1% after taxes with a payback period of 3.3 years"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Directs including freight",
+   "value": 2116,
+   "page": 206,
+   "quote": "Project Directs including freight 2,116",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0,
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Indirects",
+   "value": 431,
+   "page": 206,
+   "quote": "Project Indirects 431",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 369,
+   "page": 206,
+   "quote": "Contingency 369",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant and Infrastructure subtotal",
+   "value": 2916,
+   "page": 206,
+   "quote": "Subtotal 2,916",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Equipment",
+   "value": 433,
+   "page": 206,
+   "quote": "Mine Equipment 433",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Preproduction",
+   "value": 228,
+   "page": 206,
+   "quote": "Mine Preproduction 228",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine subtotal",
+   "value": 661,
+   "page": 206,
+   "quote": "Subtotal 661",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 41,
+   "page": 206,
+   "quote": "Owner's Costs 41",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 3617,
+   "page": 206,
+   "quote": "Total 3,617",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 161,
+   "page": 210,
+   "quote": "Mine 161",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Management Facility",
+   "value": 326,
+   "page": 210,
+   "quote": "Tailings Management Facility 326",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant (includes Heap Leach)",
+   "value": 264,
+   "page": 210,
+   "quote": "Process Plant (includes Heap Leach) 264",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 751,
+   "page": 210,
+   "quote": "Total 751",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost per tonne (concentrator ore only)",
+   "value": 4.28,
+   "page": 210,
+   "quote": "Mining cost per tonne (concentrator ore only) $4.28",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrator (mill)",
+   "value": 6.42,
+   "page": 210,
+   "quote": "Concentrator (mill) $7,811,035 $6.42",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administrative",
+   "value": 0.46,
+   "page": 210,
+   "quote": "General & Administrative $564,011 $0.46",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "LoM operating cost per tonne of sulphide reserve",
+   "value": 11.16,
+   "page": 210,
+   "quote": "Life of mine (LoM) operating cost is $11.16",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost per tonne (all material moved)",
+   "value": 2.3,
+   "page": 210,
+   "quote": "Mining cost per tonne (all material moved) $2.30",
+   "multiplier": "",
+   "basis_unit": "per_t_moved",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
