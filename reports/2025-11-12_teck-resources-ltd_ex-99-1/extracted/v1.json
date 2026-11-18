@@ -1,0 +1,193 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Highland Valley Copper",
+  "title": "NI 43-101 Technical Report on Highland Valley Copper Operations, British Columbia",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-07-01",
+  "effective_date_page": 2,
+  "effective_date_quote": "that has an effective date of 1 July, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "CAD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 135,
+  "quote": "SAG mill dimensions feet 32 dia. x 15.5 EGL"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 161625,
+   "unit": "t/d",
+   "page": 133,
+   "quote": "Nameplate throughput t/d 161,625",
+   "statistic": "design",
+   "context": {
+    "phase": "mine life extension"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 58.993,
+   "unit": "Mt/a",
+   "page": 133,
+   "quote": "Annual throughput t/a 58,993,125",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.07,
+   "unit": "%",
+   "page": 97,
+   "quote": "Copper recovery 2025 HVC/2019 MLE models 89.07%",
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 60.77,
+   "unit": "%",
+   "page": 97,
+   "quote": "Molybdenum bulk/circuit recovery 2019 MLE/2021 HVC 60.77%",
+   "metal": "Mo",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 34.9,
+   "unit": "%",
+   "page": 97,
+   "quote": "Copper concentrate grade 2025 HVC model 34.9% copper",
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 51.0,
+   "unit": "%",
+   "page": 97,
+   "quote": "Molybdenum concentrate grade Fixed value 51.0% molybdenum",
+   "metal": "Mo"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.8,
+   "unit": "kWh/t",
+   "page": 91,
+   "quote": "The BWi results ranged from 14.2–24.1 kWh/t, with an average of 17.8 kWh/t",
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 150,
+    "ore_type": "Bethlehem deposit"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 33.3,
+   "unit": "-",
+   "page": 91,
+   "quote": "The overall average was 33.3",
+   "statistic": "mean",
+   "context": {
+    "test": "JK DWT / SMC",
+    "ore_type": "Bethlehem deposit"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 423,
+   "unit": "µm",
+   "page": 135,
+   "quote": "Cyclone overflow 80% passing size μm 423",
+   "statistic": "design",
+   "context": {
+    "note": "A-line"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth",
+   "value": 2229,
+   "page": 166,
+   "quote": "Growth 2,229 369 916 813 129",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining",
+   "value": 2046,
+   "page": 166,
+   "quote": "Sustaining 2,046 69 116 163",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill ($/t milled)",
+   "value": 6.84,
+   "page": 167,
+   "quote": "Mill ($/t milled) 6.84 7.34",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Admin ($/t milled)",
+   "value": 1.46,
+   "page": 167,
+   "quote": "Admin ($/t milled) 1.46 1.56",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total ($/t milled)",
+   "value": 17.32,
+   "page": 167,
+   "quote": "Total ($/t milled) 17.32 17.12",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine ($/t mined)",
+   "value": 3.45,
+   "page": 167,
+   "quote": "Mine ($/t mined) 3.45 3.89",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}

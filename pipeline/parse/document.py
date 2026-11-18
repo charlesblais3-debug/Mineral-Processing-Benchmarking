@@ -54,6 +54,7 @@ def _html_fragment_to_text(fragment: str) -> str:
     f = re.sub(r"(?i)</tr\s*>|<br\s*/?>|</p\s*>|</div\s*>|</h\d\s*>|</li\s*>", "\n", f)
     f = re.sub(r"<[^>]+>", " ", f)
     f = html.unescape(f).replace("\xa0", " ")
+    f = re.sub(r"[\u200b-\u200f\u202a-\u202e\u2060\ufeff]", "", f)   # zero-width / direction marks
     lines = []
     for line in f.splitlines():
         line = re.sub(r"[ \t]+", " ", line).strip()
