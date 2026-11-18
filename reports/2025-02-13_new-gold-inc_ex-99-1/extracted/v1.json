@@ -1,0 +1,231 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Rainy River",
+  "title": "NI 43-101 Technical Report, Rainy River Mine, Ontario, Canada",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "gravity",
+   "ilr",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 130,
+  "quote": "Concentration and Intensive Cyanide Leaching"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 24563,
+   "unit": "t/d",
+   "page": 128,
+   "quote": "averaging 24,563 tpd",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "period": "2024"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 8.99,
+   "unit": "Mt/a",
+   "page": 128,
+   "quote": "processed 8.99 Mt",
+   "basis": "actual",
+   "context": {
+    "period": "2024"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.8,
+   "unit": "%",
+   "page": 128,
+   "quote": "average metallurgical recoveries of 91.8% gold",
+   "metal": "Au",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "period": "2024"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 61.1,
+   "unit": "%",
+   "page": 128,
+   "quote": "61.1% silver",
+   "metal": "Ag",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "period": "2024"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 80,
+   "unit": "µm",
+   "page": 129,
+   "quote": "the target product size is a P 80 of 80 µm",
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 9,
+   "unit": "years",
+   "page": 128,
+   "quote": "a projected mine life of nine years (2025-2033)"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.35,
+   "unit": "CAD/USD",
+   "page": 153,
+   "quote": "C$1.35 : US$1.00 for 2025 to 2027",
+   "context": {
+    "pair": "CAD/USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital and deferred waste stripping",
+   "value": 116.2,
+   "page": 153,
+   "quote": "Capital and deferred waste stripping 46.0 65.0 5.2 116.2",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground development",
+   "value": 103.0,
+   "page": 153,
+   "quote": "2.8 103.0",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings management",
+   "value": 59.3,
+   "page": 153,
+   "quote": "Tailings management 25.4 23.3 10.6 59.3",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 99.7,
+   "page": 153,
+   "quote": "4.2 99.7",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 378.2,
+   "page": 153,
+   "quote": "7.0 378.2",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 15.67,
+   "page": 154,
+   "quote": "31.02 15.67",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "basis": "estimate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 10.99,
+   "page": 154,
+   "quote": "14.80 10.99",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 5.4,
+   "page": 154,
+   "quote": "13.43 5.40",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 3.3,
+   "page": 154,
+   "quote": "7.91 3.30",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 35.9,
+   "page": 154,
+   "quote": "67.15 35.90",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open-pit mining",
+   "value": 5.16,
+   "page": 154,
+   "quote": "12.85 5.16",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground mining",
+   "value": 37.5,
+   "page": 154,
+   "quote": "31.02 37.5",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
