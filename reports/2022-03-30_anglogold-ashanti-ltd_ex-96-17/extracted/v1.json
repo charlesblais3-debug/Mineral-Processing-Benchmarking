@@ -1,0 +1,186 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Tropicana",
+  "title": "AngloGold Ashanti Tropicana Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_page": 19,
+  "effective_date_quote": "AngloGold Ashanti Tropicana - 31 December 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "cil",
+   "elution_ew"
+  ],
+  "page": 3,
+  "quote": "feeding a set of secondary cone crushers and tertiary rolls crushers (HPGR)"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 9.3,
+   "unit": "Mt/a",
+   "page": 3,
+   "quote": "The processing plant has a capacity of 9.3Mtpa",
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 14,
+   "unit": "MW",
+   "page": 3,
+   "quote": "A 14MW Ball mill and 6MW Ball mill in parallel",
+   "context": {
+    "mills": "ball mill 1"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 6,
+   "unit": "MW",
+   "page": 3,
+   "quote": "A 14MW Ball mill and 6MW Ball mill in parallel",
+   "context": {
+    "mills": "ball mill 2"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 21,
+   "unit": "kWh/t",
+   "page": 11,
+   "quote": "The Bond work index (BWI) varies between 17 to 21",
+   "statistic": "max",
+   "context": {
+    "test": "Bond ball mill",
+    "statistic_note": "range 17 to 21"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17,
+   "unit": "kWh/t",
+   "page": 11,
+   "quote": "The Bond work index (BWI) varies between 17 to 21",
+   "statistic": "min",
+   "context": {
+    "test": "Bond ball mill",
+    "statistic_note": "range 17 to 21"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "page": 19,
+   "quote": "The Mineral Reserve gold price used was $1,633AUD or $1,200USD",
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1008,
+   "unit": "USD/oz",
+   "page": 19,
+   "quote": "Total AISC USD/oz 1 1,008",
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 1005,
+   "page": 19,
+   "quote": "Mining Cost USD M 1,005",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 741,
+   "page": 19,
+   "quote": "Processing Cost USD M 741",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Admin",
+   "value": 147,
+   "page": 19,
+   "quote": "General & Admin USD M 147",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Operating Costs",
+   "value": 36,
+   "page": 19,
+   "quote": "Other Operating Costs USD M 36",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 1929,
+   "page": 19,
+   "quote": "Total Operating Cost USD M 1,929",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 165,
+   "page": 19,
+   "quote": "Sustaining Capital USD M 165",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other Capital (non Sust.)",
+   "value": 151,
+   "page": 19,
+   "quote": "Other Capital (non Sust.) USD M 151",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 22,
+   "page": 19,
+   "quote": "Closure Costs USD M 22",
+   "multiplier": "M",
+   "basis_unit": "total"
+  }
+ ]
+}
