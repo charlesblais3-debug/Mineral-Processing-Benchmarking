@@ -1,0 +1,179 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Gibraltar",
+  "title": "Technical Report on the Mineral Reserve Update at the Gibraltar Mine",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2022-03-15",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective date: March 15, 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "CAD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_filter"
+  ],
+  "page": 6,
+  "quote": "design capacity of 85,000 tons per day"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 85000,
+   "unit": "st/d",
+   "page": 6,
+   "quote": "design capacity of 85,000 tons per day",
+   "statistic": "design",
+   "context": {
+    "note": "imperial (short) tons"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 23,
+   "unit": "years",
+   "page": 11,
+   "quote": "supports 23 years of operation"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Major Mining Equipment",
+   "value": 41,
+   "page": 90,
+   "quote": "Major Mining Equipment $41",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Improvements",
+   "value": 5,
+   "page": 90,
+   "quote": "Process Improvements $5",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Crusher & Substation Relocation",
+   "value": 43,
+   "page": 90,
+   "quote": "Crusher & Substation Relocation $43",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Road and Utility Realignment",
+   "value": 24,
+   "page": 90,
+   "quote": "Road and Utility Realignment $24",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 135,
+   "page": 90,
+   "quote": "Tailings $135",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Water Management & Treatment",
+   "value": 35,
+   "page": 90,
+   "quote": "Water Management & Treatment $35",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General Sustaining",
+   "value": 635,
+   "page": 90,
+   "quote": "General Sustaining $635",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 917,
+   "page": 90,
+   "quote": "Total $917",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine cost/ton milled",
+   "value": 5.91,
+   "page": 91,
+   "quote": "Mine cost/ton milled $5.91",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost/ton milled",
+   "value": 4.55,
+   "page": 91,
+   "quote": "Processing cost/ton milled $4.55",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Admin cost/ton milled",
+   "value": 1.0,
+   "page": 91,
+   "quote": "General and Admin cost/ton milled $1.00",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating cost/ton milled",
+   "value": 11.47,
+   "page": 91,
+   "quote": "Total Operating cost/ton milled $11.47",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "is_total": true
+  }
+ ]
+}

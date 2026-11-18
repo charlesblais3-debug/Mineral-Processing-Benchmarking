@@ -151,6 +151,10 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     for c in data.get("costs", []):
         mult = MULTIPLIERS.get(c.get("multiplier", "M"), 1)
         value = c["value"] * mult
+        note = None
+        if c.get("per_short_ton"):           # $/short ton -> $/tonne (1 t = 1.10231 st)
+            value = value * 1.10231
+            note = f"converted from {c['value']} per short ton"
         if c.get("is_total") or c.get("is_subtotal"):
             l1, l2, method, conf = "total", None, "rule", 1.0      # totals are kept for checks, never categorized
         elif c.get("l1"):
@@ -180,13 +184,13 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         con.execute(
             "INSERT INTO cost_items(report_id, cost_type, category_l1, category_l2, raw_label, value, currency,"
             " basis_unit, base_year, is_subtotal, includes_indirects, basis, page, quote, quote_verified,"
-            " mapping_method, mapping_confidence, extractor, extractor_version, review_status)"
-            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            " mapping_method, mapping_confidence, extractor, extractor_version, review_status, review_note)"
+            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (report_id, c["cost_type"], l1, l2, c["raw_label"], value, c.get("currency", info.get("currency")),
              c.get("basis_unit", "total"), c.get("base_year", info.get("cost_base_year")),
              int(bool(c.get("is_subtotal") or c.get("is_total") or c.get("part_of"))), c.get("includes_indirects"),
              c.get("basis", "estimate"), c["page"], c["quote"], int(verified), method, conf, extractor,
-             EXTRACTOR_VERSION, status),
+             EXTRACTOR_VERSION, status, note),
         )
         n_costs += 1
 
@@ -211,3 +215,10 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
 
 def taxonomy_slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def find_quote(report_id: str, quote: str) -> list[int]:
+    """Pages whose text contains the quote (same normalization as the loader's check)."""
+    q = _squash(quote)
+    pages_dir = REPORTS / report_id / "parsed" / "pages"
+    return [int(f.stem) for f in sorted(pages_dir.glob("*.md")) if q in _squash(f.read_text(encoding="utf-8"))]
