@@ -1,0 +1,347 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Côté Gold",
+  "title": "NI 43-101 Technical Report, Côté Gold Project",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2022-05-01",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "vertical_mill",
+   "gravity",
+   "ilr",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 281,
+  "quote": "consists of a closed HPGR circuit, primary grinding with ball mill circuit"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 35500,
+   "unit": "t/d",
+   "page": 277,
+   "quote": "Daily Processing Rate tpd, dry 35,500",
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 12.9,
+   "unit": "Mt/a",
+   "page": 277,
+   "quote": "Annual Processing Rate Mtpa, dry 12.9",
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92.6,
+   "unit": "%",
+   "page": 277,
+   "quote": "Process Plant Availability 1 % 92.6",
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.68,
+   "unit": "g",
+   "page": 278,
+   "quote": "Design (75 th percentile) Ai 0.68",
+   "statistic": "p75"
+  },
+  {
+   "parameter": "cwi",
+   "value": 13.3,
+   "unit": "kWh/t",
+   "page": 278,
+   "quote": "Crusher Work Index (Cwi) kWh/t 13.3",
+   "statistic": "p75"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.1,
+   "unit": "kWh/t",
+   "page": 278,
+   "quote": "Bwi kWh/t 16.1",
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "statistic_note": "design, 75th percentile"
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 17.3,
+   "unit": "kWh/t",
+   "page": 278,
+   "quote": "Rwi kWh/t 17.3",
+   "statistic": "p75"
+  },
+  {
+   "parameter": "dwi",
+   "value": 11,
+   "unit": "kWh/m3",
+   "page": 278,
+   "quote": "Dwi kWh/m 3 11",
+   "statistic": "p75",
+   "context": {
+    "test": "SMC"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.98,
+   "unit": "g/t",
+   "page": 278,
+   "quote": "Head Gold Grade, Average g/t Au 0.98",
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.8,
+   "unit": "%",
+   "page": 278,
+   "quote": "Overall Au Recovery % 91.8",
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "to_product": "dore",
+    "gravity_recovery_pct": 23
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 100,
+   "unit": "µm",
+   "page": 281,
+   "quote": "final product size of P 80 100 µm",
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 16.0,
+   "unit": "MW",
+   "page": 280,
+   "quote": "Installed motor kW 16,000",
+   "context": {
+    "mills": "Ball mill 7.9 m x 12.3 m EGL"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 7.8,
+   "unit": "MW",
+   "page": 280,
+   "quote": "Installed motor kW 7,800",
+   "context": {
+    "mills": "HPGR 2.4 m x 2.4 m"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 6.712,
+   "unit": "MW",
+   "page": 280,
+   "quote": "Installed power (total) kW 6,712",
+   "context": {
+    "mills": "2 vertical mills"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "page": 328,
+   "quote": "US$1,600/oz Au for 2026 onwards",
+   "metal": "Au",
+   "context": {
+    "note": "long-term; 1,750 (2023), 1,700 (2024-25)"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1109,
+   "unit": "MUSD",
+   "page": 332,
+   "quote": "the after-tax NPV at a 5% discount is $1,109 million",
+   "context": {
+    "discount_rate_pct": 5,
+    "note": "excludes sunk costs"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 693,
+   "unit": "USD/oz",
+   "page": 329,
+   "quote": "Total operating cash cost $693/oz Au",
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 854,
+   "unit": "USD/oz",
+   "page": 329,
+   "quote": "All-In Sustaining Cost (AISC) $854/oz Au.",
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Procurement",
+   "value": 343,
+   "page": 315,
+   "quote": "Procurement 343",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Earthworks",
+   "value": 575,
+   "page": 315,
+   "quote": "Earthworks 575",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process",
+   "value": 519,
+   "page": 315,
+   "quote": "Process 519",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 162,
+   "page": 315,
+   "quote": "Infrastructure 162",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects and EPCM",
+   "value": 533,
+   "page": 315,
+   "quote": "Indirects and EPCM 533",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 274,
+   "page": 315,
+   "quote": "Mining 274",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 294,
+   "page": 315,
+   "quote": "Owner's Costs 294",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 185,
+   "page": 315,
+   "quote": "Contingency 185",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Escalation",
+   "value": 80,
+   "page": 315,
+   "quote": "Escalation 80",
+   "multiplier": "M",
+   "l1": "contingency",
+   "l2": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Revised Project Budget (100% Basis)",
+   "value": 2965,
+   "page": 315,
+   "quote": "Revised Project Budget (100% Basis) 2,965",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital costs",
+   "value": 1136,
+   "page": 324,
+   "quote": "Sustaining capital costs are estimated at $1,136 million",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (excl CWS)",
+   "value": 6.2,
+   "page": 324,
+   "quote": "Mining (excl CWS) 6.20 (8.49 if CWS included)",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 7.97,
+   "page": 324,
+   "quote": "Processing 7.97",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 3.31,
+   "page": 324,
+   "quote": "G&A 3.31",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 17.48,
+   "page": 324,
+   "quote": "Total 17.48",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
