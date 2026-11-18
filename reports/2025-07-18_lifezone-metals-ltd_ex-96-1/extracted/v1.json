@@ -1,0 +1,333 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kabanga",
+  "title": "Kabanga Nickel Project Feasibility Study - Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2025-07-18",
+  "effective_date_page": 1,
+  "effective_date_quote": "EFFECTIVE JULY 18, 2025",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co"
+  ],
+  "country": "Tanzania",
+  "region": "Kagera",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 171,
+  "quote": "Number of milling and flotation trains No. 2.0"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 3.4,
+   "unit": "Mt/a",
+   "page": 171,
+   "quote": "Design Throughput Mtpa (dry) 3.4",
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 100,
+   "unit": "µm",
+   "page": 171,
+   "quote": "Flotation feed size (F 80 ) µm 100",
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.98,
+   "unit": "%",
+   "page": 171,
+   "quote": "Nickel feed grade (range/average) % 1.17–2.39 1.98",
+   "metal": "Ni",
+   "statistic": "mean"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 16,
+   "unit": "%",
+   "page": 171,
+   "quote": "Target nickel concentrate grade % > 16",
+   "metal": "Ni",
+   "statistic": "min"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 9.1,
+   "unit": "kWh/t",
+   "page": 90,
+   "quote": "tests were performed at a 100 μm closing size with a reported BWi value of 9.1 kWh/t to 10.2 kWh/t for the MSSX samples",
+   "statistic": "min",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 100,
+    "ore_type": "MSSX (massive sulphide)",
+    "statistic_note": "range 9.1-10.2"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 10.2,
+   "unit": "kWh/t",
+   "page": 90,
+   "quote": "tests were performed at a 100 μm closing size with a reported BWi value of 9.1 kWh/t to 10.2 kWh/t for the MSSX samples",
+   "statistic": "max",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 100,
+    "ore_type": "MSSX (massive sulphide)",
+    "statistic_note": "range 9.1-10.2"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 20,
+   "unit": "years",
+   "page": 41,
+   "quote": "Project Life Years 20"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1579,
+   "unit": "MUSD",
+   "page": 41,
+   "quote": "Net Present Value (NPV 8% ) USD million 1,579",
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 23.3,
+   "unit": "%",
+   "page": 41,
+   "quote": "Internal Rate of Return (IRR) % 23.3"
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.5,
+   "unit": "years",
+   "page": 41,
+   "quote": "Payback Period (from first production) Years 4.5"
+  },
+  {
+   "parameter": "aisc",
+   "value": 3.36,
+   "unit": "USD/lb",
+   "page": 41,
+   "quote": "Total AISC (net of by-product credits) USD/lb Payable Ni 3.36",
+   "metal": "Ni"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Surface Infrastructure",
+   "value": 30.8,
+   "page": 40,
+   "quote": "Mining Surface Infrastructure 3.59 30.80",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Underground Mining",
+   "value": 181.0,
+   "page": 40,
+   "quote": "Underground Mining 21.07 181.00",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrator",
+   "value": 243.3,
+   "page": 40,
+   "quote": "Concentrator 28.32 243.30",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 139.79,
+   "page": 40,
+   "quote": "Infrastructure 16.27 139.79",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TSF",
+   "value": 18.48,
+   "page": 40,
+   "quote": "TSF 2.15 18.48",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "220 kV Overhead Line",
+   "value": 47.89,
+   "page": 40,
+   "quote": "220 kV Overhead Line 5.57 47.89",
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "power"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrate Logistics Infrastructure",
+   "value": 21.8,
+   "page": 40,
+   "quote": "Concentrate Logistics Infrastructure 2.54 21.80",
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "port_rail"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Facilities and Services",
+   "value": 4.68,
+   "page": 40,
+   "quote": "Construction Facilities and Services 0.54 4.68",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM",
+   "value": 74.35,
+   "page": 40,
+   "quote": "EPCM 8.66 74.35",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Cost",
+   "value": 13.06,
+   "page": 40,
+   "quote": "Owners Cost 1.52 13.06",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Land Access and Resettlement",
+   "value": 83.9,
+   "page": 40,
+   "quote": "Land Access and Resettlement 9.77 83.90",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 83.43,
+   "page": 40,
+   "quote": "Contingency (as a percentage of Pre-Production Capex) 9.70 83.43",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Capex and Contingency",
+   "value": 942.47,
+   "page": 40,
+   "quote": "Pre-Production Capex and Contingency 942.47",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 1277,
+   "page": 41,
+   "quote": "Sustaining Capital USD million 1,277",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 52.18,
+   "page": 41,
+   "quote": "Mining 2,725.05 52.18",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 12.15,
+   "page": 41,
+   "quote": "Processing 1 634.46 12.15",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Owners Cost",
+   "value": 5.38,
+   "page": 41,
+   "quote": "Owners Cost 280.86 5.38",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Licence Fee",
+   "value": 0.39,
+   "page": 41,
+   "quote": "Mining Licence Fee 2 20.39 0.39",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes",
+   "l2": "taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Opex",
+   "value": 70.1,
+   "page": 41,
+   "quote": "Total Site Opex 3,660.76 70.10",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Transport and Insurance",
+   "value": 16.47,
+   "page": 41,
+   "quote": "Concentrate Transport and Insurance 860.32 16.47",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "transport"
+  }
+ ]
+}
