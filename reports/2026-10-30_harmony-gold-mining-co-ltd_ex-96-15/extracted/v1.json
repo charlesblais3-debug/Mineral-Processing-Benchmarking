@@ -1,0 +1,226 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "CSA",
+  "title": "Technical Report Summary of the CSA Copper Mine, New South Wales, Australia",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2026-06-30",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: 30 June 2026",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Australia",
+  "region": "New South Wales",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "AUD",
+  "cost_base_year": 2026
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 83,
+  "quote": "Two Metso 6.6m by 2.1m semi-autogenous grinding (SAG) mills with 1.6MW motors"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.061,
+   "unit": "Mt/a",
+   "page": 83,
+   "quote": "Ore Milled kt 1,061 1,018 791",
+   "basis": "actual",
+   "context": {
+    "period": "FY24"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.67,
+   "unit": "%",
+   "page": 83,
+   "quote": "Milled Grade % Cu 3.67 4.01 3.71",
+   "metal": "Cu",
+   "basis": "actual",
+   "context": {
+    "period": "FY24"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 26,
+   "unit": "%",
+   "page": 83,
+   "quote": "Copper Concentrate Grade % Cu 26 26 26",
+   "metal": "Cu",
+   "basis": "actual"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 98,
+   "unit": "%",
+   "page": 83,
+   "quote": "Copper Recovery to Conc. % Cu 98 98 98",
+   "metal": "Cu",
+   "basis": "actual",
+   "context": {
+    "period": "FY24-FY26"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 97.5,
+   "unit": "%",
+   "page": 112,
+   "quote": "0.975 0.975 Recovery Ag",
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "LOM total column, reported as 0.975"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 1.6,
+   "unit": "MW",
+   "page": 83,
+   "quote": "semi-autogenous grinding (SAG) mills with 1.6MW motors",
+   "context": {
+    "mills": "2 SAG 6.6 m x 2.1 m, each"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 704,
+   "unit": "MAUD",
+   "page": 113,
+   "quote": "NPV (7%) After Tax AUD$M 704",
+   "context": {
+    "discount_rate_pct": 7,
+    "currency": "AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining excl. def. strip. / cap. dev.",
+   "value": 365,
+   "page": 107,
+   "quote": "Sustaining excl. def. strip. / cap. dev. AUD$M -365",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development (capitalised development + other)",
+   "value": 673,
+   "page": 107,
+   "quote": "Mine Development (capitalised development + other) AUD$M -673",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansionary",
+   "value": 94,
+   "page": 107,
+   "quote": "Expansionary AUD$M -94",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 2771,
+   "page": 109,
+   "quote": "-59 -2771 Processing Costs",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 776,
+   "page": 109,
+   "quote": "-18 -776 General",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General Administration",
+   "value": 874,
+   "page": 109,
+   "quote": "-19 -874 Total Direct",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Costs",
+   "value": 4422,
+   "page": 109,
+   "quote": "-96 -4422 Mining Costs",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost /t mined",
+   "value": 118,
+   "page": 109,
+   "quote": "105 118 Processing cost",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost / t milled",
+   "value": 44,
+   "page": 109,
+   "quote": "35 44 G&A cost",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A cost / t milled",
+   "value": 49,
+   "page": 109,
+   "quote": "37 49 Total operating",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating costs / t milled",
+   "value": 224,
+   "page": 109,
+   "quote": "182 224",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_subtotal": true
+  }
+ ]
+}
