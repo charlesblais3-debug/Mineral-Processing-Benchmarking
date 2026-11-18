@@ -1,0 +1,208 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Young-Davidson",
+  "title": "NI 43-101 Technical Report, Young-Davidson Mine, Matachewan, Ontario",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2016-12-31",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: December 31, 2016",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "CAD",
+  "cost_base_year": 2017
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "flotation",
+   "regrind",
+   "vertical_mill",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 203,
+  "quote": "The Young-Davidson mill can be considered a standard flotation/CIL gold mill."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 8000,
+   "unit": "t/d",
+   "page": 253,
+   "quote": "The process plant is currently operating at design rates of 8,000 tpd",
+   "statistic": "design",
+   "basis": "actual"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91,
+   "unit": "%",
+   "page": 253,
+   "quote": "recoveries of 91%",
+   "metal": "Au",
+   "statistic": "mean",
+   "basis": "actual"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 15,
+   "unit": "µm",
+   "page": 203,
+   "quote": "nominal P 80 target of 15 µm",
+   "statistic": "design",
+   "context": {
+    "note": "flotation concentrate regrind, vertical tower mill"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Pebble Crusher",
+   "value": 5200000,
+   "page": 242,
+   "quote": "Pebble Crusher $ 5,200,000 $ 5,200,000",
+   "multiplier": "",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 30193000,
+   "page": 242,
+   "quote": "Tailings $ 6,954,000 $ 30,193,000",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental & Reclamation",
+   "value": 10427000,
+   "page": 242,
+   "quote": "Environmental & Reclamation $ 600,000 $ 10,427,000",
+   "multiplier": "",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Development",
+   "value": 336283000,
+   "page": 242,
+   "quote": "Capital Development $ 42,778,000 $ 336,283,000",
+   "multiplier": "",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Infrastructure",
+   "value": 40518000,
+   "page": 242,
+   "quote": "Underground Infrastructure $ 8,045,000 $ 40,518,000",
+   "multiplier": "",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Lower Mine Infrastructure",
+   "value": 52753000,
+   "page": 242,
+   "quote": "Lower Mine Infrastructure $ 13,658,000 $ 52,753,000",
+   "multiplier": "",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "New Equipment",
+   "value": 13194000,
+   "page": 242,
+   "quote": "New Equipment $ 8,861,000 $ 13,194,000",
+   "multiplier": "",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Replacement Equipment",
+   "value": 35311000,
+   "page": 242,
+   "quote": "Replacement Equipment $ 2,383,000 $ 35,311,000",
+   "multiplier": "",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment Rebuilds & Misc. Maint.",
+   "value": 64281000,
+   "page": 242,
+   "quote": "Equipment Rebuilds & Misc. Maint. $ 7,404,000 $ 64,281,000",
+   "multiplier": "",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Diamond Drilling",
+   "value": 11630000,
+   "page": 242,
+   "quote": "Diamond Drilling $ 1,554,000 $ 11,630,000",
+   "multiplier": "",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Young-Davidson",
+   "value": 599790000,
+   "page": 242,
+   "quote": "Total Young-Davidson $ 97,437,000 $ 599,790,000",
+   "multiplier": "",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling ($/t milled)",
+   "value": 14.34,
+   "page": 244,
+   "quote": "Milling ($/t milled) 14.95 14.34",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Admin ($/t milled)",
+   "value": 3.94,
+   "page": 244,
+   "quote": "Admin ($/t milled) 4.30 3.94",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining ($/t mined)",
+   "value": 36.8,
+   "page": 244,
+   "quote": "Mining ($/t mined) 44.84 36.80",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
