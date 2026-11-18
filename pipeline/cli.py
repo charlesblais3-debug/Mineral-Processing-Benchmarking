@@ -7,6 +7,7 @@ Commands
   discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N]
   parse          download + parse one catalog URL:  python -m pipeline parse <url>
   scout          show likely value lines:  python -m pipeline scout <report_id> [capex opex ...]
+  export-web     build the web interface (app/web/benchmark.html, app/web/dist/index.html)
   rebuild        recreate data/benchmark.db from every reports/*/extracted/v1.json
   load           validate an extraction and load it:  python -m pipeline load <report_id>
   dedupe         mark re-filed copies of the same report as duplicates (keeps latest)
@@ -83,6 +84,10 @@ def main(argv: list[str]) -> int:
     elif cmd == "scout" and len(argv) >= 2:
         from pipeline.extract.scout import scout
         print(scout(argv[1], argv[2:] or None))
+    elif cmd == "export-web":
+        from pipeline import export_web
+        for f in export_web.write(export_web.build()):
+            print(f"wrote {f} ({f.stat().st_size // 1024} KB)")
     elif cmd == "rebuild":
         from pipeline.extract.load import REPORTS, load_report
         DEFAULT_DB.unlink(missing_ok=True)

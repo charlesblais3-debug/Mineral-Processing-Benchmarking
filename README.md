@@ -57,3 +57,15 @@ Then open Claude Code in this folder. Discovery, downloads and extraction run th
 ```bash
 python -m pipeline map-cost initial_capex "Area 200 - Grinding"
 ```
+
+## The interface
+
+```bash
+python -m pipeline export-web
+```
+
+This rebuilds `app/web/dist/index.html` from the database. Open that file in any browser: no server is needed. It has three parts:
+
+- **Explore**: preset charts (initial CAPEX, process plant CAPEX, site and process OPEX per tonne, Bond work index) against throughput, with a fitted power-law curve, filters by commodity, stage and flowsheet, and a sortable project table.
+- **Estimate**: describe a project (commodity, flowsheet, t/d, optional BWi) and get peer-based ranges for CAPEX and OPEX, plus the closest comparable projects.
+- **Project sheet**: click any project or chart point. Every number has a page reference; click it to see the verbatim quote and open the report.

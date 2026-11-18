@@ -1,0 +1,506 @@
+<title>Mineral Processing Benchmarks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an engineer's workbench. Sticky header with two views (Explore, Estimate);
+   one large chart over a dense project table; a project data sheet slides in from the right. */
+:root {
+  --bg: #eef2f3; --surface: #ffffff; --sunk: #e3e9eb; --ink: #15212a; --muted: #5a6872; --line: #d3dce0;
+  --accent: #1d5fa6; --accent-ink: #ffffff; --accent-soft: #dbe7f5;
+  --au: #a87a12; --cu: #b0532a; --ni: #2f8461; --ok: #2f8461; --warn: #a4660e;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1518; --surface: #152026; --sunk: #1b2a31; --ink: #e4ecef; --muted: #93a4ad; --line: #283840;
+  --accent: #74a9ec; --accent-ink: #0e1518; --accent-soft: #1f3348;
+  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --ok: #67c497; --warn: #e2a64b; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1518; --surface: #152026; --sunk: #1b2a31; --ink: #e4ecef; --muted: #93a4ad; --line: #283840;
+  --accent: #74a9ec; --accent-ink: #0e1518; --accent-soft: #1f3348;
+  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --ok: #67c497; --warn: #e2a64b; color-scheme: dark }
+
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--font-body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--surface) }
+button, select, input { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums }
+.muted { color: var(--muted) }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); max-width: 1320px; margin: 0 auto }
+
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--surface); border-bottom: 1px solid var(--line) }
+header.top .wrap { display: flex; align-items: center; gap: 24px; padding-block: 12px; flex-wrap: wrap }
+.brand { display: flex; align-items: baseline; gap: 10px; min-width: 0 }
+.brand h1 { font: 700 18px/1.2 var(--font-display); margin: 0; letter-spacing: .01em }
+.brand span { font-size: 12px; color: var(--muted) }
+nav.views { display: flex; gap: 4px; margin-left: auto }
+nav.views a { padding: 6px 12px; border-radius: var(--r); text-decoration: none; color: var(--muted); font-weight: 500 }
+nav.views a[aria-current="page"] { background: var(--accent-soft); color: var(--ink) }
+
+main { padding-block: 20px 48px }
+.view { display: grid; gap: 18px }
+.controls { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center }
+.group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap }
+.group > .lab { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 2px }
+.chip { border: 1px solid var(--line); background: var(--surface); padding: 4px 11px; border-radius: 999px; cursor: pointer; font-size: 13px }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink) }
+select.sel { border: 1px solid var(--line); background: var(--surface); padding: 5px 8px; border-radius: var(--r); font-size: 13px; max-width: 100% }
+
+.presets { display: flex; gap: 0; border-bottom: 1px solid var(--line); overflow-x: auto }
+.presets button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 14px; cursor: pointer; white-space: nowrap; color: var(--muted); font-weight: 500 }
+.presets button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent) }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r) }
+.chartbox { padding: 12px 12px 4px }
+.chart-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; padding: 4px 6px 0 }
+.chart-head h2 { font: 600 16px/1.3 var(--font-display); margin: 0; text-wrap: balance }
+.fit { font-size: 13px; color: var(--muted) }
+.fit b { color: var(--ink); font-weight: 500 }
+#chart { width: 100%; height: 440px }
+.toggles { display: flex; gap: 14px; align-items: center; font-size: 13px; color: var(--muted) }
+.toggles label { display: flex; gap: 6px; align-items: center; cursor: pointer }
+.legend { display: flex; gap: 14px; font-size: 12px; color: var(--muted); flex-wrap: wrap; padding: 0 6px 8px }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px }
+.legend i.hollow { background: transparent !important; border: 2px solid var(--muted) }
+
+.tablewrap { overflow-x: auto }
+table.grid { border-collapse: collapse; width: 100%; font-size: 13px }
+table.grid th { text-align: left; font-weight: 500; color: var(--muted); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; cursor: pointer; user-select: none }
+table.grid th.r, table.grid td.r { text-align: right }
+table.grid td { padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap }
+table.grid tbody tr { cursor: pointer }
+table.grid tbody tr:hover { background: var(--sunk) }
+.pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 1px 8px; border-radius: 999px; background: var(--sunk); white-space: nowrap }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block }
+.Au { background: var(--au) } .Cu { background: var(--cu) } .Ni { background: var(--ni) }
+.stage-op { color: var(--ok) } .stage-st { color: var(--accent) }
+
+/* estimator */
+.est-grid { display: grid; grid-template-columns: minmax(260px, 340px) 1fr; gap: 18px; align-items: start }
+.form { padding: 16px; display: grid; gap: 14px }
+.form h2 { font: 600 16px var(--font-display); margin: 0 }
+.field { display: grid; gap: 5px }
+.field label { font-size: 12px; color: var(--muted) }
+.field input, .field select { border: 1px solid var(--line); background: var(--bg); border-radius: var(--r); padding: 7px 9px; width: 100% }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px }
+.card { padding: 14px 16px; display: grid; gap: 4px; min-width: 0 }
+.card .k { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+.card .v { font: 600 26px/1.15 var(--font-display); font-variant-numeric: tabular-nums }
+.card .v small { font: 400 13px var(--font-body); color: var(--muted) }
+.card .rng { font-size: 13px }
+.card .n { font-size: 12px; color: var(--muted) }
+.note { font-size: 12px; color: var(--muted); max-width: 70ch }
+
+/* project sheet */
+.sheet-bg { position: fixed; inset: 0; background: rgb(0 0 0 / .35); z-index: 40 }
+aside.sheet { position: fixed; top: 0; right: 0; bottom: 0; width: min(640px, 100%); z-index: 41; background: var(--surface); border-left: 1px solid var(--line);
+  overflow-y: auto; padding: calc(env(safe-area-inset-top, 0px) + 16px) max(18px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 90px) 18px; display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: max-content; gap: 18px; align-content: start }
+.sheet h2 { font: 700 22px/1.2 var(--font-display); margin: 0; text-wrap: balance }
+.sheet h3 { font: 600 13px var(--font-display); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px }
+.sheet .close { position: sticky; top: 0; justify-self: end; border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 4px 10px; cursor: pointer; margin-bottom: -38px }
+.meta { display: flex; flex-wrap: wrap; gap: 6px }
+.kv { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden }
+.kv div { background: var(--surface); padding: 10px 12px; min-width: 0 }
+.kv .k { font-size: 11px; color: var(--muted) }
+.kv .v { font: 500 16px var(--font-data); font-variant-numeric: tabular-nums }
+.src { border: 0; background: none; padding: 0; color: var(--accent); cursor: pointer; font-size: 11px; font-family: var(--font-data) }
+.src.unver { color: var(--warn) }
+.bars { display: grid; gap: 6px }
+.bar { display: grid; grid-template-columns: minmax(110px, 34%) 1fr auto; gap: 10px; align-items: center; font-size: 13px }
+.bar .track { height: 10px; background: var(--sunk); border-radius: 3px; overflow: hidden }
+.bar .fill { height: 100%; background: var(--accent) }
+.ops { display: flex; flex-wrap: wrap; gap: 4px }
+.ops span { font-size: 12px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 4px }
+.facts td { vertical-align: top; white-space: normal }
+.sheet .tablewrap { max-width: 100% }
+.bar > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.facts td.ctx { color: var(--muted); font-size: 12px }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden }
+.seg button { border: 0; background: var(--surface); padding: 4px 10px; cursor: pointer; font-size: 12px }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg) }
+.srcbox { position: fixed; right: 0; bottom: 0; width: min(640px, 100%); z-index: 42; background: var(--sunk); border-top: 1px solid var(--line);
+  padding: 12px max(18px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 12px) 18px; display: grid; gap: 6px; font-size: 13px }
+.srcbox q { font-family: var(--font-data); font-size: 12px; quotes: "“" "”"; display: block; max-height: 7.5em; overflow-y: auto }
+.srcbox .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center }
+.srcbox a { color: var(--accent) }
+.linkbtn { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 3px 9px; cursor: pointer; font-size: 12px }
+footer.foot { font-size: 12px; color: var(--muted); padding-block: 8px 24px }
+
+@media (max-width: 860px) {
+  .est-grid { grid-template-columns: 1fr }
+  .cards { grid-template-columns: 1fr }
+  #chart { height: 340px }
+  .kv { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+}
+@media (prefers-reduced-motion: no-preference) { aside.sheet { transition: transform .18s ease } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><h1>Mineral Processing Benchmarks</h1><span id="countline"></span></div>
+    <nav class="views" aria-label="Views">
+      <a href="#explore" id="nav-explore">Explore</a>
+      <a href="#estimate" id="nav-estimate">Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="view" id="view-explore">
+    <div class="controls" id="filters"></div>
+    <div class="presets" role="tablist" id="presets"></div>
+    <div class="panel chartbox">
+      <div class="chart-head">
+        <h2 id="chart-title"></h2>
+        <div class="toggles">
+          <label><input type="checkbox" id="opt-log" checked> Log scale</label>
+          <label><input type="checkbox" id="opt-fit" checked> Fitted curve</label>
+        </div>
+      </div>
+      <div class="fit" id="fitline" style="padding: 2px 6px 0"></div>
+      <div id="chart" role="img" aria-label="Benchmark chart"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="panel tablewrap"><table class="grid" id="ptable"></table></div>
+  </section>
+
+  <section class="view" id="view-estimate" hidden>
+    <div class="est-grid">
+      <form class="panel form" id="est-form">
+        <h2>Describe the project</h2>
+        <div class="field"><label for="e-com">Commodity</label>
+          <select id="e-com"><option value="">Any</option><option>Au</option><option>Cu</option><option>Ni</option></select></div>
+        <div class="field"><label for="e-fam">Flowsheet</label><select id="e-fam"></select></div>
+        <div class="field"><label for="e-tpd">Throughput (t/d)</label><input id="e-tpd" type="number" min="100" step="100" value="25000"></div>
+        <div class="field"><label for="e-bwi">Bond ball mill work index (kWh/t, optional)</label><input id="e-bwi" type="number" min="4" max="30" step="0.1" placeholder="e.g. 15.5"></div>
+        <p class="note">Estimates come from a power-law fit, cost = a · throughput<sup>b</sup>, through the peer projects that match. With few peers the range is wide; treat it as an order-of-magnitude benchmark.</p>
+      </form>
+      <div style="display:grid; gap:14px; min-width:0">
+        <div class="cards" id="est-cards"></div>
+        <div class="panel tablewrap"><table class="grid" id="near"></table></div>
+      </div>
+    </div>
+  </section>
+  <footer class="foot" id="foot"></footer>
+</main>
+
+<div class="sheet-bg" id="sheet-bg" hidden></div>
+<aside class="sheet" id="sheet" hidden aria-label="Project data sheet"></aside>
+<div class="srcbox" id="srcbox" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const P = DATA.projects;
+const Y = DATA.escalation_year;
+const L = DATA.labels;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const OPERATING = p => p.study_level === "operating";
+const STAGE = p => OPERATING(p) ? "Operating" : ({ FS: "Feasibility", PFS: "Pre-feasibility", PEA: "PEA", resource: "Resource only" }[p.study_level] || p.study_level);
+const famLabel = k => L.families[k] || k;
+
+function fmt(v, d) {
+  if (v == null || isNaN(v)) return "–";
+  if (d == null) d = Math.abs(v) >= 100 ? 0 : Math.abs(v) >= 10 ? 1 : 2;
+  return v.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+}
+
+/* ---------- presets ---------- */
+const PRESETS = [
+  { id: "capex", title: `Initial CAPEX vs throughput`, x: "tpd", y: "capex", ylab: `Initial CAPEX (US$M, ${Y})`, fit: true, studiesOnly: true },
+  { id: "plant", title: `Process plant CAPEX vs throughput`, x: "tpd", y: "plant_capex", ylab: `Process plant CAPEX (US$M, ${Y})`, fit: true, studiesOnly: true },
+  { id: "siteopex", title: `Site OPEX per tonne vs throughput`, x: "tpd", y: "site_opex", ylab: `Site OPEX (US$/t milled, ${Y})`, fit: true },
+  { id: "procopex", title: `Process OPEX per tonne vs throughput`, x: "tpd", y: "process_opex", ylab: `Process OPEX (US$/t milled, ${Y})`, fit: true },
+  { id: "bwi", title: `Bond ball mill work index vs throughput`, x: "tpd", y: "bwi", ylab: "Bond ball mill work index (kWh/t)", fit: false },
+];
+const state = { com: "", stage: "", fam: "", preset: "capex", log: true, fit: true, sort: "name", dir: 1 };
+try { const s = JSON.parse(localStorage.getItem("mpb-state") || "{}"); Object.assign(state, s); } catch (e) {}
+const save = () => { try { localStorage.setItem("mpb-state", JSON.stringify(state)); } catch (e) {} };
+
+function filtered() {
+  return P.filter(p => (!state.com || p.commodity === state.com)
+    && (!state.stage || (state.stage === "op" ? OPERATING(p) : !OPERATING(p)))
+    && (!state.fam || p.families.includes(state.fam)));
+}
+
+/* ---------- regression: log10 y = a + b log10 x ---------- */
+function powerFit(pts) {
+  const v = pts.filter(p => p[0] > 0 && p[1] > 0).map(p => [Math.log10(p[0]), Math.log10(p[1])]);
+  const n = v.length;
+  if (n < 3) return null;
+  const mx = v.reduce((s, p) => s + p[0], 0) / n, my = v.reduce((s, p) => s + p[1], 0) / n;
+  let sxx = 0, sxy = 0, syy = 0;
+  v.forEach(([x, y]) => { sxx += (x - mx) ** 2; sxy += (x - mx) * (y - my); syy += (y - my) ** 2; });
+  if (sxx === 0) return null;
+  const b = sxy / sxx, a = my - b * mx;
+  const sse = v.reduce((s, [x, y]) => s + (y - a - b * x) ** 2, 0);
+  const se = Math.sqrt(sse / Math.max(n - 2, 1));
+  const r2 = syy ? 1 - sse / syy : 0;
+  const predict = x => {
+    const lx = Math.log10(x), half = se * Math.sqrt(1 + 1 / n + (lx - mx) ** 2 / sxx);
+    const c = a + b * lx;
+    return { mid: 10 ** c, lo: 10 ** (c - half), hi: 10 ** (c + half) };
+  };
+  return { a, b, r2, n, se, predict, xmin: 10 ** Math.min(...v.map(p => p[0])), xmax: 10 ** Math.max(...v.map(p => p[0])) };
+}
+
+/* ---------- filters ---------- */
+function renderFilters() {
+  const fams = [...new Set(P.flatMap(p => p.families))].sort((a, b) => famLabel(a).localeCompare(famLabel(b)));
+  const chip = (grp, val, text) => `<button class="chip" data-g="${grp}" data-v="${val}" aria-pressed="${state[grp] === val}">${text}</button>`;
+  $("#filters").innerHTML = `
+    <div class="group"><span class="lab">Commodity</span>${chip("com", "", "All")}${chip("com", "Au", '<span class="dot Au"></span> Gold')}${chip("com", "Cu", '<span class="dot Cu"></span> Copper')}${chip("com", "Ni", '<span class="dot Ni"></span> Nickel')}</div>
+    <div class="group"><span class="lab">Stage</span>${chip("stage", "", "All")}${chip("stage", "st", "Studies")}${chip("stage", "op", "Operating")}</div>
+    <div class="group"><span class="lab">Flowsheet</span><select class="sel" id="f-fam" aria-label="Flowsheet"><option value="">All flowsheets</option>${fams.map(f => `<option value="${f}" ${state.fam === f ? "selected" : ""}>${esc(famLabel(f))}</option>`).join("")}</select></div>`;
+  $("#filters").querySelectorAll(".chip").forEach(b => b.onclick = () => { state[b.dataset.g] = b.dataset.v; save(); renderExplore(); });
+  $("#f-fam").onchange = e => { state.fam = e.target.value; save(); renderExplore(); };
+  $("#e-fam").innerHTML = `<option value="">Any flowsheet</option>` + fams.map(f => `<option value="${f}">${esc(famLabel(f))}</option>`).join("");
+}
+
+function renderPresets() {
+  $("#presets").innerHTML = PRESETS.map(p => `<button role="tab" data-p="${p.id}" aria-selected="${state.preset === p.id}">${p.title.replace(" vs throughput", "")}</button>`).join("");
+  $("#presets").querySelectorAll("button").forEach(b => b.onclick = () => { state.preset = b.dataset.p; save(); renderExplore(); });
+}
+
+/* ---------- chart ---------- */
+let chart;
+function renderChart(rows) {
+  const pr = PRESETS.find(p => p.id === state.preset);
+  $("#chart-title").textContent = pr.title;
+  let pool = rows.filter(p => p.metrics[pr.x] && p.metrics[pr.y]);
+  const hidden = pr.studiesOnly ? pool.filter(OPERATING).length : 0;
+  if (pr.studiesOnly) pool = pool.filter(p => !OPERATING(p));
+  const pts = pool.map(p => [p.metrics[pr.x].value, p.metrics[pr.y].value, p]);
+  const fit = pr.fit && state.fit ? powerFit(pts) : null;
+  const ink = css("--ink"), muted = css("--muted"), line = css("--line");
+  const colors = { Au: css("--au"), Cu: css("--cu"), Ni: css("--ni") };
+  const series = ["Au", "Cu", "Ni"].map(c => ({
+    name: c, type: "scatter", symbolSize: 13,
+    data: pts.filter(p => p[2].commodity === c).map(p => ({ value: [p[0], p[1]], name: p[2].name, id: p[2].id,
+      itemStyle: OPERATING(p[2]) ? { color: "transparent", borderColor: colors[c], borderWidth: 2.5 } : { color: colors[c] } })),
+    itemStyle: { color: colors[c] }, emphasis: { scale: 1.4 },
+    label: { show: true, formatter: d => d.name, position: "right", color: muted, fontSize: 11, fontFamily: "IBM Plex Sans" },
+    labelLayout: { hideOverlap: true },
+  }));
+  if (fit) {
+    const xs = [], steps = 40;
+    for (let i = 0; i <= steps; i++) xs.push(fit.xmin * (fit.xmax / fit.xmin) ** (i / steps));
+    const band = xs.map(x => fit.predict(x));
+    series.push({ name: "fit", type: "line", data: xs.map((x, i) => [x, band[i].mid]), showSymbol: false, silent: true,
+      lineStyle: { color: ink, width: 1.5 }, z: 1 });
+    series.push({ name: "lo", type: "line", data: xs.map((x, i) => [x, band[i].lo]), showSymbol: false, silent: true,
+      lineStyle: { color: muted, width: 1, type: "dashed" }, z: 1 });
+    series.push({ name: "hi", type: "line", data: xs.map((x, i) => [x, band[i].hi]), showSymbol: false, silent: true,
+      lineStyle: { color: muted, width: 1, type: "dashed" }, z: 1 });
+  }
+  const axis = name => ({
+    type: state.log ? "log" : "value", name, nameLocation: "middle", nameGap: 38, scale: true,
+    nameTextStyle: { color: muted, fontSize: 12 }, axisLabel: { color: muted, fontFamily: "IBM Plex Mono", fontSize: 11, formatter: v => fmt(v, v < 10 ? 1 : 0) },
+    axisLine: { lineStyle: { color: line } }, splitLine: { lineStyle: { color: line, opacity: .6 } }, minorSplitLine: { show: false },
+  });
+  chart.setOption({
+    animation: false, grid: { left: 64, right: 110, top: 18, bottom: 50 },
+    tooltip: { trigger: "item", backgroundColor: css("--surface"), borderColor: line, textStyle: { color: ink, fontSize: 12 },
+      formatter: d => d.data && d.data.name ? `<b>${esc(d.data.name)}</b><br>${fmt(d.value[0], 0)} t/d<br>${esc(pr.ylab)}: ${fmt(d.value[1])}` : "" },
+    xAxis: { ...axis("Throughput (t/d)") }, yAxis: { ...axis(pr.ylab), nameGap: 48 }, series,
+  }, true);
+  $("#fitline").innerHTML = fit
+    ? `Fit: <b>y = ${fmt(10 ** fit.a, 3)} · x<sup>${fmt(fit.b, 2)}</sup></b> · R² <b>${fmt(fit.r2, 2)}</b> · n = <b>${fit.n}</b> · dashed lines ±1 standard error of prediction`
+    : pr.fit && state.fit ? `Not enough projects for a fit (${pts.length} with data; need 3).` : `${pts.length} projects with data.`;
+  const parts = [`<span><i class="Au"></i>Gold</span><span><i class="Cu"></i>Copper</span><span><i class="Ni"></i>Nickel</span>`,
+    `<span><i style="background:var(--muted)"></i>Study</span><span><i class="hollow"></i>Operating</span>`];
+  if (hidden) parts.push(`<span>${hidden} operating mine${hidden > 1 ? "s" : ""} hidden: they report sustaining capital, not initial CAPEX</span>`);
+  parts.push(`<span>All costs escalated to ${Y} US$</span>`);
+  $("#legend").innerHTML = parts.join("");
+}
+
+/* ---------- table ---------- */
+const COLS = [
+  { k: "name", t: "Project", v: p => p.name, f: p => `<b>${esc(p.name)}</b>` },
+  { k: "commodity", t: "Metal", v: p => p.commodity, f: p => `<span class="pill"><span class="dot ${p.commodity}"></span>${p.commodity}${p.by_products.length ? "<span class='muted'>·" + p.by_products.join(" ") + "</span>" : ""}</span>` },
+  { k: "stage", t: "Stage", v: STAGE, f: p => `<span class="${OPERATING(p) ? "stage-op" : "stage-st"}">${STAGE(p)}</span>` },
+  { k: "fam", t: "Flowsheet", v: p => famLabel(p.families[0] || ""), f: p => esc(p.families.map(famLabel).join(", ") || "–") },
+  { k: "tpd", t: "t/d", r: 1, v: p => p.metrics.tpd?.value, f: p => fmt(p.metrics.tpd?.value, 0) },
+  { k: "bwi", t: "BWi", r: 1, v: p => p.metrics.bwi?.value, f: p => p.metrics.bwi ? `${fmt(p.metrics.bwi.value, 1)} <span class="muted">${p.metrics.bwi.statistic || ""}</span>` : "–" },
+  { k: "capex", t: `CAPEX US$M`, r: 1, v: p => p.metrics.capex?.value, f: p => fmt(p.metrics.capex?.value, 0) },
+  { k: "process_opex", t: "Process $/t", r: 1, v: p => p.metrics.process_opex?.value, f: p => fmt(p.metrics.process_opex?.value, 2) },
+  { k: "site_opex", t: "Site $/t", r: 1, v: p => p.metrics.site_opex?.value, f: p => fmt(p.metrics.site_opex?.value, 2) },
+];
+function renderTable(rows) {
+  const c = COLS.find(c => c.k === state.sort) || COLS[0];
+  rows = [...rows].sort((a, b) => { const x = c.v(a), y = c.v(b);
+    if (x == null) return 1; if (y == null) return -1; return (x > y ? 1 : x < y ? -1 : 0) * state.dir; });
+  $("#ptable").innerHTML = `<thead><tr>${COLS.map(c => `<th class="${c.r ? "r" : ""}" data-k="${c.k}">${c.t}${state.sort === c.k ? (state.dir > 0 ? " ↑" : " ↓") : ""}</th>`).join("")}</tr></thead>
+    <tbody>${rows.map(p => `<tr data-id="${p.id}">${COLS.map(c => `<td class="${c.r ? "r num" : ""}">${c.f(p)}</td>`).join("")}</tr>`).join("")}</tbody>`;
+  $("#ptable").querySelectorAll("th").forEach(th => th.onclick = () => { state.dir = state.sort === th.dataset.k ? -state.dir : 1; state.sort = th.dataset.k; save(); renderTable(filtered()); });
+  $("#ptable").querySelectorAll("tbody tr").forEach(tr => tr.onclick = () => { location.hash = "p-" + tr.dataset.id; });
+}
+
+function renderExplore() {
+  renderFilters(); renderPresets();
+  $("#opt-log").checked = state.log; $("#opt-fit").checked = state.fit;
+  const rows = filtered();
+  renderChart(rows); renderTable(rows);
+}
+
+/* ---------- estimator ---------- */
+function renderEstimate() {
+  const com = $("#e-com").value, fam = $("#e-fam").value, tpd = +$("#e-tpd").value, bwi = +$("#e-bwi").value || null;
+  const peers = P.filter(p => (!com || p.commodity === com) && (!fam || p.families.includes(fam)));
+  const card = (title, key, unit, studiesOnly) => {
+    let pool = peers.filter(p => p.metrics.tpd && p.metrics[key]);
+    if (studiesOnly) pool = pool.filter(p => !OPERATING(p));
+    const fit = tpd > 0 ? powerFit(pool.map(p => [p.metrics.tpd.value, p.metrics[key].value])) : null;
+    if (!fit) return `<div class="panel card"><div class="k">${title}</div><div class="v">–</div><div class="n">${pool.length} peer${pool.length === 1 ? "" : "s"} with data; need 3. Widen the commodity or flowsheet.</div></div>`;
+    const e = fit.predict(tpd), out = tpd < fit.xmin * .7 || tpd > fit.xmax * 1.4;
+    return `<div class="panel card"><div class="k">${title}</div>
+      <div class="v">${fmt(e.mid, unit === "M" ? 0 : 2)} <small>${unit === "M" ? "US$M" : "US$/t"}</small></div>
+      <div class="rng num">${fmt(e.lo, unit === "M" ? 0 : 2)} – ${fmt(e.hi, unit === "M" ? 0 : 2)}</div>
+      <div class="n">${fit.n} peers · exponent ${fmt(fit.b, 2)} · R² ${fmt(fit.r2, 2)}${out ? " · <span style='color:var(--warn)'>outside the peers' throughput range</span>" : ""}</div></div>`;
+  };
+  $("#est-cards").innerHTML = card(`Initial CAPEX (${Y} US$)`, "capex", "M", true) + card(`Process OPEX (${Y} US$)`, "process_opex", "t") + card(`Site OPEX (${Y} US$)`, "site_opex", "t");
+  const scored = peers.filter(p => p.metrics.tpd).map(p => {
+    let d = Math.abs(Math.log10(p.metrics.tpd.value / tpd));
+    if (bwi && p.metrics.bwi) d += Math.abs(p.metrics.bwi.value - bwi) / 10;
+    return [d, p];
+  }).sort((a, b) => a[0] - b[0]).slice(0, 8).map(x => x[1]);
+  $("#near").innerHTML = `<thead><tr><th>Closest projects</th><th>Stage</th><th class="r">t/d</th><th class="r">BWi</th><th class="r">CAPEX US$M</th><th class="r">Process $/t</th><th class="r">Site $/t</th></tr></thead><tbody>${
+    scored.map(p => `<tr data-id="${p.id}"><td><span class="dot ${p.commodity}"></span> <b>${esc(p.name)}</b></td><td>${STAGE(p)}</td><td class="r num">${fmt(p.metrics.tpd?.value, 0)}</td><td class="r num">${fmt(p.metrics.bwi?.value, 1)}</td><td class="r num">${fmt(p.metrics.capex?.value, 0)}</td><td class="r num">${fmt(p.metrics.process_opex?.value, 2)}</td><td class="r num">${fmt(p.metrics.site_opex?.value, 2)}</td></tr>`).join("")}</tbody>`;
+  $("#near").querySelectorAll("tbody tr").forEach(tr => tr.onclick = () => { location.hash = "p-" + tr.dataset.id; });
+}
+
+/* ---------- project sheet ---------- */
+const SRC = [];
+const srcBtn = s => { if (!s) return ""; SRC.push(s); return `<button class="src ${s.verified ? "" : "unver"}" data-s="${SRC.length - 1}" title="Show source">p.${s.page}</button>`; };
+let money = "usd";
+function renderSheet(p) {
+  SRC.length = 0;
+  const m = p.metrics;
+  const kv = (k, v, s, unit = "") => `<div><div class="k">${k}</div><div class="v">${v}${unit ? ` <span class="muted" style="font-size:12px">${unit}</span>` : ""} ${s ? srcBtn(s) : ""}</div></div>`;
+  const val = (c) => money === "usd" ? c.usd_esc : c.value;
+  const unitM = money === "usd" ? `${Y} US$M` : `${p.currency || ""} M nominal`;
+  const unitT = money === "usd" ? `${Y} US$/t` : `${p.currency || ""}/t nominal`;
+  const group = (type, basis) => {
+    const rows = p.costs.filter(c => c.type === type && c.basis === basis && !c.subtotal && val(c) != null);
+    if (!rows.length) return "";
+    const by = {}; rows.forEach(c => { (by[c.l1] = by[c.l1] || []).push(c); });
+    const scale = basis === "total" ? 1e6 : 1;
+    const tree = type === "opex" ? L.cost_l1.opex : L.cost_l1.capex;
+    const sums = Object.entries(by).map(([l1, cs]) => [l1, cs.reduce((s, c) => s + val(c), 0) / scale, cs]).sort((a, b) => b[1] - a[1]);
+    const max = Math.max(...sums.map(s => Math.abs(s[1])));
+    const total = p.costs.find(c => c.type === type && c.basis === basis && c.l2 === "grand_total");
+    return `<div class="bars">${sums.map(([l1, v, cs]) => `<div class="bar"><span title="${esc(cs.map(c => c.label).join("; "))}">${esc(tree[l1] || l1)}</span>
+        <span class="track"><span class="fill" style="width:${Math.max(0, v) / max * 100}%; display:block"></span></span>
+        <span class="num">${fmt(v)} ${srcBtn(cs[0])}</span></div>`).join("")}
+      ${total && val(total) != null ? `<div class="bar"><b>Reported total</b><span></span><span class="num"><b>${fmt(val(total) / scale)}</b> ${srcBtn(total)}</span></div>` : ""}</div>`;
+  };
+  const capexBlock = group("initial_capex", "total"), susBlock = group("sustaining", "total"), growBlock = group("growth", "total"),
+        opexBlock = group("opex", "per_t_milled"), opexTotBlock = group("opex", "total");
+  const fgroups = { comminution: "Comminution testwork", design: "Process design", metallurgy: "Metallurgy", scale: "Scale", economics: "Economics" };
+  const ctxText = f => Object.entries(f.context || {}).map(([k, v]) => `${k.replace(/_/g, " ")}: ${v}`).join(" · ");
+  const factRows = Object.entries(fgroups).map(([g, gl]) => {
+    const fs = p.facts.filter(f => f.group === g);
+    if (!fs.length) return "";
+    return `<tr><th colspan="3">${gl}</th></tr>` + fs.map(f => `<tr><td>${esc(f.label)}${f.metal ? ` <span class="muted">${f.metal}</span>` : ""}</td>
+      <td class="num">${typeof f.value === "number" ? fmt(f.value) : esc(f.value)} <span class="muted">${esc(f.unit || "")}</span>${f.statistic ? ` <span class="pill">${esc(f.statistic)}</span>` : ""}${f.basis === "actual" ? ` <span class="pill stage-op">actual</span>` : ""} ${srcBtn(f)}</td>
+      <td class="ctx">${esc(ctxText(f))}${f.raw && typeof f.value === "number" && !f.raw.startsWith(fmt(f.value)) ? `<br>reported: ${esc(f.raw)}` : ""}</td></tr>`).join("");
+  }).join("");
+
+  $("#sheet").innerHTML = `
+    <button class="close" id="close-sheet">Close</button>
+    <div style="display:grid; gap:8px">
+      <h2>${esc(p.name)}</h2>
+      <div class="meta">
+        <span class="pill"><span class="dot ${p.commodity}"></span>${p.commodity}${p.by_products.length ? " · " + p.by_products.join(", ") : ""}</span>
+        <span class="pill ${OPERATING(p) ? "stage-op" : "stage-st"}">${STAGE(p)}</span>
+        <span class="pill">${esc(p.standard || "")}</span>
+        <span class="pill">${esc([p.region, p.country].filter(Boolean).join(", "))}</span>
+        <span class="pill">Effective ${esc(p.effective_date || "–")}</span>
+      </div>
+      <div class="muted" style="font-size:13px">${esc(p.title || "")} · ${esc((p.issuer || "").replace(/\s*\(.*$/, ""))} · <a href="${esc(p.url)}" target="_blank" rel="noopener" style="color:var(--accent)">Open report</a></div>
+    </div>
+    <div class="kv">
+      ${kv("Throughput", fmt(m.tpd?.value, 0), m.tpd, "t/d")}
+      ${kv("Bond ball mill WI", fmt(m.bwi?.value, 1), m.bwi, "kWh/t")}
+      ${kv("Grind P80", fmt(m.p80?.value, 0), m.p80, "µm")}
+      ${kv("Recovery " + p.commodity, fmt(m.recovery?.value, 1), m.recovery, "%")}
+      ${kv("Initial CAPEX", fmt(m.capex?.value, 0), m.capex, `${Y} US$M`)}
+      ${kv("Site OPEX", fmt(m.site_opex?.value, 2), m.site_opex, `${Y} US$/t`)}
+    </div>
+    <div><h3>Flowsheet</h3>
+      <div class="meta" style="margin-bottom:8px">${p.families.map(f => `<span class="pill" style="background:var(--accent-soft)">${esc(famLabel(f))}</span>`).join("")}${p.circuit ? `<span class="pill">${esc(L.circuits[p.circuit] || p.circuit)}</span>` : ""} ${srcBtn(p.flowsheet_src)}</div>
+      <div class="ops">${p.unit_ops.map(u => `<span>${esc(L.unit_ops[u] || u)}</span>`).join("")}</div></div>
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap">
+      <h3 style="margin:0">Costs</h3>
+      <div class="seg" role="group" aria-label="Currency"><button data-m="usd" aria-pressed="${money === "usd"}">${Y} US$</button><button data-m="raw" aria-pressed="${money === "raw"}">As reported</button></div>
+    </div>
+    ${capexBlock ? `<div><h3>Initial CAPEX · ${unitM}</h3>${capexBlock}</div>` : ""}
+    ${susBlock ? `<div><h3>Sustaining capital · ${unitM}</h3>${susBlock}</div>` : ""}
+    ${growBlock ? `<div><h3>Growth capital · ${unitM}</h3>${growBlock}</div>` : ""}
+    ${opexBlock ? `<div><h3>Operating cost · ${unitT}</h3>${opexBlock}</div>` : ""}
+    ${opexTotBlock ? `<div><h3>Operating cost, life of mine · ${unitM}</h3>${opexTotBlock}</div>` : ""}
+    ${!(capexBlock || susBlock || opexBlock || opexTotBlock) ? `<p class="muted">This report gives no cost estimates.</p>` : ""}
+    <div><h3>All extracted values</h3><div class="tablewrap"><table class="grid facts"><tbody>${factRows}</tbody></table></div></div>
+    <p class="note">Every value was copied from the report with its page number and a verbatim quote, and the quote was checked against that page. Page numbers refer to the parsed copy of the filing; search the report for the quote to find it.</p>`;
+  $("#close-sheet").onclick = () => { history.pushState("", "", location.pathname + location.search + "#" + (window.lastView || "explore")); route(); };
+  $("#sheet").querySelectorAll(".seg button").forEach(b => b.onclick = () => { money = b.dataset.m; renderSheet(p); });
+  $("#sheet").querySelectorAll(".src").forEach(b => b.onclick = () => showSrc(SRC[+b.dataset.s]));
+}
+function showSrc(s) {
+  const box = $("#srcbox");
+  box.innerHTML = `<div class="row"><b>Page ${s.page}</b><span class="${s.verified ? "stage-op" : ""}" style="${s.verified ? "" : "color:var(--warn)"}">${s.verified ? "Quote verified on this page" : "Quote not verified, needs review"}</span>
+    <span style="margin-left:auto; display:flex; gap:8px"><button class="linkbtn" id="copyq">Copy quote</button><a class="linkbtn" href="${esc(s.url)}" target="_blank" rel="noopener" style="text-decoration:none">Open report</a><button class="linkbtn" id="closeq">Close</button></span></div>
+    <q id="qtext">${esc(s.quote)}</q>`;
+  box.hidden = false;
+  $("#closeq").onclick = () => box.hidden = true;
+  $("#copyq").onclick = e => {
+    navigator.clipboard.writeText(s.quote).then(() => e.target.textContent = "Copied").catch(() => {
+      const r = document.createRange(); r.selectNodeContents($("#qtext")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); });
+  };
+}
+
+/* ---------- routing ---------- */
+function route() {
+  const h = location.hash.replace("#", "");
+  const proj = h.startsWith("p-") ? P.find(p => p.id === h.slice(2)) : null;
+  const view = proj ? (window.lastView || "explore") : (h === "estimate" ? "estimate" : "explore");
+  if (!proj) window.lastView = view;
+  $("#view-explore").hidden = view !== "explore";
+  $("#view-estimate").hidden = view !== "estimate";
+  $("#nav-explore").setAttribute("aria-current", view === "explore" ? "page" : "false");
+  $("#nav-estimate").setAttribute("aria-current", view === "estimate" ? "page" : "false");
+  $("#sheet").hidden = $("#sheet-bg").hidden = !proj;
+  if (!proj) $("#srcbox").hidden = true;
+  if (proj) { renderSheet(proj); $("#sheet").scrollTop = 0; }
+  if (view === "explore") { renderExplore(); chart.resize(); }
+  else renderEstimate();
+}
+
+function init() {
+  chart = echarts.init($("#chart"), null, { renderer: "svg" });
+  chart.on("click", d => { if (d.data && d.data.id) location.hash = "p-" + d.data.id; });
+  window.addEventListener("resize", () => chart.resize());
+  $("#opt-log").onchange = e => { state.log = e.target.checked; save(); renderExplore(); };
+  $("#opt-fit").onchange = e => { state.fit = e.target.checked; save(); renderExplore(); };
+  $("#est-form").addEventListener("input", renderEstimate);
+  $("#est-form").addEventListener("submit", e => e.preventDefault());
+  $("#sheet-bg").onclick = () => $("#close-sheet")?.click();
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#sheet").hidden) $("#close-sheet").click(); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => route());
+  new MutationObserver(() => route()).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  const nf = P.reduce((s, p) => s + p.facts.length, 0), nc = P.reduce((s, p) => s + p.costs.length, 0);
+  $("#countline").textContent = `${P.length} reports · ${nf + nc} sourced values`;
+  $("#foot").textContent = `Data from NI 43-101 and S-K 1300 technical reports filed on SEC EDGAR. Costs converted to US$ at the study's own exchange rate where stated, otherwise the Bank of Canada annual average, then escalated to ${Y} with US BLS producer price indexes (CAPEX: machinery and nonresidential construction inputs; OPEX: final demand).`;
+  window.addEventListener("hashchange", route);
+  renderFilters();
+  route();
+}
+if (window.echarts) init(); else $("main").insertAdjacentHTML("afterbegin", '<p class="note">The chart library did not load. Check your connection and reload the page.</p>');
+</script>
