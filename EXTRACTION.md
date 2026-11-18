@@ -14,7 +14,8 @@ The loader (`python -m pipeline load <report_id>`) validates the file and writes
 4. **Keep the report's own units and currency.** The loader converts (kWh/st → kWh/t, CAD → USD, escalation).
 5. **Prefer LOM / design values** over single-year values. Say which in `statistic`.
 6. **Costs: copy each line of the summary cost tables**, using the report's wording in `raw_label`. Mark subtotals `is_subtotal: true` and the grand total `is_total: true`, so the loader can check that the lines add up. A breakdown of one line (e.g. Processing → labour, power, reagents) gets `part_of: "<that line's raw_label>"` and is checked against it. Only set `l1`/`l2` when the automatic mapping (`python -m pipeline map-cost <type> "<label>"`) would get it wrong.
-7. **Comminution:** record the measurement details in `context`: `test` (Bond ball mill standard / Bond-equivalent from SMC ...), `closing_screen_um`, `n_samples`, `ore_type`, `lab`. Use `statistic` for mean / p75 / p80 / design.
+7. **Effective date** comes from the title page or QP certificate (not the signature date or the economics reference date): give `effective_date_page` + `effective_date_quote`.
+8. **Comminution:** record the measurement details in `context`: `test` (Bond ball mill standard / Bond-equivalent from SMC ...), `closing_screen_um`, `n_samples`, `ore_type`, `lab`. Use `statistic` for mean / p75 / p80 / design.
 
 ## File format
 
@@ -23,7 +24,7 @@ The loader (`python -m pipeline load <report_id>`) validates the file and writes
   "extractor": "claude-code",
   "report": {
     "project": "Lynn Lake", "title": "...", "standard": "NI 43-101", "study_level": "FS",
-    "effective_date": "2023-08-22", "primary_commodity": "Au", "by_products": ["Ag"],
+    "effective_date": "2023-08-02", "effective_date_page": 1, "effective_date_quote": "Effective Date: August 2, 2023", "primary_commodity": "Au", "by_products": ["Ag"],
     "country": "Canada", "region": "Manitoba", "mine_type": "open_pit", "project_status": "study",
     "currency": "CAD", "cost_base_year": 2022, "qps": ["..."]
   },

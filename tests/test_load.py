@@ -11,10 +11,11 @@ def make_report(tmp_path, monkeypatch, costs, facts):
     (rdir / "extracted").mkdir()
     (rdir / "parsed" / "pages" / "0001.md").write_text(
         "Plant Throughput | t/d | 8,000\nProcess Plant | $189.0\nOther | $11.0\nTotal Initial Capital | $200.0\n"
-        "BWi design 16.5 kWh/st", encoding="utf-8")
+        "BWi design 16.5 kWh/st\nEffective Date: June 1, 2024", encoding="utf-8")
     (rdir / "source.json").write_text(json.dumps({"url": "u", "sha256": "x", "issuer": "I"}))
     (rdir / "extracted" / "v1.json").write_text(json.dumps({
-        "report": {"project": "Test Project", "currency": "CAD", "primary_commodity": "Au"},
+        "report": {"project": "Test Project", "currency": "CAD", "primary_commodity": "Au", "effective_date": "2024-06-01",
+                   "effective_date_page": 1, "effective_date_quote": "Effective Date: June 1, 2024"},
         "facts": facts, "costs": costs}))
     return init_db(tmp_path / "t.db")
 

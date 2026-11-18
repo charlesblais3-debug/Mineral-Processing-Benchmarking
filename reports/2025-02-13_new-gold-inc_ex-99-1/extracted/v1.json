@@ -15,7 +15,9 @@
   "mine_type": "open_pit_and_underground",
   "project_status": "operating",
   "currency": "USD",
-  "cost_base_year": 2025
+  "cost_base_year": 2025,
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: December 31, 2024"
  },
  "flowsheet": {
   "unit_ops": [

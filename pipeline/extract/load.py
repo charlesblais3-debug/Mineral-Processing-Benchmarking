@@ -67,6 +67,13 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     info = data["report"]
     extractor = data.get("extractor", "claude-code")
 
+    # ---- report-level date must be quoted too
+    if info.get("effective_date_quote"):
+        if not quote_on_page(folder, info["effective_date_page"], info["effective_date_quote"]):
+            problems.append("report: effective_date quote not found")
+    else:
+        problems.append("report: effective_date has no page/quote")
+
     # ---- project + report rows
     project_id = taxonomy_slug(info["project"])
     con.execute(

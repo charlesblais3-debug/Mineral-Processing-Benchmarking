@@ -5,7 +5,7 @@
   "title": "NI 43-101 Technical Report, Côté Gold Project",
   "standard": "NI 43-101",
   "study_level": "FS",
-  "effective_date": "2022-05-01",
+  "effective_date": "2022-06-30",
   "primary_commodity": "Au",
   "by_products": [],
   "country": "Canada",
@@ -13,7 +13,9 @@
   "mine_type": "open_pit",
   "project_status": "construction",
   "currency": "USD",
-  "cost_base_year": 2022
+  "cost_base_year": 2022,
+  "effective_date_page": 2,
+  "effective_date_quote": "Effective Date: June 30, 2022"
  },
  "flowsheet": {
   "unit_ops": [

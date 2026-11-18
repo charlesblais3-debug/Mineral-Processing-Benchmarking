@@ -1,0 +1,269 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Detour Lake",
+  "title": "Detour Lake Operations, Ontario, Canada, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-07-26",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "CAD",
+  "cost_base_year": 2021,
+  "effective_date_page": 3,
+  "effective_date_quote": "effective date of 26 July, 2021"
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "gravity",
+   "ilr",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 252,
+  "quote": "Leaching and carbon-in-pulp circuit"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 62857,
+   "unit": "t/d",
+   "page": 250,
+   "quote": "Daily production t/d 56792 58514 56594 60370 62857",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "period": "2020"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 23.0,
+   "unit": "Mt/a",
+   "page": 250,
+   "quote": "Annual production Mt 20.7 21.4 20.7 22.0 23.0",
+   "basis": "actual",
+   "context": {
+    "period": "2020"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.9,
+   "unit": "%",
+   "page": 290,
+   "quote": "The average LOM recovery used in the economic analysis is 91.9%",
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 95,
+   "unit": "µm",
+   "page": 253,
+   "quote": "Product size - passing (P 80 ) µm 95",
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.3,
+   "unit": "kWh/t",
+   "page": 160,
+   "quote": "Average 2.89 2.89 2.92 26.0 14.2 18.0 14.3 0.421",
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 150
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.5,
+   "unit": "kWh/t",
+   "page": 160,
+   "quote": "75 th percentile 2.98 2.93 2.98 24.3 16.9 18.9 15.5 0.54",
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 150
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.5,
+   "unit": "kWh/t",
+   "page": 160,
+   "quote": "90 th percentile 3.01 2.98 3.01 23.4 19.7 19.9 16.5 0.544",
+   "statistic": "p90",
+   "context": {
+    "test": "Bond ball mill (standard)",
+    "closing_screen_um": 150
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 26.0,
+   "unit": "-",
+   "page": 160,
+   "quote": "Average 2.89 2.89 2.92 26.0 14.2 18.0 14.3 0.421",
+   "statistic": "mean",
+   "context": {
+    "test": "SMC"
+   }
+  },
+  {
+   "parameter": "cwi",
+   "value": 14.2,
+   "unit": "kWh/t",
+   "page": 160,
+   "quote": "Average 2.89 2.89 2.92 26.0 14.2 18.0 14.3 0.421",
+   "statistic": "mean"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 18.0,
+   "unit": "kWh/t",
+   "page": 160,
+   "quote": "Average 2.89 2.89 2.92 26.0 14.2 18.0 14.3 0.421",
+   "statistic": "mean"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.421,
+   "unit": "g",
+   "page": 160,
+   "quote": "Average 2.89 2.89 2.92 26.0 14.2 18.0 14.3 0.421",
+   "statistic": "mean"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1500,
+   "unit": "USD/oz",
+   "page": 290,
+   "quote": "US$1,500/oz Au at an exchange rate of 1.31 C$/US$",
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.31,
+   "unit": "CAD/USD",
+   "page": 290,
+   "quote": "US$1,500/oz Au at an exchange rate of 1.31 C$/US$",
+   "context": {
+    "pair": "CAD/USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Projects, equipment, maintenance",
+   "value": 2676,
+   "page": 285,
+   "quote": "Projects, equipment, maintenance 856 991 566 214 48 2,676",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Deferred stripping",
+   "value": 387,
+   "page": 285,
+   "quote": "Deferred stripping 127 212 48 - - 387",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-total",
+   "value": 3063,
+   "page": 285,
+   "quote": "Sub-total 983 1,204 614 214 48 3,063",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 10.03,
+   "page": 287,
+   "quote": "Mining 2,3 13.75 13.47 10.93 4.75 1.87 10.03",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 8.73,
+   "page": 287,
+   "quote": "Processing 4 8.16 8.88 8.89 8.88 8.91 8.73",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site administration",
+   "value": 3.2,
+   "page": 287,
+   "quote": "Site administration 5,6 3.82 3.71 3.59 2.11 1.95 3.20",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal",
+   "value": 21.96,
+   "page": 287,
+   "quote": "Subtotal 25.74 26.06 23.40 15.74 12.73 21.96",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Adjustments (deferred stripping, royalties, inventory)",
+   "value": -0.96,
+   "page": 287,
+   "quote": "Adjustments 7 (5.53) (4.96) (1.65) 4.79 9.46 (0.96)",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 21.0,
+   "page": 287,
+   "quote": "Total 20.21 21.10 21.75 20.53 22.19 21.00",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining unit cost (C$/t ex-pit)",
+   "value": 3.47,
+   "page": 287,
+   "quote": "Mining 2 3.19 2.98 3.69 6.29 - 3.47",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
