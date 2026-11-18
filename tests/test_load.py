@@ -65,3 +65,10 @@ def test_costs_converted_with_study_fx_and_escalated(tmp_path, monkeypatch):
     costs.run(con, target_year=2022)
     usd, esc = con.execute("SELECT value_usd, value_usd_escalated FROM cost_items WHERE raw_label='Process Plant'").fetchone()
     assert usd == 189e6 * 0.75 and abs(esc - usd) < 1     # same year -> no escalation
+
+
+def test_escalation_blend_is_weighted_ratio():
+    from pipeline.normalize.indices import escalation_factor
+    ppi = {"A": {2019: 100, 2025: 150}, "B": {2019: 100, 2025: 110}}
+    assert abs(escalation_factor(ppi, {"A": 0.5, "B": 0.5}, 2019, 2025) - 1.30) < 1e-9
+    assert escalation_factor(ppi, {"A": 1.0}, 2018, 2025) is None

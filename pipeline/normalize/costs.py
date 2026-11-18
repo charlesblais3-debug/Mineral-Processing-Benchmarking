@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 import sqlite3
 
-from pipeline.normalize.indices import ESCALATION_FOR, load_csv
+from pipeline.normalize.indices import ESCALATION_FOR, escalation_factor, load_csv
 
 
 def study_fx(con: sqlite3.Connection, report_id: str, currency: str) -> float | None:
@@ -38,12 +38,12 @@ def run(con: sqlite3.Connection, target_year: int | None = None) -> dict:
         if (rid, ccy) not in fx_cache:
             fx_cache[(rid, ccy)] = 1.0 if ccy == "USD" else study_fx(con, rid, ccy)
         rate = fx_cache[(rid, ccy)] or (fx.get(ccy, {}).get(year) if year else None)
-        series = ppi[ESCALATION_FOR[ctype]]
-        if rate is None or year not in series:
+        factor = escalation_factor(ppi, ESCALATION_FOR[ctype], year, target_year) if year else None
+        if rate is None or factor is None:
             missing += 1
             continue
         usd = value * rate
-        esc = usd * series[target_year] / series[year]
+        esc = usd * factor
         con.execute("UPDATE cost_items SET value_usd=?, value_usd_escalated=?, escalation_year=? WHERE id=?",
                     (usd, esc, target_year, cid))
         updated += 1

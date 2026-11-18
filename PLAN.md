@@ -131,7 +131,7 @@ discover → acquire → parse → extract → normalize → validate → databa
 ### 4.5 Normalize
 - **Units:** t/d ↔ Mtpa (using stated availability, or 365 d if not stated), **kWh/short ton → kWh/t (×1.1023)**. Many older reports give Bond Work Index in kWh/st, and mixing the two silently skews results by 10%. Also g/t ↔ oz/st, µm, and so on.
 - **Currency:** converted to USD at the report's effective date (Bank of Canada / FRED rates, free). The original currency and value are kept.
-- **Cost escalation:** costs are restated to a common base year using the **US BLS Producer Price Index**. It's free and fetched automatically from the BLS public API. Default series: PPI for mining machinery & equipment (capital costs) and PPI for final demand (operating costs). The index is set in a config file and can be swapped. The UI can show both nominal and escalated values.
+- **Cost escalation:** costs are restated to a common base year using the **US BLS Producer Price Index**. It's free and fetched automatically from the BLS public API. Default: capital costs use a 50/50 blend of PPI machinery & equipment (WPU11) and PPI inputs to nonresidential construction, goods (WPUIP2312001), which tracks plant-cost benchmarks such as CEPCI; operating costs use PPI final demand (WPUFD4). The index is set in a config file and can be swapped. The UI can show both nominal and escalated values.
 - **Cost categories:** each raw cost line is mapped to the standard taxonomy (§6) by synonym rules first and an LLM classifier second. The mapping confidence is stored, and low-confidence mappings go to review.
 - **Flowsheet:** unit operations are mapped to a controlled vocabulary, and a **flowsheet family** is derived from them (see §6.3).
 

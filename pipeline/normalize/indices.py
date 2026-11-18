@@ -2,8 +2,13 @@
 
 - FX: Bank of Canada Valet API, annual averages (FXA<CCY>CAD), cross-converted to USD per unit.
 - Escalation: US BLS Producer Price Index bulk files (download.bls.gov), annual averages.
-    CAPEX / sustaining / closure -> WPU1192 (Mining machinery and equipment)
-    OPEX                         -> WPUFD4  (Final demand)
+    CAPEX / sustaining / closure -> 50 % WPU11 (Machinery and equipment, broad)
+                                  + 50 % WPUIP2312001 (Inputs to nonresidential construction, goods)
+      (Mining machinery WPU1192 alone rose ~75 % 2015-2025, far above plant-cost benchmarks
+       such as CEPCI ~45 %; the broad blend tracks those benchmarks closely. WPU1192 is still
+       fetched for reference.)
+    OPEX                         -> WPUFD4 (Final demand)
+Weights are in ESCALATION_FOR; each blend is a weighted average of the component ratios.
 """
 from __future__ import annotations
 
@@ -18,10 +23,27 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data" / "indices"
 
 PPI_SERIES = {
+    "WPU11": "wp.data.12a.Machinery11-113",
     "WPU1192": "wp.data.12c.Machinery117-119",
     "WPUFD4": "wp.data.22.FD-ID",
+    "WPUIP2312001": "wp.data.80i.ConstructnInputs",
 }
-ESCALATION_FOR = {"initial_capex": "WPU1192", "sustaining": "WPU1192", "closure": "WPU1192", "opex": "WPUFD4"}
+CAPEX_BLEND = {"WPU11": 0.5, "WPUIP2312001": 0.5}
+ESCALATION_FOR = {"initial_capex": CAPEX_BLEND, "sustaining": CAPEX_BLEND, "closure": CAPEX_BLEND,
+                  "opex": {"WPUFD4": 1.0}}
+
+
+def escalation_factor(ppi: dict, blend: dict[str, float], from_year: int, to_year: int) -> float | None:
+    """Weighted average of index ratios to_year/from_year; None if any component lacks either year."""
+    total = 0.0
+    for series, w in blend.items():
+        s = ppi.get(series, {})
+        if from_year not in s or to_year not in s:
+            return None
+        total += w * s[to_year] / s[from_year]
+    return total
+
+
 CURRENCIES = ["USD", "AUD", "EUR", "GBP", "ZAR", "MXN", "BRL", "CNY", "JPY", "INR"]  # vs CAD
 
 
