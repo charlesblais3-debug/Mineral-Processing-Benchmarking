@@ -7,6 +7,7 @@ Commands
   discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N]
   parse          download + parse one catalog URL:  python -m pipeline parse <url>
   scout          show likely value lines:  python -m pipeline scout <report_id> [capex opex ...]
+  rebuild        recreate data/benchmark.db from every reports/*/extracted/v1.json
   load           validate an extraction and load it:  python -m pipeline load <report_id>
   dedupe         mark re-filed copies of the same report as duplicates (keeps latest)
   classify       sort catalog rows into is_report / not_report / unsure   [--status new]
@@ -82,6 +83,14 @@ def main(argv: list[str]) -> int:
     elif cmd == "scout" and len(argv) >= 2:
         from pipeline.extract.scout import scout
         print(scout(argv[1], argv[2:] or None))
+    elif cmd == "rebuild":
+        from pipeline.extract.load import REPORTS, load_report
+        DEFAULT_DB.unlink(missing_ok=True)
+        con = init_db()
+        for f in sorted(REPORTS.glob("*/extracted/v1.json")):
+            res = load_report(f.parent.parent.name, con)
+            flag = "  ✗ " + "; ".join(res["problems"]) if res["problems"] else ""
+            print(f"{res['report']:<48} facts={res['facts']:<3} costs={res['costs']:<3}{flag}")
     elif cmd == "load" and len(argv) == 2:
         from pipeline.extract.load import load_report
         res = load_report(argv[1])

@@ -77,7 +77,7 @@ CREATE INDEX IF NOT EXISTS idx_facts_report ON facts(report_id);
 CREATE TABLE IF NOT EXISTS cost_items (
     id                   INTEGER PRIMARY KEY AUTOINCREMENT,
     report_id            TEXT NOT NULL REFERENCES reports(id) ON DELETE CASCADE,
-    cost_type            TEXT NOT NULL CHECK (cost_type IN ('initial_capex','sustaining','closure','opex')),
+    cost_type            TEXT NOT NULL CHECK (cost_type IN ('initial_capex','sustaining','growth','closure','opex')),
     category_l1          TEXT NOT NULL,          -- key from cost_taxonomy.yaml
     category_l2          TEXT,
     raw_label            TEXT NOT NULL,          -- exactly as in the report

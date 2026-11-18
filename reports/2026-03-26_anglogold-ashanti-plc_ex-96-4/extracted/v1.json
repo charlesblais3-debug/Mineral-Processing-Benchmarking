@@ -1,0 +1,237 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kibali",
+  "title": "Kibali Gold Mine, Democratic Republic of Congo, Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_page": 67,
+  "effective_date_quote": "Technical Report Summary – current at 31 December 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "DRC",
+  "region": "Haut-Uélé",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "flotation",
+   "vertical_mill",
+   "cil",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 56,
+  "quote": "It includes standard crushing, ball milling, gravity recovery via Knelson concentrators and a conventional CIL circuit."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 7.2,
+   "unit": "Mt/a",
+   "page": 57,
+   "quote": "the design capacity is therefore 7.2 Mtpa",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.31,
+   "unit": "%",
+   "page": 27,
+   "quote": "e average recovery for 2025 is 90.31%",
+   "metal": "Au",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "period": "2025"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "page": 27,
+   "quote": "The average LOM recovery is estimated as 89%",
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 10.81,
+   "unit": "kWh/t",
+   "page": 26,
+   "quote": "10.81 kWh/t (sulphide Mill #1)",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "test": "Operating work index from plant data (not a lab test)",
+    "ore_type": "sulphide",
+    "period": "2024-2025"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 10.22,
+   "unit": "kWh/t",
+   "page": 26,
+   "quote": "10.22 kWh/t (oxide Mill #2)",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "test": "Operating work index from plant data (not a lab test)",
+    "ore_type": "oxide",
+    "period": "2024-2025"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "page": 57,
+   "quote": "target grind of P80 75",
+   "statistic": "design",
+   "context": {
+    "ore_type": "sulphide circuit"
+   }
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 23,
+   "unit": "µm",
+   "page": 57,
+   "quote": "grind the concentrate to a P80 of 23",
+   "statistic": "design",
+   "context": {
+    "note": "ultrafine grinding of flotation concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1500,
+   "unit": "USD/oz",
+   "page": 67,
+   "quote": "Gold Price $/oz 1500",
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 224,
+   "unit": "MUSD",
+   "page": 67,
+   "quote": "NPV5 USD M 224",
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1299,
+   "unit": "USD/oz",
+   "page": 67,
+   "quote": "Total AISC USD/oz 1 299",
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining",
+   "value": 1089,
+   "page": 66,
+   "quote": "Sustaining 1,089",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalised deferred stripping",
+   "value": 960,
+   "page": 66,
+   "quote": "Capitalised deferred stripping 960",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Capital Development and Drilling",
+   "value": 190,
+   "page": 66,
+   "quote": "Underground Capital Development and Dri",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth Capital",
+   "value": 777,
+   "page": 66,
+   "quote": "Growth Capital 777",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Total",
+   "value": 6818,
+   "page": 67,
+   "quote": "Mining Total 6,818",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 2185,
+   "page": 67,
+   "quote": "Processing 2,185",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1184,
+   "page": 67,
+   "quote": "G&A 1,184",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Operating Cost",
+   "value": 10187,
+   "page": 67,
+   "quote": "Cost 10,187",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Operating Costs",
+   "value": 224,
+   "page": 67,
+   "quote": "Other Operating Costs 224",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "outside_total": true,
+   "l1": "other",
+   "l2": "unallocated"
+  }
+ ]
+}

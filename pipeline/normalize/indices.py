@@ -29,7 +29,7 @@ PPI_SERIES = {
     "WPUIP2312001": "wp.data.80i.ConstructnInputs",
 }
 CAPEX_BLEND = {"WPU11": 0.5, "WPUIP2312001": 0.5}
-ESCALATION_FOR = {"initial_capex": CAPEX_BLEND, "sustaining": CAPEX_BLEND, "closure": CAPEX_BLEND,
+ESCALATION_FOR = {"initial_capex": CAPEX_BLEND, "sustaining": CAPEX_BLEND, "growth": CAPEX_BLEND, "closure": CAPEX_BLEND,
                   "opex": {"WPUFD4": 1.0}}
 
 

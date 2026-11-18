@@ -168,7 +168,9 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
             problems.append(f"cost '{c['raw_label']}': quote not found on page {c['page']}")
         group = f"{c['cost_type']}/{c.get('basis_unit', 'total')}"
         parents[f"{group}/{c['raw_label']}"] = value
-        if c.get("part_of"):                      # breakdown of another line: checked separately
+        if c.get("outside_total"):                # listed by the report but outside its total
+            pass
+        elif c.get("part_of"):                      # breakdown of another line: checked separately
             key = f"{group}/{c['part_of']}"
             parts[key] = parts.get(key, 0.0) + value
         elif c.get("is_total"):

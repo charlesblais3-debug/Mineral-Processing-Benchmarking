@@ -40,7 +40,7 @@ def _norm(text: str) -> str:
 
 def _cost_tree(cost_type: str) -> dict:
     tax = load("cost_taxonomy")
-    if cost_type in ("initial_capex", "sustaining"):
+    if cost_type in ("initial_capex", "sustaining", "growth"):
         return tax["capex"]
     if cost_type == "opex":
         return tax["opex"]
