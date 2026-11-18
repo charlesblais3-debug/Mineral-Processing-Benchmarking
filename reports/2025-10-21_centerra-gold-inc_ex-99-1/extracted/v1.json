@@ -1,0 +1,241 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Mount Milligan",
+  "title": "Technical Report on the Mount Milligan Mine, North-Central British Columbia",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-06-30",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: June 30, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "flotation",
+   "regrind",
+   "vertical_mill",
+   "gravity",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 212,
+  "quote": "SAG/ball mill/pebble crusher grinding circuit"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 62500,
+   "unit": "t/d",
+   "page": 212,
+   "quote": "increased the capacity to a nominal rate of 62,500 tpd",
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 200,
+   "unit": "µm",
+   "page": 213,
+   "quote": "product size of P80 < 200 µm",
+   "statistic": "max",
+   "context": {
+    "note": "design target P80 < 200 µm"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 20.5,
+   "unit": "%",
+   "page": 213,
+   "quote": "targeting approximately 20.5% copper",
+   "metal": "Cu",
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 23.5,
+   "unit": "MW",
+   "page": 212,
+   "quote": "one 23.5 megawatt (MW) gearless motor drive",
+   "context": {
+    "mills": "SAG 12.19 m x 6.4 m"
+   }
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 26,
+   "unit": "MW",
+   "page": 212,
+   "quote": "(26 MW total installed ball mill p",
+   "context": {
+    "mills": "2 ball mills 12.5 m x 7.3 m"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 950,
+   "unit": "USD/oz",
+   "page": 36,
+   "quote": "estimated to average $950/oz of gold",
+   "metal": "Au",
+   "context": {
+    "basis": "by-product, 2025 to end of LOM"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 370,
+   "page": 35,
+   "quote": "Mining 370 36 406",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing (including water supply)",
+   "value": 98,
+   "page": 35,
+   "quote": "Processing (including water supply) 98 36 134",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TSF dams",
+   "value": 237,
+   "page": 35,
+   "quote": "TSF dams 237 114 351",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "G&A",
+   "value": 34,
+   "page": 35,
+   "quote": "G&A 34 34",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining",
+   "value": 739,
+   "page": 35,
+   "quote": "Total 739 186 925",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining (non-sustaining)",
+   "value": 36,
+   "page": 35,
+   "quote": "Mining 370 36 406",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Processing (non-sustaining)",
+   "value": 36,
+   "page": 35,
+   "quote": "Processing (including water supply) 98 36 134",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "TSF dams (non-sustaining)",
+   "value": 114,
+   "page": 35,
+   "quote": "TSF dams 237 114 351",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total non-sustaining",
+   "value": 186,
+   "page": 35,
+   "quote": "Total 739 186 925",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 4.95,
+   "page": 36,
+   "quote": "Mining 2,391 4.95",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 5.57,
+   "page": 36,
+   "quote": "Processing 2,692 5.57",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administration",
+   "value": 2.11,
+   "page": 36,
+   "quote": "Administration 1,021 2.11",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transportation",
+   "value": 0.81,
+   "page": 36,
+   "quote": "Transportation 388 0.81",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal for on-site costs",
+   "value": 13.44,
+   "page": 36,
+   "quote": "Subtotal for on-site costs 6,492 13.44",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
