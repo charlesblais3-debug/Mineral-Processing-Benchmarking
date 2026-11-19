@@ -1,193 +1,208 @@
 {
  "extractor": "claude-code",
  "report": {
-  "project": "Highland Valley Copper",
-  "title": "NI 43-101 Technical Report on Highland Valley Copper Operations, British Columbia",
+  "project": "Collahuasi",
+  "title": "NI 43-101 Technical Report, Collahuasi Copper Mine, Tarapacá Region, Chile",
   "standard": "NI 43-101",
   "study_level": "operating",
-  "effective_date": "2025-07-01",
-  "effective_date_page": 2,
-  "effective_date_quote": "that has an effective date of 1 July, 2025",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: 31 December 2024",
   "primary_commodity": "Cu",
   "by_products": [
    "Mo"
   ],
-  "country": "Canada",
-  "region": "British Columbia",
+  "country": "Chile",
+  "region": "Tarapacá",
   "mine_type": "open_pit",
   "project_status": "operating",
-  "currency": "CAD",
-  "cost_base_year": 2025
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
  },
  "flowsheet": {
   "unit_ops": [
    "sag_mill",
+   "pebble_crush",
    "ball_mill",
-   "flotation",
-   "conc_thickener",
-   "conc_filter"
+   "flotation"
   ],
-  "page": 135,
-  "quote": "SAG mill dimensions feet 32 dia. x 15.5 EGL"
+  "quote": "to the Ujina plant for milling (three SAG mills and five ball mills) and flotation (rougher, two stage cleaner, cleaner scavenger)",
+  "page": 23
  },
  "facts": [
   {
    "parameter": "throughput_tpd",
-   "value": 161625,
+   "value": 210000,
    "unit": "t/d",
-   "page": 133,
-   "quote": "Nameplate throughput t/d 161,625",
+   "quote": "increase the average treatment capacity of the Ujina Concentrator Plant to 210 ktpd",
+   "page": 27,
    "statistic": "design",
    "context": {
-    "phase": "mine life extension"
+    "phase": "Ujina Growth Project PG210 (current 170 ktpd)"
    }
   },
   {
-   "parameter": "throughput_mtpa",
-   "value": 58.993,
-   "unit": "Mt/a",
-   "page": 133,
-   "quote": "Annual throughput t/a 58,993,125",
-   "statistic": "design"
-  },
-  {
    "parameter": "recovery_lom",
-   "value": 89.07,
+   "value": 84.72,
    "unit": "%",
-   "page": 97,
-   "quote": "Copper recovery 2025 HVC/2019 MLE models 89.07%",
+   "quote": "Overall copper recovery % 84.72%",
+   "page": 28,
    "metal": "Cu",
-   "statistic": "lom_average",
-   "context": {
-    "to_product": "Cu concentrate"
-   }
+   "statistic": "lom_average"
   },
   {
    "parameter": "recovery_lom",
-   "value": 60.77,
+   "value": 26.43,
    "unit": "%",
-   "page": 97,
-   "quote": "Molybdenum bulk/circuit recovery 2019 MLE/2021 HVC 60.77%",
+   "quote": "Overall molybdenum recovery % 26.43%",
+   "page": 28,
    "metal": "Mo",
    "statistic": "lom_average"
   },
   {
    "parameter": "conc_grade",
-   "value": 34.9,
+   "value": 27.47,
    "unit": "%",
-   "page": 97,
-   "quote": "Copper concentrate grade 2025 HVC model 34.9% copper",
+   "quote": "Copper grade %CuT 27.47%",
+   "page": 28,
    "metal": "Cu",
    "statistic": "lom_average"
   },
   {
-   "parameter": "conc_grade",
-   "value": 51.0,
+   "parameter": "head_grade_lom",
+   "value": 0.79,
    "unit": "%",
-   "page": 97,
-   "quote": "Molybdenum concentrate grade Fixed value 51.0% molybdenum",
-   "metal": "Mo"
+   "quote": "Copper grade %CuT 0.79% 0.92%",
+   "page": 27,
+   "metal": "Cu",
+   "statistic": "lom_average"
   },
   {
-   "parameter": "bwi_ball",
-   "value": 17.8,
-   "unit": "kWh/t",
-   "page": 91,
-   "quote": "The BWi results ranged from 14.2–24.1 kWh/t, with an average of 17.8 kWh/t",
-   "statistic": "mean",
-   "context": {
-    "test": "Bond ball mill (standard)",
-    "closing_screen_um": 150,
-    "ore_type": "Bethlehem deposit"
-   }
+   "parameter": "strip_ratio",
+   "value": 2.64,
+   "unit": "t:t",
+   "quote": "Strip ratio w:o 2.64 3.03",
+   "page": 27,
+   "statistic": "lom_average"
   },
   {
-   "parameter": "axb",
-   "value": 33.3,
-   "unit": "-",
-   "page": 91,
-   "quote": "The overall average was 33.3",
-   "statistic": "mean",
-   "context": {
-    "test": "JK DWT / SMC",
-    "ore_type": "Bethlehem deposit"
-   }
+   "parameter": "metal_price",
+   "value": 3.9,
+   "unit": "USD/lb",
+   "quote": "Copper price USD/lb 3.90 3.90",
+   "page": 27,
+   "metal": "Cu"
   },
   {
-   "parameter": "grind_p80_um",
-   "value": 423,
-   "unit": "µm",
-   "page": 135,
-   "quote": "Cyclone overflow 80% passing size μm 423",
-   "statistic": "design",
+   "parameter": "cash_cost",
+   "value": 1.82,
+   "unit": "USD/lb",
+   "quote": "C1 cash cost after credits USD/lb Cu 1.82 1.57",
+   "page": 28,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 2.56,
+   "unit": "USD/lb",
+   "quote": "All in Sustaining Cost (excl royalty) USD/lb Cu 2.56 2.45",
+   "page": 28,
+   "metal": "Cu",
+   "statistic": "lom_average",
    "context": {
-    "note": "A-line"
+    "note": "second AISC line in the table (after royalty row); report labels both 'excl royalty'"
    }
   }
  ],
  "costs": [
   {
    "cost_type": "growth",
-   "raw_label": "Growth",
-   "value": 2229,
-   "page": 166,
-   "quote": "Growth 2,229 369 916 813 129",
-   "multiplier": "M",
-   "l1": "other",
-   "l2": "unallocated"
+   "raw_label": "Project capital (2025-2029)",
+   "value": 1874,
+   "quote": "Project capital USDm 1,874 1,874",
+   "page": 28,
+   "is_total": true
   },
   {
    "cost_type": "sustaining",
-   "raw_label": "Sustaining",
-   "value": 2046,
-   "page": 166,
-   "quote": "Sustaining 2,046 69 116 163",
-   "multiplier": "M",
-   "l1": "other",
-   "l2": "unallocated"
+   "raw_label": "Stay in Business capital (excl deferred stripping)",
+   "value": 22877,
+   "quote": "Stay in Business capital (excl deferred stripping) USDm 22,877 2,352",
+   "page": 28,
+   "is_total": true
   },
   {
    "cost_type": "opex",
-   "raw_label": "Mill ($/t milled)",
-   "value": 6.84,
-   "page": 167,
-   "quote": "Mill ($/t milled) 6.84 7.34",
-   "multiplier": "",
-   "basis_unit": "per_t_milled",
+   "raw_label": "Mining (excl. deferred stripping)",
+   "value": 38289,
+   "quote": "Mining (excl. deferred stripping) USDm 38,289 2,802",
+   "page": 28
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing & Port",
+   "value": 43848,
+   "quote": "Processing & Port USDm 43,848 3,598",
+   "page": 28,
    "l1": "processing",
    "l2": "other"
   },
   {
    "cost_type": "opex",
-   "raw_label": "Admin ($/t milled)",
-   "value": 1.46,
-   "page": 167,
-   "quote": "Admin ($/t milled) 1.46 1.56",
+   "raw_label": "G&A",
+   "value": 10785,
+   "quote": "G&A USDm 10,785 1,021",
+   "page": 28
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Operating Cost (excl. deferred stripping)",
+   "value": 92923,
+   "quote": "Total Direct Operating Cost (excl. deferred stripping) USDm 92,923 7,420",
+   "page": 28,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Unit mining cost (per tonne mined)",
+   "value": 3.24,
+   "quote": "Unit mining cost (per tonne mined) USD/t 3.24 2.80",
+   "page": 28,
    "multiplier": "",
-   "basis_unit": "per_t_milled",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Unit processing cost (per tonne processed)",
+   "value": 10.68,
+   "quote": "Unit processing cost (per tonne processed) USD/t 10.68 10.39",
+   "page": 28,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Unit G&A cost (per tonne processed)",
+   "value": 2.63,
+   "quote": "Unit G&A cost (per tonne processed) USD/t 2.63 2.95",
+   "page": 28,
    "l1": "ga",
-   "l2": "ga"
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
   },
   {
    "cost_type": "opex",
-   "raw_label": "Total ($/t milled)",
-   "value": 17.32,
-   "page": 167,
-   "quote": "Total ($/t milled) 17.32 17.12",
+   "raw_label": "Total direct operating cost per tonne processed",
+   "value": 22.63,
+   "quote": "Unit cost (per tonne processed) USD/t 22.63 21.42",
+   "page": 28,
+   "is_total": true,
+   "partial_breakdown": true,
    "multiplier": "",
-   "basis_unit": "per_t_milled",
-   "is_subtotal": true
-  },
-  {
-   "cost_type": "opex",
-   "raw_label": "Mine ($/t mined)",
-   "value": 3.45,
-   "page": 167,
-   "quote": "Mine ($/t mined) 3.45 3.89",
-   "multiplier": "",
-   "basis_unit": "per_t_mined",
-   "l1": "mining",
-   "l2": "mining"
+   "basis_unit": "per_t_milled"
   }
  ]
 }

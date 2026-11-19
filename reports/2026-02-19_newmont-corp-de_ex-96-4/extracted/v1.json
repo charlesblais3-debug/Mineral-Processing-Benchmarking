@@ -1,0 +1,144 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Report current as at: December 31, 2025",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "project": "Ahafo South",
+  "title": "Ahafo Complex Ghana Technical Report Summary (Ahafo South figures)",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Ghana",
+  "region": "Ahafo",
+  "mine_type": "open_pit_and_underground",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "The thickener feed is pumped through 13 carbon-in-leach (CIL) tanks.",
+  "page": 47
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 10,
+   "unit": "Mt/a",
+   "quote": "The LOM plan assumes an average 10 Mt/a throughput rate from 2026–2037.",
+   "page": 6,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "This is followed by closed-circuit ball milling to a P80 size of 106 µm for Line 1.",
+   "page": 47,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.56,
+   "unit": "g/t",
+   "quote": "Milled ore Tonnage M tonnes 81 Gold grade g/t 1.56",
+   "page": 54,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/oz",
+   "quote": "Table 19-1: Cashflow Summary Table, Ahafo South Item Unit Value Metal prices Gold US$/oz 2,000",
+   "page": 54,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 500,
+   "unit": "MUSD",
+   "quote": "The NPV8% for Ahafo South is $0.5 B",
+   "page": 54,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining, open pit",
+   "value": 0.2,
+   "quote": "Mining, open pit US$ billion 0.2 0.3 0.5",
+   "page": 53,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining, underground",
+   "value": 0.2,
+   "quote": "Mining, underground US$ billion 0.2 0.3 0.5",
+   "page": 53,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process",
+   "value": 0.3,
+   "quote": "Process US$ billion 0.3 0.3 0.6",
+   "page": 53,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total (Ahafo South)",
+   "value": 0.7,
+   "quote": "Total US$ billion 0.7 0.9 1.6",
+   "page": 53,
+   "is_total": true,
+   "tolerance_pct": 15,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining costs",
+   "value": 4.37,
+   "quote": "Open pit mining costs US$/t mined 4.37 3.27 3.59",
+   "page": 53,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing costs",
+   "value": 16.93,
+   "quote": "Processing costs US$/t processed 16.93 18.16 17.48",
+   "page": 53,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A costs",
+   "value": 8.63,
+   "quote": "G&A costs US$/t processed 8.63 11.41 9.87",
+   "page": 53,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

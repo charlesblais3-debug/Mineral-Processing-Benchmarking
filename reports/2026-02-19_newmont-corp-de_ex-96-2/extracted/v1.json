@@ -1,0 +1,201 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Report current as at: December 31, 2025",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "project": "Cadia",
+  "title": "Cadia Valley Operations New South Wales, Australia Technical Report Summary",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Mo"
+  ],
+  "country": "Australia",
+  "region": "New South Wales",
+  "mine_type": "underground",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "hpgr",
+   "sag_mill",
+   "ball_mill",
+   "vertical_mill",
+   "gravity",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "which included the addition of a HPGR circuit, ahead of the SAG mill, and a third ball mill and third flotation train",
+  "page": 42
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 34,
+   "unit": "Mt/a",
+   "quote": "incorporated into a LOM plan that includes a concentrator throughput increase to 33–35 Mt/a",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "note": "midpoint of the stated 33–35 Mt/a; Concentrator 1 26 Mt/a + Concentrator 2 8 Mt/a"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 79,
+   "unit": "%",
+   "quote": "Recovery, gold % 79",
+   "page": 52,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84,
+   "unit": "%",
+   "quote": "Recovery, copper % 84",
+   "page": 52,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/oz",
+   "quote": "2026 is evaluated at a gold price of US$2,000/oz; with the copper price at US$3.75/lb",
+   "page": 52,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.75,
+   "unit": "USD/lb",
+   "quote": "2026 is evaluated at a gold price of US$2,000/oz; with the copper price at US$3.75/lb",
+   "page": 52,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2600,
+   "unit": "MUSD",
+   "quote": "The NPV5% is US$2.6 B",
+   "page": 52,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 4.1,
+   "quote": "Mining US$ billion 4.1 Processing US$ billion 4.9",
+   "page": 51,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 4.9,
+   "quote": "Processing US$ billion 4.9 Site general",
+   "page": 51,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site general and administrative",
+   "value": 0.6,
+   "quote": "Site general and administrative US$ billion 0.6",
+   "page": 51,
+   "l1": "onsite_infra",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital",
+   "value": 9.7,
+   "quote": "Total Capital US$ billion 9.7",
+   "page": 51,
+   "is_total": true,
+   "tolerance_pct": 5,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LOM)",
+   "value": 7.1,
+   "quote": "Mining US$ billion 7.1 Processing US$ billion 10.8",
+   "page": 51,
+   "l1": "mining",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (LOM)",
+   "value": 10.8,
+   "quote": "Processing US$ billion 10.8 General",
+   "page": 51,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative (LOM)",
+   "value": 4.1,
+   "quote": "General and administrative US$ billion 4.1 Total Operating",
+   "page": 51,
+   "l1": "ga",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs (LOM)",
+   "value": 22.0,
+   "quote": "Total Operating Costs US$ billion 22.0",
+   "page": 51,
+   "is_total": true,
+   "tolerance_pct": 5,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 7.06,
+   "quote": "Mining US$/t mined 7.06",
+   "page": 51,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 10.72,
+   "quote": "Process US$/t milled 10.72",
+   "page": 51,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.11,
+   "quote": "G&A US$/t milled 4.11",
+   "page": 51,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

@@ -1,0 +1,307 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Reko Diq",
+  "title": "NI 43-101 Technical Report on the Reko Diq Project, Balochistan, Pakistan",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Pakistan",
+  "region": "Balochistan",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "hpgr",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter",
+   "tails_thickener"
+  ],
+  "quote": "The primary equipment design parameter and capacities for the primary crusher, HPGR, ball mills, flotation cells, rougher regrind vertical mills and thickener are shown in Table 17-2",
+  "page": 240
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 47,
+   "unit": "Mt/a",
+   "quote": "Throughput Mtpa 47 RDMC",
+   "page": 239,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1 (expands to 90 Mtpa from 2034)"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 300,
+   "unit": "µm",
+   "quote": "Grinding Product P80 µm 300 RDMC",
+   "page": 239,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.5,
+   "unit": "kWh/t",
+   "quote": "BWi kWh/t 16.5 75 th Percentile",
+   "page": 116,
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "cwi",
+   "value": 17.1,
+   "unit": "kWh/t",
+   "quote": "Crushing Work Index (CWi) kWh/t 17.1",
+   "page": 118,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 21.0,
+   "unit": "kWh/t",
+   "quote": "Rod Mill Work Index (RWi) kWh/t 21.0",
+   "page": 118,
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.256,
+   "unit": "g",
+   "quote": "Abrasion Index (Ai) g 0.256",
+   "page": 118,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 29.8,
+   "unit": "",
+   "quote": "JK Breakage Parameter Axb 29.8",
+   "page": 118,
+   "statistic": "p25",
+   "context": {
+    "test": "SMC"
+   }
+  },
+  {
+   "parameter": "dwi",
+   "value": 8.9,
+   "unit": "kWh/m3",
+   "quote": "Drop Weight Index (DWi) kWh/m 3 8.9",
+   "page": 118,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "3.00 1 1,400 1 33,994 4,032 12.89% 8.46",
+   "page": 26,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 4032,
+   "unit": "MUSD",
+   "quote": "3.00 1 1,400 1 33,994 4,032 12.89% 8.46",
+   "page": 26,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 12.89,
+   "unit": "%",
+   "quote": "3.00 1 1,400 1 33,994 4,032 12.89% 8.46",
+   "page": 26
+  },
+  {
+   "parameter": "payback_years",
+   "value": 8.46,
+   "unit": "years",
+   "quote": "3.00 1 1,400 1 33,994 4,032 12.89% 8.46",
+   "page": 26
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit Mine",
+   "value": 894,
+   "quote": "Open Pit Mine 894 47 942",
+   "page": 297
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant",
+   "value": 1065,
+   "quote": "Processing Plant 1,065 986 2,052",
+   "page": 297,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Facilities",
+   "value": 174,
+   "quote": "Tailings Facilities 174 54 229",
+   "page": 297
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 1039,
+   "quote": "On-Site Infrastructure 1,039 716 1,755",
+   "page": 297
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 335,
+   "quote": "Off-Site Infrastructure 335 251 586",
+   "page": 297
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Direct Cost Total",
+   "value": 3508,
+   "quote": "Direct Cost Total 3,508 2,054 5,563",
+   "page": 297,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Cost",
+   "value": 480,
+   "quote": "Owner’s Cost 480 214 693",
+   "page": 297
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Cost",
+   "value": 1055,
+   "quote": "Indirect Cost 1,055 686 1,741",
+   "page": 297,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 523,
+   "quote": "Contingency 523 310 833",
+   "page": 297
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Project Capital (Phase 1)",
+   "value": 5566,
+   "quote": "Total Project Capital 5,566 3,264 8,830",
+   "page": 297,
+   "is_total": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Capitalized Non-Project Costs",
+   "value": 132,
+   "quote": "Other Capitalized Non-Project Costs 132 37 169",
+   "page": 297,
+   "outside_total": true,
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 – Expansion Capital",
+   "value": 3301,
+   "quote": "Phase 2 – Expansion Capital 3,301",
+   "page": 296,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (LOM)",
+   "value": 3825,
+   "quote": "Sustaining Capital (LOM) 3,825",
+   "page": 296,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Phase 1, 2028-2033)",
+   "value": 7.61,
+   "quote": "Mining 17,512 5.82 1,781 7.61",
+   "page": 299,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (Phase 1, 2028-2033)",
+   "value": 6.94,
+   "quote": "Processing 16,822 5.59 1,626 6.94",
+   "page": 299,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration (Phase 1, 2028-2033)",
+   "value": 3.23,
+   "quote": "General and Administration 4,357 1.45 757 3.23",
+   "page": 299,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Operating Costs (Phase 1)",
+   "value": 17.78,
+   "quote": "Total Direct Operating Costs 38,691 12.86 4,165 17.78",
+   "page": 299,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight & Refining Costs (Phase 1)",
+   "value": 4.68,
+   "quote": "Freight & Refining Costs 11,019 3.66 1,097 4.68",
+   "page": 299,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty (Phase 1)",
+   "value": 2.96,
+   "quote": "Royalty 7,779 2.59 692 2.96",
+   "page": 299,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

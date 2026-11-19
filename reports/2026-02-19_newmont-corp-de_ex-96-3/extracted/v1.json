@@ -1,0 +1,163 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Report current as at: December 31, 2025",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "project": "Lihir",
+  "title": "Lihir Operations Papua New Guinea Technical Report Summary",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Papua New Guinea",
+  "region": "New Ireland",
+  "mine_type": "open_pit",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "pox",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "The plant upgrade added primary jaw crushers, another grinding circuit (HGO2), another autoclave (AC4), and oxygen plant, as well as a second CIL circuit.",
+  "page": 5
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 11.5,
+   "unit": "Mt/a",
+   "quote": "The nominal plant capacity was 11–12 Mt/a; however, actual throughput was about 9–10 Mt/a.",
+   "page": 25,
+   "statistic": "design",
+   "context": {
+    "note": "midpoint of the stated nominal 11–12 Mt/a after the 2013 MOPU expansion; actual 9–10 Mt/a"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.26,
+   "unit": "g/t",
+   "quote": "Tonnage treated Mt 220.2 Gold grade g/t 2.26",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/oz",
+   "quote": "Metal price, gold US$/oz 2,000 Tonnage treated",
+   "page": 39,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2000,
+   "unit": "MUSD",
+   "quote": "Net Present Value US$ billion 2.0",
+   "page": 39,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 4.0,
+   "unit": "PGK/USD",
+   "quote": "Exchange rate US dollar : PNG kina 1:4.00",
+   "page": 36,
+   "context": {
+    "pair": "PGK per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining (sustaining)",
+   "value": 0.6,
+   "quote": "Mining (sustaining) US$ billion 0.6",
+   "page": 39,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing (sustaining)",
+   "value": 0.7,
+   "quote": "Processing (sustaining) US$ billion 0.7",
+   "page": 39,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General and administrative (sustaining)",
+   "value": 0.4,
+   "quote": "General and administrative (sustaining) US$ billion 0.4",
+   "page": 39,
+   "l1": "onsite_infra",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Development capital",
+   "value": 0.5,
+   "quote": "Development capital US$ billion 0.5",
+   "page": 39,
+   "l1": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost",
+   "value": 21.61,
+   "quote": "Mining cost US$/t ore milled 21.61",
+   "page": 39,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore treatment",
+   "value": 37.37,
+   "quote": "Ore treatment US$/t ore milled 37.37",
+   "page": 39,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 14.03,
+   "quote": "G&A US$/t ore milled 14.03",
+   "page": 39,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Costs",
+   "value": 73.01,
+   "quote": "Total Site Operating Costs US$/t ore milled 73.01",
+   "page": 39,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

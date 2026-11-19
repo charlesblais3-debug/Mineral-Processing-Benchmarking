@@ -144,6 +144,7 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     # ---- costs
     n_costs = 0
     totals: dict[str, float] = {}
+    tolerance: dict[str, float] = {}
     sums: dict[str, float] = {}
     parents: dict[str, float] = {}        # breakdown checks: parent label -> value
     parts: dict[str, float] = {}
@@ -180,6 +181,7 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         elif c.get("is_total"):
             if not c.get("partial_breakdown"):      # report gives only some of the lines: nothing to check
                 totals[group] = value
+                tolerance[group] = c.get("tolerance_pct", 2) / 100   # rounded tables (e.g. US$ 0.1 B steps)
         elif not c.get("is_subtotal"):
             sums[group] = sums.get(group, 0.0) + value
         con.execute(
@@ -199,7 +201,7 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         s = sums.get(group, 0.0)
         if group not in sums:          # a total reported on its own: nothing to check against
             continue
-        if total and abs(s - total) / total > 0.02:
+        if total and abs(s - total) / total > tolerance[group]:
             problems.append(f"costs {group}: line items sum to {s:,.0f} but reported total is {total:,.0f}")
 
     for key, s in parts.items():

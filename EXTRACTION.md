@@ -47,4 +47,4 @@ The loader (`python -m pipeline load <report_id>`) validates the file and writes
 ```
 
 Valid `parameter` keys and units: `config/parameters.yaml`. Valid unit ops: `config/flowsheet_taxonomy.yaml`.
-`cost_type`: `initial_capex` | `sustaining` | `growth` (operating-mine expansion capital) | `closure` | `opex`. A line the report lists outside its own total gets `outside_total: true`. A total whose breakdown the report gives only in part gets `partial_breakdown: true` (no sum check). Costs per short ton (imperial reports) get `per_short_ton: true`; facts use units like `st/d` or `kWh/st`. `basis_unit`: see `config/cost_taxonomy.yaml`.
+`cost_type`: `initial_capex` | `sustaining` | `growth` (operating-mine expansion capital) | `closure` | `opex`. A line the report lists outside its own total gets `outside_total: true`. A total whose breakdown the report gives only in part gets `partial_breakdown: true` (no sum check); a total from a coarsely rounded table may set `tolerance_pct` (default 2). Costs per short ton (imperial reports) get `per_short_ton: true`; facts use units like `st/d` or `kWh/st`. `basis_unit`: see `config/cost_taxonomy.yaml`.
