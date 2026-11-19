@@ -1,0 +1,181 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Pinto Valley",
+  "title": "Pinto Valley Mine NI 43-101 Technical Report (PV3 Update)",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-03-31",
+  "effective_date_quote": "Effective Date: March 31, 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo"
+  ],
+  "country": "USA",
+  "region": "Arizona",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "Grinding – conventional ball mills",
+  "page": 171
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 56000,
+   "unit": "t/d",
+   "quote": "Throughput: 56,000 tpd (nominal)",
+   "page": 174,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 330,
+   "unit": "µm",
+   "quote": "Cyclone overflow P80: 330 μm (typical)",
+   "page": 174,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 50,
+   "unit": "µm",
+   "quote": "regrind cyclone overflow is P80 of 50 μm",
+   "page": 177,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13.6,
+   "unit": "kWh/t",
+   "quote": "Diabase/Granodiorite 13.6",
+   "page": 94,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "ROM composite"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.6,
+   "unit": "%",
+   "quote": "Copper 84.6% Molybdenum 8.9%",
+   "page": 141,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "note": "recovery used for resource pit shell"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site Sustaining",
+   "value": 100.2,
+   "quote": "Site Sustaining US$M 100.2",
+   "page": 206,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Sustaining",
+   "value": 379.6,
+   "quote": "Mine Sustaining US$M 379.6",
+   "page": 206,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansionary",
+   "value": 76.0,
+   "quote": "Expansionary US$M 76.0",
+   "page": 206,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 3.26,
+   "quote": "Mining Cost $/t milled 3.26",
+   "page": 204,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling Cost",
+   "value": 4.67,
+   "quote": "Milling Cost $/t milled 4.67",
+   "page": 204,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operations Support",
+   "value": 0.88,
+   "quote": "Operations Support $/t milled 0.88",
+   "page": 204,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Cost",
+   "value": 1.13,
+   "quote": "G&A Cost $/t milled 1.13",
+   "page": 204,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 9.94,
+   "quote": "Total $/t milled 9.94",
+   "page": 204,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost per t moved",
+   "value": 1.68,
+   "quote": "Mining Cost $/t moved 1.68",
+   "page": 204,
+   "multiplier": "",
+   "basis_unit": "per_t_moved",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
