@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/919239/000119312519061905/d698182dex999.htm",
+  "source": "edgar",
+  "issuer": "GOLDCORP INC",
+  "cik": "919239",
+  "form": "6-K",
+  "exhibit": "EX-99.9",
+  "filed": "2019-03-04",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Red Lake",
+  "commodity": "",
+  "report_id": "2019-03-04_goldcorp-inc_ex-99-9",
+  "sha256": "096c094fcf5efb91a27ea229fa396dd861f318b8cd1c700eaf99ca1213047a14",
+  "bytes": 1994829,
+  "format": "html",
+  "pages": 183,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1308648/000119312523202938/d540969dex991.htm",
+  "source": "edgar",
+  "issuer": "FIRST MAJESTIC SILVER CORP  (AG)",
+  "cik": "1308648",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-08-03",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "Jerritt Canyon",
+  "commodity": "",
+  "report_id": "2023-08-03_first-majestic-silver-corp_ex-99-1",
+  "sha256": "517736deac664074cb7b19227af61bc9e74c779949d6f7c7f8d778f93cbc18d0",
+  "bytes": 1376983,
+  "format": "html",
+  "pages": 165,
+  "parsed_on": "2026-11-19"
+}

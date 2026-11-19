@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1502377/000119312526011906/d85099dex99.htm",
+  "source": "edgar",
+  "issuer": "Contango ORE, Inc.  (CTGO)",
+  "cik": "1502377",
+  "form": "8-K/A",
+  "exhibit": "EX-99",
+  "filed": "2026-01-13",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Johnson Tract",
+  "commodity": "",
+  "report_id": "2026-01-13_contango-ore-inc_ex-99",
+  "sha256": "927ca2fc9e524627602c7004851ba89c38ef7c252d74ec1416407c3f4c0f28a5",
+  "bytes": 3730864,
+  "format": "html",
+  "pages": 293,
+  "parsed_on": "2026-11-19"
+}

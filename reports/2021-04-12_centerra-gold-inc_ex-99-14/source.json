@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1854640/000119312521112517/d115465dex9914.htm",
+  "source": "edgar",
+  "issuer": "Centerra Gold Inc.  (CGAU)",
+  "cik": "1854640",
+  "form": "40FR12B",
+  "exhibit": "EX-99.14",
+  "filed": "2021-04-12",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Kumtor",
+  "commodity": "",
+  "report_id": "2021-04-12_centerra-gold-inc_ex-99-14",
+  "sha256": "99549c673fd69c4f53560cf04d0912727ed304cd566c942321a4053273418f0b",
+  "bytes": 3499371,
+  "format": "html",
+  "pages": 360,
+  "parsed_on": "2026-11-19"
+}

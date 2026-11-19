@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000127956920000760/ex993.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.3",
+  "filed": "2020-05-14",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "Aurizona",
+  "commodity": "",
+  "report_id": "2020-05-14_equinox-gold-corp_ex-99-3",
+  "sha256": "621dfb6a04bd7b05edaaecdd3223a3e07ba7e8804e928734c248b2d350d7ed6b",
+  "bytes": 4461224,
+  "format": "html",
+  "pages": 376,
+  "parsed_on": "2026-11-19"
+}

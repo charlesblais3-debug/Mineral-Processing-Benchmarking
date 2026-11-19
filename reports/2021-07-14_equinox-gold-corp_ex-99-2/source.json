@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000127956921000949/ex992.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2021-07-14",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Mercedes",
+  "commodity": "",
+  "report_id": "2021-07-14_equinox-gold-corp_ex-99-2",
+  "sha256": "5761120eea446c17338fc00b41edbc3ddad012e456915aebb426a341547c5be9",
+  "bytes": 4830021,
+  "format": "html",
+  "pages": 138,
+  "parsed_on": "2026-11-19"
+}

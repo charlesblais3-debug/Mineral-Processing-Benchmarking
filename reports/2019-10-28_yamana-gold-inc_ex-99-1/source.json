@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1264089/000110465919056972/a19-21007_1ex99d1.htm",
+  "source": "edgar",
+  "issuer": "YAMANA GOLD INC.",
+  "cik": "1264089",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2019-10-28",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Jacobina",
+  "commodity": "",
+  "report_id": "2019-10-28_yamana-gold-inc_ex-99-1",
+  "sha256": "98f513d2fe8d20a88fb4c46fe7fda1afb8622ca850318f2893a15010706807d1",
+  "bytes": 3250409,
+  "format": "html",
+  "pages": 178,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853962/000119312525069386/d913666dex991.htm",
+  "source": "edgar",
+  "issuer": "i-80 Gold Corp.  (IAUX)",
+  "cik": "1853962",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-04-01",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Ruby Hill",
+  "commodity": "",
+  "report_id": "2025-04-01_i-80-gold-corp_ex-99-1",
+  "sha256": "10f9211b6a7622f626dd7a8387022c609a3ddb4696716a8ca2027a292e951430",
+  "bytes": 8094417,
+  "format": "html",
+  "pages": 362,
+  "parsed_on": "2026-11-19"
+}

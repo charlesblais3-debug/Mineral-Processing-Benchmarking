@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1879717/000121390023099919/fs12023a2ex96-2_keymining.htm",
+  "source": "edgar",
+  "issuer": "Key Mining Corp.",
+  "cik": "1879717",
+  "form": "S-1/A",
+  "exhibit": "EX-96.2",
+  "filed": "2023-12-29",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "Fiel Rosita",
+  "commodity": "",
+  "report_id": "2023-12-29_key-mining-corp_ex-96-2",
+  "sha256": "a01a2cb7b29f0d758731ac0b6f0ef3fb48aaa1bc529279398d02635de9fae843",
+  "bytes": 2080027,
+  "format": "html",
+  "pages": 69,
+  "parsed_on": "2026-11-19"
+}

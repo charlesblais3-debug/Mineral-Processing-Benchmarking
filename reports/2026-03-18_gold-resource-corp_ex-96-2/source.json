@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1160791/000110465926031121/goro-20251231xex96d2.htm",
+  "source": "edgar",
+  "issuer": "GOLD RESOURCE CORP  (GORO)",
+  "cik": "1160791",
+  "form": "10-K",
+  "exhibit": "EX-96.2",
+  "filed": "2026-03-18",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Don David",
+  "commodity": "",
+  "report_id": "2026-03-18_gold-resource-corp_ex-96-2",
+  "sha256": "590c5709f6c2421aeaae456b4bc5f77ad929217c8b6584cb5199936fb260828f",
+  "bytes": 4787367,
+  "format": "html",
+  "pages": 230,
+  "parsed_on": "2026-11-19"
+}

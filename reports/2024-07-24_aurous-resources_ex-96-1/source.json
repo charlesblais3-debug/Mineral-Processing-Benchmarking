@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2025049/000182912624004947/projectblazerigel_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Aurous Resources  (AURS)",
+  "cik": "2025049",
+  "form": "F-4",
+  "exhibit": "EX-96.1",
+  "filed": "2024-07-24",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Blyvoor",
+  "commodity": "",
+  "report_id": "2024-07-24_aurous-resources_ex-96-1",
+  "sha256": "724b92c2478cce77d11c48f046b0ae6ca20d02e1a45064a11e53aa4a0873d7cd",
+  "bytes": 3480677,
+  "format": "html",
+  "pages": 112,
+  "parsed_on": "2026-11-19"
+}

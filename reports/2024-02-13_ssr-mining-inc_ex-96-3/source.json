@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/921638/000094787124000126/ss2975198_ex9603.htm",
+  "source": "edgar",
+  "issuer": "SSR MINING INC.  (SSRM, SSRGF)",
+  "cik": "921638",
+  "form": "8-K",
+  "exhibit": "EX-96.3",
+  "filed": "2024-02-13",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Seabee",
+  "commodity": "",
+  "report_id": "2024-02-13_ssr-mining-inc_ex-96-3",
+  "sha256": "0645d5bc51c110a04aad917f316036f416c484c49e2826ad7626411fe3f4d821",
+  "bytes": 1693202,
+  "format": "html",
+  "pages": 118,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1964504/000119312523229367/d460434dex9913.htm",
+  "source": "edgar",
+  "issuer": "Aris Mining Corp  (ARMN, CLGDF)",
+  "cik": "1964504",
+  "form": "40FR12B",
+  "exhibit": "EX-99.13",
+  "filed": "2023-09-06",
+  "standard": "",
+  "study_level": "PFS",
+  "project": "Marmato",
+  "commodity": "",
+  "report_id": "2023-09-06_aris-mining-corp_ex-99-13",
+  "sha256": "6c8ba8bb0205ac01dc706ebd293c47c1d988aa95cb50187cb95c81cd3a1ce66b",
+  "bytes": 5769602,
+  "format": "html",
+  "pages": 250,
+  "parsed_on": "2026-11-19"
+}

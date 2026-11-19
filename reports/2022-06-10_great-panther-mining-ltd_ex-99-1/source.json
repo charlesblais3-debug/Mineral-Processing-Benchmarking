@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1300050/000127956922000974/ex991.htm",
+  "source": "edgar",
+  "issuer": "GREAT PANTHER MINING Ltd  (GPLDF)",
+  "cik": "1300050",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-06-10",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Tucano",
+  "commodity": "",
+  "report_id": "2022-06-10_great-panther-mining-ltd_ex-99-1",
+  "sha256": "93c0854f5cacf075faf4998331929472d8e8bb0ca24a05e7253cc2b7a9885ed7",
+  "bytes": 2444985,
+  "format": "html",
+  "pages": 132,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/903571/000127956921000301/ex991.htm",
+  "source": "edgar",
+  "issuer": "GOLDEN STAR RESOURCES LTD.",
+  "cik": "903571",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-03-11",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Wassa",
+  "commodity": "",
+  "report_id": "2021-03-11_golden-star-resources-ltd_ex-99-1",
+  "sha256": "5c65f53787202a45726669b176b5885cefd5ca8bf42e6b008f9bcc3030620ae2",
+  "bytes": 3503433,
+  "format": "html",
+  "pages": 215,
+  "parsed_on": "2026-11-19"
+}

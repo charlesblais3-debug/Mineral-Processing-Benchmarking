@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1508844/000119983520000108/ex99-2.htm",
+  "source": "edgar",
+  "issuer": "Pretium Resources Inc.",
+  "cik": "1508844",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2020-04-24",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "Brucejack",
+  "commodity": "",
+  "report_id": "2020-04-24_pretium-resources-inc_ex-99-2",
+  "sha256": "a5e38a31acc23bf5a2935476b46c3fe6e9b6eb18ce6ab3572c919780a64ad5c6",
+  "bytes": 5169161,
+  "format": "html",
+  "pages": 383,
+  "parsed_on": "2026-11-19"
+}

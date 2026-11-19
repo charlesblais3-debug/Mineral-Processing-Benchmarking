@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1784930/000106299326001529/exhibit99-53.htm",
+  "source": "edgar",
+  "issuer": "Mako Mining Corp.",
+  "cik": "1784930",
+  "form": "40FR12B/A",
+  "exhibit": "EX-99.53",
+  "filed": "2026-03-18",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Eagle Mountain",
+  "commodity": "",
+  "report_id": "2026-03-18_mako-mining-corp_ex-99-53",
+  "sha256": "39fc6d30462d8651abd6fec41dd1712ff47f6196f8d57933ebb9a502f0bd5095",
+  "bytes": 4248788,
+  "format": "html",
+  "pages": 343,
+  "parsed_on": "2026-11-19"
+}

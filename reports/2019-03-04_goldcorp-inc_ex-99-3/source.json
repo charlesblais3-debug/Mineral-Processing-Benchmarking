@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/919239/000119312519061905/d698182dex993.htm",
+  "source": "edgar",
+  "issuer": "GOLDCORP INC",
+  "cik": "919239",
+  "form": "6-K",
+  "exhibit": "EX-99.3",
+  "filed": "2019-03-04",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Éléonore",
+  "commodity": "",
+  "report_id": "2019-03-04_goldcorp-inc_ex-99-3",
+  "sha256": "b2451c2028818b6e2685023dadb6e9733c407f2be693892bd66f81ddf722b786",
+  "bytes": 2323689,
+  "format": "html",
+  "pages": 205,
+  "parsed_on": "2026-11-19"
+}

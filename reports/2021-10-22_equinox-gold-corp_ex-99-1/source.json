@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000127956921001449/ex991.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-10-22",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Riacho dos Machados",
+  "commodity": "",
+  "report_id": "2021-10-22_equinox-gold-corp_ex-99-1",
+  "sha256": "32f8a7dfd65b4e52cc07ef04fe97dd955ef17807b299b4006d64cda5059d44a9",
+  "bytes": 2077737,
+  "format": "html",
+  "pages": 85,
+  "parsed_on": "2026-11-19"
+}

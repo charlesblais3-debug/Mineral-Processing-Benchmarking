@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000127956920000761/ex991.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-05-14",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Pilar",
+  "commodity": "",
+  "report_id": "2020-05-14_equinox-gold-corp_ex-99-1",
+  "sha256": "55f927dbc6565362b6bd7e2e16f1e626c8f8077d9f768f75c35c92307175de28",
+  "bytes": 2584336,
+  "format": "html",
+  "pages": 281,
+  "parsed_on": "2026-11-19"
+}

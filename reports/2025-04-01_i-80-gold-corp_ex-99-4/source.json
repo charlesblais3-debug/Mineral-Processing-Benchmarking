@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853962/000119312525069386/d913666dex994.htm",
+  "source": "edgar",
+  "issuer": "i-80 Gold Corp.  (IAUX)",
+  "cik": "1853962",
+  "form": "8-K",
+  "exhibit": "EX-99.4",
+  "filed": "2025-04-01",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Cove",
+  "commodity": "",
+  "report_id": "2025-04-01_i-80-gold-corp_ex-99-4",
+  "sha256": "fa8aaeebdecea8c7eed056f6156c7a9b28f62c71646026fff7277edf7b2b413b",
+  "bytes": 3284068,
+  "format": "html",
+  "pages": 227,
+  "parsed_on": "2026-11-19"
+}

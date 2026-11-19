@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/868822/000165495419004573/ex991.htm",
+  "source": "edgar",
+  "issuer": "CANARC RESOURCE CORP  (CRCUF)",
+  "cik": "868822",
+  "form": "6-K",
+  "exhibit": "EX-99",
+  "filed": "2019-04-18",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "New Polaris",
+  "commodity": "",
+  "report_id": "2019-04-18_canarc-resource-corp_ex-99",
+  "sha256": "a2214c32131334aee8d8a4bc9c4aeaa62525c150d914e1c0fbe861155a0910e5",
+  "bytes": 3033746,
+  "format": "html",
+  "pages": 169,
+  "parsed_on": "2026-11-19"
+}

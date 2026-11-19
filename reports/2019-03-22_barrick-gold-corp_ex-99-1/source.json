@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312519083752/d650661dex991.htm",
+  "source": "edgar",
+  "issuer": "BARRICK GOLD CORP  (GOLD)",
+  "cik": "756894",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2019-03-22",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Goldstrike",
+  "commodity": "",
+  "report_id": "2019-03-22_barrick-gold-corp_ex-99-1",
+  "sha256": "4a593e626db02f83ec5db48651e8be7186945a6a95d557b633d22b53efe0eeed",
+  "bytes": 2412110,
+  "format": "html",
+  "pages": 212,
+  "parsed_on": "2026-11-19"
+}

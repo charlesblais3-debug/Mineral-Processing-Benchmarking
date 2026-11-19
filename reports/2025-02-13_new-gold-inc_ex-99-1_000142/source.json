@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/800166/000127956925000142/ex991.htm",
+  "source": "edgar",
+  "issuer": "New Gold Inc. /FI  (NGD)",
+  "cik": "800166",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-02-13",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "New Afton",
+  "commodity": "",
+  "report_id": "2025-02-13_new-gold-inc_ex-99-1_000142",
+  "sha256": "5d955a994319323ef4feca66a70fa99e91cb4a2d13396ac039467a49b3f1828f",
+  "bytes": 2325184,
+  "format": "html",
+  "pages": 147,
+  "parsed_on": "2026-11-19"
+}

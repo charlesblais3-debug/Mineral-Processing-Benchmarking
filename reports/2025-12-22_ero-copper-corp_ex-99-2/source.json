@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853860/000117184325008049/exh_992.htm",
+  "source": "edgar",
+  "issuer": "Ero Copper Corp.  (ERO)",
+  "cik": "1853860",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2025-12-22",
+  "standard": "",
+  "study_level": "",
+  "project": "Xavantina",
+  "commodity": "",
+  "report_id": "2025-12-22_ero-copper-corp_ex-99-2",
+  "sha256": "d9767361dd04d5fc1427917d8b2f83ab66c6f216550cd60f2a7284d927cfca66",
+  "bytes": 549471,
+  "format": "html",
+  "pages": 99,
+  "parsed_on": "2026-11-19"
+}

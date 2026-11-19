@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1030192/000165495426002560/idr_ex961.htm",
+  "source": "edgar",
+  "issuer": "Idaho Strategic Resources, Inc.  (IDR)",
+  "cik": "1030192",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2026-03-23",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "Golden Chest",
+  "commodity": "",
+  "report_id": "2026-03-23_idaho-strategic-resources-inc_ex-96-1",
+  "sha256": "cee281dea14db55f6d29b6098d568e95527c132c7213fb1879f847d0eb133dab",
+  "bytes": 903985,
+  "format": "html",
+  "pages": 130,
+  "parsed_on": "2026-11-19"
+}

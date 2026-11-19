@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1341335/000110465923036727/tm2310179d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "FORTUNA SILVER MINES INC  (FSM)",
+  "cik": "1341335",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-03-27",
+  "standard": "",
+  "study_level": "resource",
+  "project": "Yaramoko",
+  "commodity": "",
+  "report_id": "2023-03-27_fortuna-silver-mines-inc_ex-99-1",
+  "sha256": "c7565fbb2072c34bd36a7d76b75759342a46a2ba5b90790e6d4904272edb4940",
+  "bytes": 3164824,
+  "format": "html",
+  "pages": 157,
+  "parsed_on": "2026-11-19"
+}
