@@ -1,0 +1,155 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Northshore",
+  "title": "Technical Report Summary on the Northshore Property, Minnesota, USA",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Start Date | December 31, 2021",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "USA",
+  "region": "Minnesota",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 15
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "rod_mill",
+   "ball_mill",
+   "regrind",
+   "magnetic_sep",
+   "flotation",
+   "pelletizing"
+  ],
+  "quote": "Concentrator | Rod Mill | Allis Chalmers | 18 | 10.5'ø x 18' | 870 hp Concentrator | Ball Mill",
+  "page": 132
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 17.0,
+   "unit": "MLT/y",
+   "quote": "Annual Processing Rate | MLT/y | 17.0",
+   "page": 16,
+   "statistic": "lom_average",
+   "context": {
+    "note": "long tons (2,240 lb)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 24.6,
+   "unit": "%",
+   "quote": "Grade | % MagFe | 24.6",
+   "page": 16,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "MagFe"
+   }
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 29.4,
+   "unit": "%",
+   "quote": "Process Recovery | % | 29.4",
+   "page": 16,
+   "statistic": "lom_average",
+   "context": {
+    "product": "wet pellets per crude ore (weight)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 98,
+   "unit": "USD/WLT",
+   "quote": "at an average blended wet pellet price of $98/WLT",
+   "page": 16,
+   "metal": "Fe",
+   "context": {
+    "product": "blended pellet"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 619,
+   "unit": "MUSD",
+   "quote": "after-tax Net Present Value (NPV), using a 10% discount rate, of $619 million",
+   "page": 16,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 20.37,
+   "quote": "Mining | 20.37",
+   "page": 25,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 42.59,
+   "quote": "Processing | 42.59",
+   "page": 25,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Administration",
+   "value": 3.8,
+   "quote": "Site Administration | 3.80",
+   "page": 25,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General / Other",
+   "value": 13.3,
+   "quote": "General / Other | 13.30",
+   "page": 25,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Cash Cost",
+   "value": 80.06,
+   "quote": "Operating Cash Cost | 80.06",
+   "page": 25,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining",
+   "value": 989,
+   "quote": "Sustaining | $ millions | 989",
+   "page": 25,
+   "is_total": true
+  }
+ ]
+}

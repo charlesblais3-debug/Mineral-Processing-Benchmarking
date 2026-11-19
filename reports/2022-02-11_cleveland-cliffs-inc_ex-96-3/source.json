@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406522000033/a20220211-8xkxex963.htm",
+  "source": "edgar",
+  "issuer": "CLEVELAND-CLIFFS INC.  (CLF)",
+  "cik": "764065",
+  "form": "8-K",
+  "exhibit": "EX-96.3",
+  "filed": "2022-02-11",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Northshore",
+  "commodity": "Fe",
+  "report_id": "2022-02-11_cleveland-cliffs-inc_ex-96-3",
+  "sha256": "2f9dd29fd43a7471839d9bfe3e917e1a4821c4b817dca6a6af2a6e071d92ea30",
+  "bytes": 2228426,
+  "format": "html",
+  "pages": 180,
+  "parsed_on": "2026-11-19"
+}

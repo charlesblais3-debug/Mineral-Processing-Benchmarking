@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406522000033/a20220211-8xkxex962.htm",
+  "source": "edgar",
+  "issuer": "CLEVELAND-CLIFFS INC.  (CLF)",
+  "cik": "764065",
+  "form": "8-K",
+  "exhibit": "EX-96.2",
+  "filed": "2022-02-11",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Minorca",
+  "commodity": "Fe",
+  "report_id": "2022-02-11_cleveland-cliffs-inc_ex-96-2",
+  "sha256": "3fcda20ec537bd17e97310da4afc96e8d25d5e1149a1f7c85878f983d4c40fdf",
+  "bytes": 2672581,
+  "format": "html",
+  "pages": 202,
+  "parsed_on": "2026-11-19"
+}

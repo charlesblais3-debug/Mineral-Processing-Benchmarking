@@ -82,6 +82,7 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
             "capex": grand_total("initial_capex"),
             "plant_capex": category_sum("initial_capex", "process", "total"),
             "site_opex": grand_total("opex", "per_t_milled"),
+            "product_opex": grand_total("opex", "per_t_concentrate"),
             "process_opex": category_sum("opex", "processing", "per_t_milled"),
             "bwi": best_fact("bwi_ball"),
             "axb": best_fact("axb"),

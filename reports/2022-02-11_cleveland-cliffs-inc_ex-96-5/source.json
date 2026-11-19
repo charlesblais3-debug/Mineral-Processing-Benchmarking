@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406522000037/clf-2021123110xkex965.htm",
+  "source": "edgar",
+  "issuer": "CLEVELAND-CLIFFS INC.  (CLF)",
+  "cik": "764065",
+  "form": "10-K",
+  "exhibit": "EX-96.5",
+  "filed": "2022-02-11",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Tilden",
+  "commodity": "Fe",
+  "report_id": "2022-02-11_cleveland-cliffs-inc_ex-96-5",
+  "sha256": "07c51c93cfd7cf0afb02146c91465aca095c6a9861749bdade9c715e82e66220",
+  "bytes": 2469686,
+  "format": "html",
+  "pages": 192,
+  "parsed_on": "2026-11-19"
+}

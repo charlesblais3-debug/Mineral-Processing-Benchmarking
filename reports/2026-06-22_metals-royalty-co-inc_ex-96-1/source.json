@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2087398/000110465926076367/tm2616840d5_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Metals Royalty Co Inc.  (TMCR)",
+  "cik": "2087398",
+  "form": "F-1",
+  "exhibit": "EX-96.1",
+  "filed": "2026-06-22",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "Mesabi Metallics",
+  "commodity": "Fe",
+  "report_id": "2026-06-22_metals-royalty-co-inc_ex-96-1",
+  "sha256": "f198cd93af706ac9c782a60d43ec76f8b69b259b68af11a82d99038a7859a778",
+  "bytes": 1175851,
+  "format": "html",
+  "pages": 60,
+  "parsed_on": "2026-11-19"
+}

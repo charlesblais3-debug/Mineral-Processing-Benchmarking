@@ -1,0 +1,167 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Minorca",
+  "title": "Technical Report Summary on the Minorca Property, Minnesota, USA",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Start Date | December 31, 2021",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "USA",
+  "region": "Minnesota",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 16
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "rod_mill",
+   "magnetic_sep",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "pelletizing"
+  ],
+  "quote": "Rod milling – open circuit • Cobber magnetic separation • Ball milling – closed circuit • Rougher magnetic separation",
+  "page": 156
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 8.5,
+   "unit": "MLT/y",
+   "quote": "Annual Processing Rate | MLT/y | 8.5",
+   "page": 17,
+   "statistic": "lom_average",
+   "context": {
+    "note": "long tons (2,240 lb)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 23.8,
+   "unit": "%",
+   "quote": "Grade | % MagFe | 23.8",
+   "page": 16,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "MagFe"
+   }
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 34.2,
+   "unit": "%",
+   "quote": "Process Recovery | % | 34.2",
+   "page": 17,
+   "statistic": "lom_average",
+   "context": {
+    "product": "wet pellets per crude ore (weight)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 98,
+   "unit": "USD/WLT",
+   "quote": "at an average blended wet pellet price of $98/WLT",
+   "page": 17,
+   "metal": "Fe",
+   "context": {
+    "product": "blended pellet"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 70,
+   "unit": "MUSD",
+   "quote": "after-tax Net Present Value (NPV), using a 10% discount rate, of $70 million",
+   "page": 17,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 16.84,
+   "quote": "Mining | 16.84",
+   "page": 26,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 45.56,
+   "quote": "Processing | 45.56",
+   "page": 26,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Administration",
+   "value": 2.2,
+   "quote": "Site Administration | 2.20",
+   "page": 26,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics / Dock",
+   "value": 10.78,
+   "quote": "Logistics / Dock | 10.78",
+   "page": 26,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General / Other",
+   "value": 10.1,
+   "quote": "General / Other | 10.10",
+   "page": 26,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Cash Cost",
+   "value": 85.47,
+   "quote": "Operating Cash Cost | 85.47",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining",
+   "value": 210.2,
+   "quote": "Sustaining | $ millions | 210.2",
+   "page": 26,
+   "is_total": true
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406522000033/a20220211-8xkxex961.htm",
+  "source": "edgar",
+  "issuer": "CLEVELAND-CLIFFS INC.  (CLF)",
+  "cik": "764065",
+  "form": "8-K",
+  "exhibit": "EX-96.1",
+  "filed": "2022-02-11",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Hibbing Taconite",
+  "commodity": "Fe",
+  "report_id": "2022-02-11_cleveland-cliffs-inc_ex-96-1",
+  "sha256": "f83fa90a8b84fac3541017130583525a51610b141b1bed3edb96f77aee336973",
+  "bytes": 2116165,
+  "format": "html",
+  "pages": 193,
+  "parsed_on": "2026-11-19"
+}

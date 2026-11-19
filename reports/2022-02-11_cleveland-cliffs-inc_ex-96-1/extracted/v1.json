@@ -1,0 +1,217 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Hibbing Taconite",
+  "title": "Technical Report Summary on the Hibbing Taconite Property, Minnesota, USA",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Start Date | December 31, 2021",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "USA",
+  "region": "Minnesota",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 16
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ag_mill",
+   "magnetic_sep",
+   "vertical_mill",
+   "regrind",
+   "conc_thickener",
+   "conc_filter",
+   "pelletizing"
+  ],
+  "quote": "through a standard iron ore process flowsheet that includes primary crushing, autogenous grinding, and magnetic separation",
+  "page": 144
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 80000,
+   "unit": "LT/d",
+   "quote": "HibTac’s concentrator is designed to process approximately 80,000 LT of magnetite ore per day",
+   "page": 144,
+   "statistic": "design",
+   "context": {
+    "note": "long tons (2,240 lb)"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 24.7,
+   "unit": "MLT/y",
+   "quote": "Annual Processing Rate | MLT/y | 24.7",
+   "page": 17,
+   "statistic": "lom_average",
+   "context": {
+    "note": "long tons"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 18.7,
+   "unit": "%",
+   "quote": "Grade | % MagFe | 18.7",
+   "page": 16,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "magnetic iron (MagFe)"
+   }
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 25.5,
+   "unit": "%",
+   "quote": "Process Recovery | % | 25.5",
+   "page": 17,
+   "statistic": "lom_average",
+   "context": {
+    "product": "wet pellets per crude ore (weight)"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 66,
+   "unit": "%",
+   "quote": "Final magnetic concentrate averages approximately 66% MagFe and 4.1% SiO 2",
+   "page": 145,
+   "metal": "Fe",
+   "statistic": "mean",
+   "context": {
+    "basis": "MagFe"
+   }
+  },
+  {
+   "parameter": "conc_silica_pct",
+   "value": 4.1,
+   "unit": "%",
+   "quote": "Final magnetic concentrate averages approximately 66% MagFe and 4.1% SiO 2",
+   "page": 145,
+   "statistic": "mean",
+   "context": {
+    "product": "concentrate (pellet 4.5% SiO2)"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 44,
+   "unit": "µm",
+   "quote": "at a final grind of 80% passing 44 microns",
+   "page": 145,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 98,
+   "unit": "USD/WLT",
+   "quote": "Three-Year Trailing Average Revenue | $98/WLT pellet",
+   "page": 16,
+   "metal": "Fe",
+   "context": {
+    "product": "blended pellet"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 269,
+   "unit": "MUSD",
+   "quote": "an after-tax Net Present Value (NPV), using a 10.0% discount rate, of $269 million",
+   "page": 17,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 19.87,
+   "quote": "Mining | 19.87",
+   "page": 26,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 34.57,
+   "quote": "Processing | 34.57",
+   "page": 26,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Administration",
+   "value": 2.3,
+   "quote": "Site Administration | 2.30",
+   "page": 26,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Pellet Transportation and Storage",
+   "value": 10.35,
+   "quote": "Pellet Transportation and Storage | 10.35",
+   "page": 26,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General / Other",
+   "value": 8.2,
+   "quote": "General / Other | 8.20",
+   "page": 26,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Cash Cost",
+   "value": 75.29,
+   "quote": "Operating Cash Cost | 75.29",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate",
+   "per_long_ton": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining",
+   "value": 27.0,
+   "quote": "Sustaining | $ millions | 27.0",
+   "page": 25,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Concurrent Closure",
+   "value": 29.4,
+   "quote": "Concurrent Closure | $ millions | 29.4",
+   "page": 25
+  }
+ ]
+}

@@ -22,7 +22,8 @@ UNIT_FACTORS = {  # (from, to): factor
     ("kWh/st", "kWh/t"): 1.10231, ("kWh/sh t", "kWh/t"): 1.10231, ("kWh/ton", "kWh/t"): 1.10231,
     ("kWh/t", "kWh/t"): 1.0,
     ("Mt/a", "Mt/a"): 1.0, ("Mtpa", "Mt/a"): 1.0,
-    ("t/d", "t/d"): 1.0, ("tpd", "t/d"): 1.0, ("st/d", "t/d"): 0.907185,
+    ("t/d", "t/d"): 1.0, ("tpd", "t/d"): 1.0, ("st/d", "t/d"): 0.907185, ("LT/d", "t/d"): 1.01605,
+    ("MLT/y", "Mt/a"): 1.01605, ("Mst/y", "Mt/a"): 0.907185,
     ("µm", "µm"): 1.0, ("um", "µm"): 1.0, ("mm", "µm"): 1000.0, ("mesh", "µm"): None,
 }
 MULTIPLIERS = {"": 1, "k": 1e3, "thousand": 1e3, "M": 1e6, "million": 1e6, "B": 1e9, "billion": 1e9}
@@ -190,6 +191,9 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         if c.get("per_short_ton"):           # $/short ton -> $/tonne (1 t = 1.10231 st)
             value = value * 1.10231
             note = f"converted from {c['value']} per short ton"
+        elif c.get("per_long_ton"):          # $/long ton (2,240 lb) -> $/tonne (1 LT = 1.01605 t)
+            value = value / 1.01605
+            note = f"converted from {c['value']} per long ton"
         if c.get("is_total") or c.get("is_subtotal"):
             l1, l2, method, conf = "total", ("grand_total" if c.get("is_total") else "subtotal"), "rule", 1.0
         elif c.get("l1"):
