@@ -1,0 +1,214 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Sukari",
+  "title": "Sukari Gold Mine, Egypt Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Report current at: 31 December 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Egypt",
+  "region": "Eastern Desert",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "flotation",
+   "regrind",
+   "cil",
+   "elution_ew",
+   "heap_leach"
+  ],
+  "quote": "Each line consists of a semi-autogenous grinding (SAG) mill, a ball mill, and a pebble crushing circuit.",
+  "page": 5
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 12,
+   "unit": "Mt/a",
+   "quote": "The Sukari process plant is designed for a LOM throughput of 12Mtpa with an average gold recovery of 89.5%.",
+   "page": 5,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.5,
+   "unit": "%",
+   "quote": "The Sukari process plant is designed for a LOM throughput of 12Mtpa with an average gold recovery of 89.5%.",
+   "page": 5,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 175,
+   "unit": "µm",
+   "quote": "und to a target P80 size of 150–200µm before being processed through flotation",
+   "page": 5,
+   "statistic": "design",
+   "context": {
+    "note": "midpoint of the stated 150–200 µm target"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1700,
+   "unit": "USD/oz",
+   "quote": "Gold: $1,700/oz as determined by AngloGold Ashanti",
+   "page": 6,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1879,
+   "unit": "MUSD",
+   "quote": "Key metrics NPV0 $M 2,418 NPV5 $M 1,879",
+   "page": 38,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open pit fleet rebuilds",
+   "value": 160,
+   "quote": "Open pit fleet rebuilds 160",
+   "page": 6,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open pit fleet replacements",
+   "value": 80,
+   "quote": "Open pit fleet replacements 80",
+   "page": 6,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground fleet replacements",
+   "value": 13,
+   "quote": "Underground fleet replacements 13",
+   "page": 6,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground fleet rebuilds",
+   "value": 13,
+   "quote": "Underground fleet rebuilds 13",
+   "page": 6,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings dam lifts",
+   "value": 170,
+   "quote": "Tailings dam lifts 170",
+   "page": 6,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant",
+   "value": 30,
+   "quote": "Plant 30 Crusher feed",
+   "page": 6,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Crusher feed fleet rebuilds",
+   "value": 19,
+   "quote": "Crusher feed fleet rebuilds 19",
+   "page": 6,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Crusher feed fleet replacement",
+   "value": 6,
+   "quote": "Crusher feed fleet replacement 6",
+   "page": 6,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Dump Leach capital",
+   "value": 31,
+   "quote": "Dump Leach capital 31",
+   "page": 6,
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General and administrative",
+   "value": 34,
+   "quote": "General and administrative 34 Total 556",
+   "page": 6,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital (2026-2035)",
+   "value": 556,
+   "quote": "Total 556 1.8.2. Operating costs",
+   "page": 6,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining",
+   "value": 2.18,
+   "quote": "Open pit mining 2.18 Underground",
+   "page": 6,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground mining",
+   "value": 42.05,
+   "quote": "Underground mining 42.05 Processing",
+   "page": 6,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 11.04,
+   "quote": "Processing 11.04 Dump leach",
+   "page": 6,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative",
+   "value": 3.31,
+   "quote": "General and administrative 3.31 1.9.",
+   "page": 6,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  }
+ ]
+}

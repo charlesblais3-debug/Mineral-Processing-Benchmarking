@@ -1,0 +1,215 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Loulo-Gounkoto",
+  "title": "Technical Report on the Loulo-Gounkoto Gold Mine Complex, Mali",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2022-12-31",
+  "effective_date_quote": "Effective Date: 31 December 2022",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Mali",
+  "region": "Kayes",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "pebble_crush",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "Milling – one primary mill (8 MW), two identical single stage ball mills (4.5 MW), one scat conveyor system is inserted to return all mills scats back to primary mill via a cone crusher.",
+  "page": 351
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 4.8,
+   "unit": "Mt/a",
+   "quote": "The Loulo processing plant uses a carbon in leach (CIL) gold extraction process with a throughput capacity of 4.8 Mtpa",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "note": "peak 5.1 Mtpa; expansion to 6.2 Mtpa planned"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.5,
+   "unit": "%",
+   "quote": "resulting in 7.5 Moz recovered gold at an average processing recovery of 89.5% on a 100% basis",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.87,
+   "unit": "g/t",
+   "quote": "estimated to be 66.9 Mt at an average grade of 3.87 g/t Au",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 17,
+   "unit": "MW",
+   "quote": "Milling – one primary mill (8 MW), two identical single stage ball mills (4.5 MW)",
+   "page": 351,
+   "statistic": "design",
+   "context": {
+    "mills": "primary 8 MW + 2 x 4.5 MW ball"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1700,
+   "unit": "USD/oz",
+   "quote": "corresponds to the in-situ marginal cut-off grade using a gold price of $1,700/oz",
+   "page": 24,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Grade Control Drilling",
+   "value": 50,
+   "quote": "Grade Control Drilling 50",
+   "page": 36,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalised Deferred Stripping",
+   "value": 404,
+   "quote": "Capitalised Deferred Stripping 404",
+   "page": 36,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Capital Development and Drilling",
+   "value": 371,
+   "quote": "Underground Capital Development and Drilling 371",
+   "page": 36,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TSF Extension Capital",
+   "value": 143,
+   "quote": "TSF Extension Capital 143",
+   "page": 36,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Plant Expansion Capital",
+   "value": 150,
+   "quote": "Plant Expansion Capital 150",
+   "page": 36,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalised Drilling",
+   "value": 15,
+   "quote": "Capitalised Drilling 15",
+   "page": 36,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Power Capital",
+   "value": 43,
+   "quote": "Power Capital 43",
+   "page": 36,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Sustaining Capital",
+   "value": 460,
+   "quote": "Other Sustaining Capital 460",
+   "page": 36,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LOM Capital Expenditure",
+   "value": 1636,
+   "quote": "Total LOM Capital Expenditure 1,636",
+   "page": 36,
+   "is_total": true,
+   "partial_breakdown": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 2.84,
+   "quote": "Open Pit Mining – Loulo-Gounkoto Complex $/t mined 2.84",
+   "page": 37,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 50.73,
+   "quote": "Underground Mining $/t mined 50.73",
+   "page": 37,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 19.63,
+   "quote": "Processing $/t milled 19.63",
+   "page": 37,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 7.81,
+   "quote": "G&A $/t milled 7.81",
+   "page": 37,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Total (including Over the Road Ore Transport)",
+   "value": 48.55,
+   "quote": "Mining Total (including Over the Road Ore Transport) $/t milled 48.55",
+   "page": 37,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total LOM Net Operating Cost",
+   "value": 75.99,
+   "quote": "Total LOM Net Operating Cost $/t milled 75.99",
+   "page": 37,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

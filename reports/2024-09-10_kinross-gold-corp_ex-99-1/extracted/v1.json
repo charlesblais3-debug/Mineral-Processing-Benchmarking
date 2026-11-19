@@ -1,0 +1,389 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Great Bear",
+  "title": "Great Bear Gold Project Ontario, Canada NI 43-101 Technical Report Preliminary Economic Assessment",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2024-04-02",
+  "effective_date_quote": "satellite Hinge and Limb zones and have an effective date of April 2, 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 19
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "gravity",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "The proposed process flowsheet includes primary crushing, SAG and ball milling, pebble crushing, gravity concentration, cyanide leaching followed by carbon adsorption in a carbon-in-pulp (CIP) circuit",
+  "page": 22
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 10000,
+   "unit": "t/d",
+   "quote": "Steady-state annual processing rate: 10,000 tpd.",
+   "page": 10,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.7,
+   "unit": "%",
+   "quote": "LOM average metallurgical recovery: 95.7%.",
+   "page": 10,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.87,
+   "unit": "g/t",
+   "quote": "LOM total plant feed: 44.6 Mt at 3.87 g/t Au.",
+   "page": 10,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 12.0,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (Design) kWh/t 12.0 Weighted test work results (SGS)",
+   "page": 135,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill",
+    "basis": "weighted test work results (SGS)"
+   }
+  },
+  {
+   "parameter": "cwi",
+   "value": 19.9,
+   "unit": "kWh/t",
+   "quote": "Bond Crusher Work Index (Design) kWh/t 19.9 LP Fault test work (SGS)",
+   "page": 135,
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.282,
+   "unit": "g",
+   "quote": "Bond Abrasion Index (Design) g 0.282",
+   "page": 135,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 31.8,
+   "unit": "",
+   "quote": "JK Resistance to Impact (Axb) (Design) Axb 31.8",
+   "page": 135,
+   "statistic": "design",
+   "context": {
+    "test": "SMC"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Grinding Circuit Particle Size (Leach Feed) (P80, nominal) µm 75",
+   "page": 135,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1900,
+   "unit": "USD/oz",
+   "quote": "revenue is estimated based on a constant LOM gold price of $1,900/oz",
+   "page": 26,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1898,
+   "unit": "MUSD",
+   "quote": "NPV (@ 5% disc.) US$M 1,898",
+   "page": 28,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 24.3,
+   "unit": "%",
+   "quote": "IRR % 24.3 Payback Period years 2.7",
+   "page": 28
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.7,
+   "unit": "years",
+   "quote": "IRR % 24.3 Payback Period years 2.7",
+   "page": 28
+  },
+  {
+   "parameter": "aisc",
+   "value": 812,
+   "unit": "USD/oz",
+   "quote": "all-in sustaining unit cost (AISC): $812/oz Au.",
+   "page": 10,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.74,
+   "unit": "USD/CAD",
+   "quote": "Exchange Rate CAD:USD 0.74 | x",
+   "page": 26,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 239,
+   "quote": "Infrastructure 239 Underground Infrastructure",
+   "page": 162,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Underground Infrastructure",
+   "value": 49,
+   "quote": "Underground Infrastructure 49 Power",
+   "page": 162,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power",
+   "value": 47,
+   "quote": "Power 47 Mine Equipment",
+   "page": 162,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Equipment",
+   "value": 85,
+   "quote": "Mine Equipment 85 Processing",
+   "page": 162,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 217,
+   "quote": "Processing 217 Tailings",
+   "page": 162,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Management Facility",
+   "value": 52,
+   "quote": "Tailings Management Facility 52 Total Direct",
+   "page": 162
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 689,
+   "quote": "Total Direct Costs 689",
+   "page": 162,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects and Owners Cost",
+   "value": 276,
+   "quote": "Indirects and Owners Cost 276",
+   "page": 162,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 216,
+   "quote": "Contingency 216 Total Construction",
+   "page": 162
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Construction Capital Cost",
+   "value": 1181,
+   "quote": "Total Construction Capital Cost 1,181",
+   "page": 162,
+   "is_total": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized Open Pit Mining",
+   "value": 105,
+   "quote": "Capitalized Open Pit Mining 105",
+   "page": 162,
+   "outside_total": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized Underground Development",
+   "value": 143,
+   "quote": "Capitalized Underground Development 143",
+   "page": 162,
+   "outside_total": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 1034,
+   "quote": "Total Sustaining Capital 1,034",
+   "page": 162,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing – Labour",
+   "value": 2.49,
+   "quote": "Labour 111 2.49 14",
+   "page": 170,
+   "l1": "processing",
+   "l2": "labour",
+   "part_of": "Processing total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing – Power",
+   "value": 3.93,
+   "quote": "Power 176 3,93 23",
+   "page": 170,
+   "l1": "processing",
+   "l2": "power",
+   "part_of": "Processing total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing – Reagents",
+   "value": 4.27,
+   "quote": "Reagents 190 4.27 25",
+   "page": 170,
+   "l1": "processing",
+   "l2": "reagents",
+   "part_of": "Processing total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing – Consumables",
+   "value": 3.24,
+   "quote": "Consumables 145 3.24 19",
+   "page": 170,
+   "l1": "processing",
+   "l2": "media_liners",
+   "part_of": "Processing total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing – Maintenance",
+   "value": 1.48,
+   "quote": "Maintenance 66 1.48 9",
+   "page": 170,
+   "l1": "processing",
+   "l2": "maintenance",
+   "part_of": "Processing total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing – Laboratory",
+   "value": 0.1,
+   "quote": "Laboratory 5 0.10 1",
+   "page": 170,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Processing total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing – Other",
+   "value": 1.73,
+   "quote": "Other 77 1.73 10",
+   "page": 170,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Processing total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing total",
+   "value": 17.25,
+   "quote": "Total 770 17.25 100",
+   "page": 170,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 8.91,
+   "quote": "Total 398 35.0 8.91",
+   "page": 171,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining",
+   "value": 3.59,
+   "quote": "Total 2 674 3.59 27.71 100",
+   "page": 169,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground mining (per t UG plant feed)",
+   "value": 68.7,
+   "quote": "Total Operating Cost 1,395 68.7 100",
+   "page": 170,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  }
+ ]
+}

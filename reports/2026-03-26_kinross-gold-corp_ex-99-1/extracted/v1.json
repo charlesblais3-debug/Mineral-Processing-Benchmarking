@@ -1,0 +1,180 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Paracatu",
+  "title": "Paracatu Mine State of Minas Gerais, Brazil National Instrument 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Minas Gerais",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "gravity",
+   "flotation",
+   "regrind",
+   "cil"
+  ],
+  "quote": "semi-autogenous grinding (SAG) milling, multiple ball mills, flotation, gravity concentration, and CIL",
+  "page": 9
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 61,
+   "unit": "Mt/a",
+   "quote": "the design capacity has increased to its current nominal throughput of 61 million tonnes per annum (Mt/a)",
+   "page": 6,
+   "statistic": "design"
+  },
+  {
+   "parameter": "specific_energy",
+   "value": 15.1,
+   "unit": "kWh/t",
+   "quote": "2024 58.33 0.359 16,372 526,383 80.1 8.6 14.7 12.4 15.1",
+   "page": 40,
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "scope": "grinding_only",
+    "note": "Plant 2 mill energy, 2024 actual"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14,
+   "unit": "kWh/t",
+   "quote": "2026 38,240 83 0.45 14 479",
+   "page": 56,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill (block-model BWI)",
+    "note": "Plant II 2026 scheduled feed"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/oz",
+   "quote": "totalling US$47.31/oz at a gold price of US$2,000/oz",
+   "page": 54,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per t mined)",
+   "value": 3.3,
+   "quote": "Mining US$/t mined 2 $ | 3.3",
+   "page": 89,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per t processed)",
+   "value": 4.8,
+   "quote": "Mining US$/t processed $ | 4.8",
+   "page": 89,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 5.0,
+   "quote": "Processing US$/t processed 3 $ | 5.0",
+   "page": 89,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Admin",
+   "value": 55,
+   "quote": "Site Admin US$M/year $ | 55",
+   "page": 89,
+   "basis_unit": "per_year",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Mobile Equipment",
+   "value": 324,
+   "quote": "Mine Mobile Equipment 324",
+   "page": 88,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Storage Facilities",
+   "value": 163,
+   "quote": "Tailings Storage Facilities 163",
+   "page": 88
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing Facilities",
+   "value": 70,
+   "quote": "Processing Facilities 70",
+   "page": 88,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Other",
+   "value": 39,
+   "quote": "Mine Other 39",
+   "page": 88,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site Infrastructure",
+   "value": 25,
+   "quote": "Site Infrastructure 25",
+   "page": 88,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Information Technology",
+   "value": 6,
+   "quote": "Information Technology 6",
+   "page": 88,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 26,
+   "quote": "Other 26 Total 654",
+   "page": 88,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LOM capital",
+   "value": 654,
+   "quote": "Total 654",
+   "page": 88,
+   "is_total": true
+  }
+ ]
+}

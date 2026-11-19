@@ -1,0 +1,223 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Tasiast",
+  "title": "Tasiast Mine Mauritania National Instrument 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Mauritania",
+  "region": "Inchiri",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "a primary gyratory crusher that reduces rock to less than 210 mm",
+  "page": 89
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 24000,
+   "unit": "t/d",
+   "quote": "Daily throughput t/d 24,000",
+   "page": 88,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92.0,
+   "unit": "%",
+   "quote": "Process plant availability % 92.0",
+   "page": 88,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 14.6,
+   "unit": "kWh/t",
+   "quote": "Crusher work index kWh/t 14.6",
+   "page": 88,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 31.4,
+   "unit": "",
+   "quote": "JKTech Axb - 31.4",
+   "page": 88,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13.3,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill work index kWh/t 13.3",
+   "page": 88,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill (design value)"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 90,
+   "unit": "µm",
+   "quote": "Ball mill product size (P 80 ) µm 90",
+   "page": 88,
+   "statistic": "design"
+  },
+  {
+   "parameter": "leach_residence_h",
+   "value": 18,
+   "unit": "h",
+   "quote": "Total leach + CIL h 18",
+   "page": 88,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are estimated using an average long-term gold price of US$1,600 per ounce",
+   "page": 6,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3.8,
+   "quote": "0.0 0.0 0.0 0.0 0.0 3.8 Processing (Mill)",
+   "page": 101,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (Mill)",
+   "value": 14.4,
+   "quote": "13.4 12.8 12.7 14.4 Site Admin",
+   "page": 101,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (incl. capitalized stripping) LOM",
+   "value": 1602,
+   "quote": "25 25 19 1,602 Processing",
+   "page": 101,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (Mill) LOM",
+   "value": 1384,
+   "quote": "117 112 106 1,384",
+   "page": 101,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Admin LOM",
+   "value": 754,
+   "quote": "34 30 17 754 Royalties million",
+   "page": 101,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties LOM",
+   "value": 782,
+   "quote": "39 38 35 782",
+   "page": 101,
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capitalized stripping",
+   "value": 36.5,
+   "quote": "Total 36.5 49.8 48.3 65.3 29.3",
+   "page": 98,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining sustaining capital",
+   "value": 49.8,
+   "quote": "Total 36.5 49.8 48.3 65.3 29.3",
+   "page": 98,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mill sustaining capital",
+   "value": 48.3,
+   "quote": "Total 36.5 49.8 48.3 65.3 29.3",
+   "page": 98,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings sustaining capital",
+   "value": 65.3,
+   "quote": "Total 36.5 49.8 48.3 65.3 29.3",
+   "page": 98,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other sustaining capital",
+   "value": 29.3,
+   "quote": "Total 36.5 49.8 48.3 65.3 29.3",
+   "page": 98,
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Non-sustaining capitalized stripping",
+   "value": 628.1,
+   "quote": "Total 628.1 73.1 2.5",
+   "page": 98,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mobile equipment maintenance non-sustaining",
+   "value": 73.1,
+   "quote": "Total 628.1 73.1 2.5",
+   "page": 98,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other non-sustaining capital",
+   "value": 2.5,
+   "quote": "Total 628.1 73.1 2.5",
+   "page": 98,
+   "l1": "other"
+  }
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Pueblo Viejo",
+  "title": "S-K 1300 Technical Report Summary on the Pueblo Viejo Mine, Sanchez-Ramirez, Dominican Republic",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Dominican Republic",
+  "region": "Sánchez Ramírez",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "pox",
+   "cil",
+   "cyanide_detox"
+  ],
+  "quote": "The ROM and stockpile ore is crushed to a P80 of approximately 130 mm using two parallel primary gyratory crushers",
+  "page": 143
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 14,
+   "unit": "Mt/a",
+   "quote": "The Pueblo Viejo processing plant is designed to process approximately 14 Mtpa of ROM and stockpiled refractory ore.",
+   "page": 141,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Target grinding circuit product size to subsequent processing is P80 of approximately 75 µm.",
+   "page": 143,
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 48.4,
+   "unit": "MW",
+   "quote": "SAG mill D=9.7m x L=4.8m 9,000 kW Ball mill D=7.92m x L=12.4m 16,400 kW SAG mill 2 D=11.5m x L=7.3m 23,000 kW",
+   "page": 143,
+   "statistic": "design",
+   "context": {
+    "mills": "SAG 9.0 + ball 16.4 + SAG2 23.0 MW (main ore grinding only)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1500,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves utilize long-term Reserve metal price assumptions of US$1,500/oz Au",
+   "page": 13,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2780,
+   "unit": "MUSD",
+   "quote": "having a positive after-tax net present value (NPV) of $2,780M at a discount rate of 5% (NPV5)",
+   "page": 166,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General & Administration",
+   "value": 46,
+   "quote": "General & Administration 46",
+   "page": 163,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Drilling",
+   "value": 13,
+   "quote": "Capitalized Drilling 13",
+   "page": 163,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Capitalized Stripping",
+   "value": 515,
+   "quote": "Mine Capitalized Stripping 515",
+   "page": 163,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Sustaining",
+   "value": 549,
+   "quote": "Open Pit Sustaining 549",
+   "page": 163,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Expansion",
+   "value": 1504,
+   "quote": "Expansion 1,504",
+   "page": 163,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing Sustaining",
+   "value": 1552,
+   "quote": "Processing Sustaining 1,552",
+   "page": 163,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 4178,
+   "quote": "Total 4,178",
+   "page": 163,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining – OP",
+   "value": 8.37,
+   "quote": "Mining – OP 8.37",
+   "page": 164,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 35.34,
+   "quote": "Processing 35.34",
+   "page": 164,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration",
+   "value": 3.12,
+   "quote": "General & Administration 3.12",
+   "page": 164,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Operating Costs",
+   "value": 46.83,
+   "quote": "Total Direct Operating Costs 46.83",
+   "page": 164,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight & Refining Costs",
+   "value": 0.15,
+   "quote": "Freight & Refining Costs 0.15",
+   "page": 164,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty",
+   "value": 3.04,
+   "quote": "Royalty 3.04",
+   "page": 164,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

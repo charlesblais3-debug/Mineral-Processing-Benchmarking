@@ -1,0 +1,193 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Peñasquito",
+  "title": "Peñasquito Operations Mexico Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "Report current as at: December 31, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Mexico",
+  "region": "Zacatecas",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "pebble_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "Nine feeders report the coarse ore to two semi-autogenous grinding (SAG) mills operating in closed circuit with pebble crushers and one high pressure grinding roller (HPGR) unit.",
+  "page": 55
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 37,
+   "unit": "Mt/a",
+   "quote": "The mine plan is based on a 37 Mt/a mill throughput rate.",
+   "page": 51,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 115000,
+   "unit": "t/d",
+   "quote": "allowed throughput to increase from 85,000 t/d to a nominal 115,000 t/d",
+   "page": 45,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 125,
+   "unit": "µm",
+   "quote": "Each grinding circuit reduces the crushed ore from a passing P80 of 159 mm size to a passing P80 of 125 µm.",
+   "page": 56,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 59,
+   "unit": "%",
+   "quote": "Recovery, gold % 59",
+   "page": 66,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80,
+   "unit": "%",
+   "quote": "Recovery, silver % 80",
+   "page": 66,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 73,
+   "unit": "%",
+   "quote": "Recovery, lead % 73",
+   "page": 66,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82,
+   "unit": "%",
+   "quote": "Recovery, zinc % 82",
+   "page": 66,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1400,
+   "unit": "USD/oz",
+   "quote": "The net revenue calculation assumes a gold price of US$1,400/oz, a silver price of US$20/oz",
+   "page": 51,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1120,
+   "unit": "MUSD",
+   "quote": "The NPV8% is US$1.12 B",
+   "page": 13,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 0.3,
+   "quote": "Mining US$ B 0.3 Process US$ B 0.4",
+   "page": 13,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process",
+   "value": 0.4,
+   "quote": "Process US$ B 0.4 Site general",
+   "page": 13,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site general and administrative",
+   "value": 0.1,
+   "quote": "Site general and administrative US$ B 0.1",
+   "page": 13,
+   "l1": "onsite_infra",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 0.8,
+   "quote": "Total US$ B 0.8 Note: Numbers have been rounded; totals may not sum due to rounding. Table 18-2",
+   "page": 64,
+   "is_total": true,
+   "tolerance_pct": 10,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 2.5,
+   "quote": "Mining US$ B 2.5 Process US$ B 2.7",
+   "page": 64,
+   "l1": "mining",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 2.7,
+   "quote": "Process US$ B 2.7 General",
+   "page": 64,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative",
+   "value": 0.9,
+   "quote": "General and administrative US$ B 0.9 Total",
+   "page": 14,
+   "l1": "ga",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 6.1,
+   "quote": "Total US$ B 6.1",
+   "page": 14,
+   "is_total": true,
+   "tolerance_pct": 5,
+   "multiplier": "B"
+  }
+ ]
+}
