@@ -1,0 +1,313 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Joyce Lake DSO",
+  "title": "NI 43-101 Technical Report, Feasibility Study for the Joyce Lake DSO Iron Ore Project, Newfoundland and Labrador, Canada",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2022-10-31",
+  "effective_date_quote": "October 31, 2022",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Newfoundland and Labrador",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "screening"
+  ],
+  "quote": "oversize material (+130 mm) is fed to a jaw",
+  "page": 232
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 3.0,
+   "unit": "Mt/y",
+   "quote": "Annual plant feed (dry basis) - design | tpa | 3,000,000",
+   "page": 238,
+   "statistic": "design",
+   "context": {
+    "note": "dry basis; nominal 2.5 Mtpa"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 124.95,
+   "unit": "USD/dmt",
+   "quote": "benchmark sinter fines price of USD124.95/dmt CFR China Port for 62% Fe",
+   "page": 52,
+   "metal": "Fe",
+   "context": {
+    "product": "62% Fe fines benchmark CFR China (3-year look-back Mysteel index)"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.77,
+   "unit": "USD/CAD",
+   "quote": "An exchange rate of CAD1.00 = USD0.77 was used",
+   "page": 52,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 184.6,
+   "unit": "MCAD",
+   "quote": "8% | $184.6 M",
+   "page": 52,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20.01,
+   "unit": "%",
+   "quote": "IRR = 20.01%",
+   "page": 52
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.7,
+   "unit": "years",
+   "quote": "$394.7 M | 3.7",
+   "page": 52,
+   "context": {
+    "note": "after-tax payback"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining (Capitalized Pre-Stripping)",
+   "value": 20.7,
+   "quote": "Mining (Capitalized Pre-Stripping) | $20.7",
+   "page": 49,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Equipment (Initial Owner Fleet)",
+   "value": 26.3,
+   "quote": "Mining Equipment (Initial Owner Fleet) | $26.3",
+   "page": 49,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure Direct Costs",
+   "value": 143.1,
+   "quote": "Infrastructure Direct Costs | $143.1",
+   "page": 49,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure Indirect and Owners Costs",
+   "value": 42.8,
+   "quote": "Infrastructure Indirect and Owners Costs | $42.8",
+   "page": 49,
+   "l1": "indirects",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Railcars Lease Down Payment",
+   "value": 9.2,
+   "quote": "Railcars Lease Down Payment | $9.2",
+   "page": 49,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Mobile Equipment Lease Down Payment",
+   "value": 10.0,
+   "quote": "Other Mobile Equipment Lease Down Payment | $10.0",
+   "page": 49,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 18.4,
+   "quote": "Contingency | $18.4",
+   "page": 49,
+   "l1": "contingency",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 270.4,
+   "quote": "Total | $270.4",
+   "page": 49,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Equipment Sustaining Capital",
+   "value": 18.3,
+   "quote": "Mining Equipment Sustaining Capital | $18.3",
+   "page": 50,
+   "l1": "mining",
+   "l2": "equipment",
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 6.4,
+   "quote": "Closure Costs | $6.4",
+   "page": 50,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining ($/dmt product)",
+   "value": 15.46,
+   "quote": "Mining | 15.46",
+   "page": 51,
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Perimeter Dewatering and Water Management ($/dmt product)",
+   "value": 0.7,
+   "quote": "Perimeter Dewatering and Water Management | 0.70",
+   "page": 51,
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing and Screening and Product Handling ($/dmt product)",
+   "value": 3.02,
+   "quote": "Crushing and Screening and Product Handling | 3.02",
+   "page": 51,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Product Truck Haulage to Astray Lake Rail Loading ($/dmt product)",
+   "value": 6.71,
+   "quote": "Product Truck Haulage to Astray Lake Rail Loading | 6.71",
+   "page": 51,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Load-out and Rail Siding at Astray Lake ($/dmt product)",
+   "value": 1.81,
+   "quote": "Load-out and Rail Siding Load-out and Rail Siding at Astray Lake | 1.81",
+   "page": 51,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Administration ($/dmt product)",
+   "value": 4.52,
+   "quote": "Site Administration | 4.52",
+   "page": 51,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Services (Room & Board and FIFO Air Tickets) ($/dmt product)",
+   "value": 3.15,
+   "quote": "Site Services (Room & Board and FIFO Air Tickets) | 3.15",
+   "page": 51,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Lump Drying ($/dmt product)",
+   "value": 0.89,
+   "quote": "Lump Drying | 0.89",
+   "page": 51,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total ($/dmt product)",
+   "value": 36.26,
+   "quote": "Total | 36.26",
+   "page": 51,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  }
+ ]
+}

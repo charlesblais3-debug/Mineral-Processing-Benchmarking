@@ -18,7 +18,7 @@ unit_ops:
   ball_mill:          { label: Ball mill, group: comminution }
   vertical_mill:      { label: Vertical / stirred mill, group: comminution }
   regrind:            { label: Regrind, group: comminution }
-  screening:          { label: Crushing & screening to product (no beneficiation), group: comminution }
+  screening:          { label: Screening / sizing, group: comminution }
   # Pre-concentration
   ore_sorting:        { label: Ore sorting, group: preconcentration }
   dms:                { label: Dense media separation, group: preconcentration }

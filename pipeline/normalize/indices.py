@@ -64,16 +64,27 @@ def fetch_ppi(client: PoliteClient) -> dict[str, dict[int, float]]:
     return result
 
 
+# Bank of Canada legacy annual averages (CAD per unit), 1997-2016; the current FXA series start in 2017.
+LEGACY_CODES = {"USD": "IEXA0101", "AUD": "IEXA1601", "BRL": "IEXA2801", "CNY": "IEXA2201", "EUR": "EUROCAA01",
+                "GBP": "IEXA1201", "INR": "IEXA3001", "JPY": "IEXA0701", "MXN": "IEXA2001"}
+
+
 def fetch_fx(client: PoliteClient) -> dict[str, dict[int, float]]:
-    """USD per 1 unit of each currency, annual average."""
+    """USD per 1 unit of each currency, annual average (legacy series fill the years before 2017)."""
     per_cad: dict[str, dict[int, float]] = {}
+    try:
+        legacy = json.loads(client.get("https://www.bankofcanada.ca/valet/observations/group/LEGACY_ANNUAL_RATES/json"))
+        for ccy, code in LEGACY_CODES.items():
+            per_cad[ccy] = {int(o["d"][:4]): float(o[code]["v"]) for o in legacy["observations"] if o.get(code, {}).get("v")}
+    except Exception:  # noqa: BLE001 - legacy group unavailable: newer years still work
+        pass
     for ccy in CURRENCIES:
         try:
             data = json.loads(client.get(f"https://www.bankofcanada.ca/valet/observations/FXA{ccy}CAD/json"))
         except Exception:  # noqa: BLE001 - some currencies have no annual series
             continue
         key = f"FXA{ccy}CAD"
-        per_cad[ccy] = {int(o["d"][:4]): float(o[key]["v"]) for o in data["observations"] if o.get(key, {}).get("v")}
+        per_cad.setdefault(ccy, {}).update({int(o["d"][:4]): float(o[key]["v"]) for o in data["observations"] if o.get(key, {}).get("v")})
     usd = per_cad["USD"]  # CAD per USD
     fx = {"CAD": {y: 1 / v for y, v in usd.items()}, "USD": {y: 1.0 for y in usd}}
     for ccy, series in per_cad.items():

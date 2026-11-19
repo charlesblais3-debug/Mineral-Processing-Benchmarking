@@ -1,0 +1,285 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Duncan Lake",
+  "title": "NI 43-101 Technical Report, Preliminary Economic Assessment of the Duncan Lake Iron Property, Quebec",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2013-03-22",
+  "effective_date_quote": "Effective Date: March 22, 2013",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Quebec",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2013,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "screening",
+   "magnetic_sep",
+   "ball_mill",
+   "conc_thickener",
+   "conc_filter",
+   "pelletizing"
+  ],
+  "quote": "ROM”) material will be crushed using gyratory crushers",
+  "page": 16
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 113107,
+   "unit": "t/d",
+   "quote": "Average processing rate | tonne / day (tpd) | 113,107",
+   "page": 140,
+   "statistic": "design",
+   "context": {
+    "note": "average processing rate, 41,284,059 t/y, 12 Mtpy pellet case"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 24.8,
+   "unit": "%",
+   "quote": "Average head grade (Deposits 3 and 4) | % Fe | 24.8",
+   "page": 140,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "total Fe"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 67.6,
+   "unit": "%",
+   "quote": "Iron Concentrate Grade | % Fe | 67.6",
+   "page": 140,
+   "metal": "Fe",
+   "statistic": "design"
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 27.98,
+   "unit": "%",
+   "quote": "Overall weight recovery at 200 mesh | % | 27.98",
+   "page": 140,
+   "statistic": "design",
+   "context": {
+    "product": "iron concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 125,
+   "unit": "USD/t",
+   "quote": "USD 125 per tonne of 62% iron concentrate, CFR China",
+   "page": 21,
+   "metal": "Fe",
+   "context": {
+    "product": "62% Fe concentrate CFR China basis (pellet USD 134/t at 66.3% Fe)"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.95,
+   "unit": "USD/CAD",
+   "quote": "Exchange rate at par for 2013 to 2017 and 0.95 USD/CAD for 2018 and beyond",
+   "page": 21,
+   "context": {
+    "pair": "USD per CAD, from 2018 onward (par 2013-2017)"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2238.4,
+   "unit": "MCAD",
+   "quote": "CAD 2,238.4 M (at 8% discount rate)",
+   "page": 206,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 15.9,
+   "unit": "%",
+   "quote": "internal rate of return of 15.9 %",
+   "page": 206
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.8,
+   "unit": "years",
+   "quote": "payback period of 4.8 years",
+   "page": 206
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Direct Capital Cost",
+   "value": 2967,
+   "quote": "Pre-Production Direct Capital Cost 2,967",
+   "page": 19,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Indirect Capital Cost",
+   "value": 363,
+   "quote": "Pre-Production Indirect Capital Cost 363",
+   "page": 19,
+   "l1": "indirects",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 503,
+   "quote": "Contingency 503",
+   "page": 19,
+   "l1": "contingency",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Pre-Production cost",
+   "value": 3833,
+   "quote": "Total Pre-Production cost 3,833",
+   "page": 19,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ramp-Up Capital",
+   "value": 48,
+   "quote": "Ramp-Up Capital 48",
+   "page": 19,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital",
+   "value": 3881,
+   "quote": "Total Initial Capital 3,881",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "LOM Sustaining Capital",
+   "value": 665,
+   "quote": "LOM Sustaining Capital 665",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total Closure Costs",
+   "value": 156.4,
+   "quote": "Total Closure Costs CAD M 156.4",
+   "page": 206,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine production ($/tonne of pellet, LOM average)",
+   "value": 24.02,
+   "quote": "Mine production 24.02",
+   "page": 20,
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentration and slurry transportation ($/tonne of pellet)",
+   "value": 16.86,
+   "quote": "Concentration and slurry transportation 16.86",
+   "page": 20,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Pellet production and handling ($/tonne of pellet)",
+   "value": 11.45,
+   "quote": "Pellet production and handling 11.45",
+   "page": 20,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and site services ($/tonne of pellet)",
+   "value": 4.84,
+   "quote": "G&A and site services 4.84",
+   "page": 20,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ship loading ($/tonne of pellet)",
+   "value": 2.0,
+   "quote": "Ship loading 2.00",
+   "page": 20,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total ($/tonne of pellet, LOM average)",
+   "value": 59.17,
+   "quote": "Total 59.17",
+   "page": 20,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  }
+ ]
+}

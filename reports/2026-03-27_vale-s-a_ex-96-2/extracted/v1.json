@@ -1,0 +1,249 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Serra Sul Complex (incl. S11D)",
+  "title": "Technical Report Summary, Serra Sul Complex, Brazil",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "The effective date of this Technical Report Summary is December 31, 2023.",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Para",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "tertiary_crush",
+   "screening"
+  ],
+  "quote": "Tertiary Crushing | 12 | Cone crusher | CH860",
+  "page": 114
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 90.0,
+   "unit": "Mt/y",
+   "quote": "100 | 83.6 | 90.0",
+   "page": 114,
+   "statistic": "design",
+   "context": {
+    "note": "current nominal capacity (Mty); expansion of S11 to 120 Mtpy described in same section"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 65.4,
+   "unit": "%",
+   "quote": "Ore grade: 65.4% Fe.",
+   "page": 136,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "total Fe"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 100,
+   "unit": "%",
+   "quote": "Average LOM Recovery: 100%.",
+   "page": 136,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "note": "no concentration process; crush and screen only"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 79.62,
+   "unit": "USD/dmt",
+   "quote": "long-term price being USD79.62/dmt for 62% iron grade",
+   "page": 98,
+   "metal": "Fe",
+   "context": {
+    "product": "62% Fe long-term price used for mineral reserve economic viability"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 44505,
+   "unit": "MUSD",
+   "quote": "after-tax NPV at a 7.0% discount rate and following a mid-year convention is US$ 44,505 M",
+   "page": 138,
+   "context": {
+    "discount_rate_pct": 7.0
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine and plant (sustaining, non-routine)",
+   "value": 915,
+   "quote": "Mine and plant US$ M 915",
+   "page": 134,
+   "l1": "process",
+   "part_of": "Non-routine",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Waste and tailings dumps (sustaining, non-routine)",
+   "value": 25,
+   "quote": "Waste and tailings dumps US$ M 25",
+   "page": 134,
+   "l1": "tailings_water",
+   "part_of": "Non-routine",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Non-routine",
+   "value": 940,
+   "quote": "Non-routine US$ M 940",
+   "page": 134,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Routine",
+   "value": 9876,
+   "quote": "Routine US$ M 9,876",
+   "page": 134,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining CAPEX (LOM total)",
+   "value": 10816,
+   "quote": "Sustaining CAPEX US$ M 10,816",
+   "page": 134,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine and plant (capital projects)",
+   "value": 903,
+   "quote": "Mine and plant US$ M 903",
+   "page": 134,
+   "l1": "process",
+   "part_of": "Capital projects CAPEX",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Logistics and Other (capital projects)",
+   "value": 3822,
+   "quote": "Logistics and Other US$ M 3,822",
+   "page": 134,
+   "l1": "offsite_infra",
+   "l2": "other",
+   "part_of": "Capital projects CAPEX",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Waste and tailings dumps (capital projects)",
+   "value": 33,
+   "quote": "Waste and tailings dumps US$ M 33",
+   "page": 134,
+   "l1": "tailings_water",
+   "part_of": "Capital projects CAPEX",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capital projects CAPEX",
+   "value": 4757,
+   "quote": "Capital projects CAPEX US$ M 4,757",
+   "page": 134,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine and plant (US$/ton of product)",
+   "value": 6.7,
+   "quote": "Mine and plant: 6.7 US$/ton of product",
+   "page": 136,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics and Distribution (US$/ton of product)",
+   "value": 17.3,
+   "quote": "Logistics and Distribution: 17.3 US$/ton of product",
+   "page": 136,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties (US$/ton of product)",
+   "value": 4.9,
+   "quote": "Royalties: 4.9 US$/ton of product",
+   "page": 136,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sales expenses, R&D, other (US$/ton of product)",
+   "value": 0.2,
+   "quote": "Sales expenses, R&D, other: 0.2 US$/ton of product",
+   "page": 136,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total average unit operating costs and expenses (US$/ton of product)",
+   "value": 29.1,
+   "quote": "Total average unit operating costs and expenses: 29.1 US$/ton of product",
+   "page": 136,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate"
+  }
+ ]
+}

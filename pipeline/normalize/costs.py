@@ -16,11 +16,13 @@ def study_fx(con: sqlite3.Connection, report_id: str, currency: str) -> float | 
     """USD per 1 unit of `currency` as assumed by the study, if it says so."""
     for value, unit, ctx in con.execute(
             "SELECT value, unit, context FROM facts WHERE report_id=? AND parameter_key='exchange_rate'", (report_id,)):
-        pair = (json.loads(ctx or "{}").get("pair") or unit or "").upper().replace(" ", "")
-        if pair in (f"USD/{currency}", f"US$/{currency}", f"USD:{currency}", f"USD{currency}"):
-            return value                       # e.g. 0.75 USD/CAD -> 1 CAD = 0.75 USD
-        if pair in (f"{currency}/USD", f"{currency}:USD", f"{currency}USD"):
-            return 1 / value                   # e.g. 1.33 CAD/USD
+        # the unit ("USD/CAD") is canonical; the context pair is free text ("USD per CAD") - try both
+        for raw in (unit, json.loads(ctx or "{}").get("pair")):
+            pair = (raw or "").upper().replace(" ", "").replace("US$", "USD").replace("PER", "/").split(",")[0].split(";")[0]
+            if pair in (f"USD/{currency}", f"USD:{currency}"):
+                return value                   # e.g. 0.75 USD/CAD -> 1 CAD = 0.75 USD
+            if pair in (f"{currency}/USD", f"{currency}:USD"):
+                return 1 / value               # e.g. 1.33 CAD/USD
     return None
 
 

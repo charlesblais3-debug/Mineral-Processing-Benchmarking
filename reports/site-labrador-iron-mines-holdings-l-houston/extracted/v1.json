@@ -1,0 +1,393 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Houston",
+  "title": "NI 43-101 Technical Report, Preliminary Economic Assessment of the Houston Project",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2020-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2020",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Newfoundland and Labrador",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "screening"
+  ],
+  "quote": "Oversize from the grizzly screen will feed the primary jaw crusher",
+  "page": 194
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.0,
+   "unit": "Mt/y",
+   "quote": "LoM plant feed average: 2.0 Mdmtpa",
+   "page": 12,
+   "statistic": "lom_average",
+   "context": {
+    "note": "dry metric tonnes, dry sizing plant feed"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 90,
+   "unit": "USD/dmt",
+   "quote": "Benchmark iron ore price 62% Fe fines CFR China: US$90/dmt",
+   "page": 252,
+   "metal": "Fe",
+   "context": {
+    "product": "62% Fe fines CFR China benchmark; lump premium US$10/dmt"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 62.2,
+   "unit": "%",
+   "quote": "Fe head grade average: 62.2%",
+   "page": 12,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "total Fe, DSO plant feed"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.33,
+   "unit": "CAD/USD",
+   "quote": "Exchange rate US$1.00 = $1.33",
+   "page": 252,
+   "context": {
+    "pair": "CAD per USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 109,
+   "unit": "MCAD",
+   "quote": "After-Tax NPV at 8% discount | $ million | 109",
+   "page": 15,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 39,
+   "unit": "%",
+   "quote": "IRR | % | 39",
+   "page": 15,
+   "context": {
+    "note": "after-tax IRR (pre-tax IRR also 39%)"
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.6,
+   "unit": "years",
+   "quote": "Payback | years | 2.6",
+   "page": 15,
+   "context": {
+    "note": "after-tax payback"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Equipment",
+   "value": 15.5,
+   "quote": "Equipment |15.5 |36.7 |52.2",
+   "page": 245,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Dry Sizing Plant",
+   "value": 6.4,
+   "quote": "Dry Sizing Plant |6.4 |0.6 |7.0",
+   "page": 245,
+   "l1": "process",
+   "l2": "comminution",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power and Site Distribution",
+   "value": 1.7,
+   "quote": "Power and Site Distribution |1.7 |3.0 |4.7",
+   "page": 245,
+   "l1": "onsite_infra",
+   "l2": "power",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Product Haul Road",
+   "value": 14.9,
+   "quote": "Product Haul Road |14.9 |2.5 |17.4",
+   "page": 245,
+   "l1": "offsite_infra",
+   "l2": "access",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Rail Siding",
+   "value": 5.8,
+   "quote": "Rail Siding |5.8 |0.0 |5.8",
+   "page": 245,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Buildings and Other Facilities",
+   "value": 3.3,
+   "quote": "Site Buildings and Other Facilities |3.3 |1.8 |5.1",
+   "page": 245,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site General",
+   "value": 1.3,
+   "quote": "Site General |1.3 |0.0 |1.3",
+   "page": 245,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Development",
+   "value": 2.3,
+   "quote": "Development |2.3 |11.6 |13.9",
+   "page": 245,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal - Directs",
+   "value": 51.3,
+   "quote": "Subtotal - Directs |51.3 |56.3 |107.6",
+   "page": 245,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM Costs",
+   "value": 11.3,
+   "quote": "EPCM Costs |11.3 |2.4 |13.7",
+   "page": 245,
+   "l1": "indirects",
+   "l2": "epcm",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs - Personnel",
+   "value": 2.3,
+   "quote": "Personnel |2.3 |0.0 |2.3",
+   "page": 245,
+   "l1": "owners",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs - Personnel (non-payroll)",
+   "value": 3.5,
+   "quote": "Personnel (non-payroll) |3.5 |0.0 |3.5",
+   "page": 245,
+   "l1": "owners",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs - Site Services",
+   "value": 2.2,
+   "quote": "Site Services |2.2 |2.9 |5.1",
+   "page": 245,
+   "l1": "owners",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs - Equipment, Supplies, Other",
+   "value": 2.9,
+   "quote": "Equipment, Supplies, Other |2.9 |0.9 |3.8",
+   "page": 245,
+   "l1": "owners",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal - Indirects",
+   "value": 22.2,
+   "quote": "Subtotal - Indirects |22.2 |6.2 |28.4",
+   "page": 246,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 13.3,
+   "quote": "Contingency |13.3 |5.2 |18.6",
+   "page": 246,
+   "l1": "contingency",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Costs",
+   "value": 86.8,
+   "quote": "Total Capital Costs |86.8 |67.7 |154.5",
+   "page": 246,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital (LoM)",
+   "value": 67.7,
+   "quote": "Total Capital Costs |86.8 |67.7 |154.5",
+   "page": 246,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Reclamation (LoM total)",
+   "value": 8.4,
+   "quote": "Closure and Reclamation |3.5 |4.9 |8.4",
+   "page": 246,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining ($/dmt sold)",
+   "value": 12.75,
+   "quote": "Mining |290 |12.75",
+   "page": 247,
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing and Power ($/dmt sold)",
+   "value": 3.24,
+   "quote": "Processing and Power |74 |3.24",
+   "page": 247,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Product Haulage ($/dmt sold)",
+   "value": 4.79,
+   "quote": "Product Haulage |109 |4.79",
+   "page": 247,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Train Loading ($/dmt sold)",
+   "value": 1.27,
+   "quote": "Train Loading |29 |1.27",
+   "page": 247,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site G&A ($/dmt sold)",
+   "value": 10.79,
+   "quote": "Site G&A |245 |10.79",
+   "page": 247,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs ($/dmt sold)",
+   "value": 32.84,
+   "quote": "Total Operating Costs |747 |32.84",
+   "page": 247,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  }
+ ]
+}

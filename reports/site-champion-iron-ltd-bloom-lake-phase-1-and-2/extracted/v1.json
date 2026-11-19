@@ -1,0 +1,198 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bloom Lake (Phase I and II)",
+  "title": "NI 43-101 Technical Report, Mineral Resources and Mineral Reserves for the Bloom Lake Mine, Fermont, Quebec, Canada",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2023-04-01",
+  "effective_date_quote": "April 1, 2023",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Quebec",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "CAD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ag_mill",
+   "screening",
+   "gravity",
+   "magnetic_sep",
+   "conc_filter"
+  ],
+  "quote": "The low intensity magnetic separators (LIMS) stage is the first stage of the magnetic separation",
+  "page": 201
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 41.9,
+   "unit": "Mt/y",
+   "quote": "Mill Feed Annual Capacity | tpy | 41,900,000",
+   "page": 194,
+   "statistic": "design",
+   "context": {
+    "note": "combined Phase I and Phase II, t/y as stated"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 28.59,
+   "unit": "%",
+   "quote": "Mill Feed Iron Grade | % | 28.59",
+   "page": 194,
+   "metal": "Fe",
+   "statistic": "design",
+   "context": {
+    "basis": "total Fe, Phase I and II combined"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.0,
+   "unit": "%",
+   "quote": "Mill Concentrate Iron Recovery | % | 82.0",
+   "page": 194,
+   "metal": "Fe",
+   "statistic": "design"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 66.2,
+   "unit": "%",
+   "quote": "Mill Concentrate Iron Grade | % | 66.2",
+   "page": 194,
+   "metal": "Fe",
+   "statistic": "design"
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 35.4,
+   "unit": "%",
+   "quote": "Mill Concentrate Weight Recovery | % | 35.4",
+   "page": 194,
+   "statistic": "design",
+   "context": {
+    "product": "concentrate"
+   }
+  },
+  {
+   "parameter": "conc_silica_pct",
+   "value": 4.5,
+   "unit": "%",
+   "quote": "Mill Concentrate Silica (SiO2) | % | 4.5",
+   "page": 194,
+   "statistic": "design",
+   "context": {
+    "product": "concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 99.0,
+   "unit": "USD/dmt",
+   "quote": "reference iron ore price (Platt’s 65% CFR China) of USD99.00/dmt",
+   "page": 37,
+   "metal": "Fe",
+   "context": {
+    "product": "65% Fe CFR China reference, reserve estimate; premium USD1.83/dmt for 66.2% Fe"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.27,
+   "unit": "CAD/USD",
+   "quote": "Exchange Rate | 1.27 | CAD/USD",
+   "page": 37,
+   "context": {
+    "pair": "CAD per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "closure",
+   "raw_label": "Forecast cost to close the mine (gross, before $42M salvage)",
+   "value": 131,
+   "quote": "forecasted costs of $131M to close the mine",
+   "page": 245,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per dmt mined)",
+   "value": 3.3,
+   "quote": "Mining | $3.30/t | dmt mined",
+   "page": 247,
+   "l1": "mining",
+   "basis_unit": "per_t_mined",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (per dmt processed)",
+   "value": 4.75,
+   "quote": "Processing | $4.75/t | dmt processed",
+   "page": 247,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings and Water Management (per dmt processed)",
+   "value": 0.83,
+   "quote": "Tailings and Water Management | $0.83/t | dmt processed",
+   "page": 247,
+   "l1": "tailings_water",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (per dmt processed)",
+   "value": 3.35,
+   "quote": "G&A | $3.35/t | dmt processed",
+   "page": 247,
+   "l1": "ga",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rail & Port (per dmt concentrate)",
+   "value": 21.14,
+   "quote": "Rail & Port | $21.14/t | dmt concentrate",
+   "page": 247,
+   "l1": "offsite",
+   "l2": "transport",
+   "basis_unit": "per_t_concentrate",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total (per dmt concentrate)",
+   "value": 64.58,
+   "quote": "Total | $64.58/t | dmt concentrate",
+   "page": 247,
+   "is_total": true,
+   "partial_breakdown": true,
+   "basis_unit": "per_t_concentrate",
+   "multiplier": "",
+   "currency": "CAD"
+  }
+ ]
+}

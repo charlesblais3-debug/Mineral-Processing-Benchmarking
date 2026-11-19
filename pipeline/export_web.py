@@ -58,7 +58,7 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
                     and c["basis_unit"] == basis and c["value_usd_escalated"] is not None]
             if not rows:
                 return None
-            c = rows[0]
+            c = max(rows, key=lambda r: r["value_usd_escalated"])   # loader allows one; be safe if several
             scale = 1e6 if basis == "total" else 1
             return {"value": c["value_usd_escalated"] / scale, "label": c["raw_label"], **_src(c, url)}
 

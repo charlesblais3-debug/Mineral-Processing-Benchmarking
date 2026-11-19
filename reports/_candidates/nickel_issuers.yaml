@@ -1,0 +1,11 @@
+- { name: Horizonte Minerals, site: https://horizonteminerals.com/, commodity: Ni, projects: [Araguaia, Vermelho], pages: [https://horizonteminerals.com/uk/en/technical_reports/] }
+- { name: Magna Mining, site: https://magnamining.com/, commodity: Ni, projects: [Shakespeare, Crean Hill, McCreedy West, Levack], pages: [https://magnamining.com/about/our-projects/, https://magnamining.com/about/shakespeare-project/, https://magnamining.com/about/crean-hill-project/, https://magnamining.com/about/mccreedy-west-project/] }
+- { name: EV Nickel, site: https://evnickel.com/, commodity: Ni, projects: [CarLang A], pages: [https://evnickel.com/projects/the-shaw-dome-project/large-scale-projects-carlang-a/] }
+- { name: Centaurus Metals, site: https://centaurus.com.au/, commodity: Ni, projects: [Jaguar], pages: [https://centaurus.com.au/site/projects/jaguar-nickel-sulphide-project] }
+- { name: Ardea Resources, site: https://ardearesources.com.au/, commodity: Ni, projects: [Kalgoorlie Nickel (Goongarrie Hub)], pages: [https://ardearesources.com.au/projects-knp, https://ardearesources.com.au/announcements] }
+- { name: Nico Resources, site: https://nicoresources.com.au/, commodity: Ni, projects: [Wingellina], pages: [https://nicoresources.com.au/wingellina-project-information-updates/, https://nicoresources.com.au/reports/] }
+- { name: Sunrise Energy Metals, site: https://sunriseem.com/, commodity: Ni, projects: [Sunrise (Syerston)], pages: [https://sunriseem.com/investor-centre/asx-announcements/] }
+- { name: Canada Nickel Company, site: https://canadanickel.com/, commodity: Ni, projects: [Crawford, Reid, Mann, Deloro, Nesbitt], pages: [https://wp-canadanickel-2025.s3.ca-central-1.amazonaws.com/] }
+- { name: Poseidon Nickel, site: https://poseidon-nickel.com.au/, commodity: Ni, projects: [Black Swan, Lake Johnston], pages: [https://poseidon-nickel.com.au/black-swan/] }
+- { name: Australian Mines, site: https://australianmines.com.au/, commodity: Ni, projects: [Sconi], pages: [https://australianmines.com.au/projects/sconi] }
+- { name: Sherritt International, site: https://sherritt.com/, commodity: Ni, projects: [Moa JV], pages: [https://sherritt.com/investors/financial-and-corporate-reports/] }

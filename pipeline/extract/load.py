@@ -21,7 +21,7 @@ EXTRACTOR_VERSION = "v1"
 UNIT_FACTORS = {  # (from, to): factor
     ("kWh/st", "kWh/t"): 1.10231, ("kWh/sh t", "kWh/t"): 1.10231, ("kWh/ton", "kWh/t"): 1.10231,
     ("kWh/t", "kWh/t"): 1.0,
-    ("Mt/a", "Mt/a"): 1.0, ("Mtpa", "Mt/a"): 1.0,
+    ("Mt/a", "Mt/a"): 1.0, ("Mtpa", "Mt/a"): 1.0, ("Mt/y", "Mt/a"): 1.0, ("Mty", "Mt/a"): 1.0,
     ("t/d", "t/d"): 1.0, ("tpd", "t/d"): 1.0, ("st/d", "t/d"): 0.907185, ("LT/d", "t/d"): 1.01605,
     ("MLT/y", "Mt/a"): 1.01605, ("Mst/y", "Mt/a"): 0.907185,
     ("µm", "µm"): 1.0, ("um", "µm"): 1.0, ("mm", "µm"): 1000.0, ("mesh", "µm"): None,
@@ -180,6 +180,7 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     n_costs = 0
     totals: dict[str, float] = {}
     tolerance: dict[str, float] = {}
+    grand_totals: dict[str, str] = {}
     sums: dict[str, float] = {}
     parents: dict[str, float] = {}        # breakdown checks: parent label -> value
     parts: dict[str, float] = {}
@@ -212,6 +213,9 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         if not c.get("derived") and not value_in_quote(c["value"], c["quote"]):
             status = "needs_review"
             problems.append(f"cost '{c['raw_label']}': value {c['value']} not in its quote")
+        if c.get("review_note"):                   # extractor flags something a human should look at
+            status = "needs_review"
+            note = f"{note}; {c['review_note']}" if note else c["review_note"]
         other = currency_conflict(c.get("currency", info.get("currency")), c["quote"])
         if other:
             status = "needs_review"
@@ -224,6 +228,9 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
             key = f"{group}/{c['part_of']}"
             parts[key] = parts.get(key, 0.0) + value
         elif c.get("is_total"):
+            if group in grand_totals:
+                problems.append(f"costs {group}: more than one is_total ('{grand_totals[group]}' and '{c['raw_label']}') - mark intermediate totals is_subtotal")
+            grand_totals[group] = c["raw_label"]
             if not c.get("partial_breakdown"):      # report gives only some of the lines: nothing to check
                 totals[group] = value
                 tolerance[group] = c.get("tolerance_pct", 2) / 100   # rounded tables (e.g. US$ 0.1 B steps)

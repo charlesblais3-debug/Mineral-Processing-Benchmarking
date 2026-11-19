@@ -1,0 +1,397 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bloom Lake Phase 2",
+  "title": "NI 43-101 Technical Report, Bloom Lake Mine Feasibility Study Phase 2, Fermont, Quebec",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2019-06-20",
+  "effective_date_quote": "Effective Date:  June 20, 2019",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Quebec",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "CAD",
+  "cost_base_year": 2019,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ag_mill",
+   "screening",
+   "gravity",
+   "magnetic_sep",
+   "conc_filter"
+  ],
+  "quote": "AG mill | Phase 2 (Cliffs)",
+  "page": 272
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 21.589,
+   "unit": "Mt/y",
+   "quote": "Mill feed annual capacity | tpy | 21,589,020",
+   "page": 273,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 plant only (expansion)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 29.0,
+   "unit": "%",
+   "quote": "Mill feed iron grade | % | 29.0",
+   "page": 273,
+   "metal": "Fe",
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 plant only (expansion)",
+    "basis": "total Fe"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.5,
+   "unit": "%",
+   "quote": "Mill concentrate iron recovery | % | 82.5",
+   "page": 273,
+   "metal": "Fe",
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 plant only (expansion)"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 66.2,
+   "unit": "%",
+   "quote": "Mill concentrate iron grade | % | 66.2",
+   "page": 273,
+   "metal": "Fe",
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 plant only (expansion)"
+   }
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 36.1,
+   "unit": "%",
+   "quote": "Mill concentrate weight recovery | % | 36.1",
+   "page": 273,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 plant only (expansion)",
+    "product": "concentrate"
+   }
+  },
+  {
+   "parameter": "conc_silica_pct",
+   "value": 4.5,
+   "unit": "%",
+   "quote": "Mill concentrate silica (SiO2) | % | 4.5",
+   "page": 273,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 plant only (expansion)",
+    "product": "concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 84.1,
+   "unit": "USD/t",
+   "quote": "Long Term Iron Ore Price | USD/tonne | 84.1",
+   "page": 410,
+   "metal": "Fe",
+   "context": {
+    "product": "as stated in Table 22-1 (Phase 1+2 financial model); product basis not specified in table"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.32,
+   "unit": "CAD/USD",
+   "quote": "United States | 1.00 USD | 1.32 CAD",
+   "page": 61,
+   "context": {
+    "pair": "CAD per USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 955.7,
+   "unit": "MCAD",
+   "quote": "After-tax NPV @ 8% | M CAD | 955.7",
+   "page": 64,
+   "context": {
+    "discount_rate_pct": 8,
+    "scope": "Phase 2 only (Table 1-10)"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 33.4,
+   "unit": "%",
+   "quote": "After-tax IRR | % | 33.4",
+   "page": 64,
+   "context": {
+    "scope": "Phase 2 only (Table 1-10)"
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.4,
+   "unit": "years",
+   "quote": "After-tax Payback Period on initial capital | years | 2.4",
+   "page": 64,
+   "context": {
+    "scope": "Phase 2 only (Table 1-10)"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "General",
+   "value": 28.2,
+   "quote": "General | $28.2",
+   "page": 382,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine - Phase 2",
+   "value": 37.6,
+   "quote": "Mine – Phase 2 | $37.6",
+   "page": 382,
+   "l1": "mining",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Crusher and stockpile",
+   "value": 24.3,
+   "quote": "Crusher and stockpile | $24.3",
+   "page": 382,
+   "l1": "process",
+   "l2": "comminution",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Concentrator",
+   "value": 165.0,
+   "quote": "Concentrator | $165.0",
+   "page": 382,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings and water management",
+   "value": 50.2,
+   "quote": "Tailings and water management | $50.2",
+   "page": 382,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Services",
+   "value": 30.5,
+   "quote": "Services | $30.5",
+   "page": 382,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Rail and Port",
+   "value": 73.4,
+   "quote": "Rail and Port | $73.4",
+   "page": 382,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Owner's Costs (all-inclusive indirect costs)",
+   "value": 105.1,
+   "quote": "Owner’s Costs (all-inclusive indirect costs) | $105.1",
+   "page": 382,
+   "l1": "owners",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency",
+   "value": 75.5,
+   "quote": "Contingency | $75.5",
+   "page": 382,
+   "l1": "contingency",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total (pre-production, excl. deposits)",
+   "value": 589.8,
+   "quote": "Total | $589.8M",
+   "page": 382,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Deposits",
+   "value": 44.0,
+   "quote": "Deposits | $44.0",
+   "page": 382,
+   "l1": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total including deposits",
+   "value": 633.8,
+   "quote": "Total including deposits | $633.8M",
+   "page": 382,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining ($/t dry concentrate)",
+   "value": 13.4,
+   "quote": "Mining | $13.4",
+   "page": 383,
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing and Conveying ($/t dry concentrate)",
+   "value": 1.7,
+   "quote": "Crushing and Conveying | $1.7",
+   "page": 383,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant ($/t dry concentrate)",
+   "value": 7.9,
+   "quote": "Process Plant | $7.9",
+   "page": 383,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Shipping ($/t dry concentrate)",
+   "value": 16.8,
+   "quote": "Concentrate Shipping | $16.8",
+   "page": 383,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water and Tailings Management ($/t dry concentrate)",
+   "value": 2.1,
+   "quote": "Water and Tailings Management | $2.1",
+   "page": 383,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administrative ($/t dry concentrate)",
+   "value": 4.7,
+   "quote": "General and Administrative | $4.7",
+   "page": 383,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total OPEX (cash cost) ($/t dry concentrate)",
+   "value": 46.6,
+   "quote": "Total OPEX (cash cost) | $46.6",
+   "page": 383,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital over LOM ($/t dry concentrate)",
+   "value": 4.4,
+   "quote": "Sustaining Capital | $4.4",
+   "page": 383,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation and Closure Cost (Phase 1+2 column, shown for reference)",
+   "value": 99.0,
+   "quote": "Reclamation and Closure Cost | $M | 99.0",
+   "page": 410,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  }
+ ]
+}
