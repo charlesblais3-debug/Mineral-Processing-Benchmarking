@@ -1,0 +1,446 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kami",
+  "title": "NI 43-101 Technical Report, Pre-feasibility Study for the Kamistiatusset (Kami) Iron Ore Property, Newfoundland and Labrador, Canada",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2023-12-22",
+  "effective_date_quote": "Effective Date: December 22, 2023",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Newfoundland and Labrador",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "ag_mill",
+   "screening",
+   "gravity",
+   "vertical_mill",
+   "flotation",
+   "magnetic_sep",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "The run of mine (\"ROM\") material crushing takes place in a single gyratory crusher",
+  "page": 57
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 26,
+   "unit": "Mt/y",
+   "quote": "Mill Feed Annual Capacity | t/y | 26,000,000",
+   "page": 56,
+   "statistic": "design",
+   "context": {
+    "note": "mill feed capacity, t/y metric (26,000,000 t/y)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 29.2,
+   "unit": "%",
+   "quote": "Mill Feed Fe Grade | % | 29.2",
+   "page": 56,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "total Fe"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 67.6,
+   "unit": "%",
+   "quote": "Concentrate Fe Grade | % | 67.6",
+   "page": 56,
+   "metal": "Fe",
+   "statistic": "design"
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 33.0,
+   "unit": "%",
+   "quote": "Concentrate Weight Recovery | % | 33.0",
+   "page": 56,
+   "statistic": "design",
+   "context": {
+    "product": "DR-grade concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 76.4,
+   "unit": "%",
+   "quote": "Concentrate Fe Recovery | % | 76.4",
+   "page": 56,
+   "metal": "Fe",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 120.0,
+   "unit": "USD/dmt",
+   "quote": "P65 Index CFR China Iron ore price | 156.00 | 120.00",
+   "page": 72,
+   "metal": "Fe",
+   "context": {
+    "product": "65% Fe index CFR China, base price scenario"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 541,
+   "unit": "MCAD",
+   "quote": "NPV in M at 8% Discount Rate | 541 | 416",
+   "page": 72,
+   "context": {
+    "discount_rate_pct": 8,
+    "scenario": "base price scenario, CAN$"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 9.8,
+   "unit": "%",
+   "quote": "IRR | 9.8% | 14.8%",
+   "page": 72,
+   "context": {
+    "scenario": "base price scenario"
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 7,
+   "unit": "years",
+   "quote": "The after-tax undiscounted payback period as of the first cash inflow is 7 years",
+   "page": 72
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.3,
+   "unit": "CAD/USD",
+   "quote": "An exchange rate of US$1 = CAN$1.30",
+   "page": 70,
+   "context": {
+    "pair": "CAD per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Site",
+   "value": 627,
+   "quote": "Mine Site | M | 627 | 483",
+   "page": 67,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Fleet",
+   "value": 183,
+   "quote": "Mining Fleet | M | 183 | 141",
+   "page": 67,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Pre-production OPEX",
+   "value": 64,
+   "quote": "Mining Pre-production OPEX | M | 64 | 50",
+   "page": 67,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 1135,
+   "quote": "Processing | M | 1,135 | 873",
+   "page": 67,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings & Water Management (TWM)",
+   "value": 472,
+   "quote": "Tailings & Water Management (TWM) | M | 472 | 363",
+   "page": 67,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production OPEX",
+   "value": 5,
+   "quote": "Pre-production OPEX | M | 5 | 3",
+   "page": 67,
+   "l1": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other",
+   "value": 41,
+   "quote": "Other | M | 41 | 32",
+   "page": 67,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct CAPEX",
+   "value": 2528,
+   "quote": "Total Direct CAPEX | M | 2,528 | 1,945",
+   "page": 67,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Cost",
+   "value": 105,
+   "quote": "Owners Cost | M | 105 | 81",
+   "page": 67,
+   "l1": "owners",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 474,
+   "quote": "Contingency | M | 474 | 365",
+   "page": 67,
+   "l1": "contingency",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Others Indirect",
+   "value": 551,
+   "quote": "Others Indirect | M | 551 | 424",
+   "page": 67,
+   "l1": "indirects",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Indirect",
+   "value": 1130,
+   "quote": "Total Indirect | M | 1,130 | 870",
+   "page": 67,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct and Indirect",
+   "value": 3659,
+   "quote": "Total Direct and Indirect | M | 3,659 | 2,815",
+   "page": 67,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Kami Railroad",
+   "value": 205,
+   "quote": "Kami Railroad | M | 205 | 158",
+   "page": 67,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total CAPEX Initial CAPEX",
+   "value": 3864,
+   "quote": "Total CAPEX Initial CAPEX | M | 3,864 | 2,972",
+   "page": 68,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Site (sustaining)",
+   "value": 325,
+   "quote": "Mine Site | 325 | 250",
+   "page": 67,
+   "l1": "mining",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing (sustaining)",
+   "value": 137,
+   "quote": "Processing | 137 | 105",
+   "page": 67,
+   "l1": "process",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Fleet (sustaining)",
+   "value": 589,
+   "quote": "Mining Fleet | 589 | 453",
+   "page": 67,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings and Water Management (sustaining)",
+   "value": 900,
+   "quote": "Tailings and Water Management | 900 | 693",
+   "page": 67,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining",
+   "value": 1952,
+   "quote": "Total Sustaining | 1,952 | 1,502",
+   "page": 67,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total Closure Costs at end of LOM",
+   "value": 300,
+   "quote": "Total Closure Costs at end of LOM | M | 300 | 231",
+   "page": 71,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost ($/dmt concentrate)",
+   "value": 22.41,
+   "quote": "Mining Cost | $/dmt concentrate | 22.41 | 17.23",
+   "page": 69,
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost ($/dmt concentrate)",
+   "value": 23.21,
+   "quote": "Processing Cost | $/dmt concentrate | 23.21 | 17.85",
+   "page": 69,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings and Water Management ($/dmt concentrate)",
+   "value": 2.76,
+   "quote": "Tailings and Water Management | $/dmt concentrate | 2.76 | 2.12",
+   "page": 69,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Minesite G&A ($/dmt concentrate)",
+   "value": 7.51,
+   "quote": "Minesite G&A | $/dmt concentrate | 7.51 | 5.78",
+   "page": 69,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics Port and Rail ($/dmt concentrate)",
+   "value": 20.19,
+   "quote": "Logistics Port and Rail | $/dmt concentrate | 20.19 | 15.53",
+   "page": 69,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost (C1 Cost) ($/dmt concentrate)",
+   "value": 76.08,
+   "quote": "Total Cash Cost (C1 Cost) | $/dmt concentrate | 76.08 | 58.52",
+   "page": 69,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_concentrate"
+  }
+ ]
+}

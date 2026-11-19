@@ -1,0 +1,237 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Sudbury (Vale Ontario Operations)",
+  "title": "Technical Report Summary Ontario Operations, Sudbury District, Canada",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Report current as at: 31 December, 2025",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co",
+   "Pt",
+   "Pd",
+   "Au"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "rod_mill",
+   "flotation"
+  ],
+  "quote": "The current yearly throughput based on SAG-only operation is approximately 5.5 Mt. In 2026, the crushing plant and rod mill circuit will be brought back online",
+  "page": 30
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 6.2,
+   "unit": "Mt/a",
+   "quote": "In 2026, the crushing plant and rod mill circuit will be brought back online with a target production of 6.2",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "phase": "Clarabelle Mill from 2026 (5.5 Mt/a SAG-only before); includes external feed"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85.3,
+   "unit": "%",
+   "quote": "Ni 85.3 94.6 Cu 94.6 92.8",
+   "page": 147,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "bulk Ni-Cu concentrate (mill)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 94.6,
+   "unit": "%",
+   "quote": "Ni 85.3 94.6 Cu 94.6 92.8",
+   "page": 147,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "bulk Ni-Cu concentrate (mill)"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 14,
+   "unit": "%",
+   "quote": "The nickel concentrate typically averages 14% Ni and 3% Cu.",
+   "page": 30,
+   "metal": "Ni",
+   "statistic": "mean"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.42,
+   "unit": "%",
+   "quote": "Copper % 1.55 Nickel % 1.42",
+   "page": 36,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.55,
+   "unit": "%",
+   "quote": "Copper % 1.55 Nickel % 1.42",
+   "page": 36,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1951,
+   "unit": "MUSD",
+   "quote": "NPV @ 6.3% US$ M 1,951",
+   "page": 36,
+   "context": {
+    "discount_rate_pct": 6.3
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining – annual capital development",
+   "value": 1036,
+   "quote": "Annual capital development US$ M 1,036",
+   "page": 34,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining – mobile equipment",
+   "value": 499,
+   "quote": "Mobile equipment US$ M 499",
+   "page": 34,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining – asset integrity (facilities/buildings)",
+   "value": 1840,
+   "quote": "Asset integrity (facilities/buildings) US$ M 1,840",
+   "page": 34,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining – asset integrity (fixed equipment)",
+   "value": 596,
+   "quote": "Asset integrity (fixed equipment) US$ M 596",
+   "page": 34,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Milling – sustaining",
+   "value": 530,
+   "quote": "Milling Sustaining US$ M 530",
+   "page": 34,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Smelting and refining – sustaining",
+   "value": 503,
+   "quote": "Smelting and refining Sustaining US$ M 503",
+   "page": 34,
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other – sustaining",
+   "value": 1047,
+   "quote": "Other Sustaining US$ M 1,047",
+   "page": 34,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LOM capital",
+   "value": 6051,
+   "quote": "Total US$ M 6,051",
+   "page": 34,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LOM)",
+   "value": 8510,
+   "quote": "Mining US$ M 8,510",
+   "page": 35,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling+Tailings (LOM)",
+   "value": 1391,
+   "quote": "Milling+Tailings US$ M 1,391",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelting (LOM)",
+   "value": 2181,
+   "quote": "Smelting US$ M 2,181",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining (LOM)",
+   "value": 2088,
+   "quote": "Refining US$ M 2,088",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative/corporate overhead (LOM)",
+   "value": 4099,
+   "quote": "General and administrative/corporate overhead US$ M 4,099",
+   "page": 35,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics and distribution costs (LOM)",
+   "value": 482,
+   "quote": "Logistics and distribution costs US$ M 482",
+   "page": 35,
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total (LOM)",
+   "value": 18751,
+   "quote": "Total US$ M 18,751",
+   "page": 35,
+   "is_total": true
+  }
+ ]
+}

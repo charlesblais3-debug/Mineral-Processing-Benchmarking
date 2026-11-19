@@ -1,0 +1,6 @@
+- { name: Champion Iron, site: https://www.championiron.com/, commodity: Fe, projects: [Bloom Lake, Kami, Fire Lake North], pages: [https://www.championiron.com/investors/technical-reports/] }
+- { name: Century Global Commodities (Century Iron Mines), site: https://centuryglobal.ca/, commodity: Fe, projects: [Joyce Lake, Full Moon, Duncan Lake, Black Bird], pages: [https://centuryglobal.ca/projects/technical-reports/] }
+- { name: Labrador Iron Mines Holdings, site: https://www.labradorironmines.ca/, commodity: Fe, projects: [Houston, Schefferville DSO], pages: [https://www.labradorironmines.ca/project.php] }
+- { name: Zanaga Iron Ore Company, site: https://www.zanagairon.com/, commodity: Fe, projects: [Zanaga], pages: [https://www.zanagairon.com/the-zanaga-project/feasibility-study/, https://www.zanagairon.com/investors/documents-circulars/] }
+- { name: Iron Road, site: https://www.ironroadlimited.com.au/, commodity: Fe, projects: [Central Eyre], pages: [https://www.ironroadlimited.com.au/index.php/central-eyre-iron-project/definitive-feasibility] }
+- { name: Macarthur Minerals, site: https://macarthurminerals.com/, commodity: Fe, projects: [Lake Giles], pages: [https://macarthurminerals.com/investors/] }

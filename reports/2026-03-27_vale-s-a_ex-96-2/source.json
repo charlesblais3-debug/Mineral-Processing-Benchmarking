@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/917851/000129281426001844/ex96-2.pdf",
+  "source": "edgar",
+  "issuer": "Vale S.A.  (VALE)",
+  "cik": "917851",
+  "form": "20-F",
+  "exhibit": "EX-96.2",
+  "filed": "2026-03-27",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "project": "Serra Sul Complex (S11D, Carajas)",
+  "commodity": "Fe",
+  "report_id": "2026-03-27_vale-s-a_ex-96-2",
+  "sha256": "9a93d5f75a0bef62628e2392ce96128fbc16b39d5b1abe16ba922a1d1411eeb1",
+  "bytes": 13862848,
+  "format": "pdf",
+  "pages": 154,
+  "parsed_on": "2026-11-19"
+}

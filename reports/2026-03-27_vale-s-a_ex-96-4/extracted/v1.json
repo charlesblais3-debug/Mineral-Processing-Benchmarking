@@ -1,0 +1,231 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Salobo",
+  "title": "Technical Report Summary Salobo Operations, Pará State, Brazil",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Report current as at: 31 December 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Brazil",
+  "region": "Pará",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "All three lines use primary gyratory crushing, secondary cone crushing, high‑pressure grinding rolls (HPGR) for tertiary crushing, ball milling in closed circuit with hydrocyclones",
+  "page": 19
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 36,
+   "unit": "Mt/a",
+   "quote": "further expanding Salobo’s total processing capacity to 36Mtpa (wet tonnes)",
+   "page": 11,
+   "statistic": "design",
+   "context": {
+    "phase": "Salobo I–III, wet tonnes; LOM plan reaches 41.7 Mtpa from 2029"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "The design primary grind is approximately P80 106 µm.",
+   "page": 19,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.6,
+   "unit": "%",
+   "quote": "Ore processed Mt (dry) 1,024 Copper grade % 0.60",
+   "page": 23,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.34,
+   "unit": "g/t",
+   "quote": "Gold grade g/t 0.34",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 9950,
+   "unit": "USD/t",
+   "quote": "Copper price (long-term) US$/t 9,950",
+   "page": 23,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 16614,
+   "unit": "MUSD",
+   "quote": "NPV @ 7.0% US$ M 16,614",
+   "page": 24,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.56,
+   "unit": "BRL/USD",
+   "quote": "Exchange rate (long-term) R$/US$ 5.56",
+   "page": 23,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "CPF Project - Growth",
+   "value": 213,
+   "quote": "CPF Project - Growth US$ M 213",
+   "page": 22,
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining sustaining",
+   "value": 2211,
+   "quote": "Mining sustaining US$ M 2,211",
+   "page": 22,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mill sustaining",
+   "value": 962,
+   "quote": "Mill sustaining US$ M 962",
+   "page": 22,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other sustaining",
+   "value": 532,
+   "quote": "Other sustaining US$ M 532",
+   "page": 22,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LOM capital (incl. growth)",
+   "value": 3918,
+   "quote": "Total US$ M 3,918 Note: All numbers have been rounded",
+   "page": 22,
+   "is_total": true,
+   "partial_breakdown": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining costs (LOM)",
+   "value": 8266,
+   "quote": "Mining costs US$ M 8,266",
+   "page": 22,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (LOM)",
+   "value": 11756,
+   "quote": "Processing US$ M 11,756",
+   "page": 22,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics (LOM)",
+   "value": 1070,
+   "quote": "Logistics US$ M 1,070",
+   "page": 22,
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (LOM)",
+   "value": 1471,
+   "quote": "G&A US$ M 1,471",
+   "page": 22,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Corporate overhead (LOM)",
+   "value": 789,
+   "quote": "Corporate overhead US$ M 789",
+   "page": 22,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ocean freight (LOM)",
+   "value": 1225,
+   "quote": "Ocean freight US$ M 1,225",
+   "page": 22,
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty (LOM)",
+   "value": 1379,
+   "quote": "Royalty US$ M 1,379",
+   "page": 22,
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other (LOM)",
+   "value": 1099,
+   "quote": "Other US$ M 1,099",
+   "page": 22,
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total (LOM)",
+   "value": 27056,
+   "quote": "Total US$ M 27,056",
+   "page": 22,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Overall processing cost (pit optimisation)",
+   "value": 12.34,
+   "quote": "Overall processing cost US$/tonne ore 12.34",
+   "page": 83,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  }
+ ]
+}

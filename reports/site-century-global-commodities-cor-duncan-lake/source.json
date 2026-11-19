@@ -1,0 +1,19 @@
+{
+  "url": "https://centuryglobal.ca/wp-content/uploads/2014/02/TR_2013-03-22_duncan.pdf",
+  "source": "agent_search",
+  "issuer": "Century Global Commodities Corp.",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Duncan Lake",
+  "commodity": "Fe",
+  "report_id": "site-century-global-commodities-cor-duncan-lake",
+  "sha256": "f3f16446d4eef555bc4b685b8beb3c33877b8cf0c37e27dd50102e28aa7db321",
+  "bytes": 11681727,
+  "format": "pdf",
+  "pages": 300,
+  "parsed_on": "2026-11-19"
+}

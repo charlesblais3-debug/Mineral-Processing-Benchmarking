@@ -1,0 +1,19 @@
+{
+  "url": "https://www.labradorironmines.ca/pdf/LIM-Houston_Project_PEA_Technical_Report.pdf",
+  "source": "agent_search",
+  "issuer": "Labrador Iron Mines Holdings Ltd",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Houston",
+  "commodity": "Fe",
+  "report_id": "site-labrador-iron-mines-holdings-l-houston",
+  "sha256": "ab8d4fdcc008481576c789a9c29291a1385a5817f7c96520cedae34b1f0d1873",
+  "bytes": 19632217,
+  "format": "pdf",
+  "pages": 284,
+  "parsed_on": "2026-11-19"
+}
