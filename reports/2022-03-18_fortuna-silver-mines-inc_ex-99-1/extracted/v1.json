@@ -1,0 +1,311 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Séguéla",
+  "title": "NI 43-101 Technical Report for the Séguéla Project, Worodougou Region, Côte d'Ivoire",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2021-05-26",
+  "effective_date_quote": "Report Effective Date: 26 May 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Côte d'Ivoire",
+  "region": "Worodougou",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "gravity",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "Grinding circuit: SS SAG mill with cyclones.",
+  "page": 142
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.25,
+   "unit": "Mt/a",
+   "quote": "Plant Throughput Mtpa 1.25",
+   "page": 142,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 3843,
+   "unit": "t/d",
+   "quote": "LOM Average Throughput tpd 3,843",
+   "page": 227,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.8,
+   "unit": "g/t",
+   "quote": "Head Grade g/t 2.80",
+   "page": 227,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 94.5,
+   "unit": "%",
+   "quote": "Overall Gold Recovery – Design (Without Gravity) % 94.5",
+   "page": 142,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 20.7,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index1 kWh/t 19.7 20.7",
+   "page": 100,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill",
+    "statistic_note": "design value; average 19.7"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 19.7,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index1 kWh/t 19.7 20.7",
+   "page": 100,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 30.6,
+   "unit": "-",
+   "quote": "SMC Axb 30.6",
+   "page": 142,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 19.3,
+   "unit": "kWh/t",
+   "quote": "Bond Crusher Work Index (CWi) – Design kWh/t 19.3",
+   "page": 142,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Cyclone Overflow Size, P80 µm 75",
+   "page": 142,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 8.6,
+   "unit": "years",
+   "quote": "Life of Mine years 8.6",
+   "page": 227
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 13.9,
+   "unit": "t:t",
+   "quote": "Strip ratio w:o 13.9:1",
+   "page": 227
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "quote": "Gold Price $/oz 1,600",
+   "page": 228,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 380,
+   "unit": "MUSD",
+   "quote": "after- tax NPV 5% of $380 million",
+   "page": 227,
+   "context": {
+    "discount_rate_pct": 5,
+    "note": "Roxgold 90% interest"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 49,
+   "unit": "%",
+   "quote": "and an IRR of 49% at a gold price of $1,600/oz",
+   "page": 227
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.7,
+   "unit": "years",
+   "quote": "Payback period is expected to be 1.7-years",
+   "page": 227
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 4.6,
+   "quote": "Mining $4.6 Processing $81.3",
+   "page": 222,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 81.3,
+   "quote": "Processing $81.3",
+   "page": 222,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure and Sustainability",
+   "value": 39.3,
+   "quote": "Infrastructure and Sustainability $39.3",
+   "page": 222,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "G&A",
+   "value": 9.0,
+   "quote": "G&A $9.0 Contingency $8.0",
+   "page": 222,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 8.0,
+   "quote": "Contingency $8.0 Total $142.2",
+   "page": 222,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 142.2,
+   "quote": "Total $142.2",
+   "page": 222,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 29.96,
+   "quote": "Mining $29.96",
+   "page": 225,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 12.57,
+   "quote": "Processing $12.57",
+   "page": 225,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administrative",
+   "value": 5.3,
+   "quote": "General and Administrative $5.30",
+   "page": 225,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 47.83,
+   "quote": "Total $47.83",
+   "page": 225,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Consumables",
+   "value": 4.72,
+   "quote": "Consumables 4.72",
+   "page": 226,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing",
+   "l2": "media_liners"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant Maintenance",
+   "value": 1.38,
+   "quote": "Plant Maintenance 1.38",
+   "page": 226,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing",
+   "l2": "maintenance"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Laboratory",
+   "value": 0.09,
+   "quote": "Laboratory 0.09",
+   "page": 226,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power",
+   "value": 4.38,
+   "quote": "Power 4.38",
+   "page": 226,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labour",
+   "value": 2.01,
+   "quote": "Labour 2.01",
+   "page": 226,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing"
+  }
+ ]
+}

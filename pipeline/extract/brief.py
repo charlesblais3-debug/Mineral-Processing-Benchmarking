@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 TOPIC = re.compile(r"capital|capex|operating cost|opex|unit cost|design criteria|process design|comminution|work ind|"
                    r"recover|economic|financial|key (project )?(metrics|parameters|results|outcomes)|summary of (the )?project|"
                    r"cash ?flow summary|production summary|mill(ing)? design|grind", re.I)
-CAPTION = re.compile(r"^(Table\s+\d+[-.]\d+[a-z]?\s*[:.\-–]?)", re.I)
+CAPTION = re.compile(r"^(Table\s+\d+([-.\u2011]\d+)?[a-z]?\s*[:.\-–]?)", re.I)
 
 
 def brief(report_id: str, extra: str | None = None, width: int = 900) -> str:
@@ -24,7 +24,7 @@ def brief(report_id: str, extra: str | None = None, width: int = 900) -> str:
     out, seen = [], set()
     for f in pages:
         text = f.read_text(encoding="utf-8")
-        if text.count("....") > 8 or len(re.findall(r"(?m)^Table\s+\d+[-.]\d+", text)) > 12:
+        if text.count("....") > 8 or len(re.findall(r"(?m)^Table\s+\d+", text)) > 8:
             continue  # list of tables / ToC
         lines = [l.strip() for l in text.splitlines() if l.strip()]
         for i, line in enumerate(lines):
