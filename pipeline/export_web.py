@@ -71,6 +71,20 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
             return {"value": sum(c["value_usd_escalated"] for c in rows) / scale,
                     "label": " + ".join(c["raw_label"] for c in rows), **_src(rows[0], url)}
 
+        SITE_L1 = ("mining", "processing", "ga", "tailings_water")
+
+        def site_opex():
+            """Consistent scope: mining + processing + G&A + tailings/water per tonne milled, from the report's own lines
+            (by-product credits, royalties and offsite costs excluded). Falls back to the report's stated total."""
+            rows = [c for c in costs if c["cost_type"] == "opex" and c["basis_unit"] == "per_t_milled" and not c["is_subtotal"]
+                    and c["category_l1"] in SITE_L1 and c["value_usd_escalated"] is not None]
+            if {"mining", "processing"} <= {c["category_l1"] for c in rows}:
+                return {"value": sum(c["value_usd_escalated"] for c in rows),
+                        "label": "Sum of site lines: " + " + ".join(c["raw_label"] for c in rows),
+                        "derived": "mining + processing + G&A + tailings/water lines", **_src(rows[0], url)}
+            total = grand_total("opex", "per_t_milled")
+            return {**total, "derived": "report's stated total (scope as reported)"} if total else None
+
         tpd = best_fact("throughput_tpd")
         if tpd is None:
             mt = best_fact("throughput_mtpa")
@@ -81,7 +95,7 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
             "tpd": tpd,
             "capex": grand_total("initial_capex"),
             "plant_capex": category_sum("initial_capex", "process", "total"),
-            "site_opex": grand_total("opex", "per_t_milled"),
+            "site_opex": site_opex(),
             "product_opex": grand_total("opex", "per_t_concentrate"),
             "process_opex": category_sum("opex", "processing", "per_t_milled"),
             "bwi": best_fact("bwi_ball"),

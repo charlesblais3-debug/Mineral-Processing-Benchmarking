@@ -1,0 +1,373 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Odysseus (Cosmos)",
+  "title": "STRONG ODYSSEUS DFS RESULTS IN DECISION TO MINE",
+  "standard": "JORC",
+  "study_level": "FS",
+  "effective_date": "2018-10-22",
+  "effective_date_quote": "22 October 2018",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co"
+  ],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2018,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "flotation"
+  ],
+  "quote": "The expansion will be achieved by the introduction of a secondary crusher",
+  "page": 17
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.9,
+   "unit": "Mt/a",
+   "quote": "Design Annual Throughput 900ktpa",
+   "page": 18,
+   "statistic": "design",
+   "derived": true,
+   "context": {
+    "derived_note": "900 ktpa converted to Mt/a"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.02,
+   "unit": "%",
+   "quote": "Head grade % Ni 2.02 2.31",
+   "page": 25,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 79.1,
+   "unit": "%",
+   "quote": "LOM Ni recovery 79.1%",
+   "page": 18,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 16.5,
+   "unit": "%",
+   "quote": "Ni grade in concentrate 16.5%",
+   "page": 18,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 7.5,
+   "unit": "USD/lb",
+   "quote": "Nickel price US$7.50/lb or US$16,535/t",
+   "page": 22,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.5,
+   "unit": "years",
+   "quote": "3.5 year payback from production start",
+   "page": 1,
+   "review_note": "Pre-tax payback (study reports pre-tax metrics only)"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 2.65,
+   "unit": "AUD/lb",
+   "quote": "C1 Cash Costs 2.65 1.98",
+   "page": 21,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "A$/lb Ni in concentrate, net of by-product credits (US$1.98/lb)"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 3.5,
+   "unit": "AUD/lb",
+   "quote": "All‐in Sustaining Cost 3.50 2.63",
+   "page": 21,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "A$/lb Ni in concentrate (US$2.63/lb)"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.75,
+   "unit": "USD/AUD",
+   "quote": "A$1.00 = US$0.75",
+   "page": 22,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine development",
+   "value": 148,
+   "quote": "Mine development (i) 148 39 187",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development",
+   "review_note": "Existing Cosmos concentrator is expanded from 450ktpa to 900ktpa (A$36m) and reused; capital classified as growth, not initial_capex."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine development",
+   "value": 39,
+   "quote": "Mine development (i) 148 39 187",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine infrastructure and services",
+   "value": 20,
+   "quote": "Mine infrastructure and services (ii) 20 24 44",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine infrastructure and services",
+   "value": 24,
+   "quote": "Mine infrastructure and services (ii) 20 24 44",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Shaft infrastructure",
+   "value": 63,
+   "quote": "Shaft infrastructure (iii) 63 ‐ 63",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Plant",
+   "value": 48,
+   "quote": "Plant (iv) 48 6 54",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant",
+   "value": 6,
+   "quote": "Plant (iv) 48 6 54",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Owner’s costs",
+   "value": 10,
+   "quote": "Owner’s costs 10 4 14",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owner’s costs",
+   "value": 4,
+   "quote": "Owner’s costs 10 4 14",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine closure and rehabilitation",
+   "value": 7,
+   "quote": "Mine closure and rehabilitation(v) ‐ 7 7",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated",
+   "review_note": "Includes net mine closure A$7m (2032) inside the sustaining total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency",
+   "value": 10,
+   "quote": "Contingency (vi) 10 2 12",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 2,
+   "quote": "Contingency (vi) 10 2 12",
+   "page": 20,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total",
+   "value": 299,
+   "quote": "Total 299 82 381",
+   "page": 20,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 82,
+   "quote": "Total 299 82 381",
+   "page": 20,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 63.8,
+   "quote": "Mining 63.8 47.8",
+   "page": 21,
+   "l1": "mining",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 29.3,
+   "quote": "Processing 29.3 22.0",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administration",
+   "value": 5.3,
+   "quote": "Administration 5.3 4.0",
+   "page": 21,
+   "l1": "ga",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By‐product credits",
+   "value": -5.2,
+   "quote": "By‐product credits (5.2) (3.9)",
+   "page": 21,
+   "l1": "other",
+   "l2": "unallocated",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "C1 Cash Costs",
+   "value": 93.2,
+   "quote": "C1 Cash Costs 93.2 69.9",
+   "page": 21,
+   "is_total": true,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sales transportation costs",
+   "value": 12.5,
+   "quote": "Sales transportation costs 12.5 9.3",
+   "page": 21,
+   "l1": "offsite",
+   "l2": "transport",
+   "outside_total": true,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "WA state royalty",
+   "value": 8.5,
+   "quote": "WA state royalty 8.5 6.4",
+   "page": 21,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "outside_total": true,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

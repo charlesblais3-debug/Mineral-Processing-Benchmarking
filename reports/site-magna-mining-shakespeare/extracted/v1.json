@@ -1,0 +1,518 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Shakespeare",
+  "title": "Shakespeare Project Feasibility Study Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2022-01-31",
+  "effective_date_quote": "Effective Date: January 31 , 2022",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co",
+   "Pt",
+   "Pd",
+   "Au"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "tails_thickener"
+  ],
+  "quote": "The SAG mill includes a pebble crusher and operates in closed circuit with a vibrating screen",
+  "page": 197
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4500,
+   "unit": "t/d",
+   "quote": "Plant Throughput 4,500 tpd",
+   "page": 196,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.33,
+   "unit": "%",
+   "quote": "Nickel Head Grade 0.33 %",
+   "page": 196,
+   "metal": "Ni",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 74.7,
+   "unit": "%",
+   "quote": "Ni Recovery to Ni Flotation Concentrate 74.7 %",
+   "page": 196,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "to_product": "nickel flotation concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 9.0,
+   "unit": "%",
+   "quote": "Nickel % 9.00 0.91",
+   "page": 233,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "concentrate": "nickel concentrate"
+   },
+   "review_note": "Table 17-1 design criteria give 13.3% Ni grade of Ni flotation concentrate; Table 19-1 LOM concentrate grade recorded"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 85,
+   "unit": "µm",
+   "quote": "Ball Mill Circuit Product size, P80 85 µm",
+   "page": 196,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 12.6,
+   "unit": "kWh/t",
+   "quote": "A ball work index (BWI) of 12.6 kWh/t was measured using a screen size of 150 µm",
+   "page": 113,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 150,
+    "ore_type": "initial metallurgical sample (Strathcona mill evaluation)"
+   },
+   "review_note": "single early sample, not the plant design statistic; 2005 study measured 19 variability samples at 100 µm closing screen with no summary statistic stated"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 15.9,
+   "unit": "kWh/t",
+   "quote": "A rod work index (RWI) of 15.9 kWh/t was measured",
+   "page": 113,
+   "statistic": "single",
+   "context": {
+    "test": "Bond rod mill",
+    "ore_type": "initial metallurgical sample (Strathcona mill evaluation)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 8.5,
+   "unit": "USD/lb",
+   "quote": "Nickel Price $US/lb 8.50",
+   "page": 37,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 140,
+   "unit": "MUSD",
+   "quote": "Net Present Value (6%) $M 221 140",
+   "page": 37,
+   "context": {
+    "discount_rate_pct": 6
+   },
+   "currency": "CAD"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 21.5,
+   "unit": "%",
+   "quote": "Internal Rate of Return (IRR) % 27.2 21.5",
+   "page": 37
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.5,
+   "unit": "years",
+   "quote": "3.5 year payback for the 7.1",
+   "page": 36
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 8.0,
+   "unit": "USD/lb",
+   "quote": "Nickel Cash Cost $US/lb Ni 8.00 9.85",
+   "page": 37,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "review_note": "pre-tax column; without by-product credits (with credits: (0.76) pre-tax, 1.10 post-tax)"
+  },
+  {
+   "parameter": "aisc",
+   "value": 8.15,
+   "unit": "USD/lb",
+   "quote": "Nickel All‐in Sustaining Cost (AISC) $US/lb Ni 8.15 8.15",
+   "page": 37,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "review_note": "without by-product credits"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.77,
+   "unit": "USD/CAD",
+   "quote": "Exchange Rate $US:$CDN 0.77",
+   "page": 37,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit Mining",
+   "value": 58.7,
+   "quote": "Open Pit Mining 58.7 2.6 61.4",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Mining",
+   "value": 2.6,
+   "quote": "Open Pit Mining 58.7 2.6 61.4",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Preproduction Stripping",
+   "value": 48.8,
+   "quote": "Preproduction Stripping 48.8 ‐ 48.8",
+   "page": 35,
+   "l1": "mining",
+   "part_of": "Open Pit Mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit Capital",
+   "value": 9.9,
+   "quote": "Open Pit Capital 9.9 2.6 12.6",
+   "page": 35,
+   "l1": "mining",
+   "part_of": "Open Pit Mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Capital",
+   "value": 2.6,
+   "quote": "Open Pit Capital 9.9 2.6 12.6",
+   "page": 35,
+   "l1": "mining",
+   "part_of": "Open Pit Mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 63.5,
+   "quote": "Processing 63.5 1.3 64.8",
+   "page": 35,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 1.3,
+   "quote": "Processing 63.5 1.3 64.8",
+   "page": 35,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 59.3,
+   "quote": "Infrastructure 59.3 ‐ 59.3",
+   "page": 35,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Environmental/Closure",
+   "value": 1.8,
+   "quote": "Environmental/Closure 1.8 5.2 7.0",
+   "page": 35,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental/Closure",
+   "value": 5.2,
+   "quote": "Environmental/Closure 1.8 5.2 7.0",
+   "page": 35,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 29.9,
+   "quote": "Indirects 29.9 ‐ 29.9",
+   "page": 35,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 19.6,
+   "quote": "Contingency 19.6 0.1 19.7",
+   "page": 35,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 0.1,
+   "quote": "Contingency 19.6 0.1 19.7",
+   "page": 35,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 183.4,
+   "quote": "Subtotal 183.4 9.1 192.5",
+   "page": 35,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal",
+   "value": 9.1,
+   "quote": "Subtotal 183.4 9.1 192.5",
+   "page": 35,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 232.9,
+   "quote": "Total 232.9 9.2 242.1",
+   "page": 35,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 9.2,
+   "quote": "Total 232.9 9.2 242.1",
+   "page": 35,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Environmental/Closure",
+   "value": 7.0,
+   "quote": "Environmental/Closure 1.8 5.2 7.0",
+   "page": 35,
+   "is_total": true,
+   "review_note": "Closure total; C$1.8 M initial and C$5.2 M sustaining are also lines in the initial/sustaining tables",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 20.53,
+   "quote": "Open Pit Mining $/t milled 243.7 20.53",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 243.7,
+   "quote": "Open Pit Mining $/t milled 243.7 20.53",
+   "page": 36,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 15.14,
+   "quote": "Processing $/t milled 179.7 15.14",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 179.7,
+   "quote": "Processing $/t milled 179.7 15.14",
+   "page": 36,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administrative",
+   "value": 2.98,
+   "quote": "General and Administrative $/t milled 35.3 2.98",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administrative",
+   "value": 35.3,
+   "quote": "General and Administrative $/t milled 35.3 2.98",
+   "page": 36,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport & Refining Charges",
+   "value": 0.78,
+   "quote": "Transport & Refining Charges $/t milled 9.2 0.78",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport & Refining Charges",
+   "value": 9.2,
+   "quote": "Transport & Refining Charges $/t milled 9.2 0.78",
+   "page": 36,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "offsite"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Carbon Offset Purchases",
+   "value": 0.26,
+   "quote": "Carbon Offset Purchases $/t milled 3.1 0.26",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Carbon Offset Purchases",
+   "value": 3.1,
+   "quote": "Carbon Offset Purchases $/t milled 3.1 0.26",
+   "page": 36,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 1.49,
+   "quote": "Royalties $/t milled 17.7 1.49",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 17.7,
+   "quote": "Royalties $/t milled 17.7 1.49",
+   "page": 36,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining ($/t mined)",
+   "value": 3.98,
+   "quote": "Open Pit Mining $/t mined 3.98",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 41.18,
+   "quote": "Total Operating Costs $/t milled 488.8 41.18",
+   "page": 36,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 488.8,
+   "quote": "Total Operating Costs $/t milled 488.8 41.18",
+   "page": 36,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}

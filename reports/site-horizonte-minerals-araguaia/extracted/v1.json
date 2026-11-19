@@ -1,0 +1,357 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Araguaia Nickel Project",
+  "title": "Amended NI 43-101 Technical Report Feasibility Study for the Araguaia Nickel Project",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2018-11-30",
+  "effective_date_quote": "with an effective date of 30 November 2018",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Fe"
+  ],
+  "country": "Brazil",
+  "region": "Para",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2018,
+  "effective_date_page": 337
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "rkef"
+  ],
+  "quote": "The proposed process is a single line 0.9 Mt/a RKEF installation, producing approximately 15 kt/a nickel as FeNi.",
+  "page": 235
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.9,
+   "unit": "Mt/a",
+   "quote": "The proposed process is a single line 0.9 Mt/a RKEF installation",
+   "page": 235,
+   "statistic": "design",
+   "context": {
+    "phase": "Stage 1 single line, full capacity after ramp-up; dry ore"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.77,
+   "unit": "%",
+   "quote": "Nickel in the ore, nominal % 1.77",
+   "page": 256,
+   "metal": "Ni",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.71,
+   "unit": "%",
+   "quote": "Overall nickel recovery in rotary kiln electric furnace product, nominal % 92.71",
+   "page": 256,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "to_product": "ferronickel"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 30,
+   "unit": "%",
+   "quote": "The final FeNi product containing 30% Ni",
+   "page": 25,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "concentrate": "ferronickel product"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 14000,
+   "unit": "USD/t",
+   "quote": "US$14,000/t (Base Case), based on Wood Mackenzie near-term forecast",
+   "page": 310,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 401,
+   "unit": "MUSD",
+   "quote": "NPV8 US$ M 401 740",
+   "page": 310,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20.1,
+   "unit": "%",
+   "quote": "IRR % 20.1 28.1",
+   "page": 32
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.2,
+   "unit": "years",
+   "quote": "Production year payback years 4.2 3.3",
+   "page": 32
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 3.5,
+   "unit": "BRL/USD",
+   "quote": "was 3.5 Reais (BRL) to the US$",
+   "page": 311,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine",
+   "value": 6.003,
+   "quote": "Mine 6,003",
+   "page": 297,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ore Preparation",
+   "value": 38.731,
+   "quote": "Ore Preparation 38,731",
+   "page": 297,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pyrometallurgy",
+   "value": 137.518,
+   "quote": "Pyrometallurgy 137,518",
+   "page": 297,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Materials Supply",
+   "value": 21.413,
+   "quote": "Materials Supply 21,413",
+   "page": 297,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Utilities and Infrastructure",
+   "value": 106.918,
+   "quote": "Utilities and Infrastructure 106,918",
+   "page": 297,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Buildings",
+   "value": 9.095,
+   "quote": "Buildings 9,095",
+   "page": 297,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects (includes contingency and growth)",
+   "value": 123.398,
+   "quote": "Indirects (includes contingency and growth) 123,398",
+   "page": 297,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total initial capex (after-tax, pre-escalation)",
+   "value": 443.076,
+   "quote": "Total initial capex (after-tax, pre-escalation) 443,076",
+   "page": 297,
+   "multiplier": "M",
+   "is_total": true,
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ongoing mine development",
+   "value": 68.6,
+   "quote": "Ongoing mine development 68.6",
+   "page": 298,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Slag storage",
+   "value": 5.5,
+   "quote": "Slag storage 5.5",
+   "page": 298,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process plant",
+   "value": 12.0,
+   "quote": "Process plant 12.0",
+   "page": 298,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "ANS to VDS road upgrade",
+   "value": 11.3,
+   "quote": "ANS to VDS road upgrade 11.3",
+   "page": 298,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Land acquisition",
+   "value": 15.4,
+   "quote": "Land acquisition 15.4",
+   "page": 298,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal sustaining",
+   "value": 112.7,
+   "quote": "Subtotal sustaining 112.7",
+   "page": 298,
+   "multiplier": "M",
+   "is_total": true,
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine and plant closure capex",
+   "value": 30.8,
+   "quote": "Mine and plant closure capex 30.8",
+   "page": 298,
+   "multiplier": "M",
+   "is_total": true,
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power",
+   "value": 32.1,
+   "quote": "Power 32.1 2,410",
+   "page": 31,
+   "l1": "processing",
+   "l2": "power",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Coal",
+   "value": 21.6,
+   "quote": "Coal 21.6 1,620",
+   "page": 31,
+   "l1": "processing",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other directs",
+   "value": 18.0,
+   "quote": "Other directs 18.0 1,348",
+   "page": 31,
+   "l1": "processing",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labour",
+   "value": 7.8,
+   "quote": "Labour 7.8 588",
+   "page": 31,
+   "l1": "processing",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal – Direct opex",
+   "value": 79.5,
+   "quote": "Subtotal – Direct opex 79.5 5,966",
+   "page": 31,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Indirects",
+   "value": 10.3,
+   "quote": "Indirects 10.3 772",
+   "page": 31,
+   "l1": "processing",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining opex",
+   "value": 21.1,
+   "quote": "Mining opex 21.1 1,584",
+   "page": 31,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total opex",
+   "value": 110.9,
+   "quote": "Total opex 110.9 8,322",
+   "page": 31,
+   "is_total": true,
+   "review_note": "LOM average US$ million per annum; process plant + mining; royalties listed separately in text",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "CFEM and landowner royalty (LOM)",
+   "value": 53.7,
+   "quote": "equivalent to a LOM royalty of US$53.7 million",
+   "page": 307,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "royalties_taxes",
+   "outside_total": true
+  }
+ ]
+}

@@ -1,0 +1,392 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Jaguar",
+  "title": "Jaguar Nickel Sulphide Project – Feasibility Study",
+  "standard": "JORC",
+  "study_level": "FS",
+  "effective_date": "2024-07-02",
+  "effective_date_quote": "2 July 2024",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co"
+  ],
+  "country": "Brazil",
+  "region": "Pará (Carajás)",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter",
+   "tails_thickener"
+  ],
+  "quote": "The grinding circuit consists of a 5.7MW SAG mill in closed circuit with",
+  "page": 46
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 3.5,
+   "unit": "Mt/a",
+   "quote": "projected 3.5Mtpa processing plant treating 63Mt of ore",
+   "page": 12,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.73,
+   "unit": "%",
+   "quote": "treating 63Mt of ore at a nickel grade of 0.73%",
+   "page": 12,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 73,
+   "unit": "%",
+   "quote": "Average Life-of-mine Recovery to Concentrate % 73",
+   "page": 5,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 12.3,
+   "unit": "%",
+   "quote": "Concentrate Grade % 12.3",
+   "page": 5,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 91.3,
+   "unit": "%",
+   "quote": "Concentrator % 91.3",
+   "page": 46,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 8.98,
+   "unit": "USD/lb",
+   "quote": "Nickel Price (2024 real terms) US$/lb 8.98",
+   "page": 5,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 663,
+   "unit": "MUSD",
+   "quote": "Post Tax US$M 663",
+   "page": 5,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 31,
+   "unit": "%",
+   "quote": "Post Tax % pa 31%",
+   "page": 5
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.7,
+   "unit": "years",
+   "quote": "Post Tax Years 2.7",
+   "page": 5
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 2.3,
+   "unit": "USD/lb",
+   "quote": "TOTAL C1 CASH COST $26.94 $2.30",
+   "page": 12,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "per lb Ni in concentrate produced"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 3.57,
+   "unit": "USD/lb",
+   "quote": "TOTAL AISC $41.85 $3.57",
+   "page": 12,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "per lb Ni in concentrate produced"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.3,
+   "unit": "BRL/USD",
+   "quote": "Average LOM Exchange Rate USD/BRL 5.30",
+   "page": 5,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Strip Mining (incl waste for IWL Construction)",
+   "value": 67.8,
+   "quote": "Pre-Strip Mining (incl waste for IWL Construction) 67.8",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 101.0,
+   "quote": "Process Plant 101.0",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings and Water Management",
+   "value": 18.5,
+   "quote": "Tailings and Water Management 18.5",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Non-Process Infrastructure",
+   "value": 77.3,
+   "quote": "Non-Process Infrastructure 77.3",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Pre-Production Capital Costs",
+   "value": 264.6,
+   "quote": "Total Direct Pre-Production Capital Costs 264.6",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Construction Costs",
+   "value": 22.3,
+   "quote": "Indirect Construction Costs 22.3",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Engineering (EPCM/Spares/First Fills)",
+   "value": 23.1,
+   "quote": "Engineering (EPCM/Spares/First Fills) 23.1",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 26.8,
+   "quote": "Owner's Costs 26.8",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct & Indirect Pre-Production Capital Costs",
+   "value": 336.8,
+   "quote": "Total Direct & Indirect Pre-Production Capital Costs 336.8",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency (incl growth)",
+   "value": 34.6,
+   "quote": "Contingency (incl growth) 34.6",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TOTAL PRE-PRODUCTION CAPITAL COST",
+   "value": 371.4,
+   "quote": "TOTAL PRE-PRODUCTION CAPITAL COST 371.4",
+   "page": 13,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 93.2,
+   "quote": "Mining 93.2",
+   "page": 58,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process",
+   "value": 36.4,
+   "quote": "Process 36.4",
+   "page": 58,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Management",
+   "value": 99.4,
+   "quote": "Tailings Management 99.4",
+   "page": 58,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Non-Process Infrastructure",
+   "value": 2.5,
+   "quote": "Non-Process Infrastructure 2.5",
+   "page": 58,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Jaguar Deferred Acquisition Payment to Vale",
+   "value": 5.0,
+   "quote": "Jaguar Deferred Acquisition Payment to Vale 5.0",
+   "page": 58,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TOTAL SUSTAINING CAPITAL COST (LOM)",
+   "value": 236.5,
+   "quote": "TOTAL SUSTAINING CAPITAL COST (LOM) 236.5",
+   "page": 58,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "CLOSURE COSTS",
+   "value": 18.6,
+   "quote": "CLOSURE COSTS 18.6",
+   "page": 58,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 18.13,
+   "quote": "Mining $2.90 $18.13",
+   "page": 12,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 6.9,
+   "quote": "Processing $6.90 $0.59",
+   "page": 12,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration (G&A)",
+   "value": 1.91,
+   "quote": "General & Administration (G&A) $1.91 $0.16",
+   "page": 12,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TOTAL C1 CASH COST",
+   "value": 26.94,
+   "quote": "TOTAL C1 CASH COST $26.94 $2.30",
+   "page": 12,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

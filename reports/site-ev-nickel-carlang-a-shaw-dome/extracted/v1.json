@@ -1,0 +1,428 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "CarLang A",
+  "title": "CarLang A Nickel Project NI 43-101 PEA and Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2025-05-05",
+  "effective_date_quote": "Report Effective Date: May 5, 2025",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co",
+   "Fe",
+   "Cr"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "magnetic_sep"
+  ],
+  "quote": "The plant flowsheet includes crushing, grinding, sulphide flotation, and magnetic separation to generate the",
+  "page": 38
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 120000,
+   "unit": "t/d",
+   "quote": "design capacity of 120 thousand tonnes per day (ktpd) or 43.8 Mtpa",
+   "page": 38,
+   "statistic": "design",
+   "context": {
+    "phase": "single phase, design capacity"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 43.8,
+   "unit": "Mt/a",
+   "quote": "design capacity of 120 thousand tonnes per day (ktpd) or 43.8 Mtpa",
+   "page": 38,
+   "statistic": "design",
+   "context": {
+    "phase": "single phase, design capacity"
+   },
+   "review_note": "Section 1 mining text gives mill feed of 43.3 Mtpa; plant design capacity 43.8 Mtpa recorded"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.23,
+   "unit": "%",
+   "quote": "Ni Feed Grade % 0.23",
+   "page": 40,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 14.6,
+   "unit": "%",
+   "quote": "Ni Concentrate Ni Recovery % 14.6",
+   "page": 40,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "nickel sulphide concentrate",
+    "ore_type": "excludes a further 26.2% Ni to FeCr magnetite concentrate (salable total 40.8%)"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 25.0,
+   "unit": "%",
+   "quote": "Ni Concentrate Grade % 25.0",
+   "page": 40,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "concentrate": "nickel sulphide concentrate"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 200,
+   "unit": "µm",
+   "quote": "Crushing and grinding to a nominal 200µm product P80 size",
+   "page": 178,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20000,
+   "unit": "USD/t",
+   "quote": "Ni Price US$/t 20,000",
+   "page": 41,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1036,
+   "unit": "MUSD",
+   "quote": "Post-Tax NPV8% $M 1,480 1,036",
+   "page": 41,
+   "context": {
+    "discount_rate_pct": 8
+   },
+   "review_note": "US$ column; C$ value is 1,480"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 14,
+   "unit": "%",
+   "quote": "Post-Tax IRR % 14 14",
+   "page": 41
+  },
+  {
+   "parameter": "payback_years",
+   "value": 6,
+   "unit": "years",
+   "quote": "Payback (from Production Start) Yrs 6 6",
+   "page": 41
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.7,
+   "unit": "USD/CAD",
+   "quote": "Exchange Rate US$:C$ 0.70",
+   "page": 41,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 56.0,
+   "quote": "Mining1 M$ 56 207 263",
+   "page": 39,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 207.0,
+   "quote": "Mining1 M$ 56 207 263",
+   "page": 39,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mill",
+   "value": 2263.0,
+   "quote": "Mill2 M$ 2,263 - 2,263",
+   "page": 39,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site & Offsite Infrastructure",
+   "value": 166.0,
+   "quote": "On-Site & Offsite Infrastructure M$ 166 16 182",
+   "page": 201,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "On-Site & Offsite Infrastructure",
+   "value": 16.0,
+   "quote": "On-Site & Offsite Infrastructure M$ 166 16 182",
+   "page": 201,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings & Water Management",
+   "value": 228.0,
+   "quote": "Tailings & Water Management M$ 228 1,100 1,329",
+   "page": 39,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings & Water Management",
+   "value": 1100.0,
+   "quote": "Tailings & Water Management M$ 228 1,100 1,329",
+   "page": 39,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Closure Costs",
+   "value": 11.0,
+   "quote": "Closure Costs M$ 11 164 175",
+   "page": 39,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure Costs",
+   "value": 164.0,
+   "quote": "Closure Costs M$ 11 164 175",
+   "page": 39,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Indirects & Owner Costs",
+   "value": 425.0,
+   "quote": "Construction Indirects & Owner Costs M$ 425 - 425",
+   "page": 201,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Project Capital",
+   "value": 3150,
+   "quote": "Total Project Capital M$ 3,150 1,487 4,637",
+   "page": 39,
+   "is_total": true,
+   "review_note": "Table 1-7 economic summary gives initial capital C$3,317 M (Value C$) vs 3,150 here; not reconciled in report",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Project Capital",
+   "value": 1487,
+   "quote": "Total Project Capital M$ 3,150 1,487 4,637",
+   "page": 39,
+   "is_total": true,
+   "review_note": "Mill sustaining costs are included in processing operating costs (report footnote)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 175,
+   "quote": "Closure Costs M$ 11 164 175",
+   "page": 39,
+   "is_total": true,
+   "review_note": "Total closure; C$11 M initial (also within initial capex table) and C$164 M during production/post-closure",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3.85,
+   "quote": "Mining1 3,231 3.85 2.85",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 2.85,
+   "quote": "Mining1 3,231 3.85 2.85",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3231.0,
+   "quote": "Mining1 3,231 3.85 2.85",
+   "page": 40,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 6.82,
+   "quote": "Processing2 5,726 6.82 6.82",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 6.82,
+   "quote": "Processing2 5,726 6.82 6.82",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 5726.0,
+   "quote": "Processing2 5,726 6.82 6.82",
+   "page": 40,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administrative",
+   "value": 0.8,
+   "quote": "General & Administrative 671 0.80 0.80",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administrative",
+   "value": 0.8,
+   "quote": "General & Administrative 671 0.80 0.80",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administrative",
+   "value": 671.0,
+   "quote": "General & Administrative 671 0.80 0.80",
+   "page": 40,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Management",
+   "value": 0.23,
+   "quote": "Tailings Management 208 0.23 0.23",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Management",
+   "value": 0.23,
+   "quote": "Tailings Management 208 0.23 0.23",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Management",
+   "value": 208.0,
+   "quote": "Tailings Management 208 0.23 0.23",
+   "page": 40,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 11.69,
+   "quote": "Total Site Operating Cost 9,818 11.69 10.69",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 10.69,
+   "quote": "Total Site Operating Cost 9,818 11.69 10.69",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 9818,
+   "quote": "Total Site Operating Cost 9,818 11.69 10.69",
+   "page": 40,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}

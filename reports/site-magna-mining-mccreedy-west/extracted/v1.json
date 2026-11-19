@@ -1,0 +1,283 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "McCreedy West",
+  "title": "Technical Report on the Mineral Reserve and Mineral Resource Estimates, McCreedy West Mine, Sudbury, Ontario, Canada",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ni",
+   "Co",
+   "Pt",
+   "Pd",
+   "Au",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "CAD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ore_sorting"
+  ],
+  "quote": "Run of mine or upgraded (via XRT ore sorter) run of mine ore are shipped to Vale’s Clarabelle Mill",
+  "page": 14
+ },
+ "facts": [
+  {
+   "parameter": "reserve_grade",
+   "value": 1.59,
+   "unit": "%",
+   "quote": "Total Probable Mineral Reserves at the McCreedy West Mine are estimated at 987,000 tonnes grading 1.59% Cu, 0.32% Ni",
+   "page": 16,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "reserve_grade",
+   "value": 0.32,
+   "unit": "%",
+   "quote": "Total Probable Mineral Reserves at the McCreedy West Mine are estimated at 987,000 tonnes grading 1.59% Cu, 0.32% Ni",
+   "page": 16,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85,
+   "unit": "%",
+   "quote": "Metal recoveries considered are 85% for Ni, 91% for Cu",
+   "page": 15,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "to_product": "concentrate (Vale Clarabelle Mill, third-party processing)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91,
+   "unit": "%",
+   "quote": "Metal recoveries considered are 85% for Ni, 91% for Cu",
+   "page": 15,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "to_product": "concentrate (Vale Clarabelle Mill, third-party processing)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 7.72,
+   "unit": "USD/lb",
+   "quote": "Nickel US$7.72/lb",
+   "page": 126,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.88,
+   "unit": "USD/lb",
+   "quote": "Copper US$4.88/lb",
+   "page": 126,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 6.9,
+   "unit": "MUSD",
+   "quote": "after tax NPV of $6.9 million CAD",
+   "page": 162,
+   "context": {
+    "discount_rate_pct": 5
+   },
+   "currency": "CAD"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.37,
+   "unit": "CAD/USD",
+   "quote": "Foreign Exchange CAD:USD: $1.37CAD:$1USD",
+   "page": 160,
+   "context": {
+    "pair": "CAD per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 104.06,
+   "quote": "Mining $36,396K $104.06",
+   "page": 18,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 36396,
+   "quote": "Mining $36,396K $104.06",
+   "page": 18,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "l1": "mining",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Support",
+   "value": 30.74,
+   "quote": "Surface Support $10,750K $30.74",
+   "page": 18,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Support",
+   "value": 10750,
+   "quote": "Surface Support $10,750K $30.74",
+   "page": 18,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "l1": "other",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling",
+   "value": 39.73,
+   "quote": "Milling $13,896K $39.73",
+   "page": 18,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "review_note": "Milling = third-party (Vale Clarabelle) milling charge; 2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling",
+   "value": 13896,
+   "quote": "Milling $13,896K $39.73",
+   "page": 18,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "l1": "processing",
+   "review_note": "Milling = third-party (Vale Clarabelle) milling charge; 2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 28.03,
+   "quote": "G&A $9,804K $28.03",
+   "page": 18,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 9804,
+   "quote": "G&A $9,804K $28.03",
+   "page": 18,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "l1": "ga",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Shared Services",
+   "value": 12.61,
+   "quote": "Shared Services $4,410K $12.61",
+   "page": 18,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Shared Services",
+   "value": 4410,
+   "quote": "Shared Services $4,410K $12.61",
+   "page": 18,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "l1": "other",
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 215.17,
+   "quote": "Total Operating Costs $75,257K $215.17",
+   "page": 18,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 75257,
+   "quote": "Total Operating Costs $75,257K $215.17",
+   "page": 18,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "is_total": true,
+   "review_note": "2026 budget year (based on actual 2025 costs); 2027-2028 per-tonne values identical except Shared Services; ore processed at Vale's Clarabelle Mill (no own plant)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining Charges",
+   "value": 4994,
+   "quote": "Refining Charges $4,994K $4,788K $3,928K",
+   "page": 161,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "l1": "offsite",
+   "outside_total": true,
+   "review_note": "2026 value; treatment and refining charges shown separately from site operating costs"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment Charges",
+   "value": 6599,
+   "quote": "Treatment Charges $6,599K $6,678K $5,014K",
+   "page": 161,
+   "multiplier": "k",
+   "basis_unit": "per_year",
+   "l1": "offsite",
+   "outside_total": true,
+   "review_note": "2026 value"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 2870,
+   "quote": "Closure Costs $2,870K",
+   "page": 161,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}

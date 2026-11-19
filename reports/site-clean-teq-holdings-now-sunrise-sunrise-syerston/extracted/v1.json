@@ -1,0 +1,327 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Sunrise",
+  "title": "Clean TeQ Sunrise Definitive Feasibility Study completed",
+  "standard": "JORC",
+  "study_level": "FS",
+  "effective_date": "2018-06-25",
+  "effective_date_quote": "25 June 2018",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co",
+   "Sc"
+  ],
+  "country": "Australia",
+  "region": "New South Wales",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2018,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "hpal"
+  ],
+  "quote": "**High Pressure Acid Leach (HPAL) to final product.",
+  "page": 7
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.5,
+   "unit": "Mt/a",
+   "quote": "Autoclave Throughput* 2.5 Mtpa",
+   "page": 6,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.6,
+   "unit": "%",
+   "quote": "Average Recoveries** Nickel 92.6%",
+   "page": 7,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "final product (HPAL to final product)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.2,
+   "unit": "%",
+   "quote": "Cobalt 91.2%",
+   "page": 7,
+   "metal": "Co",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "final product (HPAL to final product)"
+   }
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 1.2,
+   "unit": "t:t",
+   "quote": "Average Strip Ratio 1.2:1",
+   "page": 7,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 7,
+   "unit": "USD/lb",
+   "quote": "Nickel price* US$7/lb LME + US$1/lb sulphate premium",
+   "page": 6,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1392,
+   "unit": "MUSD",
+   "quote": "post-tax Net Present Value1 (NPV) of US$1.392",
+   "page": 1,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 19.1,
+   "unit": "%",
+   "quote": "Internal Rate of Return (IRR) (post tax) 19.1%",
+   "page": 6
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.3,
+   "unit": "years",
+   "quote": "Project payback (simple) 4.3 years",
+   "page": 6
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 4.68,
+   "unit": "USD/lb",
+   "quote": "exclusive of by-product credits $4.68/lb Nickel",
+   "page": 6,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "before by-product credits, Years 2-25"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.75,
+   "unit": "USD/AUD",
+   "quote": "Exchange Rate (USD:AUD) US$0.75 : A$1.00",
+   "page": 6,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 17,
+   "quote": "Mining 17",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Development",
+   "value": 12,
+   "quote": "Site Development 12",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 397,
+   "quote": "Process Plant 397",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Reagents",
+   "value": 138,
+   "quote": "Reagents 138",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Services & Infrastructure",
+   "value": 227,
+   "quote": "Services & Infrastructure 227",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Directs",
+   "value": 791,
+   "quote": "Total Directs 791",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects, including EPCM",
+   "value": 295,
+   "quote": "Indirects, including EPCM 295",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs including Spares & First Fills",
+   "value": 121,
+   "quote": "Owners Costs including Spares & First Fills 121",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contractor overhead & profit",
+   "value": 119,
+   "quote": "Contractor overhead & profit 119",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capital Cost, excluding Contingency",
+   "value": 1326,
+   "quote": "Capital Cost, excluding Contingency 1,326",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 165,
+   "quote": "Contingency 165",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost Estimate",
+   "value": 1491,
+   "quote": "Total Capital Cost Estimate 1,491",
+   "page": 11,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "tolerance_pct": 3,
+   "review_note": "Table rounded to nearest US$m"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 1.14,
+   "quote": "Mining $1.14 $1.14",
+   "page": 12,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 7 basis is US$/lb Ni (before credits); payable vs produced not stated. Years 2-25 average.",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 3.33,
+   "quote": "Processing $3.33 $3.33",
+   "page": 12,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 7 basis is US$/lb Ni (before credits); payable vs produced not stated. Years 2-25 average.",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Haulage & Port",
+   "value": 0.07,
+   "quote": "Haulage & Port $0.07 $0.07",
+   "page": 12,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 7 basis is US$/lb Ni (before credits); payable vs produced not stated. Years 2-25 average.",
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration",
+   "value": 0.14,
+   "quote": "General & Administration $0.14 $0.14",
+   "page": 12,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 7 basis is US$/lb Ni (before credits); payable vs produced not stated. Years 2-25 average.",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total C1 Operating Cost (before credits)",
+   "value": 4.68,
+   "quote": "Total C1 Operating Cost $4.68",
+   "page": 12,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 7 basis is US$/lb Ni (before credits); payable vs produced not stated. Years 2-25 average.",
+   "is_total": true
+  }
+ ]
+}

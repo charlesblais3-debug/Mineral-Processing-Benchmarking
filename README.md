@@ -69,3 +69,10 @@ This rebuilds `app/web/dist/index.html` from the database. Open that file in any
 - **Explore**: preset charts (initial CAPEX, process plant CAPEX, site and process OPEX per tonne, Bond work index) against throughput, with a fitted power-law curve, filters by commodity, stage and flowsheet, and a sortable project table.
 - **Estimate**: describe a project (commodity, flowsheet, t/d, optional BWi) and get peer-based ranges for CAPEX and OPEX, plus the closest comparable projects.
 - **Project sheet**: click any project or chart point. Every number has a page reference; click it to see the verbatim quote and open the report.
+
+
+## Metric definitions
+
+- **Site OPEX (US$/t milled):** mining + processing + G&A + tailings/water lines per tonne milled, summed from the report's own lines, so every project has the same scope (by-product credits, royalties, freight, TC/RC and capitalised-stripping adjustments excluded). When a report gives no such breakdown, its stated total per tonne milled is used and labelled as such.
+- **OPEX per tonne product:** the report's stated cash cost per tonne of concentrate / pellets / product (iron ore and similar).
+- **Initial CAPEX:** new-build pre-production capital only; expansions, restarts and cost-to-complete are growth capital and are not plotted.

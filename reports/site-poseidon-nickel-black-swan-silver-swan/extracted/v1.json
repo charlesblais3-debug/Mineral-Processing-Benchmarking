@@ -1,0 +1,235 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Black Swan & Silver Swan",
+  "title": "Black Swan & Silver Swan – Feasibility Study Supports Project Restart",
+  "standard": "JORC",
+  "study_level": "FS",
+  "effective_date": "2018-07-18",
+  "effective_date_quote": "18th July 2018",
+  "primary_commodity": "Ni",
+  "by_products": [],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "care_maintenance",
+  "currency": "AUD",
+  "cost_base_year": 2018,
+  "effective_date_page": 1
+ },
+ "flowsheet": null,
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.1,
+   "unit": "Mt/a",
+   "quote": "Combined mill feed will average 1.1 million tonnes per annum",
+   "page": 1,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.2,
+   "unit": "Mt/a",
+   "quote": "compared to process plant capacity of 2.2 million tonnes per annum",
+   "page": 1,
+   "statistic": "design",
+   "context": {
+    "phase": "existing Black Swan plant capacity (not the feed rate in the study)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 7.7,
+   "unit": "USD/lb",
+   "quote": "A nickel price of US$7.70/lb has been assumed",
+   "page": 6,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 3.18,
+   "unit": "USD/lb",
+   "quote": "C1 Cash Costs2 US$/lb-Ni $3.18",
+   "page": 6,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "100% payable basis; Table 2 states it excludes by-product credits"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 5.1,
+   "unit": "USD/lb",
+   "quote": "AISC Cash Costs3 US$/lb-Ni $5.10",
+   "page": 6,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "excludes once-off pre-production capital"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.76,
+   "unit": "USD/AUD",
+   "quote": "an exchange rate of AUD:USD of 0.76",
+   "page": 6,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Pre-Production – Silver Swan Underground",
+   "value": 12.9,
+   "quote": "Pre-Production – Silver Swan Underground 12.90",
+   "page": 6,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "review_note": "Restart of existing Black Swan concentrator and Silver Swan underground: classified as growth, not greenfield initial capex."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pre-Production – Black Swan Processing Plant",
+   "value": 18.52,
+   "quote": "Pre-Production – Black Swan Processing Plant 18.52",
+   "page": 6,
+   "l1": "process",
+   "l2": "general",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Project Capital Requirements",
+   "value": 56.66,
+   "quote": "Total Project Capital Requirements 56.66",
+   "page": 6,
+   "is_total": true,
+   "partial_breakdown": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "review_note": "Total of the whole table: includes the four sustaining capital lines (17.72+2.12+3.20+2.20) which are listed under sustaining; report gives no separate pre-production total."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital – Silver Swan Underground Development",
+   "value": 17.72,
+   "quote": "Sustaining Capital – Silver Swan Underground Development 17.72",
+   "page": 6,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital – Silver Swan Underground Infrastructure",
+   "value": 2.12,
+   "quote": "Sustaining Capital – Silver Swan Underground Infrastructure 2.12",
+   "page": 6,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital – Black Swan Processing Plant & Surface Infrastructure",
+   "value": 3.2,
+   "quote": "Sustaining Capital – Black Swan Processing Plant & Surface Infrastructure 3.20",
+   "page": 6,
+   "l1": "process",
+   "l2": "general",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital – Black Swan Open Pit",
+   "value": 2.2,
+   "quote": "Sustaining Capital – Black Swan Open Pit 2.20",
+   "page": 6,
+   "l1": "mining",
+   "l2": "pre_production",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining & Geology",
+   "value": 1.3,
+   "quote": "Mining & Geology US$ / lb 1.30",
+   "page": 6,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "US$/lb Ni in concentrate, 100% payable basis; Table 2 total excludes by-product credits"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 1.13,
+   "quote": "Processing US$ / lb 1.13",
+   "page": 6,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "US$/lb Ni in concentrate, 100% payable basis; Table 2 total excludes by-product credits"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport",
+   "value": 0.45,
+   "quote": "Transport US$ / lb 0.45",
+   "page": 6,
+   "l1": "offsite",
+   "l2": "transport",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "US$/lb Ni in concentrate, 100% payable basis; Table 2 total excludes by-product credits"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 0.3,
+   "quote": "Royalties US$ / lb 0.30",
+   "page": 6,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "US$/lb Ni in concentrate, 100% payable basis; Table 2 total excludes by-product credits"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total C1 Cost",
+   "value": 3.18,
+   "quote": "Total C1 Cost US$ / lb 3.18",
+   "page": 6,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "US$/lb Ni in concentrate, 100% payable basis; Table 2 total excludes by-product credits"
+  }
+ ]
+}

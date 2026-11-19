@@ -1,0 +1,407 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Vermelho Project",
+  "title": "Amended NI 43-101 Technical Report - Vermelho Project, Para State, Brazil (Prefeasibility Study)",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2019-10-31",
+  "effective_date_quote": "with an effective date of 31 October 2019",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co",
+   "kieserite"
+  ],
+  "country": "Brazil",
+  "region": "Para",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2019,
+  "effective_date_page": 257
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "hpal"
+  ],
+  "quote": "Simulus has selected the beneficiation, HPAL, MSP, POX, CoSX and crystallisation as the preferred process flowsheet",
+  "page": 30
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 4.34,
+   "unit": "Mt/a",
+   "quote": "The process plant has been designed to process 4.34 Mt/a of ROM ore at 1.07% Ni.",
+   "page": 24,
+   "statistic": "design",
+   "context": {
+    "phase": "Stage 2 (both trains, from year 3-4); ROM ore feed to beneficiation; HPAL feed 2 Mt/a after beneficiation, Stage 1 is 1 Mt/a HPAL feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.07,
+   "unit": "%",
+   "quote": "The process plant has been designed to process 4.34 Mt/a of ROM ore at 1.07% Ni.",
+   "page": 24,
+   "metal": "Ni",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 94.4,
+   "unit": "%",
+   "quote": "The design nickel and cobalt recovery from HPAL feed to sulphate crystal product is 94.4% and 94.9% of the nickel and cobalt",
+   "page": 30,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "to_product": "nickel sulphate crystal",
+    "ore_type": "recovery from beneficiated HPAL feed, excludes beneficiation recovery"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 16400,
+   "unit": "USD/t",
+   "quote": "US$16,400/t for nickel + US$34,000/t for cobalt",
+   "page": 29,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1722,
+   "unit": "MUSD",
+   "quote": "NPV8 US$ M 1,722 2,373",
+   "page": 29,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 26.26,
+   "unit": "%",
+   "quote": "IRR % 26.26% 31.53%",
+   "page": 29
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.2,
+   "unit": "years",
+   "quote": "Production year payback years 4.2 3.6",
+   "page": 233
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 3.8,
+   "unit": "BRL/USD",
+   "quote": "was 3.8 BRL to the US$",
+   "page": 231,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant",
+   "value": 575.06,
+   "quote": "Process plant** 575.06 446.68",
+   "page": 27,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining pre-production",
+   "value": 10.78,
+   "quote": "Mining pre-production 10.78",
+   "page": 27,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings and sediment",
+   "value": 24.12,
+   "quote": "Tailings and sediment 24.12",
+   "page": 27,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pumping",
+   "value": 2.34,
+   "quote": "Pumping 2.34",
+   "page": 27,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Powerline",
+   "value": 14.16,
+   "quote": "Powerline 14.16",
+   "page": 27,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Road",
+   "value": 2.59,
+   "quote": "Road 2.59",
+   "page": 27,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Permitting and land acquisition",
+   "value": 23.19,
+   "quote": "Permitting and land acquisition 23.19",
+   "page": 27,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Process plant (Stage 2)",
+   "value": 446.68,
+   "quote": "Process plant** 575.06 446.68",
+   "page": 27,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total (Stage 1)",
+   "value": 652.24,
+   "quote": "Total 652.24 446.68 52.28",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total (Stage 2)",
+   "value": 446.68,
+   "quote": "Total 652.24 446.68 52.28",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining sustaining",
+   "value": 21.58,
+   "quote": "Mining sustaining - - 21.58",
+   "page": 27,
+   "review_note": "Section 21.2.8 text says LOM sustaining US$66.4 M and Table 21-11 gives process plant sustaining 17.0 M/yr; neither matches Table 1-3, so no sustaining total recorded",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other sustaining (including land permitting and land)",
+   "value": 1.33,
+   "quote": "Other sustaining (including land permitting and land) - - 1.33",
+   "page": 27,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 29.37,
+   "quote": "Closure - - 29.37",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 6.94,
+   "quote": "Mining 981 1,062 6.94",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "US$/t ore column; basis (ROM vs HPAL feed) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 981.0,
+   "quote": "Mining 981 1,062 6.94",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rejects and tails handling",
+   "value": 2.93,
+   "quote": "Rejects and tails handling 414 448 2.93",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "tailings_water",
+   "review_note": "US$/t ore column; basis (ROM vs HPAL feed) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rejects and tails handling",
+   "value": 414.0,
+   "quote": "Rejects and tails handling 414 448 2.93",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing costs",
+   "value": 40.93,
+   "quote": "Processing costs 5,785 6,261 40.93",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "review_note": "US$/t ore column; basis (ROM vs HPAL feed) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing costs",
+   "value": 5785.0,
+   "quote": "Processing costs 5,785 6,261 40.93",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties (CFEM)",
+   "value": 0.16,
+   "quote": "Royalties (CFEM) 23 25 0.16",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes",
+   "review_note": "US$/t ore column; basis (ROM vs HPAL feed) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties (CFEM)",
+   "value": 23.0,
+   "quote": "Royalties (CFEM) 23 25 0.16",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty (Vale)",
+   "value": 0.47,
+   "quote": "Royalty (Vale) 66 72 0.47",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes",
+   "review_note": "US$/t ore column; basis (ROM vs HPAL feed) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty (Vale)",
+   "value": 66.0,
+   "quote": "Royalty (Vale) 66 72 0.47",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and other costs",
+   "value": 1.52,
+   "quote": "G&A and other costs 215 233 1.52",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "review_note": "US$/t ore column; basis (ROM vs HPAL feed) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and other costs",
+   "value": 215.0,
+   "quote": "G&A and other costs 215 233 1.52",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "HSE",
+   "value": 0.17,
+   "quote": "HSE 24 26 0.17",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "review_note": "US$/t ore column; basis (ROM vs HPAL feed) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "HSE",
+   "value": 24.0,
+   "quote": "HSE 24 26 0.17",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 53.13,
+   "quote": "Total 7,508 8,126 53.13 197.57",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 7508,
+   "quote": "Total 7,508 8,126 53.13 197.57",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}

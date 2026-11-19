@@ -1,0 +1,432 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Wingellina",
+  "title": "PFS confirms Wingellina as a Tier 1 project capable of supplying decades of Nickel and Cobalt",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "effective_date": "2022-12-22",
+  "effective_date_quote": "22 December 2022",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co"
+  ],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "hpal"
+  ],
+  "quote": "Proven and mature metallurgy HPAL circuit",
+  "page": 7
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 4.3,
+   "unit": "Mt/a",
+   "quote": "planned at a 4.3Mtpa throughput scenario",
+   "page": 7,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92,
+   "unit": "%",
+   "quote": "Nickel/Cobalt Recovery % 92%/89%",
+   "page": 7,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "MHP"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "quote": "Nickel/Cobalt Recovery % 92%/89%",
+   "page": 7,
+   "metal": "Co",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "MHP"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.93,
+   "unit": "%",
+   "quote": "168.4Mt at 0.93% Ni, 0.07% Co",
+   "page": 7,
+   "metal": "Ni",
+   "statistic": "single",
+   "context": {
+    "note": "Ore Reserve grade"
+   }
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 1.1,
+   "unit": "t:t",
+   "quote": "Strip Ratio Waste:Ore 1.10",
+   "page": 7,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21472,
+   "unit": "USD/t",
+   "quote": "Nickel price WoodMac/ S&P MI (Blend) US$21,472/t",
+   "page": 7,
+   "metal": "Ni",
+   "context": {
+    "note": "10 year average base case"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 3340,
+   "unit": "MAUD",
+   "quote": "Post-tax NPV8 (real, ungeared) A$3.34bn",
+   "page": 8,
+   "context": {
+    "discount_rate_pct": 8,
+    "scenario": "Base Case"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 18.02,
+   "unit": "%",
+   "quote": "Post-tax IRR (real, ungeared) 18.02%",
+   "page": 8,
+   "context": {
+    "scenario": "Base Case"
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.9,
+   "unit": "years",
+   "quote": "Payback period (from start of production) 4.9 years",
+   "page": 8,
+   "context": {
+    "scenario": "Base Case"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.67,
+   "unit": "USD/AUD",
+   "quote": "Forward Curve (Bloomberg) AUD:USD 0.67",
+   "page": 7,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant",
+   "value": 812.98,
+   "quote": "Processing Plant $812.98",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings",
+   "value": 72.78,
+   "quote": "Tailings $72.78",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Packages",
+   "value": 413.98,
+   "quote": "Process Packages $413.98",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water, Services & Utilities",
+   "value": 151.88,
+   "quote": "Water, Services & Utilities $151.88",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant Infrastructure",
+   "value": 154.32,
+   "quote": "Process Plant Infrastructure $154.32",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "General Infrastructure",
+   "value": 139.6,
+   "quote": "General Infrastructure $139.60",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction, Services, Support",
+   "value": 86.53,
+   "quote": "Construction, Services, Support $86.53",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site water infrastructure",
+   "value": 161.95,
+   "quote": "Off-site water infrastructure $161.95",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site road infrastructure",
+   "value": 74.37,
+   "quote": "Off-site road infrastructure $74.37",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 317.98,
+   "quote": "Indirect Costs $317.98",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Direct & Indirect Capital Cost",
+   "value": 2386.38,
+   "quote": "Direct & Indirect Capital Cost $2,386.38",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 518.52,
+   "quote": "Contingency $518.52",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost",
+   "value": 2904.9,
+   "quote": "Total Capital Cost $2,904.90",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 0.19,
+   "quote": "Mining  632.4 423.7 0.19",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 2.54,
+   "quote": "Process Plant 8,369.7 5,607.7 2.54",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance",
+   "value": 0.48,
+   "quote": "Maintenance 1,594.9 1,068.6 0.48",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "processing",
+   "l2": "maintenance"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site engineering/ services",
+   "value": 0.01,
+   "quote": "Site engineering/ services 34.7 23.2 0.01",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport",
+   "value": 0.34,
+   "quote": "Transport 1,115.7 747.5 0.34",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings",
+   "value": 0.01,
+   "quote": "Tailings 18.1 12.1 0.01",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Environmental",
+   "value": 0.02,
+   "quote": "Environmental 49.9 33.4 0.02",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & administrative (G&A)",
+   "value": 0.09,
+   "quote": "General & administrative (G&A) 312.1 209.1 0.09",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Off-site water infrastructure",
+   "value": 0.02,
+   "quote": "Off-site water infrastructure 65.2 43.7 0.02",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "offsite",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Off-site road infrastructure",
+   "value": 0.01,
+   "quote": "Off-site road infrastructure 24.6 16.5 0.01",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "offsite",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 0.52,
+   "quote": "Royalties 1,715.2 1,149.2 0.52",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "l1": "royalties_taxes",
+   "l2": "royalties"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 4.23,
+   "quote": "Total Operating Costs 13,932.5 9,334.8 4.23",
+   "page": 28,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table 'Area Description (10 year average)' gives AUD/t, USD/t and USD/lb; the AUD/t and USD/t columns appear to be per tonne of nickel (not per t ore). USD/lb basis (nickel, payable/paid not stated) used.",
+   "is_total": true
+  }
+ ]
+}

@@ -216,7 +216,7 @@ function fmt(v, d) {
 const PRESETS = [
   { id: "capex", title: `Initial CAPEX vs throughput`, x: "tpd", y: "capex", ylab: `Initial CAPEX (US$M, ${Y})`, fit: true, studiesOnly: true },
   { id: "plant", title: `Process plant CAPEX vs throughput`, x: "tpd", y: "plant_capex", ylab: `Process plant CAPEX (US$M, ${Y})`, fit: true, studiesOnly: true },
-  { id: "siteopex", title: `Site OPEX per tonne vs throughput`, x: "tpd", y: "site_opex", ylab: `Site OPEX (US$/t milled, ${Y})`, fit: true },
+  { id: "siteopex", title: `Site OPEX per tonne vs throughput`, x: "tpd", y: "site_opex", ylab: `Site OPEX: mining + processing + G&A (US$/t milled, ${Y})`, fit: true },
   { id: "prodopex", title: `OPEX per tonne product vs throughput`, x: "tpd", y: "product_opex", ylab: `Cash OPEX (US$/t product, ${Y})`, fit: true },
   { id: "procopex", title: `Process OPEX per tonne vs throughput`, x: "tpd", y: "process_opex", ylab: `Process OPEX (US$/t milled, ${Y})`, fit: true },
   { id: "bwi", title: `Bond ball mill work index vs throughput`, x: "tpd", y: "bwi", ylab: "Bond ball mill work index (kWh/t)", fit: false },

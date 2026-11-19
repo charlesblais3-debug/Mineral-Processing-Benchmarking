@@ -1,0 +1,332 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Nova-Bollinger",
+  "title": "Definitive Feasibility Study indicates Nova is a goer",
+  "standard": "JORC",
+  "study_level": "FS",
+  "effective_date": "2014-07-14",
+  "effective_date_quote": "Monday 14 July 2014",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co"
+  ],
+  "country": "Australia",
+  "region": "Western Australia (Fraser Range)",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2014,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "regrind",
+   "flotation"
+  ],
+  "quote": "Grinding by open circuit SAG mill will be followed by a ball mill in closed circuit with hydrocyclones.",
+  "page": 7
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.5,
+   "unit": "Mt/a",
+   "quote": "The processing plant will have a 1.5mtpa nameplate capacity",
+   "page": 7,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.1,
+   "unit": "%",
+   "quote": "Probable Ore Reserve of 13.1mt grading 2.1% nickel",
+   "page": 1,
+   "metal": "Ni",
+   "statistic": "single",
+   "context": {
+    "note": "Probable Ore Reserve grade, not stated as LOM plant feed"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "quote": "Nickel concentrate – 89% recovery to produce a 13.5% nickel concentrate",
+   "page": 7,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "to_product": "nickel concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 13.5,
+   "unit": "%",
+   "quote": "89% recovery to produce a 13.5% nickel concentrate",
+   "page": 7,
+   "metal": "Ni",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 10.0,
+   "unit": "USD/lb",
+   "quote": "10.00 3.30 12.00 0.90",
+   "page": 10,
+   "metal": "Ni",
+   "context": {
+    "note": "Table 6 first value (nickel US$/lb); FX 0.90 A$/US$"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.66,
+   "unit": "AUD/lb",
+   "quote": "C1 cash cost of A$1.66/lb Ni (US$1.50/lb) after by-product credits",
+   "page": 1,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 2.32,
+   "unit": "AUD/lb",
+   "quote": "all-in sustaining cash cost of A$2.32/lb Ni (US$2.09/lb)",
+   "page": 1,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.9,
+   "unit": "USD/AUD",
+   "quote": "10.00 3.30 12.00 0.90",
+   "page": 10,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing plant",
+   "value": 169,
+   "quote": "Processing plant (i) 169",
+   "page": 8,
+   "l1": "process",
+   "l2": "general",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site infrastructure",
+   "value": 190,
+   "quote": "Site infrastructure (ii) 190",
+   "page": 8,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production mine development costs",
+   "value": 92,
+   "quote": "Pre-production mine development costs (iii) 92",
+   "page": 8,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency of 5%",
+   "value": 22,
+   "quote": "Contingency of 5% 22",
+   "page": 8,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TOTAL Project Development Capital",
+   "value": 473,
+   "quote": "TOTAL Project Development Capital 473",
+   "page": 8,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital expenditure over life of mine",
+   "value": 127,
+   "quote": "estimated sustaining capital expenditure over the life of mine is A$127 million",
+   "page": 9,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure costs",
+   "value": 25,
+   "quote": "estimated closure costs at the end of life of mine are A$25 million, excluding salvage value",
+   "page": 9,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 54.97,
+   "quote": "Mining 54.97 49.48",
+   "page": 9,
+   "l1": "mining",
+   "basis_unit": "per_t_mined",
+   "review_note": "Table header 'Material mined (A$/tonne)'; underground ore so per tonne mined ~ ore, basis not stated as milled.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 35.64,
+   "quote": "Processing 35.64 32.08",
+   "page": 9,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_mined",
+   "review_note": "Table header 'Material mined (A$/tonne)'; underground ore so per tonne mined ~ ore, basis not stated as milled.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administration",
+   "value": 10.83,
+   "quote": "Administration 10.83 9.74",
+   "page": 9,
+   "l1": "ga",
+   "basis_unit": "per_t_mined",
+   "review_note": "Table header 'Material mined (A$/tonne)'; underground ore so per tonne mined ~ ore, basis not stated as milled.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport",
+   "value": 23.2,
+   "quote": "Transport 23.20 20.88",
+   "page": 9,
+   "l1": "offsite",
+   "l2": "transport",
+   "basis_unit": "per_t_mined",
+   "review_note": "Table header 'Material mined (A$/tonne)'; underground ore so per tonne mined ~ ore, basis not stated as milled.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TOTAL",
+   "value": 124.64,
+   "quote": "TOTAL 124.64 112.18",
+   "page": 9,
+   "is_total": true,
+   "basis_unit": "per_t_mined",
+   "review_note": "Table header 'Material mined (A$/tonne)'; underground ore so per tonne mined ~ ore, basis not stated as milled.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 1.41,
+   "quote": "Mining 1.41 1.27",
+   "page": 9,
+   "l1": "mining",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table header 'Nickel in Concentrate on 100% basis (A$/lb)'; per lb Ni in concentrate, payable basis not stated. Total is C1 after by-product credits.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 0.92,
+   "quote": "Processing 0.92 0.82",
+   "page": 9,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table header 'Nickel in Concentrate on 100% basis (A$/lb)'; per lb Ni in concentrate, payable basis not stated. Total is C1 after by-product credits.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administration",
+   "value": 0.28,
+   "quote": "Administration 0.28 0.25",
+   "page": 9,
+   "l1": "ga",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table header 'Nickel in Concentrate on 100% basis (A$/lb)'; per lb Ni in concentrate, payable basis not stated. Total is C1 after by-product credits.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport",
+   "value": 0.6,
+   "quote": "Transport 0.60 0.54",
+   "page": 9,
+   "l1": "offsite",
+   "l2": "transport",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table header 'Nickel in Concentrate on 100% basis (A$/lb)'; per lb Ni in concentrate, payable basis not stated. Total is C1 after by-product credits.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By-product credits",
+   "value": -1.55,
+   "quote": "By-product credits (1.55) (1.38)",
+   "page": 9,
+   "l1": "other",
+   "l2": "unallocated",
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table header 'Nickel in Concentrate on 100% basis (A$/lb)'; per lb Ni in concentrate, payable basis not stated. Total is C1 after by-product credits.",
+   "currency": "AUD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TOTAL",
+   "value": 1.66,
+   "quote": "TOTAL 1.66 1.50",
+   "page": 9,
+   "is_total": true,
+   "basis_unit": "per_lb_payable",
+   "review_note": "Table header 'Nickel in Concentrate on 100% basis (A$/lb)'; per lb Ni in concentrate, payable basis not stated. Total is C1 after by-product credits.",
+   "currency": "AUD",
+   "multiplier": ""
+  }
+ ]
+}

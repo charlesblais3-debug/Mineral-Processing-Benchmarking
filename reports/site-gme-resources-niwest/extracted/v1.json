@@ -1,0 +1,421 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "NiWest",
+  "title": "NiWest Pre-Feasibility Study Delivers Outstanding Results",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "effective_date": "2018-08-02",
+  "effective_date_quote": "2 August 2018",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co"
+  ],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2018,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach"
+  ],
+  "quote": "Selected processing route of heap leaching followed by highly efficient Direct Solvent Extraction (DSX)",
+  "page": 1
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.4,
+   "unit": "Mt/a",
+   "quote": "nameplate processing capacity of 2.4Mtpa",
+   "page": 1,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.91,
+   "unit": "%",
+   "quote": "Maiden NiWest Ore Reserve estimate of 64.9Mt at 0.91% Ni",
+   "page": 1,
+   "metal": "Ni",
+   "statistic": "single",
+   "context": {
+    "note": "Ore Reserve grade; first 15 years head grade 1.05% Ni"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 79,
+   "unit": "%",
+   "quote": "Projected steady-state nickel and cobalt recoveries of 79% and 85% respectively",
+   "page": 1,
+   "metal": "Ni",
+   "statistic": "steady_state",
+   "context": {
+    "to_product": "nickel sulphate (heap leach + DSX)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85,
+   "unit": "%",
+   "quote": "Projected steady-state nickel and cobalt recoveries of 79% and 85% respectively",
+   "page": 1,
+   "metal": "Co",
+   "statistic": "steady_state",
+   "context": {
+    "to_product": "cobalt sulphate (heap leach + DSX)"
+   }
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 2.0,
+   "unit": "t:t",
+   "quote": "low projected strip ratio of 2.0:1",
+   "page": 1,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 8.0,
+   "unit": "USD/lb",
+   "quote": "price estimates of US$8.00/lb nickel (includes US$0.75/lb sulphate premium)",
+   "page": 1,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 791,
+   "unit": "MAUD",
+   "quote": "Ungeared post-tax NPV8% of A$791M",
+   "page": 1,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 16.2,
+   "unit": "%",
+   "quote": "internal rate of return (IRR) of 16.2%",
+   "page": 1
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.4,
+   "unit": "years",
+   "quote": "Payback period (pre-tax) of 4.4 years",
+   "page": 1,
+   "review_note": "Pre-tax payback (no after-tax payback stated)"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 3.24,
+   "unit": "USD/lb",
+   "quote": "Average cash unit operating cost (post royalties and cobalt credits) of US$3.24/lb contained nickel",
+   "page": 1,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "post royalties and cobalt credits; first 15 years US$3.00/lb"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.75,
+   "unit": "USD/AUD",
+   "quote": "A$/US$ assumption of 0.75",
+   "page": 1,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing and Heap Leaching",
+   "value": 138.0,
+   "quote": "Crushing and Heap Leaching 138.0",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 193.7,
+   "quote": "Processing 193.7",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Utilities and Reagents (including acid plant)",
+   "value": 312.9,
+   "quote": "Utilities and Reagents (including acid plant) 312.9",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "General Infrastructure",
+   "value": 42.3,
+   "quote": "General Infrastructure 42.3",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 686.8,
+   "quote": "Total Direct Costs 686.8",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM",
+   "value": 72.7,
+   "quote": "EPCM 72.7",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners",
+   "value": 9.7,
+   "quote": "Owners 9.7",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Indirects",
+   "value": 76.8,
+   "quote": "Other Indirects 76.8",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Indirect Costs",
+   "value": 159.3,
+   "quote": "Total Indirect Costs 159.3",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 120.2,
+   "quote": "Contingency 17.5% of Total Direct Costs 120.2",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 966.3,
+   "quote": "Total 966.3",
+   "page": 15,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General Provision (1.0% of total Pre-Production Capital pa)",
+   "value": 262,
+   "quote": "General Provision (1.0% of total Pre-Production Capital pa) 262",
+   "page": 37,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mt Kilkenny In-Pit Residue Storage",
+   "value": 208,
+   "quote": "Mt Kilkenny In-Pit Residue Storage 208",
+   "page": 37,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Residue Evaporation Pond 2",
+   "value": 33,
+   "quote": "Residue Evaporation Pond 2 33",
+   "page": 37,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Acid Plant Maintenance Shutdowns",
+   "value": 12,
+   "quote": "Acid Plant Maintenance Shutdowns 12",
+   "page": 37,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Project Closure",
+   "value": 60,
+   "quote": "Project Closure 60",
+   "page": 37,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated",
+   "review_note": "Closure is included inside the report's sustaining total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Eucalyptus and Hepi Haul Roads",
+   "value": 8,
+   "quote": "Eucalyptus and Hepi Haul Roads 8",
+   "page": 37,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LoM Sustainable Capital Expenditure",
+   "value": 582,
+   "quote": "Total LoM Sustainable Capital Expenditure 582",
+   "page": 37,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "review_note": "Lines sum to 583 due to rounding"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 21.2,
+   "quote": "Mining 21.2 3,026 1.37",
+   "page": 14,
+   "l1": "mining",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 63.1,
+   "quote": "Processing 63.1 9,000 4.08",
+   "page": 14,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and admin",
+   "value": 5.8,
+   "quote": "General and admin 5.8 825 0.37",
+   "page": 14,
+   "l1": "ga",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Product distribution",
+   "value": 5.7,
+   "quote": "Product distribution 5.7 809 0.37",
+   "page": 14,
+   "l1": "offsite",
+   "l2": "transport",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 6.6,
+   "quote": "Royalties 6.6 943 0.43",
+   "page": 14,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 102.4,
+   "quote": "Total* 102.4 14,601 6.62",
+   "page": 14,
+   "is_total": true,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

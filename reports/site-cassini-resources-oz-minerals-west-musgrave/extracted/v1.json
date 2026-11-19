@@ -1,0 +1,291 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "West Musgrave (Nebo-Babel)",
+  "title": "West Musgrave Pre-Feasibility Study - a low carbon, long-life, low-cost mine",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "effective_date": "2020-02-12",
+  "effective_date_quote": "12 February 2020",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co"
+  ],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "vertical_mill",
+   "flotation"
+  ],
+  "quote": "Flotation producing separate nickel and copper concentrates",
+  "page": 6
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 10,
+   "unit": "Mt/a",
+   "quote": "Processing capacity Mtpa 10+ 10",
+   "page": 3,
+   "statistic": "design"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 3.3,
+   "unit": "t:t",
+   "quote": "~3.3 LOM average",
+   "page": 6,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 69,
+   "unit": "%",
+   "quote": "~69% Ni and ~78% Cu LOM",
+   "page": 6,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "nickel concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 78,
+   "unit": "%",
+   "quote": "~69% Ni and ~78% Cu LOM",
+   "page": 6,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "copper concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 7.6,
+   "unit": "USD/lb",
+   "quote": "Nickel Price US$/lb 7.60",
+   "page": 7,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2.91,
+   "unit": "USD/lb",
+   "quote": "Copper Price US$/lb 2.91",
+   "page": 7,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 800,
+   "unit": "MAUD",
+   "quote": "Net Present Value A$M ~800",
+   "page": 7,
+   "context": {
+    "discount_rate_pct": 8.5
+   },
+   "review_note": "Assumes third-party PPA, so no upfront power capital (approx A$275M excluded); NPV shown as ~A$800M"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20,
+   "unit": "%",
+   "quote": "Post Tax IRR % 20-25 ~20",
+   "page": 3,
+   "review_note": "Approximate (~20%)"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.3,
+   "unit": "USD/lb",
+   "quote": "C1 cost payable Ni (net of by -product credits) US$/lb 2.00 – 2.30 ~1.30",
+   "page": 3,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "payable Ni, net of by-product credits"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.67,
+   "unit": "USD/AUD",
+   "quote": "Exchange Rate A$ : $US 0.67",
+   "page": 7,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 90,
+   "quote": "Mining ~90",
+   "page": 7,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 285,
+   "quote": "Process Plant ~285",
+   "page": 7,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 265,
+   "quote": "Infrastructure ~265",
+   "page": 7,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Execution",
+   "value": 170,
+   "quote": "Project Execution ~170",
+   "page": 7,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs",
+   "value": 70,
+   "quote": "Owners Costs ~70",
+   "page": 7,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 115,
+   "quote": "Contingency ~115",
+   "page": 7,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 995,
+   "quote": "Total ~995",
+   "page": 7,
+   "is_total": true,
+   "review_note": "Excludes FS costs and power generation capital (PPA assumed); lines sum to 995",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Post-production growth capital (Year 6, purchase of mining fleet)",
+   "value": 72,
+   "quote": "Post-production growth capital of $72 million is assumed in Year 6",
+   "page": 7,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Life of mine sustaining capital",
+   "value": 370,
+   "quote": "Life of mine sustaining capital of $370 million",
+   "page": 7,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 12.7,
+   "quote": "Mining ~12.70",
+   "page": 7,
+   "l1": "mining",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 13.9,
+   "quote": "Process Plant ~13.90",
+   "page": 7,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.8,
+   "quote": "G&A ~0.80",
+   "page": 7,
+   "l1": "ga",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Logistics",
+   "value": 6.9,
+   "quote": "Concentrate Logistics ~6.90",
+   "page": 7,
+   "l1": "offsite",
+   "l2": "transport",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 34.3,
+   "quote": "Total ~34.30",
+   "page": 7,
+   "is_total": true,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

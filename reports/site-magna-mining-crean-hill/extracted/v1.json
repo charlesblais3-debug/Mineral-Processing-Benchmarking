@@ -1,0 +1,223 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Crean Hill",
+  "title": "Technical Report - Preliminary Economic Assessment Update - Crean Hill Project, Sudbury, Canada",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2024-04-15",
+  "effective_date_quote": "Effective Date: April 15, 2024",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co",
+   "Pt",
+   "Pd",
+   "Au"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": null,
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.83,
+   "unit": "%",
+   "quote": "Ni Grade % 0.83 1.42 0.92 0.56 0.83",
+   "page": 17,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {}
+  },
+  {
+   "parameter": "metal_price",
+   "value": 8.5,
+   "unit": "USD/lb",
+   "quote": "Nickel US$/lb $8.50 $9.50",
+   "page": 186,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 194.1,
+   "unit": "MUSD",
+   "quote": "Post Tax NPV (8%) $M $194.1",
+   "page": 187,
+   "context": {
+    "discount_rate_pct": 8
+   },
+   "currency": "CAD"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 129,
+   "unit": "%",
+   "quote": "Post Tax IRR % 129%",
+   "page": 187,
+   "review_note": "very high IRR because initial capital is only C$27.7 M (no own plant)"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.74,
+   "unit": "USD/CAD",
+   "quote": "1 CAD = 0.74 USD",
+   "page": 173,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Development",
+   "value": 12.8,
+   "quote": "Development M$CAD 12.8 143.5 156.3",
+   "page": 19,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development",
+   "value": 143.5,
+   "quote": "Development M$CAD 12.8 143.5 156.3",
+   "page": 19,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 14.5,
+   "quote": "Infrastructure M$CAD 14.5 58.7 73.1",
+   "page": 19,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 58.7,
+   "quote": "Infrastructure M$CAD 14.5 58.7 73.1",
+   "page": 19,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "G&A and Indirects",
+   "value": 0.4,
+   "quote": "G&A and Indirects M$CAD 0.4 4.8 5.2",
+   "page": 19,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "G&A and Indirects",
+   "value": 4.8,
+   "quote": "G&A and Indirects M$CAD 0.4 4.8 5.2",
+   "page": 19,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure",
+   "value": 5.8,
+   "quote": "Closure M$CAD - 5.8 5.8",
+   "page": 19,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost",
+   "value": 27.7,
+   "quote": "Total Capital Cost M$CAD 27.7 212.8 240.5",
+   "page": 19,
+   "is_total": true,
+   "review_note": "No process plant capex: ore is crushed/sampled on site and sold to Vale's Clarabelle Mill (third-party toll/off-take processing)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Cost",
+   "value": 212.8,
+   "quote": "Total Capital Cost M$CAD 27.7 212.8 240.5",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 5.8,
+   "quote": "Closure M$CAD - 5.8 5.8",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 87.47,
+   "quote": "Mining M$CAD 40.3 894.7 $87.47",
+   "page": 19,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "review_note": "Reported per resource tonne mined (underground ore, equals tonnes sent to third-party mill)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing, Sampling, Haulage and Processing",
+   "value": 61.09,
+   "quote": "Processing M$CAD 17.3 635.7 $61.09",
+   "page": 19,
+   "l1": "processing",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "review_note": "Includes on-site crushing/sampling, haulage and third-party milling charges; no owned plant"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 9.19,
+   "quote": "G&A M$CAD 5.3 93. $9.19",
+   "page": 19,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "review_note": "Reported per resource tonne mined (underground ore, equals tonnes sent to third-party mill)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 157.75,
+   "quote": "Total Operating Costs M$CAD 62.9 1623.3 $157.75",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "review_note": "Reported per resource tonne mined (underground ore, equals tonnes sent to third-party mill)"
+  }
+ ]
+}

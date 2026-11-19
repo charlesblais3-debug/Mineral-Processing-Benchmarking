@@ -1,0 +1,317 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Mincor Nickel Operations (Kambalda)",
+  "title": "Mincor Nickel Operations Definitive Feasibility Study Results",
+  "standard": "JORC",
+  "study_level": "FS",
+  "effective_date": "2020-03-25",
+  "effective_date_quote": "25 March 2020",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co"
+  ],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "The KNC design was based on a conventional sulphide processing route using traditional grinding and flotation",
+  "page": 28
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.9,
+   "unit": "%",
+   "quote": "Head Grade % 2.9 3.3 2.5 2.5",
+   "page": 4,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.5,
+   "unit": "%",
+   "quote": "Recovery % 88.5 88.6 88.0 88.6",
+   "page": 4,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 14.9,
+   "unit": "%",
+   "quote": "Concentrate Grade % 14.9 14.9 16.0 14.2",
+   "page": 4,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 7.14,
+   "unit": "USD/lb",
+   "quote": "US$15,750/t or US$7.14/lb",
+   "page": 32,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 237,
+   "unit": "MAUD",
+   "quote": "NPV (7%) (post-tax) A$m 237",
+   "page": 33,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 88,
+   "unit": "%",
+   "quote": "IRR (post-tax) % 88",
+   "page": 33
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.0,
+   "unit": "years",
+   "quote": "Capital pay-back period Months 12",
+   "page": 33,
+   "derived": true,
+   "context": {
+    "derived_note": "stated as 12 months; converted to years"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 3.36,
+   "unit": "AUD/lb",
+   "quote": "C1 Cash Cost A$/lb 3.36 2.71 4.15 4.19",
+   "page": 4,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "100% payable basis"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 4.47,
+   "unit": "AUD/lb",
+   "quote": "All-in-Sustaining Costs (AISC) A$/lb 4.47 3.81 6.62 4.67",
+   "page": 4,
+   "metal": "Ni",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "100% payable basis"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.7,
+   "unit": "USD/AUD",
+   "quote": "A$1.00 = US$0.70",
+   "page": 32,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production – Cassini",
+   "value": 27,
+   "quote": "Cassini A$m 27 24 3",
+   "page": 31,
+   "l1": "mining",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "review_note": "Ore is toll-treated at BHP Nickel West's Kambalda Nickel Concentrator; no plant capex in study. Pre-production capital is mine development and related infrastructure."
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production – Durkin North",
+   "value": 39,
+   "quote": "Durkin North A$m 39 34 5",
+   "page": 31,
+   "l1": "mining",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production – Long",
+   "value": 2,
+   "quote": "Long A$m 2 2",
+   "page": 31,
+   "l1": "mining",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total pre-production capex",
+   "value": 68,
+   "quote": "Pre-production Capex A$m 68",
+   "page": 4,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining – Cassini",
+   "value": 51,
+   "quote": "Cassini A$m 51",
+   "page": 31,
+   "l1": "mining",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining – Durkin North",
+   "value": 8,
+   "quote": "Durkin North A$m 8 -",
+   "page": 31,
+   "l1": "mining",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining – Long",
+   "value": 8,
+   "quote": "Long A$m 8 5 3",
+   "page": 31,
+   "l1": "mining",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining – Miitel",
+   "value": 44,
+   "quote": "Miitel A$m 44",
+   "page": 31,
+   "l1": "mining",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LOM production capex",
+   "value": 111,
+   "quote": "Production LOM Capex A$m 111 51 44 16",
+   "page": 4,
+   "is_total": true,
+   "currency": "AUD",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 135.6,
+   "quote": "Mining Cost A$/t 135.6 123.4",
+   "page": 32,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Haulage Cost",
+   "value": 7.6,
+   "quote": "Haulage Cost A$/t 7.6 10.6",
+   "page": 32,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost (excl. penalties)",
+   "value": 53.2,
+   "quote": "Processing Cost (excl. penalties) A$/t 53.2 53.9",
+   "page": 32,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Toll-processing charge paid to BHP Nickel West"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Overhead Cost",
+   "value": 7.2,
+   "quote": "Overhead Cost A$/t 7.2 7.4",
+   "page": 32,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By-product credits",
+   "value": -14.5,
+   "quote": "By-product credits A$/t (14.5) (19.6)",
+   "page": 32,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "C1 Cash Costs",
+   "value": 189.1,
+   "quote": "C1 Cash Costs A$/t 189.1 175.8",
+   "page": 32,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 18.0,
+   "quote": "Royalties A$/t 18.0 29.2",
+   "page": 32,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "outside_total": true
+  }
+ ]
+}
