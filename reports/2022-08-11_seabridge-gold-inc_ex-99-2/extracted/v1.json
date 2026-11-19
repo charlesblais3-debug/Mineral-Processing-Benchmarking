@@ -1,0 +1,311 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "KSM",
+  "title": "KSM (Kerr-Sulphurets-Mitchell) 2022 Pre-Feasibility Study Update and PEA, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2022-05-26",
+  "effective_date_quote": "effective date of May 26, 2022.",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag",
+   "Mo"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 22
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "cone crushing and tertiary crushing by HPGR. Fine ore from the HPGR is fed to ball mills",
+  "page": 24
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 130000,
+   "unit": "t/d",
+   "quote": "Mill feed ramps up to a nominal 130,000 t/d by Year 2",
+   "page": 23,
+   "statistic": "design",
+   "context": {
+    "phase": "initial; 195,000 t/d after expansion"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.53,
+   "unit": "USD/lb",
+   "quote": "Copper US$/lb 3.53 4.25 3.00",
+   "page": 28,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1742,
+   "unit": "USD/oz",
+   "quote": "Gold US$/oz 1,742.00 1,850.00 1,500.00",
+   "page": 28,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.77,
+   "unit": "USD/CAD",
+   "quote": "Exchange Rate US$:Cdn$ 0.77 0.77 0.77",
+   "page": 28,
+   "context": {
+    "pair": "USD/CAD"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 16.1,
+   "unit": "%",
+   "quote": "IRR % 16.1 18.0 13.1",
+   "page": 28
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1.1 Mine Site",
+   "value": 1420,
+   "quote": "Mine Site 1,420",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1.2 Process",
+   "value": 2003,
+   "quote": "Process 2,003",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1.3 TMF",
+   "value": 513,
+   "quote": "TMF 513",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1.4 Environmental",
+   "value": 15,
+   "quote": "Environmental 15",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1.5 On-site Infrastructure",
+   "value": 39,
+   "quote": "On-site Infrastructure 39",
+   "page": 27,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1.6 Off-site Infrastructure",
+   "value": 76,
+   "quote": "Off-site Infrastructure 76",
+   "page": 27,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1.7 Permanent Electrical Power Supply and Energy Recovery",
+   "value": 121,
+   "quote": "Permanent Electrical Power Supply and Energy Recovery 121",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "power"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 4188,
+   "quote": "Total Direct Costs 4,188",
+   "page": 27,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2.91 Construction Indirect Costs",
+   "value": 565,
+   "quote": "Construction Indirect Costs 565",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2.92 Spares",
+   "value": 55,
+   "quote": "Spares 55",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "first_fills_spares"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2.93 Initial Fills",
+   "value": 26,
+   "quote": "Initial Fills 26",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "first_fills_spares"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2.94 Freight and Logistics",
+   "value": 110,
+   "quote": "Freight and Logistics 110",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2.95 Commissioning and Start-up",
+   "value": 7,
+   "quote": "Commissioning and Start-up 7",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "commissioning"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2.96 EPCM",
+   "value": 299,
+   "quote": "EPCM 299",
+   "page": 27,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2.97 Vendor's Assistance",
+   "value": 29,
+   "quote": "Vendor’s Assistance 29",
+   "page": 27,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "commissioning"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Indirect Costs",
+   "value": 1090,
+   "quote": "Total Indirect Costs 1,090",
+   "page": 27,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "3.98 Owner's Costs",
+   "value": 204,
+   "quote": "Owner’s Costs 204",
+   "page": 27,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "4.99 Contingency",
+   "value": 949,
+   "quote": "Contingency 949",
+   "page": 27,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2022 PFS Capital Cost Total",
+   "value": 6432,
+   "quote": "2022 PFS Capital Cost Total 6,432",
+   "page": 27,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3.31,
+   "quote": "Mining 3.31 Process 6.31",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 6.31,
+   "quote": "Process 6.31 G&A",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and Site Services",
+   "value": 1.06,
+   "quote": "G&A and Site Services 1.06",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Others (tailings, water, energy recovery credit, PST)",
+   "value": 0.67,
+   "quote": "Others 0.67",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 11.36,
+   "quote": "Total Operating Cost 11.36",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
