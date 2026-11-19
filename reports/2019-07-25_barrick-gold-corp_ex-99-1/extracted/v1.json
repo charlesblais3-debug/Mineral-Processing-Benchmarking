@@ -1,0 +1,218 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Massawa",
+  "title": "Massawa Gold Project NI 43-101 Technical Report (Feasibility Study)",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2018-12-31",
+  "effective_date_quote": "effective date of this report is 31 st December 2018",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Senegal",
+  "region": "Kédougou",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2019,
+  "effective_date_page": 46,
+  "note": "Table 1-10 'Indirect Field Costs' total (187,357,703) does not match its phase columns (sum 37,587,126); line omitted, total kept as reported."
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "gravity",
+   "flotation",
+   "biox",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "Soft ore crushing will be via a mineral sizer and hard ore via a primary jaw crusher",
+  "page": 251
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.4,
+   "unit": "Mt/a",
+   "quote": "The plant has been designed for a throughput of 2.4 Mtpa of fresh ore",
+   "page": 251,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 91.3,
+   "unit": "%",
+   "quote": "the comminution and extraction circuits is assumed to be 91.3%",
+   "page": 251,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 18.9,
+   "unit": "kWh/t",
+   "quote": "Ball Mill Work Index kWh/t 11.0 18.9 28.4 28.4 18.9",
+   "page": 250,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Sofia fresh (also refractory sulphides 18.9; CZ fresh 28.4; oxides 11.0)"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 28.4,
+   "unit": "kWh/t",
+   "quote": "Ball Mill Work Index kWh/t 11.0 18.9 28.4 28.4 18.9",
+   "page": 250,
+   "statistic": "max",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Central Zone fresh (WOL and slightly refractory)"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 38.4,
+   "unit": "-",
+   "quote": "A x b 100.00 38.40 27.50 27.50 27.50",
+   "page": 250,
+   "statistic": "design",
+   "context": {
+    "ore_type": "Sofia fresh"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 361,
+   "unit": "MUSD",
+   "quote": "5% $114 million $361 million",
+   "page": 39,
+   "context": {
+    "discount_rate_pct": 5,
+    "gold_price": 1200
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 25,
+   "unit": "%",
+   "quote": "IRR 12% 25% 37%",
+   "page": 39,
+   "context": {
+    "gold_price": 1200
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.8,
+   "unit": "years",
+   "quote": "Payback 5 years 2.8 years 2.4 years",
+   "page": 39,
+   "context": {
+    "gold_price": 1200
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Direct Field Cost",
+   "value": 149.770578,
+   "quote": "Direct Field Cost 91,278,343 10,933,099 47,559,136 149,770,578",
+   "page": 37,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "confidence": 0.6,
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Home Office Costs",
+   "value": 19.483445,
+   "quote": "Home Office Costs 12,488,244 1,456,895 5,538,306 19,483,445",
+   "page": 37,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Plant Cost",
+   "value": 206.841148,
+   "quote": "Total Plant Cost 124,790,144 16,643,986 65,407,019 206,841,148",
+   "page": 37,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Costs",
+   "value": 155.525648,
+   "quote": "Other Costs 147,803,128 181,009 7,541,511 155,525,648",
+   "page": 37,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Costs",
+   "value": 50.193565,
+   "quote": "Mining Costs 37,102,894 6,525,273 6,565,398 50,193,565",
+   "page": 37,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Construction Capital",
+   "value": 412.560361,
+   "quote": "Total Construction Capital 309,696,166 23,350,267 79,513,928 412,560,361",
+   "page": 37,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "On-going Capital",
+   "value": 12.3625,
+   "quote": "On-going Capital 12,362,500",
+   "page": 37,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Rehabilitation Asset",
+   "value": 23.0,
+   "quote": "Rehabilitation Asset 23,000,000",
+   "page": 37,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost (LOM)",
+   "value": 61.97,
+   "quote": "61.97 0% 84 258 425 591",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per t mined)",
+   "value": 3.55,
+   "quote": "Total $/t 3.55",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}

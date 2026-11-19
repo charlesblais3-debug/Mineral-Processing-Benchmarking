@@ -196,6 +196,8 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
 
     for group, total in totals.items():
         s = sums.get(group, 0.0)
+        if group not in sums:          # a total reported on its own: nothing to check against
+            continue
         if total and abs(s - total) / total > 0.02:
             problems.append(f"costs {group}: line items sum to {s:,.0f} but reported total is {total:,.0f}")
 
