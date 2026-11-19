@@ -1,0 +1,117 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "cost_base_year": 2026,
+  "project": "Greenstone",
+  "title": "Equinox Gold Corp. | Greenstone Property NI 43-101 Technical Report",
+  "region": "Ontario",
+  "currency": "USD",
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "gravity",
+   "tank_leach",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "HPGR-Ball mill comminution circuits followed by a gravity circuit. Gravity tailings are treated via a leach-carbon-in-pulp (CIP) circuit",
+  "page": 15
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 27000,
+   "unit": "t/d",
+   "quote": "The maximum processing plant production targets 27,000 t/d (9.86 Mt/a)",
+   "page": 15,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92,
+   "unit": "%",
+   "quote": "An average metallurgical recovery of 92% for open pit mining, 96% for underground mining",
+   "page": 13,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "resource assumption, open pit ore"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Average operating cost",
+   "value": 32.2,
+   "quote": "The average operating cost is $1,325/oz Au or $32.2/t milled over the LOM operating period.",
+   "page": 19,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LOM)",
+   "value": 2485,
+   "quote": "Mining 2,485 Processing 2,188",
+   "page": 19,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (LOM)",
+   "value": 2188,
+   "quote": "Processing 2,188 G&A 1,107",
+   "page": 19,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (LOM)",
+   "value": 1107,
+   "quote": "G&A 1,107 Total Operating Costs 5,781",
+   "page": 19,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs (LOM)",
+   "value": 5781,
+   "quote": "Total Operating Costs 5,781",
+   "page": 19,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (LOM)",
+   "value": 1319.4,
+   "quote": "Capitalized stripping 196.8 Total Cost 1,319.4",
+   "page": 19,
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Non-sustaining capital (LOM)",
+   "value": 80.3,
+   "quote": "Capitalized Development 3.4 Total Cost 80.3",
+   "page": 19,
+   "is_total": true
+  }
+ ]
+}

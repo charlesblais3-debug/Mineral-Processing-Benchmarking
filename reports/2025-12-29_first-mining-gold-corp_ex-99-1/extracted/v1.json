@@ -1,0 +1,231 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Springpole",
+  "title": "Springpole Gold Project NI 43-101 Technical Report and Pre-Feasibility Study",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2025-12-01",
+  "effective_date_quote": "Effective Date: December 1, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "tails_thickener",
+   "tank_leach",
+   "merrill_crowe"
+  ],
+  "quote": "Crushed ore is reclaimed to a grinding circuit consisting of a SAG mill and a ball mill operating in closed circuit with a classification cyclone cluster.",
+  "page": 34
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 30000,
+   "unit": "t/d",
+   "quote": "Mill Throughput t/d 30,000 30,000",
+   "page": 43,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.0,
+   "unit": "%",
+   "quote": "Average Recovery Rate – Au % 86.0 86.7",
+   "page": 43,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.94,
+   "unit": "g/t",
+   "quote": "Mill Feed Grade – Au g/t 0.94 1.09",
+   "page": 43,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3100,
+   "unit": "USD/oz",
+   "quote": "Gold Price US$/oz 3,100 3,100",
+   "page": 43,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2150,
+   "unit": "MUSD",
+   "quote": "On a post-tax basis, the NPV5% is US$2,150 million, the IRR is 40.9%, and the payback period is 1.8 years.",
+   "page": 42,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 40.9,
+   "unit": "%",
+   "quote": "On a post-tax basis, the NPV5% is US$2,150 million, the IRR is 40.9%, and the payback period is 1.8 years.",
+   "page": 42
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.8,
+   "unit": "years",
+   "quote": "On a post-tax basis, the NPV5% is US$2,150 million, the IRR is 40.9%, and the payback period is 1.8 years.",
+   "page": 42
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 302.5,
+   "quote": "1000 Mining 302.5 304.1 40.5 647.1",
+   "page": 41
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Development",
+   "value": 39.6,
+   "quote": "2000 Site Development 39.6 - - 39.6",
+   "page": 41,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 348.6,
+   "quote": "3000 Process Plant 348.6 - - 348.6",
+   "page": 41,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 75.5,
+   "quote": "4000 On-Site Infrastructure 75.5 - - 75.5",
+   "page": 41
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 47.0,
+   "quote": "5000 Off-Site Infrastructure 47.0 - - 47.0",
+   "page": 41
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 813.2,
+   "quote": "Total Direct Costs 813.2 304.1 40.5 1157.9",
+   "page": 41,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 68.6,
+   "quote": "6000 Indirects 68.6 - - 68.6",
+   "page": 41,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM Services",
+   "value": 70.2,
+   "quote": "7000 EPCM Services 70.2 18.5 - 88.8",
+   "page": 41,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs",
+   "value": 24.4,
+   "quote": "8000 Owners Costs 24.4 - - 24.4",
+   "page": 41,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Provisions (Contingency)",
+   "value": 127.5,
+   "quote": "9000 Provisions (Contingency) 127.5 - - 127.5",
+   "page": 42,
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Total",
+   "value": 1104.1,
+   "quote": "Project Total 1,104.1 322.6 40.5 1,467.2",
+   "page": 42,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining CAPEX",
+   "value": 322.6,
+   "quote": "Project Total 1,104.1 322.6 40.5 1,467.2",
+   "page": 42,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 40.5,
+   "quote": "Project Total 1,104.1 322.6 40.5 1,467.2",
+   "page": 42
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 10.72,
+   "quote": "Process 113.1 10.72",
+   "page": 42,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2.56,
+   "quote": "G&A 27.0 2.56",
+   "page": 42,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 23.15,
+   "quote": "Total 246.9 23.15",
+   "page": 42,
+   "is_total": true,
+   "partial_breakdown": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

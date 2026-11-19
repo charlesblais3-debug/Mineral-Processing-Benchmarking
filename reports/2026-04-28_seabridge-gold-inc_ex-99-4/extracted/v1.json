@@ -1,0 +1,231 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Courageous Lake",
+  "title": "Courageous Lake Project Pre-feasibility Study and Preliminary Economic Assessment NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2024-01-05",
+  "effective_date_quote": "Effective Date : January 5, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Northwest Territories",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "pox",
+   "tank_leach",
+   "merrill_crowe"
+  ],
+  "quote": "Overflow from regrind cyclones undergoes acidulation and pre-oxidation stages followed by the POX circuit that will effectively oxidize the concentrate.",
+  "page": 32
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.74,
+   "unit": "Mt/a",
+   "quote": "The processing plant is designed for a throughput of 2.74 Mt/a with availability of 90%.",
+   "page": 32,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 90,
+   "unit": "%",
+   "quote": "The processing plant is designed for a throughput of 2.74 Mt/a with availability of 90%.",
+   "page": 32,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1850,
+   "unit": "USD/oz",
+   "quote": "Gold Price US$/oz 1,850 FX Rate C$:US$ 0.74",
+   "page": 39,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 523,
+   "unit": "MUSD",
+   "quote": "On a post-tax basis, the NPV discounted at 5% is US$523M, the internal rate of return (IRR) is 20.6%",
+   "page": 39,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20.6,
+   "unit": "%",
+   "quote": "On a post-tax basis, the NPV discounted at 5% is US$523M, the internal rate of return (IRR) is 20.6%",
+   "page": 39
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.8,
+   "unit": "years",
+   "quote": "the payback period is 2.8 years",
+   "page": 39
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.74,
+   "unit": "USD/CAD",
+   "quote": "Gold Price US$/oz 1,850 FX Rate C$:US$ 0.74",
+   "page": 39,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 89,
+   "quote": "Mining 89 156 245",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 204,
+   "quote": "Process Plant 204 48 252",
+   "page": 39,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Facility",
+   "value": 35,
+   "quote": "Tailings Facility 35 21 56",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 98,
+   "quote": "On-Site Infrastructure 98 11 109",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 45,
+   "quote": "Off-Site Infrastructure 45 37 82",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Costs",
+   "value": 471,
+   "quote": "Subtotal Direct Costs 471 273 744",
+   "page": 39,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Indirects",
+   "value": 146,
+   "quote": "Project Indirects 146 6 153",
+   "page": 39,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 25,
+   "quote": "Owner’s Costs 25 - 25",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 105,
+   "quote": "Contingency 105 13 118",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Total",
+   "value": 747,
+   "quote": "Project Total 747 293 1,040",
+   "page": 39,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining",
+   "value": 293,
+   "quote": "Project Total 747 293 1,040",
+   "page": 39,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 25.4,
+   "quote": "Mining 68.2 25.4 860",
+   "page": 39,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 26.9,
+   "quote": "Processing 72.2 26.9 911",
+   "page": 39,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 7.9,
+   "quote": "G&A 20.9 7.9 269",
+   "page": 39,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment",
+   "value": 0.8,
+   "quote": "Water Treatment 2.1 0.8 39",
+   "page": 39,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 61.0,
+   "quote": "Total 163.5 61.0 2,079",
+   "page": 39,
+   "is_total": true,
+   "tolerance_pct": 3,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

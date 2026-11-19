@@ -1,0 +1,105 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "cost_base_year": 2026,
+  "project": "Valentine",
+  "title": "Equinox Gold Corp. | Valentine Gold Mine NI 43-101 Technical Report",
+  "region": "Newfoundland and Labrador",
+  "currency": "USD",
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "conventional primary crushing and two-stage grinding circuit followed by a gravity concentration circuit. Gravity circuit tailings are treated via cyanidation and a carbon-in-leach (CIL) circuit",
+  "page": 11
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.5,
+   "unit": "Mt/a",
+   "quote": "The Process Plant, with a nominal capacity of 2.5 million tonnes per annum (Mt/a), was commissioned in 2025",
+   "page": 9,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1; Phase 2 expansion to 5 Mt/a under study"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95,
+   "unit": "%",
+   "quote": "A process recovery of 95% and a royalty rate of 3.0% were applied",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "resource assumption"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2100,
+   "unit": "USD/oz",
+   "quote": "The economic analysis for the Project is based on a gold price of $2,100 per ounce",
+   "page": 17,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 3108,
+   "unit": "MUSD",
+   "quote": "After-tax NPV @ 5% 3,108 259 60.37 4.57 1,207",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1580,
+   "unit": "USD/oz",
+   "quote": "The average total cash costs for the LOM are expected to be US$1,580/oz.",
+   "page": 13,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 15.93,
+   "quote": "Processing Cost US$15.93/t milled",
+   "page": 123,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General / Administration Cost",
+   "value": 10.07,
+   "quote": "General / Administration Cost US$10.07/",
+   "page": 123,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  }
+ ]
+}

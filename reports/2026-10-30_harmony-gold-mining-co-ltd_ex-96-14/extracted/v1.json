@@ -1,0 +1,242 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Eva Copper",
+  "title": "Technical Report Summary of the Eva Copper Project, North West Queensland, Australia",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2026-06-30",
+  "effective_date_quote": "Effective Date: 30 June 2026",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Australia",
+  "region": "Queensland",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "AUD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "Ore is processed through a single central concentrator (~18 Mtpa) comprising crushing, SAG and ball-mill grinding and copper sulphide flotation",
+  "page": 111
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 18,
+   "unit": "Mt/a",
+   "quote": "Nameplate throughput Mtpa 18",
+   "page": 124,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82,
+   "unit": "%",
+   "quote": "Metallurgical recovery (LOM avg) Testwork by ore source/zone 82% Cu; 78% Au",
+   "page": 110,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 78,
+   "unit": "%",
+   "quote": "Metallurgical recovery (LOM avg) Testwork by ore source/zone 82% Cu; 78% Au",
+   "page": 110,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.41,
+   "unit": "%",
+   "quote": "Head grade – copper % Cu 0.41",
+   "page": 124,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 1.55,
+   "unit": "t:t",
+   "quote": "Strip ratio w:o 1.55:1",
+   "page": 124,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 250,
+   "unit": "µm",
+   "quote": "with a high degree of liberation at relatively coarse grinds (250 µm)",
+   "page": 82,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 53,
+   "unit": "µm",
+   "quote": "following a nominal regrind to 53 µm, with no pH modification",
+   "page": 83,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.25,
+   "unit": "USD/lb",
+   "quote": "evaluated at the flat Harmony Reserve price of US$4.25/lb Cu",
+   "page": 130,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 121,
+   "unit": "MAUD",
+   "quote": "returns a positive after-tax NPV of AU$121 M at a 7% real discount rate, an internal rate of return of 8%",
+   "page": 130,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 8,
+   "unit": "%",
+   "quote": "returns a positive after-tax NPV of AU$121 M at a 7% real discount rate, an internal rate of return of 8%",
+   "page": 130
+  },
+  {
+   "parameter": "payback_years",
+   "value": 9.5,
+   "unit": "years",
+   "quote": "a payback period of 9.5 years",
+   "page": 130
+  },
+  {
+   "parameter": "aisc",
+   "value": 2.65,
+   "unit": "USD/lb",
+   "quote": "All-in sustaining cost (AISC) 7,389 — 2.65",
+   "page": 125,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.68,
+   "unit": "USD/AUD",
+   "quote": "xchange rate of AU$:US$ = 0.68",
+   "page": 113,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction (initial) capital",
+   "value": 1600,
+   "quote": "Construction (initial) capital 1,600 Mining pre-strip 222",
+   "page": 128,
+   "is_total": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining pre-strip",
+   "value": 222,
+   "quote": "Construction (initial) capital 1,600 Mining pre-strip 222",
+   "page": 128,
+   "outside_total": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Life-of-mine sustaining capital",
+   "value": 616,
+   "quote": "Life-of-mine sustaining capital 616 Reclamation (closure) capital 94",
+   "page": 128,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation (closure) capital",
+   "value": 94,
+   "quote": "Life-of-mine sustaining capital 616 Reclamation (closure) capital 94",
+   "page": 128
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 9.7,
+   "quote": "Mining 2,413 9.7 0.90",
+   "page": 125,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 10.2,
+   "quote": "Processing 2,610 10.2 0.94",
+   "page": 125,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & administration",
+   "value": 3.1,
+   "quote": "General & administration 773 3.1 0.28",
+   "page": 125,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total production",
+   "value": 23.0,
+   "quote": "Total production 5,796 23.0 2.13",
+   "page": 125,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Non-production (royalties, compliance)",
+   "value": 2.7,
+   "quote": "Non-production (royalties, compliance) 685 2.7 0.25",
+   "page": 125,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Metal conversion (TC/RC, transport)",
+   "value": 3.8,
+   "quote": "Metal conversion (TC/RC, transport) 958 3.8 0.27",
+   "page": 125,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}
