@@ -1,0 +1,287 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Hod Maden",
+  "title": "Hod Maden Project Feasibility Study - Technical Report NI 43-101",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2021-02-28",
+  "effective_date_quote": "Effective Date of Technical Report: 28 February 2021",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu"
+  ],
+  "country": "Türkiye",
+  "region": "Artvin",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 4
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "nd flotation techniques to maximize the recovery of copper and gold",
+  "page": 66
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.8,
+   "unit": "Mt/a",
+   "quote": "with target production of close to 0.8 Mtpa",
+   "page": 62,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16,
+   "unit": "kWh/t",
+   "quote": "Eightieth percentile of A*b and BWi were 45 and 16 kWh/t",
+   "page": 64,
+   "statistic": "p80",
+   "context": {
+    "test": "Bond ball mill",
+    "statistic_note": "range 10.4-20.6"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 45,
+   "unit": "-",
+   "quote": "Eightieth percentile of A*b and BWi were 45 and 16 kWh/t",
+   "page": 64,
+   "statistic": "p80"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1049,
+   "unit": "MUSD",
+   "quote": "Post Tax project NPV@5% real discount rate is USD1,049M",
+   "page": 76,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 35.9,
+   "unit": "%",
+   "quote": "Internal Rate of Return (IRR) of 35.9%",
+   "page": 76
+  },
+  {
+   "parameter": "aisc",
+   "value": 334,
+   "unit": "USD/oz",
+   "quote": "(“AISC”) for gold with copper by-product credits sits at USD334/oz",
+   "page": 76,
+   "metal": "Au",
+   "context": {
+    "basis": "by-product"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Predevelopment Costs",
+   "value": 62.7,
+   "quote": "Mining Predevelopment Costs 62.7",
+   "page": 74,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Surface Infrastructure",
+   "value": 1.8,
+   "quote": "Mining Surface Infrastructure 1.8",
+   "page": 74,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Site Infrastructure",
+   "value": 78.3,
+   "quote": "Other Site Infrastructure 78.3",
+   "page": 74,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant Infrastructure",
+   "value": 55.5,
+   "quote": "Process Plant Infrastructure 55.5",
+   "page": 74,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM Consultant fees, indirect costs and construction facilities",
+   "value": 37.4,
+   "quote": "construction facilities 37.4",
+   "page": 74,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs",
+   "value": 42.5,
+   "quote": "Owners Costs 42.5",
+   "page": 74,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Contingency",
+   "value": 30.7,
+   "quote": "Project Contingency 30.7",
+   "page": 74,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TOTAL",
+   "value": 308.9,
+   "quote": "TOTAL 308.9",
+   "page": 74,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Sustaining Capital",
+   "value": 55.5,
+   "quote": "Mining Sustaining Capital 55.5",
+   "page": 75,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 41.0,
+   "quote": "Mine Development 41.0",
+   "page": 75,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Improvements",
+   "value": 7.1,
+   "quote": "Process Improvements 7.1",
+   "page": 75,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Re-sheeting of main access road",
+   "value": 10.2,
+   "quote": "Re-sheeting of main access road 10.2",
+   "page": 75,
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "access"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Re-sheeting of internal roads",
+   "value": 5.9,
+   "quote": "Re-sheeting of internal roads 5.9",
+   "page": 75,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Surface Water Management",
+   "value": 1.7,
+   "quote": "Surface Water Management 1.7",
+   "page": 75,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Storage Facility (TSF)",
+   "value": 2.2,
+   "quote": "Tailings Storage Facility (TSF) 2.2",
+   "page": 75,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TOTAL",
+   "value": 123.6,
+   "quote": "TOTAL 123.6",
+   "page": 75,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure TOTAL",
+   "value": 15.65,
+   "quote": "TOTAL 15.65",
+   "page": 75,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Operating Cost",
+   "value": 53.71,
+   "quote": "Mining Operating Cost 467 53.71",
+   "page": 76,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 24.26,
+   "quote": "Processing 211 24.26",
+   "page": 76,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 11.04,
+   "quote": "General and Administration 96 11.04",
+   "page": 76,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TOTAL",
+   "value": 89.01,
+   "quote": "TOTAL 774 89.01",
+   "page": 76,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
