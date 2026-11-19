@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/783324/000078332423000006/vgz-20211231xex96d1.htm",
+  "source": "edgar",
+  "issuer": "VISTA GOLD CORP  (VGZ)",
+  "cik": "783324",
+  "form": "10-K/A",
+  "exhibit": "EX-96.1",
+  "filed": "2023-02-13",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "Mt Todd",
+  "commodity": "",
+  "report_id": "2023-02-13_vista-gold-corp_ex-96-1",
+  "sha256": "3c602e9d0f5288b0c371c88a28cf682be78c9df61e394c7870e28b80210723dc",
+  "bytes": 15878889,
+  "format": "html",
+  "pages": 396,
+  "parsed_on": "2026-11-19"
+}

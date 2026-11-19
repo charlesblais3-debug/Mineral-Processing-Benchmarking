@@ -1,0 +1,424 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Mt Todd",
+  "title": "Mt Todd Gold Project | 50,000 tpd Feasibility Study S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Australia",
+  "region": "Northern Territory",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "hpgr",
+   "ore_sorting",
+   "ball_mill",
+   "vertical_mill",
+   "tank_leach",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "closed circuit tertiary crushing using high pressure grinding rolls (HPGRs), ore sorting, two-stage grinding, cyclone classification, pre-leach thickening, leach and adsorption",
+  "page": 37
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 50000,
+   "unit": "t/d",
+   "quote": "Daily Ore Feed Rate t/d 50,000",
+   "page": 39,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 17.75,
+   "unit": "Mt/a",
+   "quote": "Annual Ore Feed Rate Mt/a 17.75",
+   "page": 39,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 40,
+   "unit": "µm",
+   "quote": "Grind P 80 to Leach µ m 40",
+   "page": 39,
+   "statistic": "design",
+   "context": {
+    "note": "two-stage grind: primary P80 250 µm"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.9,
+   "unit": "%",
+   "quote": "Gold Recovery % 91.9",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.82,
+   "unit": "g/t",
+   "quote": "Gold Head Grade g/t 0.82",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "quote": "a gold price of US$1,600/oz and a US$0.71:AUD1.00 exchange rate",
+   "page": 44,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 999.5,
+   "unit": "MUSD",
+   "quote": "After-tax NPV5%: US$999.5 million, IRR: 20.6%",
+   "page": 44,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20.6,
+   "unit": "%",
+   "quote": "After-tax NPV5%: US$999.5 million, IRR: 20.6%",
+   "page": 44
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.9,
+   "unit": "years",
+   "quote": "Payback (After-tax): 3.9 years",
+   "page": 44
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.71,
+   "unit": "USD/AUD",
+   "quote": "a gold price of US$1,600/oz and a US$0.71:AUD1.00 exchange rate",
+   "page": 44,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 85826,
+   "quote": "Mining 6.2% $81,017 $4,809 $85,826",
+   "page": 43,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 525942,
+   "quote": "Process Plant 11.0% $473,733 $52,209 $525,942",
+   "page": 43,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Services",
+   "value": 62462,
+   "quote": "Project Services 9.5% $55,922 $6,540 $62,462",
+   "page": 43,
+   "l1": "onsite_infra",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Infrastructure",
+   "value": 49118,
+   "quote": "Project Infrastructure 10.1% $44,586 $4,532 $49,118",
+   "page": 43,
+   "l1": "onsite_infra",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Permanent Accommodation",
+   "value": 412,
+   "quote": "Permanent Accommodation 10.0% $374 $37 $412",
+   "page": 43,
+   "l1": "onsite_infra",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Establishment & Early Works",
+   "value": 26684,
+   "quote": "Site Establishment & Early Works 12.6% $23,704 $2,980 $26,684",
+   "page": 43,
+   "l1": "onsite_infra",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Management, Engineering, EPCM Svcs",
+   "value": 112258,
+   "quote": "Management, Engineering, EPCM Svcs 12.0% $100,255 $12,003 $112,258",
+   "page": 43,
+   "l1": "indirects",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Costs",
+   "value": 29325,
+   "quote": "Pre-Production Costs 9.6% $26,745 $2,580 $29,325",
+   "page": 43,
+   "l1": "owners",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capital Cost (initial)",
+   "value": 892028,
+   "quote": "Capital Cost 9.1% $806,337 $85,690 $892,028 $619,367",
+   "page": 43,
+   "is_total": true,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Cost (sustaining)",
+   "value": 663409,
+   "quote": "$892,028 $619,367 $44,042 $663,409",
+   "page": 43,
+   "is_total": true,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mine",
+   "value": 6.79,
+   "quote": "Open Pit Mine 6.79 2.03",
+   "page": 44,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "CIP Process Plant",
+   "value": 9.53,
+   "quote": "CIP Process Plant 9.53",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Project Services",
+   "value": 0.29,
+   "quote": "Project Services 0.29",
+   "page": 44,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.99,
+   "quote": "G&A 0.99 - Operating Costs 17.60",
+   "page": 44,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Costs",
+   "value": 17.6,
+   "quote": "Operating Costs 17.60",
+   "page": 44,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Classification & Grinding",
+   "value": 4.0,
+   "quote": "Classification & Grinding 4.00",
+   "page": 44,
+   "l1": "processing",
+   "l2": "media_liners",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Reagents",
+   "value": 3.26,
+   "quote": "Reagents 3.26",
+   "page": 44,
+   "l1": "processing",
+   "l2": "reagents",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Labor",
+   "value": 0.82,
+   "quote": "Labor 0.82 - 3100",
+   "page": 44,
+   "l1": "processing",
+   "l2": "labour",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Reclaim & HPGR",
+   "value": 0.72,
+   "quote": "Reclaim & HPGR 0.72",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Crush/Screen/Stockpile",
+   "value": 0.28,
+   "quote": "Crush/Screen/Stockpile 0.28",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Pre-Leach,Thick/Aeration/CIP",
+   "value": 0.18,
+   "quote": "Pre-Leach,Thick/Aeration/CIP 0.18",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Desorption, Gold Room",
+   "value": 0.02,
+   "quote": "Desorption, Gold Room 0.02",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Detox & Tailings Pumping",
+   "value": 0.08,
+   "quote": "Detox & Tailings Pumping 0.08",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Plant Services",
+   "value": 0.03,
+   "quote": "Plant Services 0.03",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Mining, Infrastructure & Misc",
+   "value": 0.06,
+   "quote": "Mining, Infrastructure & Misc 0.06",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – General Consumables",
+   "value": 0.01,
+   "quote": "General Consumables 0.01",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Plant Mobile Equipment",
+   "value": 0.02,
+   "quote": "Plant Mobile Equipment 0.02",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process – Plant Gas Consumption",
+   "value": 0.03,
+   "quote": "Plant Gas Consumption 0.03",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "CIP Process Plant",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

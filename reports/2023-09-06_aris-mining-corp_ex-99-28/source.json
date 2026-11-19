@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1964504/000119312523229367/d460434dex9928.htm",
+  "source": "edgar",
+  "issuer": "Aris Mining Corp  (ARMN, CLGDF)",
+  "cik": "1964504",
+  "form": "40FR12B",
+  "exhibit": "EX-99.28",
+  "filed": "2023-09-06",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "Segovia",
+  "commodity": "",
+  "report_id": "2023-09-06_aris-mining-corp_ex-99-28",
+  "sha256": "a09c7370a8b54ea0fedbc241a8b897978d7ee1700e20854f4ea1dbfe84bb4ce1",
+  "bytes": 13103010,
+  "format": "html",
+  "pages": 451,
+  "parsed_on": "2026-11-19"
+}

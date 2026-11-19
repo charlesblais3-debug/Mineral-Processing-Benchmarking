@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1538847/000143774926024036/ex_988649.htm",
+  "source": "edgar",
+  "issuer": "GoldMining Inc.  (GLDG)",
+  "cik": "1538847",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2026-07-22",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "São Jorge",
+  "commodity": "",
+  "report_id": "2026-07-22_goldmining-inc_ex-99-2",
+  "sha256": "1e88d154918f7b50e29b04fefb4aa4952344a89a1adeb417341ca63f17c9221c",
+  "bytes": 5266473,
+  "format": "html",
+  "pages": 619,
+  "parsed_on": "2026-11-19"
+}

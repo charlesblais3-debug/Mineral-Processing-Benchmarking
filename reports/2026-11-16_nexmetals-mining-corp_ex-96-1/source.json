@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/795800/000149315226052545/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "NexMetals Mining Corp.  (NEXM)",
+  "cik": "795800",
+  "form": "10-Q",
+  "exhibit": "EX-96.1",
+  "filed": "2026-11-16",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "Selebi",
+  "commodity": "",
+  "report_id": "2026-11-16_nexmetals-mining-corp_ex-96-1",
+  "sha256": "84a01f26d2c46a0b443d61e48d2a69f522a38a94543f539d1581c2d1fb40e12f",
+  "bytes": 1872800,
+  "format": "html",
+  "pages": 123,
+  "parsed_on": "2026-11-19"
+}

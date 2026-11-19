@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/314203/000110465926124571/mux-ex99d1.htm",
+  "source": "edgar",
+  "issuer": "McEwen Inc.  (MUX)",
+  "cik": "314203",
+  "form": "10-Q",
+  "exhibit": "EX-99.1",
+  "filed": "2026-11-09",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "Grey Fox",
+  "commodity": "",
+  "report_id": "2026-11-09_mcewen-inc_ex-99-1",
+  "sha256": "5e795c0108ac2c4cee6a796d407ea2c7324e1b1243bb0d8f84db42947dd6eb63",
+  "bytes": 7079580,
+  "format": "html",
+  "pages": 431,
+  "parsed_on": "2026-11-19"
+}

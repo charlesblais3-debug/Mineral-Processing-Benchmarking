@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1543418/000110465925013125/tm254564d1_ex99-2.htm",
+  "source": "edgar",
+  "issuer": "Trilogy Metals Inc.  (TMQ)",
+  "cik": "1543418",
+  "form": "8-K",
+  "exhibit": "EX-99.2",
+  "filed": "2025-02-14",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Bornite",
+  "commodity": "",
+  "report_id": "2025-02-14_trilogy-metals-inc_ex-99-2",
+  "sha256": "06e1f08fcfdaf3a6f6523f5255b2c262f6d1853384cd528d339e027a806fd08e",
+  "bytes": 3489890,
+  "format": "html",
+  "pages": 177,
+  "parsed_on": "2026-11-19"
+}

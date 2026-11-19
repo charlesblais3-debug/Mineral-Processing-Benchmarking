@@ -1,0 +1,228 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Nickel Shäw (Wellgreen)",
+  "title": "Pre-Feasibility Study for the Nickel Shäw Ni-Cu-PGM Project, Yukon Canada",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2023-09-20",
+  "effective_date_quote": "Effective Date: 20 September 2023",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co",
+   "Pd",
+   "Pt",
+   "Au"
+  ],
+  "country": "Canada",
+  "region": "Yukon",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "The crushed mill feed is ground to 80% passing 110 µm using a single SAG mill and two parallel ball  mills.",
+  "page": 37
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 45000,
+   "unit": "t/d",
+   "quote": "conventional mineral processing plant has been designed for the project, with a nominal throughput  rate of 45,000 tonnes per day",
+   "page": 37,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 110,
+   "unit": "µm",
+   "quote": "The crushed mill feed is ground to 80% passing 110 µm using a single SAG mill and two parallel ball  mills.",
+   "page": 37,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 11.0,
+   "unit": "USD/lb",
+   "quote": "Base 143 143 11.00 143",
+   "page": 43,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 143,
+   "unit": "MCAD",
+   "quote": "The results indicate a post-tax NPV @ 5% of $143 M and 5.8% IRR for the 19.1-year mine life.",
+   "page": 42,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 5.8,
+   "unit": "%",
+   "quote": "The results indicate a post-tax NPV @ 5% of $143 M and 5.8% IRR for the 19.1-year mine life.",
+   "page": 42
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit- Prestripping (capitalized)",
+   "value": 172.0,
+   "quote": "Open Pit- Prestripping (capitalized) 172.0 - 172.0",
+   "page": 41,
+   "l1": "mining",
+   "part_of": "Open Pit Mining - Subtotal"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit-Capital",
+   "value": 226.7,
+   "quote": "Open Pit-Capital 226.7 205.6 432.3",
+   "page": 41,
+   "l1": "mining",
+   "part_of": "Open Pit Mining - Subtotal"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit Mining - Subtotal",
+   "value": 398.7,
+   "quote": "Open Pit Mining - Subtotal 398.7 205.6 604.3",
+   "page": 41,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 509.9,
+   "quote": "Processing 509.9 5.1 515.0",
+   "page": 41,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 353.5,
+   "quote": "Infrastructure 353.5 257.5 611.0",
+   "page": 41,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 245.1,
+   "quote": "Indirects 245.1 57.9 303.0",
+   "page": 41,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 179.9,
+   "quote": "Contingency 179.9 59.7 239.6",
+   "page": 41
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 1687.1,
+   "quote": "Total 1,687.1 638.2 2,325.3",
+   "page": 41,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining",
+   "value": 638.2,
+   "quote": "Total 1,687.1 638.2 2,325.3",
+   "page": 41,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining ($/t moved)",
+   "value": 2.64,
+   "quote": "Open Pit Mining $/t moved 2.64",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_moved"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 7.3,
+   "quote": "$/t mill feed 7.30 Processing",
+   "page": 41,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 17.32,
+   "quote": "Processing $/t mill feed 17.32",
+   "page": 41,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2.43,
+   "quote": "G&A $/t mill feed 2.43",
+   "page": 41,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sub-Total (site)",
+   "value": 27.05,
+   "quote": "Sub-Total $/t mill feed 27.05",
+   "page": 41,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Carbon Tax",
+   "value": 0.83,
+   "quote": "Carbon Tax $/t mill feed 0.83",
+   "page": 41,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Trucking, Port, Shipping",
+   "value": 2.34,
+   "quote": "Concentrate Trucking, Port, Shipping $/t mill feed 2.34",
+   "page": 41,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

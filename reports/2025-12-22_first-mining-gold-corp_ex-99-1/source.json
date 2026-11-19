@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1641229/000165495425014242/firstmining_ex991.htm",
+  "source": "edgar",
+  "issuer": "First Mining Gold Corp.  (FFMGF)",
+  "cik": "1641229",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-12-22",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Duparquet",
+  "commodity": "",
+  "report_id": "2025-12-22_first-mining-gold-corp_ex-99-1",
+  "sha256": "6692b24a3499ff5dd4fbf456500285006a7b7a7de703f4ccf517281b019eadf7",
+  "bytes": 8289680,
+  "format": "html",
+  "pages": 604,
+  "parsed_on": "2026-11-19"
+}

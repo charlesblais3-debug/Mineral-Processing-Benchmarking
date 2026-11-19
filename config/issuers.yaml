@@ -23,3 +23,8 @@ issuers:
   - { name: Canada Nickel,         site: https://canadanickel.com/,         commodity: Ni, projects: [Crawford], pages: [https://canadanickel.com/investors/technical-reports/] }
   - { name: Talon Metals,          site: https://talonmetals.com/,          commodity: Ni, projects: [Tamarack] }
   - { name: FPX Nickel,            site: https://fpxnickel.com/,            commodity: Ni, projects: [Baptiste] }
+  - { name: Giga Metals,           site: https://gigametals.com/,           commodity: Ni, projects: [Turnagain] }
+  - { name: Magna Mining,          site: https://magnamining.com/,          commodity: Ni, projects: [Shakespeare, Crean Hill] }
+  - { name: Power Nickel,          site: https://powernickel.com/,          commodity: Ni, projects: [Nisk] }
+  - { name: Alaska Energy Metals,  site: https://alaskaenergymetals.com/,   commodity: Ni, projects: [Nikolai, Eureka] }
+  - { name: Nickel Creek Platinum, site: https://nickelcreekplatinum.com/,  commodity: Ni, projects: [Wellgreen] }

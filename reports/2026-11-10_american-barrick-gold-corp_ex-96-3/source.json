@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2162540/000119312526455481/d338869dex963.htm",
+  "source": "edgar",
+  "issuer": "American Barrick Gold Corp",
+  "cik": "2162540",
+  "form": "S-1",
+  "exhibit": "EX-96.3",
+  "filed": "2026-11-10",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Fourmile",
+  "commodity": "",
+  "report_id": "2026-11-10_american-barrick-gold-corp_ex-96-3",
+  "sha256": "e91ac7189f304bee39a1be4908faffef6660d620a42e2a0fe466134f0886c2ee",
+  "bytes": 2007759,
+  "format": "html",
+  "pages": 175,
+  "parsed_on": "2026-11-19"
+}

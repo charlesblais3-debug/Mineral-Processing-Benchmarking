@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1173643/000117184325003445/exh_991.htm",
+  "source": "edgar",
+  "issuer": "TRX GOLD Corp  (TRX)",
+  "cik": "1173643",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-05-27",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "Buckreef",
+  "commodity": "",
+  "report_id": "2025-05-27_trx-gold-corp_ex-99-1",
+  "sha256": "b00298fc84d8cd33fa7949a0354c514007d62199f11696a2bd14704baf5b2285",
+  "bytes": 758930,
+  "format": "html",
+  "pages": 134,
+  "parsed_on": "2026-11-19"
+}

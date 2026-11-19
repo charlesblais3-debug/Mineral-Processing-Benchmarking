@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1013131/000110465922060511/tmb-20211231xex96d4.htm",
+  "source": "edgar",
+  "issuer": "BUENAVENTURA MINING CO INC  (BVN)",
+  "cik": "1013131",
+  "form": "20-F",
+  "exhibit": "EX-96.4",
+  "filed": "2022-05-13",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "El Brocal",
+  "commodity": "",
+  "report_id": "2022-05-13_buenaventura-mining-co-inc_ex-96-4",
+  "sha256": "3351f243f795841335b36f966ad1e7ec2b639796435e09ce4e684deeb7ec278f",
+  "bytes": 8755144,
+  "format": "html",
+  "pages": 336,
+  "parsed_on": "2026-11-19"
+}

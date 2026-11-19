@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1961592/000110465926102391/tm2620638d1_ex99-23.htm",
+  "source": "edgar",
+  "issuer": "Gold X2 Mining Inc.",
+  "cik": "1961592",
+  "form": "40FR12B",
+  "exhibit": "EX-99.23",
+  "filed": "2026-08-27",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Moss",
+  "commodity": "",
+  "report_id": "2026-08-27_gold-x2-mining-inc_ex-99-23",
+  "sha256": "415c37fd43924687dfefe1fc333734d2b51152112cafea3223642eab2d51cb0b",
+  "bytes": 9712601,
+  "format": "html",
+  "pages": 297,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,330 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Pebble",
+  "title": "Pebble Project NI 43-101 Technical Report Update and Preliminary Economic Assessment",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2023-08-21",
+  "effective_date_quote": "Effective Date: August 21, 2023",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Mo",
+   "Ag",
+   "Re"
+  ],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "two 42 ft diameter x 27 ft effective grinding length (EGL) SAG mills each with 30 MW gearless drive",
+  "page": 238
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 180000,
+   "unit": "st/d",
+   "quote": "The proposed processing plant is designed to process mineralized feed material at a rate of 180,000 tons per day.",
+   "page": 42,
+   "statistic": "design",
+   "context": {
+    "note": "short tons"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 135,
+   "unit": "µm",
+   "quote": "adjusted to an increased primary grind size (from 125 µm to 135 µm)",
+   "page": 40,
+   "statistic": "design"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 0.12,
+   "unit": "t:t",
+   "quote": "for a low life-of-mine strip ratio of waste to mineralized material of 0.12:1",
+   "page": 34,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2233,
+   "unit": "MUSD",
+   "quote": "Post – Tax NPV at 7% $M 2,233",
+   "page": 56,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 16.2,
+   "unit": "%",
+   "quote": "Post – Tax IRR % 16.2",
+   "page": 56
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.6,
+   "unit": "years",
+   "quote": "Post – Tax Payback Period years 4.6",
+   "page": 56
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit Mining",
+   "value": 415.2,
+   "quote": "Open Pit Mining 415.2 192.7 607.9",
+   "page": 53
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 910.6,
+   "quote": "Process Plant 910.6 n/a 910.6",
+   "page": 53,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Earthworks, Tailings and Water Management",
+   "value": 651.3,
+   "quote": "Earthworks, Tailings and Water Management 651.3 842.9 1,494.2",
+   "page": 53,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site General",
+   "value": 127.6,
+   "quote": "Site General 127.6 n/a 127.6",
+   "page": 53,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water Treatment Plants",
+   "value": 315.5,
+   "quote": "Water Treatment Plants 315.5 n/a 315.5",
+   "page": 53,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 251.7,
+   "quote": "On-Site Infrastructure 251.7 n/a 251.7",
+   "page": 53
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power Supply",
+   "value": 702.6,
+   "quote": "Power Supply 702.6 n/a 702.6",
+   "page": 53,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Natural Gas Line",
+   "value": 505.3,
+   "quote": "Natural Gas Line 505.3 n/a 505.3",
+   "page": 53,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Marine Terminal Site",
+   "value": 253.5,
+   "quote": "Marine Terminal Site 253.5 n/a 253.5",
+   "page": 53,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ferry",
+   "value": 54.3,
+   "quote": "Ferry 54.3 n/a 54.3",
+   "page": 53,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "External Access Roads",
+   "value": 507.4,
+   "quote": "External Access Roads 507.4 18.4 525.8",
+   "page": 53,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Directs",
+   "value": 4694.9,
+   "quote": "Total Directs 4,694.9 1,054.1 5,749.0",
+   "page": 53,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 917.9,
+   "quote": "Indirect Costs 917.9 99.9 1,017.8",
+   "page": 53,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 353.0,
+   "quote": "Owner's Costs 353.0 10.0 363.0",
+   "page": 53
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 806.8,
+   "quote": "Contingency 806.8 129.1 936.0",
+   "page": 53
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 6772.6,
+   "quote": "Total 6,772.6",
+   "page": 53,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administrative",
+   "value": 0.97,
+   "quote": "General & Administrative 62.5 0.97",
+   "page": 54,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 1.97,
+   "quote": "Open Pit Mining 127.2 1.97",
+   "page": 54,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mineralized Material Handling & Process Plant",
+   "value": 4.99,
+   "quote": "Mineralized Material Handling & Process Plant 321.7 4.99",
+   "page": 54,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Operation & Maintenance",
+   "value": 0.22,
+   "quote": "Tailings Operation & Maintenance 14.4 0.22",
+   "page": 54,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment Plant",
+   "value": 0.38,
+   "quote": "Water Treatment Plant 24.6 0.38",
+   "page": 54,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Marine Facilities",
+   "value": 0.52,
+   "quote": "Marine Facilities 33.3 0.52",
+   "page": 54,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ferry",
+   "value": 0.22,
+   "quote": "Ferry 13.9 0.22",
+   "page": 54,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Access Road",
+   "value": 0.25,
+   "quote": "Access Road 1 16.3 0.25",
+   "page": 54,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Infrastructure Lease",
+   "value": 4.44,
+   "quote": "Infrastructure Lease 286.5 4.44",
+   "page": 54,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 13.95,
+   "quote": "Total 900.3 13.95",
+   "page": 54,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

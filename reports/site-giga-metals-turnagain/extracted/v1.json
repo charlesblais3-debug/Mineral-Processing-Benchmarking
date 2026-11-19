@@ -1,0 +1,309 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Turnagain",
+  "title": "Turnagain Nickel Project Pre-Feasibility Study, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2023-09-22",
+  "effective_date_quote": "EFFECTIVE DATE: SEPTEMBER 22, 2023",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "P80 of 38 mm) will be delivered by belt conveyor to  two HPGR feed surge",
+  "page": 267
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 90000,
+   "unit": "t/d",
+   "quote": "Overall Plant Feed  t/d  90,000  Client",
+   "page": 265,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 22.0,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (75th Percentile) kWh/t 22.0",
+   "page": 265,
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "cwi",
+   "value": 18.0,
+   "unit": "kWh/t",
+   "quote": "Bond Crusher Work Index (75th Percentile) kWh/t 18.0",
+   "page": 265,
+   "statistic": "p75"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.23,
+   "unit": "g",
+   "quote": "Abrasion Index (Average) g 0.23",
+   "page": 265,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 250,
+   "unit": "µm",
+   "quote": "Grinding Circuit Particle Size, P80  µm  250  Calculation",
+   "page": 265,
+   "statistic": "design",
+   "context": {
+    "note": "primary grind; secondary grind to 80 µm"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 51.4,
+   "unit": "%",
+   "quote": "the anticipated average nickel recovery will be 51.4% based on the test results",
+   "page": 30,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.205,
+   "unit": "%",
+   "quote": "The LOM average diluted mill feed grade is estimated to be 0.205% Ni",
+   "page": 30,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 18,
+   "unit": "%",
+   "quote": "Concentrate Grade  % Ni  18  Test work",
+   "page": 266,
+   "metal": "Ni",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 9.75,
+   "unit": "USD/lb",
+   "quote": "evaluated using a constant nickel market price of $9.75/lb",
+   "page": 35,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 574,
+   "unit": "MUSD",
+   "quote": "NPV @ 7% Discount Rate Million $ 717 574",
+   "page": 35,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 11.4,
+   "unit": "%",
+   "quote": "IRR % 11.1 11.4 Payback Period years 6.9 5.7",
+   "page": 35
+  },
+  {
+   "parameter": "payback_years",
+   "value": 5.7,
+   "unit": "years",
+   "quote": "IRR % 11.1 11.4 Payback Period years 6.9 5.7",
+   "page": 35
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Preparation & Site Roads",
+   "value": 29.6,
+   "quote": "Site Preparation & Site Roads 29.6",
+   "page": 34,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 132.4,
+   "quote": "Mining 132.4 Processing Plant",
+   "page": 34
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant",
+   "value": 623.4,
+   "quote": "Processing Plant 623.4",
+   "page": 34,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TMF and Water Management",
+   "value": 177.3,
+   "quote": "TMF and Water Management 177.3",
+   "page": 34
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Services and Utilities",
+   "value": 74.4,
+   "quote": "Site Services and Utilities 74.4",
+   "page": 34,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-site Infrastructure",
+   "value": 48.5,
+   "quote": "On-site Infrastructure 48.5",
+   "page": 34
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site Infrastructure",
+   "value": 179.5,
+   "quote": "Off-site Infrastructure 179.5",
+   "page": 34
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Initial Capital Cost",
+   "value": 1265.0,
+   "quote": "Total Direct Initial Capital Cost 1,265.0",
+   "page": 34,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Initial Capital Costs",
+   "value": 374.2,
+   "quote": "Indirect Initial Capital Costs 374.2",
+   "page": 34,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 38.5,
+   "quote": "Owner’s Costs 38.5 Contingencies 177.4",
+   "page": 34
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingencies",
+   "value": 177.4,
+   "quote": "Contingencies 177.4 Total Capital Cost 1,855.0",
+   "page": 34
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost",
+   "value": 1855.0,
+   "quote": "Total Capital Cost 1,855.0",
+   "page": 34,
+   "is_total": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized Pre-production Costs",
+   "value": 38.4,
+   "quote": "Capitalized Pre-production Costs 38.4",
+   "page": 34,
+   "outside_total": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital Cost",
+   "value": 1564.6,
+   "quote": "Total Sustaining Capital Cost 1,564.6",
+   "page": 34,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure & Reclamation",
+   "value": 78.4,
+   "quote": "Closure & Reclamation 78.4 Total 1,643.0",
+   "page": 34
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3.02,
+   "quote": "Mining 2,739.6 3.02 1.28",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 5.29,
+   "quote": "Processing 4,935.5 5.29 2.24",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.57,
+   "quote": "G&A 533.9 0.57 0.24",
+   "page": 35,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Services",
+   "value": 0.22,
+   "quote": "Site Services 206.2 0.22 0.09",
+   "page": 35,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 9.09,
+   "quote": "Total Operating Costs 8,415.2 9.09 3.85",
+   "page": 35,
+   "is_total": true,
+   "tolerance_pct": 3,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}
