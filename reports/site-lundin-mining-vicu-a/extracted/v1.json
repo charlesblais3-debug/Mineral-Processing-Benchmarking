@@ -1,0 +1,198 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Vicuña (Josemaria)",
+  "title": "Vicuña Project NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-02-16",
+  "effective_date_quote": "Effective Date: February 16, 2026",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Argentina",
+  "region": "San Juan",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "note": "District-scale, multi-stage project; costs recorded are Stage 1 'Sulphide Mill' (Josemaria).",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "target flotation feed size of P80 130 µm",
+  "page": 275
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 175000,
+   "unit": "t/d",
+   "quote": "meplate throughput of 175,000 t/d overall",
+   "page": 275,
+   "statistic": "design",
+   "context": {
+    "phase": "Stage 1 sulphide mill"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 130,
+   "unit": "µm",
+   "quote": "target flotation feed size of P80 130 µm",
+   "page": 275,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.2,
+   "unit": "%",
+   "quote": "Average metallurgical recoveries 82.2% 60.1% 56.1%",
+   "page": 226,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Josemaria"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 9510,
+   "unit": "MUSD",
+   "quote": "After-tax NPV @ 8% $ billion 9.51",
+   "page": 72,
+   "context": {
+    "discount_rate_pct": 8,
+    "note": "whole Vicuña district plan"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1000 Mine",
+   "value": 1007.0,
+   "quote": "1000 Mine 1,009.7 1.6 1.2 1,007.0",
+   "page": 360,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2000 Crushing facilities",
+   "value": 229.1,
+   "quote": "2000 Crushing facilities 231.7 1.7 1.0 229.1",
+   "page": 360,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "3000 Process facilities",
+   "value": 909.8,
+   "quote": "3000 Process facilities 1,112.9 167.5 35.7 909.8",
+   "page": 360,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "4000 Tailings management",
+   "value": 199.2,
+   "quote": "4000 Tailings management 281.9 0.0 82.7 199.2",
+   "page": 360,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "5000 On-site infrastructure",
+   "value": 487.8,
+   "quote": "5000 On-site infrastructure 546.7 49.3 9.7 487.8",
+   "page": 360,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "6000 Off-site infrastructure",
+   "value": 839.4,
+   "quote": "6000 Off-site infrastructure 933.3 1.1 92.8 839.4",
+   "page": 360,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "7000 Indirect costs",
+   "value": 1970.0,
+   "quote": "7000 Indirect costs 2,561.5 336.1 255.4 1,970.0",
+   "page": 360,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "8100 Owner's costs",
+   "value": 488.4,
+   "quote": "8100 Owner’s costs 735.6 98.4 148.8 488.4",
+   "page": 360,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "9100 Contingency",
+   "value": 920.3,
+   "quote": "9100 Contingency 950.0 — 29.7 920.3",
+   "page": 360,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Costs (Stage 1, 2027 onwards)",
+   "value": 7050.9,
+   "quote": "Total Capital Costs** 8,363.4 655.7 656.9 7,050.9",
+   "page": 360,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Josemaria sulphide process",
+   "value": 4.13,
+   "quote": "Josemaria sulphide process $/t JM sulphide throughput 4.13",
+   "page": 68,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 2.94,
+   "quote": "Mining $/t mined 2.94",
+   "page": 68,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
