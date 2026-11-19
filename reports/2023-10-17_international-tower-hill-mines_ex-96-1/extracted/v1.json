@@ -1,0 +1,226 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Livengood",
+  "title": "S-K 1300 Technical Report Summary, Livengood Gold Project Pre-feasibility Study",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2021-08-20",
+  "effective_date_quote": "effective date of August 20, 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "note": "Report uses short tons for 't'; metric tonnes written 'mt'.",
+  "effective_date_page": 20
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "gravity/CIL plant at a grind size of 250 µm",
+  "page": 20
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 59000,
+   "unit": "t/d",
+   "quote": "throughput of 65,000 t/d (59,000 mt/d)",
+   "page": 23,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 250,
+   "unit": "µm",
+   "quote": "gravity/CIL plant at a grind size of 250 µm (P 80 )",
+   "page": 20,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.4,
+   "unit": "kWh/t",
+   "quote": "RT6 14.4 17.3 14.4 0.12",
+   "page": 59,
+   "statistic": "max",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "rock types RT4-RT9 (12.3-14.4)"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 20.3,
+   "unit": "years",
+   "quote": "Life (after preproduction) 20.3 years",
+   "page": 32
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1680,
+   "unit": "USD/oz",
+   "quote": "Price ($/oz) 1,680",
+   "page": 32,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 45,
+   "unit": "MUSD",
+   "quote": "NPV (@ 5%) 45",
+   "page": 32,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 5.3,
+   "unit": "%",
+   "quote": "IRR 5.3 %",
+   "page": 32
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Equipment",
+   "value": 200,
+   "quote": "Equipment 200 139",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Development",
+   "value": 230,
+   "quote": "Development 230",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Facilities",
+   "value": 433,
+   "quote": "Facilities 433",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure Facilities",
+   "value": 459,
+   "quote": "Facilities 459 514",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power Supply",
+   "value": 87,
+   "quote": "Supply 87",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "power"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs",
+   "value": 296,
+   "quote": "Costs 296 5",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 220,
+   "quote": "Contingency 220",
+   "page": 31,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Spare parts, consumables, and initial fills",
+   "value": 40,
+   "quote": "parts, consumables, and initial fills (1) 40",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "first_fills_spares"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Funding of Reclamation Trust Fund",
+   "value": 23,
+   "quote": "Funding of Reclamation Trust Fund (2) 23 245",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 1989,
+   "quote": "Total $1,989 M $903M",
+   "page": 31,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining (total)",
+   "value": 903,
+   "quote": "Total $1,989 M $903M",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (including stockpile reclaim)",
+   "value": 4.03,
+   "quote": "Mining (including stockpile reclaim) 1,910 2.05 4.03 297",
+   "page": 31,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 7.72,
+   "quote": "Processing 3,659 - 7.72",
+   "page": 31,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing",
+   "l2": "other"
+  }
+ ]
+}
