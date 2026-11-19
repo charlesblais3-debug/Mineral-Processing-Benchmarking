@@ -1,0 +1,79 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bilboes",
+  "title": "Bilboes Gold Project Feasibility Study NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2021-12-15",
+  "effective_date_quote": "Effective Date: 15 December 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Zimbabwe",
+  "region": "Matabeleland South",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "note": "This EDGAR exhibit holds only part of the report; cost and economic chapters were not in it.",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "biox"
+  ],
+  "quote": "bulk concentrates for BIOX® pilot plants, flotation design parameters",
+  "page": 15
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.88,
+   "unit": "Mt/a",
+   "quote": "Processing throughput of 2.88 Mtpa for phase 1",
+   "page": 20,
+   "statistic": "design",
+   "context": {
+    "phase": "phase 1; 2.16 Mtpa phase 2"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.81,
+   "unit": "kWh/t",
+   "quote": "McCays samples with Bond Ball Work Index (BBWi) values ranging from 15 . 70 to 17 . 81 kWh/t",
+   "page": 16,
+   "statistic": "max",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Isabella / McCays",
+    "statistic_note": "range 15.70-17.81"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.7,
+   "unit": "kWh/t",
+   "quote": "McCays samples with Bond Ball Work Index (BBWi) values ranging from 15 . 70 to 17 . 81 kWh/t",
+   "page": 16,
+   "statistic": "min",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Isabella / McCays",
+    "statistic_note": "range 15.70-17.81"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.2,
+   "unit": "%",
+   "quote": "flotation test work on the ores indicated an average recovery of 89 . 2 %",
+   "page": 16,
+   "metal": "Au",
+   "statistic": "mean",
+   "context": {
+    "note": "flotation testwork, Isabella McCays"
+   }
+  }
+ ],
+ "costs": []
+}
