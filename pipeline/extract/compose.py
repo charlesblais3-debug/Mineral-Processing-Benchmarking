@@ -33,7 +33,21 @@ def _place(rid, item, near=None):
     return True
 
 
+def _digits_in_quote(item) -> bool:
+    """True if the value (as written, with or without thousands separators) appears in the quote."""
+    v = item.get("value")
+    if not isinstance(v, (int, float)):
+        return True
+    q = item["quote"].replace(",", "").replace(" ", "")
+    forms = {f"{v:g}", f"{abs(v):g}", f"{v:.1f}", f"{v:.2f}", f"{v:.0f}", f"{v:.3f}"}
+    return any(f.replace(",", "") in q for f in forms)
+
+
 def save(rid, report, flowsheet=None, facts=(), costs=(), near=None):
+    warn = [f"value {i.get('value')} not in quote for {i.get('parameter') or i.get('raw_label')}"
+            for i in list(facts) + list(costs) if not _digits_in_quote(i)]
+    if warn:
+        print("CHECK:", *warn, sep="\n  ")
     missing = []
     rep = dict(report)
     if "effective_date_quote" in rep and not rep.get("effective_date_page"):
