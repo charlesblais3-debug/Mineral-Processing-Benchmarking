@@ -65,8 +65,10 @@
    "page": 351,
    "statistic": "design",
    "context": {
-    "mills": "primary 8 MW + 2 x 4.5 MW ball"
-   }
+    "mills": "primary 8 MW + 2 x 4.5 MW ball",
+    "derived_note": "sum of stated mills: 8 MW + 2 x 4.5 MW"
+   },
+   "derived": true
   },
   {
    "parameter": "metal_price",

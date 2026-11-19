@@ -43,8 +43,10 @@
    "page": 30,
    "statistic": "design",
    "context": {
-    "note": "midpoint of the stated 33–35 Mt/a; Concentrator 1 26 Mt/a + Concentrator 2 8 Mt/a"
-   }
+    "note": "midpoint of the stated 33–35 Mt/a; Concentrator 1 26 Mt/a + Concentrator 2 8 Mt/a",
+    "derived_note": "midpoint of stated 33–35 Mt/a"
+   },
+   "derived": true
   },
   {
    "parameter": "recovery_lom",

@@ -58,8 +58,10 @@
    "page": 5,
    "statistic": "design",
    "context": {
-    "note": "midpoint of the stated 150–200 µm target"
-   }
+    "note": "midpoint of the stated 150–200 µm target",
+    "derived_note": "midpoint of stated 150–200 µm"
+   },
+   "derived": true
   },
   {
    "parameter": "metal_price",

@@ -74,7 +74,7 @@ def search(client: PoliteClient, q: str, start: str | None = None, end: str | No
             return
 
 
-def run(limit_per_query: int = 2000, start: str | None = None, verbose: bool = True) -> dict:
+def run(limit_per_query: int = 2000, start: str | None = None, verbose: bool = True, only: list[str] | None = None) -> dict:
     cfg = load("sources")["edgar"]
     mining_sics = {str(s) for s in cfg["sic_codes"]}
     if start is None:
@@ -83,6 +83,8 @@ def run(limit_per_query: int = 2000, start: str | None = None, verbose: bool = T
     rows = catalog.read()
     stats = {"queries": 0, "hits": 0, "kept": 0, "new": 0}
     for name, q in cfg["queries"].items():
+        if only and name not in only:
+            continue
         stats["queries"] += 1
         kept = new = hits = 0
         for hit in search(client, q, start=start, limit=limit_per_query):

@@ -59,8 +59,10 @@
    "page": 228,
    "statistic": "design",
    "context": {
-    "mills": "new line only: SAG 16 MW + ball 18 MW"
-   }
+    "mills": "new line only: SAG 16 MW + ball 18 MW",
+    "derived_note": "sum of stated new mills: SAG 16 MW + ball 18 MW"
+   },
+   "derived": true
   },
   {
    "parameter": "bwi_ball",

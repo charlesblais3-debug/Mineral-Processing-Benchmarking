@@ -97,7 +97,11 @@
    "value": 9,
    "unit": "years",
    "page": 128,
-   "quote": "a projected mine life of nine years (2025-2033)"
+   "quote": "a projected mine life of nine years (2025-2033)",
+   "derived": true,
+   "context": {
+    "derived_note": "stated in words: \"nine years\""
+   }
   },
   {
    "parameter": "exchange_rate",

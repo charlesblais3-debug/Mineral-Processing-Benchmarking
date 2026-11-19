@@ -48,6 +48,9 @@ parameters:
   plant_availability:  { group: design, label: Plant availability / utilization, unit: "%", range: [50, 98], module: design, v1: true }
   leach_residence_h:   { group: design, label: Leach residence time, unit: h, range: [2, 200], module: design, v1: false }
   nacn_kg_t:           { group: design, label: NaCN consumption, unit: kg/t, range: [0, 5], module: design, v1: false }
+  mass_yield_pct:      { group: metallurgy, label: Weight recovery to concentrate / product, unit: "%", range: [1, 100], module: metallurgy, v1: true, context: [product] }
+  dtr_wt_pct:          { group: metallurgy, label: Davis tube weight recovery, unit: "%", range: [1, 100], module: metallurgy, v1: true, context: [grind_um] }
+  conc_silica_pct:     { group: metallurgy, label: Concentrate SiO2, unit: "%", range: [0, 30], module: metallurgy, v1: true, context: [product] }
   flot_mass_pull_pct:  { group: design, label: Flotation mass pull, unit: "%", range: [0, 50], module: design, v1: false }
 
   # ---------- Economics (context for costs) ----------

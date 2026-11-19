@@ -57,7 +57,7 @@ capex:
   contingency:
     label: Contingency
     l2:
-      contingency:    { label: Contingency, synonyms: [contingency, growth allowance] }
+      contingency:    { label: Contingency, synonyms: [contingency, contingencies, growth allowance] }
   other:
     label: Other / unallocated
     l2:
@@ -77,7 +77,7 @@ opex:
   mining:
     label: Mining
     l2:
-      mining:         { label: Mining, synonyms: [mining, mine operations, open pit mining, underground mining, contractor mining, ore haul, haulage, rehandle] }
+      mining:         { label: Mining, synonyms: [mining, mine, mine operations, open pit mining, underground mining, contractor mining, ore haul, haulage, rehandle] }
   processing:
     label: Processing
     l2:
@@ -98,7 +98,7 @@ opex:
   offsite:
     label: Off-site
     l2:
-      transport:      { label: Concentrate / doré transport, synonyms: [transport, freight, shipping, trucking, ocean freight, concentrate transport] }
+      transport:      { label: Concentrate / doré transport, synonyms: [transport, freight, shipping, trucking, ocean freight, concentrate transport, rail, railway, port, port handling, haulage to port, transshipment] }
       tc_rc:          { label: Treatment & refining charges, synonyms: [treatment charge, refining charge, tc/rc, tc, rc, smelting, refining] }
       other:          { label: Off-site – other, synonyms: [insurance, marketing, representation] }
   royalties_taxes:

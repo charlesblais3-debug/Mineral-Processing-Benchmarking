@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import json
 
-from pipeline.extract.load import REPORTS, find_quote
+from pipeline.extract.load import REPORTS, find_quote, value_in_quote
 
 
 def F(parameter, value, unit, quote, page=None, **k):
@@ -44,8 +44,8 @@ def _digits_in_quote(item) -> bool:
 
 
 def save(rid, report, flowsheet=None, facts=(), costs=(), near=None):
-    warn = [f"value {i.get('value')} not in quote for {i.get('parameter') or i.get('raw_label')}"
-            for i in list(facts) + list(costs) if not _digits_in_quote(i)]
+    warn = [f"value {i.get('value')} not in quote for {i.get('parameter') or i.get('raw_label')} (fix the quote, or mark derived=True with a note)"
+            for i in list(facts) + list(costs) if not i.get("derived") and not value_in_quote(i.get("value"), i["quote"])]
     if warn:
         print("CHECK:", *warn, sep="\n  ")
     missing = []

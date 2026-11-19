@@ -4,11 +4,12 @@ Commands
   init-db        create data/benchmark.db
   check-config   validate the YAML taxonomies
   map-cost       try the cost mapper:  python -m pipeline map-cost initial_capex "Grinding area 200"
-  discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N]
+  discover-edgar find report links on SEC EDGAR -> reports/catalog.csv   [--limit N] [--only q1,q2]
   parse          download + parse one catalog URL:  python -m pipeline parse <url>
   scout          show likely value lines:  python -m pipeline scout <report_id> [capex opex ...]
   export-web     build the web interface (app/web/benchmark.html, app/web/dist/index.html)
   rebuild        recreate data/benchmark.db from every reports/*/extracted/v1.json
+  audit          flag curve outliers, implausible unit costs, ambiguous throughputs, derived values
   brief          key summary tables of a report on one line each:  python -m pipeline brief <report_id> [regex]
   load           validate an extraction and load it:  python -m pipeline load <report_id>
   dedupe         mark re-filed copies of the same report as duplicates (keeps latest)
@@ -73,7 +74,8 @@ def main(argv: list[str]) -> int:
     elif cmd == "discover-edgar":
         from pipeline.discover import edgar
         limit = int(argv[argv.index("--limit") + 1]) if "--limit" in argv else 2000
-        print(edgar.run(limit_per_query=limit))
+        only = argv[argv.index("--only") + 1].split(",") if "--only" in argv else None
+        print(edgar.run(limit_per_query=limit, only=only))
     elif cmd == "classify":
         from pipeline.discover import classify
         status = argv[argv.index("--status") + 1] if "--status" in argv else "new"
@@ -90,6 +92,12 @@ def main(argv: list[str]) -> int:
         from pipeline import export_web
         for f in export_web.write(export_web.build()):
             print(f"wrote {f} ({f.stat().st_size // 1024} KB)")
+    elif cmd == "audit":
+        from pipeline import audit
+        flags = audit.run()
+        for f in flags:
+            print(f)
+        print(f"{len(flags)} flag(s)")
     elif cmd == "rebuild":
         from pipeline.extract.load import REPORTS, load_report
         DEFAULT_DB.unlink(missing_ok=True)

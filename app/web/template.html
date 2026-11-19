@@ -8,7 +8,7 @@
 :root {
   --bg: #eef2f3; --surface: #ffffff; --sunk: #e3e9eb; --ink: #15212a; --muted: #5a6872; --line: #d3dce0;
   --accent: #1d5fa6; --accent-ink: #ffffff; --accent-soft: #dbe7f5;
-  --au: #a87a12; --cu: #b0532a; --ni: #2f8461; --ok: #2f8461; --warn: #a4660e;
+  --au: #a87a12; --cu: #b0532a; --ni: #2f8461; --fe: #4a6a8f; --ok: #2f8461; --warn: #a4660e;
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
   --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -17,11 +17,11 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #0e1518; --surface: #152026; --sunk: #1b2a31; --ink: #e4ecef; --muted: #93a4ad; --line: #283840;
   --accent: #74a9ec; --accent-ink: #0e1518; --accent-soft: #1f3348;
-  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --ok: #67c497; --warn: #e2a64b; color-scheme: dark } }
+  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --fe: #92afd3; --ok: #67c497; --warn: #e2a64b; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #0e1518; --surface: #152026; --sunk: #1b2a31; --ink: #e4ecef; --muted: #93a4ad; --line: #283840;
   --accent: #74a9ec; --accent-ink: #0e1518; --accent-soft: #1f3348;
-  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --ok: #67c497; --warn: #e2a64b; color-scheme: dark }
+  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --fe: #92afd3; --ok: #67c497; --warn: #e2a64b; color-scheme: dark }
 
 * { box-sizing: border-box }
 [hidden] { display: none !important }
@@ -77,7 +77,7 @@ table.grid tbody tr { cursor: pointer }
 table.grid tbody tr:hover { background: var(--sunk) }
 .pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 1px 8px; border-radius: 999px; background: var(--sunk); white-space: nowrap }
 .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block }
-.Au { background: var(--au) } .Cu { background: var(--cu) } .Ni { background: var(--ni) }
+.Au { background: var(--au) } .Cu { background: var(--cu) } .Ni { background: var(--ni) } .Fe { background: var(--fe) }
 .stage-op { color: var(--ok) } .stage-st { color: var(--accent) }
 
 /* estimator */
@@ -256,7 +256,7 @@ function renderFilters() {
   const fams = [...new Set(P.flatMap(p => p.families))].sort((a, b) => famLabel(a).localeCompare(famLabel(b)));
   const chip = (grp, val, text) => `<button class="chip" data-g="${grp}" data-v="${val}" aria-pressed="${state[grp] === val}">${text}</button>`;
   $("#filters").innerHTML = `
-    <div class="group"><span class="lab">Commodity</span>${chip("com", "", "All")}${chip("com", "Au", '<span class="dot Au"></span> Gold')}${chip("com", "Cu", '<span class="dot Cu"></span> Copper')}${chip("com", "Ni", '<span class="dot Ni"></span> Nickel')}</div>
+    <div class="group"><span class="lab">Commodity</span>${chip("com", "", "All")}${chip("com", "Au", '<span class="dot Au"></span> Gold')}${chip("com", "Cu", '<span class="dot Cu"></span> Copper')}${chip("com", "Ni", '<span class="dot Ni"></span> Nickel')}${chip("com", "Fe", '<span class="dot Fe"></span> Iron ore')}</div>
     <div class="group"><span class="lab">Stage</span>${chip("stage", "", "All")}${chip("stage", "st", "Studies")}${chip("stage", "op", "Operating")}</div>
     <div class="group"><span class="lab">Flowsheet</span><select class="sel" id="f-fam" aria-label="Flowsheet"><option value="">All flowsheets</option>${fams.map(f => `<option value="${f}" ${state.fam === f ? "selected" : ""}>${esc(famLabel(f))}</option>`).join("")}</select></div>`;
   $("#filters").querySelectorAll(".chip").forEach(b => b.onclick = () => { state[b.dataset.g] = b.dataset.v; save(); renderExplore(); });
@@ -280,8 +280,8 @@ function renderChart(rows) {
   const pts = pool.map(p => [p.metrics[pr.x].value, p.metrics[pr.y].value, p]);
   const fit = pr.fit && state.fit ? powerFit(pts) : null;
   const ink = css("--ink"), muted = css("--muted"), line = css("--line");
-  const colors = { Au: css("--au"), Cu: css("--cu"), Ni: css("--ni") };
-  const series = ["Au", "Cu", "Ni"].map(c => ({
+  const colors = { Au: css("--au"), Cu: css("--cu"), Ni: css("--ni"), Fe: css("--fe") };
+  const series = ["Au", "Cu", "Ni", "Fe"].map(c => ({
     name: c, type: "scatter", symbolSize: 13,
     data: pts.filter(p => p[2].commodity === c).map(p => ({ value: [p[0], p[1]], name: p[2].name, id: p[2].id,
       itemStyle: OPERATING(p[2]) ? { color: "transparent", borderColor: colors[c], borderWidth: 2.5 } : { color: colors[c] } })),
@@ -314,7 +314,7 @@ function renderChart(rows) {
   $("#fitline").innerHTML = fit
     ? `Fit: <b>y = ${fmt(10 ** fit.a, 3)} · x<sup>${fmt(fit.b, 2)}</sup></b> · R² <b>${fmt(fit.r2, 2)}</b> · n = <b>${fit.n}</b> · dashed lines ±1 standard error of prediction`
     : pr.fit && state.fit ? `Not enough projects for a fit (${pts.length} with data; need 3).` : `${pts.length} projects with data.`;
-  const parts = [`<span><i class="Au"></i>Gold</span><span><i class="Cu"></i>Copper</span><span><i class="Ni"></i>Nickel</span>`,
+  const parts = [`<span><i class="Au"></i>Gold</span><span><i class="Cu"></i>Copper</span><span><i class="Ni"></i>Nickel</span><span><i class="Fe"></i>Iron ore</span>`,
     `<span><i style="background:var(--muted)"></i>Study</span><span><i class="hollow"></i>Operating</span>`];
   if (hidden) parts.push(`<span>${hidden} operating mine${hidden > 1 ? "s" : ""} hidden: they report sustaining capital, not initial CAPEX</span>`);
   parts.push(`<span>All costs escalated to ${Y} US$</span>`);

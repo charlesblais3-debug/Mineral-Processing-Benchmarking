@@ -44,8 +44,10 @@
    "page": 28,
    "statistic": "design",
    "context": {
-    "note": "midpoint of the stated 120–140 µm"
-   }
+    "note": "midpoint of the stated 120–140 µm",
+    "derived_note": "midpoint of stated 120–140 µm"
+   },
+   "derived": true
   },
   {
    "parameter": "recovery_lom",

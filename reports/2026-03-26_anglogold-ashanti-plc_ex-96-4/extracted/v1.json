@@ -140,7 +140,11 @@
    "page": 67,
    "quote": "Total AISC USD/oz 1 299",
    "metal": "Au",
-   "statistic": "lom_average"
+   "statistic": "lom_average",
+   "derived": true,
+   "context": {
+    "derived_note": "stated as \"1 299\" (space thousands separator)"
+   }
   }
  ],
  "costs": [
@@ -169,7 +173,7 @@
    "raw_label": "Underground Capital Development and Drilling",
    "value": 190,
    "page": 66,
-   "quote": "Underground Capital Development and Dri",
+   "quote": "Underground Capital Development and Drilling 190",
    "multiplier": "M",
    "l1": "mining",
    "l2": "ug_development"

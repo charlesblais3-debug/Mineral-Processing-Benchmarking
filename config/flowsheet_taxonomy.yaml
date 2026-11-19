@@ -18,13 +18,14 @@ unit_ops:
   ball_mill:          { label: Ball mill, group: comminution }
   vertical_mill:      { label: Vertical / stirred mill, group: comminution }
   regrind:            { label: Regrind, group: comminution }
+  screening:          { label: Crushing & screening to product (no beneficiation), group: comminution }
   # Pre-concentration
   ore_sorting:        { label: Ore sorting, group: preconcentration }
   dms:                { label: Dense media separation, group: preconcentration }
   # Concentration
   gravity:            { label: Gravity concentration, group: concentration }
   flotation:          { label: Flotation (any cell type or stage), group: concentration }
-  magnetic_sep:       { label: Magnetic separation, group: concentration }
+  magnetic_sep:       { label: Magnetic separation (LIMS / WHIMS), group: concentration }
   # Leach & recovery
   cil:                { label: Carbon-in-leach, group: leach }
   cip:                { label: Carbon-in-pulp, group: leach }
@@ -48,6 +49,8 @@ unit_ops:
   conc_filter:        { label: Concentrate filtration, group: dewatering }
   tails_thickener:    { label: Tailings thickening, group: dewatering }
   tails_filter:       { label: Tailings filtration (dry stack), group: dewatering }
+  # Agglomeration
+  pelletizing:        { label: Pelletizing / induration, group: agglomeration }
 
 # Family rules: a report gets EVERY family whose rule matches; more specific tags then
 # replace the general ones they contain (see `replaces`).
@@ -85,6 +88,12 @@ families:
   - key: magnetic
     label: Magnetic separation
     rule: { any: [magnetic_sep] }
+  - key: crush_screen
+    label: Crush & screen (DSO)
+    rule: { any: [screening], none: [gravity, flotation, magnetic_sep, dms, cil, cip, tank_leach, heap_leach, hpal, rkef] }
+  - key: pelletizing
+    label: Pelletizing
+    rule: { any: [pelletizing] }
 
 # Comminution circuit tag: first matching rule wins.
 comminution_circuits:

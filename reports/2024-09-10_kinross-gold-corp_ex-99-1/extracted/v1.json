@@ -284,7 +284,9 @@
    "l2": "power",
    "part_of": "Processing total",
    "multiplier": "",
-   "basis_unit": "per_t_milled"
+   "basis_unit": "per_t_milled",
+   "derived": true,
+   "derived_note": "report prints \"3,93\" (decimal comma typo for 3.93)"
   },
   {
    "cost_type": "opex",

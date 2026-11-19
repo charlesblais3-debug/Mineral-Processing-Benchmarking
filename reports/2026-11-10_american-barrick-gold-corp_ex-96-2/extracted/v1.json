@@ -57,8 +57,10 @@
    "page": 143,
    "statistic": "design",
    "context": {
-    "mills": "SAG 9.0 + ball 16.4 + SAG2 23.0 MW (main ore grinding only)"
-   }
+    "mills": "SAG 9.0 + ball 16.4 + SAG2 23.0 MW (main ore grinding only)",
+    "derived_note": "sum of stated mills: 9,000 + 16,400 + 23,000 kW"
+   },
+   "derived": true
   },
   {
    "parameter": "metal_price",

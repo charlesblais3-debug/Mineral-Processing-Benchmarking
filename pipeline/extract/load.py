@@ -47,6 +47,35 @@ def quote_on_page(report_dir: Path, page: int, quote: str, slack: int = 1) -> bo
     return False
 
 
+def value_in_quote(value, quote: str) -> bool:
+    """True if the number appears in the quote as written (allowing thousands separators, spaces and a
+    x1000 / x1e6 scale change such as US$2.04 billion -> 2,040 MUSD). Derived values must say so."""
+    if not isinstance(value, (int, float)):
+        return True
+    q = re.sub(r"(?<=\d) ?, ?(?=\d{3}(?!\d))", "", quote)   # 1,234,567 / "2 , 040" -> 1234567 / 2040
+    q = q.replace(" . ", ".").replace(" .", ".")             # "37 . 3" style spacing in some PDFs
+    nums = {float(n) for n in re.findall(r"\d+(?:\.\d+)?", q)}
+    v = abs(value)
+    for scale in (1, 1e3, 1e-3, 1e6, 1e-6, 1e-2):   # 1e-2: 97.5 % stated as 0.975
+        target = v * scale
+        if any(abs(n - target) <= max(1e-9, abs(target) * 1e-6) for n in nums):
+            return True
+    return False
+
+
+CURRENCY_MARKERS = {"USD": r"US\$|USD|US dollars", "CAD": r"C\$|CAD|CA\$|Canadian", "AUD": r"A\$|AU\$|AUD|Australian dollar"}
+
+
+def currency_conflict(currency: str | None, quote: str) -> str | None:
+    """Name of another currency the quote explicitly uses, when it differs from the item's currency."""
+    if not currency:
+        return None
+    for cur, pat in CURRENCY_MARKERS.items():
+        if cur != currency and re.search(pat, quote) and not re.search(CURRENCY_MARKERS.get(currency, "^$"), quote):
+            return cur
+    return None
+
+
 def normalize(param: dict, value: float, unit: str) -> tuple[float | None, str]:
     target = param["unit"]
     if unit == target:
@@ -97,6 +126,8 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     # ---- flowsheet
     fs = data.get("flowsheet")
     if fs:
+        if not (fs.get("quote") and fs.get("page") and quote_on_page(folder, fs["page"], fs["quote"])):
+            problems.append("flowsheet: quote not found on its page")
         commodities = [info.get("primary_commodity")] + info.get("by_products", [])
         try:
             derived = taxonomy.derive_flowsheet(fs["unit_ops"], [c for c in commodities if c])
@@ -125,6 +156,9 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         if not verified:
             status = "needs_review"
             problems.append(f"fact {key}: quote not found on page {f['page']}")
+        if not f.get("derived") and not value_in_quote(value, f["quote"]):
+            status = "needs_review"
+            problems.append(f"fact {key}: value {value} not in its quote (mark derived: true with a note if computed)")
         rng = p.get("range")
         if rng and vnorm is not None and not (rng[0] <= vnorm <= rng[1]):
             status = "needs_review"
@@ -171,6 +205,13 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         status = "auto_accepted" if verified and conf >= 0.6 else "needs_review"
         if not verified:
             problems.append(f"cost '{c['raw_label']}': quote not found on page {c['page']}")
+        if not c.get("derived") and not value_in_quote(c["value"], c["quote"]):
+            status = "needs_review"
+            problems.append(f"cost '{c['raw_label']}': value {c['value']} not in its quote")
+        other = currency_conflict(c.get("currency", info.get("currency")), c["quote"])
+        if other:
+            status = "needs_review"
+            problems.append(f"cost '{c['raw_label']}': quote is in {other} but the item is {c.get('currency', info.get('currency'))}")
         group = f"{c['cost_type']}/{c.get('basis_unit', 'total')}"
         parents[f"{group}/{c['raw_label']}"] = value
         if c.get("outside_total"):                # listed by the report but outside its total

@@ -44,8 +44,10 @@
    "page": 36,
    "statistic": "design",
    "context": {
-    "note": "midpoint of the stated 2.8–3.0 Mt/yr; original design 2.35 Mt/yr"
-   }
+    "note": "midpoint of the stated 2.8–3.0 Mt/yr; original design 2.35 Mt/yr",
+    "derived_note": "midpoint of stated 2.8–3.0 Mt/yr"
+   },
+   "derived": true
   },
   {
    "parameter": "bwi_ball",

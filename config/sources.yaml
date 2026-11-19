@@ -12,7 +12,7 @@ polite_crawling:
 edgar:
   enabled: true
   max_requests_per_second: 8      # SEC limit is 10
-  sic_codes: [1000, 1040, 1090, 1400, 6795]
+  sic_codes: [1000, 1011, 1040, 1090, 1400, 3312, 6795]
   # Named full-text queries (EDGAR matches quoted phrases exactly). Scoped to v1:
   # gold CIL/CIP/gravity, copper flotation, nickel sulphide flotation.
   queries:
@@ -25,6 +25,11 @@ edgar:
     ni43101_gold_cip:    '"NI 43-101" "technical report" gold "carbon-in-pulp"'
     ni43101_copper_flot: '"NI 43-101" "technical report" copper flotation concentrate'
     ni43101_nickel_flot: '"NI 43-101" "technical report" nickel flotation concentrate'
+    trs_nickel_laterite: '"technical report summary" nickel laterite'
+    ni43101_nickel_laterite: '"NI 43-101" "technical report" nickel laterite'
+    trs_iron_ore:        '"technical report summary" "iron ore" concentrate'
+    trs_taconite:        '"technical report summary" taconite pellets'
+    ni43101_iron_ore:    '"NI 43-101" "technical report" "iron ore" concentrate'
 
 company_sites:
   enabled: true
@@ -44,6 +49,6 @@ inbox:
 
 # v1 scope (agreed): gold CIL/gravity first, then copper flotation, then nickel sulphide.
 scope_v1:
-  commodities: [Au, Cu, Ni]
+  commodities: [Au, Cu, Ni, Fe]
   study_levels: [PEA, PFS, FS, operating]
   report_years_min: 2012

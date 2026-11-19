@@ -73,3 +73,24 @@ def test_escalation_blend_is_weighted_ratio():
     ppi = {"A": {2019: 100, 2025: 150}, "B": {2019: 100, 2025: 110}}
     assert abs(escalation_factor(ppi, {"A": 0.5, "B": 0.5}, 2019, 2025) - 1.30) < 1e-9
     assert escalation_factor(ppi, {"A": 1.0}, 2018, 2025) is None
+
+
+def test_value_in_quote_forms():
+    from pipeline.extract.load import value_in_quote
+    assert value_in_quote(85826, "Mining 6.2% $81,017 $4,809 $85,826")
+    assert value_in_quote(415.2, "Open Pit Mining 415.2 192.7 607.9")
+    assert not value_in_quote(192.7 * 2, "Open Pit Mining 415.2 192.7 607.9")
+    assert value_in_quote(2780, "an after-tax NPV of $2,780M at 5%")
+    assert value_in_quote(2040, "an NPV ( 8 % ) of US $ 2 , 040 million")
+    assert value_in_quote(2040, "is US$2.04 billion")          # x1000 scale change
+    assert value_in_quote(97.5, "Recovery 0.975 0.975")          # fraction -> percent
+    assert value_in_quote(-18.995, "After-Tax NPV at 5% (18,995) 722,205")
+    assert not value_in_quote(34, "a concentrator throughput increase to 33–35 Mt/a")  # midpoint must be marked derived
+
+
+def test_currency_conflict():
+    from pipeline.extract.load import currency_conflict
+    assert currency_conflict("USD", "Mining C$/t mined 2.22") == "CAD"
+    assert currency_conflict("CAD", "Mining C$/t mined 2.22") is None
+    assert currency_conflict("USD", "Process Plant 910.6") is None
+    assert currency_conflict("AUD", "AU$ 1,600 M construction") is None

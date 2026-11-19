@@ -40,8 +40,10 @@
    "page": 25,
    "statistic": "design",
    "context": {
-    "note": "midpoint of the stated nominal 11–12 Mt/a after the 2013 MOPU expansion; actual 9–10 Mt/a"
-   }
+    "note": "midpoint of the stated nominal 11–12 Mt/a after the 2013 MOPU expansion; actual 9–10 Mt/a",
+    "derived_note": "midpoint of stated nominal 11–12 Mt/a"
+   },
+   "derived": true
   },
   {
    "parameter": "head_grade_lom",
