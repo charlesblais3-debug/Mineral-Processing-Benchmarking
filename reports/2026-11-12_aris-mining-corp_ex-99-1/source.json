@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1964504/000110465926126305/tm2629403d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Aris Mining Corp  (ARIS)",
+  "cik": "1964504",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-11-12",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "Toroparu",
+  "commodity": "",
+  "report_id": "2026-11-12_aris-mining-corp_ex-99-1",
+  "sha256": "0fe9bd35b4794d5673d2b0b04f37ae7c2b1fd7c8bc4c7517d4cc4dc3b5ae090f",
+  "bytes": 3172792,
+  "format": "html",
+  "pages": 203,
+  "parsed_on": "2026-11-19"
+}

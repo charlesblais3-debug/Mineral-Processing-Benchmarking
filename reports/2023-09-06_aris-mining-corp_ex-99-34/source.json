@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1964504/000119312523229367/d460434dex9934.htm",
+  "source": "edgar",
+  "issuer": "Aris Mining Corp  (ARMN, CLGDF)",
+  "cik": "1964504",
+  "form": "40FR12B",
+  "exhibit": "EX-99.34",
+  "filed": "2023-09-06",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Soto Norte",
+  "commodity": "",
+  "report_id": "2023-09-06_aris-mining-corp_ex-99-34",
+  "sha256": "60d733afd5cf664b691b852ea401d8c6064a12d043acf0ffc287a93afbe34561",
+  "bytes": 8012283,
+  "format": "html",
+  "pages": 424,
+  "parsed_on": "2026-11-19"
+}

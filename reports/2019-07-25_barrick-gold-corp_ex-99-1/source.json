@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312519201454/d764298dex991.htm",
+  "source": "edgar",
+  "issuer": "BARRICK GOLD CORP  (GOLD)",
+  "cik": "756894",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2019-07-25",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Massawa",
+  "commodity": "",
+  "report_id": "2019-07-25_barrick-gold-corp_ex-99-1",
+  "sha256": "2c52669c76f900e27db8a5b30e03a225102d86dc51a63db53d7a1c32613f8a0d",
+  "bytes": 5718457,
+  "format": "html",
+  "pages": 403,
+  "parsed_on": "2026-11-19"
+}

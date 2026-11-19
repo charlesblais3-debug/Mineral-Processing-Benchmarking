@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1434614/000119312521357942/d235598dex991.htm",
+  "source": "edgar",
+  "issuer": "SANDSTORM GOLD LTD  (SAND)",
+  "cik": "1434614",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-12-15",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Hod Maden",
+  "commodity": "",
+  "report_id": "2021-12-15_sandstorm-gold-ltd_ex-99-1",
+  "sha256": "67ba12b90e570fca1144c49d08185def8203bfdead5ef334b3a0355634cb4218",
+  "bytes": 11088356,
+  "format": "html",
+  "pages": 589,
+  "parsed_on": "2026-11-19"
+}

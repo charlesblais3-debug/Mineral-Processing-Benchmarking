@@ -1,0 +1,24 @@
+# Company websites the crawler visits to find technical reports that are not on SEC EDGAR
+# (mostly TSX/TSXV-only issuers). Add a line to cover a new company; the crawler follows
+# robots.txt and only reads investor / project / technical-report pages.
+#   commodity: main v1 commodity (Au, Cu, Ni) - used to prioritise extraction
+#   projects:  names to look for in link text (optional, helps label results)
+
+issuers:
+  # Gold
+  - { name: Artemis Gold,          site: https://www.artemisgoldinc.com/,  commodity: Au, projects: [Blackwater] }
+  - { name: B2Gold,                site: https://www.b2gold.com/,           commodity: Au, projects: [Goose, Back River, Fekola, Otjikoto] }
+  - { name: Calibre Mining,        site: https://www.calibremining.com/,    commodity: Au, projects: [Valentine] }
+  - { name: Skeena Resources,      site: https://skeenaresources.com/,      commodity: Au, projects: [Eskay Creek] }
+  - { name: Osisko Development,    site: https://osiskodev.com/,            commodity: Au, projects: [Cariboo] }
+  # Copper
+  - { name: Ivanhoe Mines,         site: https://www.ivanhoemines.com/,     commodity: Cu, projects: [Kamoa-Kakula, Kipushi, Platreef] }
+  - { name: Lundin Mining,         site: https://lundinmining.com/,         commodity: Cu, projects: [Josemaria, Vicuña, Candelaria, Chapada] }
+  - { name: Capstone Copper,       site: https://capstonecopper.com/,       commodity: Cu, projects: [Mantoverde, Pinto Valley, Santo Domingo] }
+  - { name: Foran Mining,          site: https://foranmining.com/,          commodity: Cu, projects: [McIlvenna Bay] }
+  - { name: Seabridge Gold,        site: https://www.seabridgegold.com/,    commodity: Cu, projects: [KSM] }
+  - { name: Northisle Copper and Gold, site: https://northisle.ca/,         commodity: Cu, projects: [North Island] }
+  # Nickel
+  - { name: Canada Nickel,         site: https://canadanickel.com/,         commodity: Ni, projects: [Crawford] }
+  - { name: Talon Metals,          site: https://talonmetals.com/,          commodity: Ni, projects: [Tamarack] }
+  - { name: FPX Nickel,            site: https://fpxnickel.com/,            commodity: Ni, projects: [Baptiste] }

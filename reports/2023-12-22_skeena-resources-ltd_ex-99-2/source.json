@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713748/000110465923128842/tm2333211d1_ex99-2.htm",
+  "source": "edgar",
+  "issuer": "Skeena Resources Ltd  (SKE)",
+  "cik": "1713748",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2023-12-22",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Eskay Creek",
+  "commodity": "",
+  "report_id": "2023-12-22_skeena-resources-ltd_ex-99-2",
+  "sha256": "5da5e214db6f094acbc928a6e93bf2c0263813e123040e8ea8cc61149d328874",
+  "bytes": 3259875,
+  "format": "html",
+  "pages": 168,
+  "parsed_on": "2026-11-19"
+}

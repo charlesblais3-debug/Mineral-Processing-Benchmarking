@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853860/000162828021023568/boaesperancani43-101techni.htm",
+  "source": "edgar",
+  "issuer": "Ero Copper Corp.  (ERO)",
+  "cik": "1853860",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-11-16",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Boa Esperanca",
+  "commodity": "",
+  "report_id": "2021-11-16_ero-copper-corp_ex-99-1",
+  "sha256": "33cb069595ea6cd194e113cd8f10bb9789eb42d40f802e0d095a074f660a3fe1",
+  "bytes": 5848802,
+  "format": "html",
+  "pages": 296,
+  "parsed_on": "2026-11-19"
+}

@@ -9,8 +9,10 @@ Commands
   scout          show likely value lines:  python -m pipeline scout <report_id> [capex opex ...]
   export-web     build the web interface (app/web/benchmark.html, app/web/dist/index.html)
   rebuild        recreate data/benchmark.db from every reports/*/extracted/v1.json
+  brief          key summary tables of a report on one line each:  python -m pipeline brief <report_id> [regex]
   load           validate an extraction and load it:  python -m pipeline load <report_id>
   dedupe         mark re-filed copies of the same report as duplicates (keeps latest)
+  discover-sites crawl company websites in config/issuers.yaml for report PDFs   [name ...]
   classify       sort catalog rows into is_report / not_report / unsure   [--status new]
 """
 from __future__ import annotations
@@ -96,12 +98,18 @@ def main(argv: list[str]) -> int:
             res = load_report(f.parent.parent.name, con)
             flag = "  ✗ " + "; ".join(res["problems"]) if res["problems"] else ""
             print(f"{res['report']:<48} facts={res['facts']:<3} costs={res['costs']:<3}{flag}")
+    elif cmd == "brief" and len(argv) >= 2:
+        from pipeline.extract.brief import brief
+        print(brief(argv[1], argv[2] if len(argv) > 2 else None))
     elif cmd == "load" and len(argv) == 2:
         from pipeline.extract.load import load_report
         res = load_report(argv[1])
         for p in res.pop("problems"):
             print("  ✗", p)
         print(res)
+    elif cmd == "discover-sites":
+        from pipeline.discover import company_sites
+        print(company_sites.run(argv[1:] or None))
     elif cmd == "dedupe":
         from pipeline.discover import dedupe
         print(dedupe.run())

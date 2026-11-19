@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1203464/000119312518304672/d632046dex991.htm",
+  "source": "edgar",
+  "issuer": "IAMGOLD CORP  (IAG)",
+  "cik": "1203464",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-10-23",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Boto",
+  "commodity": "",
+  "report_id": "2018-10-23_iamgold-corp_ex-99-1",
+  "sha256": "baefc7d24ac8ac6860b1d7aa3b937bb37778fd08ec990de09b132e8d2871c2cc",
+  "bytes": 8465792,
+  "format": "html",
+  "pages": 435,
+  "parsed_on": "2026-11-19"
+}

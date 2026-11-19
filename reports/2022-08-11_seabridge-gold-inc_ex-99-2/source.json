@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1231346/000121390022046848/ea164116ex99-2_seabridge.htm",
+  "source": "edgar",
+  "issuer": "SEABRIDGE GOLD INC  (SA)",
+  "cik": "1231346",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2022-08-11",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "KSM",
+  "commodity": "",
+  "report_id": "2022-08-11_seabridge-gold-inc_ex-99-2",
+  "sha256": "ec6ff885b3e870c24b7dccad9d3349a6e3e51d33ef03a8e97de8603dc601790b",
+  "bytes": 6125715,
+  "format": "html",
+  "pages": 342,
+  "parsed_on": "2026-11-19"
+}

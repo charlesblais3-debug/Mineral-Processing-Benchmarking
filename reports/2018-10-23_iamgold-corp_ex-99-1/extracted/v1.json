@@ -1,0 +1,331 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Boto",
+  "title": "NI 43-101 Technical Report, Boto Project Feasibility Study, Senegal",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2018-09-30",
+  "effective_date_quote": "Effective Date of Report: 30 September 2018",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Senegal",
+  "region": "Kédougou",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2018,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "tank_leach",
+   "cip",
+   "elution_ew"
+  ],
+  "quote": "The grinding circuit is a SSAG type, which consists of a closed circuit single stage SAG mill",
+  "page": 296
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.75,
+   "unit": "Mt/a",
+   "quote": "Plant Throughput tpa 2,750,000",
+   "page": 164,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92.0,
+   "unit": "%",
+   "quote": "Plant Availability % 92.0",
+   "page": 299,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.71,
+   "unit": "g/t",
+   "quote": "Average head grade 1.71 g/t Au",
+   "page": 32,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.5,
+   "unit": "%",
+   "quote": "Average gold recovery 89.5%",
+   "page": 32,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 12.8,
+   "unit": "years",
+   "quote": "Production life (processing) 12.8 years",
+   "page": 32
+  },
+  {
+   "parameter": "cwi",
+   "value": 13.5,
+   "unit": "kWh/t",
+   "quote": "Crushing Work Index (CWi, ave) kWh/t 13.5",
+   "page": 299,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 18.6,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (BWi, ave) kWh/t 18.6",
+   "page": 299,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill",
+    "statistic_note": "design criteria, average of testwork"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 50.0,
+   "unit": "-",
+   "quote": "SMC Axb 1 (ave) 50.0",
+   "page": 299,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.433,
+   "unit": "g",
+   "quote": "Bond Abrasion Index (Ai, ave) 0.433",
+   "page": 299,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Grind Size µm 75",
+   "page": 299,
+   "statistic": "design"
+  },
+  {
+   "parameter": "leach_residence_h",
+   "value": 34.4,
+   "unit": "h",
+   "quote": "Leach Circuit Residence Time hrs 34.4",
+   "page": 299,
+   "statistic": "design"
+  },
+  {
+   "parameter": "aisc",
+   "value": 753,
+   "unit": "USD/oz",
+   "quote": "AISC $753/oz Au",
+   "page": 33,
+   "metal": "Au"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 23.0,
+   "unit": "%",
+   "quote": "IRR 23.0%",
+   "page": 33
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 260.9,
+   "unit": "MUSD",
+   "quote": "NPV (6%) $260.9 M",
+   "page": 33,
+   "context": {
+    "discount_rate_pct": 6
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.4,
+   "unit": "years",
+   "quote": "Payback 3.4 years",
+   "page": 33
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 62.1,
+   "quote": "Mining $62.1",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 19.0,
+   "quote": "Infrastructure $19.0",
+   "page": 31,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ore Handling & Processing",
+   "value": 57.4,
+   "quote": "Ore Handling & Processing $57.4",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings & Water Management",
+   "value": 16.6,
+   "quote": "Tailings & Water Management $16.6",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-Total Direct Costs",
+   "value": 155.1,
+   "quote": "Sub-Total Direct Costs $155.1",
+   "page": 31,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction In-directs",
+   "value": 49.0,
+   "quote": "Construction In-directs $49.0",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 19.2,
+   "quote": "Owner’s Costs $19.2",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 24.3,
+   "quote": "Contingency $24.3",
+   "page": 31,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Additional Indirect Costs",
+   "value": 6.8,
+   "quote": "Additional Indirect Costs $6.8",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital Cost",
+   "value": 254.4,
+   "quote": "Initial Capital Cost $254.4",
+   "page": 31,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Capital",
+   "value": 42.9,
+   "quote": "Mining Capital ($M) $42.90",
+   "page": 376,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Miscellaneous Mine Capital",
+   "value": 2.68,
+   "quote": "Miscellaneous Mine Capital ($M) $2.68",
+   "page": 376,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TMF Capital",
+   "value": 20.44,
+   "quote": "TMF Capital ($M) $20.44",
+   "page": 376,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 66.02,
+   "quote": "Total $66.02 $11.21",
+   "page": 376,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 13.01,
+   "quote": "Mining $456 $13.01/t",
+   "page": 31,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 15.04,
+   "quote": "Processing $528 $15.04/t",
+   "page": 31,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.22,
+   "quote": "G&A $148 $4.22/t",
+   "page": 31,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 32.27,
+   "quote": "Cost $1,132 $32.27/t",
+   "page": 31,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
