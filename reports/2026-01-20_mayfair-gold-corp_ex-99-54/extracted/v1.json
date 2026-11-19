@@ -1,0 +1,387 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Fenn-Gib",
+  "title": "Fenn-Gib Gold Project NI 43-101 Technical Report and Pre-Feasibility Study",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2025-12-19",
+  "effective_date_quote": "Effective Date: December 19, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "ball_mill",
+   "gravity",
+   "flotation",
+   "regrind",
+   "tank_leach",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "Flotation & Regrind 17.8 0.0 17.8",
+  "page": 272
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4800,
+   "unit": "t/d",
+   "quote": "Plant capacity Mt/a 1.8 t/d 4,800",
+   "page": 212,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.8,
+   "unit": "Mt/a",
+   "quote": "Plant capacity Mt/a 1.8",
+   "page": 212,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Grinding availability % 92",
+   "page": 212,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 14.3,
+   "unit": "years",
+   "quote": "Mine Life years 14.3",
+   "page": 39
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.29,
+   "unit": "g/t",
+   "quote": "Mill Head Grade (Au) g/t 1.29",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.3,
+   "unit": "%",
+   "quote": "Mill Recovery Rate % 88.3",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 19.0,
+   "unit": "kWh/t",
+   "quote": "Bond ball work index (BBWi), design kWh/t 19.0",
+   "page": 212,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 21.9,
+   "unit": "kWh/t",
+   "quote": "Bond rod mill work index (BRWi), design kWh/t 21.9",
+   "page": 212,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 30.9,
+   "unit": "kWh/t",
+   "quote": "Bond crushing work index (CWi), design kWh/t 30.9",
+   "page": 212,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 22.7,
+   "unit": "-",
+   "quote": "JK AxB, design — 22.7",
+   "page": 212,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "Grinding product size, P 80 µm 106",
+   "page": 213,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 13,
+   "unit": "µm",
+   "quote": "Regrind product size, P 80 µm 13",
+   "page": 213,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3100,
+   "unit": "USD/oz",
+   "quote": "Gold Price US$/oz 3,100",
+   "page": 39,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.35,
+   "unit": "CAD/USD",
+   "quote": "Exchange Rate C$/US$ 1.35",
+   "page": 39,
+   "context": {
+    "pair": "CAD/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 651.7,
+   "unit": "MCAD",
+   "quote": "Post-Tax NPV @ 5% $M 651.7",
+   "page": 40,
+   "context": {
+    "discount_rate_pct": 5,
+    "currency": "CAD"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 24.1,
+   "unit": "%",
+   "quote": "Post-Tax IRR % 24.1%",
+   "page": 40
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.7,
+   "unit": "years",
+   "quote": "Post-Tax Payback years 2.7",
+   "page": 40
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1203,
+   "unit": "USD/oz",
+   "quote": "Cash Costs 1 US$/oz Au 1,203",
+   "page": 40,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1292,
+   "unit": "USD/oz",
+   "quote": "All-In Sustaining Cost (AISC) 2 US$/oz Au 1,292",
+   "page": 40,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 31.4,
+   "quote": "Mining 31.4 24.4 55.8",
+   "page": 36,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing",
+   "value": 21.6,
+   "quote": "Crushing 21.6 1.1 22.7",
+   "page": 36,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 114.7,
+   "quote": "Process Plant 114.7 1.4 116.1",
+   "page": 36,
+   "multiplier": "M",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On Site Infrastructure",
+   "value": 72.4,
+   "quote": "On Site Infrastructure 72.4 14.6 87.0",
+   "page": 36,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off Site Infrastructure",
+   "value": 15.6,
+   "quote": "Off Site Infrastructure 15.6 13.3 28.9",
+   "page": 36,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 255.8,
+   "quote": "Total Direct Costs 255.8 54.7 310.5",
+   "page": 36,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Preliminaries",
+   "value": 35.9,
+   "quote": "Project Preliminaries 35.9 0.0 35.9",
+   "page": 36,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Delivery",
+   "value": 30.7,
+   "quote": "Project Delivery 30.7 2.5 33.3",
+   "page": 36,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 61.7,
+   "quote": "Owner’s Costs 61.7 3.7 65.3",
+   "page": 36,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Indirect Costs",
+   "value": 128.3,
+   "quote": "Total Indirect Costs 128.3 6.2 134.5",
+   "page": 36,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 65.9,
+   "quote": "Contingency 65.9 0.0 65.9",
+   "page": 36,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost",
+   "value": 450.0,
+   "quote": "Total Capital Cost 450.0 60.9 510.9",
+   "page": 36,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital Cost",
+   "value": 60.9,
+   "quote": "Sustaining Capital Cost $M 60.9",
+   "page": 40,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Capital Cost",
+   "value": 49.4,
+   "quote": "Closure Capital Cost $M 49.4",
+   "page": 40,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 30.66,
+   "quote": "Mining Cost $/t processed 30.66",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 19.22,
+   "quote": "Processing Cost $/t processed 19.22",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 6.82,
+   "quote": "G&A Cost $/t processed 6.82",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining and Royalties",
+   "value": 2.73,
+   "quote": "Refining and Royalties $/t processed 2.73",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "l2": "tc_rc"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 59.43,
+   "quote": "Total Operating Cost $/t processed 59.43",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost per t mined",
+   "value": 4.53,
+   "quote": "Mining Cost $/t mined 4.53",
+   "page": 40,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
