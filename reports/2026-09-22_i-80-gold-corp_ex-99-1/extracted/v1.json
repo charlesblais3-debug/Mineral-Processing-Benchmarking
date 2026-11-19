@@ -1,0 +1,193 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Granite Creek",
+  "title": "SEC Technical Report Summary Pre-Feasibility Study Granite Creek",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2026-03-31",
+  "effective_date_quote": "Effective Date: March 31, 2026",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "note": "Underground ore toll-treated in an off-site autoclave; costs are LOM totals.",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "pox"
+  ],
+  "quote": "Autoclave Capex Allocation US$ M 49.33",
+  "page": 31
+ },
+ "facts": [
+  {
+   "parameter": "bwi_ball",
+   "value": 15.9,
+   "unit": "kWh/t",
+   "quote": "SPZCOM1 105 2,446 80 14.4 15.9",
+   "page": 155,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 105,
+    "ore_type": "SPZCOM1",
+    "note": "metric value; imperial 14.4 kWh/st"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 19.8,
+   "unit": "kWh/t",
+   "quote": "SPZCOM3 105 2,618 76 18.0 19.8",
+   "page": 155,
+   "statistic": "max",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 105,
+    "ore_type": "SPZCOM3"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 117.55,
+   "unit": "MUSD",
+   "quote": "NPV @ 5% US$M 117.55",
+   "page": 32,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Capex",
+   "value": 60.74,
+   "quote": "Mine Capex US$ M 60.74",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Autoclave Capex Allocation",
+   "value": 49.33,
+   "quote": "Autoclave Capex Allocation US$ M 49.33",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Surface Capitalized Costs",
+   "value": 22.19,
+   "quote": "Surface Capitalized Costs US$ M 22.19",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 12.66,
+   "quote": "Closure US$ M 12.66",
+   "page": 31,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 395.98,
+   "quote": "Mining Cost US$M 395.98",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Oxide Cost",
+   "value": 0.65,
+   "quote": "Oxide Cost US$M 0.65",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Autoclave Cost",
+   "value": 267.3,
+   "quote": "Autoclave Cost US$M 267.30",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore Transport Cost",
+   "value": 36.27,
+   "quote": "Ore Transport Cost US$M 36.27",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Ops Cost",
+   "value": 117.85,
+   "quote": "Surface Ops Cost US$M 117.85",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga",
+   "l2": "ga",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power Cost",
+   "value": 32.77,
+   "quote": "Power Cost US$M 32.77",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "power"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Cost",
+   "value": 49.87,
+   "quote": "G&A Cost US$M 49.87",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 900.68,
+   "quote": "Total US$M 900.68",
+   "page": 31,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}
