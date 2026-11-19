@@ -1,0 +1,200 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Mantoverde",
+  "title": "Mantoverde Mine NI 43-101 Technical Report and Feasibility Study",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-07-01",
+  "effective_date_quote": "Effective date: July 1, 2024",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Chile",
+  "region": "Atacama",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter",
+   "heap_leach",
+   "sx_ew"
+  ],
+  "quote": "Copper Global Recovery % 87.0",
+  "page": 252
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 45000,
+   "unit": "t/d",
+   "quote": "Daily throughput kt/d 45.0",
+   "page": 252,
+   "statistic": "design",
+   "context": {
+    "note": "sulphide concentrator after optimisation"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 17.0,
+   "unit": "Mt/a",
+   "quote": "Annual throughput Mt/a 17.0",
+   "page": 252,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87.0,
+   "unit": "%",
+   "quote": "Copper Global Recovery % 87.0",
+   "page": 252,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.5,
+   "unit": "kWh/t",
+   "quote": "Ball Mill BWi (75th Percentile) kWh/t 16.5",
+   "page": 246,
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill",
+    "note": "original MVDP design criteria"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.8,
+   "unit": "kWh/t",
+   "quote": "Ball Mill BWi (Average) kWh/t 14.8",
+   "page": 253,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "note": "optimisation design criteria"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 59,
+   "unit": "-",
+   "quote": "Axb, (Average) - 59",
+   "page": 253,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 212,
+   "unit": "µm",
+   "quote": "Product Size (P80) µm 212",
+   "page": 253,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 38,
+   "unit": "µm",
+   "quote": "Product Size (P80) µm 38",
+   "page": 253,
+   "statistic": "design"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Sulphide plant expansion",
+   "value": 83.7,
+   "quote": "Sulphide plant expansion 83.7 57.3",
+   "page": 308,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Heap bioleach optimization",
+   "value": 17.0,
+   "quote": "Heap bioleach optimization 17.0 11.6",
+   "page": 308,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Desalination plant reliability upgrades",
+   "value": 7.0,
+   "quote": "Desalination plant reliability upgrades 7.0 4.8",
+   "page": 308,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine fleet equipment additions",
+   "value": 38.4,
+   "quote": "Mine fleet equipment additions 38.4 26.3",
+   "page": 308,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Capital Costs",
+   "value": 146.1,
+   "quote": "Total Capital Costs 146.1",
+   "page": 308,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (LOM)",
+   "value": 2306.7,
+   "quote": "the sustaining capital cost is estimated to be US$2,306.7M",
+   "page": 308,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost (sulphide concentrator)",
+   "value": 9.6,
+   "quote": "Processing Cost US$M (1,547) US$/t Milled 9.60",
+   "page": 38,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 1.57,
+   "quote": "Mining Cost US$M (3,087) US$/t Mined 1.57",
+   "page": 38,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
