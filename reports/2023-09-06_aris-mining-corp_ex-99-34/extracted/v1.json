@@ -1,0 +1,235 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Soto Norte",
+  "title": "NI 43-101 Technical Report Feasibility Study of the Soto Norte Project",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2021-01-01",
+  "effective_date_quote": "Effective Date January 01, 2021",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "Colombia",
+  "region": "Santander",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "pebble_crush",
+   "flotation",
+   "regrind",
+   "conc_filter",
+   "tails_filter"
+  ],
+  "quote": "Flotation: Sequential flotation with the followin",
+  "page": 30
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.6,
+   "unit": "Mt/a",
+   "quote": "sustainable production rate of 2.6 Mtpa",
+   "page": 28,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.2,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index kWh/t 15.2 medium",
+   "page": 160,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "2011 master composite"
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 12.8,
+   "unit": "kWh/t",
+   "quote": "Bond Rod Mill Work Index kWh/t 12.8",
+   "page": 160,
+   "statistic": "single"
+  },
+  {
+   "parameter": "dwi",
+   "value": 5.1,
+   "unit": "kWh/m3",
+   "quote": "SMC Test Drop Weight Index kWh/m 3 5.1",
+   "page": 160,
+   "statistic": "single"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.55,
+   "unit": "g",
+   "quote": "Bond Abrasion Index g 0.55",
+   "page": 160,
+   "statistic": "single"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 11,
+   "unit": "years",
+   "quote": "LoM (Processing) (Years) 11",
+   "page": 43
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1486,
+   "unit": "MUSD",
+   "quote": "NPV at 5% (Post-Tax) (USDM) 1,486",
+   "page": 43,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20.8,
+   "unit": "%",
+   "quote": "IRR (Post-Tax) (%) 20.8",
+   "page": 43
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.9,
+   "unit": "years",
+   "quote": "(Years) 3.9",
+   "page": 43
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 271,
+   "unit": "USD/oz",
+   "quote": "LOM Average Net C1 Cash Cost (1) (USD/oz) 271",
+   "page": 43,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 471,
+   "unit": "USD/oz",
+   "quote": "LOM Average AISC (2) (USD/oz) 471",
+   "page": 43,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Total",
+   "value": 383,
+   "quote": "Mining Total (USDm) 383 244 627",
+   "page": 41,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing/DSF/EPCM Total",
+   "value": 250,
+   "quote": "Processing/DSF/EPCM Total (USDm) 250 69 319",
+   "page": 41,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other EPC Total (roads, site utilities, other contracts)",
+   "value": 231,
+   "quote": "Other EPC Total (USDm) 231 0 231",
+   "page": 41,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Cost",
+   "value": 9,
+   "quote": "Owner’s Cost (USDm) 9 - 9",
+   "page": 41,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "G&A",
+   "value": 3,
+   "quote": "G&A (USDm) 3 5 8",
+   "page": 41,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 138,
+   "quote": "Contingency (USDm) 138 - 138",
+   "page": 41,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 1014,
+   "quote": "Total (USDm) 1,014 318 1,333",
+   "page": 41,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining/deferred (total)",
+   "value": 318,
+   "quote": "Total (USDm) 1,014 318 1,333",
+   "page": 41,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Total",
+   "value": 693,
+   "quote": "Mining Total (USDm) - 693 - 693",
+   "page": 42,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Total",
+   "value": 313,
+   "quote": "Processing Total (USDm) 6 307 - 313",
+   "page": 42,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Site G&A",
+   "value": 131,
+   "quote": "Mine Site G&A (USDm) 45 85 0 131",
+   "page": 42,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga",
+   "l2": "ga"
+  }
+ ]
+}
