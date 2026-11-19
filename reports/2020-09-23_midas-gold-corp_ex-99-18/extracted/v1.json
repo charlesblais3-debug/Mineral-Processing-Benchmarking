@@ -1,0 +1,242 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Stibnite",
+  "title": "Stibnite Gold Project Prefeasibility Study Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2014-12-08",
+  "effective_date_quote": "The effective date of this Report is December 8, 2014",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Sb"
+  ],
+  "country": "USA",
+  "region": "Idaho",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2014,
+  "note": "2014 PFS refiled on EDGAR in 2020; imperial units (short tons).",
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "pox",
+   "cip",
+   "elution_ew"
+  ],
+  "quote": "pulp ( CIP ) circuit for precious metal recovery",
+  "page": 23
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 22050,
+   "unit": "st/d",
+   "quote": "Daily Mill Throughput st/d 22,050",
+   "page": 20,
+   "statistic": "design"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 513,
+   "unit": "MUSD",
+   "quote": "NPV 5% M$ 662 513",
+   "page": 35,
+   "context": {
+    "discount_rate_pct": 5,
+    "case": "A, $1,200/oz Au"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 14.4,
+   "unit": "%",
+   "quote": "IRR % 16.2 14.4",
+   "page": 35,
+   "context": {
+    "case": "A, $1,200/oz Au"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Case A ($1,200/oz Au",
+   "page": 35,
+   "metal": "Au",
+   "context": {
+    "case": "A"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 526,
+   "unit": "USD/oz",
+   "quote": "All-In Sustaining Costs - 25.15 616 23.76 526",
+   "page": 33,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Costs",
+   "value": 47552,
+   "quote": "Mine Costs 47,552",
+   "page": 32,
+   "multiplier": "k",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant",
+   "value": 336219,
+   "quote": "Processing Plant 336,219",
+   "page": 32,
+   "multiplier": "k",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 149245,
+   "quote": "On-Site Infrastructure 149,245",
+   "page": 32,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 80327,
+   "quote": "Off-Site Infrastructure 80,327",
+   "page": 32,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 176687,
+   "quote": "Indirect Costs 176,687",
+   "page": 32,
+   "multiplier": "k",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 26806,
+   "quote": "Owner's Costs 26,806",
+   "page": 32,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Environmental Mitigation Costs",
+   "value": 10606,
+   "quote": "Environmental Mitigation Costs 10,606",
+   "page": 32,
+   "multiplier": "k",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Closure Bonding, Closure and Reclamation Costs",
+   "value": 762,
+   "quote": "Closure Bonding, Closure and Reclamation Costs 762",
+   "page": 32,
+   "multiplier": "k",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 142050,
+   "quote": "Contingency 142,050",
+   "page": 32,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total CAPEX with Contingency",
+   "value": 970254,
+   "quote": "Total CAPEX with Contingency 970,254",
+   "page": 32,
+   "multiplier": "k",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining CAPEX (total)",
+   "value": 98488,
+   "quote": "Total CAPEX with Contingency 970,254 98,488",
+   "page": 32,
+   "multiplier": "k",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure CAPEX",
+   "value": 56542,
+   "quote": "Total CAPEX with Contingency 970,254 98,488 56,542",
+   "page": 32,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LOM)",
+   "value": 10.04,
+   "quote": "Mining 2.00 9.08 222 10.04 222",
+   "page": 33,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (LOM)",
+   "value": 14.1,
+   "quote": "Processing - 14.45 354 14.10 312",
+   "page": 33,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (LOM)",
+   "value": 3.01,
+   "quote": "G&A - 3.13 77 3.01 67",
+   "page": 33,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Cash Costs Before By-Product Credits (LOM)",
+   "value": 27.15,
+   "quote": "Cash Costs Before By-Product Credits - 26.65 653 27.15 601",
+   "page": 33,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "is_total": true
+  }
+ ]
+}
