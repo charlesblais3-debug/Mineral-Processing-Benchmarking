@@ -1,0 +1,366 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Blackwater",
+  "title": "Blackwater Gold Project Feasibility Study NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2021-09-10",
+  "effective_date_quote": "Effective Date: September 10, 2021",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "tank_leach",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "Grinding / gravity concentration / intensive leaching 38.5",
+  "page": 286
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 16438,
+   "unit": "t/d",
+   "quote": "Plant throughput tpd 16,438",
+   "page": 203,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1"
+   }
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Mill availability % 92",
+   "page": 203,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 18.7,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (BWi) kWh/t 18.7",
+   "page": 203,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.4,
+   "unit": "kWh/t",
+   "quote": "All Types Average Std. Dev. 35.7 11.1 17.4 2.45 0.182 0.110",
+   "page": 115,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "all types, average of all programs"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 31.5,
+   "unit": "-",
+   "quote": "JK drop weight parameter Axb 31.5",
+   "page": 203,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 22.2,
+   "unit": "kWh/t",
+   "quote": "Bond Crusher Work Index (CWi) kWh/t 22.2",
+   "page": 203,
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.134,
+   "unit": "g",
+   "quote": "Bond Abrasion Index (Ai) - average g 0.134",
+   "page": 203,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 150,
+   "unit": "µm",
+   "quote": "Grind size (P80) µm 150",
+   "page": 203,
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 14,
+   "unit": "MW",
+   "quote": "Ball mill installed power MW 14",
+   "page": 203,
+   "context": {
+    "mills": "Ball 7.3 m x 12.5 m EGL (Phase 1)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93,
+   "unit": "%",
+   "quote": "Gold process recovery 93 %",
+   "page": 152,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "reserve/cut-off input"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1400,
+   "unit": "USD/oz",
+   "quote": "Gold price 1,400.00 US$/oz",
+   "page": 152,
+   "metal": "Au",
+   "context": {
+    "note": "reserve price"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.75,
+   "unit": "USD/CAD",
+   "quote": "Foreign exchange rate 0.75 ($US:C$)",
+   "page": 152,
+   "context": {
+    "pair": "USD/CAD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2151,
+   "unit": "MCAD",
+   "quote": "C$2,151 million NPV at 5.0% discount rate",
+   "page": 49,
+   "context": {
+    "discount_rate_pct": 5,
+    "currency": "CAD"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 32,
+   "unit": "%",
+   "quote": "32% IRR; • 2.3 year initial capital payback",
+   "page": 49
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.3,
+   "unit": "years",
+   "quote": "2.3 year initial capital payback",
+   "page": 49
+  },
+  {
+   "parameter": "lom_years",
+   "value": 22,
+   "unit": "years",
+   "quote": "For the 22-year mine life and 334 Mt mill feed",
+   "page": 49
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "1000 Mining",
+   "value": 64.5,
+   "quote": "1000 Mining 64.5 62.8 430.1 4.0 561.4",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "2000 Site development / TSF / waste rock facility",
+   "value": 73.1,
+   "quote": "facility 73.1 175.9 273.2 0.2 522.5",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "3000 Ore crushing and reclaim",
+   "value": 55.6,
+   "quote": "3000 Ore crushing and reclaim 55.6 45.2",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "4000 Process plant",
+   "value": 141.7,
+   "quote": "4000 Process plant 141.7 254.6",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "5000 On-site infrastructure",
+   "value": 30.5,
+   "quote": "5000 On-site infrastructure 30.5 31.5 17.0 26.1 105.2",
+   "page": 47,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "6000 Off-site infrastructure",
+   "value": 100.7,
+   "quote": "6000 Off-site infrastructure 100.7 0 22.8 12.7 136.2",
+   "page": 47,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Costs",
+   "value": 466.2,
+   "quote": "Subtotal Direct Costs 466.2 570.0",
+   "page": 47,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "7000 Indirects",
+   "value": 16.5,
+   "quote": "7000 Indirects 16.5 26.2 2.6 0.1 45.4",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "8000 Engineering and project management",
+   "value": 60.9,
+   "quote": "management 60.9 58.1 22.7 3.5 145.1",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "9000 Provisions and owners costs",
+   "value": 101.7,
+   "quote": "9000 Provisions and owners costs* 101.7 66.3",
+   "page": 279,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "PROJECT TOTAL",
+   "value": 645.2,
+   "quote": "PROJECT TOTAL (C$ M) 645.2* 720.6 830.7 51.6 2,248.2",
+   "page": 279,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion / growth capital (total)",
+   "value": 720.6,
+   "quote": "PROJECT TOTAL (C$ M) 645.2* 720.6 830.7 51.6 2,248.2",
+   "page": 279,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (total)",
+   "value": 830.7,
+   "quote": "PROJECT TOTAL (C$ M) 645.2* 720.6 830.7 51.6 2,248.2",
+   "page": 279,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 7.57,
+   "quote": "C$/t Milled 15.59 13.77 7.51 0.99 7.57",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 8.32,
+   "quote": "Process C$/t Milled 9.47 8.73 8.06 8.06 8.32",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2.07,
+   "quote": "G&A C$/t Milled 4.12 2.60 1.89 1.31 2.07",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 17.96,
+   "quote": "Total C$/t Milled 29.18 25.09 17.45 10.36 17.96",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per t mined",
+   "value": 2.6,
+   "quote": "Mining C$/t Mined 2.26 2.36 2.79 n/a 2.60",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
