@@ -1,0 +1,331 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Gramalote",
+  "title": "Gramalote Project NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2025-07-14",
+  "effective_date_quote": "EFFECTIVE DATE July 14, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Colombia",
+  "region": "Antioquia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "flotation",
+   "regrind",
+   "vertical_mill",
+   "tank_leach",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "Primary crusher 42” x 65” MKII Gyratory",
+  "page": 205
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 6.0,
+   "unit": "Mt/a",
+   "quote": "Plant throughput t/a 6,000,000",
+   "page": 204,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92.0,
+   "unit": "%",
+   "quote": "Plant availability % 92.0",
+   "page": 204,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.7,
+   "unit": "%",
+   "quote": "Gold recovery % 95.7",
+   "page": 51,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.96,
+   "unit": "g/t",
+   "quote": "Average gold grade g/t 0.96",
+   "page": 51,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 13.0,
+   "unit": "years",
+   "quote": "Mill life Years 13.0",
+   "page": 51
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 3.1,
+   "unit": "t:t",
+   "quote": "Waste to ore strip ratio Waste: ore 3.1",
+   "page": 51
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.7,
+   "unit": "kWh/t",
+   "quote": "Bond ball mill work index (BWi) kWh/t 15.7",
+   "page": 204,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 15.3,
+   "unit": "kWh/t",
+   "quote": "Bond rod mill work index (RWi) kWh/t 15.3",
+   "page": 204,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 17.0,
+   "unit": "kWh/t",
+   "quote": "Crushing work index (CWi) kWh/t 17.0",
+   "page": 204,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 31.9,
+   "unit": "-",
+   "quote": "SMC test parameter, A*b 1 31.9",
+   "page": 204,
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.599,
+   "unit": "g",
+   "quote": "Bond abrasion index (Ai) 0.599",
+   "page": 204,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 250,
+   "unit": "µm",
+   "quote": "Grinding circuit product size, P80 µm 250",
+   "page": 204,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2500,
+   "unit": "USD/oz",
+   "quote": "Project economics - $2,500 /oz project average gold price",
+   "page": 51,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 941,
+   "unit": "MUSD",
+   "quote": "NPV5.0% $ M 941",
+   "page": 51,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 22.4,
+   "unit": "%",
+   "quote": "IRR % 22.4",
+   "page": 51
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.4,
+   "unit": "years",
+   "quote": "Payback period after production start years 3.4",
+   "page": 51
+  },
+  {
+   "parameter": "aisc",
+   "value": 985,
+   "unit": "USD/oz",
+   "quote": "LOM AISC $/oz Au 985",
+   "page": 51,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining and related infrastructure",
+   "value": 87,
+   "quote": "Mining and related infrastructure $ M 87",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Waste pre-strip and ore stockpile",
+   "value": 42,
+   "quote": "Waste pre-strip and ore stockpile $ M 42",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 313,
+   "quote": "Processing $ M 313",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site general infrastructure",
+   "value": 186,
+   "quote": "Site general infrastructure $ M 186",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Resettlement and land purchase",
+   "value": 32,
+   "quote": "Resettlement and land purchase $ M 32",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 81,
+   "quote": "Contingency $ M 81",
+   "page": 47,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-total construction",
+   "value": 740,
+   "quote": "commercial production) $ M 740",
+   "page": 47,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Post-production construction",
+   "value": 68,
+   "quote": "after commercial production starts) $ M 68",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital",
+   "value": 376,
+   "quote": "Sustaining capital $ M 376",
+   "page": 47,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "External projects, reclamation, and closure capital",
+   "value": 51,
+   "quote": "External projects, reclamation, and closure capital $ M 51",
+   "page": 51,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (all areas)",
+   "value": 11.27,
+   "quote": "Mining (all areas) 11.27 382.58",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 8.16,
+   "quote": "Processing 8.16 276.95",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site general",
+   "value": 3.64,
+   "quote": "Site general 3.64 123.63",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 23.08,
+   "quote": "Total 23.08 783.16",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per t mined",
+   "value": 2.71,
+   "quote": "Average LOM mining cost $/t rock mined 2.71",
+   "page": 51,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
