@@ -1,0 +1,211 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Asanko Gold Mine",
+  "title": "NI 43-101 Technical Report, Asanko Gold Mine, Ghana",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2022-12-31",
+  "effective_date_quote": "Effective Date: 31 December 2022",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Ghana",
+  "region": "Ashanti",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 3
+ },
+ "flowsheet": null,
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 5.8,
+   "unit": "Mt/a",
+   "quote": "capable of processing approximately 5.8 Mtpa of total mill feed",
+   "page": 47,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.31,
+   "unit": "g/t",
+   "quote": "Average mill head grade g/t Au 1.31",
+   "page": 52,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "quote": "Average mill recovery rate % 89%",
+   "page": 52,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 8.5,
+   "unit": "years",
+   "quote": "Mine life years 8.5",
+   "page": 52
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1700,
+   "unit": "USD/oz",
+   "quote": "Gold price assumption (base case) $/oz 1,700",
+   "page": 52,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 343.3,
+   "unit": "MUSD",
+   "quote": "Net present value (NPV 5%) (after-tax) $ M 343.3",
+   "page": 52,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 905,
+   "unit": "USD/oz",
+   "quote": "Total cash costs 4 $/oz sold 905",
+   "page": 52,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1143,
+   "unit": "USD/oz",
+   "quote": "AISC 4 $/oz sold 1,143",
+   "page": 52,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost",
+   "value": 10.8,
+   "quote": "Processing cost $/t milled 10.80",
+   "page": 52,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A cost",
+   "value": 6.0,
+   "quote": "G&A cost 3 $/t milled 6.00",
+   "page": 52,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost (incl. deferred stripping and ore transport)",
+   "value": 3.66,
+   "quote": "Mining cost 2 $/t mined 3.66",
+   "page": 52,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capitalized Waste Stripping (Nkran)",
+   "value": 258532,
+   "quote": "Capitalized Waste Stripping (Nkran) 258,532",
+   "page": 50,
+   "multiplier": "k",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Site Establishment",
+   "value": 58361,
+   "quote": "Site Establishment 58,361",
+   "page": 50,
+   "multiplier": "k",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Growth Capital",
+   "value": 316893,
+   "quote": "Total Growth Capital 316,893",
+   "page": 50,
+   "multiplier": "k",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Waste Stripping",
+   "value": 169846,
+   "quote": "Capitalized Waste Stripping 169,846",
+   "page": 50,
+   "multiplier": "k",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site Establishment",
+   "value": 23024,
+   "quote": "Site Establishment 23,024",
+   "page": 50,
+   "multiplier": "k",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Storage Facility and Water Treatment",
+   "value": 44748,
+   "quote": "Tailings Storage Facility and Water Treatment 44,748",
+   "page": 50,
+   "multiplier": "k",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant and Infrastructure",
+   "value": 27477,
+   "quote": "Plant and Infrastructure 27,477",
+   "page": 50,
+   "multiplier": "k",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 265095,
+   "quote": "Total Sustaining Capital 265,095",
+   "page": 50,
+   "multiplier": "k",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Reclamation",
+   "value": 80857,
+   "quote": "Closure and Reclamation 80,857",
+   "page": 50,
+   "multiplier": "k"
+  }
+ ]
+}
