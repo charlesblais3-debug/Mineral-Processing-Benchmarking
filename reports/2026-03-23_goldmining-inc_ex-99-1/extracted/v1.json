@@ -1,0 +1,304 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Whistler",
+  "title": "Whistler Gold-Copper Project NI 43-101 Technical Report and Preliminary Economic Assessment",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-03-02",
+  "effective_date_quote": "Effective Date: March 2, 2026",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter",
+   "tank_leach",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "high-pressure grinding roll (HPGR) milling ● ball milling ● copper rougher flotation with regrind",
+  "page": 34
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 40000,
+   "unit": "t/d",
+   "quote": "This basis considers the development of a process plant designed to treat 40,000 t/d of mineralized material.",
+   "page": 40,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 21.8,
+   "unit": "kWh/t",
+   "quote": "an average Bond Ball Mill Work Index (BWi) of 21.8 kilowatt-hour per tonne (kWh/t)",
+   "page": 28,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "deposit": "Whistler"
+   }
+  },
+  {
+   "parameter": "dwi",
+   "value": 10.9,
+   "unit": "kWh/m3",
+   "quote": "an average Drop Weight Index (DWI) of 10.9 kilowatt-hour per cubic meter",
+   "page": 28,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 120,
+   "unit": "µm",
+   "quote": "Rougher flotation tests indicate an optimum primary grind size target of P 80 = 120 microns (µm).",
+   "page": 29,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 77.4,
+   "unit": "%",
+   "quote": "with average life-of-mine recoveries across the current mine plan of 77.4% Cu, 62.1% Au, and 44.8% Ag",
+   "page": 29,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "flotation concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 62.1,
+   "unit": "%",
+   "quote": "with average life-of-mine recoveries across the current mine plan of 77.4% Cu, 62.1% Au, and 44.8% Ag",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "flotation concentrate (plus ~27% from tailings leach)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3200,
+   "unit": "USD/oz",
+   "quote": "These economic results utilize base-case prices of US$3,200/oz gold, US$4.50/lb copper",
+   "page": 42,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.5,
+   "unit": "USD/lb",
+   "quote": "These economic results utilize base-case prices of US$3,200/oz gold, US$4.50/lb copper",
+   "page": 42,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2040,
+   "unit": "MUSD",
+   "quote": "is US$2.04 billion with a post-tax IRR of 33.0%, and an initial payback of 2.1 years",
+   "page": 42,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 33.0,
+   "unit": "%",
+   "quote": "is US$2.04 billion with a post-tax IRR of 33.0%, and an initial payback of 2.1 years",
+   "page": 42
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.1,
+   "unit": "years",
+   "quote": "is US$2.04 billion with a post-tax IRR of 33.0%, and an initial payback of 2.1 years",
+   "page": 42
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 39.7,
+   "quote": "Mining 39.7 319.0 358.7",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing and Conveyance",
+   "value": 120.4,
+   "quote": "Crushing and Conveyance 120.4 - 120.4",
+   "page": 39,
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant",
+   "value": 354.8,
+   "quote": "Process plant 354.8 - 354.8",
+   "page": 39,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-site Infrastructure",
+   "value": 187.6,
+   "quote": "On-site Infrastructure 187.6 14.2 201.8",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site Infrastructure",
+   "value": 72.6,
+   "quote": "Off-site Infrastructure 72.6 35.7 108.3",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 775.1,
+   "quote": "Total Direct Costs 775.1 368.9 1,144.0",
+   "page": 39,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Preliminaries",
+   "value": 80.5,
+   "quote": "Project Preliminaries 80.5 1.6 82.1",
+   "page": 39,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Delivery",
+   "value": 122.1,
+   "quote": "Project Delivery 122.1 - 122.1",
+   "page": 39,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 31.3,
+   "quote": "Owner’s Costs 31.3 - 31.3",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 213.3,
+   "quote": "Contingency 213.3 10.6 223.9",
+   "page": 39
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Capital Cost",
+   "value": 1222.3,
+   "quote": "Subtotal Capital Cost 1,222.3 381.1 1,603.4",
+   "page": 39,
+   "is_total": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized Opex",
+   "value": 56.3,
+   "quote": "Capitalized Opex 56.3 - 56.3",
+   "page": 39,
+   "outside_total": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital",
+   "value": 381.1,
+   "quote": "Total Capital Cost 1,278.6 381.1 1,758.4",
+   "page": 39,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 98.7,
+   "quote": "Closure Costs - - 98.7",
+   "page": 39
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 7.93,
+   "quote": "Mining 1,676.7 7.93 43.9",
+   "page": 40,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 11.0,
+   "quote": "Process 2,325.8 11.00 47.9",
+   "page": 40,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.02,
+   "quote": "G&A 216.1 1.02 4.5",
+   "page": 40,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (Other) - Road Toll and Maintenance",
+   "value": 0.86,
+   "quote": "G&A (Other) - Road Toll and Maintenance 181.2 0.86 3.7",
+   "page": 40,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 20.82,
+   "quote": "Total 4,399.8 20.82 100",
+   "page": 40,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

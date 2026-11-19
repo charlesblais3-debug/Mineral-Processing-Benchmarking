@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828026068459/evacopperproject-sxk1300tr.htm",
+  "source": "edgar",
+  "issuer": "HARMONY GOLD MINING CO LTD  (HMY, HGMCF)",
+  "cik": "1023514",
+  "form": "20-F",
+  "exhibit": "EX-96.14",
+  "filed": "2026-10-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Eva Copper",
+  "commodity": "",
+  "report_id": "2026-10-30_harmony-gold-mining-co-ltd_ex-96-14",
+  "sha256": "0d43b31547726f144fd9b150e6660a58978539187f233e1a92f530daea7874c5",
+  "bytes": 6828799,
+  "format": "html",
+  "pages": 145,
+  "parsed_on": "2026-11-19"
+}

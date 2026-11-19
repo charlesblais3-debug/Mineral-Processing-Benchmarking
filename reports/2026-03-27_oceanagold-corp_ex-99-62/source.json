@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1487326/000162828026021651/exhibit9962-40xf.htm",
+  "source": "edgar",
+  "issuer": "OceanaGold Corp",
+  "cik": "1487326",
+  "form": "40FR12B",
+  "exhibit": "EX-99.62",
+  "filed": "2026-03-27",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Macraes",
+  "commodity": "",
+  "report_id": "2026-03-27_oceanagold-corp_ex-99-62",
+  "sha256": "0e829e56a0b269a9730e8bcc6bcb1d493d8b0b49e2ee60c902871d8a86a5c0ae",
+  "bytes": 3384722,
+  "format": "html",
+  "pages": 221,
+  "parsed_on": "2026-11-19"
+}

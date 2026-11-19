@@ -48,7 +48,8 @@ def crawl(client: PoliteClient, issuer: dict, max_pages: int = 25) -> list[dict]
         robots.parse([])
     allowed = lambda u: robots.can_fetch(client.ua, u)  # noqa: E731
 
-    queue: list[tuple[str, int]] = [(site, 0)]
+    # pages named in issuers.yaml (e.g. a technical-reports page the menu hides) are read first
+    queue: list[tuple[str, int]] = [(u, 1) for u in issuer.get("pages", [])] + [(site, 0)]
     seen_pages: set[str] = set()
     found: dict[str, dict] = {}
     while queue and len(seen_pages) < max_pages:

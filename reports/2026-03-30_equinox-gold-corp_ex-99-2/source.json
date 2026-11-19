@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000117184326002005/exh_992.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2026-03-30",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Valentine",
+  "commodity": "",
+  "report_id": "2026-03-30_equinox-gold-corp_ex-99-2",
+  "sha256": "24de2411455222d4fa9092cddca2cfa2872288bf4adc9cedd569d3346d2b49e4",
+  "bytes": 3491120,
+  "format": "html",
+  "pages": 203,
+  "parsed_on": "2026-11-19"
+}

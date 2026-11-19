@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1641229/000165495425014320/firstmining_ex991.htm",
+  "source": "edgar",
+  "issuer": "First Mining Gold Corp.  (FFMGF)",
+  "cik": "1641229",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-12-29",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "Springpole",
+  "commodity": "",
+  "report_id": "2025-12-29_first-mining-gold-corp_ex-99-1",
+  "sha256": "d1ab32d270672dd3f378fc675f9d404f719555632413dc54353053bc1b9090bb",
+  "bytes": 9501058,
+  "format": "html",
+  "pages": 455,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000117184326002005/exh_991.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-03-30",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Greenstone",
+  "commodity": "",
+  "report_id": "2026-03-30_equinox-gold-corp_ex-99-1",
+  "sha256": "bc73687786620846830ec1b64902fd583a306a873d17442dbbec6ff2579979c1",
+  "bytes": 5603127,
+  "format": "html",
+  "pages": 259,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1680056/000110465926031272/tm268794d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Orla Mining Ltd.  (ORLA)",
+  "cik": "1680056",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-03-18",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Camino Rojo",
+  "commodity": "",
+  "report_id": "2026-03-18_orla-mining-ltd_ex-99-1",
+  "sha256": "66b7961c10f8d5c91bb4fe5f265511255ab5d55b795a0c23d4acc448e6b2f8cc",
+  "bytes": 5241594,
+  "format": "html",
+  "pages": 210,
+  "parsed_on": "2026-11-19"
+}

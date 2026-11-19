@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1487326/000162828026021651/exhibit9963-40xf.htm",
+  "source": "edgar",
+  "issuer": "OceanaGold Corp",
+  "cik": "1487326",
+  "form": "40FR12B",
+  "exhibit": "EX-99.63",
+  "filed": "2026-03-27",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Didipio",
+  "commodity": "",
+  "report_id": "2026-03-27_oceanagold-corp_ex-99-63",
+  "sha256": "a12f5dc5f96507648a66fe004e0999397eea0d05b1a7961327f0e42599edaad3",
+  "bytes": 3514845,
+  "format": "html",
+  "pages": 237,
+  "parsed_on": "2026-11-19"
+}

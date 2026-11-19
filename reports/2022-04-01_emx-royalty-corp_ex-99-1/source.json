@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1285786/000106299322009127/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "EMX Royalty Corp  (EMX)",
+  "cik": "1285786",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-04-01",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Timok",
+  "commodity": "",
+  "report_id": "2022-04-01_emx-royalty-corp_ex-99-1",
+  "sha256": "0e32d21ed194dde34859b1c87cd161a18c6cb30bf8644b8dea236d5f7ab403f9",
+  "bytes": 268048,
+  "format": "html",
+  "pages": 62,
+  "parsed_on": "2026-11-19"
+}

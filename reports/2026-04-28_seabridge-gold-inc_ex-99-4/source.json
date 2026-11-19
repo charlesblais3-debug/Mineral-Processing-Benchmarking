@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1231346/000121390026048150/ea028709001ex99-4.htm",
+  "source": "edgar",
+  "issuer": "SEABRIDGE GOLD INC  (SA)",
+  "cik": "1231346",
+  "form": "6-K",
+  "exhibit": "EX-99.4",
+  "filed": "2026-04-28",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "Courageous Lake",
+  "commodity": "",
+  "report_id": "2026-04-28_seabridge-gold-inc_ex-99-4",
+  "sha256": "0dd7e519835efad348699734bb154f86dad2136aba9bd6c46b71d5f9be9be73a",
+  "bytes": 6177716,
+  "format": "html",
+  "pages": 276,
+  "parsed_on": "2026-11-19"
+}

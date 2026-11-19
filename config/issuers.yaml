@@ -3,6 +3,7 @@
 # robots.txt and only reads investor / project / technical-report pages.
 #   commodity: main v1 commodity (Au, Cu, Ni) - used to prioritise extraction
 #   projects:  names to look for in link text (optional, helps label results)
+#   pages:     report pages to read first, when the site menu does not lead to them (optional)
 
 issuers:
   # Gold
@@ -19,6 +20,6 @@ issuers:
   - { name: Seabridge Gold,        site: https://www.seabridgegold.com/,    commodity: Cu, projects: [KSM] }
   - { name: Northisle Copper and Gold, site: https://northisle.ca/,         commodity: Cu, projects: [North Island] }
   # Nickel
-  - { name: Canada Nickel,         site: https://canadanickel.com/,         commodity: Ni, projects: [Crawford] }
+  - { name: Canada Nickel,         site: https://canadanickel.com/,         commodity: Ni, projects: [Crawford], pages: [https://canadanickel.com/investors/technical-reports/] }
   - { name: Talon Metals,          site: https://talonmetals.com/,          commodity: Ni, projects: [Tamarack] }
   - { name: FPX Nickel,            site: https://fpxnickel.com/,            commodity: Ni, projects: [Baptiste] }

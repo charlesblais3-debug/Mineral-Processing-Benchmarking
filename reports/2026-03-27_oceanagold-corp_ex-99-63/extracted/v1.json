@@ -1,0 +1,169 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Didipio",
+  "title": "NI 43-101 Technical Report – Didipio Mine, Luzon, Philippines",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "effective date of this Technical Report is December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "Philippines",
+  "region": "Nueva Vizcaya",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 33
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "gravity",
+   "flotation"
+  ],
+  "quote": "following a conventional SAG Mill – Ball Mill – Pebble Crushing grinding circuit and gravity recovery circuit",
+  "page": 24
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 4.1,
+   "unit": "Mt/a",
+   "quote": "the processing plant has achieved targeted utilization rates greater than 95% and processing rates greater than 4.1 Mtpa",
+   "page": 24,
+   "statistic": "min",
+   "basis": "actual"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.3,
+   "unit": "kWh/t",
+   "quote": "CV003 2,239 83 1.246 106 14.3",
+   "page": 99,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 106,
+    "sample": "CV003 (2016)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2200,
+   "unit": "USD/oz",
+   "quote": "Gold Price $2,200 $2,200 Average Recovery 88.1% 88.1%",
+   "page": 129,
+   "metal": "Au"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.1,
+   "unit": "%",
+   "quote": "Gold Price $2,200 $2,200 Average Recovery 88.1% 88.1%",
+   "page": 129,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 384,
+   "unit": "MUSD",
+   "quote": "After Tax NPV @ 5% 384 1,018",
+   "page": 29,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1275,
+   "unit": "USD/oz",
+   "quote": "All-In Sustaining Cost ($/oz) AISC 1,275 1,161",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 8.43,
+   "quote": "Processing 349.9 8.43",
+   "page": 27,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 13.38,
+   "quote": "General and Administration 555.5 13.38",
+   "page": 27,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining (per t UG ore mined)",
+   "value": 27.33,
+   "quote": "Underground Mining 774.2 27.33",
+   "page": 27,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 41.42,
+   "quote": "Total Operating Costs 2 1,719 41.42",
+   "page": 27,
+   "is_total": true,
+   "partial_breakdown": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Costs (Underground) sustaining",
+   "value": 143.9,
+   "quote": "Total Capital Costs (Underground) 55.0 143.9 198.9",
+   "page": 27,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Costs (Surface/ Other) sustaining",
+   "value": 39.8,
+   "quote": "Total Capital Costs (Surface/ Other) 19.6 39.8 59.4",
+   "page": 27,
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Capital Costs (Underground) non-sustaining",
+   "value": 55.0,
+   "quote": "Total Capital Costs (Underground) 55.0 143.9 198.9",
+   "page": 27,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Capital Costs (Surface/ Other) non-sustaining",
+   "value": 19.6,
+   "quote": "Total Capital Costs (Surface/ Other) 19.6 39.8 59.4",
+   "page": 27,
+   "l1": "other"
+  }
+ ]
+}

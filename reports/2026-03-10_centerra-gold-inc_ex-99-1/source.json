@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1854640/000110465926025744/tm268043d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Centerra Gold Inc.  (CGAU)",
+  "cik": "1854640",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-03-10",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Kemess",
+  "commodity": "",
+  "report_id": "2026-03-10_centerra-gold-inc_ex-99-1",
+  "sha256": "ec5831765353a71e9c69930b08f22a31add06b9c304ad8582497b5568ac54f0d",
+  "bytes": 1160159,
+  "format": "html",
+  "pages": 404,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,185 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Furnas",
+  "title": "Preliminary Economic Assessment for the Furnas Project, Pará State, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-02-23",
+  "effective_date_quote": "Effective Date: February 23, 2026",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Brazil",
+  "region": "Pará",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "A single - stage ball milling circuit was selected for 2026 PEA purposes .",
+  "page": 15
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 37000,
+   "unit": "t/d",
+   "quote": "The design assumptions included a throughput rate of 37 , 000 t/d, with a LOM average 92 % utilization rate .",
+   "page": 22,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "The design assumptions included a throughput rate of 37 , 000 t/d, with a LOM average 92 % utilization rate .",
+   "page": 22,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "a ball mill product size of P 80 106 micrometres (µm)",
+   "page": 57,
+   "statistic": "design"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2040,
+   "unit": "MUSD",
+   "quote": "On a post - tax basis, the Project is expected to generate an NPV ( 8 % ) of US $ 2 , 040 million, an IRR of 27 %",
+   "page": 27,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 27,
+   "unit": "%",
+   "quote": "On a post - tax basis, the Project is expected to generate an NPV ( 8 % ) of US $ 2 , 040 million, an IRR of 27 %",
+   "page": 27
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Underground mines",
+   "value": 196,
+   "quote": "1,054 818 40 196 US$ M Underground mines",
+   "page": 26,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open pit mines",
+   "value": 207,
+   "quote": "588 160 220 207 US$ M Open pit mines",
+   "page": 26,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant",
+   "value": 640,
+   "quote": "732 92 — 640 US$ M Process plant",
+   "page": 26,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 227,
+   "quote": "340 87 26 227 US$ M Infrastructure",
+   "page": 26,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized general and administrative",
+   "value": 10,
+   "quote": "10 — — 10 US$ M Capitalized general and administrative",
+   "page": 26,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal (initial)",
+   "value": 1280,
+   "quote": "2,724 1,157 287 1,280 US$ M Subtotal",
+   "page": 26,
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion capital",
+   "value": 287,
+   "quote": "2,724 1,157 287 1,280 US$ M Subtotal",
+   "page": 26,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (incl. closure)",
+   "value": 1231,
+   "quote": "2,798 1,231 287 1,280 US$ M Total",
+   "page": 26,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mineralized material mining cost",
+   "value": 3.19,
+   "quote": "3.19 US$/t mined Open pit mineralized material mining cost",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground mining cost",
+   "value": 21.1,
+   "quote": "21.10 US$/t mined Underground mining cost",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost",
+   "value": 8.92,
+   "quote": "8.92 US$/t milled Processing cost",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative cost",
+   "value": 1.68,
+   "quote": "1.68 US$/t milled General and administrative cost",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  }
+ ]
+}

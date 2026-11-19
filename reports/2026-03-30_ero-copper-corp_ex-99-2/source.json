@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853860/000117184326002028/exh_992.htm",
+  "source": "edgar",
+  "issuer": "Ero Copper Corp.  (ERO)",
+  "cik": "1853860",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2026-03-30",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "Furnas",
+  "commodity": "",
+  "report_id": "2026-03-30_ero-copper-corp_ex-99-2",
+  "sha256": "1badefbf084a8c5a9ba4a5d7dd704f7f4384fd85a156ee199e30773c014d69dd",
+  "bytes": 632125,
+  "format": "html",
+  "pages": 118,
+  "parsed_on": "2026-11-19"
+}

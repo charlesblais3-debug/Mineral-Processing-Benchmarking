@@ -1,0 +1,284 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kemess",
+  "title": "Technical Report on the Kemess Project, North-Central British Columbia (PEA, mill restart)",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "regrind"
+  ],
+  "quote": "which included a rougher concentrate regrind stage",
+  "page": 29
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 18.25,
+   "unit": "Mt/a",
+   "quote": "The plant will process material at a nominal rate of 18.250 Mtpa for 16 years",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "note": "refurbished Kemess South mill (previously 50,000 tpd)"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.34,
+   "unit": "kWh/t",
+   "quote": "Average 14.34 13.37 13.59 14.28 13.56 14.75",
+   "page": 155,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "n_samples": 72
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.37,
+   "unit": "g/t",
+   "quote": "with an average head grade of 0.15% Cu and 0.37 g/t Au",
+   "page": 30,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.15,
+   "unit": "%",
+   "quote": "with an average head grade of 0.15% Cu and 0.37 g/t Au",
+   "page": 30,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1094,
+   "unit": "MUSD",
+   "quote": "The after-tax NPV of the LOM cash flow, discounted at 5% is estimated at $1,094 million.",
+   "page": 47,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 971,
+   "unit": "USD/oz",
+   "quote": "and is estimated to average $971 per gold ounce sold over the LOM",
+   "page": 42,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Process plant",
+   "value": 96,
+   "quote": "Process plant 96 64 37 197",
+   "page": 40,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Open pit conveyor system",
+   "value": 65,
+   "quote": "Open pit conveyor system 65 - - 65",
+   "page": 40,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Open pit crusher",
+   "value": 25,
+   "quote": "Open pit crusher 25 - - 25",
+   "page": 40,
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Open pit infrastructure and other",
+   "value": 29,
+   "quote": "Open pit infrastructure and other 29 - 25 54",
+   "page": 40,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "PAG storage facility",
+   "value": 24,
+   "quote": "PAG storage facility 24 - 11 34",
+   "page": 40,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "General site infrastructure",
+   "value": 27,
+   "quote": "General site infrastructure 27 - 11 38",
+   "page": 40,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings facility",
+   "value": 9,
+   "quote": "Tailings facility 9 - 89 98",
+   "page": 40,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Construction indirects",
+   "value": 110,
+   "quote": "Construction indirects 110 47 72 229",
+   "page": 40,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency",
+   "value": 115,
+   "quote": "Contingency 115 50 76 241",
+   "page": 40,
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Subtotal Infrastructure costs (initial)",
+   "value": 500,
+   "quote": "Subtotal Infrastructure costs 500 277 595 1,372",
+   "page": 40,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capitalized open pit pre-stripping",
+   "value": 131,
+   "quote": "Capitalized open pit pre-stripping 131 - - 131",
+   "page": 40,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capitalized pre-production G&A",
+   "value": 101,
+   "quote": "Capitalized pre-production G&A 101 - - 101",
+   "page": 40,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Initial non-sustaining capital (restart)",
+   "value": 771,
+   "quote": "Initial non-sustaining capital costs NG 771",
+   "page": 39,
+   "is_total": true,
+   "partial_breakdown": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital costs",
+   "value": 595,
+   "quote": "Sustaining capital costs NG,2 595",
+   "page": 39,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining",
+   "value": 4.17,
+   "quote": "Open pit mining 4.17",
+   "page": 42,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground mining",
+   "value": 3.79,
+   "quote": "Underground mining 3.79",
+   "page": 42,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 6.11,
+   "quote": "Processing 6.11",
+   "page": 42,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 3.83,
+   "quote": "G&A 3.83",
+   "page": 42,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transportation",
+   "value": 1.66,
+   "quote": "Transportation 1.66",
+   "page": 42,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "On-site operating costs",
+   "value": 19.56,
+   "quote": "On-site operating costs 19.56",
+   "page": 42,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment and refining",
+   "value": 0.51,
+   "quote": "Treatment and refining 0.51",
+   "page": 42,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

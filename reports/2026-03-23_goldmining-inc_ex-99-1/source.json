@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1538847/000143774926009295/ex_935304.htm",
+  "source": "edgar",
+  "issuer": "GoldMining Inc.  (GLDG)",
+  "cik": "1538847",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-03-23",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Whistler",
+  "commodity": "",
+  "report_id": "2026-03-23_goldmining-inc_ex-99-1",
+  "sha256": "5d7ca78a6b457085b4d6cb3a4cc9edc6dd6a81d21d42fc40510b4e273804879e",
+  "bytes": 6049102,
+  "format": "html",
+  "pages": 339,
+  "parsed_on": "2026-11-19"
+}

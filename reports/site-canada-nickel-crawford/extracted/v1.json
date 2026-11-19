@@ -1,0 +1,423 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Crawford",
+  "title": "Crawford Nickel Sulphide Project NI 43-101 Technical Report and Feasibility Study",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2023-10-01",
+  "effective_date_quote": "Effective Date:  October 1, 2023",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co",
+   "Fe",
+   "Cr",
+   "Pd",
+   "Pt"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "magnetic_sep",
+   "conc_thickener",
+   "conc_filter",
+   "tails_thickener"
+  ],
+  "quote": "The ore is then reclaimed into a grinding circuit  consisting of a SAG mill and a ball mill circuit (SAB) operating in closed circuit with a cyclone cluster.",
+  "page": 62
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 60000,
+   "unit": "t/d",
+   "quote": "Phase 1 covers the initial 42 months of operation when the nameplate capacity of the mill will be 60 kt/d.",
+   "page": 73,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1 (initial capital); expands to 120 kt/d in Year 4"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 43.8,
+   "unit": "Mt/a",
+   "quote": "otal capacity of 120 kt/d or 43.8 Mt/a by Year 5 of  operation",
+   "page": 62,
+   "statistic": "design",
+   "context": {
+    "phase": "after expansion"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 41.2,
+   "unit": "%",
+   "quote": "Feasibility Study1 41.2% 11% 52.7% 28.2%",
+   "page": 185,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 34.2,
+   "unit": "%",
+   "quote": "Nickel Concentrate, Life-of-Mine Average % 34.2",
+   "page": 63,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.28,
+   "unit": "%",
+   "quote": "Plant Feed Grades, Design Nickel % 0.28",
+   "page": 63,
+   "metal": "Ni",
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 20.3,
+   "unit": "kWh/t",
+   "quote": "Average 2.63 50.6 59.0 27.5 10.2 15.7 20.3 0.011 0.25",
+   "page": 200,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "n_samples": 77
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 21.8,
+   "unit": "kWh/t",
+   "quote": "75th Percentile 2.66 - 65.8 - - 16.3 21.8 0.010 0.30",
+   "page": 200,
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill",
+    "n_samples": 77
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 15.7,
+   "unit": "kWh/t",
+   "quote": "Average 2.63 50.6 59.0 27.5 10.2 15.7 20.3 0.011 0.25",
+   "page": 200,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "axb",
+   "value": 59.0,
+   "unit": "",
+   "quote": "Average 2.63 50.6 59.0 27.5 10.2 15.7 20.3 0.011 0.25",
+   "page": 200,
+   "statistic": "mean",
+   "context": {
+    "test": "SMC"
+   }
+  },
+  {
+   "parameter": "spi",
+   "value": 27.5,
+   "unit": "min",
+   "quote": "Average 2.63 50.6 59.0 27.5 10.2 15.7 20.3 0.011 0.25",
+   "page": 200,
+   "statistic": "mean"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 91.3,
+   "unit": "%",
+   "quote": "Grinding, Flotation and Magnetic Recovery % 91.3",
+   "page": 63,
+   "statistic": "design"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2475,
+   "unit": "MUSD",
+   "quote": "Post-Tax NPV8% $M 2,475",
+   "page": 74,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 17.1,
+   "unit": "%",
+   "quote": "Post-Tax IRR % 17.1",
+   "page": 74
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 0.39,
+   "unit": "USD/lb",
+   "quote": "Net C1 Costs1 $/lb Ni 0.39",
+   "page": 74,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1.54,
+   "unit": "USD/lb",
+   "quote": "Net AISC4 $/lb Ni 1.54",
+   "page": 74,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.76,
+   "unit": "USD/CAD",
+   "quote": "converted at an exchange rate of 1 CAD = 0.76 USD",
+   "page": 72,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 657.0,
+   "quote": "Mining 657 552 1,715",
+   "page": 72
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining",
+   "value": 552.0,
+   "quote": "Mining 657 552 1,715",
+   "page": 72
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process",
+   "value": 902.0,
+   "quote": "Process 902 914 0",
+   "page": 72,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Process",
+   "value": 914.0,
+   "quote": "Process 902 914 0",
+   "page": 72,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Utilities",
+   "value": 46.0,
+   "quote": "Utilities 46 40 0",
+   "page": 72,
+   "l1": "onsite_infra",
+   "l2": null
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Utilities",
+   "value": 40.0,
+   "quote": "Utilities 46 40 0",
+   "page": 72,
+   "l1": "onsite_infra",
+   "l2": null
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings and Water Management",
+   "value": 129.0,
+   "quote": "Tailings and Water Management 129 111 136",
+   "page": 72
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings and Water Management",
+   "value": 111.0,
+   "quote": "Tailings and Water Management 129 111 136",
+   "page": 72
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 120.0,
+   "quote": "On-Site Infrastructure 120 67 97",
+   "page": 72
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "On-Site Infrastructure",
+   "value": 67.0,
+   "quote": "On-Site Infrastructure 120 67 97",
+   "page": 72
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 150.0,
+   "quote": "Off-Site Infrastructure 150 56 0",
+   "page": 72
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 56.0,
+   "quote": "Off-Site Infrastructure 150 56 0",
+   "page": 72
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 244.0,
+   "quote": "Indirect Costs 244 174 0",
+   "page": 72
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Indirect Costs",
+   "value": 174.0,
+   "quote": "Indirect Costs 244 174 0",
+   "page": 72
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 65.0,
+   "quote": "Owner's Costs 65 0 0",
+   "page": 72
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Owner's Costs",
+   "value": 0.0,
+   "quote": "Owner's Costs 65 0 0",
+   "page": 72
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 244.0,
+   "quote": "Contingency 244 191 0",
+   "page": 72
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency",
+   "value": 191.0,
+   "quote": "Contingency 244 191 0",
+   "page": 72
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital",
+   "value": 2556,
+   "quote": "Total Capital 2,556 2,105 1,950 6,611 5,024",
+   "page": 72,
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Capital",
+   "value": 2105,
+   "quote": "Total Capital 2,556 2,105 1,950 6,611 5,024",
+   "page": 72,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital",
+   "value": 1950,
+   "quote": "Total Capital 2,556 2,105 1,950 6,611 5,024",
+   "page": 72,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 175,
+   "quote": "Closure Costs 0 0 175 175 133",
+   "page": 72
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine – Tonnes Mined",
+   "value": 1.96,
+   "quote": "Mine – Tonnes Mined C$/t mined 2.22 1.82 0.00 1.96",
+   "page": 74,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine – Tonnes Milled",
+   "value": 6.29,
+   "quote": "Mine – Tonnes Milled C$/t milled 12.92 8.17 0.81 6.29",
+   "page": 74,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings and Water Management",
+   "value": 0.22,
+   "quote": "Tailings and Water Management C$/t milled 0.51 0.22 0.19 0.22",
+   "page": 74,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 6.82,
+   "quote": "Process C$/t milled 6.99 6.81 6.83 6.82",
+   "page": 74,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.98,
+   "quote": "G&A C$/t milled 2.58 1.10 0.47 0.98",
+   "page": 74,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Costs",
+   "value": 14.32,
+   "quote": "Site Costs C$/t milled 23.00 16.30 8.30 14.32",
+   "page": 74,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}
