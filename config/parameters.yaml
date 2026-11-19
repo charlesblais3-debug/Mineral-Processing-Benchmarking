@@ -14,7 +14,7 @@ version: 1
 
 parameters:
   # ---------- Scale ----------
-  throughput_tpd:      { group: scale, label: Nominal throughput, unit: t/d, range: [50, 400000], module: scale, v1: true, context: [phase, availability_pct] }
+  throughput_tpd:      { group: scale, label: Nominal throughput, unit: t/d, range: [50, 500000], module: scale, v1: true, context: [phase, availability_pct] }
   throughput_mtpa:     { group: scale, label: Nominal throughput, unit: Mt/a, range: [0.02, 150], module: scale, v1: true, context: [phase], derived_from: throughput_tpd }
   lom_years:           { group: scale, label: Life of mine (processing), unit: years, range: [1, 80], module: scale, v1: true }
   reserve_tonnes:      { group: scale, label: Mineral reserve (P&P), unit: Mt, range: [0.05, 20000], module: scale, v1: true }

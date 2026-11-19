@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/q425ex961bgm.htm",
+  "source": "edgar",
+  "issuer": "NEWMONT Corp /DE/  (NEM, NEMCL)",
+  "cik": "1164727",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2026-02-19",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Boddington",
+  "commodity": "",
+  "report_id": "2026-02-19_newmont-corp-de_ex-96-1",
+  "sha256": "d0bfcfa5f8a44868419bfe4a2876a022ae6f3fa70b4a4850a5c00a50afb50ba4",
+  "bytes": 407995,
+  "format": "html",
+  "pages": 45,
+  "parsed_on": "2026-11-19"
+}

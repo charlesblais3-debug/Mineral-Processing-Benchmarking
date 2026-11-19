@@ -178,7 +178,8 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
             key = f"{group}/{c['part_of']}"
             parts[key] = parts.get(key, 0.0) + value
         elif c.get("is_total"):
-            totals[group] = value
+            if not c.get("partial_breakdown"):      # report gives only some of the lines: nothing to check
+                totals[group] = value
         elif not c.get("is_subtotal"):
             sums[group] = sums.get(group, 0.0) + value
         con.execute(

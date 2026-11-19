@@ -1,0 +1,222 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Grasberg",
+  "title": "Technical Report Summary for Grasberg Minerals District, Indonesia",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Effective Date: | December 31, 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Indonesia",
+  "region": "Central Papua",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "hpgr",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "then 2 HPGRs in quaternary crushing duty, followed by 8 ball mills prior to rougher and then cleaner flotation",
+  "page": 61
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 240000,
+   "unit": "t/d",
+   "quote": "The mine plan is scheduled to achieve a total of 240,000 metric tons of ore per day",
+   "page": 59,
+   "statistic": "design",
+   "context": {
+    "note": "ore delivered to the mill (C1/C2 65k + C3 34k + C4 75k dmt/d listed capacities)"
+   }
+  },
+  {
+   "parameter": "specific_energy",
+   "value": 24,
+   "unit": "kWh/t",
+   "quote": "Energy for Process (kWh/t ore) | 24",
+   "page": 65,
+   "statistic": "mean",
+   "context": {
+    "scope": "total_plant"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.7,
+   "unit": "%",
+   "quote": "GBC | 86.7 | 65.9 | 72.4 | 25.3",
+   "page": 37,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "ore": "Grasberg Block Cave"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 65.9,
+   "unit": "%",
+   "quote": "GBC | 86.7 | 65.9 | 72.4 | 25.3",
+   "page": 37,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore": "Grasberg Block Cave"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 25.3,
+   "unit": "%",
+   "quote": "GBC | 86.7 | 65.9 | 72.4 | 25.3",
+   "page": 37,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "ore": "Grasberg Block Cave"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2.5,
+   "unit": "USD/lb",
+   "quote": "based on commodity prices of $2.50 per pound copper, $1,200 per ounce gold, and $15 per ounce silver",
+   "page": 7,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 0.76,
+   "unit": "USD/lb",
+   "quote": "Unit net cash cost at $1,200 Au price ($ per pound of copper) | $0.76",
+   "page": 10,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "net of by-product credits at $1,200/oz Au"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 7.5,
+   "quote": "Mine | $7.5",
+   "page": 10,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrator",
+   "value": 3.9,
+   "quote": "Concentrator | 3.9",
+   "page": 10,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Supporting Infrastructure",
+   "value": 2.3,
+   "quote": "Supporting Infrastructure | 2.3",
+   "page": 10,
+   "l1": "onsite_infra",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Expenditures",
+   "value": 13.7,
+   "quote": "Total Capital Expenditures | $13.7",
+   "page": 10,
+   "is_total": true,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 15.9,
+   "quote": "Mine | $15.9",
+   "page": 10,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 13.5,
+   "quote": "Processing | 13.5",
+   "page": 10,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Balance",
+   "value": 12.4,
+   "quote": "Balance | 12.4",
+   "page": 10,
+   "l1": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total site cash operating costs",
+   "value": 41.9,
+   "quote": "Total site cash operating costs | 41.9",
+   "page": 10,
+   "is_total": true,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight",
+   "value": 2.2,
+   "quote": "Freight | 2.2",
+   "page": 10,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment charges",
+   "value": 9.4,
+   "quote": "Treatment charges | 9.4",
+   "page": 10,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties & export duties",
+   "value": 4.8,
+   "quote": "Royalties & export duties | 4.8",
+   "page": 10,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "B"
+  }
+ ]
+}

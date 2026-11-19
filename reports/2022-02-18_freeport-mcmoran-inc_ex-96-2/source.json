@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125922000012/a2021trsptfi-exhibit.htm",
+  "source": "edgar",
+  "issuer": "FREEPORT-MCMORAN INC  (FCX)",
+  "cik": "831259",
+  "form": "10-K/A",
+  "exhibit": "EX-96.2",
+  "filed": "2022-02-18",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Grasberg",
+  "commodity": "",
+  "report_id": "2022-02-18_freeport-mcmoran-inc_ex-96-2",
+  "sha256": "c0d9e467769bc27ecbcfa34549381b8d1f203a96a592c500a2a9c9ad5e19ed96",
+  "bytes": 613856,
+  "format": "html",
+  "pages": 83,
+  "parsed_on": "2026-11-19"
+}

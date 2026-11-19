@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312525029113/d895716dex991.htm",
+  "source": "edgar",
+  "issuer": "BARRICK GOLD CORP  (GOLD)",
+  "cik": "756894",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-02-19",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Lumwana",
+  "commodity": "",
+  "report_id": "2025-02-19_barrick-gold-corp_ex-99-1_029113",
+  "sha256": "9b121d4ccb3ae346598e1f07d95531caeedc6333df31227a284ad51855d5bc1c",
+  "bytes": 5872709,
+  "format": "html",
+  "pages": 318,
+  "parsed_on": "2026-11-19"
+}

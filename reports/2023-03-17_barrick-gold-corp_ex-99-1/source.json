@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312523073218/d443543dex991.htm",
+  "source": "edgar",
+  "issuer": "BARRICK GOLD CORP  (GOLD)",
+  "cik": "756894",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-03-17",
+  "standard": "",
+  "study_level": "",
+  "project": "Loulo",
+  "commodity": "",
+  "report_id": "2023-03-17_barrick-gold-corp_ex-99-1",
+  "sha256": "ac09e69ffb4b48ec67f36c4de2d6ff0742a49f0e686faeb2b557c58223be3f11",
+  "bytes": 8915865,
+  "format": "html",
+  "pages": 429,
+  "parsed_on": "2026-11-19"
+}

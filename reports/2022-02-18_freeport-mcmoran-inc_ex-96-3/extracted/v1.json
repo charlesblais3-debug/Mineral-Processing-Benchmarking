@@ -1,0 +1,207 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Morenci",
+  "title": "Technical Report Summary for Morenci Mine, Arizona, U.S.",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Effective Date: | December 31, 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo"
+  ],
+  "country": "USA",
+  "region": "Arizona",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "pox",
+   "heap_leach",
+   "sx_ew",
+   "conc_thickener",
+   "conc_filter",
+   "tails_thickener"
+  ],
+  "quote": "Product from these secondary cone crushers is advanced to a tertiary hydraulic roll crusher (HRC)",
+  "page": 56
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 150000,
+   "unit": "st/d",
+   "quote": "targeted average mill production rate of 150,000 tons of ore per day by 2024 through 2036",
+   "page": 52,
+   "statistic": "design",
+   "context": {
+    "note": "short tons; Morenci + Metcalf concentrators"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2.5,
+   "unit": "USD/lb",
+   "quote": "Copper ($ per pound) | $2.50",
+   "page": 68,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.98,
+   "unit": "USD/lb",
+   "quote": "Unit net cash cost ($ per pound of copper) | $1.98",
+   "page": 10,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "net of by-product credits"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1200,
+   "unit": "MUSD",
+   "quote": "Net present value @ 8% ($ billions) | $1.2",
+   "page": 67,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 0.9,
+   "quote": "Mine | $0.9",
+   "page": 10,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Leach and SX/EW",
+   "value": 1.8,
+   "quote": "Leach and SX/EW | 1.8",
+   "page": 10,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrator",
+   "value": 0.8,
+   "quote": "Concentrator | 0.8",
+   "page": 10,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Supporting Infrastructure and Environmental",
+   "value": 0.2,
+   "quote": "Supporting Infrastructure and Environmental | 0.2",
+   "page": 10,
+   "l1": "onsite_infra",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Expenditures",
+   "value": 3.7,
+   "quote": "Total Capital Expenditures | $3.7",
+   "page": 10,
+   "is_total": true,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 11.0,
+   "quote": "Mine | $11.0",
+   "page": 10,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Leach and SX/EW",
+   "value": 5.4,
+   "quote": "Leach and SX/EW | 5.4",
+   "page": 10,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrator",
+   "value": 5.9,
+   "quote": "Concentrator | 5.9",
+   "page": 10,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Balance",
+   "value": 3.8,
+   "quote": "Balance | 3.8",
+   "page": 10,
+   "l1": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total site cash operating costs",
+   "value": 26.1,
+   "quote": "Total site cash operating costs | 26.1",
+   "page": 10,
+   "is_total": true,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight",
+   "value": 0.6,
+   "quote": "Freight | 0.6",
+   "page": 10,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment charges",
+   "value": 0.5,
+   "quote": "Treatment charges | 0.5",
+   "page": 10,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure (LOM)",
+   "value": 0.4,
+   "quote": "The total closure cost estimate for the LOM plan is approximately $0.4 billion",
+   "page": 65,
+   "multiplier": "B"
+  }
+ ]
+}

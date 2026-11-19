@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-ex96_1.htm",
+  "source": "edgar",
+  "issuer": "BHP Group Ltd  (BHP, BHPLF)",
+  "cik": "811809",
+  "form": "20-F",
+  "exhibit": "EX-96.1",
+  "filed": "2026-08-18",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "Escondida",
+  "commodity": "",
+  "report_id": "2026-08-18_bhp-group-ltd_ex-96-1",
+  "sha256": "046104ce10076c955fd8b4e617473778d57ca1f7d07de42934e40ff4d4b5424d",
+  "bytes": 6206463,
+  "format": "html",
+  "pages": 227,
+  "parsed_on": "2026-11-19"
+}

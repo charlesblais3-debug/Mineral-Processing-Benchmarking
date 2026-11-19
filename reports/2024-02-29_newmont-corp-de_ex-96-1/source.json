@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472724000016/exhibit961-penasquitoope.htm",
+  "source": "edgar",
+  "issuer": "NEWMONT Corp /DE/  (NEM, NEMCL)",
+  "cik": "1164727",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2024-02-29",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Peñasquito",
+  "commodity": "",
+  "report_id": "2024-02-29_newmont-corp-de_ex-96-1",
+  "sha256": "ba83eb5f0e76b3db41fb976cb45d238f49e5753413215eda667d494f7659ee40",
+  "bytes": 374460,
+  "format": "html",
+  "pages": 79,
+  "parsed_on": "2026-11-19"
+}

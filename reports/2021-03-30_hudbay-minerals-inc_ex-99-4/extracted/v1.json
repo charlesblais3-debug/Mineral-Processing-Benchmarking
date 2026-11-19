@@ -1,0 +1,76 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Constancia",
+  "title": "Constancia Mine, Cuzco, Peru Form 43-101F1 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-01-01",
+  "effective_date_quote": "Constancia, with an effective date of January 1st, 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag",
+   "Au"
+  ],
+  "country": "Peru",
+  "region": "Cusco",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 25
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter",
+   "tails_thickener"
+  ],
+  "quote": "Each train consists of a single FLSmidth semi-autogenous grinding (SAG) mill, a ball mill and a potential addition of a pebble crusher (SABC)",
+  "page": 173
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 90000,
+   "unit": "t/d",
+   "quote": "The plant has now demonstrated its capacity to process approximately 90 ktpd of ore (31 Mtpa at 94% plant availability)",
+   "page": 95,
+   "statistic": "design",
+   "context": {
+    "note": "demonstrated; original design 76,000 t/d at 91.3% availability"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 31.4,
+   "unit": "Mt/a",
+   "quote": "the annual throughput capacity was increased from 25.3 milltion to 31.4 million tonnes per year",
+   "page": 97,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 94,
+   "unit": "%",
+   "quote": "(31 Mtpa at 94% plant availability)",
+   "page": 95,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 155,
+   "unit": "µm",
+   "quote": "the primary grind size was increased from 106 µm to 155 µm (nominal)",
+   "page": 97,
+   "statistic": "design"
+  }
+ ],
+ "costs": []
+}

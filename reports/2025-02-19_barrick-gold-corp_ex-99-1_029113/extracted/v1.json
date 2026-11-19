@@ -1,0 +1,336 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Lumwana",
+  "title": "NI 43-101 Technical Report on the Lumwana Expansion Project, Republic of Zambia",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Cu",
+  "by_products": [],
+  "country": "Zambia",
+  "region": "North-Western Province",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter",
+   "tails_thickener"
+  ],
+  "quote": "A new pebble crushing facility will be added to the existing grinding circuit",
+  "page": 220
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 54,
+   "unit": "Mt/a",
+   "quote": "The current process capacity is 27 Mtpa, and the expanded peak design capacity will be 54 Mtpa",
+   "page": 210,
+   "statistic": "design",
+   "context": {
+    "phase": "after expansion (second parallel SABC line)"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 300,
+   "unit": "µm",
+   "quote": "The existing operation flotation feed size will be reduced to P 80 of 300 µm once the Expansion",
+   "page": 220,
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 34,
+   "unit": "MW",
+   "quote": "includes the installation of the new SAG mill (16 MW) and ball mill (18 MW)",
+   "page": 228,
+   "statistic": "design",
+   "context": {
+    "mills": "new line only: SAG 16 MW + ball 18 MW"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.7,
+   "unit": "kWh/t",
+   "quote": "BWi 25.5 12.0 16.7 2.7",
+   "page": 109,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "program": "Phase 2 comminution",
+    "min": 12.0,
+    "max": 25.5
+   }
+  },
+  {
+   "parameter": "cwi",
+   "value": 14.9,
+   "unit": "kWh/t",
+   "quote": "CWi 16.7 1.6 14.9 1.9",
+   "page": 109,
+   "statistic": "mean",
+   "context": {
+    "program": "Phase 2"
+   }
+  },
+  {
+   "parameter": "ai",
+   "value": 0.151,
+   "unit": "g",
+   "quote": "Ai 0.266 0.032 0.151 0.045",
+   "page": 109,
+   "statistic": "mean",
+   "context": {
+    "program": "Phase 2"
+   }
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 4.7,
+   "unit": "t:t",
+   "quote": "Strip Ratio (w:o) t:t 4.7",
+   "page": 212,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "$3.00/lb (Base Case) 4.4 0.2 10% 8",
+   "page": 27,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 200,
+   "unit": "MUSD",
+   "quote": "$3.00/lb (Base Case) 4.4 0.2 10% 8",
+   "page": 27,
+   "context": {
+    "discount_rate_pct": 8,
+    "note": "US$0.2 B at $3.00/lb"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 10,
+   "unit": "%",
+   "quote": "$3.00/lb (Base Case) 4.4 0.2 10% 8",
+   "page": 27
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining",
+   "value": 397,
+   "quote": "Mining 119 139 99 40 397",
+   "page": 275
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Ore Handling",
+   "value": 235,
+   "quote": "Ore Handling 70 82 59 24 235",
+   "page": 275,
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Processing Plant",
+   "value": 268,
+   "quote": "Processing Plant 80 94 67 27 268",
+   "page": 275,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings/Reclaim & Water",
+   "value": 87,
+   "quote": "Tailings/Reclaim & Water 26 30 22 9 87",
+   "page": 275
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Site Infrastructure",
+   "value": 254,
+   "quote": "Mine Site Infrastructure 76 89 64 25 254",
+   "page": 275
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Airstrip",
+   "value": 10,
+   "quote": "Airstrip 3 3 3 1 10",
+   "page": 275,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Sub Total (directs)",
+   "value": 1251,
+   "quote": "Sub Total 374 437 314 126 1,251",
+   "page": 275,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Indirect Costs (Owner's)",
+   "value": 146,
+   "quote": "Indirect Costs (Owner’s) 44 51 36 15 146",
+   "page": 275,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contractor Distributables",
+   "value": 379,
+   "quote": "Contractor Distributables 114 132 95 38 379",
+   "page": 275,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Freight and Duties",
+   "value": 62,
+   "quote": "Freight and Duties 19 22 15 6 62",
+   "page": 275,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency",
+   "value": 160,
+   "quote": "Contingency 48 56 40 16 160",
+   "page": 275
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Construction capital total (2025-2028)",
+   "value": 1998,
+   "quote": "Total 599 698 500 201 1,998",
+   "page": 275,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (LOM)",
+   "value": 1652,
+   "quote": "Sustaining Capital (LOM) 1,652",
+   "page": 274,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining – OP",
+   "value": 2.07,
+   "quote": "Mining – OP $2.07/t mined 18,405",
+   "page": 277,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 4.29,
+   "quote": "Processing $4.29/t processed 6,826",
+   "page": 277,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration",
+   "value": 1.18,
+   "quote": "General & Administration $1.18/t processed 1,874",
+   "page": 277,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty",
+   "value": 1.71,
+   "quote": "Royalty $1.71/t processed 2,711",
+   "page": 277,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs (net of capitalised stripping)",
+   "value": 18.23,
+   "quote": "Total Operating Costs $18.23/t processed 28,975",
+   "page": 277,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "partial_breakdown": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining – OP (LOM)",
+   "value": 18405,
+   "quote": "Mining – OP $2.07/t mined 18,405",
+   "page": 277
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (LOM)",
+   "value": 6826,
+   "quote": "Processing $4.29/t processed 6,826",
+   "page": 277,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration (LOM)",
+   "value": 1874,
+   "quote": "General & Administration $1.18/t processed 1,874",
+   "page": 277,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight & Refining Costs (LOM)",
+   "value": 7686,
+   "quote": "Freight & Refining Costs $0.47/lb sold 7,686",
+   "page": 277,
+   "l1": "offsite",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty (LOM)",
+   "value": 2711,
+   "quote": "Royalty $1.71/t processed 2,711",
+   "page": 277,
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Operating Costs (LOM)",
+   "value": 37502,
+   "quote": "Total Direct Operating Costs $23.60/t processed 37,502",
+   "page": 277,
+   "is_total": true
+  }
+ ]
+}

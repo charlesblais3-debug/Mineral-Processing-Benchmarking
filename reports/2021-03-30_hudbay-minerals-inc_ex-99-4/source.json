@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1322422/000106299321003156/exhibit99-4.htm",
+  "source": "edgar",
+  "issuer": "Hudbay Minerals Inc.  (HBM)",
+  "cik": "1322422",
+  "form": "6-K",
+  "exhibit": "EX-99.4",
+  "filed": "2021-03-30",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Constancia",
+  "commodity": "",
+  "report_id": "2021-03-30_hudbay-minerals-inc_ex-99-4",
+  "sha256": "cad2c145a8be5bafc331eedf92ba0a1ffa830cbe255ea67e8f6577b22ded25f2",
+  "bytes": 891891,
+  "format": "html",
+  "pages": 209,
+  "parsed_on": "2026-11-19"
+}

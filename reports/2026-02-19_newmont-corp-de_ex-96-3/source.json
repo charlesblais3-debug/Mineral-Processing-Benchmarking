@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/q425ex963lihir.htm",
+  "source": "edgar",
+  "issuer": "NEWMONT Corp /DE/  (NEM, NEMCL)",
+  "cik": "1164727",
+  "form": "10-K",
+  "exhibit": "EX-96.3",
+  "filed": "2026-02-19",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Lihir",
+  "commodity": "",
+  "report_id": "2026-02-19_newmont-corp-de_ex-96-3",
+  "sha256": "475953a6bf63c0c36830df5e51aadedc558c34977dc74a59537f71cdf1cd2d33",
+  "bytes": 470052,
+  "format": "html",
+  "pages": 47,
+  "parsed_on": "2026-11-19"
+}

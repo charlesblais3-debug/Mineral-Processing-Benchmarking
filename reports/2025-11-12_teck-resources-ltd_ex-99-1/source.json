@@ -1,5 +1,5 @@
 {
-  "url": "https://www.sec.gov/Archives/edgar/data/886986/000110465925109328/tm2527845d6_ex99-1.htm",
+  "url": "https://www.sec.gov/Archives/edgar/data/886986/000110465925109329/tm2527845d7_ex99-1.htm",
   "source": "edgar",
   "issuer": "TECK RESOURCES LTD  (TECK, TCKRF)",
   "cik": "886986",
@@ -7,13 +7,13 @@
   "exhibit": "EX-99.1",
   "filed": "2025-11-12",
   "standard": "NI 43-101",
-  "study_level": "",
-  "project": "Highland Valley Copper",
+  "study_level": "resource",
+  "project": "Collahuasi",
   "commodity": "",
   "report_id": "2025-11-12_teck-resources-ltd_ex-99-1",
-  "sha256": "fca28cd85beb7b8f64f27bd167a3cffc7937419c48739c7e01b6fca676503571",
-  "bytes": 4004850,
+  "sha256": "20a4a6c2c72989f108aa4e03b1630fed5e2a90a66b5250be2d05b5ca0ac35bc6",
+  "bytes": 5146295,
   "format": "html",
-  "pages": 188,
-  "parsed_on": "2026-11-18"
+  "pages": 220,
+  "parsed_on": "2026-11-19"
 }

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1013131/000110465922060511/tmb-20211231xex96d1.htm",
+  "source": "edgar",
+  "issuer": "BUENAVENTURA MINING CO INC  (BVN)",
+  "cik": "1013131",
+  "form": "20-F",
+  "exhibit": "EX-96.1",
+  "filed": "2022-05-13",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Cerro Verde",
+  "commodity": "",
+  "report_id": "2022-05-13_buenaventura-mining-co-inc_ex-96-1",
+  "sha256": "99307938c6b70bbb84935ff5b13b4e65505f305ed358e8b70408ff06f473ae71",
+  "bytes": 951441,
+  "format": "html",
+  "pages": 80,
+  "parsed_on": "2026-11-19"
+}

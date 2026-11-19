@@ -1,0 +1,151 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Escondida",
+  "title": "SEC S-K 1300 Technical Report Summary – Minera Escondida Limitada",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2022-06-30",
+  "effective_date_quote": "The effective date of this Technical Report Summary is 30 June 2022.",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Chile",
+  "region": "Antofagasta",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 27
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "heap_leach",
+   "sx_ew"
+  ],
+  "quote": "Primary grinding is undertaken in SAG mills, operating in closed circuit with pebble crushing systems.",
+  "page": 172
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 413700,
+   "unit": "t/d",
+   "quote": "collectively have a total nominal capacity of 413,700 tpd of ore",
+   "page": 171,
+   "statistic": "design",
+   "context": {
+    "note": "three concentrators: Los Colorados, Laguna Seca L1 and L2"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 145,
+   "unit": "µm",
+   "quote": "Milling Product Size P80 (microns) 145 145 145 145 145",
+   "page": 96,
+   "statistic": "design"
+  },
+  {
+   "parameter": "reserve_tonnes",
+   "value": 3560,
+   "unit": "Mt",
+   "quote": "Escondida Total 2,390 0.62 1,170 0.53 3,560 0.59",
+   "page": 25,
+   "context": {
+    "basis": "BHP 57.5% share"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 10500,
+   "unit": "MUSD",
+   "quote": "Net present value (6.5%, Jul-22) 10.5",
+   "page": 217,
+   "context": {
+    "discount_rate_pct": 6.5,
+    "basis": "BHP share"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 9566,
+   "quote": "Mine 9,566",
+   "page": 211,
+   "basis": "estimate",
+   "note": "LOM total capital by area"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrators",
+   "value": 7231,
+   "quote": "Concentrators 7,231",
+   "page": 211,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Leaching",
+   "value": 1724,
+   "quote": "Leaching 1,724",
+   "page": 211,
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "NPI",
+   "value": 2042,
+   "quote": "NPI 2,042",
+   "page": 211,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LOM capital",
+   "value": 20563,
+   "quote": "Total 20,563",
+   "page": 211,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (fixed mining cost)",
+   "value": 0.87,
+   "quote": "Fixed Mining Cost Real US$ /t material moved 0.87",
+   "page": 212,
+   "multiplier": "",
+   "basis_unit": "per_t_moved"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrator processing",
+   "value": 7.1,
+   "quote": "Processing Costs Real US$ /t ore processed 7.10",
+   "page": 212,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure & Rehabilitation",
+   "value": 2653,
+   "quote": "Closure & Rehabilitation Real US$ M Total 2,653",
+   "page": 212
+  }
+ ]
+}

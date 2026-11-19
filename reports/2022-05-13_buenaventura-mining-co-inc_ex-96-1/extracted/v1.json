@@ -1,0 +1,189 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Cerro Verde",
+  "title": "Technical Report Summary of Mineral Reserves and Mineral Resources for Cerro Verde Mine",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag"
+  ],
+  "country": "Peru",
+  "region": "Arequipa",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation",
+   "heap_leach",
+   "sx_ew"
+  ],
+  "quote": "each line consisting of a primary gyratory crusher, secondary cone crushers, tertiary high-pressure grinding roll (HPGR), and ball mills",
+  "page": 60
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 420000,
+   "unit": "t/d",
+   "quote": "support the LOM plan achieving a combined concentrator capacity of up to 420,000 metric tons per day",
+   "page": 60,
+   "statistic": "design",
+   "context": {
+    "note": "C1 (108 kt/d design) + C2 (240 kt/d design), debottlenecked"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "Primary Sulfides 90 55",
+   "page": 42,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "ore": "primary sulfides"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 55,
+   "unit": "%",
+   "quote": "Primary Sulfides 90 55",
+   "page": 42,
+   "metal": "Mo",
+   "statistic": "design",
+   "context": {
+    "ore": "primary sulfides"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.75,
+   "unit": "USD/lb",
+   "quote": "Unit net cash cost ($ per pound of copper) $ 1.75",
+   "page": 15,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "net of by-product credits"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 1.5,
+   "quote": "Mine $ 1.5",
+   "page": 15,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrator",
+   "value": 0.9,
+   "quote": "Concentrator 0.9",
+   "page": 15,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Supporting Infrastructure and Environmental",
+   "value": 2.5,
+   "quote": "Supporting Infrastructure and Environmental 2.5",
+   "page": 15,
+   "l1": "onsite_infra",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Expenditures",
+   "value": 4.9,
+   "quote": "Total Capital Expenditures $ 4.9",
+   "page": 15,
+   "is_total": true,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 18.9,
+   "quote": "Mine $ 18.9",
+   "page": 15,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 21.7,
+   "quote": "Processing 21.7",
+   "page": 15,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Balance",
+   "value": 3.2,
+   "quote": "Balance 3.2",
+   "page": 15,
+   "l1": "other",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total site cash operating costs",
+   "value": 43.8,
+   "quote": "Total site cash operating costs 43.8",
+   "page": 15,
+   "is_total": true,
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight",
+   "value": 4.0,
+   "quote": "Freight 4.0",
+   "page": 15,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment charges",
+   "value": 7.9,
+   "quote": "Treatment charges 7.9",
+   "page": 15,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "B"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Peruvian mining royalty tax",
+   "value": 0.4,
+   "quote": "Peruvian mining royalty tax 0.4",
+   "page": 15,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "B"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1973832/000197383226000062/sukaritechnicalreportsum.htm",
+  "source": "edgar",
+  "issuer": "AngloGold Ashanti PLC  (AU)",
+  "cik": "1973832",
+  "form": "6-K",
+  "exhibit": "EX-96.3",
+  "filed": "2026-03-26",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Sukari",
+  "commodity": "",
+  "report_id": "2026-03-26_anglogold-ashanti-plc_ex-96-3",
+  "sha256": "4df996fc232fe6df88b71dcbdd540ceadd14208a038e66eee7d3c9d97e37fa1e",
+  "bytes": 543933,
+  "format": "html",
+  "pages": 42,
+  "parsed_on": "2026-11-19"
+}

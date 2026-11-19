@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/701818/000110465924098365/tm2423579d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "KINROSS GOLD CORP  (KGC, KGCRF)",
+  "cik": "701818",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2024-09-10",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Great Bear",
+  "commodity": "",
+  "report_id": "2024-09-10_kinross-gold-corp_ex-99-1",
+  "sha256": "e12a50b76990f80c134eb364176901aa170839f3cbcb6a3c541ad3335f0be004",
+  "bytes": 6174179,
+  "format": "html",
+  "pages": 205,
+  "parsed_on": "2026-11-19"
+}

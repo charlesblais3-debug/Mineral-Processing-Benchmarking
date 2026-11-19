@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/q425ex964ahafo.htm",
+  "source": "edgar",
+  "issuer": "NEWMONT Corp /DE/  (NEM, NEMCL)",
+  "cik": "1164727",
+  "form": "10-K",
+  "exhibit": "EX-96.4",
+  "filed": "2026-02-19",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Ahafo",
+  "commodity": "",
+  "report_id": "2026-02-19_newmont-corp-de_ex-96-4",
+  "sha256": "5095b64abf73e493438282f651a9290c2139446abcae748e4bf3096e44bc9822",
+  "bytes": 549083,
+  "format": "html",
+  "pages": 63,
+  "parsed_on": "2026-11-19"
+}

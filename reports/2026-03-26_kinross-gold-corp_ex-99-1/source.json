@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/701818/000110465926035270/tm269365d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "KINROSS GOLD CORP  (KGC, KGCRF)",
+  "cik": "701818",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-03-26",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Paracatu",
+  "commodity": "",
+  "report_id": "2026-03-26_kinross-gold-corp_ex-99-1",
+  "sha256": "53693e708b7f00b89db7237d4be9d30192fa70373fe83761ca633c6187620971",
+  "bytes": 2552890,
+  "format": "html",
+  "pages": 101,
+  "parsed_on": "2026-11-19"
+}

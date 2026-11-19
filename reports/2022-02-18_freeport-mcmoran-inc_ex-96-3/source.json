@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125922000012/a2021trsmorenci-exhibit.htm",
+  "source": "edgar",
+  "issuer": "FREEPORT-MCMORAN INC  (FCX)",
+  "cik": "831259",
+  "form": "10-K/A",
+  "exhibit": "EX-96.3",
+  "filed": "2022-02-18",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "Morenci",
+  "commodity": "",
+  "report_id": "2022-02-18_freeport-mcmoran-inc_ex-96-3",
+  "sha256": "30dcb8b1d18a43827cd4f659cea0f1b4028552317ba05a2a0d8960a11ad6a9e1",
+  "bytes": 658506,
+  "format": "html",
+  "pages": 73,
+  "parsed_on": "2026-11-19"
+}

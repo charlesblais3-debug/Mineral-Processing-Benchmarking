@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/701818/000110465925028817/tm2510061d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "KINROSS GOLD CORP  (KGC, KGCRF)",
+  "cik": "701818",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-03-27",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "Tasiast",
+  "commodity": "",
+  "report_id": "2025-03-27_kinross-gold-corp_ex-99-1",
+  "sha256": "4c479110eab1d24edc97da499f1c7aa34ce418840be8632e5dfcfd94159ce1ee",
+  "bytes": 3021275,
+  "format": "html",
+  "pages": 110,
+  "parsed_on": "2026-11-19"
+}

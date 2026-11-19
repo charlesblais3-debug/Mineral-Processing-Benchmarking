@@ -189,6 +189,12 @@ def process(row: dict, client: PoliteClient | None = None, keep_original: bool =
     client = client or PoliteClient(min_interval={"www.sec.gov": 0.15})
     rid = row.get("report_id") or report_id(row)
     folder = REPORTS / rid
+    src = folder / "source.json"
+    if src.exists() and json.loads(src.read_text(encoding="utf-8")).get("url") != row["url"]:
+        # two filings on the same day with the same exhibit number: tell them apart by accession number
+        acc = re.search(r"/(\d{10,})/", row["url"])
+        rid = f"{rid}_{acc.group(1)[-6:] if acc else slug(row['url'].rsplit('/', 1)[-1], 12)}"
+        folder = REPORTS / rid
     raw = client.get(row["url"], timeout=300)
     is_pdf = raw[:5] == b"%PDF-"
     pages = pdf_to_pages(raw) if is_pdf else html_to_pages(raw)
