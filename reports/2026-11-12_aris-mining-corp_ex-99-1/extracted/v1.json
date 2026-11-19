@@ -1,0 +1,324 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Toroparu",
+  "title": "NI 43-101 Technical Report Prefeasibility Study for the Toroparu Project",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2026-11-12",
+  "effective_date_quote": "Effective date: November 12, 2026",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Cu"
+  ],
+  "country": "Guyana",
+  "region": "Cuyuni-Mazaruni",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "ilr",
+   "flotation",
+   "tank_leach",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "sulphide flotation for the sulphide ore type to produce a copper-gol",
+  "page": 31
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 7.0,
+   "unit": "Mt/a",
+   "quote": "process plant is designed to nominally treat 7.0 Mtpa of ore",
+   "page": 31,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 94.3,
+   "unit": "%",
+   "quote": "designed to recover 94.3% of the gold",
+   "page": 31,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 75.2,
+   "unit": "%",
+   "quote": "75.2% of the copper",
+   "page": 31,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 28.6,
+   "unit": "years",
+   "quote": "Processing years Years 17.0 11.6 28.6",
+   "page": 46
+  },
+  {
+   "parameter": "aisc",
+   "value": 1494,
+   "unit": "USD/oz",
+   "quote": "Average all in sustaining cost $/oz Au 1,395 1,841 1,494",
+   "page": 46,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1119,
+   "unit": "USD/oz",
+   "quote": "Average cash cost $/oz Au 1,003 1,529 1,119",
+   "page": 46,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production mining cost",
+   "value": 73.0,
+   "quote": "Pre-production mining cost 73.0",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners fleet purchase",
+   "value": 4.2,
+   "quote": "Owners fleet purchase 4.2",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Road construction",
+   "value": 48.8,
+   "quote": "Road construction 48.8",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "access"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing plant",
+   "value": 245.3,
+   "quote": "Processing plant 245.3",
+   "page": 44,
+   "multiplier": "M",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Earthworks",
+   "value": 63.6,
+   "quote": "Earthworks 63.6",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power",
+   "value": 124.4,
+   "quote": "Power 124.4",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "power",
+   "confidence": 0.6
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings management facility",
+   "value": 91.9,
+   "quote": "Tailings management facility 91.9",
+   "page": 44,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site and offsite infrastructure",
+   "value": 76.2,
+   "quote": "Site and offsite infrastructure 76.2",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Wharf facility",
+   "value": 170.6,
+   "quote": "Wharf facility 170.6",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "port_rail"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water management",
+   "value": 29.7,
+   "quote": "Water management 29.7",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other indirect costs including site G&A and first fills",
+   "value": 68.8,
+   "quote": "Other indirect costs including site G&A and first fills 68.8",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM costs",
+   "value": 20.5,
+   "quote": "EPCM costs 20.5",
+   "page": 44,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency allowances",
+   "value": 102.0,
+   "quote": "Contingency allowances 102.0",
+   "page": 44,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction capital with contingency allowances",
+   "value": 1119.0,
+   "quote": "Construction capital with contingency allowances 1,119.0",
+   "page": 44,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Deferred stripping",
+   "value": 418.1,
+   "quote": "Deferred stripping 418.1",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings management facility",
+   "value": 152.7,
+   "quote": "Tailings management facility 152.7",
+   "page": 44,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site and offsite infrastructure",
+   "value": 81.0,
+   "quote": "Site and offsite infrastructure 81.0",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 59.9,
+   "quote": "Closure 59.9",
+   "page": 44,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owners cost and other",
+   "value": 9.5,
+   "quote": "Owners cost and other 9.5",
+   "page": 44,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (main pit operations)",
+   "value": 27.54,
+   "quote": "Mining $/t processed 27.54 7.15",
+   "page": 45,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing, power, and tailings (main pit operations)",
+   "value": 14.08,
+   "quote": "Processing, power, and tailings $/t processed 14.08 14.13",
+   "page": 45,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics (main pit operations)",
+   "value": 3.03,
+   "quote": "Logistics $/t processed 3.03 2.60",
+   "page": 45,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (main pit operations)",
+   "value": 3.53,
+   "quote": "G&A $/t processed 3.53 3.19",
+   "page": 45,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost per tonne moved (main pit)",
+   "value": 4.06,
+   "quote": "Mining cost per tonne moved $/t moved 4.06 10.39",
+   "page": 45,
+   "multiplier": "",
+   "basis_unit": "per_t_moved",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
