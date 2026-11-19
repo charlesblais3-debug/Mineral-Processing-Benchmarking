@@ -1,0 +1,336 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Eskay Creek",
+  "title": "Eskay Creek Project NI 43-101 Technical Report on Updated Feasibility Study",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2023-11-14",
+  "effective_date_quote": "effective date: 14 November, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "Gold recovery (% to concentrate) 83",
+  "page": 39
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 3.0,
+   "unit": "Mt/a",
+   "quote": "Processing throughput (Mtpa) 3.0 (Years 1–5)",
+   "page": 39,
+   "statistic": "design",
+   "context": {
+    "phase": "years 1-5; 3.5 Mtpa years 6-12"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.6,
+   "unit": "g/t",
+   "quote": "Average diluted gold grade (g/t) 2.6",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 83,
+   "unit": "%",
+   "quote": "Gold recovery (% to concentrate) 83",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91,
+   "unit": "%",
+   "quote": "Silver recovery (% to concentrate) 91",
+   "page": 39,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 12,
+   "unit": "years",
+   "quote": "Processing life (years) 12",
+   "page": 39
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 7.98,
+   "unit": "t:t",
+   "quote": "ratio (waste: ore) 7.98:1",
+   "page": 39
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1800,
+   "unit": "USD/oz",
+   "quote": "price (US$/oz) 1,800",
+   "page": 39,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.74,
+   "unit": "USD/CAD",
+   "quote": "rate (US$/C$) 0.74",
+   "page": 39,
+   "context": {
+    "pair": "USD/CAD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1973,
+   "unit": "MCAD",
+   "quote": "After-tax NPV (5%) (C$M) 1,973",
+   "page": 40,
+   "context": {
+    "discount_rate_pct": 5,
+    "currency": "CAD"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 42.7,
+   "unit": "%",
+   "quote": "After-tax IRR 42.7",
+   "page": 40
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.2,
+   "unit": "years",
+   "quote": "After-tax payback period (years) 1.2",
+   "page": 40
+  },
+  {
+   "parameter": "aisc",
+   "value": 300,
+   "unit": "USD/oz",
+   "quote": "LOM AISC (US$/oz Au) net of silver by-product 300",
+   "page": 40,
+   "metal": "Au",
+   "context": {
+    "basis": "by-product"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 113.7,
+   "quote": "Mining 113.7 426.0",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ore crushing and reclaim",
+   "value": 38.0,
+   "quote": "crushing and reclaim 38.0 3.0",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant",
+   "value": 171.8,
+   "quote": "plant 171.8 2.0 8.0",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings reclaim and water treatment",
+   "value": 21.7,
+   "quote": "reclaim and water treatment 21.7 65.3",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-site infrastructure",
+   "value": 98.6,
+   "quote": "infrastructure 98.6 52.0",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site infrastructure",
+   "value": 30.3,
+   "quote": "infrastructure 30.3",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's costs",
+   "value": 92.6,
+   "quote": "costs 92.6",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect costs",
+   "value": 97.5,
+   "quote": "Indirect costs 97.5 13.0 0.7",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 664.2,
+   "quote": "Subtotal 664.2 561.3 8.7",
+   "page": 38,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 48.7,
+   "quote": "Contingency 48.7",
+   "page": 38,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 712.9,
+   "quote": "Total 712.9 561.3 8.7 174.8",
+   "page": 38,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining (total)",
+   "value": 561.3,
+   "quote": "Total 712.9 561.3 8.7 174.8",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion (total)",
+   "value": 8.7,
+   "quote": "Total 712.9 561.3 8.7 174.8",
+   "page": 38,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 174.8,
+   "quote": "Total 712.9 561.3 8.7 174.8",
+   "page": 38,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 26.54,
+   "quote": "Mining cost (C$/t milled) 26.54",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 19.16,
+   "quote": "Processing cost (C$/t milled) 19.16",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 5.69,
+   "quote": "G&A cost (C$/t milled) 5.69",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water treatment",
+   "value": 2.5,
+   "quote": "Water treatment cost (C$/t milled) 2.50",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "tailings_water",
+   "l2": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating costs",
+   "value": 53.89,
+   "quote": "Total operating costs (C$/t milled) 53.89",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per t mined",
+   "value": 2.96,
+   "quote": "Mining cost (C$/t mined) 2.96",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}
