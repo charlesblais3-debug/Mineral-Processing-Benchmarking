@@ -9,6 +9,7 @@ Commands
   scout          show likely value lines:  python -m pipeline scout <report_id> [capex opex ...]
   export-web     build the web interface (app/web/benchmark.html, app/web/dist/index.html)
   rebuild        recreate data/benchmark.db from every reports/*/extracted/v1.json
+  import-candidates  merge reports/_candidates/*.csv (search-agent finds) into the catalog [--parse]
   audit          flag curve outliers, implausible unit costs, ambiguous throughputs, derived values
   brief          key summary tables of a report on one line each:  python -m pipeline brief <report_id> [regex]
   load           validate an extraction and load it:  python -m pipeline load <report_id>
@@ -92,6 +93,13 @@ def main(argv: list[str]) -> int:
         from pipeline import export_web
         for f in export_web.write(export_web.build()):
             print(f"wrote {f} ({f.stat().st_size // 1024} KB)")
+    elif cmd == "import-candidates":
+        from pipeline.discover import candidates
+        cands = candidates.load()
+        print(candidates.merge(cands))
+        print({"issuers_added": candidates.merge_issuers()})
+        if "--parse" in argv:
+            candidates.parse(cands)
     elif cmd == "audit":
         from pipeline import audit
         flags = audit.run()

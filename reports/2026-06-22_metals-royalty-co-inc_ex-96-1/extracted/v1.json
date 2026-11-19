@@ -1,0 +1,256 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Mesabi Metallics (Nashwauk)",
+  "title": "S-K 1300 Technical Report Summary of Pre-Feasibility Study, Mesabi Metallics Project, Nashwauk, Minnesota",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2026-05-22",
+  "effective_date_quote": "Effective Date: May 22, 2026",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "USA",
+  "region": "Minnesota",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "magnetic_sep",
+   "vertical_mill",
+   "regrind",
+   "flotation",
+   "conc_thickener",
+   "tails_thickener",
+   "pelletizing"
+  ],
+  "quote": "Primary and secondary crushing. · | Dry cobbing. · | Primary grinding. · | Secondary grinding. · | Two (2) stages of LIMS. · | Vertical Regrind mill · | Reverse silica flotation.",
+  "page": 29
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 23.4,
+   "unit": "MLT/y",
+   "quote": "2031 23,400 9,109 38,063 2.02 23,400 21.8",
+   "page": 28,
+   "statistic": "design",
+   "context": {
+    "note": "steady-state mill feed, '000 LT dry per year (2031)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 21.13,
+   "unit": "%",
+   "quote": "Average Grade Mill Feed % Mag Fe 21.13",
+   "page": 48,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "MagFe"
+   }
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 29.79,
+   "unit": "%",
+   "quote": "Average Pellet Weight Recovery % 29.79",
+   "page": 48,
+   "statistic": "lom_average",
+   "context": {
+    "product": "DR-grade pellets"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 120.4,
+   "unit": "USD/t",
+   "quote": "Iron Pellet Price (FOB mine) US$/t 120.4",
+   "page": 47,
+   "metal": "Fe",
+   "context": {
+    "product": "DR-grade pellet, FOB mine"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2631,
+   "unit": "MUSD",
+   "quote": "After-Tax Net Present Value 8% US$ M 2,631",
+   "page": 48,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "EPC Costs (to complete)",
+   "value": 461,
+   "quote": "EPC Costs 1,481 461 1,942",
+   "page": 45,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Preparation Costs (to complete)",
+   "value": 24,
+   "quote": "Mine Preparation Costs 8 24 32",
+   "page": 45,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other Costs incl. Owner's, IDC, financing (to complete)",
+   "value": 56,
+   "quote": "(Inclusive of Owner’s Costs, IDC, Financing fee)* 100 56 156",
+   "page": 45,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency (to complete)",
+   "value": 30,
+   "quote": "Contingency - 30 30",
+   "page": 45,
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capex to complete (from Jan 1, 2026)",
+   "value": 571,
+   "quote": "Total 1,860 571 2,431",
+   "page": 45,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capex Incl. Closure",
+   "value": 480,
+   "quote": "Total Sustaining Capex Incl. Closure US$ M 480",
+   "page": 48,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 13.45,
+   "quote": "Mining* US$/t Pellet 13.45",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Equipment Rental",
+   "value": 3.61,
+   "quote": "Mining Equipment Rental US$/t Pellet 3.61",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing",
+   "value": 1.5,
+   "quote": "Crushing US$/t Pellet 1.50",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrating",
+   "value": 17.89,
+   "quote": "Concentrating** US$/t Pellet 17.89",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Pellet Plant",
+   "value": 10.12,
+   "quote": "Pellet Plant US$/t Pellet 10.12",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "SG&A + HSE",
+   "value": 3.56,
+   "quote": "SG&A + HSE US$/t Pellet 3.56",
+   "page": 46,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailing Storage Facility",
+   "value": 0.38,
+   "quote": "/t Pellet 0.38 Royalty",
+   "page": 46,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty Third-Party",
+   "value": 0.71,
+   "quote": "Royalty Third-Party US$/t Pellet 0.71",
+   "page": 46,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty on Pellet Production",
+   "value": 6.0,
+   "quote": "Royalty on Pellet Production US$/t Pellet 6.00",
+   "page": 46,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 57.22,
+   "quote": "Total Operating Costs US$/t Pellet 57.22",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Taconite Tax",
+   "value": 3.43,
+   "quote": "Taconite Tax US$/t Pellet 3.43",
+   "page": 46,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  }
+ ]
+}
