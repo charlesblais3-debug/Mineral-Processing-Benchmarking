@@ -1,0 +1,230 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "São Jorge",
+  "title": "NI 43-101 Technical Report and Preliminary Economic Assessment São Jorge Gold Project, Pará State, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-06-09",
+  "effective_date_quote": "EFFECTIVE DATE: JUNE 09, 2026",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Pará",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "ball_mill",
+   "gravity",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "Grinding will be performed in a ball mill operating in closed circuit with hydrocyclone classification.",
+  "page": 452
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 5500,
+   "unit": "t/d",
+   "quote": "Nominal process plant rate 5,500 tpd",
+   "page": 77,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.0,
+   "unit": "%",
+   "quote": "Average gold metallurgical recovery 90.0 %",
+   "page": 77,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.91,
+   "unit": "g/t",
+   "quote": "Average gold feed grade 0.91 g/t",
+   "page": 77,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 4.27,
+   "unit": "t:t",
+   "quote": "LOM Strip ratio (waste: processed material) 4.27",
+   "page": 77,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3500,
+   "unit": "USD/oz",
+   "quote": "Using a base case gold price of US$ 3,500/oz Au, the Project generates an after-tax NPV",
+   "page": 90,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 532,
+   "unit": "MUSD",
+   "quote": "discounted at 5%, of approximately US$ 532 million and an after-tax IRR of 42.3%",
+   "page": 90,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 42.3,
+   "unit": "%",
+   "quote": "discounted at 5%, of approximately US$ 532 million and an after-tax IRR of 42.3%",
+   "page": 90
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Equipment",
+   "value": 8639,
+   "quote": "Mining Equipment 8,639 8,639",
+   "page": 514,
+   "l1": "mining",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Preparation and Development",
+   "value": 866,
+   "quote": "Mine Preparation and Development 866 866",
+   "page": 514,
+   "l1": "mining",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site General & Pre-Construction",
+   "value": 33016,
+   "quote": "Site General & Pre-Construction 20,551 12,465 33,016",
+   "page": 514,
+   "l1": "onsite_infra",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power Line- Electrical and Automation",
+   "value": 16807,
+   "quote": "Power Line- Electrical and Automation 418 16,390 16,807",
+   "page": 514,
+   "l1": "onsite_infra",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant",
+   "value": 47000,
+   "quote": "Processing Plant 2,656 44,344 47,000",
+   "page": 514,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Dam",
+   "value": 2638,
+   "quote": "Tailings Dam 142 2,496 2,638",
+   "page": 514,
+   "l1": "tailings_water",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water Management",
+   "value": 1828,
+   "quote": "Water Management - 1,828 1,828",
+   "page": 514,
+   "l1": "tailings_water",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "General Services and Engineering Services",
+   "value": 26537,
+   "quote": "General Services and Engineering Services 3,422 23,115 26,537",
+   "page": 514,
+   "l1": "indirects",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production, Start-up and First Fill",
+   "value": 2104,
+   "quote": "Pre-production, Start-up and First Fill - 2,104 2,104",
+   "page": 514,
+   "l1": "owners",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-total 1",
+   "value": 139435,
+   "quote": "Sub-total 1 27,189 112,246 139,435",
+   "page": 514,
+   "is_subtotal": true,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 13944,
+   "quote": "Indirect Costs 10% 2,719 11,225 13,944",
+   "page": 514,
+   "l1": "indirects",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner Costs",
+   "value": 13944,
+   "quote": "Owner Costs 10% 2,719 11,225 13,944",
+   "page": 514,
+   "l1": "owners",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 34859,
+   "quote": "Contingency 25% 6,797 28,062 34,859",
+   "page": 514,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TOTAL CAPEX",
+   "value": 202181,
+   "quote": "TOTAL CAPEX 39,424 162,757 202,181",
+   "page": 514,
+   "is_total": true,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital",
+   "value": 53.0,
+   "quote": "Sustaining capital expenditures over the life of mine are estimated at approximately US$ 53.0 million",
+   "page": 86,
+   "is_total": true
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Duparquet",
+  "title": "NI 43-101 Technical Report: Preliminary Economic Assessment Duparquet Gold Project, Québec",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2023-09-15",
+  "effective_date_quote": "Effective Date: September 15, 2023",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Québec",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "Gold Recovery to Concentrate % 89.5",
+  "page": 44
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 5.5,
+   "unit": "Mt/a",
+   "quote": "The milling rate is planned at 5.5 Mtpa with a ramp-up period of 0.5 years",
+   "page": 49,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 18.5,
+   "unit": "kWh/t",
+   "quote": "RWI kWh/t 19.1 BWI kWh/t 18.5",
+   "page": 44,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill (design criteria nominal)"
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 19.1,
+   "unit": "kWh/t",
+   "quote": "RWI kWh/t 19.1 BWI kWh/t 18.5",
+   "page": 44,
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.547,
+   "unit": "g",
+   "quote": "Abrasion g 0.547 A x b - 27",
+   "page": 44,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 27,
+   "unit": "",
+   "quote": "Abrasion g 0.547 A x b - 27",
+   "page": 44,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.5,
+   "unit": "%",
+   "quote": "Concentrate Grade g/t Au 36.3 Gold Recovery to Concentrate % 89.5",
+   "page": 44,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "to_product": "flotation concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 36.3,
+   "unit": "g/t",
+   "quote": "Concentrate Grade g/t Au 36.3",
+   "page": 44,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 588.2,
+   "unit": "MCAD",
+   "quote": "NPV 5% CAD M 1,073.0 588.2",
+   "page": 62,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 18.0,
+   "unit": "%",
+   "quote": "IRR % 24.9% 18.0%",
+   "page": 62
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.8,
+   "unit": "years",
+   "quote": "Payback Years 3.8 4.8",
+   "page": 62
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 10.4,
+   "quote": "100: Infrastructure 10.4",
+   "page": 61,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power and Electrical",
+   "value": 14.7,
+   "quote": "200: Power and Electrical 14.7",
+   "page": 61,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water",
+   "value": 37.4,
+   "quote": "300: Water 37.4",
+   "page": 61,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mobile Equipment",
+   "value": 4.5,
+   "quote": "400: Mobile Equipment 4.5",
+   "page": 61,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 102.2,
+   "quote": "500: Mining 102.2",
+   "page": 61
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 189.9,
+   "quote": "600: Process Plant 189.9",
+   "page": 61,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Indirects",
+   "value": 89.8,
+   "quote": "700: Construction Indirects 89.8",
+   "page": 61,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "General Services",
+   "value": 53.9,
+   "quote": "800: General Services 53.9",
+   "page": 61,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Cost",
+   "value": 502.7,
+   "quote": "Construction Cost 502.7",
+   "page": 61,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 125.7,
+   "quote": "990: Contingency 125.7",
+   "page": 61
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-production, Start-up, Commissioning",
+   "value": 57.2,
+   "quote": "900: Pre-production, Start-up, Commissioning 57.2",
+   "page": 61,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Working Capital",
+   "value": 20.3,
+   "quote": "Working Capital 20.3 Total 706.0",
+   "page": 61,
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 706.0,
+   "quote": "Working Capital 20.3 Total 706.0",
+   "page": 61,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital",
+   "value": 737.8,
+   "quote": "Sustaining capital of CAD 737.8M is required over the Life of Mine",
+   "page": 61,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mining",
+   "value": 23.82,
+   "quote": "Total Mining 1,404.8 23.82",
+   "page": 62,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 10.59,
+   "quote": "Processing 624.7 10.59",
+   "page": 62,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 2.9,
+   "quote": "General and Administration 173.1 2.90",
+   "page": 62,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 37.35,
+   "quote": "Total 2,202.5 37.35",
+   "page": 62,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

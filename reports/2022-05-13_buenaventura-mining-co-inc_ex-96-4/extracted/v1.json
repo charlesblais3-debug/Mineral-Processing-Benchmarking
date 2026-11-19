@@ -1,0 +1,91 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "El Brocal",
+  "title": "SEC Technical Report Summary Pre-Feasibility Study El Brocal, Department of Pasco, Peru",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2022-03-15",
+  "effective_date_quote": "Effective Date: March 15, 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Pb",
+   "Ag",
+   "Au"
+  ],
+  "country": "Peru",
+  "region": "Pasco",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "rod_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "A fine ore reclaim system feeds the primary grinding stage, which consists of a 7” x 12” and 550 HP single rod mill operating in open circuit.",
+  "page": 231
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 8000,
+   "unit": "t/d",
+   "quote": "Mill throughput Plant Cu (Plant 1) t/day 8,000",
+   "page": 158,
+   "statistic": "design",
+   "context": {
+    "note": "copper plant (Plant 1); Pb-Zn Plant 2 10,500 t/d"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 277.03,
+   "unit": "MUSD",
+   "quote": "After Tax Free Cash Flow M US$ 320.18 NPV @ 7.77% M US$ 277.03",
+   "page": 43,
+   "context": {
+    "discount_rate_pct": 7.77
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost Plant Cu",
+   "value": 17.47,
+   "quote": "Processing cost Plant Cu US$/t ore 17.47",
+   "page": 157,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A cost",
+   "value": 6.84,
+   "quote": "G&A cost US$/t ore 6.84",
+   "page": 158,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Base mining cost",
+   "value": 1.87,
+   "quote": "Base mining cost US$/t rock 1.87",
+   "page": 157,
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  }
+ ]
+}

@@ -67,6 +67,9 @@ families:
   - key: cil_cip
     label: CIL/CIP
     rule: { any: [cil, cip] }
+  - key: leach_ccd
+    label: Leach + CCD / Merrill-Crowe
+    rule: { any: [tank_leach, merrill_crowe], none: [cil, cip, pox, albion, biox] }
   - key: heap_leach
     label: Heap leach
     rule: { any: [heap_leach] }

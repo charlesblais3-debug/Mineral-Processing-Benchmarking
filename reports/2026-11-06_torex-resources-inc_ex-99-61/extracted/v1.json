@@ -1,0 +1,267 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Los Reyes",
+  "title": "Los Reyes Project NI 43-101 Technical Report and Preliminary Economic Assessment, Sinaloa and Durango, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-04-25",
+  "effective_date_quote": "Effective Date: April 25, 2026",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Sinaloa",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "ball_mill",
+   "tank_leach",
+   "merrill_crowe",
+   "cyanide_detox",
+   "tails_filter"
+  ],
+  "quote": "Ball milling in closed circuit with a classifying cyclone cluster • Whole-ore leaching of the cyclone overflow",
+  "page": 40
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 5000,
+   "unit": "t/d",
+   "quote": "feeding a single 5,000 t/d (1.83 Mt/a) processing plant over a life of mine of approximately 15 years",
+   "page": 39,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.7,
+   "unit": "kWh/t",
+   "quote": "Bond ball mill Wi values averaged 17.7 kWh/t, and ranged from 15.8 to 19.2 kWh/t",
+   "page": 36,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "n_samples": 8,
+    "min": 15.8,
+    "max": 19.2
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 38,
+   "unit": "",
+   "quote": "Drop weight SMC tests returned Axb values averaging 38",
+   "page": 36,
+   "statistic": "mean",
+   "context": {
+    "test": "SMC",
+    "n_samples": 4
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 94.8,
+   "unit": "%",
+   "quote": "Gold recovery % 94.8 % Silver recovery % 81.1",
+   "page": 46,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 81.1,
+   "unit": "%",
+   "quote": "Gold recovery % 94.8 % Silver recovery % 81.1",
+   "page": 46,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.68,
+   "unit": "g/t",
+   "quote": "LOM Au Grade g/t 1.68",
+   "page": 46,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3600,
+   "unit": "USD/oz",
+   "quote": "Gold price US$/oz 3,600.0",
+   "page": 46,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1491,
+   "unit": "MUSD",
+   "quote": "On a post-tax basis, the NPV discounted at 5% is $1,491 million; the IRR is 37.3%, and the payback period is 1.9 years.",
+   "page": 45,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 37.3,
+   "unit": "%",
+   "quote": "On a post-tax basis, the NPV discounted at 5% is $1,491 million; the IRR is 37.3%, and the payback period is 1.9 years.",
+   "page": 45
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.9,
+   "unit": "years",
+   "quote": "On a post-tax basis, the NPV discounted at 5% is $1,491 million; the IRR is 37.3%, and the payback period is 1.9 years.",
+   "page": 45
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 98.2,
+   "quote": "Mining $ 98.2 $ 414.9 $ 513.1",
+   "page": 44
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 113.3,
+   "quote": "Process Plant $ 113.3 $ 89.4 $ 202.7",
+   "page": 44,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Additional Process Facilities",
+   "value": 30.9,
+   "quote": "Additional Process Facilities $ 30.9 $ 25.2 $ 56.0",
+   "page": 44,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 54.1,
+   "quote": "On-Site Infrastructure $ 54.1 $ 2.0 $ 56.1",
+   "page": 44
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 16.5,
+   "quote": "Off-Site Infrastructure $ 16.5 $ 0 $ 16.5",
+   "page": 44
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 313.0,
+   "quote": "Total Direct Costs $ 313.0 $ 531.4 $ 844.4",
+   "page": 44,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Preliminaries",
+   "value": 36.5,
+   "quote": "Project Preliminaries $ 36.5 $ 0 $ 36.5",
+   "page": 44,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs Owners Costs",
+   "value": 44.2,
+   "quote": "Indirect Costs Owners Costs $ 44.2 $ 0 $ 44.2",
+   "page": 44,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 18.5,
+   "quote": "Owner’s Costs $ 18.5 $ 0 $ 18.5",
+   "page": 44
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 102.6,
+   "quote": "Contingency $ 102.6 $ 47.2 $ 149.8",
+   "page": 44
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost",
+   "value": 514.8,
+   "quote": "Total Capital Cost $ 514.8 $ 578.6 $ 1,093.4",
+   "page": 44,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining",
+   "value": 578.6,
+   "quote": "Total Capital Cost $ 514.8 $ 578.6 $ 1,093.4",
+   "page": 44,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 37.36,
+   "quote": "Mining 37.36 Process 23.39",
+   "page": 45,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 23.39,
+   "quote": "Process 23.39 G&A 8.43",
+   "page": 45,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 8.43,
+   "quote": "G&A 8.43 Total 79.93",
+   "page": 45,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 79.93,
+   "quote": "Total 79.93",
+   "page": 45,
+   "is_total": true,
+   "partial_breakdown": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Segovia",
+  "title": "NI 43-101 Technical Report Prefeasibility Study Segovia Project, Antioquia, Colombia",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2021",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Colombia",
+  "region": "Antioquia",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "flotation",
+   "regrind",
+   "tank_leach",
+   "merrill_crowe"
+  ],
+  "quote": "utilizing a process flowsheet that includes crushing, grinding, gravity concentration, gold flotation, concentrate regrinding, concentrate cyanidation, Merrill-Crowe zinc precipitation",
+  "page": 22
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1500,
+   "unit": "t/d",
+   "quote": "at its 1,500 t/d Maria Dama process plant which includes crushing, grinding, gravity concentration",
+   "page": 31,
+   "statistic": "design",
+   "context": {
+    "note": "expansion to 2,000 t/d under way"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.5,
+   "unit": "%",
+   "quote": "a metallurgical recovery of 90.5% Au, has been assumed based on the current performance of the operating plant",
+   "page": 24,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 807,
+   "unit": "USD/oz",
+   "quote": "The estimated cash cost, including direct and indirect production costs, is US$807/Au-oz",
+   "page": 35,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1032,
+   "unit": "USD/oz",
+   "quote": "while All-in Sustaining Costs (AISC), including sustaining capital, is US$1,032/Au-oz",
+   "page": 35,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 159.36,
+   "quote": "Mining 365,010 159.36 541.62",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 33.39,
+   "quote": "Process 76,489 33.39 113.50",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 25.29,
+   "quote": "G&A 57,917 25.29 85.94",
+   "page": 35,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating",
+   "value": 218.04,
+   "quote": "Total Operating $499,416 $218.04 $741.06",
+   "page": 35,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (LoM)",
+   "value": 151.5,
+   "quote": "the Project requires sustaining capital of US$151.5 million (M) throughout the LoM",
+   "page": 34,
+   "is_total": true
+  }
+ ]
+}

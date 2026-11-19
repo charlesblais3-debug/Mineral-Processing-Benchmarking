@@ -228,7 +228,7 @@ Standard bases: **USD/t milled** (primary), USD/t mined (mining), and **USD/oz o
 
 ### 6.3 Flowsheet families
 Derived from unit operations; one project can carry several tags. Families are **commodity-neutral**, so combine them with the commodity filter (e.g. Flotation + Cu):
-`Flotation` · `Flotation + concentrate leach (POX/Albion/BIOX)` · `Gravity + CIL/CIP` · `CIL/CIP` · `Heap leach` · `Gravity only` · `Pressure leach (HPAL)` · `Smelting (RKEF)` · `Magnetic separation`
+`Flotation` · `Flotation + concentrate leach (POX/Albion/BIOX)` · `Gravity + CIL/CIP` · `CIL/CIP` · `Leach + CCD / Merrill-Crowe` · `Heap leach` · `Gravity only` · `Pressure leach (HPAL)` · `Smelting (RKEF)` · `Magnetic separation`
 All flotation (any cell type: conventional, Jameson, column, coarse particle; any stage) is one unit operation.
 Comminution circuit as its own tag: `HPGR + ball` · `SABC` · `SAG + ball` · `Single-stage SAG` · `AG` · `3-stage crush + ball` · `Crush + rod + ball` · `Crush only`
 
