@@ -1,0 +1,245 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Waihi District (Martha UG / Wharekirauponga)",
+  "title": "NI 43-101 Technical Report – Waihi District Pre-feasibility Study, New Zealand",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2024-06-30",
+  "effective_date_quote": "Effective Date: June 30, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "New Zealand",
+  "region": "Waikato",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": null,
+ "facts": [
+  {
+   "parameter": "bwi_ball",
+   "value": 23.9,
+   "unit": "kWh/t",
+   "quote": "75 th percentile 7.89 33.2 2.60 23.9 16.0",
+   "page": 63,
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Martha UG 2019 samples"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 33.2,
+   "unit": "-",
+   "quote": "75 th percentile 7.89 33.2 2.60 23.9 16.0",
+   "page": 63,
+   "statistic": "p75",
+   "context": {
+    "note": "75th percentile row"
+   }
+  },
+  {
+   "parameter": "dwi",
+   "value": 7.89,
+   "unit": "kWh/m3",
+   "quote": "75 th percentile 7.89 33.2 2.60 23.9 16.0",
+   "page": 63,
+   "statistic": "p75"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 16.0,
+   "unit": "kWh/t",
+   "quote": "75 th percentile 7.89 33.2 2.60 23.9 16.0",
+   "page": 63,
+   "statistic": "p75"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1750,
+   "unit": "USD/oz",
+   "quote": "Gold ($/oz) 1,750 2,400",
+   "page": 32,
+   "metal": "Au",
+   "context": {
+    "note": "reserve case"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 137.726,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV at 5% 137,726 620,707",
+   "page": 33,
+   "context": {
+    "discount_rate_pct": 5,
+    "gold_price": 1750
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 9.2,
+   "unit": "%",
+   "quote": "IRR 9.2% 24.0%",
+   "page": 33,
+   "context": {
+    "gold_price": 1750
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "WUG",
+   "value": 357.9,
+   "quote": "WUG 357.9 62.9 420.9",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing and Water Treatment",
+   "value": 92.8,
+   "quote": "Processing and Water Treatment 92.8 8.4 101.2",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TSF's",
+   "value": 44.4,
+   "quote": "TSF's 44.4 80.5 124.9",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Capital",
+   "value": 60.6,
+   "quote": "Other Capital 60.6 16.0 76.7",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total non-sustaining",
+   "value": 555.8,
+   "quote": "Total 555.8 341.6 897.4",
+   "page": 31,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "WUG",
+   "value": 62.9,
+   "quote": "WUG 357.9 62.9 420.9",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "MUG",
+   "value": 102.1,
+   "quote": "MUG - 102.1 102.1",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing and Water Treatment",
+   "value": 8.4,
+   "quote": "Processing and Water Treatment 92.8 8.4 101.2",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TSF's",
+   "value": 80.5,
+   "quote": "TSF's 44.4 80.5 124.9",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Capital",
+   "value": 16.0,
+   "quote": "Other Capital 60.6 16.0 76.7",
+   "page": 31,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Rehabilitation",
+   "value": 71.6,
+   "quote": "Rehabilitation - 71.6 71.6",
+   "page": 31,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 26.3,
+   "quote": "Processing 222.7 26.3",
+   "page": 32,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Costs",
+   "value": 22.6,
+   "quote": "G&A Costs 191.0 22.6",
+   "page": 32,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Mining (per t ore mined)",
+   "value": 89.0,
+   "quote": "Subtotal Mining 753.2 89.0",
+   "page": 32,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining / Freight Costs",
+   "value": 0.7,
+   "quote": "Refining / Freight Costs 5.6 0.7",
+   "page": 32,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "l2": "tc_rc"
+  }
+ ]
+}
