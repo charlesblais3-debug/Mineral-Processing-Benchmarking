@@ -1,0 +1,113 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Nussir",
+  "title": "Technical Report Summary on the Nussir Project – Feasibility Study",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2026-04-14",
+  "effective_date_quote": "Effective Date: April 14, 2026",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Norway",
+  "region": "Finnmark",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "regrind",
+   "vertical_mill",
+   "tails_thickener"
+  ],
+  "quote": "reground in a stirred mill (vertical mill) using ceramic media",
+  "page": 14
+ },
+ "facts": [
+  {
+   "parameter": "bwi_ball",
+   "value": 12.2,
+   "unit": "kWh/t",
+   "quote": "typical BWIs of approximately 11–13 kWh/t (75th percentile 12.2 kWh/t)",
+   "page": 6,
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96,
+   "unit": "%",
+   "quote": "~96% copper recovery at a concentrate grade of approximately 45% copper",
+   "page": 7,
+   "metal": "Cu",
+   "statistic": "design"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 45,
+   "unit": "%",
+   "quote": "~96% copper recovery at a concentrate grade of approximately 45% copper",
+   "page": 7,
+   "metal": "Cu",
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 25,
+   "unit": "µm",
+   "quote": "ate to P80 of 25–30 µm",
+   "page": 6,
+   "statistic": "min",
+   "context": {
+    "note": "25-30 µm"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 235,
+   "unit": "MUSD",
+   "quote": "After-tax Net Present Value (NPV) of 235 million USD (MUSD) (8% discount rate)",
+   "page": 3,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 0.95,
+   "unit": "USD/lb",
+   "quote": "LOM total cash costs (net of by-products) of 0.95",
+   "page": 3,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.0,
+   "unit": "Mt/a",
+   "quote": "The process plant is designed to treat 2.0 million tonnes per annum (Mtpa) of ore",
+   "page": 13,
+   "statistic": "design"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial capital expenditures",
+   "value": 184,
+   "quote": "Initial capital expenditures of 184 MUSD",
+   "page": 3,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  }
+ ]
+}
