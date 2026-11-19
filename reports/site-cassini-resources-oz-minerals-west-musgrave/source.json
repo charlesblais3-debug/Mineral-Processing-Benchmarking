@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20200212/pdf/44f0rb0b4bsmp0.pdf",
+  "source": "agent_search",
+  "issuer": "Cassini Resources (OZ Minerals JV)",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "project": "West Musgrave",
+  "commodity": "Ni",
+  "report_id": "site-cassini-resources-oz-minerals-west-musgrave",
+  "sha256": "232a47594aeff9575ebe74c5fec4c0f45c84b124e23e23222acfdb471f5638a7",
+  "bytes": 551585,
+  "format": "pdf",
+  "pages": 15,
+  "parsed_on": "2026-11-19"
+}

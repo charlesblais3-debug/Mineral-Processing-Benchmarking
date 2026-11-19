@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20140714/pdf/42qsqyl9kb6f5m.pdf",
+  "source": "agent_search",
+  "issuer": "Sirius Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "DFS",
+  "project": "Nova-Bollinger",
+  "commodity": "Ni",
+  "report_id": "site-sirius-resources-nova-bollinger",
+  "sha256": "aec44acbb1174fb69c37d7fdcfd9dafb5e49e15c4e047859aaea0ba049486d18",
+  "bytes": 4612947,
+  "format": "pdf",
+  "pages": 34,
+  "parsed_on": "2026-11-19"
+}

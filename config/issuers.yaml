@@ -24,7 +24,14 @@ issuers:
   - { name: Talon Metals,          site: https://talonmetals.com/,          commodity: Ni, projects: [Tamarack] }
   - { name: FPX Nickel,            site: https://fpxnickel.com/,            commodity: Ni, projects: [Baptiste] }
   - { name: Giga Metals,           site: https://gigametals.com/,           commodity: Ni, projects: [Turnagain] }
-  - { name: Magna Mining,          site: https://magnamining.com/,          commodity: Ni, projects: [Shakespeare, Crean Hill] }
+  - { name: Magna Mining,          site: https://magnamining.com/,          commodity: Ni, projects: [Shakespeare, Crean Hill, McCreedy West], pages: [https://magnamining.com/about/our-projects/, https://magnamining.com/about/shakespeare-project/, https://magnamining.com/about/crean-hill-project/, https://magnamining.com/about/mccreedy-west-project/] }
   - { name: Power Nickel,          site: https://powernickel.com/,          commodity: Ni, projects: [Nisk] }
   - { name: Alaska Energy Metals,  site: https://alaskaenergymetals.com/,   commodity: Ni, projects: [Nikolai, Eureka] }
   - { name: Nickel Creek Platinum, site: https://nickelcreekplatinum.com/,  commodity: Ni, projects: [Wellgreen] }
+  # nickel issuers found by the search agent (pages verified)
+  - { name: Horizonte Minerals, site: https://horizonteminerals.com/, commodity: Ni, projects: [Araguaia, Vermelho], pages: [https://horizonteminerals.com/uk/en/technical_reports/] }
+  - { name: EV Nickel, site: https://evnickel.com/, commodity: Ni, projects: [CarLang A], pages: [https://evnickel.com/projects/the-shaw-dome-project/large-scale-projects-carlang-a/] }
+  - { name: Centaurus Metals, site: https://centaurus.com.au/, commodity: Ni, projects: [Jaguar], pages: [https://centaurus.com.au/site/projects/jaguar-nickel-sulphide-project] }
+  - { name: Ardea Resources, site: https://ardearesources.com.au/, commodity: Ni, projects: [Kalgoorlie Nickel (Goongarrie Hub)], pages: [https://ardearesources.com.au/projects-knp, https://ardearesources.com.au/announcements] }
+  - { name: Nico Resources, site: https://nicoresources.com.au/, commodity: Ni, projects: [Wingellina], pages: [https://nicoresources.com.au/wingellina-project-information-updates/, https://nicoresources.com.au/reports/] }
+  - { name: Sunrise Energy Metals, site: https://sunriseem.com/, commodity: Ni, projects: [Sunrise (Syerston)], pages: [https://sunriseem.com/investor-centre/asx-announcements/] }

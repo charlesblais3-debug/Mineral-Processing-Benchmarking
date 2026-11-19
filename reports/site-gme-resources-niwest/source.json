@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20180802/pdf/43x0p4pcglqlpt.pdf",
+  "source": "agent_search",
+  "issuer": "GME Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "project": "NiWest",
+  "commodity": "Ni",
+  "report_id": "site-gme-resources-niwest",
+  "sha256": "1d3979065312adf344bb4620966276874db8471676b71d0b59dc47591e84acba",
+  "bytes": 2608927,
+  "format": "pdf",
+  "pages": 83,
+  "parsed_on": "2026-11-19"
+}

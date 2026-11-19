@@ -1,0 +1,19 @@
+{
+  "url": "https://evnickel.com/_resources/pdfs/pea_technical_report_carlanga.pdf",
+  "source": "agent_search",
+  "issuer": "EV Nickel",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "CarLang A (Shaw Dome)",
+  "commodity": "Ni",
+  "report_id": "site-ev-nickel-carlang-a-shaw-dome",
+  "sha256": "168ae5f1d8b999d36e1a60aee6e7c6663b65bbb8f8665467b4271ddc1ce44e7a",
+  "bytes": 18795754,
+  "format": "pdf",
+  "pages": 223,
+  "parsed_on": "2026-11-19"
+}

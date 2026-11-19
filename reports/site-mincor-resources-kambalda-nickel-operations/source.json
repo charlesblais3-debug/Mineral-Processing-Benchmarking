@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20200325/pdf/44gchf7zgy6btd.pdf",
+  "source": "agent_search",
+  "issuer": "Mincor Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "DFS",
+  "project": "Kambalda Nickel Operations",
+  "commodity": "Ni",
+  "report_id": "site-mincor-resources-kambalda-nickel-operations",
+  "sha256": "fd3d0349d5847d3cb267212608f1603ed3868d53d8430f605fe733c23e2c3756",
+  "bytes": 2769183,
+  "format": "pdf",
+  "pages": 42,
+  "parsed_on": "2026-11-19"
+}
