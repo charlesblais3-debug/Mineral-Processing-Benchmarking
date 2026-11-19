@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1973832/000197383226000062/arthurgoldprojecttechnic.htm",
+  "source": "edgar",
+  "issuer": "AngloGold Ashanti PLC  (AU)",
+  "cik": "1973832",
+  "form": "6-K",
+  "exhibit": "EX-96.1",
+  "filed": "2026-03-26",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "Arthur",
+  "commodity": "",
+  "report_id": "2026-03-26_anglogold-ashanti-plc_ex-96-1",
+  "sha256": "1244ad53a8d5e53f35c85ab3f4813f7b41c91fa373c6d2f8a849bd2374fc599f",
+  "bytes": 701984,
+  "format": "html",
+  "pages": 53,
+  "parsed_on": "2026-11-19"
+}

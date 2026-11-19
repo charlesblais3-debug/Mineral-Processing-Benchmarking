@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1732379/000155485526000680/ex961_1.htm",
+  "source": "edgar",
+  "issuer": "Blue Moon Metals Inc.  (BMM)",
+  "cik": "1732379",
+  "form": "6-K",
+  "exhibit": "EX-96.1",
+  "filed": "2026-04-21",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Nussir",
+  "commodity": "",
+  "report_id": "2026-04-21_blue-moon-metals-inc_ex-96-1",
+  "sha256": "2a62c6d66a81fb0bae929d46b987a6c6860ce3446f85847995dac416f62fc92a",
+  "bytes": 1070586,
+  "format": "html",
+  "pages": 48,
+  "parsed_on": "2026-11-19"
+}

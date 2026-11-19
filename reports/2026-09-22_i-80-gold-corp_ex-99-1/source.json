@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853962/000119312526397337/d29391dex991.htm",
+  "source": "edgar",
+  "issuer": "i-80 Gold Corp.  (IAUX, IAUX-WT)",
+  "cik": "1853962",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-09-22",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "Granite Creek",
+  "commodity": "",
+  "report_id": "2026-09-22_i-80-gold-corp_ex-99-1",
+  "sha256": "d9840394263d28d3320c6455966dfbcdb18979910bc2ff5d8ce8cb17f3aac10d",
+  "bytes": 4994436,
+  "format": "html",
+  "pages": 441,
+  "parsed_on": "2026-11-19"
+}

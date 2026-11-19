@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1526243/000110465920107786/tm2030638d1_ex99-18.htm",
+  "source": "edgar",
+  "issuer": "MIDAS GOLD CORP.  (PPTA)",
+  "cik": "1526243",
+  "form": "40FR12G",
+  "exhibit": "EX-99.18",
+  "filed": "2020-09-23",
+  "standard": "",
+  "study_level": "PFS",
+  "project": "Stibnite",
+  "commodity": "",
+  "report_id": "2020-09-23_midas-gold-corp_ex-99-18",
+  "sha256": "caa7a5cdc3f0628e9a08b6f5d61918be982c6c277d24a92d460de05b0a7469ab",
+  "bytes": 17150241,
+  "format": "html",
+  "pages": 642,
+  "parsed_on": "2026-11-19"
+}

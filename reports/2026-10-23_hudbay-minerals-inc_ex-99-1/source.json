@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1322422/000106299326005519/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Hudbay Minerals Inc.  (HBM)",
+  "cik": "1322422",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-10-23",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Copper World",
+  "commodity": "",
+  "report_id": "2026-10-23_hudbay-minerals-inc_ex-99-1",
+  "sha256": "31edaeaaca761f03bbf6b11eb82466349e96d1e643987099646089e4f6106828",
+  "bytes": 5653251,
+  "format": "html",
+  "pages": 327,
+  "parsed_on": "2026-11-19"
+}

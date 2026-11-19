@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1468642/000117184326002127/exh_962.htm",
+  "source": "edgar",
+  "issuer": "Aura Minerals Inc.  (AUGO)",
+  "cik": "1468642",
+  "form": "20-F",
+  "exhibit": "EX-96.2",
+  "filed": "2026-04-01",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "Borborema",
+  "commodity": "",
+  "report_id": "2026-04-01_aura-minerals-inc_ex-96-2",
+  "sha256": "644af658075164bd89d3a294bc1e12f137e5202af8238f88c782f642be81bc8a",
+  "bytes": 938555,
+  "format": "html",
+  "pages": 171,
+  "parsed_on": "2026-11-19"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1487326/000162828026021651/exhibit9960-40xf.htm",
+  "source": "edgar",
+  "issuer": "OceanaGold Corp",
+  "cik": "1487326",
+  "form": "40FR12B",
+  "exhibit": "EX-99.60",
+  "filed": "2026-03-27",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "Waihi",
+  "commodity": "",
+  "report_id": "2026-03-27_oceanagold-corp_ex-99-60",
+  "sha256": "164fd6143616b662609a9d442a63fcaa0ccbd080d6d43fe8964eaeea602a1d34",
+  "bytes": 9231021,
+  "format": "html",
+  "pages": 161,
+  "parsed_on": "2026-11-19"
+}

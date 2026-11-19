@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1134115/000110465923109441/tm2328462d1_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "INTERNATIONAL TOWER HILL MINES LTD  (THM)",
+  "cik": "1134115",
+  "form": "10-K/A",
+  "exhibit": "EX-96.1",
+  "filed": "2023-10-17",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "Livengood",
+  "commodity": "",
+  "report_id": "2023-10-17_international-tower-hill-mines_ex-96-1",
+  "sha256": "8bb7d74940d2f86d4770cfdc7734a54e38b67f984e0477f74d8d0d22d018a194",
+  "bytes": 6519829,
+  "format": "html",
+  "pages": 224,
+  "parsed_on": "2026-11-19"
+}

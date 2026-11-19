@@ -1,0 +1,215 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Copper World",
+  "title": "2026 Copper World DFS, Form 43-101F1 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2026-09-30",
+  "effective_date_quote": "Effective Date: September 30, 2026",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag",
+   "Au"
+  ],
+  "country": "USA",
+  "region": "Arizona",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "SAB circuits typically use",
+  "page": 123
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 60000,
+   "unit": "st/d",
+   "quote": "hroughput is designed to ramp up to 60 kstpd",
+   "page": 33,
+   "statistic": "design",
+   "context": {
+    "phase": "years 1-4; 90 kstpd from year 5",
+    "note": "short tons"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13.6,
+   "unit": "kWh/t",
+   "quote": "BWi Ball (kWh/mt) 13.6 14.5",
+   "page": 123,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill",
+    "period": "years 1-4"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.5,
+   "unit": "kWh/t",
+   "quote": "Average 12.8 2.8 51 0.53 5.9 16.5 12.0 6.2 100 13.2 12.5 0.29",
+   "page": 122,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "n_samples": 55
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 14.8,
+   "unit": "kWh/t",
+   "quote": "BWi Rod (kWh/mt) 14.8 16.5",
+   "page": 123,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 38,
+   "unit": "-",
+   "quote": "A x b 38 32",
+   "page": 123,
+   "statistic": "design"
+  },
+  {
+   "parameter": "specific_energy",
+   "value": 11.1,
+   "unit": "kWh/t",
+   "quote": "Bond (Crushing-Rod-Ball) 11.1 11.9",
+   "page": 123,
+   "statistic": "design",
+   "context": {
+    "scope": "total circuit, Bond method, years 1-4"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 5.0,
+   "unit": "USD/lb",
+   "quote": "Copper 1 $/lb 5.00",
+   "page": 38,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1241,
+   "unit": "MUSD",
+   "quote": "Net present value @ 8% $ millions $1,241",
+   "page": 42,
+   "context": {
+    "discount_rate_pct": 8,
+    "note": "base case, unlevered"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 16.8,
+   "unit": "%",
+   "quote": "Internal rate of return % 16.8%",
+   "page": 42
+  },
+  {
+   "parameter": "payback_years",
+   "value": 5.4,
+   "unit": "years",
+   "quote": "Payback period # years 5.4",
+   "page": 42
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.7,
+   "unit": "USD/lb",
+   "quote": "Cash cost 4 $/lb Cu $1.80 $1.55 $1.85 $1.70",
+   "page": 42,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Growth Capital - Initial (Year -3 to Year -1)",
+   "value": 2070,
+   "quote": "Growth Capital - Initial (Year -3 to Year -1) $ millions $2,070",
+   "page": 42,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Molybdenum Plant (Year 1)",
+   "value": 25,
+   "quote": "Growth Capital - Molybdenum Plant (Year 1) $ millions $25",
+   "page": 42,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "In-Pit Crushing and Conveying (Year 3)",
+   "value": 242,
+   "quote": "Growth Capital - In-Pit Crushing and Conveying (Year 3) $ millions $242",
+   "page": 42,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Concentrator Expansion (Year 4)",
+   "value": 443,
+   "quote": "Growth Capital - Concentrator Expansion (Year 4) $ millions $443",
+   "page": 42,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 6.34,
+   "quote": "Processing $/tonne processed $6.34",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Onsite G&A",
+   "value": 0.8,
+   "quote": "Onsite G&A $/tonne processed $0.80",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per t moved",
+   "value": 1.56,
+   "quote": "Mining $/tonne material moved $1.56",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_moved",
+   "l1": "mining",
+   "l2": "mining"
+  }
+ ]
+}

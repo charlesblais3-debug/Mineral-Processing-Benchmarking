@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1468642/000095010325004864/filename2.htm",
+  "source": "edgar",
+  "issuer": "Aura Minerals Inc.",
+  "cik": "1468642",
+  "form": "DRS/A",
+  "exhibit": "EX-96.5",
+  "filed": "2025-04-15",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "Matupá",
+  "commodity": "",
+  "report_id": "2025-04-15_aura-minerals-inc_ex-96-5",
+  "sha256": "9da85a1b0f57207d29d64d74c918c470f68f9dd77c0f72dc313fe6b1082b8969",
+  "bytes": 4167824,
+  "format": "html",
+  "pages": 216,
+  "parsed_on": "2026-11-19"
+}
