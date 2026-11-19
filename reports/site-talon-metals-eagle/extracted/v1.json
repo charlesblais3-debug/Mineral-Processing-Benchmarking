@@ -1,0 +1,210 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Eagle",
+  "title": "Eagle Mine NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2026-04-29",
+  "effective_date_quote": "Effective date of Technical Report: April 29,2026",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Cu",
+   "Co"
+  ],
+  "country": "USA",
+  "region": "Michigan",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "conc_filter"
+  ],
+  "quote": "Metallurgical Bulk Flotation Recovery Formulas (2025)",
+  "page": 8
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2156,
+   "unit": "t/d",
+   "quote": "Daily throughput Tonnes per day 2,156",
+   "page": 32,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.787,
+   "unit": "Mt/a",
+   "quote": "Average annual throughput Tonnes per annum 787,000",
+   "page": 32,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 4.4,
+   "unit": "years",
+   "quote": "(approx. 4.4 years)",
+   "page": 32
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 19.0,
+   "unit": "MUSD",
+   "quote": "After-tax net present value @ 8% $ millions $19.0 million",
+   "page": 32,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 5.13,
+   "unit": "USD/lb",
+   "quote": "Cash cost2 (LOM net of credits) $/lb of payable Ni $5.13",
+   "page": 32,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 6.55,
+   "unit": "USD/lb",
+   "quote": "of credits) $/lb of payable Ni $6.55",
+   "page": 32,
+   "metal": "Ni",
+   "context": {
+    "period": "2026-2030 operational period"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 70.29,
+   "quote": "Mining 245.5 70.29",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore Transport to Mill",
+   "value": 13.96,
+   "quote": "Ore Transport to Mill 48.7 13.96",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "l2": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant",
+   "value": 38.5,
+   "quote": "Plant 134.3 38.50",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 21.2,
+   "quote": "G&A 74.0 21.20",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 144.0,
+   "quote": "Total Operating Costs 502.1 144.00",
+   "page": 28,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Reagents / Grinding / Chemicals",
+   "value": 4.16,
+   "quote": "Reagents / Grinding / Chemicals 14.5 4.16",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Plant",
+   "l1": "processing",
+   "l2": "reagents"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance",
+   "value": 7.31,
+   "quote": "Maintenance 25.5 7.31",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Plant",
+   "l1": "processing",
+   "l2": "maintenance"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power",
+   "value": 4.73,
+   "quote": "Power 16.5 4.73",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Plant",
+   "l1": "processing",
+   "l2": "power"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contract Services",
+   "value": 5.25,
+   "quote": "Contract Services 18.3 5.25",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Plant",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Salaries",
+   "value": 16.6,
+   "quote": "Salaries 57.9 16.60",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Plant",
+   "l1": "processing",
+   "l2": "labour"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Admin",
+   "value": 0.46,
+   "quote": "Admin 1.6 0.46",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Plant",
+   "l1": "processing",
+   "l2": "other"
+  }
+ ]
+}
