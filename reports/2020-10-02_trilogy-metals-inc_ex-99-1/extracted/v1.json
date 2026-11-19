@@ -1,0 +1,277 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Arctic",
+  "title": "Arctic Feasibility Study, Alaska, USA, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2020-08-20",
+  "effective_date_quote": "Effective Date: August 20, 2020",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Pb",
+   "Au",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "circuit will include a single ball mill operated in closed circuit wi",
+  "page": 234
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 10000,
+   "unit": "t/d",
+   "quote": "Daily Processing Rate t/d 10,000",
+   "page": 233,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Grinding/Flotation Availability % 92",
+   "page": 233,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 11.3,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (design) kWh/t 11.3",
+   "page": 233,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 109,
+   "unit": "-",
+   "quote": "SAG Mill Comminution: A x b parameter (design) 109",
+   "page": 233,
+   "statistic": "design"
+  },
+  {
+   "parameter": "ai",
+   "value": 0.032,
+   "unit": "g",
+   "quote": "Abrasion Index g 0.032",
+   "page": 233,
+   "statistic": "design"
+  },
+  {
+   "parameter": "mill_power_mw",
+   "value": 6.0,
+   "unit": "MW",
+   "quote": "powered by a 6,000 kW motor",
+   "page": 234,
+   "context": {
+    "mills": "Ball 6.1 m diameter"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 12,
+   "unit": "years",
+   "quote": "cost estimate is $113.8 million for the 12-year LOM",
+   "page": 45
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine",
+   "value": 280.1,
+   "quote": "Mine 280.1",
+   "page": 45,
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing",
+   "value": 28.3,
+   "quote": "Crushing 28.3",
+   "page": 45,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "comminution"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process",
+   "value": 116.6,
+   "quote": "Process 116.6",
+   "page": 45,
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general",
+   "includes_indirects": 0
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings",
+   "value": 70.0,
+   "quote": "Tailings 70.0",
+   "page": 45,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 109.3,
+   "quote": "On-Site Infrastructure 109.3",
+   "page": 45,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 53.7,
+   "quote": "Off-Site Infrastructure 53.7",
+   "page": 45,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Direct Subtotal",
+   "value": 656.9,
+   "quote": "Direct Subtotal 656.9",
+   "page": 45,
+   "multiplier": "M",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 130.7,
+   "quote": "Indirects 130.7",
+   "page": 45,
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 94.5,
+   "quote": "Contingency 94.5",
+   "page": 45,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs",
+   "value": 23.4,
+   "quote": "Owners Costs 23.4",
+   "page": 45,
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Total",
+   "value": 905.6,
+   "quote": "Project Total 905.6",
+   "page": 45,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 113.8,
+   "quote": "Total Sustaining Capital 113.8",
+   "page": 45,
+   "multiplier": "M",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 205.4,
+   "quote": "Closure Costs 205.4",
+   "page": 45,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 18.48,
+   "quote": "Mining* 18.48 36 | %",
+   "page": 46,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 18.31,
+   "quote": "Processing 18.31 36 | %",
+   "page": 46,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 5.15,
+   "quote": "G&A 5.15 10 | %",
+   "page": 46,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Operations",
+   "value": 0.68,
+   "quote": "Surface Operations 0.68 1 | %",
+   "page": 46,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "l2": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Road Toll",
+   "value": 8.04,
+   "quote": "Road Toll 8.04 16 | %",
+   "page": 46,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "l2": "transport"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 50.65,
+   "quote": "Total Operating Cost 50.65 100 | %",
+   "page": 46,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
