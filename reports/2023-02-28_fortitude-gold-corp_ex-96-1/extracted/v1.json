@@ -1,0 +1,262 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Isabella Pearl",
+  "title": "Isabella Pearl Mine S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2022-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2022",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "United States",
+  "region": "Nevada",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "adr",
+   "elution_ew"
+  ],
+  "quote": "conventional heap leaching of crushed ore, and to a lesser extent ROM ore, followed by absorption/desorption recovery (ADR)",
+  "page": 129
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 81,
+   "unit": "%",
+   "quote": "The estimated recovery of gold from all crushed ore is 81%",
+   "page": 129,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "crushed ore"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 60,
+   "unit": "%",
+   "quote": "The estimated gold recovery of ROM ore previously placed on the heap leach is 60%",
+   "page": 129,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "ROM ore"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.02,
+   "unit": "g/t",
+   "quote": "Ore Gold Grade Crushed (g/t) g/t 2.30 1.31 - 2.02",
+   "page": 158,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1750,
+   "unit": "USD/oz",
+   "quote": "The gold and silver prices were set at $1,750/oz and $21/oz",
+   "page": 18,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21,
+   "unit": "USD/oz",
+   "quote": "The gold and silver prices were set at $1,750/oz and $21/oz",
+   "page": 18,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 85.1,
+   "unit": "MUSD",
+   "quote": "a Net Present Value (NPV) of $85.1 million (after estimated taxes)",
+   "page": 19,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Mobile Equipment",
+   "value": 277875,
+   "quote": "Mine Mobile Equipment $ 185,250 $ 69,469 $ 23,156 $ 277,875",
+   "page": 155,
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Fixed Equipment",
+   "value": 141000,
+   "quote": "Mine Fixed Equipment $ 94,000 $ 35,250 $ 11,750 $ 141,000",
+   "page": 155,
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant Fixed Equipment",
+   "value": 336000,
+   "quote": "Plant Fixed Equipment $ 168,000 $ 126,000 $ 42,000 $ 336,000",
+   "page": 155,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Various Others",
+   "value": 300000,
+   "quote": "Various Others $ 150,000 $ 112,500 $ 37,500 $ 300,000",
+   "page": 155,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capex",
+   "value": 1054875,
+   "quote": "Total Capex $ 597,250 $ 343,219 $ 114,406 $ 1,054,875",
+   "page": 155,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure cost estimate",
+   "value": 12.2,
+   "quote": "a mine closure cost estimate of $12.2 million",
+   "page": 19,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 6.63,
+   "quote": "Mining $ 5.83 $ 8.71 $ - $ 6.63",
+   "page": 156,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 13.21,
+   "quote": "Processing $ 10.75 $ 15.34 $ - $ 13.21",
+   "page": 156,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Energy",
+   "value": 4.73,
+   "quote": "Energy $ 3.27 $ 6.39 $ - $ 4.73",
+   "page": 156,
+   "l1": "processing",
+   "l2": "power",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Mine Site",
+   "value": 9.51,
+   "quote": "G&A Mine Site $ 6.58 $ 12.84 $ - $ 9.51",
+   "page": 156,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Cash Cost of Production",
+   "value": 34.07,
+   "quote": "Cash Cost of Production $ 26.44 $ 43.28 $ - $ 34.07",
+   "page": 156,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Carbon / Dore Transport",
+   "value": 0.33,
+   "quote": "Carbon / Dore Transport $ 0.18 $ 0.47 $ - $ 0.33",
+   "page": 156,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TOTAL CASH COST OF SALE",
+   "value": 34.4,
+   "quote": "TOTAL CASH COST OF SALE $ 26.62 $ 43.75 $ - $ 34.40",
+   "page": 156,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 5.32,
+   "quote": "Royalties $ 2.96 $ 7.67 $ - $ 5.32",
+   "page": 156,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining & Treatment Charges",
+   "value": 0.16,
+   "quote": "Refining & Treatment Charges $ 0.09 $ 0.24 $ - $ 0.16",
+   "page": 156,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Excise Tax",
+   "value": 0.96,
+   "quote": "Excise Tax $ 0.58 $ 1.50 $ - $ 0.96",
+   "page": 156,
+   "l1": "royalties_taxes",
+   "l2": "taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "CASH COST / TONNE PROCESSED",
+   "value": 40.85,
+   "quote": "CASH COST / TONNE PROCESSED $ 30.25 $ 53.16 $ - $ 40.85",
+   "page": 156,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

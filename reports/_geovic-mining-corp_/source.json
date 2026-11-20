@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1398005/000119312511161283/dex991.htm",
+  "source": "edgar",
+  "issuer": "Geovic Mining Corp.",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Nkamouna and Mada (Cameroon)",
+  "commodity": "Ni",
+  "report_id": "_geovic-mining-corp_",
+  "sha256": "dc0ca43f1f41e011fb7092ac877ae3b711d92369e85eb58cd004f34eda6c875d",
+  "bytes": 4075035,
+  "format": "html",
+  "pages": 218,
+  "parsed_on": "2026-11-20"
+}

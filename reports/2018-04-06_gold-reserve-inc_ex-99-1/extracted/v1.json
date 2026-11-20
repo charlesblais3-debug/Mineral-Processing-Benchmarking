@@ -1,0 +1,523 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Siembra Minera",
+  "title": "Technical Report on the Siembra Minera Project, Bolivar State, Venezuela",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2018-03-16",
+  "effective_date_page": 1,
+  "effective_date_quote": "March 16, 2018",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "Venezuela",
+  "region": "Bolivar",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2018
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "flotation"
+  ],
+  "page": 36,
+  "quote": "a cyanide leach plant to process oxide saprolite and sulphide saprolite that contains low concentrations of copper to recover gold as doré from gravity concentration and cyanide leaching plus a flotation concentrator"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 15000,
+   "unit": "t/d",
+   "quote": "initially processing oxide saprolite through a 15,000 tpd cyanide leach plant",
+   "page": 36,
+   "statistic": "design",
+   "context": {
+    "phase": "oxide leach plant (Years 1-3)"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 140000,
+   "unit": "t/d",
+   "quote": "at a nominal rate of 140,000 tpd",
+   "page": 36,
+   "statistic": "design",
+   "context": {
+    "phase": "flotation concentrator from Year 4"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1300,
+   "unit": "USD/oz",
+   "quote": "Au US$/oz 1,300",
+   "page": 24,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 17,
+   "unit": "USD/oz",
+   "quote": "Ag US$/oz 17.00",
+   "page": 24,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "Cu US$/lb 3.00",
+   "page": 24,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 8101,
+   "unit": "MUSD",
+   "quote": "$8,101 million at a 5% discount rate",
+   "page": 25,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 3930,
+   "unit": "MUSD",
+   "quote": "$3,930 million at a 10% discount rate",
+   "page": 25,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 31.1,
+   "unit": "%",
+   "quote": "the IRR is 31.1%",
+   "page": 25
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.1,
+   "unit": "years",
+   "quote": "simple payback from start of commercial production occurs in 4.1 years",
+   "page": 25
+  },
+  {
+   "parameter": "aisc",
+   "value": 483,
+   "unit": "USD/oz",
+   "quote": "all in sustaining cost (AISC) of US$483 per ounce",
+   "page": 25,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "net of US$262/oz Cu and Ag by-product credit"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mineral Reserve Definition",
+   "value": 0.0,
+   "quote": "Mineral Reserve Definition 0.0 100.0 100.0",
+   "page": 38,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 436.6,
+   "quote": "Mining 436.6 1,212.6 1,649.2",
+   "page": 38,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing - CIP",
+   "value": 97.0,
+   "quote": "Processing - CIP 97.0 0.0 97.0",
+   "page": 38,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing - Concentrator",
+   "value": 696.8,
+   "quote": "Processing - Concentrator 696.8 11.0 707.8",
+   "page": 38,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing - Tailings Dam",
+   "value": 54.9,
+   "quote": "Processing - Tailings Dam 54.9 322.5 377.4",
+   "page": 38,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing - Port/Diversion/Vehicles",
+   "value": 74.8,
+   "quote": "Processing - Port/Diversion/Vehicles 74.8 34.2 109.0",
+   "page": 38,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing - CIP Plant Conversion to 35 ktpd",
+   "value": 0.0,
+   "quote": "Processing - CIP Plant Conversion to 35 ktpd 0.0 35.0 35.0",
+   "page": 38,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Engineering & Geology",
+   "value": 15.9,
+   "quote": "Engineering & Geology 15.9 30.1 46.0",
+   "page": 38,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "ARD Plant",
+   "value": 2.3,
+   "quote": "ARD Plant 2.3 0.0 2.3",
+   "page": 38,
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Infrastructure",
+   "value": 111.8,
+   "quote": "Site Infrastructure 111.8 9.5 121.3",
+   "page": 38,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Cost",
+   "value": 1490.1,
+   "quote": "Subtotal Direct Cost 1,490.1 1,754.9 3,245.0",
+   "page": 38,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects - CIP",
+   "value": 34.3,
+   "quote": "Indirects - CIP 34.3 0.0 34.3",
+   "page": 38,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects - Concentrator",
+   "value": 278.1,
+   "quote": "Indirects - Concentrator 278.1 0.0 278.1",
+   "page": 38,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects - Owner's Cost",
+   "value": 310.4,
+   "quote": "Indirects - Owner's Cost 310.4 150.6 461.0",
+   "page": 38,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Cost Before Contingency",
+   "value": 2112.8,
+   "quote": "Total Cost Before Contingency 2,112.8 1,905.5 4,018.3",
+   "page": 38,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Contingency",
+   "value": 457.8,
+   "quote": "Total Contingency 457.8 36.2 494.0",
+   "page": 38,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost (development)",
+   "value": 2570.6,
+   "quote": "Total Capital Cost 2,570.6 1,941.7 4,512.3",
+   "page": 38,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Annual Reserve Conversion Drilling",
+   "value": 100.0,
+   "quote": "Annual Reserve Conversion Drilling 100.0",
+   "page": 221,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Equipment",
+   "value": 1212.6,
+   "quote": "Mining Equipment 1,212.6",
+   "page": 221,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing - Plant Sustaining",
+   "value": 11.0,
+   "quote": "Processing - Plant Sustaining 11.0",
+   "page": 221,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing - TMF Raises",
+   "value": 322.5,
+   "quote": "Processing - TMF Raises 322.5",
+   "page": 221,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing - Concentrate Trucks",
+   "value": 34.2,
+   "quote": "Processing - Concentrate Trucks 34.2",
+   "page": 221,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing - Leach Plant Conversion to 35ktpd",
+   "value": 35.0,
+   "quote": "Processing - Leach Plant Conversion to 35ktpd 35.0",
+   "page": 221,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Engineering & Geology",
+   "value": 30.1,
+   "quote": "Engineering & Geology 30.1",
+   "page": 221,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Earthworks - TMF",
+   "value": 9.5,
+   "quote": "Earthworks - TMF 9.5",
+   "page": 221,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Lt Vehicles (pickups/vans/buses)",
+   "value": 156.8,
+   "quote": "Lt Vehicles (pickups/vans/buses) 156.8",
+   "page": 221,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "GRM Management Fee",
+   "value": 30.0,
+   "quote": "GRM Management Fee (5% of Annual non-Mining Capital Cost) 30.0",
+   "page": 221,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 1941.7,
+   "quote": "Total 1,941.7",
+   "page": 221,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation/Closure Cost",
+   "value": 150.0,
+   "quote": "Reclamation/Closure Cost 0.0 150.0 150.0",
+   "page": 38,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 2.89,
+   "quote": "Mining (US$1.36/t mined) 2.89",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 4.93,
+   "quote": "Process 4.93",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.32,
+   "quote": "G&A 1.32",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Infrastructure",
+   "value": 0.14,
+   "quote": "Other Infrastructure 0.14",
+   "page": 39,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transportation",
+   "value": 0.36,
+   "quote": "Transportation 0.36",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Off-site Treatment",
+   "value": 0.54,
+   "quote": "Off-site Treatment 0.54",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Operating Costs Before Royalties",
+   "value": 10.19,
+   "quote": "Subtotal Operating Costs Before Royalties 10.19",
+   "page": 39,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties/Production Taxes",
+   "value": 2.77,
+   "quote": "Royalties/Production Taxes 2.77",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 12.96,
+   "quote": "Total 12.96",
+   "page": 39,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per t mined)",
+   "value": 1.36,
+   "quote": "Mining (US$1.36/t mined)",
+   "page": 39,
+   "basis_unit": "per_t_mined",
+   "multiplier": "",
+   "l1": "mining"
+  }
+ ]
+}

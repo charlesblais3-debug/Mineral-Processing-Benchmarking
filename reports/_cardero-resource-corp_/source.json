@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1303936/000137829608000170/techrep.htm",
+  "source": "edgar",
+  "issuer": "Cardero Resource Corp.",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Pampa de Pongo",
+  "commodity": "Fe",
+  "report_id": "_cardero-resource-corp_",
+  "sha256": "1023f47e98ace0a34bf922e304fdbb1f23d7a72bd8944638ff475c0c0ac8bf7f",
+  "bytes": 1138643,
+  "format": "html",
+  "pages": 7,
+  "parsed_on": "2026-11-20"
+}

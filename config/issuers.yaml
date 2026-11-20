@@ -35,3 +35,59 @@ issuers:
   - { name: Ardea Resources, site: https://ardearesources.com.au/, commodity: Ni, projects: [Kalgoorlie Nickel (Goongarrie Hub)], pages: [https://ardearesources.com.au/projects-knp, https://ardearesources.com.au/announcements] }
   - { name: Nico Resources, site: https://nicoresources.com.au/, commodity: Ni, projects: [Wingellina], pages: [https://nicoresources.com.au/wingellina-project-information-updates/, https://nicoresources.com.au/reports/] }
   - { name: Sunrise Energy Metals, site: https://sunriseem.com/, commodity: Ni, projects: [Sunrise (Syerston)], pages: [https://sunriseem.com/investor-centre/asx-announcements/] }
+  # added from search-agent candidates
+  - { name: Gold Road Resources, site: https://www.goldroad.com.au/, commodity: Au, projects: [Gruyere], pages: [https://announcements.asx.com.au/asxpdf/20161019/pdf/43c3zbcjzvr3db.pdf] }
+  - { name: Dacian Gold (now Genesis Minerals), site: https://www.genesisminerals.com.au/, commodity: Au, projects: [Mt Morgans], pages: [https://announcements.asx.com.au/asxpdf/20161121/pdf/43d1mvn06j1q5m.pdf] }
+  - { name: Gascoyne Resources, site: https://www.gascoyneresources.com.au/, commodity: Au, projects: [Dalgaranga], pages: [https://announcements.asx.com.au/asxpdf/20161125/pdf/43d69xrs4151cj.pdf] }
+  - { name: Regis Resources, site: https://www.regisresources.com/, commodity: Au, projects: [McPhillamys, Duketon], pages: [https://announcements.asx.com.au/asxpdf/20240722/pdf/065sktbrl0wgyq.pdf] }
+  - { name: Capricorn Metals, site: https://www.capmetals.com.au/, commodity: Au, projects: [Mt Gibson Gold Project, Karlawinda], pages: [https://announcements.asx.com.au/asxpdf/20230419/pdf/45nsrnl7ky20by.pdf, https://announcements.asx.com.au/asxpdf/20171023/pdf/43ngngckrftrbk.pdf] }
+  - { name: Greatland Resources, site: https://www.greatlandresources.com/, commodity: Au, projects: [Havieron], pages: [https://announcements.asx.com.au/asxpdf/20251201/pdf/06sr0s6nn1jlmt.pdf] }
+  - { name: Orezone Gold, site: https://orezone.com/, commodity: Au, projects: [Bombore], pages: [https://orezone.com/operations-overview/bombore/] }
+  - { name: Perseus Mining, site: https://perseusmining.com/, commodity: Au, projects: [Nyanzaga], pages: [https://perseusmining.com/] }
+  - { name: Cardinal Resources, site: https://www.cardinalresources.com.au/, commodity: Au, projects: [Namdini], pages: [https://announcements.asx.com.au/asxpdf/20191028/pdf/449xz8p6mrm330.pdf] }
+  - { name: OZ Minerals, site: https://www.ozminerals.com/, commodity: Cu, projects: [Carrapateena, Prominent Hill], pages: [https://announcements.asx.com.au/asxpdf/20161107/pdf/43cph3h7h3qz3g.pdf, https://announcements.asx.com.au/asxpdf/20210818/pdf/44zdzjsf8gcxmm.pdf] }
+  - { name: KGL Resources, site: https://www.kglresources.com.au/, commodity: Cu, projects: [Jervois], pages: [https://announcements.asx.com.au/asxpdf/20151021/pdf/4327pqdc00bf9g.pdf] }
+  - { name: CuDeco, site: https://www.cudeco.com.au/, commodity: Cu, projects: [Rocklands], pages: [https://announcements.asx.com.au/asxpdf/20160303/pdf/435ktrwnnk5cc2.pdf] }
+  - { name: Marimaca Copper, site: https://marimaca.com/, commodity: Cu, projects: [Marimaca Oxide Deposit], pages: [https://marimaca.com/marimaca-copper-files-ni-43-101-technical-report-for-the-previously-announced-marimaca-oxide-deposit-feasibility-study/] }
+  - { name: Sandfire Resources America, site: https://sandfireamerica.com/, commodity: Cu, projects: [Black Butte Copper], pages: [https://sandfireamerica.com/transparency-library/] }
+  - { name: Conico, site: https://www.conico.com.au/, commodity: Ni, projects: [Mt Thirsty], pages: [https://announcements.asx.com.au/asxpdf/20200220/pdf/44f8ghy7nxt41t.pdf] }
+  - { name: Fortescue Metals Group, site: https://www.fortescue.com/, commodity: Fe, projects: [Iron Bridge Magnetite], pages: [https://announcements.asx.com.au/asxpdf/20190402/pdf/443zfvndlkg265.pdf] }
+  - { name: Hawsons Iron, site: https://hawsons.com.au/, commodity: Fe, projects: [Hawsons], pages: [https://hawsons.com.au/announcements/] }
+  - { name: Los Andes Copper, site: https://losandescopper.com/, commodity: Cu, projects: [Vizcachitas], pages: [https://losandescopper.com/projects/technical-reports/] }
+  - { name: Highland Copper, site: https://www.highlandcopper.com/, commodity: Cu, projects: [Copperwood, White Pine North], pages: [https://www.highlandcopper.com/projects/copperwood-project/] }
+  - { name: First Quantum Minerals, site: https://www.first-quantum.com/, commodity: Cu, projects: [Taca Taca, Trident, Cobre Panama], pages: [https://www.first-quantum.com/operations/taca-taca/] }
+  - { name: Hot Chili, site: https://www.hotchili.net.au/, commodity: Cu, projects: [Costa Fuego], pages: [https://www.hotchili.net.au/investors/investor-centre/reports, https://www.hotchili.net.au/projects/costa-fuego] }
+  - { name: SolGold, site: https://solgold.com/, commodity: Cu, projects: [Cascabel], pages: [https://solgold.com/projects/ecuador/cascabel-project/] }
+  - { name: Caravel Minerals, site: https://caravelminerals.com.au/, commodity: Cu, projects: [Caravel Copper], pages: [https://caravelminerals.com.au/] }
+  - { name: Hillgrove Resources, site: https://www.hillgroveresources.com.au/, commodity: Cu, projects: [Kanmantoo], pages: [https://www.hillgroveresources.com.au/] }
+  - { name: Havilah Resources, site: https://havilah-resources.com.au/, commodity: Cu, projects: [Kalkaroo], pages: [https://havilah-resources.com.au/] }
+  - { name: Sandfire Resources, site: https://www.sandfire.com.au/, commodity: Cu, projects: [Motheo, MATSA], pages: [https://www.sandfire.com.au/] }
+  - { name: Hudbay Minerals, site: https://hudbayminerals.com/, commodity: Cu, projects: [Mason, Copper Mountain], pages: [https://hudbayminerals.com/investors/reserves-and-resources/default.aspx] }
+  - { name: Faraday Copper, site: https://faradaycopper.com/, commodity: Cu, projects: [Copper Creek], pages: [https://faradaycopper.com/projects/copper-creek-project/] }
+  - { name: Atalaya Mining, site: https://atalayamining.com/, commodity: Cu, projects: [Riotinto, San Dionisio, Touro, Ossa Morena], pages: [https://atalayamining.com/operations/riotinto-district/san-dionisio/, https://atalayamining.com/operations/reserves-resources/] }
+  - { name: Kutcho Copper, site: https://kutcho.ca/, commodity: Cu, projects: [Kutcho], pages: [https://kutcho.ca/kutcho-project/] }
+  - { name: Aldebaran Resources, site: https://aldebaranresources.com/, commodity: Cu, projects: [Altar], pages: [https://aldebaranresources.com/projects/altar-copper-gold/technical-report/] }
+  - { name: Champion Iron, site: https://www.championiron.com/, commodity: Fe, projects: [Bloom Lake, Kami, Fire Lake North], pages: [https://www.championiron.com/investors/technical-reports/] }
+  - { name: Century Global Commodities (Century Iron Mines), site: https://centuryglobal.ca/, commodity: Fe, projects: [Joyce Lake, Full Moon, Duncan Lake, Black Bird], pages: [https://centuryglobal.ca/projects/technical-reports/] }
+  - { name: Labrador Iron Mines Holdings, site: https://www.labradorironmines.ca/, commodity: Fe, projects: [Houston, Schefferville DSO], pages: [https://www.labradorironmines.ca/project.php] }
+  - { name: Zanaga Iron Ore Company, site: https://www.zanagairon.com/, commodity: Fe, projects: [Zanaga], pages: [https://www.zanagairon.com/the-zanaga-project/feasibility-study/, https://www.zanagairon.com/investors/documents-circulars/] }
+  - { name: Iron Road, site: https://www.ironroadlimited.com.au/, commodity: Fe, projects: [Central Eyre], pages: [https://www.ironroadlimited.com.au/index.php/central-eyre-iron-project/definitive-feasibility] }
+  - { name: Macarthur Minerals, site: https://macarthurminerals.com/, commodity: Fe, projects: [Lake Giles], pages: [https://macarthurminerals.com/investors/] }
+  - { name: Canada Nickel Company, site: https://canadanickel.com/, commodity: Ni, projects: [Crawford, Reid, Mann, Deloro, Nesbitt], pages: [https://wp-canadanickel-2025.s3.ca-central-1.amazonaws.com/] }
+  - { name: Poseidon Nickel, site: https://poseidon-nickel.com.au/, commodity: Ni, projects: [Black Swan, Lake Johnston], pages: [https://poseidon-nickel.com.au/black-swan/] }
+  - { name: Australian Mines, site: https://australianmines.com.au/, commodity: Ni, projects: [Sconi], pages: [https://australianmines.com.au/projects/sconi] }
+  - { name: Sherritt International, site: https://sherritt.com/, commodity: Ni, projects: [Moa JV], pages: [https://sherritt.com/investors/financial-and-corporate-reports/] }
+  - { name: Bluelake Mineral (Nickel Mountain), site: https://www.bluelakemineral.com/, commodity: Ni, projects: [Rönnbäcken], pages: [https://www.bluelakemineral.com/en/projects/nickel/] }
+  - { name: Eurobattery Minerals (FinnCobalt), site: https://eurobatteryminerals.com/, commodity: Ni, projects: [Hautalampi], pages: [https://www.eurobatteryminerals.com/en/projects/hautalampi/, https://www.eurobatteryminerals.com/en/economic-reports/] }
+  - { name: Iron Road Limited, site: https://ironroadlimited.com.au/, commodity: Fe, projects: [Central Eyre Iron Project], pages: [https://ironroadlimited.com.au/index.php/central-eyre-iron-project/definitive-feasibility, https://ironroadlimited.com.au/index.php/investor-centre/company-reports] }
+  - { name: Fenix Resources, site: https://fenix.com.au/, commodity: Fe, projects: [Iron Ridge, Beebyn-W11], pages: [https://fenix.com.au/investors/asx-announcements/] }
+  - { name: Nickel Industries, site: https://www.nickelindustries.com/, commodity: Ni, projects: [Hengjaya, Sampala, Siduarsi], pages: [https://www.nickelindustries.com/investor-centre/asx-announcements/, https://www.nickelindustries.com/investor-centre/company-reports/] }
+  - { name: Panoramic Resources, site: https://www.panoramicresources.com/, commodity: Ni, projects: [Savannah], pages: [https://www.panoramicresources.com/] }
+  - { name: AbraSilver Resource, site: https://abrasilver.com/, commodity: Ag, projects: [Diablillos], pages: [https://abrasilver.com/projects/technical-reports/] }
+  - { name: Nexa Resources, site: https://www.nexaresources.com/, commodity: Zn, projects: [Cerro Lindo, Vazante, Atacocha, El Porvenir, Aripuana], pages: [https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1713930&type=6-K] }
+  - { name: Hecla Mining, site: https://www.hecla.com/, commodity: Ag, projects: [Greens Creek, Lucky Friday, Keno Hill], pages: [https://www.sec.gov/Archives/edgar/data/719413/000143774922004164/hl20211231_10k.htm] }
+  - { name: Americas Gold and Silver, site: https://americas-gold.com/, commodity: Ag, projects: [Galena Complex, Cosala Operations], pages: [https://americas-gold.com/news-releases/] }
+  - { name: Silver Tiger Metals, site: https://silvertigermetals.com/, commodity: Ag, projects: [El Tigre], pages: [https://silvertigermetals.com/] }
+  - { name: NorZinc, site: https://norzinc.com/, commodity: Zn, projects: [Prairie Creek], pages: [https://norzinc.com/] }
+  - { name: BMC Minerals, site: https://bmcminerals.com/, commodity: Zn, projects: [Kudz Ze Kayah], pages: [https://emrlibrary.gov.yk.ca/minerals/MajorMines/kudz-ze-kayah/] }
+  - { name: Discovery Silver, site: https://dsvmining.com/, commodity: Ag, projects: [Cordero], pages: [https://dsvmining.com/] }

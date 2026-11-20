@@ -1,0 +1,19 @@
+{
+  "url": "https://silvertigermetals.com/files/Silver_Tiger_El_Tigre_PFS_PEA_by_PE_20260122.pdf",
+  "source": "agent_search",
+  "issuer": "Silver Tiger Metals",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "El Tigre",
+  "commodity": "Ag",
+  "report_id": "site-silver-tiger-metals-el-tigre",
+  "sha256": "033158efcb8b357debb21f4561a209066b5f7990237f8758ad38f60caa58a537",
+  "bytes": 35338055,
+  "format": "pdf",
+  "pages": 614,
+  "parsed_on": "2026-11-20"
+}

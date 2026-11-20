@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20190402/pdf/443zfvndlkg265.pdf",
+  "source": "agent_search",
+  "issuer": "Fortescue Metals Group",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "FS",
+  "project": "Iron Bridge Magnetite (Stage 2)",
+  "commodity": "Fe",
+  "report_id": "site-fortescue-metals-group-iron-bridge-magnetite-stage-2",
+  "sha256": "fd69f7afec5dbbc38c58fa3e53ff997cb4c3cc44deccb836edc65834d00f7405",
+  "bytes": 3281045,
+  "format": "pdf",
+  "pages": 28,
+  "parsed_on": "2026-11-20"
+}

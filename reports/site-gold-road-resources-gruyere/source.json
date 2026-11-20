@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20161019/pdf/43c3zbcjzvr3db.pdf",
+  "source": "agent_search",
+  "issuer": "Gold Road Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "FS",
+  "project": "Gruyere",
+  "commodity": "Au",
+  "report_id": "site-gold-road-resources-gruyere",
+  "sha256": "e2865e5ba2c9f06911c2a891d15ce2de94a1e902ba376532a5251278961998a2",
+  "bytes": 3669422,
+  "format": "pdf",
+  "pages": 73,
+  "parsed_on": "2026-11-20"
+}

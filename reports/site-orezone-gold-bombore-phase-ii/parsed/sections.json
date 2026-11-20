@@ -1,0 +1,30 @@
+{
+  "testwork": [
+    5,
+    7
+  ],
+  "reserves": [
+    8,
+    8
+  ],
+  "mining": [
+    8,
+    8
+  ],
+  "recovery": [
+    9,
+    10
+  ],
+  "costs": [
+    11,
+    11
+  ],
+  "economics": [
+    12,
+    25
+  ],
+  "summary": [
+    26,
+    106
+  ]
+}

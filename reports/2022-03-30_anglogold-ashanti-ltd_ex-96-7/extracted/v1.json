@@ -1,0 +1,75 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Minas Gerais",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "project": "Corrego do Sitio",
+  "title": "Technical Report Summary Córrego do Sítio Life of Mine Summary Report",
+  "effective_date_quote": "This report is effective as at 31 December 2021",
+  "mine_type": "open_pit_and_underground",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "flotation",
+   "pox",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "Grinding / Gravity concentration • Flotation • Flotation Tailings Leaching • Filtration Circuit • Thickening • Acidulation • Pressure Oxidation (POX Autoclave) • CCD (Counter current Decantation Wash Thickening) • Gold CIL extraction • Elution • Neutralisation • Electrowinning",
+  "page": 15
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.0,
+   "unit": "Mt/a",
+   "quote": "The sulphide plant capacity is 1Mtpa",
+   "page": 15,
+   "statistic": "design",
+   "context": {
+    "plant": "sulphide plant (POX); heap leach plant separate, about 0.9 Mtpa"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.7,
+   "unit": "%",
+   "quote": "A 90.7% metallurgical recovery is applied at the time of COG calculation",
+   "page": 6,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "plant": "sulphide plant"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Gold Price $/Oz 1,200",
+   "page": 16,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.15,
+   "unit": "BRL/USD",
+   "quote": "FX R$/$ 5.15",
+   "page": 16,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": []
+}

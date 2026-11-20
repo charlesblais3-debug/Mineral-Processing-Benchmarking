@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/719413/000143774922004164/ex_338347.htm",
+  "source": "edgar",
+  "issuer": "HECLA MINING CO/DE/  (HL, HL-PB)",
+  "cik": "719413",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2022-02-23",
+  "standard": "S-K 1300",
+  "study_level": "Operating-mine TRS",
+  "project": "Greens Creek",
+  "commodity": "Ag",
+  "report_id": "2022-02-23_hecla-mining-co-de_ex-96-1",
+  "sha256": "a641a7af7271d0e6d645a956d9aa5368b04bd0e373eaf27e3c056f4519230d8d",
+  "bytes": 4486123,
+  "format": "html",
+  "pages": 368,
+  "parsed_on": "2026-11-20"
+}

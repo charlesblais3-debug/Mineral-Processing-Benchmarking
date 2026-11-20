@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20230419/pdf/45nsrnl7ky20by.pdf",
+  "source": "agent_search",
+  "issuer": "Capricorn Metals",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "project": "Mt Gibson Gold Project",
+  "commodity": "Au",
+  "report_id": "site-capricorn-metals-mt-gibson-gold-project",
+  "sha256": "94aa87ce1424d65c2be09da35a71d8ff8ae94b717ada3b9e13e706d7d1599551",
+  "bytes": 1900062,
+  "format": "pdf",
+  "pages": 51,
+  "parsed_on": "2026-11-20"
+}

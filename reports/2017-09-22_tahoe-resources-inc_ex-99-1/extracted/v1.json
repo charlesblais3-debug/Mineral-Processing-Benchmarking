@@ -1,0 +1,253 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Timmins West",
+  "title": "National Instrument 43-101 Technical Report Timmins West Mine, Timmins, Ontario, Canada",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2017-05-15",
+  "effective_date_page": 2,
+  "effective_date_quote": "Effective Date: May 15, 2017",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2017
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cip"
+  ],
+  "page": 24,
+  "quote": "The Bell Creek mill is a conventional gold processing plant utilizing cyanidation with gravity and CIP recovery."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3075,
+   "unit": "t/d",
+   "quote": "Mill throughput is approximately 3,075 tonnes per day",
+   "page": 24,
+   "statistic": "design",
+   "context": {
+    "phase": "Timmins West ore at Bell Creek mill"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 97,
+   "unit": "%",
+   "quote": "recovery is approximately 97% for the TWM ore",
+   "page": 24,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.21,
+   "unit": "g/t",
+   "quote": "7.15 million tonnes of ore at an average gold grade of 3.21 g/t",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "The average grind size to achieve these recoveries is a P80 of 75 micron.",
+   "page": 187,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1250,
+   "unit": "USD/oz",
+   "quote": "gold price of $1,250 per troy ounce",
+   "page": 207,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 174.4,
+   "unit": "MUSD",
+   "quote": "NPV at a 5% discount rate of $174.4 million",
+   "page": 24,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Development Direct Costs",
+   "value": 30056,
+   "quote": "Capital Development Direct Costs $30,056",
+   "page": 200,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Development Indirect Costs",
+   "value": 16492,
+   "quote": "Capital Development Indirect Costs $16,492",
+   "page": 200,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Infrastructure and Construction",
+   "value": 11488,
+   "quote": "Construction $11,488",
+   "page": 200,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Raise Development",
+   "value": 3640,
+   "quote": "Raise Development $3,640",
+   "page": 200,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Electrical Projects",
+   "value": 4088,
+   "quote": "Electrical Projects $4,088",
+   "page": 200,
+   "l1": "onsite_infra",
+   "l2": "power",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Geology and Diamond Drilling",
+   "value": 13073,
+   "quote": "Geology and Diamond Drilling $13,073",
+   "page": 200,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Equipment and Critical Spares",
+   "value": 28280,
+   "quote": "Capital Equipment and Critical Spares $28,280",
+   "page": 200,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal TWM Capital",
+   "value": 105117,
+   "quote": "Subtotal TWM Capital $105,117",
+   "page": 200,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal Bell Creek Mill Capital",
+   "value": 4432,
+   "quote": "Subtotal Bell Creek Mill Capital $4,432",
+   "page": 200,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Estimated Capital Costs",
+   "value": 109549,
+   "quote": "Total Estimated Capital Costs $109,549",
+   "page": 200,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Project Capital",
+   "value": 21674,
+   "quote": "Project Capital $7,075 $10,969 $3,631 - - - - $21,674",
+   "page": 207,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true,
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 48.88,
+   "quote": "Mining $48.88",
+   "page": 207,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 16.23,
+   "quote": "Processing $16.23",
+   "page": 207,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore Surface Haulage to Mill",
+   "value": 5.97,
+   "quote": "Ore Surface Haulage to Mill $5.97",
+   "page": 207,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administrative",
+   "value": 1.5,
+   "quote": "General and Administrative $1.50",
+   "page": 207,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 72.58,
+   "quote": "Total Operating Costs $72.58",
+   "page": 207,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

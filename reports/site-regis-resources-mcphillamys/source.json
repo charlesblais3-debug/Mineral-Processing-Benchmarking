@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20240722/pdf/065sktbrl0wgyq.pdf",
+  "source": "agent_search",
+  "issuer": "Regis Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "DFS",
+  "project": "McPhillamys",
+  "commodity": "Au",
+  "report_id": "site-regis-resources-mcphillamys",
+  "sha256": "666e464d13e0c4293ce00dd03342338c1c79326b82cd5fd2bc4a775f2c26b296",
+  "bytes": 3849092,
+  "format": "pdf",
+  "pages": 80,
+  "parsed_on": "2026-11-20"
+}

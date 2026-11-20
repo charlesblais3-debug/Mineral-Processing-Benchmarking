@@ -1,0 +1,353 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Ana Paula",
+  "title": "Ana Paula Project Preliminary Economic Assessment, Guerrero State, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2016-02-02",
+  "effective_date_page": 2,
+  "effective_date_quote": "Effective Date: February 2, 2016",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Guerrero",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2016
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "gravity",
+   "flotation",
+   "regrind",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "page": 23,
+  "quote": "crushing followed by closed circuit ball mill and gravity concentration. Cyclone overflow reports to flotation and flotation concentrates are reground before entering an oxidation preparation stage. Oxidation is followed by carbon-in-leach for 48 hours."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 6000,
+   "unit": "t/d",
+   "quote": "Mill throughput is designed at 6,000 tonnes per operating day.",
+   "page": 23,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 75,
+   "unit": "%",
+   "quote": "Au Recovery 75.0%",
+   "page": 222,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 50,
+   "unit": "%",
+   "quote": "Ag Recovery 50.0%",
+   "page": 222,
+   "metal": "Ag",
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.24,
+   "unit": "g/t",
+   "quote": "Average Head Grades Au g/t 2.24",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 6.89,
+   "unit": "g/t",
+   "quote": "Ag g/t 6.89",
+   "page": 27,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Gold Price US$/oz 1,200",
+   "page": 222,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 14.0,
+   "unit": "USD/oz",
+   "quote": "Silver Price US$/oz 14.00",
+   "page": 222,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 247.8,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV 5% $M 247.8",
+   "page": 27,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 42.5,
+   "unit": "%",
+   "quote": "After-Tax IRR % 42.5%",
+   "page": 27
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.1,
+   "unit": "years",
+   "quote": "After-Tax Payback Years 2.1",
+   "page": 27
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized Stripping",
+   "value": 15.2,
+   "quote": "Capitalized Stripping 15.2 12.3 27.5",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contractor Mob/Demob",
+   "value": 0.4,
+   "quote": "Contractor Mob/Demob 0.4 0.4 0.8",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing and Handling",
+   "value": 1.6,
+   "quote": "Crushing and Handling 1.6 0.0 1.6",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 25.0,
+   "quote": "Process Plant 25.0 1.5 26.5",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "General Site & Utilities",
+   "value": 5.1,
+   "quote": "General Site & Utilities 5.1 0.3 5.4",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Laboratory",
+   "value": 0.2,
+   "quote": "Laboratory 0.2 0.2 0.4",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Camp",
+   "value": 0.6,
+   "quote": "Construction Camp 0.6 0.0 0.6",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Camp Site (Operations)",
+   "value": 1.5,
+   "quote": "Camp Site (Operations) 1.5 0.3 1.8",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Administration Facilities",
+   "value": 0.2,
+   "quote": "Administration Facilities 0.2 0.2 0.4",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Facility",
+   "value": 13.0,
+   "quote": "Tailings Facility 13.0 14.6 27.6",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Electrical Supply & Distribution",
+   "value": 4.6,
+   "quote": "Electrical Supply & Distribution 4.6 0.2 4.8",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water Supply & Distribution",
+   "value": 1.8,
+   "quote": "Water Supply & Distribution 1.8 0.0 1.8",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Royalty Purchase",
+   "value": 2.8,
+   "quote": "Royalty Purchase 2.8 0.0 2.8",
+   "page": 25,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 14.0,
+   "quote": "Indirects 14.0 0.0 14.0",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM",
+   "value": 11.3,
+   "quote": "EPCM 11.3 0.0 11.3",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs",
+   "value": 4.4,
+   "quote": "Owners Costs 4.4 0.0 4.4",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 101.8,
+   "quote": "Subtotal 101.8 44.3 146.1",
+   "page": 25,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency (20%)",
+   "value": 19.8,
+   "quote": "Contingency (20%) 19.8 8.9 28.7",
+   "page": 25,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Costs (pre-production)",
+   "value": 121.7,
+   "quote": "Total Capital Costs 121.7 53.2 174.8",
+   "page": 25,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation/Closure",
+   "value": 14.4,
+   "quote": "Reclamation/Closure 0.0 14.4 14.4",
+   "page": 25,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 6.0,
+   "quote": "Mining‡ US$/t processed $6.00",
+   "page": 25,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rehandle",
+   "value": 0.12,
+   "quote": "Rehandle* US$/t processed $0.12",
+   "page": 25,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 15.52,
+   "quote": "Processing US$/t processed $15.52",
+   "page": 25,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2.34,
+   "quote": "G&A US$/t processed $2.34",
+   "page": 25,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 23.98,
+   "quote": "Total Operating Costs US$/t processed $23.98",
+   "page": 25,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

@@ -1,0 +1,233 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Chapada",
+  "title": "Technical Report on the Chapada Mine, Goiás State, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2017-12-31",
+  "effective_date_quote": "with an effective date of December 31, 2017",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Brazil",
+  "region": "Goiás",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2018,
+  "effective_date_page": 8
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "The ore is then sent to the flotation, thickening, and filtration processes.",
+  "page": 18
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 23.4,
+   "unit": "Mt/a",
+   "quote": "The LOM plan is based on a processing rate of 23.4 Mtpa.",
+   "page": 18,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 65000,
+   "unit": "t/d",
+   "quote": "designed to treat sulphide ore at a nominal rate of 65,000 tpd",
+   "page": 18,
+   "statistic": "design",
+   "context": {
+    "phase": "existing sulphide plant"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80,
+   "unit": "%",
+   "quote": "The current process recoveries for copper and gold average 80% and 57% respectively.",
+   "page": 18,
+   "metal": "Cu",
+   "statistic": "mean",
+   "context": {
+    "note": "current process recovery"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 57,
+   "unit": "%",
+   "quote": "The current process recoveries for copper and gold average 80% and 57% respectively.",
+   "page": 18,
+   "metal": "Au",
+   "statistic": "mean",
+   "context": {
+    "note": "current process recovery"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "a long-term copper price of $3.00 per pound",
+   "page": 11,
+   "metal": "Cu",
+   "context": {
+    "note": "reserve price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1250,
+   "unit": "USD/oz",
+   "quote": "an average long-term gold price of US$1,250 per ounce",
+   "page": 11,
+   "metal": "Au",
+   "context": {
+    "note": "reserve price"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure & Fixtures",
+   "value": 32.6,
+   "quote": "Infrastructure & Fixtures 32.6",
+   "page": 178,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vehicles & Machinery",
+   "value": 209.4,
+   "quote": "Vehicles & Machinery 209.4",
+   "page": 178,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam & Other",
+   "value": 43.0,
+   "quote": "Tailings Dam & Other 43.0",
+   "page": 178,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Hardware, Software & Automation",
+   "value": 5.9,
+   "quote": "Hardware, Software & Automation 5.9",
+   "page": 178,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital Cost",
+   "value": 290.9,
+   "quote": "Total Sustaining Capital Cost 290.9",
+   "page": 178,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Feasibility & Construction",
+   "value": 2.2,
+   "quote": "Feasibility & Construction 2.2",
+   "page": 178,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings Dam Expansion & Other",
+   "value": 25.0,
+   "quote": "Tailings Dam Expansion & Other 25.0",
+   "page": 178,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Expansionary Capital Cost",
+   "value": 27.2,
+   "quote": "Total Expansionary Capital Cost 27.2",
+   "page": 178,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 114.5,
+   "quote": "Closure Costs 114.5",
+   "page": 178,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3.95,
+   "quote": "Mining 6.20 3.95",
+   "page": 179,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 3.38,
+   "quote": "Processing 3.33 3.38",
+   "page": 179,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.7,
+   "quote": "G&A 0.66 0.70",
+   "page": 179,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 8.03,
+   "quote": "Total 10.19 8.03",
+   "page": 179,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

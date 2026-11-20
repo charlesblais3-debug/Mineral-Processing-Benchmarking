@@ -1,0 +1,218 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "La Arena",
+  "title": "La Arena Project Form 43-101F1 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2018-01-01",
+  "effective_date_page": 2,
+  "effective_date_quote": "The effective date of this Technical Report is January 1, 2018.",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Peru",
+  "region": "La Libertad",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2018
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "adr",
+   "elution_ew"
+  ],
+  "page": 20,
+  "quote": "Ore from the La Arena Mine is truck-dumped onto leach pads with no crushing or agglomeration required prior to leaching."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 40000,
+   "unit": "t/d",
+   "quote": "The operation has a capacity of 40,000 tonnes per day.",
+   "page": 20,
+   "statistic": "design",
+   "context": {
+    "phase": "La Arena Mine (oxide heap leach)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86,
+   "unit": "%",
+   "quote": "The average life of mine gold recovery at the La Arena Mine is approximately 86%.",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Gold Price $1,200 per ounce",
+   "page": 123,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Expansions",
+   "value": 20.1,
+   "quote": "Process Expansions $20.1",
+   "page": 21,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Waste Rock Storage",
+   "value": 10.4,
+   "quote": "Waste Rock Storage $10.4",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Water Treatment",
+   "value": 15.3,
+   "quote": "Water Treatment $15.3",
+   "page": 21,
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Pit Dewatering System",
+   "value": 5.7,
+   "quote": "Pit Dewatering System $5.7",
+   "page": 21,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Land Purchase",
+   "value": 7.7,
+   "quote": "Land Purchase $7.7",
+   "page": 21,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Mining",
+   "value": 5.0,
+   "quote": "Capitalized Mining $5.0",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 0.7,
+   "quote": "Other $0.7",
+   "page": 21,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 64.9,
+   "quote": "Total $64.9",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Costs",
+   "value": 87.1,
+   "quote": "G&A Costs $87.1",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Costs",
+   "value": 51.9,
+   "quote": "Process Costs $51.9",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 213.0,
+   "quote": "Mining Costs $213.0",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 352.0,
+   "quote": "Total Operating Costs $352.0",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Costs",
+   "value": 2.06,
+   "quote": "G&A Costs $/t processed $2.06",
+   "page": 22,
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Costs",
+   "value": 1.26,
+   "quote": "Process Costs $/t processed $1.26",
+   "page": 22,
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 4.71,
+   "quote": "Mining Costs $/t processed $4.71",
+   "page": 22,
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs (per t mined)",
+   "value": 1.78,
+   "quote": "Mining Costs $/t mined $1.78",
+   "page": 22,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "multiplier": ""
+  }
+ ]
+}

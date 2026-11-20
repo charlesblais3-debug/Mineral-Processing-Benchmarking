@@ -1,0 +1,77 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "San Martin",
+  "title": "San Martin Mine S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2022-04-30",
+  "effective_date_quote": "This report summarizes all data and information material to the San Martín Mine Project as of April 30, 2022",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Querétaro",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "effective_date_page": 78
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "vertical_mill",
+   "merrill_crowe",
+   "tank_leach"
+  ],
+  "quote": "primary grinding conducted by a ball mill with dimensions of 9'x9'",
+  "page": 63
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 627,
+   "unit": "t/d",
+   "quote": "The mill is currently operating at 627 tons per day",
+   "page": 61,
+   "statistic": "design",
+   "review_note": "Report says 'tons' (not stated whether short or metric); Mexican operation, taken as tonnes. Nameplate capacity 1,100 tpd."
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88,
+   "unit": "%",
+   "quote": "obtaining recoveries of 88% for gold and 54% for silver",
+   "page": 63,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 54,
+   "unit": "%",
+   "quote": "obtaining recoveries of 88% for gold and 54% for silver",
+   "page": 63,
+   "metal": "Ag",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1750,
+   "unit": "USD/oz",
+   "quote": "The prices used are US$1750/troy ounce Au and US$22.00/troy ounce Ag",
+   "page": 69,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22,
+   "unit": "USD/oz",
+   "quote": "The prices used are US$1750/troy ounce Au and US$22.00/troy ounce Ag",
+   "page": 69,
+   "metal": "Ag"
+  }
+ ],
+ "costs": []
+}

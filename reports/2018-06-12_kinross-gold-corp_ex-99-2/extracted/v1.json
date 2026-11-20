@@ -1,0 +1,205 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Fort Knox",
+  "title": "Fort Knox Mine, Fairbanks North Star Borough, Alaska, USA, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2018-06-11",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: June 11, 2018",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2018
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "gravity",
+   "tank_leach",
+   "cip",
+   "elution_ew",
+   "heap_leach"
+  ],
+  "page": 14,
+  "quote": "a conventional semi-autogenous mill and two ball mills operating in closed-circuit with hydrocyclones to control grind size, gravity concentrators to recover coarse gold, cyanide tank leaching, recovery of gold on activated carbon in the CIP circuit, and a carbon elution and carbon regeneration circuit. In recent years, typical recovery has been in the range of 81% to 83% . Fort Knox currently operates a valley-fill run-of-mine heap leach facility"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 36287,
+   "unit": "t/d",
+   "quote": "nominal capacity of 36,287 t/d (40,000 stpd) of fresh feed",
+   "page": 13,
+   "statistic": "design",
+   "context": {
+    "phase": "CIP mill (excludes heap leach)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "The cutoff grades are based on a gold price of US$1,200/oz.",
+   "page": 13,
+   "metal": "Au",
+   "context": {
+    "note": "reserve cutoff price"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Surface (Gilmore expansion initial capital)",
+   "value": 101309,
+   "quote": "Surface 19,081 82,229 101,309",
+   "page": 16,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Processing (Gilmore expansion initial capital)",
+   "value": 58786,
+   "quote": "Processing 58,786 - 58,786",
+   "page": 16,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Gilmore expansion initial capital",
+   "value": 160096,
+   "quote": "Total 77,867 82,229 160,096",
+   "page": 16,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Report labels this 'Initial Capital' but describes it as capital for the Gilmore expansion of an operating mine"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Surface",
+   "value": 471749,
+   "quote": "Surface 128,164 343,585 - 471,749",
+   "page": 16,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 99585,
+   "quote": "Processing 99,585 - - 99,585",
+   "page": 16,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 5350,
+   "quote": "Other 850 - 4,500 5,350",
+   "page": 16,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 576684,
+   "quote": "Total 228,599 343,585 4,500 576,684",
+   "page": 16,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (incl. Capitalized Stripping)",
+   "value": 1322148,
+   "quote": "Mining (incl. Capitalized Stripping) 1,322,148",
+   "page": 17,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling Cost",
+   "value": 202495,
+   "quote": "Milling Cost 202,495",
+   "page": 17,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Heap Leach Cost",
+   "value": 360665,
+   "quote": "Heap Leach Cost 360,665",
+   "page": 17,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 325494,
+   "quote": "G&A 325,494",
+   "page": 17,
+   "l1": "ga",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 2210802,
+   "quote": "Total 2,210,802",
+   "page": 17,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (incl. Capitalized Stripping) unit",
+   "value": 2.19,
+   "quote": "Mining (incl. Capitalized Stripping) 1,322,148 2.19",
+   "page": 17,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling Cost unit",
+   "value": 6.49,
+   "quote": "Milling Cost 202,495 6.49",
+   "page": 17,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

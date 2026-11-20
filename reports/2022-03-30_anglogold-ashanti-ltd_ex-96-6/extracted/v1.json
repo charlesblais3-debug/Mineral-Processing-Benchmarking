@@ -1,0 +1,178 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Cuiaba",
+  "title": "Technical Report Summary Cuiabá A Life of Mine Summary Report",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_quote": "Effective date: 31 December 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Minas Gerais",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "feeds the Metso C110 jaw crusher. This product then feeds the secondary crusher",
+  "page": 16
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.5,
+   "unit": "Mt/a",
+   "quote": "needs approximately 15,000 m of development per year to achieve a 1.5 Mtpa ore feed to the plant",
+   "page": 15,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.5,
+   "unit": "%",
+   "quote": "Plant recovery % 93.50",
+   "page": 14,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "A gold price of $1,200/oz and an exchange rate of 5.15 BRL/$ were used",
+   "page": 18,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.15,
+   "unit": "BRL/USD",
+   "quote": "A gold price of $1,200/oz and an exchange rate of 5.15 BRL/$ were used",
+   "page": 18,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 25.4,
+   "unit": "MUSD",
+   "quote": "NPV5 USD M 25.4",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1109,
+   "unit": "USD/oz",
+   "quote": "Total AISC USD/Oz¹ 1,109",
+   "page": 18,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost (LOM)",
+   "value": 310.8,
+   "quote": "Mining Cost USD M 310.8",
+   "page": 18,
+   "l1": "mining",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost (LOM)",
+   "value": 249.3,
+   "quote": "Processing Cost USD M 249.3",
+   "page": 18,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A LM (LOM)",
+   "value": 40.1,
+   "quote": "G&A LM USD M 40.1",
+   "page": 18,
+   "l1": "ga",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Admin (LOM)",
+   "value": 233.2,
+   "quote": "General & Admin USD M 233.2",
+   "page": 18,
+   "l1": "ga",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs (LOM)",
+   "value": 833.4,
+   "quote": "Total Operating Costs USD M 833.4",
+   "page": 18,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 124.9,
+   "quote": "Sustaining Capital USD M 124.9",
+   "page": 18,
+   "l1": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (IFRS16)",
+   "value": 139.8,
+   "quote": "Sustaining Capital (IFRS16) USD M 139.8",
+   "page": 18,
+   "l1": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (Primary Development)",
+   "value": 150.5,
+   "quote": "Sustaining Capital (Primary Development) USD M 150.5",
+   "page": 18,
+   "l1": "mining",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (TSF)",
+   "value": 47.0,
+   "quote": "Sustaining Capital (TSF) USD M 47.0",
+   "page": 18,
+   "l1": "tailings_water",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Cost",
+   "value": 8.8,
+   "quote": "Closure Cost USD M 8.8",
+   "page": 18,
+   "multiplier": "M"
+  }
+ ]
+}

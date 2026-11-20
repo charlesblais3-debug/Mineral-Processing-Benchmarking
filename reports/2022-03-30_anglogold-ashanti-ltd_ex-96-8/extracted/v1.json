@@ -1,0 +1,70 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Minas Gerais",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "project": "Lamego",
+  "title": "Technical Report Summary Lamego Life of Mine Summary Report",
+  "effective_date_quote": "This report is effective as at 31 December 2021",
+  "mine_type": "underground",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "feeds the Metso C110 jaw crusher. This product then feeds the secondary crusher",
+  "page": 14
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 93.5,
+   "unit": "%",
+   "quote": "Main Deposits - Arco da Velha 15.0 0.0 90.0 94.5 93.5",
+   "page": 12,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "The gold price ($1,200 /oz) and exchange rate (USD/BRL 5.15)",
+   "page": 15,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.15,
+   "unit": "BRL/USD",
+   "quote": "The gold price ($1,200 /oz) and exchange rate (USD/BRL 5.15)",
+   "page": 15,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 6.3,
+   "unit": "MUSD",
+   "quote": "NPV 10% = 6.3M",
+   "page": 15,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  }
+ ],
+ "costs": []
+}

@@ -1,0 +1,17 @@
+- { name: Gold Road Resources, site: https://www.goldroad.com.au/, commodity: Au, projects: [Gruyere], pages: [https://announcements.asx.com.au/asxpdf/20161019/pdf/43c3zbcjzvr3db.pdf] }
+- { name: Dacian Gold (now Genesis Minerals), site: https://www.genesisminerals.com.au/, commodity: Au, projects: [Mt Morgans], pages: [https://announcements.asx.com.au/asxpdf/20161121/pdf/43d1mvn06j1q5m.pdf] }
+- { name: Gascoyne Resources, site: https://www.gascoyneresources.com.au/, commodity: Au, projects: [Dalgaranga], pages: [https://announcements.asx.com.au/asxpdf/20161125/pdf/43d69xrs4151cj.pdf] }
+- { name: Regis Resources, site: https://www.regisresources.com/, commodity: Au, projects: [McPhillamys, Duketon], pages: [https://announcements.asx.com.au/asxpdf/20240722/pdf/065sktbrl0wgyq.pdf] }
+- { name: Capricorn Metals, site: https://www.capmetals.com.au/, commodity: Au, projects: [Mt Gibson Gold Project, Karlawinda], pages: [https://announcements.asx.com.au/asxpdf/20230419/pdf/45nsrnl7ky20by.pdf, https://announcements.asx.com.au/asxpdf/20171023/pdf/43ngngckrftrbk.pdf] }
+- { name: Greatland Resources, site: https://www.greatlandresources.com/, commodity: Au, projects: [Havieron], pages: [https://announcements.asx.com.au/asxpdf/20251201/pdf/06sr0s6nn1jlmt.pdf] }
+- { name: Orezone Gold, site: https://orezone.com/, commodity: Au, projects: [Bombore], pages: [https://orezone.com/operations-overview/bombore/] }
+- { name: Perseus Mining, site: https://perseusmining.com/, commodity: Au, projects: [Nyanzaga], pages: [https://perseusmining.com/] }
+- { name: Cardinal Resources, site: https://www.cardinalresources.com.au/, commodity: Au, projects: [Namdini], pages: [https://announcements.asx.com.au/asxpdf/20191028/pdf/449xz8p6mrm330.pdf] }
+- { name: OZ Minerals, site: https://www.ozminerals.com/, commodity: Cu, projects: [Carrapateena, Prominent Hill], pages: [https://announcements.asx.com.au/asxpdf/20161107/pdf/43cph3h7h3qz3g.pdf, https://announcements.asx.com.au/asxpdf/20210818/pdf/44zdzjsf8gcxmm.pdf] }
+- { name: KGL Resources, site: https://www.kglresources.com.au/, commodity: Cu, projects: [Jervois], pages: [https://announcements.asx.com.au/asxpdf/20151021/pdf/4327pqdc00bf9g.pdf] }
+- { name: CuDeco, site: https://www.cudeco.com.au/, commodity: Cu, projects: [Rocklands], pages: [https://announcements.asx.com.au/asxpdf/20160303/pdf/435ktrwnnk5cc2.pdf] }
+- { name: Marimaca Copper, site: https://marimaca.com/, commodity: Cu, projects: [Marimaca Oxide Deposit], pages: [https://marimaca.com/marimaca-copper-files-ni-43-101-technical-report-for-the-previously-announced-marimaca-oxide-deposit-feasibility-study/] }
+- { name: Sandfire Resources America, site: https://sandfireamerica.com/, commodity: Cu, projects: [Black Butte Copper], pages: [https://sandfireamerica.com/transparency-library/] }
+- { name: Conico, site: https://www.conico.com.au/, commodity: Ni, projects: [Mt Thirsty], pages: [https://announcements.asx.com.au/asxpdf/20200220/pdf/44f8ghy7nxt41t.pdf] }
+- { name: Fortescue Metals Group, site: https://www.fortescue.com/, commodity: Fe, projects: [Iron Bridge Magnetite], pages: [https://announcements.asx.com.au/asxpdf/20190402/pdf/443zfvndlkg265.pdf] }
+- { name: Hawsons Iron, site: https://hawsons.com.au/, commodity: Fe, projects: [Hawsons], pages: [https://hawsons.com.au/announcements/] }

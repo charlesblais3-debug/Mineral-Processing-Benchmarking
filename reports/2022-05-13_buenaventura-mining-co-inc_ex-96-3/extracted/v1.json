@@ -1,0 +1,529 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Trapiche",
+  "title": "Trapiche Project S-K 1300 Technical Report Summary Preliminary Feasibility Study",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2021-11-19",
+  "effective_date_quote": "19 November 2021",
+  "primary_commodity": "Cu",
+  "by_products": [],
+  "country": "Peru",
+  "region": "Apurimac",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "sx_ew"
+  ],
+  "quote": "Ore will be processed using crushing & agglomeration, heap leach and solvent extraction/electrowinning to produce a copper cathode.",
+  "page": 269
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 45000,
+   "unit": "t/d",
+   "quote": "The crushing system will operate at 45,000 metric tonnes of ore per day on average",
+   "page": 24,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.41,
+   "unit": "%",
+   "quote": "Total 393,141 0.41% 3,536,514",
+   "page": 269,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "ore plus ROM"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.63,
+   "unit": "USD/lb",
+   "quote": "Copper $8,000/tonne or approximately $3.63/lb",
+   "page": 271,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 785,
+   "unit": "MUSD",
+   "quote": "estimated at US$785 million dollars at a discount rate of 7%",
+   "page": 24,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 15.9,
+   "unit": "%",
+   "quote": "the internal rate of return (IRR) is 15.9%",
+   "page": 24
+  },
+  {
+   "parameter": "payback_years",
+   "value": 5.0,
+   "unit": "years",
+   "quote": "The payback period is 5.0 years",
+   "page": 24
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Cost, without Mining",
+   "value": 647422193,
+   "quote": "Subtotal Direct Cost, without Mining $647,422,193",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general",
+   "review_note": "Direct cost including process plant, leach pads, infrastructure; not split by area in this table"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Freight",
+   "value": 32737980,
+   "quote": "Freight $32,737,980",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mobilization",
+   "value": 12927640,
+   "quote": "Mobilization $12,927,640",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concrete Batching Mob & Demob",
+   "value": 563200,
+   "quote": "Concrete Batching Mob & Demob $563,200",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Temporary Construction Power",
+   "value": 680130,
+   "quote": "Temporary Construction Power $680,130",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Constructed Cost",
+   "value": 694331143,
+   "quote": "Total Constructed Cost $694,331,143",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Management & Accounting",
+   "value": 5207510,
+   "quote": "Management & Accounting $5,207,510",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Engineering",
+   "value": 41659860,
+   "quote": "Engineering $41,659,860",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Services",
+   "value": 6943310,
+   "quote": "Project Services $6,943,310",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Control",
+   "value": 5207510,
+   "quote": "Project Control $5,207,510",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Management",
+   "value": 45131570,
+   "quote": "Construction Management $45,131,570",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM Fee",
+   "value": 10415020,
+   "quote": "EPCM Fee $10,415,020",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM Construction Trailers",
+   "value": 2082960,
+   "quote": "EPCM Construction Trailers $2,082,960",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM Subtotal",
+   "value": 116647740,
+   "quote": "EPCM Subtotal $116,647,740",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Commissioning & Programming",
+   "value": 550000,
+   "quote": "Commissioning & Programming $550,000",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "commissioning"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Vendor Supervision Of Specialty Const.",
+   "value": 2821753,
+   "quote": "Vendor Supervision Of Specialty Const. $2,821,753",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "commissioning"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Vendor Pre-commissioning",
+   "value": 940588,
+   "quote": "Vendor Pre-commissioning $940,588",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "commissioning"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Vendor Commissioning",
+   "value": 940588,
+   "quote": "Vendor Commissioning $940,588",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "commissioning"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capital Spares",
+   "value": 3762330,
+   "quote": "Capital Spares $3,762,330",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "first_fills_spares"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Commissioning Spares",
+   "value": 940588,
+   "quote": "Commissioning Spares $940,588",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "first_fills_spares"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Contracted Cost",
+   "value": 820934730,
+   "quote": "Total Contracted Cost $820,934,730",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 123140160,
+   "quote": "Contingency $123,140,160",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Transmission Line & Substation (CONENHUA)",
+   "value": 45631190,
+   "quote": "Transmission Line & Substation (CONENHUA) $45,631,190",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "offsite_infra",
+   "l2": "power"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "External Road",
+   "value": 16500000,
+   "quote": "External Road $16,500,000",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "offsite_infra",
+   "l2": "access"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "First Fills",
+   "value": 2530000,
+   "quote": "First Fills $2,530,000",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "first_fills_spares"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Cost",
+   "value": 29672000,
+   "quote": "Owner's Cost $29,672,000",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Contracted and Owner's Cost",
+   "value": 1038408080,
+   "quote": "Total Contracted and Owner's Cost $1,038,408,080",
+   "page": 48,
+   "multiplier": "",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 179985,
+   "quote": "Total $1,038,408 $179,985",
+   "page": 270,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation & Closure",
+   "value": 151.2,
+   "quote": "estimated at $151.2 million for the mine life",
+   "page": 272,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Operating Cost",
+   "value": 908954,
+   "quote": "Mining Operating Cost $50,428 $50,867 $53,197 $65,527 $55,037 $908,954",
+   "page": 45,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "SXEW Plant",
+   "value": 1148728,
+   "quote": "SXEW Plant $68,177 $69,658 $68,728 $71,699 $68,941 $1,148,728",
+   "page": 45,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment Plant",
+   "value": 35943,
+   "quote": "Water Treatment Plant $357 $527 $658 $771 $911 $35,943",
+   "page": 45,
+   "l1": "tailings_water",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site & Services",
+   "value": 396000,
+   "quote": "Site & Services $22,000 $22,000 $22,000 $22,000 $22,000 $396,000",
+   "page": 45,
+   "l1": "ga",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General Administration",
+   "value": 118800,
+   "quote": "General Administration $6,600 $6,600 $6,600 $6,600 $6,600 $118,800",
+   "page": 45,
+   "l1": "ga",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment & Refining Charges",
+   "value": 131439,
+   "quote": "Treatment & Refining Charges $8,263 $8,263 $8,263 $8,263 $8,263 $131,439",
+   "page": 45,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 2739864,
+   "quote": "Total $155,826 $157,915 $159,447 $174,861 $161,753 $2,739,864",
+   "page": 45,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 2.31,
+   "quote": "Mine $2.31",
+   "page": 272,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 2.92,
+   "quote": "Process Plant $2.92",
+   "page": 272,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment",
+   "value": 0.09,
+   "quote": "Water Treatment $0.09",
+   "page": 272,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Support/Main Office Overhead",
+   "value": 1.31,
+   "quote": "Site Support/Main Office Overhead $1.31",
+   "page": 272,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment/Refining Charges",
+   "value": 0.33,
+   "quote": "Treatment/Refining Charges $0.33",
+   "page": 272,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 6.97,
+   "quote": "Total Operating Cost $6.97",
+   "page": 272,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

@@ -1,0 +1,357 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Timok",
+  "title": "NI 43-101 Technical Report - Timok Copper-Gold Project, Serbia: Upper Zone Prefeasibility Study and Resource Estimate for the Lower Zone",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2018-06-19",
+  "effective_date_quote": "Effective date of the report: June 19, 2018",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Serbia",
+  "region": "Bor",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2018,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "The process adopted for this PFS specifies a moderate primary grind P 80 of 108 µm using a SAG/Ball mill circuit",
+  "page": 25
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 8900,
+   "unit": "t/d",
+   "quote": "the process plant is designed to treat nominally 8,900 tonnes per day",
+   "page": 25,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 108,
+   "unit": "µm",
+   "quote": "a moderate primary grind P 80 of 108 µm",
+   "page": 25,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.15,
+   "unit": "USD/lb",
+   "quote": "Cu Price $/lb 3.15",
+   "page": 34,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1300,
+   "unit": "USD/oz",
+   "quote": "Au Price $/oz 1,300",
+   "page": 34,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1816,
+   "unit": "MUSD",
+   "quote": "After Tax NPV8% $M 1,816",
+   "page": 34,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 80,
+   "unit": "%",
+   "quote": "IRR % 80%",
+   "page": 34
+  },
+  {
+   "parameter": "payback_years",
+   "value": 0.9,
+   "unit": "years",
+   "quote": "Payback years 0.9",
+   "page": 34
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 0.92,
+   "unit": "USD/lb",
+   "quote": "C1 Costs $/lb 0.92",
+   "page": 34,
+   "metal": "Cu",
+   "context": {
+    "basis": "C1"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Project Development Costs",
+   "value": 70928000,
+   "quote": "Owner’s Project Development Costs 70,928,000",
+   "page": 30,
+   "l1": "owners",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Decline Development (Exploration licence)",
+   "value": 42962000,
+   "quote": "Decline Development (Exploration licence) 42,962,000",
+   "page": 30,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Pre Sanction Date Expenditures",
+   "value": 113890000,
+   "quote": "Total Pre Sanction Date Expenditures 113,890,000",
+   "page": 30,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Development",
+   "value": 49142000,
+   "quote": "1000 Site Development 49,142,000",
+   "page": 30,
+   "l1": "onsite_infra",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 159798000,
+   "quote": "2000 Mining 159,798,000",
+   "page": 30,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrator",
+   "value": 99109000,
+   "quote": "3000 Concentrator 99,109,000",
+   "page": 30,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Operating & Maintenance",
+   "value": 17194000,
+   "quote": "4000 Pre-Production Operating & Maintenance 17,194,000",
+   "page": 30,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings, Waste Rock and Reclaim Water Management",
+   "value": 46866000,
+   "quote": "5000 Tailings, Waste Rock and Reclaim Water Management 46,866,000",
+   "page": 30,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Costs",
+   "value": 372109000,
+   "quote": "Subtotal Direct Costs 372,109,000",
+   "page": 30,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 105882000,
+   "quote": "9000 Indirect Costs 105,882,000",
+   "page": 30,
+   "l1": "indirects",
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 95598000,
+   "quote": "Contingency 95,598,000",
+   "page": 30,
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Post Sanction Date Expenditures",
+   "value": 573589000,
+   "quote": "Total Post Sanction Date Expenditures 573,589,000",
+   "page": 30,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Pre-Operational Expenditures",
+   "value": 687479000,
+   "quote": "Total Pre-Operational Expenditures 687,479,000",
+   "page": 30,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 239,
+   "quote": "Sustaining Capital $M 239",
+   "page": 34,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 48,
+   "quote": "Closure Costs $M 48",
+   "page": 34,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX - Mining",
+   "value": 19.41,
+   "quote": "OPEX - Mining 526 19.41",
+   "page": 359,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX – Processing & Ore Re-handling",
+   "value": 10.09,
+   "quote": "OPEX – Processing & Ore Re-handling 274 10.09",
+   "page": 359,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX - Water Management, Effluent Treatment & TSF",
+   "value": 1.01,
+   "quote": "OPEX - Water Management, Effluent Treatment & TSF 27 1.01",
+   "page": 359,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX - G&A",
+   "value": 1.91,
+   "quote": "OPEX - G&A 52 1.91",
+   "page": 359,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total OPEX including Contingency",
+   "value": 32.42,
+   "quote": "Total OPEX including Contingency 879 32.42",
+   "page": 359,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX - Mining",
+   "value": 526,
+   "quote": "OPEX - Mining 526 19.41",
+   "page": 359,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX – Processing & Ore Re-handling",
+   "value": 274,
+   "quote": "OPEX – Processing & Ore Re-handling 274 10.09",
+   "page": 359,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX - Water Management, Effluent Treatment & TSF",
+   "value": 27,
+   "quote": "OPEX - Water Management, Effluent Treatment & TSF 27 1.01",
+   "page": 359,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX - G&A",
+   "value": 52,
+   "quote": "OPEX - G&A 52 1.91",
+   "page": 359,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total OPEX including Contingency",
+   "value": 879,
+   "quote": "Total OPEX including Contingency 879 32.42",
+   "page": 359,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  }
+ ]
+}

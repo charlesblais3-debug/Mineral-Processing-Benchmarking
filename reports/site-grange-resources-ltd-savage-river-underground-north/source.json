@@ -1,0 +1,19 @@
+{
+  "url": "https://grange.blob.core.windows.net/public/cd4ff08e-4989-40b2-a2c4-9d0182ab03c4.pdf",
+  "source": "agent_search",
+  "issuer": "Grange Resources Ltd",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "DFS",
+  "project": "Savage River underground (North Pit UG)",
+  "commodity": "Fe",
+  "report_id": "site-grange-resources-ltd-savage-river-underground-north",
+  "sha256": "f7540d60dfbf4c8750239cae861acfd07fbb14e8a7724e03a1ab6f7f7d9fa057",
+  "bytes": 1092034,
+  "format": "pdf",
+  "pages": 30,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,237 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Fire Creek",
+  "title": "Technical Report for the Fire Creek Project, Lander County, Nevada, Amended",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2017-11-30",
+  "effective_date_page": 4,
+  "effective_date_quote": "with an effective date of November 30, 2017",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2018
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "merrill_crowe"
+  ],
+  "page": 30,
+  "quote": "The conventional Merrill Crowe mill facility of the Midas Mine"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1200,
+   "unit": "st/d",
+   "quote": "processing 1,200 tons per day (tpd)",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "phase": "Midas mill nameplate capacity (Fire Creek ore trucked to Midas)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93,
+   "unit": "%",
+   "quote": "Avg. Gold Metallurgical Recovery 93%",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88,
+   "unit": "%",
+   "quote": "Avg. Silver Metallurgical Recovery 88%",
+   "page": 29,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.71,
+   "unit": "oz/st",
+   "quote": "Avg. Gold Grade (opt) 0.71",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.69,
+   "unit": "oz/st",
+   "quote": "Avg. Silver Grade (opt) 0.69",
+   "page": 29,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Gold Price ($/oz) $1,200.00",
+   "page": 29,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 17,
+   "unit": "USD/oz",
+   "quote": "Silver Price ($/oz) $17.00",
+   "page": 29,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 455,
+   "unit": "USD/oz",
+   "quote": "Cash Cost ($/oz) 1. $455",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "net of byproduct sales, includes royalties, excludes taxes"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 96,
+   "unit": "MUSD",
+   "quote": "5% Discounted Cash Flow ($ Millions) $96",
+   "page": 29,
+   "context": {
+    "discount_rate_pct": 5
+   },
+   "review_note": "Table titled 'Key Operating and After Tax Financial Statistics'; value is the 5% discounted cash flow"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 14260,
+   "quote": "Mine Development $574 $7,351 $2,059 4,277 $14,260",
+   "page": 249,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Equipment",
+   "value": 1890,
+   "quote": "Mining Equipment $1,890 $1,890",
+   "page": 249,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental",
+   "value": 683,
+   "quote": "Environmental $683 $683",
+   "page": 249,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital Mine",
+   "value": 3170,
+   "quote": "Sustaining Capital Mine $87 $976 $967 $1,140 $3,170",
+   "page": 249,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital Mill",
+   "value": 2994,
+   "quote": "Sustaining Capital Mill $83 $922 $913 $1,076 $2,994",
+   "page": 249,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 22997,
+   "quote": "Total $744 $11,822 $3,938 $6,493 $22,997",
+   "page": 249,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Average Mining Cost",
+   "value": 192,
+   "quote": "Average Mining Cost $192 /ton",
+   "page": 250,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Haulage Fire Creek to Midas",
+   "value": 44,
+   "quote": "Haulage Fire Creek to Midas $44 /ton",
+   "page": 250,
+   "l1": "mining",
+   "l2": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 44,
+   "quote": "Processing $44 /ton",
+   "page": 250,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Nevada Operations Allocation",
+   "value": 14,
+   "quote": "Allocation $14 /ton",
+   "page": 250,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 294,
+   "quote": "Total $294 /ton",
+   "page": 250,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

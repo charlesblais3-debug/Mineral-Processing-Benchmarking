@@ -1,0 +1,207 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Caraíba",
+  "title": "2022 Mineral Resources and Mineral Reserves of the Caraíba Operations, Curaçá Valley, Bahia, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2022-09-30",
+  "effective_date_quote": "Signature Date: September 30, 2022",
+  "primary_commodity": "Cu",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Bahia",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "installation of a third Ball Mill, and upgrades to the flotation circuit",
+  "page": 142
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 9600,
+   "unit": "t/d",
+   "quote": "operates at a maximum rated tonnage of approximately 9 , 600 tpd",
+   "page": 142,
+   "statistic": "design",
+   "context": {
+    "phase": "current operations 3.2 Mtpa"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 3.2,
+   "unit": "Mt/a",
+   "quote": "approximately 3 . 2 Mtpa",
+   "page": 142,
+   "statistic": "design",
+   "context": {
+    "phase": "current operations"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.8,
+   "unit": "%",
+   "quote": "2022 (Jan - Sep) 2,118,380 1.73 33,707 91.8",
+   "page": 30,
+   "metal": "Cu",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "note": "Jan-Sep 2022 actual mill recovery"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.73,
+   "unit": "%",
+   "quote": "2022 (Jan - Sep) 2,118,380 1.73 33,707 91.8",
+   "page": 30,
+   "metal": "Cu",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "note": "Jan-Sep 2022 actual mill feed"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "UG Mine Development",
+   "value": 346019,
+   "quote": "UG Mine Development 346,019",
+   "page": 170,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "OP Mine Pre-Stripping",
+   "value": 151551,
+   "quote": "OP Mine Pre - Stripping 151,551",
+   "page": 170,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 209083,
+   "quote": "Infrastructure 209,083",
+   "page": 170,
+   "l1": "onsite_infra",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "UG Equipment",
+   "value": 79273,
+   "quote": "UG Equipment 79,273",
+   "page": 170,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "OP Equipment",
+   "value": 43079,
+   "quote": "OP Equipment 43,079",
+   "page": 170,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mineral Processing",
+   "value": 99051,
+   "quote": "Mineral Processing 99,051",
+   "page": 170,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 44075,
+   "quote": "Tailings 44,075",
+   "page": 170,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Safety & Environment",
+   "value": 73306,
+   "quote": "Safety & Environment 73,306",
+   "page": 170,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "IT & Services",
+   "value": 3799,
+   "quote": "IT & Services 3,799",
+   "page": 170,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Capital Costs",
+   "value": 33890,
+   "quote": "Other Capital Costs 33,890",
+   "page": 170,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Cost",
+   "value": 1083126,
+   "quote": "Total Capital Cost 1,083,126",
+   "page": 170,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "LOM capital for current operations (capitalized development plus ongoing capital); treated as sustaining"
+  }
+ ]
+}

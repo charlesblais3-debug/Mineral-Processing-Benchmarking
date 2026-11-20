@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330222000021/ex96p1techreport220209.htm",
+  "source": "edgar",
+  "issuer": "United States Steel Corp.",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "project": "Minntac and Keetac",
+  "commodity": "Fe",
+  "report_id": "_united-states-steel-corp_",
+  "sha256": "72c3c0b4edb8f604ecc648ff015adbb6945b19edd6d9de2d4b015a8c8fd5dca9",
+  "bytes": 41583,
+  "format": "html",
+  "pages": 20,
+  "parsed_on": "2026-11-20"
+}

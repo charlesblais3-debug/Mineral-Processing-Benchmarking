@@ -1,0 +1,542 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Arctic",
+  "title": "Arctic Project S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2022-11-30",
+  "effective_date_quote": "Mineral Resources are current as of November 30, 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Pb",
+   "Au",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 22
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "consisting of one SAG mill and one ball mill in closed circuit with hydrocyclones (SAB circuit)",
+  "page": 26
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 10000,
+   "unit": "t/d",
+   "quote": "The 10,000 t/d process plant design is conventional for the industry",
+   "page": 26,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "overall plant availability of 92%",
+   "page": 26
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 70,
+   "unit": "µm",
+   "quote": "Primary Grind Size P 80 70 µm",
+   "page": 110,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 40,
+   "unit": "µm",
+   "quote": "Re-grind Size P 80 40 µm",
+   "page": 110,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.11,
+   "unit": "%",
+   "quote": "Process Feed 100.0 2.11 0.56 2.90 0.42 31.8",
+   "page": 97,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.56,
+   "unit": "%",
+   "quote": "Process Feed 100.0 2.11 0.56 2.90 0.42 31.8",
+   "page": 97,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.9,
+   "unit": "%",
+   "quote": "Process Feed 100.0 2.11 0.56 2.90 0.42 31.8",
+   "page": 97,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.42,
+   "unit": "g/t",
+   "quote": "Process Feed 100.0 2.11 0.56 2.90 0.42 31.8",
+   "page": 97,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 31.8,
+   "unit": "g/t",
+   "quote": "Process Feed 100.0 2.11 0.56 2.90 0.42 31.8",
+   "page": 97,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.1,
+   "unit": "%",
+   "quote": "Recovery % 92.1% Cu",
+   "page": 26,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 61.3,
+   "unit": "%",
+   "quote": "61.3% Pb",
+   "page": 26,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.5,
+   "unit": "%",
+   "quote": "88.5% Zn",
+   "page": 26,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.65,
+   "unit": "USD/lb",
+   "quote": "Copper: $3.65/lb",
+   "page": 29,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.15,
+   "unit": "USD/lb",
+   "quote": "Zinc: $1.15/lb",
+   "page": 29,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.0,
+   "unit": "USD/lb",
+   "quote": "Lead: $1.00/lb",
+   "page": 29,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1650,
+   "unit": "USD/oz",
+   "quote": "Gold: $1,650/oz",
+   "page": 29,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21.0,
+   "unit": "USD/oz",
+   "quote": "Silver: $21.00/oz",
+   "page": 29,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1108,
+   "unit": "MUSD",
+   "quote": "Post-tax financials have an NPV of $1,108 million at an 8% discount rate",
+   "page": 33,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 22.8,
+   "unit": "%",
+   "quote": "IRR of 22.8% and payback period of 3.1 years",
+   "page": 33
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.1,
+   "unit": "years",
+   "quote": "IRR of 22.8% and payback period of 3.1 years",
+   "page": 33
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 277.4,
+   "quote": "1000 Mining 277.4 17.5 294.9",
+   "page": 32,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 17.5,
+   "quote": "1000 Mining 277.4 17.5 294.9",
+   "page": 32,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing",
+   "value": 42.5,
+   "quote": "2000 Crushing 42.5 0 42.5",
+   "page": 32,
+   "l1": "process",
+   "l2": "comminution",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 158.0,
+   "quote": "3000 Process Plant 158.0 1.3 159.3",
+   "page": 32,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant",
+   "value": 1.3,
+   "quote": "3000 Process Plant 158.0 1.3 159.3",
+   "page": 32,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings",
+   "value": 88.3,
+   "quote": "4000 Tailings 88.3 32.4 120.7",
+   "page": 32,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 32.4,
+   "quote": "4000 Tailings 88.3 32.4 120.7",
+   "page": 32,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-site Infrastructure",
+   "value": 172.8,
+   "quote": "5000 On-site Infrastructure 172.8 35.1 207.9",
+   "page": 32,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "On-site Infrastructure",
+   "value": 35.1,
+   "quote": "5000 On-site Infrastructure 172.8 35.1 207.9",
+   "page": 32,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site Infrastructure",
+   "value": 75.8,
+   "quote": "6000 Off-site Infrastructure 75.8 0 75.8",
+   "page": 32,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-total Direct Costs",
+   "value": 834.1,
+   "quote": "Sub-total Direct Costs 834.1 86.3 920.4",
+   "page": 32,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-total Direct Costs",
+   "value": 86.3,
+   "quote": "Sub-total Direct Costs 834.1 86.3 920.4",
+   "page": 32,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 177.4,
+   "quote": "7000 Indirects 177.4 15.1 192.5",
+   "page": 32,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Indirects",
+   "value": 15.1,
+   "quote": "7000 Indirects 177.4 15.1 192.5",
+   "page": 32,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 138.5,
+   "quote": "8000 Contingency (~12% of total project cost) 138.5 13.0 151.5",
+   "page": 32,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 13.0,
+   "quote": "8000 Contingency (~12% of total project cost) 138.5 13.0 151.5",
+   "page": 32,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 26.8,
+   "quote": "9000 Owner’s Costs 26.8 0 26.8",
+   "page": 32,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Total",
+   "value": 1176.8,
+   "quote": "Project Total 1,176.8 114.4 1,291.2",
+   "page": 32,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Project Total",
+   "value": 114.4,
+   "quote": "Project Total 1,176.8 114.4 1,291.2",
+   "page": 32,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 428,
+   "quote": "Closure costs are estimated at an additional $428 million",
+   "page": 259,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Table 1-8 shows 'Project Total - Closure Costs 170.8'; text states $428 million"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 22.49,
+   "quote": "Mining* 22.49 82.1",
+   "page": 32,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 22.6,
+   "quote": "Processing 22.60 82.5",
+   "page": 32,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 5.85,
+   "quote": "G&A 5.85 21.3",
+   "page": 32,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Road Toll and Maintenance",
+   "value": 7.72,
+   "quote": "Road Toll and Maintenance 7.72 28.2",
+   "page": 32,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment",
+   "value": 1.17,
+   "quote": "Water Treatment 1.17 4.3",
+   "page": 32,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 59.83,
+   "quote": "Total Operating Cost 59.83 218.4",
+   "page": 32,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 82.1,
+   "quote": "Mining* 22.49 82.1",
+   "page": 32,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 82.5,
+   "quote": "Processing 22.60 82.5",
+   "page": 32,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 21.3,
+   "quote": "G&A 5.85 21.3",
+   "page": 32,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Road Toll and Maintenance",
+   "value": 28.2,
+   "quote": "Road Toll and Maintenance 7.72 28.2",
+   "page": 32,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment",
+   "value": 4.3,
+   "quote": "Water Treatment 1.17 4.3",
+   "page": 32,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 218.4,
+   "quote": "Total Operating Cost 59.83 218.4",
+   "page": 32,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  }
+ ]
+}

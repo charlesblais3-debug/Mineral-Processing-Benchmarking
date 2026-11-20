@@ -1,0 +1,19 @@
+{
+  "url": "https://wp-sandfireamerica-2023.s3.ca-central-1.amazonaws.com/media/2026/07/2026-07-28-BB-NI-43-101-PFS.pdf",
+  "source": "agent_search",
+  "issuer": "Sandfire Resources America",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "Black Butte Copper",
+  "commodity": "Cu",
+  "report_id": "site-sandfire-resources-america-black-butte-copper",
+  "sha256": "3401d129e8243fdd3b5995ecdc97a6bd4cdb4b55b55f971971943e3da07fd3ae",
+  "bytes": 34445581,
+  "format": "pdf",
+  "pages": 703,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713930/000110465921039820/tm214609d1_ex15-1.htm",
+  "source": "edgar",
+  "issuer": "Nexa Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "S-K 1300",
+  "study_level": "Operating-mine TRS",
+  "project": "Cerro Lindo",
+  "commodity": "Zn",
+  "report_id": "_nexa-resources_",
+  "sha256": "76305102f177d1a22044ba75aa0f483354397f284391ad3674e867d0a047cb73",
+  "bytes": 6867113,
+  "format": "html",
+  "pages": 3,
+  "parsed_on": "2026-11-20"
+}

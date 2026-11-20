@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713930/000129281424001026/ex15-2.htm",
+  "source": "edgar",
+  "issuer": "Nexa Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "S-K 1300",
+  "study_level": "Operating-mine TRS",
+  "project": "Atacocha (Cerro Pasco Complex)",
+  "commodity": "Zn",
+  "report_id": "_nexa-resources__001026",
+  "sha256": "a5cd358a8fe9d25d184ee197ee87cd81a8a6bbae86a35bd7e11c7a48a37a59ad",
+  "bytes": 7155342,
+  "format": "html",
+  "pages": 288,
+  "parsed_on": "2026-11-20"
+}

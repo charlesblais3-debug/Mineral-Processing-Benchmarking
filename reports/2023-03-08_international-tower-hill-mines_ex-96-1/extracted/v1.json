@@ -1,0 +1,484 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Livengood",
+  "title": "S-K 1300 Technical Report Summary, Livengood Gold Project Pre-feasibility Study (February 2022)",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2021-10-29",
+  "effective_date_quote": "This report is effective as of the 29 th day of October 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "United States",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cil"
+  ],
+  "quote": "transported to the primary gyratory (60×89) crusher, where it is crushed and stockpiled in a covered pile, then conveyed to the secondary crushing (1,250 hp) building. Crushed product (1.65 in (42 mm)) will then be conveyed and processed in a comminution circuit (SABC) consisting of wet grinding in a single semi-autogenous (SAG) mill ((D×L) 36 ft × 20 ft /20,115 hp) in closed circuit with a pebble crusher (932 hp) and a single ball mill (25.4 ft × 40 ft / 20,115 hp). The ball mill is in closed circuit with hydrocyclones. A pulp stream will be bled from a portion of the ball mill discharge and treated with a bank of eight centrifugal gravity gold separators. The gravity tails will be pre-treated with oxygen and lead nitrate, and then leached in a conventional CIL circuit (2 rows of 7 tanks). The gravity gold will be intensively leached from the gravity concentrate with two intensive leach reactor (ILR) systems.",
+  "page": 42
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 65000,
+   "unit": "st/d",
+   "quote": "Mill Throughput 65,000 Dry tons/day",
+   "page": 53,
+   "statistic": "design",
+   "review_note": "Report uses 't' for short tons and 'mt' for metric tonnes (65,000 t/d = 59,000 mt/d)"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.65,
+   "unit": "g/t",
+   "quote": "Head Grade – LOM 0.65 g/mt",
+   "page": 53,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 71.4,
+   "unit": "%",
+   "quote": "Gold Recovery 71.4 %",
+   "page": 53,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 250,
+   "unit": "µm",
+   "quote": "the grind size being further coarsened from 180 to 250 µm (P 80 )",
+   "page": 42,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1680,
+   "unit": "USD/oz",
+   "quote": "Gold Price ($/oz) 1,680",
+   "page": 53,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 45,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV (@ 5%) 45 $M",
+   "page": 54,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 5.3,
+   "unit": "%",
+   "quote": "After-Tax IRR 5.3 %",
+   "page": 54
+  },
+  {
+   "parameter": "payback_years",
+   "value": 10.4,
+   "unit": "years",
+   "quote": "After-Tax Payback 10.4 Years",
+   "page": 54,
+   "context": {
+    "basis": "after-tax"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Equipment",
+   "value": 200,
+   "quote": "Mine Equipment 200 139",
+   "page": 51,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Development",
+   "value": 230,
+   "quote": "Mine Development 230",
+   "page": 51,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Facilities",
+   "value": 433,
+   "quote": "Process Facilities 433",
+   "page": 51,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure Facilities",
+   "value": 459,
+   "quote": "Infrastructure Facilities 459 514",
+   "page": 51,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power Supply",
+   "value": 87,
+   "quote": "Power Supply 87",
+   "page": 51,
+   "l1": "onsite_infra",
+   "l2": "power",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Costs",
+   "value": 296,
+   "quote": "Owners Costs 296 5",
+   "page": 51,
+   "l1": "owners",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 220,
+   "quote": "Contingency 220",
+   "page": 51,
+   "l1": "contingency",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-total before Reclamation",
+   "value": 1925,
+   "quote": "Sub-total before Reclamation 1,925 658",
+   "page": 51,
+   "is_subtotal": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Spare parts, consumables, and initial fills",
+   "value": 40,
+   "quote": "Spare parts, consumables, and initial fills (1) 40",
+   "page": 51,
+   "l1": "indirects",
+   "l2": "first_fills_spares",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Funding of Reclamation Trust Fund",
+   "value": 23,
+   "quote": "Funding of Reclamation Trust Fund (2) 23 245",
+   "page": 51,
+   "l1": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total initial capital",
+   "value": 1989,
+   "quote": "Total $1,989 M $903M",
+   "page": 51,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Equipment (sustaining)",
+   "value": 139,
+   "quote": "Mine Equipment 200 139",
+   "page": 51,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure Facilities (sustaining)",
+   "value": 514,
+   "quote": "Infrastructure Facilities 459 514",
+   "page": 51,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owners Costs (sustaining)",
+   "value": 5,
+   "quote": "Owners Costs 296 5",
+   "page": 51,
+   "l1": "owners",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-total before Reclamation (sustaining)",
+   "value": 658,
+   "quote": "Sub-total before Reclamation 1,925 658",
+   "page": 51,
+   "is_subtotal": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Funding of Reclamation Trust Fund (sustaining)",
+   "value": 245,
+   "quote": "Funding of Reclamation Trust Fund (2) 23 245",
+   "page": 51,
+   "l1": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital",
+   "value": 903,
+   "quote": "Total $1,989 M $903M",
+   "page": 51,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation & Closure",
+   "value": 317,
+   "quote": "Reclamation & Closure 317 $Million",
+   "page": 54,
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (including stockpile reclaim) LOM total",
+   "value": 1910,
+   "quote": "Mining (including stockpile reclaim) 1,910 2.05 4.03 297 29",
+   "page": 52,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing LOM total",
+   "value": 3659,
+   "quote": "Processing 3,659 - 7.72 569 56",
+   "page": 52,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration LOM total",
+   "value": 639,
+   "quote": "General and Administration 639 - 1.35 99 10",
+   "page": 52,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "On-site Mine Operating Costs LOM total",
+   "value": 6208,
+   "quote": "On-site Mine Operating Costs 6,208 - 13.09 965 95",
+   "page": 52,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties LOM total",
+   "value": 323,
+   "quote": "Royalties 323 - 0.68 50 5",
+   "page": 52,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelting, Refining and Transport LOM total",
+   "value": 22,
+   "quote": "Smelting, Refining and Transport 22 - 0.05 3 0.3",
+   "page": 52,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sub-total before Reclamation LOM total",
+   "value": 6553,
+   "quote": "Sub-total before Reclamation 6,553 - 13.82 1,019 100",
+   "page": 52,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Funding of Reclamation Trust Fund LOM total",
+   "value": 317,
+   "quote": "Funding of Reclamation Trust Fund 317 - 0.67 49 0",
+   "page": 52,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost LOM",
+   "value": 6893,
+   "quote": "Total $6,893M",
+   "page": 52,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining ($/t mined)",
+   "value": 2.05,
+   "quote": "Mining (including stockpile reclaim) 1,910 2.05 4.03 297 29",
+   "page": 52,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (including stockpile reclaim)",
+   "value": 4.03,
+   "quote": "Mining (including stockpile reclaim) 1,910 2.05 4.03 297 29",
+   "page": 52,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 7.72,
+   "quote": "Processing 3,659 - 7.72 569 56",
+   "page": 52,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 1.35,
+   "quote": "General and Administration 639 - 1.35 99 10",
+   "page": 52,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "On-site Mine Operating Costs",
+   "value": 13.09,
+   "quote": "On-site Mine Operating Costs 6,208 - 13.09 965 95",
+   "page": 52,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 0.68,
+   "quote": "Royalties 323 - 0.68 50 5",
+   "page": 52,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelting, Refining and Transport",
+   "value": 0.05,
+   "quote": "Smelting, Refining and Transport 22 - 0.05 3 0.3",
+   "page": 52,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sub-total before Reclamation",
+   "value": 13.82,
+   "quote": "Sub-total before Reclamation 6,553 - 13.82 1,019 100",
+   "page": 52,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Funding of Reclamation Trust Fund",
+   "value": 0.67,
+   "quote": "Funding of Reclamation Trust Fund 317 - 0.67 49 0",
+   "page": 52,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost",
+   "value": 14.5,
+   "quote": "Total $6,893M - $14.50$/t $1,068/oz 100%",
+   "page": 52,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

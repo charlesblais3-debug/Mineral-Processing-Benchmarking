@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1484457/000128712113000013/ex99-2.htm",
+  "source": "edgar",
+  "issuer": "Alderon Iron Ore Corp.",
+  "cik": "1484457",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2013-01-17",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Kami (Rose deposit, Mills Lake)",
+  "commodity": "Fe",
+  "report_id": "2013-01-17_alderon-iron-ore-corp_ex-99-2",
+  "sha256": "dd52e2c99d1b7e0c33f4a4410802323a641c258fa501849e394d54444266b05d",
+  "bytes": 1240083,
+  "format": "html",
+  "pages": 290,
+  "parsed_on": "2026-11-20"
+}

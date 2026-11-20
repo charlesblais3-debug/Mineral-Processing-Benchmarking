@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1484457/000110465912012135/a11-30492_2ex99d58.htm",
+  "source": "edgar",
+  "issuer": "Alderon Iron Ore Corp.",
+  "cik": "1484457",
+  "form": "40FR12B/A",
+  "exhibit": "EX-99.58",
+  "filed": "2012-02-23",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "Kami",
+  "commodity": "Fe",
+  "report_id": "2012-02-23_alderon-iron-ore-corp_ex-99-58",
+  "sha256": "2d5dc0eae65360dab8a486b1596eed77713eacd3c7e599c2ae1a7086b0853637",
+  "bytes": 7198314,
+  "format": "html",
+  "pages": 391,
+  "parsed_on": "2026-11-20"
+}

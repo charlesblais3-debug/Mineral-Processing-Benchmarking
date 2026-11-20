@@ -1,0 +1,349 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Ixtaca",
+  "title": "Ixtaca Gold-Silver Project, Puebla State, Mexico, NI 43-101 Technical Report on the Feasibility Study",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2019-01-24",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: 24 January 2019",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Puebla",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2019
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ore_sorting",
+   "gravity",
+   "flotation",
+   "cil"
+  ],
+  "page": 29,
+  "quote": "The process plant includes conventional crushing, ore sorting, grinding, gravity, flotation, and concentrate leaching using CIL ."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 7650,
+   "unit": "t/d",
+   "quote": "initially at an average plant throughput of 7 , 650 tonnes per day (tpd)",
+   "page": 29,
+   "statistic": "design",
+   "context": {
+    "phase": "initial"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 15300,
+   "unit": "t/d",
+   "quote": "expanding to 15 , 300 tpd by Year 5",
+   "page": 29,
+   "statistic": "design",
+   "context": {
+    "phase": "expanded from Year 5"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Grinding to 75 microns is carried out by with ball milling",
+   "page": 32,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.5,
+   "unit": "%",
+   "quote": "Limestone 88 . 5 % 86 . 8 %",
+   "page": 33,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Limestone"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.8,
+   "unit": "%",
+   "quote": "Limestone 88 . 5 % 86 . 8 %",
+   "page": 33,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Limestone"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 64.4,
+   "unit": "%",
+   "quote": "Volcanic 64 . 4 % 76 . 3 %",
+   "page": 33,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Volcanic"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 76.3,
+   "unit": "%",
+   "quote": "Volcanic 64 . 4 % 76 . 3 %",
+   "page": 33,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Volcanic"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 54.5,
+   "unit": "%",
+   "quote": "Black Shale 54 . 5 % 84 . 7 %",
+   "page": 33,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Black Shale"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.7,
+   "unit": "%",
+   "quote": "Black Shale 54 . 5 % 84 . 7 %",
+   "page": 33,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Black Shale"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 12.9,
+   "unit": "kWh/t",
+   "quote": "Bond’s ball mill work index of 12 . 9 kWh/tonne",
+   "page": 130,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Limestone",
+    "note": "2018 variability tests"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13.4,
+   "unit": "kWh/t",
+   "quote": "Bond’s ball mil work index of 13 . 4 kWh/tonne",
+   "page": 130,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "Black Shale"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1275,
+   "unit": "USD/oz",
+   "quote": "gold price of $ 1275 /oz and silver price of $ 17 /oz",
+   "page": 35,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 17,
+   "unit": "USD/oz",
+   "quote": "gold price of $ 1275 /oz and silver price of $ 17 /oz",
+   "page": 35,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 310,
+   "unit": "MUSD",
+   "quote": "NPV (5% discount rate) $565 $371 $470 $310",
+   "page": 36,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 42,
+   "unit": "%",
+   "quote": "Internal Rate of Return (%) 64% 47% 57% 42% 49% 36%",
+   "page": 36
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.9,
+   "unit": "years",
+   "quote": "Payback (years) 1.5 1.7 1.6 1.9 1.7 2.0",
+   "page": 36
+  },
+  {
+   "parameter": "aisc",
+   "value": 850,
+   "unit": "USD/oz",
+   "quote": "Total 1 , 522 850 11.3",
+   "page": 35,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "AuEq",
+    "note": "also US$11.3/oz AgEq"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 716,
+   "unit": "USD/oz",
+   "quote": "Cash operating Cost 1,283 716 9.6",
+   "page": 35,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "AuEq"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 20,
+   "unit": "MXN/USD",
+   "quote": "The FS assumes an exchange rate of 20 MXN per U . S . dollar",
+   "page": 36,
+   "context": {
+    "pair": "MXN per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 22.2,
+   "quote": "Mining $22.2",
+   "page": 34,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process",
+   "value": 80.2,
+   "quote": "Process $80.2",
+   "page": 34,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Onsite Infrastructure",
+   "value": 24.3,
+   "quote": "Onsite Infrastructure $24.3",
+   "page": 34,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Offsite Infrastructure",
+   "value": 7.5,
+   "quote": "Offsite Infrastructure $7.5",
+   "page": 34,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects, EPCM, Contingency and Owners Cost",
+   "value": 39.9,
+   "quote": "Indirects , EPCM, Contingency and Owners Cost $39.9",
+   "page": 34,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 174.2,
+   "quote": "Total $174.2",
+   "page": 34,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (incl. expansion capital)",
+   "value": 111.3,
+   "quote": "sustaining capital (including expansion capital of $ 64 . 5 million) is $ 111 . 3 million over the LOM",
+   "page": 34,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Includes $64.5M expansion capital per the text"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining costs",
+   "value": 15.2,
+   "quote": "Mining costs $ 1 5 .2 $/tonne milled",
+   "page": 281,
+   "derived": true,
+   "derived_note": "digits printed with OCR spaces: $ 1 5 .2",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 10.5,
+   "quote": "Processing $ 1 0 .5 $/tonne milled",
+   "page": 281,
+   "derived": true,
+   "derived_note": "digits printed with OCR spaces: $ 1 0 .5",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.1,
+   "quote": "G&A $/tonne milled $1 .1",
+   "page": 34,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 26.8,
+   "quote": "Opex ($/t milled) - 10% $26.8/t +10%",
+   "page": 36,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

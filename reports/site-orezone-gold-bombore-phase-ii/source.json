@@ -1,0 +1,19 @@
+{
+  "url": "https://wp-orezone-2025.s3.ca-central-1.amazonaws.com/media/2025/07/5174_grep-001_c-final.pdf",
+  "source": "agent_search",
+  "issuer": "Orezone Gold",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "DFS",
+  "project": "Bombore Phase II",
+  "commodity": "Au",
+  "report_id": "site-orezone-gold-bombore-phase-ii",
+  "sha256": "6277ef0677a06cc44b6a8e42a38479825f412f53d2fece6f8b05aa71be8c4cc4",
+  "bytes": 26877398,
+  "format": "pdf",
+  "pages": 642,
+  "parsed_on": "2026-11-20"
+}

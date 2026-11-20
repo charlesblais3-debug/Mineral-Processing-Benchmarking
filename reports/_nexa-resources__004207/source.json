@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713930/000129281421004207/ex15_3.htm",
+  "source": "edgar",
+  "issuer": "Nexa Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "S-K 1300",
+  "study_level": "Operating-mine TRS",
+  "project": "Vazante",
+  "commodity": "Zn",
+  "report_id": "_nexa-resources__004207",
+  "sha256": "baa5f838543c6b97a2c1655bc4b3a1b4423167c72ca441842f752a243efba1fb",
+  "bytes": 3218302,
+  "format": "html",
+  "pages": 181,
+  "parsed_on": "2026-11-20"
+}

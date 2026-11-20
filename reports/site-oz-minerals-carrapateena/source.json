@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20161107/pdf/43cph3h7h3qz3g.pdf",
+  "source": "agent_search",
+  "issuer": "OZ Minerals",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "project": "Carrapateena",
+  "commodity": "Cu",
+  "report_id": "site-oz-minerals-carrapateena",
+  "sha256": "d1ce899edb1234a2daba611f8ae13d54691301a5739f8f3629c9179c7a310f01",
+  "bytes": 4966835,
+  "format": "pdf",
+  "pages": 78,
+  "parsed_on": "2026-11-20"
+}

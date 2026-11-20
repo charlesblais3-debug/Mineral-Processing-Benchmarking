@@ -1,0 +1,433 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Ann Mason",
+  "title": "2017 Updated Preliminary Economic Assessment on the Ann Mason Project",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2017-03-03",
+  "effective_date_quote": "Effective Date: 03 March 2017",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Au",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2015,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "The proposed flowsheet for the processing plant consists of a conventional SAG/Ball milling circuit to generate a flotation feed product P 80 of approximately 155 µm.",
+  "page": 36
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 120000,
+   "unit": "t/d",
+   "quote": "Mill Feed Rate t/d 120,000",
+   "page": 43,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.3,
+   "unit": "%",
+   "quote": "Grade Cu% 0.30",
+   "page": 43,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.0,
+   "unit": "%",
+   "quote": "Copper 92",
+   "page": 242,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 155,
+   "unit": "µm",
+   "quote": "a coarser grind size (P 80 155 µm)",
+   "page": 36,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.65,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Work Index 15.65",
+   "page": 173,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "n_samples": 1,
+    "ore_type": "Ann Mason composite"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "The Base Case uses a $3.00/lb Cu price",
+   "page": 322,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 770,
+   "unit": "MUSD",
+   "quote": "The post-tax NPV at a 7.5% discount rate is $770 million",
+   "page": 319,
+   "context": {
+    "discount_rate_pct": 7.5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 13.7,
+   "unit": "%",
+   "quote": "with an internal IRR of 13.7%",
+   "page": 319
+  },
+  {
+   "parameter": "payback_years",
+   "value": 6.9,
+   "unit": "years",
+   "quote": "The post-tax payback is 6.9 years",
+   "page": 319
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.49,
+   "unit": "USD/lb",
+   "quote": "Copper Cash Cost with Credits (Mo, Au, Ag) ($/lb) 1.49 1.74",
+   "page": 43,
+   "metal": "Cu",
+   "context": {
+    "basis": "LOM, pre-tax, with by-product credits"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1.57,
+   "unit": "USD/lb",
+   "quote": "All In Sustaining Cost (AISC) with Credits (Mo, Au, Ag) ($/lb) 1.57 1.81",
+   "page": 43,
+   "metal": "Cu",
+   "context": {
+    "basis": "LOM, pre-tax, with by-product credits"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit",
+   "value": 450.6,
+   "quote": "Open Pit 450.6 88.7 539.3",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit",
+   "value": 88.7,
+   "quote": "Open Pit 450.6 88.7 539.3",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 452.2,
+   "quote": "Processing 452.2 4.5 456.7",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 4.5,
+   "quote": "Processing 452.2 4.5 456.7",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 180.7,
+   "quote": "Infrastructure 180.7 24.5 205.1",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 24.5,
+   "quote": "Infrastructure 180.7 24.5 205.1",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Environmental",
+   "value": 2.1,
+   "quote": "Environmental 2.1 68.5 70.6",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental",
+   "value": 68.5,
+   "quote": "Environmental 2.1 68.5 70.6",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's and Indirect Costs",
+   "value": 162.7,
+   "quote": "Owner's and Indirect Costs 162.7 1.6 164.3",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owner's and Indirect Costs",
+   "value": 1.6,
+   "quote": "Owner's and Indirect Costs 162.7 1.6 164.3",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 102.8,
+   "quote": "Contingency 102.8 3.2 106.0",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 3.2,
+   "quote": "Contingency 102.8 3.2 106.0",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 1351.0,
+   "quote": "Total 1,351.0 191.0 1,542.0",
+   "page": 39,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Pre-production plus Year 1 capital"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 191.0,
+   "quote": "Total 1,351.0 191.0 1,542.0",
+   "page": 39,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 4.13,
+   "quote": "Open Pit Mining – Mill Feed and Waste 3,625.0 4.13",
+   "page": 303,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 4.59,
+   "quote": "Processing 4,027.3 4.59",
+   "page": 303,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.29,
+   "quote": "G&A 254.8 0.29",
+   "page": 303,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal On-site Costs",
+   "value": 9.01,
+   "quote": "Subtotal On-site Costs 7,907.1 9.01",
+   "page": 303,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 3625.0,
+   "quote": "Open Pit Mining – Mill Feed and Waste 3,625.0 4.13",
+   "page": 303,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 4027.3,
+   "quote": "Processing 4,027.3 4.59",
+   "page": 303,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 254.8,
+   "quote": "G&A 254.8 0.29",
+   "page": 303,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Trucking",
+   "value": 521.8,
+   "quote": "Concentrate Trucking 521.8",
+   "page": 303,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Port Cost",
+   "value": 43.3,
+   "quote": "Port Cost 43.3",
+   "page": 303,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Shipping to Smelter/Roaster",
+   "value": 199.0,
+   "quote": "Shipping to Smelter/Roaster 199.0",
+   "page": 303,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 8671.2,
+   "quote": "Total 8,671.2",
+   "page": 303,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Trucking",
+   "value": 60.02,
+   "quote": "Concentrate Trucking 521.8 - 60.02",
+   "page": 303,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Port Cost",
+   "value": 4.98,
+   "quote": "Port Cost 43.3 - 4.98",
+   "page": 303,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Shipping to Smelter/Roaster",
+   "value": 22.89,
+   "quote": "Shipping to Smelter/Roaster 199.0 - 22.89",
+   "page": 303,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Off-site Costs",
+   "value": 87.89,
+   "quote": "Subtotal Off-site Costs 764.1 - 87.89",
+   "page": 303,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  }
+ ]
+}
