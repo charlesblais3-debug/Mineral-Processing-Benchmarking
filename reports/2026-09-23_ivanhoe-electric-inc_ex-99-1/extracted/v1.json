@@ -33,7 +33,10 @@
    "unit": "t/d",
    "page": 30,
    "quote": "Daily Throughput t/d 15,346 20,030",
-   "statistic": "lom_average"
+   "statistic": "lom_average",
+   "context": {
+    "phase": "LOM average ore to processing"
+   }
   },
   {
    "parameter": "throughput_tpd",
@@ -41,7 +44,10 @@
    "unit": "t/d",
    "page": 136,
    "quote": "Stacking Rate Design t/d 22,000",
-   "statistic": "design"
+   "statistic": "design",
+   "context": {
+    "phase": "heap stacking design rate"
+   }
   },
   {
    "parameter": "lom_years",

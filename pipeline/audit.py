@@ -5,7 +5,7 @@ Flags (each is a prompt for a human look, not an automatic rejection):
   outlier     project more than 2 standard errors off the log-log fit of a metric vs throughput
               (initial CAPEX, process-plant CAPEX, site OPEX/t, process OPEX/t), per commodity group when n >= 6
   range       unit cost or intensity outside broad plausibility bounds
-  throughput  several throughput facts with no phase / note to tell them apart
+  throughput  several throughput facts without phase context that disagree by > 15 %
   derived     values marked derived (listed so a reviewer sees them)
   review      facts/costs the loader set to needs_review
 """
@@ -58,11 +58,18 @@ def run() -> list[str]:
                 if v is not None and not lo <= v <= hi:
                     flags.append(f"range     {p['name']:<28} {label} = {v:,.1f} outside [{lo}, {hi}]")
     con = connect()
-    for rid, name, n in con.execute(
-            "SELECT f.report_id, p.name, COUNT(*) FROM facts f JOIN reports r ON r.id=f.report_id JOIN projects p ON p.id=r.project_id"
-            " WHERE f.parameter_key IN ('throughput_tpd','throughput_mtpa') AND (f.context IS NULL OR f.context IN ('{}',''))"
-            " GROUP BY f.report_id HAVING COUNT(*) > 1"):
-        flags.append(f"throughput {name:<27} {n} throughput facts without phase/note context ({rid})")
+    # several throughput facts with no phase/note: only a problem when they disagree (t/d x 365 vs Mt/a, > 15 %)
+    by_report: dict[str, list] = {}
+    for rid, name, key, v, ctx in con.execute(
+            "SELECT f.report_id, p.name, f.parameter_key, f.value_norm, f.context FROM facts f JOIN reports r ON r.id=f.report_id"
+            " JOIN projects p ON p.id=r.project_id WHERE f.parameter_key IN ('throughput_tpd','throughput_mtpa') AND f.value_norm IS NOT NULL"):
+        if not ctx or ctx in ("{}", ""):
+            by_report.setdefault(rid, []).append((name, v * 1e6 / 365 if key == "throughput_mtpa" else v))
+    for rid, vals in by_report.items():
+        tpds = [v for _, v in vals]
+        if len(tpds) > 1 and max(tpds) / min(tpds) > 1.15:
+            flags.append(f"throughput {vals[0][0]:<27} throughputs disagree without phase context: "
+                         + ", ".join(f"{v:,.0f} t/d" for v in tpds) + f" ({rid})")
     for rid, key, ctx in con.execute("SELECT report_id, parameter_key, context FROM facts WHERE context LIKE '%derived_note%'"):
         flags.append(f"derived   {rid:<40} {key}: {json.loads(ctx).get('derived_note')}")
     for rid, what, n in con.execute(
