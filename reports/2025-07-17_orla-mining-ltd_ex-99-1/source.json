@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1680056/000117625625000060/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Orla Mining Ltd.  (ORLA)",
+  "cik": "1680056",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-07-17",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-07-17_orla-mining-ltd_ex-99-1",
+  "sha256": "bf62554e86dfe020e98fd46f232fd1bb878b591209f366a005875eb482a5545b",
+  "bytes": 3310279,
+  "format": "html",
+  "pages": 2,
+  "parsed_on": "2026-11-20"
+}

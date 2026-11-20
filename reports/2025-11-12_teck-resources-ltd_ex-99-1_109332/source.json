@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/886986/000110465925109332/tm2527845d8_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "TECK RESOURCES LTD  (TECK, TCKRF)",
+  "cik": "886986",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-11-12",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-11-12_teck-resources-ltd_ex-99-1_109332",
+  "sha256": "b1671309b8d2b1f9d6e46a6a46c9ca4695166bf4bd4cf05f41e45ed188bd1e78",
+  "bytes": 2341001,
+  "format": "html",
+  "pages": 136,
+  "parsed_on": "2026-11-20"
+}

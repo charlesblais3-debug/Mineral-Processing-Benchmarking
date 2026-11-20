@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1178819/000117881925000073/ex9912025basecaseislandgol.htm",
+  "source": "edgar",
+  "issuer": "ALAMOS GOLD INC  (AGI)",
+  "cik": "1178819",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-08-06",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-08-06_alamos-gold-inc_ex-99-1",
+  "sha256": "2e2791a0e755bcf00f033fc2c2b27d3d0b9ef0901397c5ec441658e91f0e4f06",
+  "bytes": 6846886,
+  "format": "html",
+  "pages": 348,
+  "parsed_on": "2026-11-20"
+}

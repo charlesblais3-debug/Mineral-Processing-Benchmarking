@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1756607/000106299325015034/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Equinox Gold Corp.  (EQX)",
+  "cik": "1756607",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-08-28",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-08-28_equinox-gold-corp_ex-99-1",
+  "sha256": "a7fa87194240a80693e0916ce2f6454b404c1a6a9cdbbd59bfc8546644c89a75",
+  "bytes": 17667,
+  "format": "html",
+  "pages": 4,
+  "parsed_on": "2026-11-20"
+}

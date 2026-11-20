@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1852353/000110465925066150/tm2518672d1_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Dakota Gold Corp.  (DC, DC-WT)",
+  "cik": "1852353",
+  "form": "8-K",
+  "exhibit": "EX-96.1",
+  "filed": "2025-07-07",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-07-07_dakota-gold-corp_ex-96-1",
+  "sha256": "2a68dd140f60ed0757d6f05ba57063069c23c3456891b941b48cb32e0e80d100",
+  "bytes": 12601364,
+  "format": "html",
+  "pages": 201,
+  "parsed_on": "2026-11-20"
+}

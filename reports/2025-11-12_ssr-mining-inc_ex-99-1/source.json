@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/921638/000094787125000984/ss5564068_ex9901.htm",
+  "source": "edgar",
+  "issuer": "SSR MINING INC.  (SSRM, SSRGF)",
+  "cik": "921638",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-11-12",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-11-12_ssr-mining-inc_ex-99-1",
+  "sha256": "049e7cf444ff7ea0af6963597c535a574f9f84b2b4ea5c7676d4b25267396c16",
+  "bytes": 3114171,
+  "format": "html",
+  "pages": 186,
+  "parsed_on": "2026-11-20"
+}

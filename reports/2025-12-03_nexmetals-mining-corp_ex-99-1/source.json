@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/795800/000149315225025875/ex99-1.htm",
+  "source": "edgar",
+  "issuer": "NexMetals Mining Corp.  (NEXM, PRMLF)",
+  "cik": "795800",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-12-03",
+  "standard": "",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-12-03_nexmetals-mining-corp_ex-99-1",
+  "sha256": "3b9ab4b3881c01f601094e05fee6070ea3eeeeff129c7c17a2d61efe9abd10e6",
+  "bytes": 87085,
+  "format": "html",
+  "pages": 4,
+  "parsed_on": "2026-11-20"
+}

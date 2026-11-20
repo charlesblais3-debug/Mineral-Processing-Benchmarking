@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1468642/000121390025052296/ea024467903ex96-3_aura.htm",
+  "source": "edgar",
+  "issuer": "Aura Minerals Inc.",
+  "cik": "1468642",
+  "form": "F-1/A",
+  "exhibit": "EX-96.3",
+  "filed": "2025-06-09",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-06-09_aura-minerals-inc_ex-96-3",
+  "sha256": "d868657eef6eead5356827af76ab4e398630390477b481e6674d1f896c3c39dd",
+  "bytes": 3972726,
+  "format": "html",
+  "pages": 205,
+  "parsed_on": "2026-11-20"
+}

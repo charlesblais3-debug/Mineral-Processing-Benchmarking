@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1964504/000119312525194558/d80061dex991.htm",
+  "source": "edgar",
+  "issuer": "Aris Mining Corp  (ARMN)",
+  "cik": "1964504",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-09-03",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-09-03_aris-mining-corp_ex-99-1",
+  "sha256": "916c03fab9a62a8091d41f1fd0304509f3d506aafa623c531c57d2761edad68b",
+  "bytes": 3042685,
+  "format": "html",
+  "pages": 162,
+  "parsed_on": "2026-11-20"
+}
