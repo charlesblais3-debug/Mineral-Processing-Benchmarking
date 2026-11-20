@@ -1,0 +1,9 @@
+- { name: Ivanhoe Mines, site: https://www.ivanhoemines.com/, commodity: Zn, projects: [Kipushi], pages: [https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-files-a-new-ni-43-101-technical-report-for-the-ultra-high-grade-kipushi-mine-in-the-drc/] }
+- { name: AbraSilver Resource, site: https://abrasilver.com/, commodity: Ag, projects: [Diablillos], pages: [https://abrasilver.com/projects/technical-reports/] }
+- { name: Nexa Resources, site: https://www.nexaresources.com/, commodity: Zn, projects: [Cerro Lindo, Vazante, Atacocha, El Porvenir, Aripuana], pages: [https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1713930&type=6-K] }
+- { name: Hecla Mining, site: https://www.hecla.com/, commodity: Ag, projects: [Greens Creek, Lucky Friday, Keno Hill], pages: [https://www.sec.gov/Archives/edgar/data/719413/000143774922004164/hl20211231_10k.htm] }
+- { name: Americas Gold and Silver, site: https://americas-gold.com/, commodity: Ag, projects: [Galena Complex, Cosala Operations], pages: [https://americas-gold.com/news-releases/] }
+- { name: Silver Tiger Metals, site: https://silvertigermetals.com/, commodity: Ag, projects: [El Tigre], pages: [https://silvertigermetals.com/] }
+- { name: NorZinc, site: https://norzinc.com/, commodity: Zn, projects: [Prairie Creek], pages: [https://norzinc.com/] }
+- { name: BMC Minerals, site: https://bmcminerals.com/, commodity: Zn, projects: [Kudz Ze Kayah], pages: [https://emrlibrary.gov.yk.ca/minerals/MajorMines/kudz-ze-kayah/] }
+- { name: Discovery Silver, site: https://dsvmining.com/, commodity: Ag, projects: [Cordero], pages: [https://dsvmining.com/] }
