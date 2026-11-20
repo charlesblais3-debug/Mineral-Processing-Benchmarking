@@ -1,0 +1,204 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Brucejack",
+  "title": "Technical Report on the Brucejack Gold Mine, Northwest British Columbia",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-03-09",
+  "effective_date_quote": "DATE: MARCH 9, 2020",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2019,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "flotation"
+  ],
+  "quote": "Brucejack uses conventional gravity concentration and sulphide flotation to produce gold-silver doré and",
+  "page": 46
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3800,
+   "unit": "t/d",
+   "quote": "an average annual plant feed rate of approximately 1.387 Mt of ore processed (3,800 t/d milled)",
+   "page": 324,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.387,
+   "unit": "Mt/a",
+   "quote": "an average annual plant feed rate of approximately 1.387 Mt of ore processed (3,800 t/d milled)",
+   "page": 324,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1300,
+   "unit": "USD/oz",
+   "quote": "Gold price of US$1,300/oz",
+   "page": 329,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1500,
+   "unit": "MUSD",
+   "quote": "post-tax NPV of US$1.50 billion at a 5% discount rate",
+   "page": 328,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1290,
+   "unit": "MUSD",
+   "quote": "US$1.29 billion at an 8% discount rate",
+   "page": 328,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.76,
+   "unit": "USD/CAD",
+   "quote": "Foreign exchange rate of Cdn$1.00:US$0.76",
+   "page": 329,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "UG Mining",
+   "value": 66.6,
+   "quote": "UG Mining 66.6",
+   "page": 320,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 3.5,
+   "quote": "Processing 3.5",
+   "page": 320,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site Infrastructure",
+   "value": 91.8,
+   "quote": "Site Infrastructure 91.8",
+   "page": 320,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Throughput Expansion",
+   "value": 14.8,
+   "quote": "Mine Throughput Expansion 14.8",
+   "page": 320,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LOM Expansion and Sustaining Capital Cost",
+   "value": 176.7,
+   "quote": "Total LOM Expansion and Sustaining Capital Cost 176.7",
+   "page": 320,
+   "is_total": true,
+   "review_note": "Report combines expansion (3,800 t/d throughput expansion, 14.8) and sustaining capital in one total",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 70.83,
+   "quote": "Mining 70.83",
+   "page": 324,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 21.34,
+   "quote": "Processing 21.34",
+   "page": 324,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Overall Site Services, including Off-site/Satellite Offices",
+   "value": 35.89,
+   "quote": "Overall Site Services, including Off-site/Satellite Offices (1) 35.89",
+   "page": 324,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 34.76,
+   "quote": "G&A 34.76",
+   "page": 324,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 162.82,
+   "quote": "Total Operating Cost 162.82",
+   "page": 324,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}
