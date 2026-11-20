@@ -1,0 +1,490 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Aripuanã",
+  "title": "Technical Report Summary on the Aripuanã Zinc Project, State of Mato Grosso, Brazil",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2020-09-30",
+  "effective_date_quote": "Effective Date – September 30,",
+  "primary_commodity": "Zn",
+  "by_products": [
+   "Pb",
+   "Cu",
+   "Ag",
+   "Au"
+  ],
+  "country": "Brazil",
+  "region": "Mato Grosso",
+  "mine_type": "underground",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "flotation"
+  ],
+  "quote": "Key elements of the process flowsheet include primary crushing, SAG and ball milling with pebble crushing (SABC), talc pre-flotation, followed by sequential flotation of copper, lead, and zinc.",
+  "page": 18
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 6300,
+   "unit": "t/d",
+   "quote": "The plant will treat blended mineralization at up to 6,300 tpd (dry basis)",
+   "page": 18,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.214,
+   "unit": "Mt/a",
+   "quote": "Plant throughput is forecast to average 2.214 Mtpa of ROM ore over the LOM",
+   "page": 18,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.7,
+   "unit": "%",
+   "quote": "LOM processing of 23.5 Mt, grading 3.7% Zn, 1.4% Pb, 0.3% Cu, 34 g/t Ag, and 0.3 g/t Au",
+   "page": 13,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.4,
+   "unit": "%",
+   "quote": "LOM processing of 23.5 Mt, grading 3.7% Zn, 1.4% Pb, 0.3% Cu, 34 g/t Ag, and 0.3 g/t Au",
+   "page": 13,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.3,
+   "unit": "%",
+   "quote": "LOM processing of 23.5 Mt, grading 3.7% Zn, 1.4% Pb, 0.3% Cu, 34 g/t Ag, and 0.3 g/t Au",
+   "page": 13,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 34,
+   "unit": "g/t",
+   "quote": "LOM processing of 23.5 Mt, grading 3.7% Zn, 1.4% Pb, 0.3% Cu, 34 g/t Ag, and 0.3 g/t Au",
+   "page": 13,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.3,
+   "unit": "g/t",
+   "quote": "LOM processing of 23.5 Mt, grading 3.7% Zn, 1.4% Pb, 0.3% Cu, 34 g/t Ag, and 0.3 g/t Au",
+   "page": 13,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "quote": "LOM average metallurgical recovery of 89% Zn, 83% Pb, 71% Cu, 75% Ag, and 67% Au",
+   "page": 13,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 83,
+   "unit": "%",
+   "quote": "LOM average metallurgical recovery of 89% Zn, 83% Pb, 71% Cu, 75% Ag, and 67% Au",
+   "page": 13,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 71,
+   "unit": "%",
+   "quote": "LOM average metallurgical recovery of 89% Zn, 83% Pb, 71% Cu, 75% Ag, and 67% Au",
+   "page": 13,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 75,
+   "unit": "%",
+   "quote": "LOM average metallurgical recovery of 89% Zn, 83% Pb, 71% Cu, 75% Ag, and 67% Au",
+   "page": 13,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 67,
+   "unit": "%",
+   "quote": "LOM average metallurgical recovery of 89% Zn, 83% Pb, 71% Cu, 75% Ag, and 67% Au",
+   "page": 13,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.11,
+   "unit": "USD/lb",
+   "quote": "long-term prices of US$1.11/lb Zn, US$0.87/lb Pb, US$3.01/lb Cu, US$16.87/oz Ag, and US$1,500/oz Au",
+   "page": 13,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.87,
+   "unit": "USD/lb",
+   "quote": "long-term prices of US$1.11/lb Zn, US$0.87/lb Pb, US$3.01/lb Cu, US$16.87/oz Ag, and US$1,500/oz Au",
+   "page": 13,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.01,
+   "unit": "USD/lb",
+   "quote": "long-term prices of US$1.11/lb Zn, US$0.87/lb Pb, US$3.01/lb Cu, US$16.87/oz Ag, and US$1,500/oz Au",
+   "page": 13,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 16.87,
+   "unit": "USD/oz",
+   "quote": "long-term prices of US$1.11/lb Zn, US$0.87/lb Pb, US$3.01/lb Cu, US$16.87/oz Ag, and US$1,500/oz Au",
+   "page": 13,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1500,
+   "unit": "USD/oz",
+   "quote": "long-term prices of US$1.11/lb Zn, US$0.87/lb Pb, US$3.01/lb Cu, US$16.87/oz Ag, and US$1,500/oz Au",
+   "page": 13,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 356,
+   "unit": "MUSD",
+   "quote": "After-tax NPV Payback years 3.3 NPV 8% US$M 388 NPV 9% US$M 356",
+   "page": 13,
+   "context": {
+    "discount_rate_pct": 9
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 31.9,
+   "unit": "%",
+   "quote": "IRR % 31.9",
+   "page": 13
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.3,
+   "unit": "years",
+   "quote": "After-tax NPV Payback years 3.3",
+   "page": 13
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Development",
+   "value": 25.2,
+   "quote": "Mine Development US$ million 25.2",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mobile Equipment",
+   "value": 4.5,
+   "quote": "Mobile Equipment US$ million 4.5",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Prep & Earthworks",
+   "value": 53.9,
+   "quote": "Site Prep & Earthworks US$ million 53.9",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Civil & Roadwork",
+   "value": 14.7,
+   "quote": "Civil & Roadwork US$ million 14.7",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Steelwork",
+   "value": 2.4,
+   "quote": "Steelwork US$ million 2.4",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Electrical",
+   "value": 12.6,
+   "quote": "Electrical US$ million 12.6",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Instrumentation",
+   "value": 8.4,
+   "quote": "Instrumentation US$ million 8.4",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mechanical Equipment",
+   "value": 14.9,
+   "quote": "Mechanical Equipment US$ million 14.9",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Piping",
+   "value": 8.3,
+   "quote": "Piping US$ million 8.3",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Costs",
+   "value": 144.9,
+   "quote": "Subtotal Direct Costs US$ million 144.9",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM",
+   "value": 7.2,
+   "quote": "EPCM US$ million 7.2",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Temporary Services",
+   "value": 7.3,
+   "quote": "Temporary Services US$ million 7.3",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner’s Team",
+   "value": 10.2,
+   "quote": "Owner’s Team US$ million 10.2",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other indirects",
+   "value": 42.6,
+   "quote": "Other US$ million 42.6",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Indirects",
+   "value": 67.3,
+   "quote": "Subtotal Indirects US$ million 67.3",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 16.0,
+   "quote": "Contingency US$ million 16.0",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost",
+   "value": 228.2,
+   "quote": "Total Capital Cost US$ million 228.2",
+   "page": 21,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Pre-production capital forecast prior to end of 2020 (remaining at start of 2021: US$234M; total project US$547M incl. spent)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 65.8,
+   "quote": "Development US$ millions 65.8",
+   "page": 138,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile Equipment",
+   "value": 56.4,
+   "quote": "Mobile Equipment US$ millions 56.4",
+   "page": 138,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Dry Stack Tailings",
+   "value": 20.4,
+   "quote": "Dry Stack Tailings US$ millions 20.4",
+   "page": 138,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 38.9,
+   "quote": "Other US$ millions 38.9",
+   "page": 138,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Cost",
+   "value": 181.5,
+   "quote": "Total Sustaining Cost US$ millions 181.5",
+   "page": 138,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure costs",
+   "value": 19.94,
+   "quote": "Closure costs are estimated at an additional US$19.94 million",
+   "page": 138,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 15.34,
+   "quote": "Mining 361 32.8 15.34",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 13.31,
+   "quote": "Processing 313 28.5 13.31",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 5.69,
+   "quote": "G&A 134 12.2 5.69",
+   "page": 21,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 34.35,
+   "quote": "Total 886 73.5 34.35",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}
