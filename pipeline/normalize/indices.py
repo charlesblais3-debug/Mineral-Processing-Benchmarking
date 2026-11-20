@@ -44,7 +44,7 @@ def escalation_factor(ppi: dict, blend: dict[str, float], from_year: int, to_yea
     return total
 
 
-CURRENCIES = ["USD", "AUD", "EUR", "GBP", "ZAR", "MXN", "BRL", "CNY", "JPY", "INR"]  # vs CAD
+CURRENCIES = ["USD", "AUD", "EUR", "GBP", "ZAR", "MXN", "BRL", "CNY", "JPY", "INR", "PEN", "NOK", "SEK", "NZD", "TRY", "IDR"]  # vs CAD
 
 
 def fetch_ppi(client: PoliteClient) -> dict[str, dict[int, float]]:
@@ -106,7 +106,7 @@ def save(ppi: dict, fx: dict) -> None:
         w.writerow(["currency", "year", "usd_per_unit"])
         for c, years in sorted(fx.items()):
             for y, v in sorted(years.items()):
-                w.writerow([c, y, round(v, 6)])
+                w.writerow([c, y, float(f"{v:.6g}")])   # 6 significant figures (IDR is ~6e-5)
 
 
 def load_csv() -> tuple[dict, dict]:

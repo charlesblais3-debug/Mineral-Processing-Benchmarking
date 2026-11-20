@@ -1,0 +1,131 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "La Encantada",
+  "title": "La Encantada Silver Mine, Coahuila, Mexico, NI 43-101 Technical Report on Mineral Resource and Mineral Reserve Estimates",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2020",
+  "primary_commodity": "Ag",
+  "by_products": [],
+  "country": "Mexico",
+  "region": "Coahuila",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "ball_mill",
+   "tank_leach",
+   "conc_thickener",
+   "merrill_crowe"
+  ],
+  "page": 38,
+  "quote": "The grinding section consists of one Metso ball mill with a nominal capacity of 3,000 tpd."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3000,
+   "unit": "t/d",
+   "quote": "The installed plant capacity is for 3,000 tpd for the crushing and grinding area",
+   "page": 37,
+   "statistic": "design",
+   "context": {
+    "phase": "crushing and grinding area; leaching circuit 4,500 tpd"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 154,
+   "unit": "g/t",
+   "quote": "In 2019 and 2020, the average plant-feed contained head grades of 154 g/t Ag.",
+   "page": 37,
+   "metal": "Ag",
+   "statistic": "mean",
+   "context": {
+    "period": "2019-2020 actual"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 78.1,
+   "unit": "%",
+   "quote": "an average silver recovery of 78.1% was achieved",
+   "page": 111,
+   "metal": "Ag",
+   "statistic": "mean",
+   "context": {
+    "period": "2020 actual"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 15.4,
+   "quote": "Mining Cost 15.4",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "Table 1-6 states $/tonne without saying milled vs mined; assumed plant-feed tonne"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 17.2,
+   "quote": "Processing Cost 17.2",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Indirect Costs",
+   "value": 12.4,
+   "quote": "Indirect Costs 12.4",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Production Cost",
+   "value": 45.0,
+   "quote": "Total Production Cost 45.0",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Selling Costs",
+   "value": 1.9,
+   "quote": "Selling Costs 1.9",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 46.9,
+   "quote": "Total Cash Cost 46.9",
+   "page": 41,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

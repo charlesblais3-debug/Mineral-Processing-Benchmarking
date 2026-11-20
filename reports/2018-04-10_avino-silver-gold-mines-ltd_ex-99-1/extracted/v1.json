@@ -1,0 +1,189 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Avino",
+  "title": "Resource Estimate Update for the Avino Property, Durango, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2018-02-21",
+  "effective_date_quote": "EFFECTIVE DATE: FEBRUARY 21, 2018",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au",
+   "Cu"
+  ],
+  "country": "Mexico",
+  "region": "Durango",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2017,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "tertiary_crush",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "a conventional three-stage crushing circuit with the tertiary crusher in closed circuit with a screen. The crushed material is fed to a ball mill",
+  "page": 24
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1500,
+   "unit": "t/d",
+   "quote": "conventional flotation mill that has three separate circuits and a capacity of 1,500 t/d",
+   "page": 24,
+   "statistic": "design",
+   "context": {
+    "phase": "existing mill, three circuits"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 2500,
+   "unit": "t/d",
+   "quote": "The mill expansion is expected to increase overall mill capacity to 2,500 t/d.",
+   "page": 24,
+   "statistic": "design",
+   "context": {
+    "phase": "after Circuit #4 expansion"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 64,
+   "unit": "g/t",
+   "quote": "Silver (g/t) 65 67 64",
+   "page": 174,
+   "metal": "Ag",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "Avino Vein, 2017"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.52,
+   "unit": "g/t",
+   "quote": "Gold (g/t) 0.29 0.42 0.52",
+   "page": 174,
+   "metal": "Au",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "Avino Vein, 2017"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.48,
+   "unit": "%",
+   "quote": "Copper (%) 0.62 0.50 0.48",
+   "page": 174,
+   "metal": "Cu",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "Avino Vein, 2017"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85,
+   "unit": "%",
+   "quote": "Silver (%) 87 85 85",
+   "page": 174,
+   "metal": "Ag",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "Avino Vein, 2017"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 69,
+   "unit": "%",
+   "quote": "Gold (%) 75 64 69",
+   "page": 174,
+   "metal": "Au",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "Avino Vein, 2017"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "quote": "Copper (%) 87 90 89",
+   "page": 174,
+   "metal": "Cu",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "Avino Vein, 2017"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 269,
+   "unit": "g/t",
+   "quote": "Silver (g/t) 259 288 337 279 267 269",
+   "page": 176,
+   "metal": "Ag",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "San Gonzalo Vein, 2017"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.32,
+   "unit": "g/t",
+   "quote": "Gold (g/t) 1.04 1.34 1.88 1.48 1.25 1.32",
+   "page": 176,
+   "metal": "Au",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "San Gonzalo Vein, 2017"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84,
+   "unit": "%",
+   "quote": "Silver (%) 79 83 84 83 83 84",
+   "page": 176,
+   "metal": "Ag",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "San Gonzalo Vein, 2017"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 78,
+   "unit": "%",
+   "quote": "Gold (%) 70 73 78 75 74 78",
+   "page": 176,
+   "metal": "Au",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "San Gonzalo Vein, 2017"
+   }
+  }
+ ],
+ "costs": []
+}
