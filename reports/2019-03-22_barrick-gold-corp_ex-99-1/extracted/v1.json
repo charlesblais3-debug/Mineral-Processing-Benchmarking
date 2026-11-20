@@ -1,0 +1,134 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Goldstrike",
+  "title": "Goldstrike Mine, State of Nevada, USA NI 43-101 Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2018-12-31",
+  "effective_date_quote": "The effective date of the Mineral Resource and Mineral Reserve estimates in this Technical Report is December 31, 2018",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2019,
+  "effective_date_page": 8
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "roasting",
+   "pox"
+  ],
+  "quote": "the capability to treat single refractory ore (sulphidic) and double refractory ore (sulphidic and carbonaceous) through roasting or pressure oxidation",
+  "page": 167
+ },
+ "facts": [
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are estimated using an average long-term gold price of US$1,200 per ounce.",
+   "page": 12,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 337.0,
+   "quote": "Totals 337.0 163.4 197.1 35.3 732.9",
+   "page": 193,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "review_note": "Sustaining column of LOM capital table (equipment replacement and tailings expansion); kept at process/general as a catch-all"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Stripping",
+   "value": 163.4,
+   "quote": "Totals 337.0 163.4 197.1 35.3 732.9",
+   "page": 193,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Development",
+   "value": 197.1,
+   "quote": "Totals 337.0 163.4 197.1 35.3 732.9",
+   "page": 193,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Exploration Drilling",
+   "value": 35.3,
+   "quote": "Totals 337.0 163.4 197.1 35.3 732.9",
+   "page": 193,
+   "l1": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital (LOM, excl. reclamation)",
+   "value": 732.9,
+   "quote": "Totals 337.0 163.4 197.1 35.3 732.9",
+   "page": 193,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost (LOM 2019-2037)",
+   "value": 4.7,
+   "quote": "The total operating cost has been estimated by Goldstrike to be approximately $4.7 billion over the LOM plan (2019-2037)",
+   "page": 193,
+   "multiplier": "B",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining",
+   "value": 1.85,
+   "quote": "Totals 1.85 107.11 26.56",
+   "page": 194,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "per_short_ton": true,
+   "l1": "mining",
+   "review_note": "$/st mined; includes a large component of stockpile rehandling"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground mining",
+   "value": 107.11,
+   "quote": "Totals 1.85 107.11 26.56",
+   "page": 194,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 26.56,
+   "quote": "Totals 1.85 107.11 26.56",
+   "page": 194,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing",
+   "l2": "other"
+  }
+ ]
+}

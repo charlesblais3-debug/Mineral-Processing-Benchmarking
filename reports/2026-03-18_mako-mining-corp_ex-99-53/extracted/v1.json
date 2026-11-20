@@ -1,0 +1,565 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Eagle Mountain",
+  "title": "Preliminary Economic Assessment for the Eagle Mountain Gold Project, Guyana",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2024-01-16",
+  "effective_date_quote": "Effective Date: January 16, 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Guyana",
+  "region": "Potaro-Siparuni",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 4
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "gravity",
+   "cil"
+  ],
+  "quote": "featuring two leach tanks, five CIL tanks, scrubber, ball mill, cyclones, and a gravity concentrator",
+  "page": 42
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 5000,
+   "unit": "t/d",
+   "quote": "The process plant is designed to process 5,000 tpd of gold-bearing mill feed.",
+   "page": 42,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.1,
+   "unit": "%",
+   "quote": "Phase 1 Average Recovery % 95.1",
+   "page": 239,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1 (saprolite)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.3,
+   "unit": "%",
+   "quote": "Phase 2 Average Recovery % 88.3",
+   "page": 240,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 (fresh/transition)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.21,
+   "unit": "g/t",
+   "quote": "Gold Feed Average Grade Phase 1 g/t 1.21",
+   "page": 239,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.28,
+   "unit": "g/t",
+   "quote": "Gold Feed Average Grade Phase 2 g/t 1.28",
+   "page": 240,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 7,
+   "unit": "kWh/t",
+   "quote": "Saprolite Bond Work Index kWh/t 7",
+   "page": 239,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill (design)",
+    "ore_type": "saprolite"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.7,
+   "unit": "kWh/t",
+   "quote": "BWI Fresh kWh/t 17.7",
+   "page": 240,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill (design)",
+    "ore_type": "fresh"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "Circuit P80 µm 106",
+   "page": 239,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Plant Operating Time % 92",
+   "page": 239,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1850,
+   "unit": "USD/oz",
+   "quote": "The assumed gold price for the Base-Case economic analysis is US$1,850/oz.",
+   "page": 50,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 292,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV US$ M 292 232 200",
+   "page": 50,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 57,
+   "unit": "%",
+   "quote": "After-Tax IRR % 57%",
+   "page": 50
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit Mining",
+   "value": 4.5,
+   "quote": "1000 Open Pit Mining 4.5 3000 Mineral Processing 39.0",
+   "page": 289,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mineral Processing",
+   "value": 39.0,
+   "quote": "Mineral Processing 39.0 4000",
+   "page": 289,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power, Electrical and Instrumentation",
+   "value": 2.9,
+   "quote": "Instrumentation 2.9 5000",
+   "page": 289,
+   "l1": "onsite_infra",
+   "l2": "power",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Infrastructure and Support Services, incl. Roads",
+   "value": 8.7,
+   "quote": "Roads 8.7 6000",
+   "page": 289,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water Management Systems",
+   "value": 2.1,
+   "quote": "Water Management Systems 2.1 7000",
+   "page": 289,
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Tailings and Mine Waste Management Facilities",
+   "value": 7.8,
+   "quote": "Facilities 7.8 Total Direct CAPEX Costs 65.0",
+   "page": 289,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct CAPEX Costs (Phase 1)",
+   "value": 65.0,
+   "quote": "Total Direct CAPEX Costs 65.0",
+   "page": 289,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Working Capital",
+   "value": 3.8,
+   "quote": "Working Capital 3.8 9000",
+   "page": 290,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect and Owner Costs",
+   "value": 14.3,
+   "quote": "Indirect and Owner Costs 14.3 9600",
+   "page": 290,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency (15%)",
+   "value": 12.5,
+   "quote": "Contingency (15%) 12.5 Indirect",
+   "page": 290,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Pre-Production CAPEX Costs",
+   "value": 95.6,
+   "quote": "Total Pre-Production CAPEX Costs 95.6",
+   "page": 290,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Mineral Processing",
+   "value": 16.2,
+   "quote": "Mineral Processing 16.2 4000",
+   "page": 290,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Power, Electrical and Instrumentation",
+   "value": 3.0,
+   "quote": "Instrumentation 3.0 5000",
+   "page": 290,
+   "l1": "onsite_infra",
+   "l2": "power",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Site Infrastructure and Support Services",
+   "value": 12.6,
+   "quote": "Roads 12.6 6000",
+   "page": 290,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Water Management Systems",
+   "value": 0.3,
+   "quote": "Water Management Systems 0.3 7000",
+   "page": 290,
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Tailings and Mine Waste Management Facilities",
+   "value": 0.3,
+   "quote": "Facilities 0.3 Total Direct CAPEX Costs 32.3",
+   "page": 290,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Total Direct CAPEX Costs",
+   "value": 32.3,
+   "quote": "Total Direct CAPEX Costs 32.3",
+   "page": 290,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Owners Costs",
+   "value": 1.5,
+   "quote": "Owners Costs 1.5 9000",
+   "page": 290,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Indirect Costs & Working Capital",
+   "value": 7.0,
+   "quote": "Indirect Costs & Working Capital 7.0 9600",
+   "page": 290,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Contingency (15%)",
+   "value": 5.8,
+   "quote": "Contingency (15%) 5.8 Indirect",
+   "page": 290,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Phase 2 CAPEX Costs",
+   "value": 46.6,
+   "quote": "Total Phase 2 CAPEX Costs 46.6",
+   "page": 290,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Costs",
+   "value": 133.4,
+   "quote": "Sustaining Costs 133.4",
+   "page": 288,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation",
+   "value": 20.0,
+   "quote": "Reclamation 20.0",
+   "page": 288,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 202,
+   "quote": "Mining 202 2.40",
+   "page": 48,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 448,
+   "quote": "Processing 448 16.47",
+   "page": 48,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rehandle",
+   "value": 4,
+   "quote": "Rehandle 4 0.13",
+   "page": 48,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 123,
+   "quote": "G&A 123 4.50",
+   "page": 48,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 8,
+   "quote": "Other 8 0.28",
+   "page": 48,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rent",
+   "value": 1,
+   "quote": "Rent 1 0.03",
+   "page": 48,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contractor Mobilization",
+   "value": 2,
+   "quote": "Contractor Mobilization 2 0.07",
+   "page": 48,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 786,
+   "quote": "Total 786 28.88",
+   "page": 48,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Lines sum to 788 vs stated 786 (rounding)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per t mined)",
+   "value": 2.4,
+   "quote": "Mining 202 2.40 US$/t mined",
+   "page": 48,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 7.4,
+   "quote": "7.40 US$/t processed",
+   "page": 48,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 16.47,
+   "quote": "Processing 448 16.47",
+   "page": 48,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rehandle",
+   "value": 0.13,
+   "quote": "Rehandle 4 0.13",
+   "page": 48,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.5,
+   "quote": "G&A 123 4.50",
+   "page": 48,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 0.28,
+   "quote": "Other 8 0.28",
+   "page": 48,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rent",
+   "value": 0.03,
+   "quote": "Rent 1 0.03",
+   "page": 48,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contractor Mobilization",
+   "value": 0.07,
+   "quote": "Contractor Mobilization 2 0.07",
+   "page": 48,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 28.88,
+   "quote": "Total 786 28.88",
+   "page": 48,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

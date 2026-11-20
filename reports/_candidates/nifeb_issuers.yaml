@@ -1,0 +1,3 @@
+- { name: Bluelake Mineral (Nickel Mountain), site: https://www.bluelakemineral.com/, commodity: Ni, projects: [Rönnbäcken], pages: [https://www.bluelakemineral.com/en/projects/nickel/] }
+- { name: Eurobattery Minerals (FinnCobalt), site: https://eurobatteryminerals.com/, commodity: Ni, projects: [Hautalampi], pages: [https://www.eurobatteryminerals.com/en/projects/hautalampi/, https://www.eurobatteryminerals.com/en/economic-reports/] }
+- { name: Iron Road Limited, site: https://ironroadlimited.com.au/, commodity: Fe, projects: [Central Eyre Iron Project], pages: [https://ironroadlimited.com.au/index.php/central-eyre-iron-project/definitive-feasibility, https://ironroadlimited.com.au/index.php/investor-centre/company-reports] }

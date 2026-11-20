@@ -1,0 +1,262 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "New Afton",
+  "title": "Technical Report New Afton Mine",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "gravity"
+  ],
+  "quote": "The process flowsheet consists of conventional crushing and grinding circuits, a flotation circuit, and a gravity circuit to produce a copper-gold concentrate.",
+  "page": 26
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 16000,
+   "unit": "t/d",
+   "quote": "full capacity of approximately 16,000 tpd by the end of 2026",
+   "page": 25,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.72,
+   "unit": "%",
+   "quote": "Copper feed grade (%) 0.56 0.87 0.97 0.91 0.72 0.56 0.42 0.72",
+   "page": 26,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.65,
+   "unit": "g/t",
+   "quote": "Gold feed grade (g/t) 0.48 0.77 0.90 0.84 0.66 0.50 0.36 0.65",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.6,
+   "unit": "%",
+   "quote": "Copper recovery (%) 87.5 88.8 89.8 90.0 88.5 87.4 85.3 88.6",
+   "page": 26,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.5,
+   "unit": "%",
+   "quote": "Gold recovery (%) 83.3 85.3 86.1 86.1 84.4 82.4 79.6 84.5",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.5,
+   "unit": "USD/lb",
+   "quote": "Mineral Reserves are estimated using metal price assumptions of US$3.50 per pound of copper",
+   "page": 23,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1650,
+   "unit": "USD/oz",
+   "quote": "US$1,650 per ounce of gold",
+   "page": 23,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - C-Zone",
+   "value": 20.4,
+   "quote": "C-Zone 0.4 0.9 5.2 4.6 4.6 4.7 - 20.4",
+   "page": 31,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - East Extension",
+   "value": 2.4,
+   "quote": "East Extension - 1.9 0.5 - - - - 2.4",
+   "page": 31,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Other",
+   "value": 20.6,
+   "quote": "Other 5.8 12.3 0.5 1.1 0.3 - 0.6 20.6",
+   "page": 31,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 43.4,
+   "quote": "Total Sustaining Capital 6.2 15.1 6.2 5.7 4.9 4.7 0.6 43.4",
+   "page": 31,
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth - C-Zone",
+   "value": 85.6,
+   "quote": "C-Zone 85.6 - - - - - - 85.6",
+   "page": 31,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth - East Extension",
+   "value": 38.8,
+   "quote": "East Extension 16.3 21.7 0.5 0.3 - - - 38.8",
+   "page": 31,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth - Other",
+   "value": 23.2,
+   "quote": "Other 17.2 6.0 - - - - - 23.2",
+   "page": 31,
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Growth Capital",
+   "value": 147.6,
+   "quote": "Total Growth Capital 119.1 27.7 0.5 0.3 - - - 147.6",
+   "page": 31,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LOM total)",
+   "value": 472,
+   "quote": "Mining 55.7 76.1 76.3 72.3 70.7 72 48.9 472",
+   "page": 32,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (LOM total)",
+   "value": 395.6,
+   "quote": "Processing 63.6 60.6 58.2 56.2 54.3 53.0 49.7 395.6",
+   "page": 32,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (LOM total)",
+   "value": 140.4,
+   "quote": "G&A 24.3 21.5 20.3 20.6 20.3 19.0 14.4 140.4",
+   "page": 32,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other (LOM total)",
+   "value": 128.4,
+   "quote": "Other 12.5 10.2 21.3 16.9 17.5 16.1 33.9 128.4",
+   "page": 32,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other",
+   "review_note": "Other includes concentrate transport, inventory movements, royalties and other costs"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs (LOM total)",
+   "value": 1136.4,
+   "quote": "Total 156.1 168.4 176.1 166.0 162.8 160.1 146.9 1,136.4",
+   "page": 32,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 11.93,
+   "quote": "Mining 10.92 13.52 13.21 12.63 12.21 12.34 8.56 11.93",
+   "page": 32,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 10.0,
+   "quote": "Processing 12.47 10.76 10.07 9.83 9.38 9.09 8.69 10.00",
+   "page": 32,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 3.55,
+   "quote": "G&A 4.76 3.82 3.51 3.61 3.51 3.26 2.51 3.55",
+   "page": 32,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 3.24,
+   "quote": "Other 2.43 1.80 3.70 2.96 3.01 2.75 5.94 3.24",
+   "page": 32,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 28.72,
+   "quote": "Total 30.59 29.89 30.47 29.02 28.12 27.45 25.71 28.72",
+   "page": 32,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": true
+  }
+ ]
+}

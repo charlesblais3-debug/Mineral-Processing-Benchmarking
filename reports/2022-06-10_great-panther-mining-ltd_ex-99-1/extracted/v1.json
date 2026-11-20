@@ -1,0 +1,319 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Tucano",
+  "title": "Technical Report on the 2021 Mineral Reserves and Mineral Resources of the Tucano Gold Mine, Amapá State, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-07-31",
+  "effective_date_quote": "Effective Date - July 31, 2021",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Amapá",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "ball_mill",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "a primary jaw crusher feeding a SAG mill/ball mill (“SAB”) grinding circuit",
+  "page": 25
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 10000,
+   "unit": "t/d",
+   "quote": "nominal processing rate of 10,000 t/d at an average 93% annual plant availability",
+   "page": 24,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 3.6,
+   "unit": "Mt/a",
+   "quote": "currently based upon mining and processing of 3.6 Mt/a of ore",
+   "page": 25,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 93,
+   "unit": "%",
+   "quote": "nominal processing rate of 10,000 t/d at an average 93% annual plant availability",
+   "page": 24,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.5,
+   "unit": "%",
+   "quote": "Average metallurgical process recovery: 91.5%.",
+   "page": 22,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1650,
+   "unit": "USD/oz",
+   "quote": "average long-term gold price of US$1,650/oz",
+   "page": 22,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.0,
+   "unit": "BRL/USD",
+   "quote": "exchange rate of R$5.00:US$1.00",
+   "page": 22,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings dam expansions",
+   "value": 7796,
+   "quote": "Tailings dam expansions US$ 000 7,796",
+   "page": 114,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant improvements",
+   "value": 600,
+   "quote": "Plant improvements US$ 000 600",
+   "page": 114,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Improvements",
+   "value": 967,
+   "quote": "Mine Improvements US$ 000 967",
+   "page": 114,
+   "l1": "mining",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental improvements",
+   "value": 343,
+   "quote": "Environmental improvements US$ 000 343",
+   "page": 114,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Power line",
+   "value": 550,
+   "quote": "Power line US$ 000 550",
+   "page": 114,
+   "l1": "offsite_infra",
+   "l2": "power",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Others",
+   "value": 950,
+   "quote": "Others US$ 000 950",
+   "page": 114,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total open pit capital cost",
+   "value": 11206,
+   "quote": "Total open pit capital cost US$ 000 11,206",
+   "page": 114,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Underground lateral development",
+   "value": 25290,
+   "quote": "Underground lateral development US$ 000 25,290",
+   "page": 115,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Underground infrastructure",
+   "value": 12010,
+   "quote": "Underground infrastructure US$ 000 12,010",
+   "page": 115,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Surface infrastructure",
+   "value": 13030,
+   "quote": "Surface infrastructure US$ 000 13,030",
+   "page": 115,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total underground capital",
+   "value": 50330,
+   "quote": "Total US$ 000 50,330",
+   "page": 115,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure costs",
+   "value": 17.3,
+   "quote": "costs are estimated at US$17.3 million",
+   "page": 115,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "USD",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (OP) per t moved",
+   "value": 2.81,
+   "quote": "Mining (OP) US$/t moved 2.81",
+   "page": 116,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (OP) per t feed",
+   "value": 26.62,
+   "quote": "Mining (OP) US$/t feed 26.62",
+   "page": 116,
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 17.77,
+   "quote": "Processing US$/t feed 17.77",
+   "page": 116,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2.21,
+   "quote": "G&A US$/t feed 2.21",
+   "page": 116,
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total open pit",
+   "value": 46.6,
+   "quote": "Total US$/t 46.6",
+   "page": 116,
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "UG Process plant",
+   "value": 39.1,
+   "quote": "Process plant 39.10",
+   "page": 116,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other",
+   "partial_breakdown": true,
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "UG G&A",
+   "value": 13.1,
+   "quote": "G&A 13.10",
+   "page": 116,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground operating cost total",
+   "value": 161.8,
+   "quote": "Total 161.80",
+   "page": 116,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "partial_breakdown": true,
+   "currency": "USD",
+   "review_note": "Table 21-4 lines (Mine 160.70, Surface 2.80, Process 39.10, G&A 13.10) do not sum to 161.80; Mine line omitted as inconsistent"
+  }
+ ]
+}

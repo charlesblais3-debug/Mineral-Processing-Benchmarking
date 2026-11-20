@@ -1,0 +1,291 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Yaramoko",
+  "title": "Technical Report for the Yaramoko Gold Mine, Burkina Faso",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2022-12-31",
+  "effective_date_quote": "Date: December 31, 2022",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Burkina Faso",
+  "region": "Sud-Ouest",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "two-stage crushing (primary jaw and secondary cone) at 1,100 tpd",
+  "page": 116
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1100,
+   "unit": "t/d",
+   "quote": "two-stage crushing (primary jaw and secondary cone) at 1,100 tpd",
+   "page": 116,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 98,
+   "unit": "%",
+   "quote": "Estimated process recovery of 98 percent.",
+   "page": 82,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "recovery assumed in reserve cut-off grade estimation"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "quote": "Metal Price US$/oz 1,600",
+   "page": 83,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 40.0,
+   "quote": "Mine Development US$M 32.9 2.9 4.3 - 40.0",
+   "page": 142,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Brownfields exploration",
+   "value": 1.5,
+   "quote": "Brownfields exploration US$M 1.5 - - - 1.5",
+   "page": 142,
+   "l1": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment and Infrastructure",
+   "value": 26.5,
+   "quote": "Equipment and Infrastructure US$M 6.6 3.1 4.6 12.1 26.5",
+   "page": 142,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TSF Raise",
+   "value": 1.5,
+   "quote": "TSF Raise US$M 0.2 0.6 0.8 - 1.5",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "tailings_water",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ventilation and Cooling",
+   "value": 2.5,
+   "quote": "Ventilation and Cooling US$M 2.5 - - - 2.5",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "mining",
+   "l2": "infrastructure",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Finance lease",
+   "value": 0.6,
+   "quote": "Finance lease US$M - 0.3 0.3 - 0.6",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing - Other",
+   "value": 0.5,
+   "quote": "Processing - Other US$M - 0.3 0.2 - 0.5",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining - Other",
+   "value": 2.5,
+   "quote": "Mining - Other US$M 1.8 - 0.8 - 2.5",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "mining",
+   "l2": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Permitting",
+   "value": 1.2,
+   "quote": "Permitting US$M 0.4 0.4 0.4 - 1.2",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Project Allocations",
+   "value": 3.2,
+   "quote": "Project Allocations US$M 1.3 1.2 0.7 - 3.2",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 1.5,
+   "quote": "Other US$M 0.5 0.5 0.5 - 1.5",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure Plan",
+   "value": 13.1,
+   "quote": "Closure Plan US$M - - 1.0 12.1 13.1",
+   "page": 142,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "other",
+   "review_note": "Closure plan is indented under Equipment and Infrastructure and included in the 68.0 total (40.0+1.5+26.5=68.0)",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 68.0,
+   "quote": "Total US$M 41.0 6.0 8.9 12.1 68.0",
+   "page": 142,
+   "is_total": true,
+   "tolerance_pct": 3,
+   "review_note": "Total capital 2023-2026 includes closure plan",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LOM)",
+   "value": 160.2,
+   "quote": "Mining 66.1 70.5 23.7 160.2",
+   "page": 143,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process (LOM)",
+   "value": 35.6,
+   "quote": "Process 14.8 14.4 6.4 35.6",
+   "page": 143,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (LOM)",
+   "value": 43.5,
+   "quote": "G&A 16.4 15.8 11.3 43.5",
+   "page": 143,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Total (LOM)",
+   "value": 239.3,
+   "quote": "Site Total $M 97.3 100.7 41.3 239.3",
+   "page": 143,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining unit",
+   "value": 151.3,
+   "quote": "Mining 169.6 147.2 124.2 151.3",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "Unit costs $/t table; basis tonne not stated (assumed per tonne ore)",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process unit",
+   "value": 30.6,
+   "quote": "Process 30.1 30.0 33.5 30.6",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "review_note": "Unit costs $/t table; basis tonne not stated (assumed per tonne ore)",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A unit",
+   "value": 34.4,
+   "quote": "G&A 33.3 33.1 59.3 34.4",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "review_note": "Unit costs $/t table; basis tonne not stated (assumed per tonne ore)",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Total unit",
+   "value": 219.4,
+   "quote": "Site Total $/t 233.1 210.2 217.0 219.4",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "currency": "USD"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+- { name: Los Andes Copper, site: https://losandescopper.com/, commodity: Cu, projects: [Vizcachitas], pages: [https://losandescopper.com/projects/technical-reports/] }
+- { name: Highland Copper, site: https://www.highlandcopper.com/, commodity: Cu, projects: [Copperwood, White Pine North], pages: [https://www.highlandcopper.com/projects/copperwood-project/] }
+- { name: Ivanhoe Mines, site: https://www.ivanhoemines.com/, commodity: Cu, projects: [Kamoa-Kakula, Kipushi], pages: [https://www.ivanhoemines.com/news-stories/news-release/ivanhoe-mines-files-a-new-ni-43-101-technical-report-for-the-kamoa-kakula-copper-complex-in-the-democratic-republic-of-congo/] }
+- { name: First Quantum Minerals, site: https://www.first-quantum.com/, commodity: Cu, projects: [Taca Taca, Trident, Cobre Panama], pages: [https://www.first-quantum.com/operations/taca-taca/] }
+- { name: Foran Mining, site: https://foranmining.com/, commodity: Cu, projects: [McIlvenna Bay], pages: [https://foranmining.com/news-media/foran-news-releases/] }
+- { name: Hot Chili, site: https://www.hotchili.net.au/, commodity: Cu, projects: [Costa Fuego], pages: [https://www.hotchili.net.au/investors/investor-centre/reports, https://www.hotchili.net.au/projects/costa-fuego] }
+- { name: SolGold, site: https://solgold.com/, commodity: Cu, projects: [Cascabel], pages: [https://solgold.com/projects/ecuador/cascabel-project/] }
+- { name: Caravel Minerals, site: https://caravelminerals.com.au/, commodity: Cu, projects: [Caravel Copper], pages: [https://caravelminerals.com.au/] }
+- { name: Hillgrove Resources, site: https://www.hillgroveresources.com.au/, commodity: Cu, projects: [Kanmantoo], pages: [https://www.hillgroveresources.com.au/] }
+- { name: Havilah Resources, site: https://havilah-resources.com.au/, commodity: Cu, projects: [Kalkaroo], pages: [https://havilah-resources.com.au/] }
+- { name: Sandfire Resources, site: https://www.sandfire.com.au/, commodity: Cu, projects: [Motheo, MATSA], pages: [https://www.sandfire.com.au/] }
+- { name: Hudbay Minerals, site: https://hudbayminerals.com/, commodity: Cu, projects: [Mason, Copper Mountain], pages: [https://hudbayminerals.com/investors/reserves-and-resources/default.aspx] }

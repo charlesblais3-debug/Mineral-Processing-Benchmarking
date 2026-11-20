@@ -1,0 +1,211 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Geita",
+  "title": "Geita Gold Mine, Tanzania Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Report current at: 31 December 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Tanzania",
+  "region": "Geita",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "tertiary_crush",
+   "sag_mill",
+   "ball_mill",
+   "cil",
+   "gravity"
+  ],
+  "quote": "conventional carbon-in-leach (CIL) process with a throughput capacity of 5.5Mtpa. The circuit contains a primary gyratory crusher, secondary and tertiary crushers, a semi- autogenous grinding (SAG) mill, a ball mill and 12 leach tanks (two x pre-oxygenation and ten x leach tanks). This is coupled with a gravity circuit using two Knelson concentrators",
+  "page": 4
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 5.5,
+   "unit": "Mt/a",
+   "quote": "conventional carbon-in-leach (CIL) process with a throughput capacity of 5.5Mtpa",
+   "page": 4,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1700,
+   "unit": "USD/oz",
+   "quote": "A gold price of $1,700/oz was used for the Mineral Reserve estimates.",
+   "page": 38,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 632.3,
+   "unit": "MUSD",
+   "quote": "NPV5% is $632.3M",
+   "page": 40,
+   "context": {
+    "discount_rate_pct": 5
+   },
+   "review_note": "Report does not label NPV as after-tax, but the LOM cash flow table includes tax (US$328M) and NPV0% 765.5 is close to free cash flow 766"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1379,
+   "unit": "USD/oz",
+   "quote": "Total AISC $M 5,073 3,405 1,675 Total AISC $/oz 1,379 1,491 1,158",
+   "page": 39,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.64,
+   "unit": "kWh/t",
+   "quote": "BWi (p80 75µm equivalent) kWh/t 16.2-18.8 17.64 5",
+   "page": 26,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill work index, p80 75um equivalent",
+    "n_samples": 5,
+    "ore_type": "Nyamulilima"
+   },
+   "review_note": "Nyamulilima pit ore only, one of several ore sources"
+  },
+  {
+   "parameter": "cwi",
+   "value": 20.2,
+   "unit": "kWh/t",
+   "quote": "Crusher work index kWh/t 11.0-30.3 20.2 20",
+   "page": 26,
+   "statistic": "mean",
+   "context": {
+    "n_samples": 20,
+    "ore_type": "Nyamulilima"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 1406,
+   "quote": "Mining $M 1,406 683 723",
+   "page": 39,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 1450,
+   "quote": "Processing $M 1,450 1,187 262",
+   "page": 39,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative",
+   "value": 1005,
+   "quote": "General and administrative $M 1,005 801 204",
+   "page": 39,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other operating",
+   "value": 475,
+   "quote": "Other operating $M 475 284 191",
+   "page": 39,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 4336,
+   "quote": "Total Operating Cost $M 4,336 2,955 1,381",
+   "page": 39,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital",
+   "value": 231,
+   "quote": "Sustaining capital $M 231 136 95",
+   "page": 39,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure costs",
+   "value": 89,
+   "quote": "Closure costs $M 89 64 24",
+   "page": 39,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost (ore tonnes)",
+   "value": 18.58,
+   "quote": "Mining cost (ore tonnes) $/t 51.00 53.02 70.08 10.97 18.58",
+   "page": 39,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost",
+   "value": 19.15,
+   "quote": "Processing cost $/t 19.94 19.30 19.32 19.07 19.15",
+   "page": 39,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative cost",
+   "value": 13.28,
+   "quote": "General and administrative cost $/t 15.24 15.24 15.24 12.86 13.28",
+   "page": 39,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other operational",
+   "value": 6.27,
+   "quote": "Other operational $/t 7.65 19.36 11.47 4.56 6.27",
+   "page": 39,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

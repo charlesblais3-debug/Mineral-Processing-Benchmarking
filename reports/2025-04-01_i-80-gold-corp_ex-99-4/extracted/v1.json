@@ -1,0 +1,331 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Cove",
+  "title": "S-K1300 Initial Assessment & Technical Report Summary for the Cove Project, Lander County, Nevada",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "United States",
+  "region": "Nevada",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "roasting",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "primary and secondary crushing, dry grinding, dual stage fluidized bed roasting, off-gas handling, mercury recovery systems, a slurry neutralization circuit, a carbon-in-leach (CIL) circuit with carbon stripping, cyanide detoxification circuit, and electrowinning for gold recovery",
+  "page": 169
+ },
+ "facts": [
+  {
+   "parameter": "metal_price",
+   "value": 2175,
+   "unit": "USD/oz",
+   "quote": "Gold price (US$/oz) $2,175",
+   "page": 24,
+   "metal": "Au"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 79,
+   "unit": "%",
+   "quote": "Average gold recovery (roaster %) 79%",
+   "page": 24,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "roaster route (third-party NGM Gold Quarry); autoclave route 86%"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 256,
+   "unit": "MUSD",
+   "quote": "the NPV 5% reduces to $256M",
+   "page": 27,
+   "context": {
+    "discount_rate_pct": 5,
+    "note": "including pre-construction capital, with inferred"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 198,
+   "unit": "MUSD",
+   "quote": "the NPV 8% is $198M",
+   "page": 27,
+   "context": {
+    "discount_rate_pct": 8,
+    "note": "including pre-construction capital, with inferred"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 30,
+   "unit": "%",
+   "quote": "an IRR of 30%",
+   "page": 27
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1201,
+   "unit": "USD/oz",
+   "quote": "Cash cost (US$/oz) 1 $1,201",
+   "page": 24,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1310,
+   "unit": "USD/oz",
+   "quote": "(US$/oz) 2 $1,310",
+   "page": 24,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine construction capital",
+   "value": 157.4,
+   "quote": "Mine construction capital ($M) $157.4",
+   "page": 24,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-development capital",
+   "value": 17.2,
+   "quote": "Pre-development capital ($M) $17.2",
+   "page": 24,
+   "outside_total": true,
+   "review_note": "Pre-construction capital kept outside the construction total; text elsewhere gives 17.3",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital",
+   "value": 49.1,
+   "quote": "Sustaining capital (M$) $49.1",
+   "page": 24,
+   "is_total": true,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation Bonding",
+   "value": 7.1,
+   "quote": "Reclamation Bonding 0.2 0.8 - - 7.1",
+   "page": 203,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation",
+   "value": 22.9,
+   "quote": "Reclamation - - 4.6 - 22.9",
+   "page": 203,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Monitoring",
+   "value": 1.3,
+   "quote": "Closure and Monitoring - - - 0.3 1.3",
+   "page": 203,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total closure and reclamation",
+   "value": 31.3,
+   "quote": "Total 0.4 1.9 4.6 0.3 31.3",
+   "page": 203,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 408,
+   "quote": "Mining 408 139 552",
+   "page": 204,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per ton",
+   "value": 139,
+   "quote": "Mining 408 139 552",
+   "page": 204,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transportation and Processing",
+   "value": 270,
+   "quote": "Transportation and Processing 270 91 365",
+   "page": 204,
+   "l1": "processing",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l2": "other",
+   "review_note": "includes trucking and toll roasting/pressure oxidation at third-party facilities"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transportation and Processing per ton",
+   "value": 91,
+   "quote": "Transportation and Processing 270 91 365",
+   "page": 204,
+   "l1": "processing",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l2": "other",
+   "review_note": "includes trucking and toll roasting/pressure oxidation at third-party facilities"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electrical Power",
+   "value": 71,
+   "quote": "Electrical Power 71 24 96",
+   "page": 204,
+   "l1": "processing",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l2": "power",
+   "review_note": "site electrical power, mostly dewatering/mine"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electrical Power per ton",
+   "value": 24,
+   "quote": "Electrical Power 71 24 96",
+   "page": 204,
+   "l1": "processing",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l2": "power",
+   "review_note": "site electrical power, mostly dewatering/mine"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A, Royalties, and NV Taxes",
+   "value": 138,
+   "quote": "G&A, Royalties, and NV Taxes 138 49 186",
+   "page": 204,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "combined G&A, royalties and taxes line"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A, Royalties, and NV Taxes per ton",
+   "value": 49,
+   "quote": "G&A, Royalties, and NV Taxes 138 49 186",
+   "page": 204,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "review_note": "combined G&A, royalties and taxes line"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By Product Credits",
+   "value": -3,
+   "quote": "By Product Credits (3) (1) (4)",
+   "page": 204,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By Product Credits per ton",
+   "value": -1,
+   "quote": "By Product Credits (3) (1) (4)",
+   "page": 204,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 883,
+   "quote": "Total Operating Costs 883 303 1,194",
+   "page": 204,
+   "is_total": true,
+   "tolerance_pct": 3,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs per ton",
+   "value": 303,
+   "quote": "Total Operating Costs 883 303 1,194",
+   "page": 204,
+   "is_total": true,
+   "tolerance_pct": 3,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

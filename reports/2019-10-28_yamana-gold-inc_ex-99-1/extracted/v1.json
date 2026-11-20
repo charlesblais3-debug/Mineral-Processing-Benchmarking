@@ -1,0 +1,217 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Jacobina",
+  "title": "Technical Report on the Jacobina Mine Complex, Bahia State, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2019-06-30",
+  "effective_date_quote": "Effective Date June 30, 2019",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Bahia",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2019,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cip",
+   "elution_ew"
+  ],
+  "quote": "Grinding is performed by two ball mills in parallel using hydrocyclones in closed circuit for classification. Gravity concentration of gold is performed using centrifugal concentrators on cyclone underflow. The concentrate from the gravity concentrators is fed into intensive leach reactors",
+  "page": 20
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 6500,
+   "unit": "t/d",
+   "quote": "The mineral processing plant at Jacobina is currently designed for a throughput of 6,500 tpd",
+   "page": 20,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96,
+   "unit": "%",
+   "quote": "Mineral Reserves are estimated using a process recovery of 96%.",
+   "page": 12,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "reserve-estimate process recovery assumption"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1250,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are estimated using an average long term gold price of US$1,250/ounce",
+   "page": 12,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 3.65,
+   "unit": "BRL/USD",
+   "quote": "at an exchange rate of 3.65 BRL:US$1",
+   "page": 12,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 147423,
+   "quote": "Mine Development 147,423",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 70858,
+   "quote": "Infrastructure 70,858",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vehicles & Machinery",
+   "value": 64814,
+   "quote": "Vehicles & Machinery 64,814",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam",
+   "value": 22998,
+   "quote": "Tailings Dam 22,998",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Hardware & Software",
+   "value": 8743,
+   "quote": "Hardware & Software 8,743",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Sustaining CAPEX",
+   "value": 11401,
+   "quote": "Other Sustaining CAPEX 11,401",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital Cost",
+   "value": 326236,
+   "quote": "Sustaining Capital Cost 326,236",
+   "page": 155,
+   "multiplier": "k",
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capacity Increase",
+   "value": 5300,
+   "quote": "Capacity Increase 5,300",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pre-Feasibility Study",
+   "value": 2000,
+   "quote": "Pre-Feasibility Study 2,000",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings Dam Expansions",
+   "value": 21258,
+   "quote": "Tailings Dam Expansions 21,258",
+   "page": 155,
+   "multiplier": "k",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansionary Capital Cost",
+   "value": 28558,
+   "quote": "Expansionary Capital Cost 28,558",
+   "page": 155,
+   "multiplier": "k",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 26.56,
+   "quote": "Mining 26.56",
+   "page": 156,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "Table gives LOM unit costs in US$/t without stating milled vs mined; cut-off grade table (p120) uses US$/t milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 14.31,
+   "quote": "Process 14.31",
+   "page": 156,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 6.75,
+   "quote": "G&A 6.75",
+   "page": 156,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 47.63,
+   "quote": "Total 47.63",
+   "page": 156,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}
