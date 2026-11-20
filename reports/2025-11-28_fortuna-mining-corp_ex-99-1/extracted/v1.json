@@ -1,0 +1,384 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Diamba Sud",
+  "title": "Diamba Sud Gold Project, Kédougou Region, Senegal Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2025-10-15",
+  "effective_date_quote": "Technical Report, Effective Date: October 15, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Senegal",
+  "region": "Kédougou",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill"
+  ],
+  "quote": "a single-stage crush and SAG milling circuit was adopted for the comminution circuit",
+  "page": 119
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.5,
+   "unit": "Mt/a",
+   "quote": "Throughput initial 3 years (primarily oxide) Mtpa 2.5",
+   "page": 27,
+   "statistic": "design",
+   "context": {
+    "phase": "initial 3 years (primarily oxide)"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.0,
+   "unit": "Mt/a",
+   "quote": "Throughput after 3 years (primarily fresh) Mtpa 2.0",
+   "page": 27,
+   "statistic": "design",
+   "context": {
+    "phase": "after 3 years (primarily fresh)"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 8.1,
+   "unit": "years",
+   "quote": "Gold Price Life of mine $/oz years 2,750 8.1",
+   "page": 27
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.63,
+   "unit": "g/t",
+   "quote": "LOM grade g/t 1.63",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "Recoveries % 90",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2750,
+   "unit": "USD/oz",
+   "quote": "based on the gold price of $2,750/oz",
+   "page": 28,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 563,
+   "unit": "MUSD",
+   "quote": "post-tax Project NPV 5% is $563 million",
+   "page": 28,
+   "currency": "USD",
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 72,
+   "unit": "%",
+   "quote": "After-tax IRR % 72",
+   "page": 27
+  },
+  {
+   "parameter": "payback_years",
+   "value": 0.8,
+   "unit": "years",
+   "quote": "After Tax Payback Period years 0.8",
+   "page": 27
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1081,
+   "unit": "USD/oz",
+   "quote": "over LOM $/oz 1,081",
+   "page": 27,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1238,
+   "unit": "USD/oz",
+   "quote": "Average AISC over LOM $/oz 1,238",
+   "page": 27,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant and infrastructure",
+   "value": 180.4,
+   "quote": "Process plant and infrastructure 180.4",
+   "page": 26,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 19.9,
+   "quote": "Mining 19.9 Owner",
+   "page": 26,
+   "l1": "mining",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's costs",
+   "value": 31.9,
+   "quote": "Owner’s costs 31.9",
+   "page": 26,
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "With Holding Tax, duties, levies",
+   "value": 4.5,
+   "quote": "With Holding Tax, duties, levies 4.5",
+   "page": 26,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency (20%)",
+   "value": 46.4,
+   "quote": "Contingency (20%) 46.4",
+   "page": 26,
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 283.2,
+   "quote": "Total 283.2",
+   "page": 26,
+   "is_total": true,
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital (incl. closure)",
+   "value": 48,
+   "quote": "total US$48 million",
+   "page": 26,
+   "is_total": true,
+   "review_note": "Stated total only; table 1.3 includes mine closure & site rehabilitation lines in the 48 M.",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Pits",
+   "value": 200000,
+   "quote": "Pits 200,000",
+   "page": 160,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Waste dumps",
+   "value": 4900000,
+   "quote": "Waste dumps 4,900,000",
+   "page": 160,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "ROM and stockpiles",
+   "value": 100000,
+   "quote": "ROM and stockpiles 100,000",
+   "page": 160,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Tailings storage facility",
+   "value": 3400000,
+   "quote": "Tailings storage facility 3,400,000",
+   "page": 160,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Processing plant",
+   "value": 2000000,
+   "quote": "Processing plant 2,000,000",
+   "page": 160,
+   "l1": "processing",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Explosives magazine",
+   "value": 200000,
+   "quote": "Explosives magazine 200,000",
+   "page": 160,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Social closure",
+   "value": 500000,
+   "quote": "Social closure 500,000",
+   "page": 160,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Environmental management",
+   "value": 1000000,
+   "quote": "Environmental management 1,000,000",
+   "page": 160,
+   "l1": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total closure",
+   "value": 12300000,
+   "quote": "Total 12,300,000",
+   "page": 160,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 30.54,
+   "quote": "Mining 542 30.54 646",
+   "page": 26,
+   "l1": "mining",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 13.91,
+   "quote": "Processing 247 13.91 294",
+   "page": 26,
+   "l1": "processing",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 6.7,
+   "quote": "G&A 119 6.70 142",
+   "page": 26,
+   "l1": "ga",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating costs excluding Royalties and Social Fund",
+   "value": 51.16,
+   "quote": "excluding Royalties and Social Fund 908 51.16 1,081",
+   "page": 26,
+   "is_subtotal": true,
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining",
+   "value": 0.14,
+   "quote": "Refining 3 0.14 3",
+   "page": 26,
+   "l1": "offsite",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 3.9,
+   "quote": "Royalties* 69 3.90 83",
+   "page": 26,
+   "l1": "royalties_taxes",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Social Fund",
+   "value": 0.65,
+   "quote": "Fund* 12 0.65 14",
+   "page": 27,
+   "l1": "royalties_taxes",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating costs including Royalties and Social Fund",
+   "value": 55.85,
+   "quote": "including Royalties and Social Fund 992 55.85 1,180",
+   "page": 27,
+   "is_total": true,
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  }
+ ]
+}

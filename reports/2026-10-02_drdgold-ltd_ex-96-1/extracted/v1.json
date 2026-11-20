@@ -11,7 +11,7 @@
   "by_products": [],
   "country": "South Africa",
   "region": "Gauteng / North West (West Rand)",
-  "mine_type": "open_pit",
+  "mine_type": "tailings_retreatment",
   "project_status": "operating",
   "currency": "ZAR",
   "cost_base_year": 2026,
@@ -239,7 +239,7 @@
    "quote": "Total Capital Expenditure 4,825",
    "page": 29,
    "is_total": true,
-   "review_note": "Tailings retreatment (hydraulic reclamation of TSFs) mapped as open_pit because taxonomy has no tailings_retreatment type. Capital is Phase 2 expansion plus RTSF and pumping, incl. replacement capital.",
+   "review_note": "Capital is Phase 2 expansion plus RTSF and pumping, incl. replacement capital.",
    "currency": "ZAR",
    "basis_unit": "total",
    "multiplier": "M"

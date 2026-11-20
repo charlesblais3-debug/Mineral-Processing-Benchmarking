@@ -133,7 +133,7 @@
  ],
  "costs": [
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Total Mining",
    "value": 166.4,
    "quote": "Total Mining $166.4 $173.7 $340.1",
@@ -143,7 +143,7 @@
    "multiplier": "M"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Total Surface Crusher Facility",
    "value": 4.4,
    "quote": "Total Surface Crusher Facility $4.4 $0.0 $4.4",
@@ -154,7 +154,7 @@
    "multiplier": "M"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Total Water Treatment Plant",
    "value": 5.7,
    "quote": "Total Water Treatment Plant $5.7 $0.0 $5.7",
@@ -165,13 +165,13 @@
    "multiplier": "M"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Total (project period capital)",
    "value": 176.5,
    "quote": "Total $176.5 $173.7 $350.3",
    "page": 382,
    "is_total": true,
-   "review_note": "Text states $176.6M project period capital; table total $176.5M",
+   "review_note": "Text states $176.6M project period capital; table total $176.5M Mine and surface-facility capital only: ore is processed through the existing Fox Complex mill, so this is growth capital, not a new-build plant.",
    "basis_unit": "total",
    "multiplier": "M"
   },

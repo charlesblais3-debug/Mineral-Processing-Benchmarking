@@ -101,3 +101,12 @@ def test_value_in_quote_space_thousands():
     assert value_in_quote(5455, "Mine 5 455")
     assert value_in_quote(58572, "Direct costs 58 572")
     assert value_in_quote(1.85, "Totals 1.85 107.11 26.56")
+
+
+def test_multiplier_case_insensitive():
+    from pipeline.extract.load import multiplier
+    assert multiplier("K") == multiplier("k") == 1e3
+    assert multiplier("M") == multiplier("million") == 1e6
+    assert multiplier("bn") == 1e9
+    assert multiplier("") == 1
+    assert multiplier("lakh") is None

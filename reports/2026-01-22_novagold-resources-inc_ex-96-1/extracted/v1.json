@@ -1,0 +1,424 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Donlin Gold",
+  "title": "S-K 1300 Technical Report Summary on the Donlin Gold Project, Alaska, USA",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2025-11-30",
+  "effective_date_quote": "dated 30 November 2025 was prepared by qualified persons",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "pox",
+   "cil"
+  ],
+  "quote": "The flowsheet includes sulfide flotation pre-concentration with POX followed by CIL",
+  "page": 327
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 53500,
+   "unit": "t/d",
+   "quote": "nominal process throughput of 53,500 t/d",
+   "page": 31,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 24,
+   "unit": "years",
+   "quote": "The operating mine life is estimated at 24 years",
+   "page": 31
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 6.52,
+   "unit": "t:t",
+   "quote": "has a strip ratio of 6.52:1",
+   "page": 31,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 93,
+   "unit": "%",
+   "quote": "considers a 93% plant availability",
+   "page": 31,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.0,
+   "unit": "%",
+   "quote": "The average LOM processing recovery for the Mineral Reserves is 90.0%",
+   "page": 31,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.0,
+   "unit": "kWh/t",
+   "quote": "Total/Average 15.0 1.5 273",
+   "page": 132,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball work index, domain estimation (Table 10-8)",
+    "n_samples": 273
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2100,
+   "unit": "USD/oz",
+   "quote": "forecast long term gold price of $2,100/oz",
+   "page": 35,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 5058,
+   "unit": "MUSD",
+   "quote": "Total After Tax NPV 5% $M 5,058",
+   "page": 22,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 10.3,
+   "unit": "%",
+   "quote": "After Tax IRR % 10.3",
+   "page": 22
+  },
+  {
+   "parameter": "payback_years",
+   "value": 6.5,
+   "unit": "years",
+   "quote": "After Tax Payback Period years 6.5",
+   "page": 22
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 429.4,
+   "quote": "Mining 429.4 Site Preparation and Roads 334.1",
+   "page": 34,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Preparation and Roads",
+   "value": 334.1,
+   "quote": "Site Preparation and Roads 334.1 Process Facilities 1,817.8",
+   "page": 34,
+   "l1": "onsite_infra",
+   "l2": "roads",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Facilities",
+   "value": 1817.8,
+   "quote": "Process Facilities 1,817.8 Tailings Storage Facility",
+   "page": 34,
+   "l1": "process",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Storage Facility and Reclaim Systems",
+   "value": 169.4,
+   "quote": "Tailings Storage Facility and Reclaim Systems 169.4 Utilities",
+   "page": 34,
+   "l1": "tailings_water",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Utilities",
+   "value": 1875.4,
+   "quote": "Utilities 1,875.4 Ancillary Buildings",
+   "page": 34,
+   "l1": "onsite_infra",
+   "l2": "power",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ancillary Buildings and Facilities",
+   "value": 437.9,
+   "quote": "Ancillary Buildings and Facilities 437.9 Off Site Facilities",
+   "page": 34,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off Site Facilities",
+   "value": 346.4,
+   "quote": "Off Site Facilities 346.4 Subtotal Direct Cost",
+   "page": 34,
+   "l1": "offsite_infra",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Cost",
+   "value": 5410.4,
+   "quote": "Subtotal Direct Cost 5,410.4 Owner’s Costs",
+   "page": 34,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 665.7,
+   "quote": "Owner’s Costs 665.7 Indirect Costs",
+   "page": 34,
+   "l1": "owners",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 2038.1,
+   "quote": "Indirect Costs 2,038.1 Contingency",
+   "page": 34,
+   "l1": "indirects",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 1119.1,
+   "quote": "Contingency 1,119.1 Total Initial Capital Cost",
+   "page": 34,
+   "l1": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital Cost",
+   "value": 9233.4,
+   "quote": "Total Initial Capital Cost 9,233.4",
+   "page": 34,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 1125.0,
+   "quote": "Mining 1,125.0 Site Preparation and Roads 4.0",
+   "page": 34,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site Preparation and Roads",
+   "value": 4.0,
+   "quote": "Site Preparation and Roads 4.0 Process Facilities -",
+   "page": 34,
+   "l1": "onsite_infra",
+   "l2": "roads",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Storage Facility and Reclaim Systems",
+   "value": 876.9,
+   "quote": "Tailings Storage Facility and Reclaim Systems 876.9 Utilities -",
+   "page": 34,
+   "l1": "tailings_water",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ancillary Buildings and Facilities",
+   "value": 119.5,
+   "quote": "Ancillary Buildings and Facilities 119.5 Off Site Facilities 24.9",
+   "page": 34,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Off Site Facilities",
+   "value": 24.9,
+   "quote": "Off Site Facilities 24.9 Subtotal Direct Cost 2,150.3",
+   "page": 34,
+   "l1": "offsite_infra",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal Direct Cost",
+   "value": 2150.3,
+   "quote": "Subtotal Direct Cost 2,150.3 Owner’s Costs -",
+   "page": 34,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Indirect Costs",
+   "value": 174.7,
+   "quote": "Indirect Costs 174.7 Contingency - Total 2,325.1",
+   "page": 34,
+   "l1": "indirects",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 2325.1,
+   "quote": "Contingency - Total 2,325.1",
+   "page": 34,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 11946.7,
+   "quote": "Mining 11,946.7 23.67",
+   "page": 35,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 23.67,
+   "quote": "Mining 11,946.7 23.67",
+   "page": 35,
+   "l1": "mining",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 7718.3,
+   "quote": "Processing 7,718.3 15.29",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 15.29,
+   "quote": "Processing 7,718.3 15.29",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2070.4,
+   "quote": "G&A 2,070.4 4.10",
+   "page": 35,
+   "l1": "ga",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.1,
+   "quote": "G&A 2,070.4 4.10",
+   "page": 35,
+   "l1": "ga",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Land and Royalty Payments",
+   "value": 2768.8,
+   "quote": "Land and Royalty Payments 2,768.8 5.48",
+   "page": 35,
+   "l1": "royalties_taxes",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Land and Royalty Payments",
+   "value": 5.48,
+   "quote": "Land and Royalty Payments 2,768.8 5.48",
+   "page": 35,
+   "l1": "royalties_taxes",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 24504.3,
+   "quote": "Total 24,504.3 48.54",
+   "page": 35,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 48.54,
+   "quote": "Total 24,504.3 48.54",
+   "page": 35,
+   "is_total": true,
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  }
+ ]
+}

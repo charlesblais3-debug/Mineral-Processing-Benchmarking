@@ -22,11 +22,19 @@ UNIT_FACTORS = {  # (from, to): factor
     ("kWh/st", "kWh/t"): 1.10231, ("kWh/sh t", "kWh/t"): 1.10231, ("kWh/ton", "kWh/t"): 1.10231,
     ("kWh/t", "kWh/t"): 1.0,
     ("Mt/a", "Mt/a"): 1.0, ("Mtpa", "Mt/a"): 1.0, ("Mt/y", "Mt/a"): 1.0, ("Mty", "Mt/a"): 1.0,
-    ("t/d", "t/d"): 1.0, ("tpd", "t/d"): 1.0, ("st/d", "t/d"): 0.907185, ("LT/d", "t/d"): 1.01605,
+    ("t/d", "t/d"): 1.0, ("t/month", "t/d"): 12 / 365, ("tpm", "t/d"): 12 / 365, ("kt/month", "t/d"): 12000 / 365,
+    ("Mt/month", "Mt/a"): 12.0, ("kt/month", "Mt/a"): 0.012, ("tpd", "t/d"): 1.0, ("st/d", "t/d"): 0.907185, ("LT/d", "t/d"): 1.01605,
     ("MLT/y", "Mt/a"): 1.01605, ("Mst/y", "Mt/a"): 0.907185,
     ("µm", "µm"): 1.0, ("um", "µm"): 1.0, ("mm", "µm"): 1000.0, ("mesh", "µm"): None,
 }
-MULTIPLIERS = {"": 1, "k": 1e3, "thousand": 1e3, "M": 1e6, "million": 1e6, "B": 1e9, "billion": 1e9}
+MULTIPLIERS = {"": 1, "k": 1e3, "000": 1e3, "thousand": 1e3, "thousands": 1e3, "m": 1e6, "mm": 1e6, "million": 1e6,
+               "millions": 1e6, "b": 1e9, "bn": 1e9, "billion": 1e9, "billions": 1e9}
+
+
+def multiplier(m) -> float | None:
+    """Case-insensitive ("K" and "k" both mean thousand). None for anything unrecognised, so a typo is a
+    load problem instead of silently scaling a cost by 1."""
+    return MULTIPLIERS.get(str(m).strip().lower().lstrip("$"))
 
 
 def _squash(text: str) -> str:
@@ -193,9 +201,13 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     sums: dict[str, float] = {}
     parents: dict[str, float] = {}        # breakdown checks: parent label -> value
     parts: dict[str, float] = {}
+    partial_parents: set[str] = set()
     mapped: dict[str, tuple] = {}         # label -> (l1, l2), so breakdown lines can inherit their parent's category
     for c in data.get("costs", []):
-        mult = MULTIPLIERS.get(c.get("multiplier", "M"), 1)
+        mult = multiplier(c.get("multiplier", "M"))
+        if mult is None:
+            problems.append(f"cost '{c['raw_label']}': unknown multiplier {c.get('multiplier')!r}")
+            mult = 1
         value = c["value"] * mult
         note = None
         if c.get("per_short_ton"):           # $/short ton -> $/tonne (1 t = 1.10231 st)
@@ -231,6 +243,8 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
             problems.append(f"cost '{c['raw_label']}': quote is in {other} but the item is {c.get('currency', info.get('currency'))}")
         group = f"{c['cost_type']}/{c.get('basis_unit', 'total')}"
         parents[f"{group}/{c['raw_label']}"] = value
+        if c.get("partial_breakdown"):
+            partial_parents.add(f"{group}/{c['raw_label']}")
         if c.get("outside_total"):                # listed by the report but outside its total
             pass
         elif c.get("part_of"):                      # breakdown of another line: checked separately
@@ -267,6 +281,8 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
 
     for key, s in parts.items():
         parent = parents.get(key)
+        if key in partial_parents:           # the report lists only some of this line's components
+            continue
         if parent is None:
             problems.append(f"costs {key}: breakdown has no parent line with that raw_label")
         elif parent and abs(s - parent) / abs(parent) > 0.02:

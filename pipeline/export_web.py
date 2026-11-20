@@ -128,6 +128,7 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
                        "note": c["review_note"], **_src(c, url)} for c in costs],
         })
 
+    projects = latest_per_project(projects)
     labels = {
         "cost_l1": {t: {k: v["label"] for k, v in cost_tax[t].items()} for t in ("capex", "opex")},
         "families": {f["key"]: f["label"] for f in flow_tax["families"]},
@@ -135,6 +136,27 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
         "unit_ops": {k: v["label"] for k, v in flow_tax["unit_ops"].items()},
     }
     return {"escalation_year": ppi_year, "projects": projects, "labels": labels}
+
+
+def latest_per_project(projects: list[dict]) -> list[dict]:
+    """One benchmark point per project: the report with the latest effective date. Earlier reports are kept
+    as `earlier_reports` (with their headline CAPEX/OPEX) so the estimate's history stays visible without
+    double-counting the project on the curves."""
+    by_id: dict = {}
+    for p in projects:
+        by_id.setdefault(p["id"], []).append(p)
+    out = []
+    for group in by_id.values():
+        group.sort(key=lambda p: (p["effective_date"] or "", p["report_id"]), reverse=True)
+        head, older = group[0], group[1:]
+        head["earlier_reports"] = [{
+            "report_id": o["report_id"], "effective_date": o["effective_date"], "study_level": o["study_level"],
+            "issuer": o["issuer"], "title": o["title"], "url": o["url"],
+            "capex": (o["metrics"].get("capex") or {}).get("value"),
+            "site_opex": (o["metrics"].get("site_opex") or {}).get("value"),
+        } for o in older]
+        out.append(head)
+    return sorted(out, key=lambda p: p["name"] or "")
 
 
 def write(data: dict) -> list[Path]:

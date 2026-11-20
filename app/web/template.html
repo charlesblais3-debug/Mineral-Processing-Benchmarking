@@ -448,6 +448,12 @@ function renderSheet(p) {
     ${opexBlock ? `<div><h3>Operating cost · ${unitT}</h3>${opexBlock}</div>` : ""}
     ${opexTotBlock ? `<div><h3>Operating cost, life of mine · ${unitM}</h3>${opexTotBlock}</div>` : ""}
     ${!(capexBlock || susBlock || opexBlock || opexTotBlock) ? `<p class="muted">This report gives no cost estimates.</p>` : ""}
+    ${(p.earlier_reports || []).length ? `<div><h3>Earlier studies of this project</h3>
+      <p class="muted" style="font-size:13px; margin:0 0 6px">Charts use the latest report only. Earlier estimates, ${Y} US$:</p>
+      <div class="tablewrap"><table class="grid"><thead><tr><th>Effective</th><th>Stage</th><th>Issuer</th><th class="num">Initial CAPEX (M)</th><th class="num">Site OPEX (/t)</th><th></th></tr></thead><tbody>
+      ${p.earlier_reports.map(o => `<tr><td>${esc(o.effective_date || "–")}</td><td>${esc(STAGE(o))}</td><td>${esc((o.issuer || "").replace(/\s*\(.*$/, ""))}</td>
+        <td class="num">${fmt(o.capex, 0)}</td><td class="num">${fmt(o.site_opex, 2)}</td><td><a href="${esc(o.url)}" target="_blank" rel="noopener" style="color:var(--accent)">Report</a></td></tr>`).join("")}
+      </tbody></table></div></div>` : ""}
     <div><h3>All extracted values</h3><div class="tablewrap"><table class="grid facts"><tbody>${factRows}</tbody></table></div></div>
     <p class="note">Every value was copied from the report with its page number and a verbatim quote, and the quote was checked against that page. Page numbers refer to the parsed copy of the filing; search the report for the quote to find it.</p>`;
   $("#close-sheet").onclick = () => { history.pushState("", "", location.pathname + location.search + "#" + (window.lastView || "explore")); route(); };
@@ -497,8 +503,9 @@ function init() {
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => route());
   new MutationObserver(() => route()).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   const nf = P.reduce((s, p) => s + p.facts.length, 0), nc = P.reduce((s, p) => s + p.costs.length, 0);
-  $("#countline").textContent = `${P.length} reports · ${nf + nc} sourced values`;
-  $("#foot").textContent = `Data from NI 43-101 and S-K 1300 technical reports filed on SEC EDGAR. Costs converted to US$ at the study's own exchange rate where stated, otherwise the Bank of Canada annual average, then escalated to ${Y} with US BLS producer price indexes (CAPEX: machinery and nonresidential construction inputs; OPEX: final demand).`;
+  const nr = P.reduce((a, p) => a + 1 + (p.earlier_reports || []).length, 0);
+  $("#countline").textContent = `${P.length} projects · ${nr} reports · ${nf + nc} sourced values`;
+  $("#foot").textContent = `Data from NI 43-101 and S-K 1300 technical reports filed on SEC EDGAR and published on company websites (JORC reports included). Where a project has several studies, charts use the latest. Costs converted to US$ at the study's own exchange rate where stated, otherwise the Bank of Canada annual average, then escalated to ${Y} with US BLS producer price indexes (CAPEX: machinery and nonresidential construction inputs; OPEX: final demand).`;
   window.addEventListener("hashchange", route);
   renderFilters();
   route();

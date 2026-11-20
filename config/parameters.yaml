@@ -19,7 +19,7 @@ parameters:
   lom_years:           { group: scale, label: Life of mine (processing), unit: years, range: [1, 80], module: scale, v1: true }
   reserve_tonnes:      { group: scale, label: Mineral reserve (P&P), unit: Mt, range: [0.05, 20000], module: scale, v1: true }
   reserve_grade:       { group: scale, label: Reserve grade, unit: native, per_metal: true, module: scale, v1: true }
-  mine_type:           { group: scale, label: Mine type, unit: enum, values: [open_pit, underground, open_pit_and_underground], module: scale, v1: true }
+  mine_type:           { group: scale, label: Mine type, unit: enum, values: [open_pit, underground, open_pit_and_underground, tailings_retreatment], module: scale, v1: true }
   strip_ratio:         { group: scale, label: LOM strip ratio, unit: "t:t", range: [0, 30], module: scale, v1: true }
 
   # ---------- Feed & metallurgy ----------

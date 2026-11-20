@@ -75,7 +75,7 @@
  ],
  "costs": [
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Studies and permitting",
    "value": 64,
    "quote": "Studies and permitting 64",
@@ -86,7 +86,7 @@
    "l2": "owners"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Mining capital",
    "value": 751,
    "quote": "Mining capital 751",
@@ -97,7 +97,7 @@
    "l2": "equipment"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Development",
    "value": 1252,
    "quote": "Development 1,252",
@@ -108,7 +108,7 @@
    "l2": "ug_development"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Capital contingency",
    "value": 517,
    "quote": "Capital contingency 517",
@@ -118,7 +118,7 @@
    "l1": "contingency"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Total",
    "value": 2583,
    "quote": "Total 2,583",
@@ -126,7 +126,7 @@
    "basis_unit": "total",
    "multiplier": "M",
    "is_total": true,
-   "review_note": "Project capital 2026-2035, case including Inferred; no standalone processing/tailings capital (existing NGM facilities)"
+   "review_note": "Project capital 2026-2035, case including Inferred; no standalone processing/tailings capital (existing NGM facilities) Mine-only capital: ore is processed at existing NGM roaster/autoclave facilities, so this is growth capital, not a new-build plant."
   },
   {
    "cost_type": "opex",

@@ -1,0 +1,140 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Wharf",
+  "title": "Wharf Operation, South Dakota, S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "South Dakota",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 3
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "elution_ew"
+  ],
+  "quote": "is recycled to the heap leach pad. Spent ore is rinsed, neutralized, and denitrified and then removed from the leach pad to be placed on a designated spent ore storage area. Gold and silver are recovered from loaded carbon using a modified pressure Zadra method. The rich electrolyte from elution is processed by electrowinning",
+  "page": 27
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 79.8,
+   "unit": "%",
+   "quote": "Recovery Au % 79.8%",
+   "page": 33,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 902,
+   "unit": "MUSD",
+   "quote": "Pre-Tax/After-Tax NPV 5% $M $1,170/$902",
+   "page": 33,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Development Capex",
+   "value": 19.4,
+   "quote": "Development Capex $m $19.4 $4.0 $1.3",
+   "page": 143,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "review_note": "Capitalized drilling and development at an operating mine, treated as non-sustaining."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capex",
+   "value": 63.6,
+   "quote": "Sustaining Capex $m $63.6 $25.1",
+   "page": 143,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost Total",
+   "value": 739.5,
+   "quote": "Mining Cost $M $739.5",
+   "page": 144,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 2.71,
+   "quote": "Mining Cost $/t mined. $2.71",
+   "page": 30,
+   "basis_unit": "per_t_mined",
+   "multiplier": "",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost Total",
+   "value": 487.1,
+   "quote": "Processing Cost $M $487.1",
+   "page": 145,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Total",
+   "value": 280.0,
+   "quote": "G&A (On-site) $M $280.0",
+   "page": 145,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.61,
+   "quote": "G&A $/t crushed $4.61",
+   "page": 30,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "per_short_ton": true,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty",
+   "value": 204.9,
+   "quote": "Royalty $M $204.9",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "outside_total": true
+  }
+ ]
+}

@@ -125,7 +125,8 @@
    "l1": "process",
    "l2": "general",
    "confidence": 0.6,
-   "includes_indirects": 0
+   "includes_indirects": 0,
+   "part_of": "Total Plant Cost"
   },
   {
    "cost_type": "initial_capex",
@@ -135,7 +136,8 @@
    "page": 37,
    "multiplier": "M",
    "l1": "indirects",
-   "l2": "epcm"
+   "l2": "epcm",
+   "part_of": "Total Plant Cost"
   },
   {
    "cost_type": "initial_capex",
@@ -144,7 +146,8 @@
    "quote": "Total Plant Cost 124,790,144 16,643,986 65,407,019 206,841,148",
    "page": 37,
    "multiplier": "M",
-   "is_subtotal": true
+   "partial_breakdown": true,
+   "review_note": "Lines shown (direct field + home office) sum to 169.3 of 206.8; the report's indirect-cost line is misprinted, so it is not extracted."
   },
   {
    "cost_type": "initial_capex",

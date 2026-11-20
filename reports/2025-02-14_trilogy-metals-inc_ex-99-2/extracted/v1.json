@@ -161,7 +161,8 @@
    "basis_unit": "total",
    "multiplier": "M",
    "l1": "process",
-   "l2": "general"
+   "l2": "general",
+   "review_note": "Process capital of 28.6 is low for a 10 kt/d SAG/ball plant; check whether the PEA assumes a plant shared with Arctic."
   },
   {
    "cost_type": "initial_capex",

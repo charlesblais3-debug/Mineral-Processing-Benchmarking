@@ -1,0 +1,372 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Stibnite",
+  "title": "Stibnite Gold Project S-K 1300 Technical Report Summary, Valley County, Idaho, USA",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: 31 December 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Sb",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Idaho",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "pox",
+   "cip",
+   "cyanide_detox",
+   "elution_ew"
+  ],
+  "page": 35,
+  "quote": "The process operations include crushing, grinding, antimony and gold flotation, pressure oxidation, POX leaching and carbon-in-pulp (CIP) recovery, cyanide detoxification, carbon handling and pressure stripping, precious metal electrowinning"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 22046,
+   "unit": "st/d",
+   "quote": "The processing facility is designed to treat an average of 22,046 st/d (20,000 Mt/d).",
+   "page": 35,
+   "statistic": "design",
+   "context": {
+    "note": "short tons; 20,000 t/d metric"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.44,
+   "unit": "g/t",
+   "quote": "Contained Au Grade Mined g/t 1.44 0.54 1.96 1.55 1.03",
+   "page": 34,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "total ore milled column"
+   }
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 2.43,
+   "unit": "t:t",
+   "quote": "Open Pit Strip Ratio waste:ore 2.43",
+   "page": 34,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3250,
+   "unit": "USD/oz",
+   "quote": "Case A $3,250 $40.00 $10.00",
+   "page": 41,
+   "metal": "Au",
+   "context": {
+    "note": "Case A base case"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 40.0,
+   "unit": "USD/oz",
+   "quote": "Case A $3,250 $40.00 $10.00",
+   "page": 41,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 3457,
+   "unit": "MUSD",
+   "quote": "After-Tax Net Present Value 5% 3 $3,457 million",
+   "page": 22,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 23.5,
+   "unit": "%",
+   "quote": "Internal Rate of Return (After-tax) 23.5%",
+   "page": 22
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.4,
+   "unit": "years",
+   "quote": "Payback Period in Years (After-tax) 2.4 years",
+   "page": 22
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 581,
+   "unit": "USD/oz",
+   "quote": "Cash Costs After By-Product Credits 14.36 250 21.25 581",
+   "page": 46,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 833,
+   "unit": "USD/oz",
+   "quote": "All-In Sustaining Costs 28.54 498 30.42 833",
+   "page": 46,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 183.6,
+   "quote": "Mining 183.6 211.4 - 395.0",
+   "page": 45,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 740.6,
+   "quote": "Process Plant 740.6 93.4 - 834.0",
+   "page": 45,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Additional Process Facilities",
+   "value": 73.1,
+   "quote": "Additional Process Facilities 73.1 - - 73.1",
+   "page": 45,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 336.3,
+   "quote": "On-Site Infrastructure 336.3 305.1 - 641.4",
+   "page": 45,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 395.5,
+   "quote": "Off-Site Infrastructure 395.5 0.4 - 395.9",
+   "page": 45,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Indirects",
+   "value": 180.3,
+   "quote": "Project Indirects 180.3 - - 180.3",
+   "page": 45,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Delivery",
+   "value": 233.5,
+   "quote": "Project Delivery 233.5 - - 233.5",
+   "page": 45,
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Owner Team Costs",
+   "value": 231.7,
+   "quote": "Project Owner Team Costs 231.7 112.3 118.1 462.1",
+   "page": 45,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Taxes",
+   "value": 9.2,
+   "quote": "Taxes 9.2 - - 9.2",
+   "page": 45,
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 191.9,
+   "quote": "Contingency 191.9 44.3 - 236.2",
+   "page": 45,
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 2575.8,
+   "quote": "Subtotal 2,575.8 766.9 118.1 3,460.7",
+   "page": 45,
+   "is_total": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Revenue",
+   "value": -52.1,
+   "quote": "Pre-Production Revenue 1 -52.1 - - -52.1",
+   "page": 45,
+   "outside_total": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Adjusted Total",
+   "value": 2523.7,
+   "quote": "Adjusted Total $M 2,523.7 766.9 118.1 3,408.7",
+   "page": 45,
+   "outside_total": true,
+   "review_note": "initial capital net of pre-production revenue; the gross initial capital is the Subtotal line"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining (sustaining)",
+   "value": 211.4,
+   "quote": "Mining 183.6 211.4 - 395.0",
+   "page": 45,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant (sustaining)",
+   "value": 93.4,
+   "quote": "Process Plant 740.6 93.4 - 834.0",
+   "page": 45,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "On-Site Infrastructure (sustaining)",
+   "value": 305.1,
+   "quote": "On-Site Infrastructure 336.3 305.1 - 641.4",
+   "page": 45,
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Off-Site Infrastructure (sustaining)",
+   "value": 0.4,
+   "quote": "Off-Site Infrastructure 395.5 0.4 - 395.9",
+   "page": 45,
+   "l1": "offsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Project Owner Team Costs (sustaining)",
+   "value": 112.3,
+   "quote": "Project Owner Team Costs 231.7 112.3 118.1 462.1",
+   "page": 45,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency (sustaining)",
+   "value": 44.3,
+   "quote": "Contingency 191.9 44.3 - 236.2",
+   "page": 45,
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining total",
+   "value": 766.9,
+   "quote": "Subtotal 2,575.8 766.9 118.1 3,460.7",
+   "page": 45,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Project Owner Team Costs (closure)",
+   "value": 118.1,
+   "quote": "Project Owner Team Costs 231.7 112.3 118.1 462.1",
+   "page": 45,
+   "is_total": true,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 10.78,
+   "quote": "Mining 14.13 248 10.78 295",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 14.0,
+   "quote": "Processing 14.15 249 14.00 383",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.55,
+   "quote": "G&A 4.55 77 4.55 125",
+   "page": 46,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Cash Costs Before By-Product Credits",
+   "value": 29.32,
+   "quote": "Cash Costs Before By-Product Credits 32.83 574 29.32 803",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 2.36,
+   "quote": "Royalties 3.24 56 2.36 65",
+   "page": 46,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining and Transportation",
+   "value": 0.15,
+   "quote": "Refining and Transportation 0.27 5 0.15 4",
+   "page": 46,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

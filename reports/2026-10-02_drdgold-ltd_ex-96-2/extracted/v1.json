@@ -11,7 +11,7 @@
   "by_products": [],
   "country": "South Africa",
   "region": "Gauteng (East Rand)",
-  "mine_type": "open_pit",
+  "mine_type": "tailings_retreatment",
   "project_status": "operating",
   "currency": "ZAR",
   "cost_base_year": 2025,
@@ -139,7 +139,7 @@
    "quote": "Total (excluding VAT) *5,956,529",
    "page": 41,
    "is_total": true,
-   "review_note": "Tailings retreatment mapped as open_pit (no tailings_retreatment type). Budgeted LoM capital incl. contingency; includes 1,645,602 'maintenance over LoM' in Ergo Section, so mixes sustaining and growth.",
+   "review_note": "Budgeted LoM capital incl. contingency; includes 1,645,602 'maintenance over LoM' in Ergo Section, so mixes sustaining and growth.",
    "currency": "ZAR",
    "basis_unit": "total",
    "multiplier": "k"

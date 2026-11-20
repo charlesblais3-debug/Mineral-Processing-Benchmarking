@@ -1,0 +1,444 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Séguéla",
+  "title": "Séguéla Gold Mine, Côte d’Ivoire Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Technical Report, Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Côte d’Ivoire",
+  "region": "Worodougou",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill"
+  ],
+  "quote": "single stage primary crush/SAG milling comminution circuit where ore is drawn from the ROM bin via an apron feeder, scalped via a vibrating grizzly with the undersize reporting directly to the discharge conveyor and the oversize reporting to a primary jaw crusher",
+  "page": 171
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.75,
+   "unit": "Mt/a",
+   "quote": "increase capacity from the current 1.75 Mtpa",
+   "page": 28,
+   "statistic": "single",
+   "context": {
+    "phase": "current (2025)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.5,
+   "unit": "%",
+   "quote": "The forecast gold recovery rate is 93.5% for the LOMP",
+   "page": 172,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Cyclone Overflow Size, P80 µm 75",
+   "page": 129,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2300,
+   "unit": "USD/oz",
+   "quote": "gold price of US$2,300/oz",
+   "page": 23,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine development",
+   "value": 11.1,
+   "quote": "Mine development $M 2.4 2.2 2.8 1.8 1.3 0.5 0.1 - - - 11.1",
+   "page": 157,
+   "l1": "mining",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized stripping",
+   "value": 148.6,
+   "quote": "Capitalized stripping $M 31.0 29.0 16.0 16.5 34.5 10.7 7.8 3.1 - - 148.6",
+   "page": 157,
+   "l1": "mining",
+   "l2": "pre_production",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Brownfields Exploration",
+   "value": 44.0,
+   "quote": "Brownfields Exploration $M 14.0 10.0 10.0 10.0 - - - - - - 44.0",
+   "page": 157,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment and Infrastructure",
+   "value": 88.3,
+   "quote": "Equipment and Infrastructure $M 14.8 12.0 11.8 13.0 12.0 9.8 4.6 4.6 4.6 1.1 88.3",
+   "page": 157,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine OP",
+   "value": 5.8,
+   "quote": "Mine OP $M 2.7 1.1 0.5 0.9 0.5 0.1 - - - - 5.8",
+   "page": 157,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "mining",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine UG",
+   "value": 37.7,
+   "quote": "Mine UG $M 6.2 7.3 6.2 6.0 6.9 5.1 - - - - 37.7",
+   "page": 157,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "mining",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant",
+   "value": 38.3,
+   "quote": "Plant $M 3.0 3.2 4.7 5.7 4.2 4.2 4.2 4.2 4.2 0.7 38.3",
+   "page": 157,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Permits, IT, sec., env.",
+   "value": 2.5,
+   "quote": "Permits, IT, sec., env. $M 2.5 - - - - - - - - - 2.5",
+   "page": 157,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Manag. Fees - capex",
+   "value": 4.0,
+   "quote": "Manag. Fees - capex $M 0.4 0.4 0.4 0.4 0.4 0.4 0.4 0.4 0.4 0.4 4.0",
+   "page": 157,
+   "part_of": "Equipment and Infrastructure",
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital",
+   "value": 292.0,
+   "quote": "Total $M 62.2 53.2 40.6 41.3 47.8 21.0 12.5 7.7 4.6 1.1 292.0",
+   "page": 157,
+   "is_total": true,
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Non-sustaining capital 2026 (underground development and infrastructure)",
+   "value": 15.8,
+   "quote": "An additional $15.8 million of non-sustaining capital",
+   "page": 157,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Non-sustaining capital 2027 (underground development and infrastructure)",
+   "value": 36.1,
+   "quote": "$36.1 million in 2027",
+   "page": 157,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total mine rehabilitation and closure costs (open pits)",
+   "value": 15.1,
+   "quote": "Total mine rehabilitation and closure costs 15.1",
+   "page": 156,
+   "is_total": true,
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining OP",
+   "value": 63.29,
+   "quote": "Mining OP US$/t mineralized material mined 63.29",
+   "page": 157,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining UG",
+   "value": 84.56,
+   "quote": "Mining UG US$/t mineralized material mined 84.56",
+   "page": 157,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 21.28,
+   "quote": "Processing US$/t processed mineralized material 21.28",
+   "page": 157,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administrative",
+   "value": 16.04,
+   "quote": "General and Administrative US$/t processed mineralized material 16.04",
+   "page": 157,
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total (open pit operations)",
+   "value": 100.61,
+   "quote": "averaging $100.61/t processed for open pit operations",
+   "page": 157,
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Open pit total per t processed = mining 63.29 (per t mined) + processing 21.28 + G&A 16.04; mining line is on per_t_mined basis so no sum check.",
+   "currency": "USD",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Crushing",
+   "value": 0.68,
+   "quote": "Crushing 0.68",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Milling & classification",
+   "value": 4.17,
+   "quote": "Milling & classification 4.17",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Pre-leach feed",
+   "value": 0.03,
+   "quote": "Pre-leach feed 0.03",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Leaching and adsorption",
+   "value": 1.42,
+   "quote": "Leaching and adsorption 1.42",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Tailings",
+   "value": 0.16,
+   "quote": "Tailings 0.16",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Air & water services",
+   "value": 0.19,
+   "quote": "Air & water services 0.19",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Medium/heavy vehicles",
+   "value": 0.23,
+   "quote": "Medium/heavy vehicles 0.23",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Equipment & light vehicles",
+   "value": 0.07,
+   "quote": "Equipment & light vehicles 0.07",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Power supply",
+   "value": 5.75,
+   "quote": "Power supply 5.75",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Laboratory processing",
+   "value": 0.37,
+   "quote": "Laboratory processing 0.37",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Metallurgy",
+   "value": 0.05,
+   "quote": "Metallurgy 0.05",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Maintenance",
+   "value": 0.14,
+   "quote": "Maintenance 0.14",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Infrastructure",
+   "value": 0.04,
+   "quote": "Infrastructure 0.04",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Overheads",
+   "value": 7.22,
+   "quote": "Overheads 7.22",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - Metal Recovery & Refining",
+   "value": 0.78,
+   "quote": "Metal Recovery & Refining 0.78",
+   "page": 161,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Processing",
+   "l1": "processing"
+  }
+ ]
+}
