@@ -1,0 +1,212 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Tshepong South (Phakisa)",
+  "title": "Technical Report Summary of the Mineral Resources and Mineral Reserves for Tshepong South, Free State Province, South Africa",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2026-06-30",
+  "effective_date_quote": "Effective Date: 30 June 2026",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "South Africa",
+  "region": "Free State",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "ZAR",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cip"
+  ],
+  "quote": "The metallurgical process is a well-tested CIP technology which has been in operation at the Harmony One",
+  "page": 72
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 95.32,
+   "unit": "%",
+   "quote": "Gold Recovery % 95.32",
+   "page": 90,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2915,
+   "unit": "USD/oz",
+   "quote": "long-term outlook of US$2,915/oz",
+   "page": 81,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 17.6,
+   "unit": "ZAR/USD",
+   "quote": "Exchange Rate USD:ZAR 17.60",
+   "page": 90,
+   "context": {
+    "pair": "ZAR/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 566.271,
+   "unit": "MZAR",
+   "quote": "approximately ZAR566.271 million cash positive",
+   "page": 90,
+   "currency": "ZAR",
+   "context": {
+    "discount_rate_pct": 9
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "OCD",
+   "value": 1050616,
+   "quote": "OCD 1,050,616",
+   "page": 88,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "AE",
+   "value": 138641,
+   "quote": "AE 138,641",
+   "page": 88,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Shaft Projects",
+   "value": 129312,
+   "quote": "Shaft Projects 129,312",
+   "page": 88,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Major Projects",
+   "value": 16973,
+   "quote": "Major Projects 16,973",
+   "page": 88,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "MCC",
+   "value": 37462,
+   "quote": "MCC 37,462",
+   "page": 88,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total capital",
+   "value": 1373004,
+   "quote": "Total 1,373,004",
+   "page": 88,
+   "is_total": true,
+   "review_note": "Operating mine capital, Reserve plan FY2027-FY2031; report does not split sustaining vs growth.",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 5352295,
+   "quote": "Mining 5,352,295",
+   "page": 88,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Services",
+   "value": 1346927,
+   "quote": "Services 1,346,927",
+   "page": 88,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Medical Hub / Station",
+   "value": 323387,
+   "quote": "Medical Hub / Station 323,387",
+   "page": 88,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Engineering",
+   "value": 5320034,
+   "quote": "Engineering 5,320,034",
+   "page": 88,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Costs",
+   "value": 12342643,
+   "quote": "Total Direct Costs 12,342,643",
+   "page": 88,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Overheads",
+   "value": 698980,
+   "quote": "Mine Overheads 698,980",
+   "page": 88,
+   "l1": "ga",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cost",
+   "value": 13041624,
+   "quote": "Total Cost 13,041,624",
+   "page": 88,
+   "is_total": true,
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  }
+ ]
+}

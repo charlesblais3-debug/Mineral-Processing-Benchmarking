@@ -1,0 +1,259 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Motheo",
+  "title": "Motheo Copper Project Expansion DFS (ASX release)",
+  "standard": "JORC",
+  "study_level": "FS",
+  "effective_date": "2022-08-30",
+  "effective_date_quote": "30 August 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Botswana",
+  "region": "Kalahari Copper Belt",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill"
+  ],
+  "quote": "delivery to site of the 4.5MW Ball Mill has also commenced",
+  "page": 3
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 5.2,
+   "unit": "Mt/a",
+   "quote": "Positive Definitive Feasibility Study (DFS) completed for the 5.2Mtpa Motheo Copper Project",
+   "page": 1,
+   "statistic": "design",
+   "context": {
+    "phase": "expansion case (3.2 Mtpa plant under construction)"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 10.0,
+   "unit": "years",
+   "quote": "Life of Mine (processing) Years 10.0 10.5",
+   "page": 4
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.94,
+   "unit": "%",
+   "quote": "Cu grade % 0.94 0.96",
+   "page": 4,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 13.1,
+   "unit": "g/t",
+   "quote": "Ag grade g/t 13.1 13.4",
+   "page": 4,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.9,
+   "unit": "%",
+   "quote": "Cu recovery % 92.9 92.3",
+   "page": 4,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.4,
+   "unit": "%",
+   "quote": "Ag recovery % 86.4 88.2",
+   "page": 4,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 6.2,
+   "unit": "t:t",
+   "quote": "Waste : Ore (inc. pre-strip) 6.2 6.5",
+   "page": 4
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.57,
+   "unit": "USD/lb",
+   "quote": "Cu price (LOM average)1 US$/lb 3.57 3.49",
+   "page": 4,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20.0,
+   "unit": "USD/oz",
+   "quote": "Ag price (LOM average) US$/oz 20.00 21.51",
+   "page": 4,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 339,
+   "unit": "MUSD",
+   "quote": "NPV (post-tax, real, 7.0%) US$'M 339 417",
+   "page": 4,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.47,
+   "unit": "USD/lb",
+   "quote": "C1: LOM US$/lb 1.47 1.32",
+   "page": 4,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "C1 per lb payable Cu, after silver by-product credit"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1.79,
+   "unit": "USD/lb",
+   "quote": "AISC: LOM US$/lb 1.79 1.56",
+   "page": 4,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "3.2Mtpa PFS estimate - September 2021",
+   "value": 296.0,
+   "quote": "3.2Mtpa PFS estimate – September 2021 296.0",
+   "page": 4,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "3.2Mtpa cost inflation",
+   "value": 29.5,
+   "quote": "3.2Mtpa cost inflation 29.5",
+   "page": 4,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "A4 development and plant expansion to 5.2Mtpa",
+   "value": 71.9,
+   "quote": "A4 development and plant expansion to 5.2Mtpa (inclusive of pre-approved US$24m) 71.9",
+   "page": 4,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD",
+   "review_note": "Includes A4 open pit development and expansion of the plant from 3.2 to 5.2 Mtpa; the 3.2 Mtpa plant is under construction (not yet operating)."
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital",
+   "value": 397.4,
+   "quote": "Total Capital 397.4",
+   "page": 4,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining costs",
+   "value": 0.84,
+   "quote": "US$0.84/lb mining costs",
+   "page": 3,
+   "l1": "mining",
+   "review_note": "US$ per lb payable Cu (LOM average)",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost (incl. power and site administration)",
+   "value": 0.56,
+   "quote": "US$0.56/lb processing cost inclusive of power, site administration",
+   "page": 3,
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "US$ per lb payable Cu (LOM average)",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Offsite logistics",
+   "value": 0.23,
+   "quote": "offsite logistics costs of US$0.23/lb",
+   "page": 3,
+   "l1": "offsite",
+   "l2": "transport",
+   "review_note": "US$ per lb payable Cu (LOM average)",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment and refining charges",
+   "value": 0.19,
+   "quote": "US$0.19/lb treatment and refining charges",
+   "page": 3,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "review_note": "US$ per lb payable Cu (LOM average)",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Silver by-product credit",
+   "value": -0.35,
+   "quote": "a silver by-product credit of US$0.35/lb copper",
+   "page": 3,
+   "l1": "other",
+   "l2": "unallocated",
+   "review_note": "US$ per lb payable Cu (LOM average)",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "C1 operating cash cost",
+   "value": 1.47,
+   "quote": "is estimated to be approximately US$1.47/lb of copper",
+   "page": 3,
+   "is_total": true,
+   "review_note": "US$ per lb payable Cu (LOM average); includes offsite logistics, TC/RC and silver credit",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  }
+ ]
+}

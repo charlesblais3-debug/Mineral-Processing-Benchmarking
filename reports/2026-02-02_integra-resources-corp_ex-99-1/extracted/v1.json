@@ -1,0 +1,291 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "DeLamar",
+  "title": "Feasibility Study and Technical Report on the DeLamar Project, Owyhee County, Idaho, USA",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2025-12-08",
+  "effective_date_quote": "Effective Date: December 8, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Idaho",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "effective_date_page": 3
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "merrill_crowe"
+  ],
+  "quote": "then transitioning to the DeLamar heap leach pad in year four. The pregnant solution will be processed by an on-site Merrill Crowe plant.",
+  "page": 31
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 35000,
+   "unit": "t/d",
+   "quote": "Material will be crushed in two stages to a nominal size of 80% finer than (P 80 ) 19-millimeter at a rate of 35,000 tonnes per day.",
+   "page": 25,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 72.3,
+   "unit": "%",
+   "quote": "LOM average heap leach gold recovery of 72.3%",
+   "page": 29,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 33.2,
+   "unit": "%",
+   "quote": "average LOM heap leach silver recovery of 33.2%",
+   "page": 29,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 0.54,
+   "unit": "t:t",
+   "quote": "A life-of mine strip ratio of 0.54:1.",
+   "page": 31,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3000,
+   "unit": "USD/oz",
+   "quote": "Gold Price ($/oz) $3,000",
+   "page": 29,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 35,
+   "unit": "USD/oz",
+   "quote": "Silver Price ($/oz) $35",
+   "page": 29,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 773.7,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV5% ($M) $773.7",
+   "page": 29,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 46.0,
+   "unit": "%",
+   "quote": "After-Tax IRR (%) 46.0%",
+   "page": 29
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.8,
+   "unit": "years",
+   "quote": "Payback Period (years) 1.8",
+   "page": 29
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 772,
+   "unit": "USD/oz",
+   "quote": "Total Cash Costs Net of Silver By-Product $772",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1142,
+   "unit": "USD/oz",
+   "quote": "Site Level All-in Sustaining Costs $1,142",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 27.8,
+   "quote": "Mining 1,2 $27.8 $145.1 - $172.9",
+   "page": 27,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing",
+   "value": 276.5,
+   "quote": "Processing $276.5 $136.1 - $412.6",
+   "page": 27,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "G&A",
+   "value": 5.1,
+   "quote": "G&A $5.1 $0.0 - $5.1",
+   "page": 27,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capex Sub-Total",
+   "value": 309.4,
+   "quote": "Capex Sub-Total $309.4 $281.2 - $590.6",
+   "page": 27,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 37.6,
+   "quote": "Contingency 3 $37.6 $23.7 - $61.3",
+   "page": 27,
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Costs",
+   "value": 347.0,
+   "quote": "Total Capital Costs $347.0 $304.9 - $651.9",
+   "page": 27,
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners' Costs",
+   "value": 38.2,
+   "quote": "Owners' Costs $38.2 - - $38.2",
+   "page": 27,
+   "l1": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Cash Collateral (bonding)",
+   "value": 3.9,
+   "quote": "Cash Collateral (bonding) $3.9 - ($3.9) $0.0",
+   "page": 27,
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TOTAL CAPITAL (pre-production)",
+   "value": 389.1,
+   "quote": "TOTAL CAPITAL $389.1 $304.9 $53.5 $747.5",
+   "page": 27,
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining (sustaining)",
+   "value": 145.1,
+   "quote": "Mining 1,2 $27.8 $145.1 - $172.9",
+   "page": 27,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing (sustaining)",
+   "value": 136.1,
+   "quote": "Processing $276.5 $136.1 - $412.6",
+   "page": 27,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency (sustaining)",
+   "value": 23.7,
+   "quote": "Contingency 3 $37.6 $23.7 - $61.3",
+   "page": 27,
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital Costs",
+   "value": 304.9,
+   "quote": "Total Capital Costs $347.0 $304.9 - $651.9",
+   "page": 27,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation, Site",
+   "value": 65.5,
+   "quote": "Reclamation, Site 4 - - $65.5 $65.5",
+   "page": 27,
+   "is_total": true,
+   "review_note": "includes $26.4M ongoing water treatment liability; residual value (8.1) and bonding collateral return (3.9) not netted"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3.95,
+   "quote": "Mining $2.55 $3.95",
+   "page": 27,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 5.02,
+   "quote": "Processing - $5.02",
+   "page": 27,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.54,
+   "quote": "G&A - $1.54",
+   "page": 27,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Costs",
+   "value": 10.52,
+   "quote": "Total Site Costs $10.52 4",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per t mined)",
+   "value": 2.55,
+   "quote": "Mining $2.55 $3.95",
+   "page": 27,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  }
+ ]
+}

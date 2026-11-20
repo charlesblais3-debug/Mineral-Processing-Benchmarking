@@ -1,0 +1,531 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kutcho",
+  "title": "Kutcho Copper Project Feasibility Study, British Columbia, Canada, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2021-11-08",
+  "effective_date_quote": "Effective Date: 8 November 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Ag",
+   "Au"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "vertical_mill"
+  ],
+  "quote": "Primary Grinding Mill type - SAG Mill Design Mills # 1 Design Feed solids %w/w 72 Design Circulating load % 100 Design Feed size, P80 mm 50 Bruno simulation Product size, P80 µm 600 Vendor simulation Secondary Grinding Mill type Ball Mill Design Mills # 1 Design Feed solids %w/w 70 Design Circulating load % 300 Design Feed size, P80 µm 600 Vendor simulation Product size, P80 µm 55 Design Recirculation load % 300 Design Classification type - Cyclones Design Flotation Circuit Rougher scale-up factor - 3.0 Design Cleaner scale-up factor - 2.5 Design Copper Rougher Circuit Flotation time min 30 Test work Slurry pH - 6.0 Test work Mass recovery % 7.48 Test work Copper Regrind Circuit Mill type - Vertical Mill",
+  "page": 286
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4500,
+   "unit": "t/d",
+   "quote": "The crusher will process ore at a rate of 4,500 tpd",
+   "page": 33,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.58,
+   "unit": "%",
+   "quote": "average head grades of 1.58% Cu",
+   "page": 33,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "crusher feed, before ore sorting"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.31,
+   "unit": "%",
+   "quote": "2.31% Zn",
+   "page": 33,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "note": "crusher feed, before ore sorting"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87.2,
+   "unit": "%",
+   "quote": "Recovery (to crusher head): to copper concentrate % Cu 87.2",
+   "page": 285,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "copper concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 71.5,
+   "unit": "%",
+   "quote": "Recovery (to crusher head): to zinc concentrate % Zn 71.5",
+   "page": 285,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "zinc concentrate"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 55,
+   "unit": "um",
+   "quote": "The two-stage grinding circuit will target a product size of 80% passing (P80) 55 µm",
+   "page": 33,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 15,
+   "unit": "um",
+   "quote": "Copper Regrind Circuit Mill type - Vertical Mill Design Product size, P80 µm 15",
+   "page": 286,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.1,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill BWi, (Average at P80 55 µm) kWh/t 14.1",
+   "page": 286,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 55
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 9.5,
+   "unit": "kWh/t",
+   "quote": "Bond Rod Mill, RWi kWh/t 9.5",
+   "page": 286,
+   "context": {
+    "test": "Bond rod mill work index"
+   }
+  },
+  {
+   "parameter": "cwi",
+   "value": 15.5,
+   "unit": "kWh/t",
+   "quote": "Crushing Work Index, CWi kWh/t 15.5",
+   "page": 286
+  },
+  {
+   "parameter": "ai",
+   "value": 0.2,
+   "unit": "g",
+   "quote": "Abrasion Index, Ai g 0.20",
+   "page": 286
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Grinding and flotation plant availability % 92",
+   "page": 285,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.5,
+   "unit": "USD/lb",
+   "quote": "Copper price US$3.50/lb (US$7,716/t)",
+   "page": 39,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.15,
+   "unit": "USD/lb",
+   "quote": "Zinc price US$1.15/lb (US$2,525/t)",
+   "page": 39,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.76,
+   "unit": "USD/CAD",
+   "quote": "Exchange rate 0.76:1 (USD:CAD)",
+   "page": 39,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 461,
+   "unit": "MCAD",
+   "quote": "NPV – 7% discount (1) C$M 737 461",
+   "page": 40,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 24.8,
+   "unit": "%",
+   "quote": "IRR % 31.3% 24.8%",
+   "page": 40
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.4,
+   "unit": "years",
+   "quote": "Payback period production years 3.2 3.4",
+   "page": 40
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.11,
+   "unit": "USD/lb",
+   "quote": "The Project has cash costs of US$1.11/lb of CuEq",
+   "page": 40,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "per lb CuEq (copper equivalent, incl. Zn, Ag, Au)"
+   },
+   "review_note": "Expressed per lb of copper equivalent, not per lb Cu."
+  },
+  {
+   "parameter": "aisc",
+   "value": 1.8,
+   "unit": "USD/lb",
+   "quote": "all-in sustaining cost of US$1.80/lb of CuEq",
+   "page": 40,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "per lb CuEq (copper equivalent)"
+   },
+   "review_note": "Expressed per lb of copper equivalent, not per lb Cu."
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining costs",
+   "value": 132.9,
+   "quote": "Mining costs C$M 132.9 44.8 0.0 177.7",
+   "page": 38,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant",
+   "value": 106.0,
+   "quote": "Process plant C$M 106.0 15.1 0.0 121.2",
+   "page": 38,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-site infrastructure",
+   "value": 54.2,
+   "quote": "On-site infrastructure C$M 54.2 15.8 0.0 70.1",
+   "page": 38,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-site infrastructure",
+   "value": 31.7,
+   "quote": "Off-site infrastructure C$M 31.7 0.0 0.0 31.7",
+   "page": 38,
+   "l1": "offsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM and indirect costs",
+   "value": 75.3,
+   "quote": "EPCM and indirect costs C$M 75.3 0.0 0.0 75.3",
+   "page": 38,
+   "l1": "indirects",
+   "l2": "epcm",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner’s costs (including working capital)",
+   "value": 35.9,
+   "quote": "Owner’s costs (including working capital) C$M 35.9 5.6 0.0 41.5",
+   "page": 38,
+   "l1": "owners",
+   "l2": "owners",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total capex without contingency",
+   "value": 436.1,
+   "quote": "Total capex without contingency C$M 436.1 81.3 0.0 517.5",
+   "page": 38,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 46.7,
+   "quote": "Contingency (3) C$M 46.7 8.2 0.0 54.9",
+   "page": 38,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine closure bond",
+   "value": 10.0,
+   "quote": "Mine closure bond C$M 10.0 9.3 -19.3 0.0",
+   "page": 38,
+   "l1": "other",
+   "l2": "unallocated",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total capex with rehabilitation",
+   "value": 492.8,
+   "quote": "Total capex with rehabilitation C$M 492.8 109.0 -13.0 588.9",
+   "page": 38,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining costs",
+   "value": 44.8,
+   "quote": "Mining costs C$M 132.9 44.8 0.0 177.7",
+   "page": 38,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process plant",
+   "value": 15.1,
+   "quote": "Process plant C$M 106.0 15.1 0.0 121.2",
+   "page": 38,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "On-site infrastructure",
+   "value": 15.8,
+   "quote": "On-site infrastructure C$M 54.2 15.8 0.0 70.1",
+   "page": 38,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owner’s costs",
+   "value": 5.6,
+   "quote": "Owner’s costs (including working capital) C$M 35.9 5.6 0.0 41.5",
+   "page": 38,
+   "l1": "owners",
+   "l2": "owners",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total capex without contingency",
+   "value": 81.3,
+   "quote": "Total capex without contingency C$M 436.1 81.3 0.0 517.5",
+   "page": 38,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 8.2,
+   "quote": "Contingency (3) C$M 46.7 8.2 0.0 54.9",
+   "page": 38,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine closure bond",
+   "value": 9.3,
+   "quote": "Mine closure bond C$M 10.0 9.3 -19.3 0.0",
+   "page": 38,
+   "l1": "other",
+   "l2": "unallocated",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure and rehabilitation (progressive)",
+   "value": 10.2,
+   "quote": "Closure and rehabilitation (4) C$M 0.0 10.2 24.3 34.5",
+   "page": 38,
+   "l1": "other",
+   "l2": "unallocated",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total capex with rehabilitation (sustaining)",
+   "value": 109.0,
+   "quote": "Total capex with rehabilitation C$M 492.8 109.0 -13.0 588.9",
+   "page": 38,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Salvage",
+   "value": -18.0,
+   "quote": "Salvage C$M 0.0 0.0 -18.0 -18.0",
+   "page": 38,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure bond",
+   "value": -19.3,
+   "quote": "Mine closure bond C$M 10.0 9.3 -19.3 0.0",
+   "page": 38,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and rehabilitation",
+   "value": 24.3,
+   "quote": "Closure and rehabilitation (4) C$M 0.0 10.2 24.3 34.5",
+   "page": 38,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total closure column",
+   "value": -13.0,
+   "quote": "Total capex with rehabilitation C$M 492.8 109.0 -13.0 588.9",
+   "page": 38,
+   "is_total": true,
+   "review_note": "Closure column nets salvage (-18.0) and release of closure bond (-19.3) against rehabilitation cost (24.3).",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant processing cost",
+   "value": 28.21,
+   "quote": "Plant processing cost C$/t ore crushed 28.06 28.48 27.53 28.21",
+   "page": 39,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administration",
+   "value": 8.79,
+   "quote": "General and administration C$/t ore crushed 10.01 9.36 6.69 8.79",
+   "page": 39,
+   "l1": "ga",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total (LOM years 1-11)",
+   "value": 65.89,
+   "quote": "Total C$/t ore crushed 79.24 70.51 47.67 65.89",
+   "page": 39,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Total includes open pit mining (C$24.75/t OP ore mined) and underground mining (C$55.38/t UG ore mined), quoted per tonne of ore mined by each method, not extracted as lines.",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

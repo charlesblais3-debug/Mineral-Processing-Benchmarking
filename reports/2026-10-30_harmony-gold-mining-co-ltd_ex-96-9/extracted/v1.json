@@ -1,0 +1,237 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Doornkop",
+  "title": "Technical Report Summary of the Mineral Resources and Mineral Reserves for Doornkop Mine, Gauteng Province, South Africa",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2026-06-30",
+  "effective_date_quote": "Effective Date: 30 June 2026",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "South Africa",
+  "region": "Gauteng",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "ZAR",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cip"
+  ],
+  "quote": "The CIP circuit makes use of gravity flow of slime between",
+  "page": 63
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 96.65,
+   "unit": "%",
+   "quote": "Gold Recovery % 96.65",
+   "page": 81,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2915,
+   "unit": "USD/oz",
+   "quote": "gold price of US$2,915/oz gold",
+   "page": 22,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 17.6,
+   "unit": "ZAR/USD",
+   "quote": "FX rate ZAR:USD 17.60",
+   "page": 52,
+   "context": {
+    "pair": "ZAR/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 3793,
+   "unit": "MZAR",
+   "quote": "approximately R3,793 million",
+   "page": 82,
+   "currency": "ZAR",
+   "context": {
+    "discount_rate_pct": 9
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 56,
+   "unit": "%",
+   "quote": "The IRR calculated is 56%",
+   "page": 82
+  },
+  {
+   "parameter": "payback_years",
+   "value": 5,
+   "unit": "years",
+   "quote": "the payback period for the LOM Extension Project is 5 years",
+   "page": 82
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "OCD",
+   "value": 4114164,
+   "quote": "OCD 4,114,164",
+   "page": 79,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "AE",
+   "value": 516580,
+   "quote": "AE 516,580",
+   "page": 79,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Shaft Capital",
+   "value": 577099,
+   "quote": "Shaft Capital 577,099",
+   "page": 79,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Major Capital",
+   "value": 1401258,
+   "quote": "Major Capital 1,401,258",
+   "page": 79,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total capital",
+   "value": 6609101,
+   "quote": "Total capital 6,609,101",
+   "page": 79,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "MCC",
+   "value": 289135,
+   "quote": "MCC 289,135",
+   "page": 79,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total capital incl. MCC",
+   "value": 6898235,
+   "quote": "Total 6,898,235",
+   "page": 79,
+   "is_total": true,
+   "review_note": "Operating mine capital (Reserve plan FY2027-FY2041); report does not split sustaining vs growth. OCD/AE/MCC definitions per report.",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 19382323,
+   "quote": "Mining 19,382,323",
+   "page": 79,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Services",
+   "value": 7456503,
+   "quote": "Services 7,456,503",
+   "page": 79,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Medical Hub / Station",
+   "value": 1008695,
+   "quote": "Medical Hub / Station 1,008,695",
+   "page": 79,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Engineering",
+   "value": 18605026,
+   "quote": "Engineering 18,605,026",
+   "page": 79,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Costs By Process",
+   "value": 46452546,
+   "quote": "Total Costs By Process 46,452,546",
+   "page": 79,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Overheads",
+   "value": 2736714,
+   "quote": "Mine Overheads 2,736,714",
+   "page": 79,
+   "l1": "ga",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cost",
+   "value": 49189260,
+   "quote": "Total Cost 49,189,260",
+   "page": 79,
+   "is_total": true,
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  }
+ ]
+}

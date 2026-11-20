@@ -1,0 +1,370 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Far West Gold Recoveries",
+  "title": "Technical Report Summary Far West Gold Recoveries (Proprietary) Limited",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2026-06-30",
+  "effective_date_quote": "Effective date: June 30, 2026",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "South Africa",
+  "region": "Gauteng / North West (West Rand)",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "ZAR",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cil"
+  ],
+  "quote": "The Phase 1 work on the plant included a refurbishment of the conventional CIL plant",
+  "page": 22
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.3,
+   "unit": "g/t",
+   "quote": "Total Mineral Reserve Estimate 190,507 1.42 270.52 0.30 80.47 2,587",
+   "page": 5,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 14.4,
+   "unit": "Mt/a",
+   "quote": "expansion of DP2 to a throughput of 1.2Mtpm",
+   "page": 7,
+   "statistic": "design",
+   "derived": true,
+   "context": {
+    "phase": "Phase 2",
+    "derived_note": "1.2 Mt per month x 12 months"
+   }
+  },
+  {
+   "parameter": "leach_residence_h",
+   "value": 12,
+   "unit": "h",
+   "quote": "combining to approximately twelve hours residence time",
+   "page": 22,
+   "statistic": "design",
+   "derived": true,
+   "context": {
+    "derived_note": "stated as the word 'twelve'"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4114,
+   "unit": "USD/oz",
+   "quote": "Price per Troy Ounce USD/oz 4,114",
+   "page": 6,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 16.3,
+   "unit": "ZAR/USD",
+   "quote": "Exchange Rate ZAR/USD 16.30",
+   "page": 6,
+   "context": {
+    "pair": "ZAR/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 15970,
+   "unit": "MZAR",
+   "quote": "Net Present Value (NPV) of ZAR15.97 billion",
+   "page": 7,
+   "currency": "ZAR",
+   "derived": true,
+   "context": {
+    "discount_rate_pct": 10.9,
+    "derived_note": "ZAR15.97 billion = 15,970 million"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "DP2 Expansion Equipment and Infrastructure",
+   "value": 109,
+   "quote": "DP2 Expansion Equipment and Infrastructure 109",
+   "page": 29,
+   "l1": "process",
+   "l2": "general",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Up Flow Reactor",
+   "value": 792,
+   "quote": "Up Flow Reactor 792",
+   "page": 29,
+   "l1": "process",
+   "l2": "recovery",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "RTSF Construction",
+   "value": 985,
+   "quote": "RTSF Construction* 985",
+   "page": 29,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pumping and Piping RTSF",
+   "value": 101,
+   "quote": "Pumping and Piping RTSF 101",
+   "page": 29,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pumping and Piping Kloof 1",
+   "value": 194,
+   "quote": "Kloof 1 194",
+   "page": 29,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pumping and Piping Kloof 2",
+   "value": 534,
+   "quote": "Kloof 2 534",
+   "page": 29,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pumping and Piping Libanon",
+   "value": 292,
+   "quote": "Libanon 292",
+   "page": 29,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pumping and Piping Venterspost South",
+   "value": 500,
+   "quote": "Venterspost South 500",
+   "page": 29,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pumping and Piping Venterspost North",
+   "value": 220,
+   "quote": "Venterspost North 220",
+   "page": 29,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Direct Capital Expenditure",
+   "value": 3728,
+   "quote": "Total Direct Capital Expenditure 3,728",
+   "page": 29,
+   "is_subtotal": true,
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "DP2 Maintenance/Replacement of Capital",
+   "value": 662,
+   "quote": "DP2 Maintenance/Replacement of Capital 662",
+   "page": 29,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency (15%)",
+   "value": 435,
+   "quote": "Contingency (15%) 435",
+   "page": 29,
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Capital Expenditure",
+   "value": 4825,
+   "quote": "Total Capital Expenditure 4,825",
+   "page": 29,
+   "is_total": true,
+   "review_note": "Tailings retreatment (hydraulic reclamation of TSFs) mapped as open_pit because taxonomy has no tailings_retreatment type. Capital is Phase 2 expansion plus RTSF and pumping, incl. replacement capital.",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Salaries and Wages",
+   "value": 13.98,
+   "quote": "Salaries and Wages 19.60 13.98",
+   "page": 6,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contractors",
+   "value": 10.76,
+   "quote": "Contractors 15.28 10.76",
+   "page": 6,
+   "l1": "mining",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Reagents",
+   "value": 33.45,
+   "quote": "Reagents 29.39 33.45",
+   "page": 6,
+   "l1": "processing",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Engineering Stores",
+   "value": 10.97,
+   "quote": "Other Engineering Stores 11.06 10.97",
+   "page": 6,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electricity",
+   "value": 40.46,
+   "quote": "Electricity 22.16 40.46",
+   "page": 6,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water",
+   "value": 0.66,
+   "quote": "Water 0.48 0.66",
+   "page": 6,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Machine Hire",
+   "value": 2.29,
+   "quote": "Machine Hire 4.18 2.29",
+   "page": 6,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 6.11,
+   "quote": "Other 17.57 6.11",
+   "page": 6,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Corporate Costs",
+   "value": 3.32,
+   "quote": "Other Corporate Costs 7.26 3.32",
+   "page": 6,
+   "l1": "ga",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contingency (15%)",
+   "value": 18.3,
+   "quote": "Contingency (15%) 19.05 18.30",
+   "page": 6,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Totals",
+   "value": 140.32,
+   "quote": "Totals 146.02 140.32",
+   "page": 6,
+   "is_total": true,
+   "review_note": "Phase 2 column (ZAR/t, assumed per tonne processed); Phase 1 total is 146.02.",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  }
+ ]
+}

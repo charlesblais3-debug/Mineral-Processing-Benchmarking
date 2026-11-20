@@ -1,0 +1,184 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Camino Rojo",
+  "title": "NI 43-101 Technical Report Camino Rojo Project, Zacatecas State, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-09-30",
+  "effective_date_quote": "Effective Date: September 30, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Zacatecas",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush"
+  ],
+  "quote": "Ore is crushed at a rate of 19,200 tonnes per day to 80% passing 25 mm using a two-stage closed crushing circuit and conveyor stacked onto a leach pad in 10 m lifts",
+  "page": 29
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 18900,
+   "unit": "t/d",
+   "quote": "a conventional crushing and heap leach facility with the capacity to process 18,900 tpd",
+   "page": 28,
+   "statistic": "design",
+   "context": {
+    "note": "heap leach open pit operation (excludes separate underground PEA)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.73,
+   "unit": "g/t",
+   "quote": "Total Mineral Reserves 33,414 0.73 14.6 785 15,638",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "single",
+   "context": {
+    "note": "Mineral Reserve grade, effective 2025-09-30"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 62,
+   "unit": "%",
+   "quote": "Overall gold recovery from the start of operation through September of 2025 is 62%",
+   "page": 30,
+   "metal": "Au",
+   "statistic": "single",
+   "context": {
+    "note": "actual to date, heap leach, not LOM design"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 8,
+   "unit": "%",
+   "quote": "silver recovery is 8% based on ounces recovered to doré",
+   "page": 30,
+   "metal": "Ag",
+   "statistic": "single",
+   "context": {
+    "note": "actual to date, heap leach, not LOM design"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2300,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are based on prices of $2,300/oz gold and $25/oz silver",
+   "page": 27,
+   "metal": "Au",
+   "context": {
+    "note": "reserve price"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine and Site",
+   "value": 710,
+   "quote": "Mine and Site 710 189",
+   "page": 152,
+   "l1": "onsite_infra",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process",
+   "value": 30382,
+   "quote": "Process 30,382 1 15,081",
+   "page": 152,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 31092,
+   "quote": "Total 31,092 190 15,492",
+   "page": 152,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total closure cost",
+   "value": 14951029,
+   "quote": "Total 14,951,029",
+   "page": 152,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 5.4,
+   "quote": "Open Pit Mining 5.40",
+   "page": 32,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rehandle",
+   "value": 0.16,
+   "quote": "Rehandle 0.16",
+   "page": 32,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 4.26,
+   "quote": "Processing 4.26",
+   "page": 32,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 3.46,
+   "quote": "G&A 3.46",
+   "page": 32,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 13.28,
+   "quote": "Total 13.28",
+   "page": 32,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "review_note": "$/t ore stacked, LOM"
+  }
+ ]
+}

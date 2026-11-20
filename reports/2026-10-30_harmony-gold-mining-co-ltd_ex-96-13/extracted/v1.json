@@ -1,0 +1,236 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Tshepong North",
+  "title": "Technical Report Summary of the Mineral Resources and Mineral Reserves for Tshepong North, Free State Province, South Africa",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2026-06-30",
+  "effective_date_quote": "Effective Date: 30 June 2026",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "South Africa",
+  "region": "Free State",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "ZAR",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cip"
+  ],
+  "quote": "The metallurgical process is a well-tested CIP technology which has been in operation at the Harmony One",
+  "page": 70
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 95.6,
+   "unit": "%",
+   "quote": "Gold Recovery % 95.60",
+   "page": 86,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2915,
+   "unit": "USD/oz",
+   "quote": "long-term outlook of US$2,915/oz",
+   "page": 77,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 17.6,
+   "unit": "ZAR/USD",
+   "quote": "Exchange Rate USD:ZAR 17.60",
+   "page": 86,
+   "context": {
+    "pair": "ZAR/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 6356,
+   "unit": "MZAR",
+   "quote": "ZAR6,356 million",
+   "page": 87,
+   "currency": "ZAR",
+   "context": {
+    "discount_rate_pct": 9
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "AE",
+   "value": 1101191,
+   "quote": "AE 1,101,191",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Shaft Projects",
+   "value": 1125856,
+   "quote": "Shaft Projects 1,125,856",
+   "page": 84,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Major Projects",
+   "value": 2342188,
+   "quote": "Major Projects 2,342,188",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "OCD",
+   "value": 5203977,
+   "quote": "OCD 5,203,977",
+   "page": 84,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total (excluding MCC)",
+   "value": 9773212,
+   "quote": "Total (excluding MCC) 9,773,212",
+   "page": 84,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "MCC (LEDs/housing etc)",
+   "value": 375561,
+   "quote": "MCC (LEDs/housing etc) 375,561",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total (including MCC)",
+   "value": 10148773,
+   "quote": "Total (including MCC) 10,148,773",
+   "page": 84,
+   "is_total": true,
+   "review_note": "Operating mine capital, Reserve plan FY2027-FY2041; report does not split sustaining vs growth.",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Wages - Payroll 1",
+   "value": 9316444,
+   "quote": "Wages - Payroll 1 9,316,444",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Wages - Payroll 2",
+   "value": 14859316,
+   "quote": "Wages - Payroll 2 14,859,316",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Stores and Materials",
+   "value": 8431663,
+   "quote": "Stores and Materials 8,431,663",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electric Power and Water",
+   "value": 10638300,
+   "quote": "Electric Power and Water 10,638,300",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Outside Contractors",
+   "value": 3478335,
+   "quote": "Outside Contractors 3,478,335",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 3013543,
+   "quote": "Other 3,013,543",
+   "page": 84,
+   "l1": "other",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Direct Costs",
+   "value": 49737602,
+   "quote": "Direct Costs 49,737,602",
+   "page": 84,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Costs",
+   "value": 55792171,
+   "quote": "Total Cash Costs 55,792,171",
+   "page": 84,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Table also lists allocation lines (pumping, refining, assay, hostel, treatment, rail, working cost transfer, re-allocated costs, mine overheads); only direct cost lines captured here, total is as stated.",
+   "multiplier": "k",
+   "currency": "ZAR",
+   "basis_unit": "total"
+  }
+ ]
+}

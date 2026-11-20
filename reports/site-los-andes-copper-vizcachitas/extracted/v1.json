@@ -147,7 +147,6 @@
    "multiplier": "M",
    "is_total": true,
    "basis_unit": "total",
-   "derived": true,
    "review_note": "Report states US$2.44 billion in prose; the cost tables (21.1, 1.14) are images with no text, so no line items extracted."
   }
  ]

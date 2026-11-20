@@ -1,0 +1,366 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Hammerdown",
+  "title": "NI 43-101 Feasibility Study Technical Report for the Hammerdown Project",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2022-08-15",
+  "effective_date_quote": "effective as of August 15, 2022",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Newfoundland and Labrador",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2022,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "vertical_mill",
+   "cip"
+  ],
+  "quote": "will feed a new grinding circuit consisting of ball and vertical grinding mills to achieve a P 80 grind size of 50 micron. Post grinding slurry will proceed through the existing leach / carbon in pulp (CIP) circuit",
+  "page": 31
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 700,
+   "unit": "t/d",
+   "quote": "Mill Average Daily Production t/d 700",
+   "page": 35,
+   "statistic": "design",
+   "context": {
+    "note": "Nugget Pond mill; Hammerdown crushing/sorting plant 1,200 t/d ROM"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 6.76,
+   "unit": "g/t",
+   "quote": "Average Gold Mill Grade g/t 6.76",
+   "page": 35,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "mill feed after ore sorting; mined grade 4.46 g/t"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.7,
+   "unit": "%",
+   "quote": "Gold Recovery % 95.7",
+   "page": 35,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 50,
+   "unit": "µm",
+   "quote": "to achieve a P 80 grind size of 50 micron",
+   "page": 31,
+   "statistic": "design"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 20.3,
+   "unit": "t:t",
+   "quote": "with a strip ratio of 20.3 (waste:ore) over the LOM",
+   "page": 34,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1750,
+   "unit": "USD/oz",
+   "quote": "Au Price US$/oz 1,750",
+   "page": 36,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.77,
+   "unit": "USD/CAD",
+   "quote": "FX Rate US$:C$ 0.77",
+   "page": 36,
+   "context": {
+    "pair": "USD per CAD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 102.8,
+   "unit": "MCAD",
+   "quote": "after-tax NPV 5% of $102.8M",
+   "page": 35,
+   "context": {
+    "discount_rate_pct": 5
+   },
+   "currency": "CAD"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 48.1,
+   "unit": "%",
+   "quote": "after-tax IRR of 48.1%",
+   "page": 35
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.7,
+   "unit": "years",
+   "quote": "Payback on initial capital is calculated to be 1.7 years",
+   "page": 35
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 897,
+   "unit": "USD/oz",
+   "quote": "Overall LOM Cash Costs are estimated at US$897 per payable ounce of gold",
+   "page": 34,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "currency": "USD"
+  },
+  {
+   "parameter": "aisc",
+   "value": 912,
+   "unit": "USD/oz",
+   "quote": "The LOM All-In Sustaining Costs are estimated at US$912 per payable ounce of gold",
+   "page": 34,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "currency": "USD"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 10.6,
+   "quote": "Mining $M 10.6",
+   "page": 33,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site development",
+   "value": 4.7,
+   "quote": "Site development $M 4.7",
+   "page": 33,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mineral processing",
+   "value": 24.7,
+   "quote": "Mineral processing $M 24.7",
+   "page": 33,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water management",
+   "value": 0.6,
+   "quote": "Water management $M 0.6",
+   "page": 33,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-site infrastructure",
+   "value": 5.9,
+   "quote": "On-site infrastructure $M 5.9",
+   "page": 33,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project indirect costs",
+   "value": 17.3,
+   "quote": "Project indirect costs $M 17.3",
+   "page": 33,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's costs",
+   "value": 4.0,
+   "quote": "Owner's costs $M 4.0",
+   "page": 34,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 67.9,
+   "quote": "Subtotal $M 67.9",
+   "page": 34,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 7.2,
+   "quote": "Contingency $M 7.2",
+   "page": 34,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total initial capital",
+   "value": 75.0,
+   "quote": "Total initial capital $M 75.0",
+   "page": 34,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital",
+   "value": 11.0,
+   "quote": "Sustaining capital $M 11.0",
+   "page": 34,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total net sustaining capital",
+   "value": 4.9,
+   "quote": "Total net sustaining capital $M 4.9",
+   "page": 34,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Net of closure ($3.5M) and salvage ($9.6M)",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 3.5,
+   "quote": "Closure $M 3.5",
+   "page": 34,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining costs",
+   "value": 4.49,
+   "quote": "Mining costs $/t mined 4.49",
+   "page": 34,
+   "l1": "mining",
+   "basis_unit": "per_t_mined",
+   "is_total": true,
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Trucking",
+   "value": 25.5,
+   "quote": "Trucking $/t milled 25.50",
+   "page": 34,
+   "l1": "offsite",
+   "l2": "transport",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mineral processing",
+   "value": 48.06,
+   "quote": "Mineral processing $/t milled 48.06",
+   "page": 34,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 12.04,
+   "quote": "G&A $/t milled 12.04",
+   "page": 34,
+   "l1": "ga",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 234.45,
+   "quote": "Total $/t milled 234.45",
+   "page": 34,
+   "is_total": true,
+   "partial_breakdown": true,
+   "basis_unit": "per_t_milled",
+   "review_note": "Total includes mining cost per t milled which is not tabulated separately",
+   "multiplier": "",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "On-Site OPEX",
+   "value": 278.7,
+   "quote": "On-Site OPEX $M 278.7",
+   "page": 34,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  }
+ ]
+}

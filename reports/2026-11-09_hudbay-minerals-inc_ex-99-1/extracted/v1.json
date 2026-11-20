@@ -1,0 +1,199 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Lalor and Snow Lake Operations",
+  "title": "National Instrument 43-101 Technical Report, Lalor and Snow Lake Operations, Manitoba, Canada",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2026-09-01",
+  "effective_date_quote": "Effective Date: September 1, 2026",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Zn",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Manitoba",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "CAD",
+  "cost_base_year": 2026,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "tank_leach"
+  ],
+  "quote": "It uses grinding, flotation, and tailings cyanidation to produce a copper-gold concentrate and gold-silver doré",
+  "page": 35
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 5000,
+   "unit": "t/d",
+   "quote": "the Stall and New Britannia concentrators are planned to process a combined throughput of approximately 5,000 t/d",
+   "page": 22,
+   "statistic": "lom_average",
+   "context": {
+    "phase": "LOM, Stall + New Britannia combined"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.29,
+   "unit": "g/t",
+   "quote": "LOM 1, 2 26,450,964 - 2.29 17.23 0.83 1.6 90 89 78 86",
+   "page": 240,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.83,
+   "unit": "%",
+   "quote": "LOM 1, 2 26,450,964 - 2.29 17.23 0.83 1.6 90 89 78 86",
+   "page": 240,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "LOM 1, 2 26,450,964 - 2.29 17.23 0.83 1.6 90 89 78 86",
+   "page": 240,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "combined Stall and New Britannia"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "quote": "LOM 1, 2 26,450,964 - 2.29 17.23 0.83 1.6 90 89 78 86",
+   "page": 240,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "combined Stall and New Britannia"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3600,
+   "unit": "USD/oz",
+   "quote": "US$3,600/oz of gold long-term",
+   "page": 38,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 5.0,
+   "unit": "USD/lb",
+   "quote": "$5.00/lb of copper long-term",
+   "page": 38,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1180,
+   "unit": "USD/oz",
+   "quote": "LOM 1, 2 1,732 1,180 1,613",
+   "page": 38,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "gold basis, by-product credits"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1613,
+   "unit": "USD/oz",
+   "quote": "LOM 1, 2 1,732 1,180 1,613",
+   "page": 38,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "sustaining cash cost, gold basis"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Snow Lake growth capital LOM",
+   "value": 752.0,
+   "quote": "LOM 22.9 464.4 174.6 90.0 752.0 564.4",
+   "page": 265,
+   "is_total": true,
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Lalor & 1901",
+   "value": 429.9,
+   "quote": "LOM 429.9 312.7 145.4 888.0 666.4",
+   "page": 266,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Regional Satellite Deposits",
+   "value": 312.7,
+   "quote": "LOM 429.9 312.7 145.4 888.0 666.4",
+   "page": 266,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant & Other",
+   "value": 145.4,
+   "quote": "LOM 429.9 312.7 145.4 888.0 666.4",
+   "page": 266,
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 888.0,
+   "quote": "LOM 429.9 312.7 145.4 888.0 666.4",
+   "page": 266,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mine Operating Costs LOM",
+   "value": 4019.9,
+   "quote": "LOM 2,720.0 1,299.9 4,019.9 3,019.2",
+   "page": 269,
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mill Operating Costs LOM",
+   "value": 1544.8,
+   "quote": "Total 624.6 920.2 1,544.8 1,160.5",
+   "page": 270,
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total G&A Costs LOM",
+   "value": 746.8,
+   "quote": "Total 746.8 560.9",
+   "page": 271,
+   "basis_unit": "total",
+   "l1": "ga"
+  }
+ ]
+}

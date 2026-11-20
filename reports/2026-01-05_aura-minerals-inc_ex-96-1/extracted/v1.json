@@ -1,0 +1,418 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Era Dorada",
+  "title": "Era Dorada Project, S-K 1300 Technical Report Summary and Definitive Feasibility Study, Jutiapa, Guatemala",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Guatemala",
+  "region": "Jutiapa",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cip",
+   "elution_ew"
+  ],
+  "quote": "gravity concentration followed by cyanide leach, carbon adsorption/desorption and electrowinning",
+  "page": 26
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1600,
+   "unit": "t/d",
+   "quote": "The primary crushing plant will have a throughput capacity of 1,600 t/d",
+   "page": 26,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 6.0,
+   "unit": "g/t",
+   "quote": "average life of mine (LOM) head grades of 6.0 g/t Au and 28.2 g/t Ag",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 28.2,
+   "unit": "g/t",
+   "quote": "average life of mine (LOM) head grades of 6.0 g/t Au and 28.2 g/t Ag",
+   "page": 26,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96,
+   "unit": "%",
+   "quote": "can yield an average overall recovery of 96% Au and 85% Ag",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "mean",
+   "context": {
+    "note": "test program average overall recovery"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85,
+   "unit": "%",
+   "quote": "can yield an average overall recovery of 96% Au and 85% Ag",
+   "page": 26,
+   "metal": "Ag",
+   "statistic": "mean",
+   "context": {
+    "note": "test program average overall recovery"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 53,
+   "unit": "µm",
+   "quote": "two-stage grinding circuit will target a final P 80 grind size of 53 µm",
+   "page": 26,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 16.8,
+   "unit": "years",
+   "quote": "Mine Life years 16.8",
+   "page": 33
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3177,
+   "unit": "USD/oz",
+   "quote": "Gold realized Price US$/oz $3,177",
+   "page": 33,
+   "metal": "Au",
+   "context": {
+    "note": "LOM realized price from price vector; LT $3,140"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1344.5,
+   "unit": "MUSD",
+   "quote": "On a post-tax basis, the NPV discounted at 5% is US$1,344.5 million",
+   "page": 33,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 35.6,
+   "unit": "%",
+   "quote": "the IRR is 35.6%",
+   "page": 33
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.8,
+   "unit": "years",
+   "quote": "payback period is 2.8 years",
+   "page": 33
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 993.1,
+   "unit": "USD/oz",
+   "quote": "Cash Costs * US$/oz Au $993.1",
+   "page": 33,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1178.0,
+   "unit": "USD/oz",
+   "quote": "AISC ** US$/oz Au $1,178.0",
+   "page": 33,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Equipment",
+   "value": 24.49,
+   "quote": "Equipment 186.11 24.49",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Turn-key Packages",
+   "value": 26.27,
+   "quote": "Turn-key Packages 199.67 26.27",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Materials",
+   "value": 11.55,
+   "quote": "Materials 87.77 11.55",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction and Erection",
+   "value": 41.27,
+   "quote": "Construction and Erection 313.67 41.27",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Laboratory",
+   "value": 2.72,
+   "quote": "Laboratory 20.69 2.72",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "buildings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Power Plant Fuel",
+   "value": 2.72,
+   "quote": "Pre-Production Power Plant Fuel 20.65 2.72",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Land Compensation",
+   "value": 2.24,
+   "quote": "Land Compensation 16.99 2.24",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Topographic Survey",
+   "value": 0.27,
+   "quote": "Topographic Survey 2.09 0.27",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Soil Resistivity Testing",
+   "value": 0.16,
+   "quote": "Soil Resistivity Testing 1.19 0.16",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Clearing",
+   "value": 0.11,
+   "quote": "Site Clearing 0.85 0.11",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner Costs",
+   "value": 34.93,
+   "quote": "Owner Costs 265.44 34.93",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 27.72,
+   "quote": "Indirect Costs 210.67 27.72",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Plant Contingency",
+   "value": 23.3,
+   "quote": "Plant Contingency 177.05 23.30",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings, Rock Waste and Stockpiles",
+   "value": 4.18,
+   "quote": "Tailings, Rock Waste and Stockpiles 31.75 4.18",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings, Rock Waste and Stockpiles Contingency",
+   "value": 0.56,
+   "quote": "Tailings, Rock Waste and Stockpiles Contingency 4.23 0.56",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 158.55,
+   "quote": "Mining 1204.95 158.55",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Contingency",
+   "value": 21.09,
+   "quote": "Mining Contingency 160.29 21.09",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Total",
+   "value": 382.11,
+   "quote": "Project Total 2,904.05 382.11",
+   "page": 30,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 293,
+   "quote": "Sustaining Capital US$M $293",
+   "page": 33,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Capital",
+   "value": 17.2,
+   "quote": "Closure Capital US$M $17.2",
+   "page": 33,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 71,
+   "quote": "Mining Cost US$/t $71",
+   "page": 33,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "review_note": "Stated in US$/t; table is on a USD/t ore basis"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 87.92,
+   "quote": "Processing Cost US$/t ore $87.92",
+   "page": 33,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Cost",
+   "value": 10.54,
+   "quote": "G&A Cost US$/t ore $10.54",
+   "page": 33,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 176.37,
+   "quote": "Total Operating Costs US$/t ore $176.37",
+   "page": 33,
+   "is_total": true,
+   "partial_breakdown": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "review_note": "Mining+processing+G&A shown sum to 169.46; remainder of total not itemized (refining/transport per oz and others)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining & Transport Cost",
+   "value": 11.06,
+   "quote": "Refining & Transport Cost US$/oz $11.06",
+   "page": 33,
+   "l1": "offsite",
+   "l2": "transport",
+   "basis_unit": "per_oz_payable",
+   "multiplier": "",
+   "is_total": true
+  }
+ ]
+}

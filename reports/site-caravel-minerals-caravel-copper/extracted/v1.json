@@ -212,17 +212,6 @@
   },
   {
    "cost_type": "initial_capex",
-   "raw_label": "Process Plant and Site Infrastructure subtotal",
-   "value": 1205,
-   "quote": "Plant and Infrastructure Sustaining 580 580 1,205 182 592 – 1,979",
-   "page": 33,
-   "is_subtotal": true,
-   "basis_unit": "total",
-   "multiplier": "M",
-   "currency": "AUD"
-  },
-  {
-   "cost_type": "initial_capex",
    "raw_label": "Total Capital Expenditure",
    "value": 1702,
    "quote": "Total Capital Expenditure 1,702 474 991 50 3,216",

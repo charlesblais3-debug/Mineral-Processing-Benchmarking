@@ -1,0 +1,324 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Altar",
+  "title": "NI 43-101 Technical Report, Preliminary Economic Assessment, Altar Project, San Juan, Argentina",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2025-09-01",
+  "effective_date_quote": "Effective Date: September 1, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Argentina",
+  "region": "San Juan",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "grinding in a SAG (semi-autogenous grinding) mill/ball mill grinding circuit, rougher flotation, regrinding of the rougher concentrate and three stages of cleaner flotation",
+  "page": 30
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 60000,
+   "unit": "t/d",
+   "quote": "constructed with a capacity to process 60,000 tonnes per day (tpd)",
+   "page": 30,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.49,
+   "unit": "%",
+   "quote": "Run of mine (ROM) material averaging about 0.49% Cu and 0.07 g/t Au",
+   "page": 30,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.07,
+   "unit": "g/t",
+   "quote": "Run of mine (ROM) material averaging about 0.49% Cu and 0.07 g/t Au",
+   "page": 30,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87.8,
+   "unit": "%",
+   "quote": "Copper recoveries are expected to average about 87.8%",
+   "page": 31,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 57,
+   "unit": "%",
+   "quote": "gold recoveries are expected to average about 57%",
+   "page": 31,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 180,
+   "unit": "um",
+   "quote": "classified at 80% passing (P80) 180 µm",
+   "page": 31,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.35,
+   "unit": "USD/lb",
+   "quote": "Cu Price USD/lb 4.35",
+   "page": 384,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2500,
+   "unit": "USD/oz",
+   "quote": "Au Price USD/oz 2,500",
+   "page": 384,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2009,
+   "unit": "MUSD",
+   "quote": "After Tax Free Cash Flow M USD 10,632 NPV @ 8% M USD 2,009",
+   "page": 39,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20.5,
+   "unit": "%",
+   "quote": "NPV @ 12% M USD 904 IRR % 20.5%",
+   "page": 39
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.0,
+   "unit": "years",
+   "quote": "IRR % 20.5% Payback Year 4.0",
+   "page": 39
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Open Pit Capex",
+   "value": 350,
+   "quote": "Initial Open Pit Capex M USD 350",
+   "page": 37,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Processing Capex",
+   "value": 579,
+   "quote": "Initial Processing Capex M USD 579",
+   "page": 37,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Infrastructure Capex",
+   "value": 665,
+   "quote": "Initial Infrastructure Capex M USD 665",
+   "page": 37,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capex",
+   "value": 1593,
+   "quote": "Total Initial Capex M USD 1,593",
+   "page": 37,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth UG Capex",
+   "value": 227,
+   "quote": "Growth UG Capex M USD 227",
+   "page": 37,
+   "is_total": true,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 3830,
+   "quote": "Sustaining Capital M USD 3,830",
+   "page": 37,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure (order-of-magnitude allowance)",
+   "value": 282,
+   "quote": "a reasonable total for complete closure of the Altar Project would be on the order of US$282 M",
+   "page": 37,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total",
+   "review_note": "Order-of-magnitude industry-practice allowance, not a modelled cost."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining Cost",
+   "value": 1324,
+   "quote": "Open Pit Mining Cost M USD 1,324",
+   "page": 38,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Block Cave Mining Cost",
+   "value": 6510,
+   "quote": "Block Cave Mining Cost M USD 6,510",
+   "page": 38,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 6866,
+   "quote": "Processing Cost M USD 6,866",
+   "page": 38,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Cost",
+   "value": 1365,
+   "quote": "G&A Cost M USD 1,365",
+   "page": 38,
+   "l1": "ga",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Opex",
+   "value": 16065,
+   "quote": "Total Opex M USD 16,065",
+   "page": 38,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "review_note": "Operating costs include capitalized operating costs prior to production (report note).",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining Cost",
+   "value": 2.35,
+   "quote": "Cost / t mined USD/t 2.35",
+   "page": 38,
+   "l1": "mining",
+   "basis_unit": "per_t_mined",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Block Cave Mining Cost",
+   "value": 8.42,
+   "quote": "Cost / t mined USD/t 8.42",
+   "page": 38,
+   "l1": "mining",
+   "basis_unit": "per_t_mined",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost/Ore",
+   "value": 6.93,
+   "quote": "Processing Cost/Ore USD/t 6.93",
+   "page": 38,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Cost/Ore",
+   "value": 1.38,
+   "quote": "G&A Cost/Ore USD/t 1.38",
+   "page": 38,
+   "l1": "ga",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost/Lb Cu Payable",
+   "value": 0.76,
+   "quote": "Processing Cost/Lb Cu Payable USD/lb Cu Payable 0.76",
+   "page": 38,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "currency": "USD"
+  }
+ ]
+}
