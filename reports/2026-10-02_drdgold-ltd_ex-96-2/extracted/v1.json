@@ -1,0 +1,259 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Ergo",
+  "title": "Ergo's Technical Report Summary of the Material Tailings Storage Facilities",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-06-30",
+  "effective_date_quote": "Effective date: 30 June 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "South Africa",
+  "region": "Gauteng (East Rand)",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "ZAR",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cil"
+  ],
+  "quote": "The CIL section comprises of two streams of 11 tanks per stream",
+  "page": 37
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.27,
+   "unit": "g/t",
+   "quote": "below the planned LoM head grade of 0.27 g/t",
+   "page": 34,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 41.4,
+   "unit": "%",
+   "quote": "An average processing plant recovery of 41.4%",
+   "page": 5,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 21.6,
+   "unit": "Mt/a",
+   "quote": "at a throughput of 1.8Mtpm gives a leach residence time",
+   "page": 37,
+   "statistic": "design",
+   "derived": true,
+   "context": {
+    "derived_note": "1.8 Mt per month x 12 months"
+   }
+  },
+  {
+   "parameter": "leach_residence_h",
+   "value": 11.5,
+   "unit": "h",
+   "quote": "leach residence time of about 11.5 hours",
+   "page": 37,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2982,
+   "unit": "USD/oz",
+   "quote": "A gold price of USD2,982/oz",
+   "page": 5,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 17.63,
+   "unit": "ZAR/USD",
+   "quote": "exchange rate of ZAR17.63:1USD",
+   "page": 5,
+   "context": {
+    "pair": "ZAR/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 5190,
+   "unit": "MZAR",
+   "quote": "net present value (NPV) of ZAR5.19 billion after capital expenditure and taxation",
+   "page": 5,
+   "currency": "ZAR",
+   "derived": true,
+   "context": {
+    "discount_rate_pct": 8.91,
+    "derived_note": "ZAR5.19 billion = 5,190 million"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Ergo Section (inclusive of the Withok TSF)",
+   "value": 5072975,
+   "quote": "Ergo Section (inclusive of the Withok TSF) 5,072,975",
+   "page": 41,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "City Section",
+   "value": 805411,
+   "quote": "City Section 805,411",
+   "page": 41,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Knights Section",
+   "value": 78143,
+   "quote": "Knights Section 78,143",
+   "page": 41,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total (excluding VAT)",
+   "value": 5956529,
+   "quote": "Total (excluding VAT) *5,956,529",
+   "page": 41,
+   "is_total": true,
+   "review_note": "Tailings retreatment mapped as open_pit (no tailings_retreatment type). Budgeted LoM capital incl. contingency; includes 1,645,602 'maintenance over LoM' in Ergo Section, so mixes sustaining and growth.",
+   "currency": "ZAR",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labor",
+   "value": 24,
+   "quote": "Labor 24 Consumables",
+   "page": 42,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Consumables & Reagents",
+   "value": 51,
+   "quote": "Consumables & Reagents 51 Electricity",
+   "page": 42,
+   "l1": "processing",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electricity",
+   "value": 24,
+   "quote": "Electricity 24 Water",
+   "page": 42,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water",
+   "value": 2,
+   "quote": "Water 2 Contractors",
+   "page": 42,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contractors",
+   "value": 17,
+   "quote": "Contractors 17 Machine hire",
+   "page": 42,
+   "l1": "mining",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Machine hire",
+   "value": 3,
+   "quote": "Machine hire 3 Other",
+   "page": 42,
+   "l1": "mining",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 11,
+   "quote": "Other 11 Total cash cost",
+   "page": 42,
+   "l1": "other",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total cash cost per tonne",
+   "value": 132,
+   "quote": "Total cash cost per tonne 132",
+   "page": 42,
+   "is_subtotal": true,
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Corporate Cost",
+   "value": 7,
+   "quote": "Corporate Cost 7 Total Working Cost",
+   "page": 42,
+   "l1": "ga",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Working Cost",
+   "value": 139,
+   "quote": "Total Working Cost 139",
+   "page": 42,
+   "is_total": true,
+   "review_note": "Average LoM, ZAR per tonne treated (assumed milled).",
+   "currency": "ZAR",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  }
+ ]
+}

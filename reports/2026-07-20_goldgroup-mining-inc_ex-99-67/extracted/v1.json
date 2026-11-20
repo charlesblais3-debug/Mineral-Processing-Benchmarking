@@ -1,0 +1,53 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "San Francisco",
+  "title": "San Francisco Project Technical Report (Goldgroup Mining Inc.)",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2026-04-30",
+  "effective_date_quote": "Effective Date: April 30, 2026",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Mexico",
+  "region": "Sonora",
+  "mine_type": "open_pit",
+  "project_status": "care_maintenance",
+  "currency": "USD",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach"
+  ],
+  "quote": "by using conventional crushing and heap leach technologies",
+  "page": 13
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 22000,
+   "unit": "t/d",
+   "quote": "with a combined crushing operating capacity of 22,000 t/d",
+   "page": 13,
+   "statistic": "design",
+   "context": {
+    "note": "historical crushing capacity; project on care and maintenance"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 65,
+   "unit": "%",
+   "quote": "the average gold extraction achieved when operating, which was approximately 65%",
+   "page": 13,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "basis": "actual",
+   "context": {
+    "note": "approximate historical heap leach extraction 2010-2020"
+   }
+  }
+ ],
+ "costs": []
+}

@@ -1,0 +1,140 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Borborema",
+  "title": "Technical Report Summary on the Feasibility Study for the Borborema Gold Project, Currais Novos Municipality, Rio Grande do Norte, Brazil",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31st, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Rio Grande do Norte",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cil"
+  ],
+  "quote": "single stage grinding in a close configuration with hydrocyclones together with gravimetric concentration, followed by cyanidation (carbon - in - leach - CIL)",
+  "page": 114
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2,
+   "unit": "Mt/a",
+   "quote": "The estimated closure costs for the 2 Mtpy plan of production",
+   "page": 148,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.1,
+   "unit": "%",
+   "quote": "The metallurgical recovery for the contained gold is expected to be 92 . 1 % (average considering 36 years)",
+   "page": 156,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "global gold recovery; design criteria also 92.1%"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 105,
+   "unit": "µm",
+   "quote": "105 pm Grinding product Size P 80",
+   "page": 115,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 36,
+   "unit": "years",
+   "quote": "outlining a total operational span of 36 years for the plant",
+   "page": 156
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3515,
+   "unit": "USD/oz",
+   "quote": "3,515 USD / Oz Gold Price",
+   "page": 155,
+   "metal": "Au",
+   "context": {
+    "note": "long-term price; Years 1-4 higher (3,971-4,648)"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1727,
+   "unit": "MUSD",
+   "quote": "the net present value (“NPV”) of Aura Minerals Gold Project amounts to USD 1 , 727 Million",
+   "page": 160,
+   "context": {
+    "discount_rate_pct": 5
+   },
+   "review_note": "After-tax inferred from cash-flow table which deducts income tax; 'after-tax' not stated verbatim"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1367.99,
+   "unit": "USD/oz",
+   "quote": "The average AISC amounts to USD 1 , 367 . 99 /Oz",
+   "page": 160,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion CAPEX",
+   "value": 25.3,
+   "quote": "an Expansion CAPEX of USD 25 . 3 million",
+   "page": 156,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "review_note": "Table 160 total capex 25,336 k$ includes exploration 9,860 and expansion 15,476"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs Total",
+   "value": 14207917.77,
+   "quote": "14,207,917.77 Total",
+   "page": 148,
+   "basis_unit": "total",
+   "multiplier": "",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "On-site mining and plant costs",
+   "value": 1461.7,
+   "quote": "total USD 1 , 461 . 7 Million considering all the operational years of the project",
+   "page": 157,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "review_note": "workforce, management, admin, laboratory, access maintenance, equipment rental incl. mining and plant; no stated grand total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other costs (energy, transport, refining, dry stack, reagents, ETA, ETE, maintenance, royalties)",
+   "value": 978.4,
+   "quote": "amounts to USD 577 . 8 /Oz, which total USD 978 . 4 million considering all the operational years",
+   "page": 157,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  }
+ ]
+}

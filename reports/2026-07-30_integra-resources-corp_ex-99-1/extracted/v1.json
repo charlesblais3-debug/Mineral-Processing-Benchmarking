@@ -1,0 +1,272 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Florida Canyon",
+  "title": "Florida Canyon Gold Mine NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2026-05-31",
+  "effective_date_quote": "have an effective date of May 31, 2026",
+  "effective_date_page": 31,
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "heap_leach"
+  ],
+  "page": 32,
+  "quote": "Crushed ore passes through two stages of open circuit crushing to a final crush size of 80% minus 2.5 inches. The current crushing circuit target is 21,000 tpd. Crushed ore is then agglomerated with a polymer binding agent to improve solution percolation through the South Heap Leach Pad (SHLP)"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 21000,
+   "unit": "st/d",
+   "quote": "The current crushing circuit target is 21,000 tpd.",
+   "page": 32,
+   "statistic": "design",
+   "context": {
+    "note": "short tons (imperial report)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 63,
+   "unit": "%",
+   "quote": "Recovery Au % 66% 67% 66% 58% 59% 62% 67% 67% 0% 0% 0% 0% 0% 63%",
+   "page": 303,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "crushed ore to pad"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 45,
+   "unit": "%",
+   "quote": "Recovery Au % 45% 43% 45% 48% 47% 46% 43% 43% 0% 0% 0% 0% 0% 45%",
+   "page": 303,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "ROM ore to pad"
+   }
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 0.8,
+   "unit": "t:t",
+   "quote": "The overall Life-of-Mine (LOM) strip ratio is approximately 0.80:1 (waste:ore).",
+   "page": 32,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3600,
+   "unit": "USD/oz",
+   "quote": "US$3,600/oz long-term (2030+)",
+   "page": 299,
+   "metal": "Au",
+   "context": {
+    "note": "long-term price; 2026-2029 prices 4,344 / 4,414 / 4,169 / 3,824"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 600.6,
+   "unit": "MUSD",
+   "quote": "The after-tax NPV 5% is US$600.6 million",
+   "page": 302,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 130.2,
+   "quote": "Sustaining Capital $130.2 $0.0 $130.2",
+   "page": 34
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Stripping",
+   "value": 86.5,
+   "quote": "Capitalized Stripping $86.5 $0.0 $86.5",
+   "page": 34,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development Drilling",
+   "value": 7.9,
+   "quote": "Development Drilling $7.9 $0.0 $7.9",
+   "page": 34,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Lease Payments (Financing) - Sustaining",
+   "value": 42.8,
+   "quote": "Lease Payments (Financing) - Sustaining $42.8 $0.0 $42.8",
+   "page": 34,
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital & Stripping",
+   "value": 267.4,
+   "quote": "Total Sustaining Capital & Stripping $267.4 $0.0 $267.4",
+   "page": 34,
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "New Fleet (Haul trucks & Loaders)",
+   "value": 36.8,
+   "quote": "New Fleet (Haul trucks & Loaders) $36.8",
+   "page": 293,
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Heap leach Pad Expansion",
+   "value": 55.0,
+   "quote": "Heap leach Pad Expansion $55.0",
+   "page": 293,
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Lease Payments (Financing)",
+   "value": 8.6,
+   "quote": "Lease Payments (Financing) $8.6",
+   "page": 293,
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Growth Capital",
+   "value": 100.4,
+   "quote": "Total Growth Capital $100.4",
+   "page": 293,
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation",
+   "value": 40.2,
+   "quote": "Reclamation $19.9 $20.3 $40.2",
+   "page": 34,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 4.99,
+   "quote": "Mining 642.8 4.99 642.8 4.99",
+   "page": 34,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing and Conveying",
+   "value": 1.12,
+   "quote": "Crushing and Conveying 144.5 1.12 144.5 1.12",
+   "page": 34,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 1.78,
+   "quote": "Processing 230.0 1.78 210.1 1.63",
+   "page": 34,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.23,
+   "quote": "G&A 158.4 1.23 144.9 1.12",
+   "page": 34,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Operating Costs",
+   "value": 9.12,
+   "quote": "Site Operating Costs $1,175.7 $9.12 $1,142.3 $8.86",
+   "page": 34,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties & Excise Tax",
+   "value": 1.31,
+   "quote": "Royalties & Excise Tax 168.6 1.31 162.0 1.26",
+   "page": 295,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Finishing and Desorption",
+   "value": 0.05,
+   "quote": "Finishing and Desorption 6.1 0.05 5.3 0.04",
+   "page": 295,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 10.48,
+   "quote": "Total Operating Costs $1,350.4 $10.48 $1,309.6 $10.16",
+   "page": 295,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

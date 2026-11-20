@@ -1,0 +1,692 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "La Mina",
+  "title": "Technical Report and Preliminary Economic Assessment for the La Mina Gold-Copper Mineral Deposit, Antioquia, Republic of Colombia",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-04-22",
+  "effective_date_quote": "Technical Report Effective Date: April 22, 2026",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "Colombia",
+  "region": "Antioquia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "cil",
+   "cyanide_detox"
+  ],
+  "quote": "followed by a copper flotation concentrator with gold and silver as a copper concentrate by-product. Final flotation tailing will report to a cyanide carbon in pulp (“CIL”) leach circuit followed by leach tailing cyanide detoxification",
+  "page": 446
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 15000,
+   "unit": "t/d",
+   "quote": "Process Plant Production Rate Tonne/day 15,000",
+   "page": 492,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 11.2,
+   "unit": "years",
+   "quote": "Mine Life Years 11.2",
+   "page": 34
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 5.5,
+   "unit": "t:t",
+   "quote": "Strip Ratio (Rejected: Mineralized Material) Ratio 5.5",
+   "page": 492,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.72,
+   "unit": "g/t",
+   "quote": "Process Plant Feed Grade Gold Copper Silver Gold Equivalent 1 g/t % g/t g/t 0.72 0.19 2.36 0.92",
+   "page": 492,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.19,
+   "unit": "%",
+   "quote": "Process Plant Feed Grade Gold Copper Silver Gold Equivalent 1 g/t % g/t g/t 0.72 0.19 2.36 0.92",
+   "page": 492,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.0,
+   "unit": "%",
+   "quote": "Process Plant Metal Recoveries Gold Copper Silver % % % 91.0 80.0 64.0",
+   "page": 492,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80.0,
+   "unit": "%",
+   "quote": "Process Plant Metal Recoveries Gold Copper Silver % % % 91.0 80.0 64.0",
+   "page": 492,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 130,
+   "unit": "µm",
+   "quote": "The grinding circuit will reduce the crushed material to 80% passing 130 µm",
+   "page": 450,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3500,
+   "unit": "USD/oz",
+   "quote": "Metal Prices Gold Copper Silver US$/oz US$/lb US$/oz 3,500 4.70 40.00",
+   "page": 494,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.7,
+   "unit": "USD/lb",
+   "quote": "Metal Prices Gold Copper Silver US$/oz US$/lb US$/oz 3,500 4.70 40.00",
+   "page": 494,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1001.5,
+   "unit": "MUSD",
+   "quote": "Post-Tax NPV (5%) US$ M 1,001.5",
+   "page": 500,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 32.2,
+   "unit": "%",
+   "quote": "Post-Tax IRR % 32.2",
+   "page": 500
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.7,
+   "unit": "years",
+   "quote": "Payback Years 2.7",
+   "page": 34
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 872,
+   "unit": "USD/oz",
+   "quote": "Life-of-Mine Unit Cash Cost $/oz Au Eq 872",
+   "page": 500,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "per oz Au equivalent, by-product basis"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1045,
+   "unit": "USD/oz",
+   "quote": "Life-of-Mine All-In Sustaining Unit Cost $/oz Au Eq 1,045",
+   "page": 500,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "per oz Au equivalent, by-product basis"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 10.22,
+   "unit": "kWh/t",
+   "quote": "1 La Cantera average grade 10.22",
+   "page": 256,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 150,
+    "n_samples": 1,
+    "ore_type": "La Cantera average grade",
+    "lab": "RDi"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 11.96,
+   "unit": "kWh/t",
+   "quote": "2 Middle Zone 11.96",
+   "page": 256,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 150,
+    "n_samples": 1,
+    "ore_type": "Middle Zone",
+    "lab": "RDi"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.0,
+   "unit": "kWh/t",
+   "quote": "3 La Cantera high grade 14.00",
+   "page": 256,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 150,
+    "n_samples": 1,
+    "ore_type": "La Cantera high grade",
+    "lab": "RDi"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 12.85,
+   "unit": "kWh/t",
+   "quote": "4 La Cantera low grade 12.85",
+   "page": 256,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 150,
+    "n_samples": 1,
+    "ore_type": "La Cantera low grade",
+    "lab": "RDi"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Stripping Contractor, Year -1",
+   "value": 11.4,
+   "quote": "Pre-Stripping Contractor, Year -1 11.4",
+   "page": 468,
+   "l1": "mining",
+   "l2": "pre_production",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant, Direct",
+   "value": 224.7,
+   "quote": "Processing Plant, Direct 224.7",
+   "page": 468,
+   "l1": "process",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant Indirect (20%)",
+   "value": 80.5,
+   "quote": "Processing Plant Indirect (20%) 80.5",
+   "page": 468,
+   "l1": "indirects",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Infrastructure",
+   "value": 65.0,
+   "quote": "Site Infrastructure 65.0",
+   "page": 468,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailing Storage Facility",
+   "value": 6.0,
+   "quote": "Tailing Storage Facility 6.0",
+   "page": 468,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Cost",
+   "value": 58.1,
+   "quote": "Owner’s Cost 58.1",
+   "page": 468,
+   "l1": "owners",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 77.5,
+   "quote": "Contingency 77.5",
+   "page": 468,
+   "l1": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital",
+   "value": 523.3,
+   "quote": "Total Initial Capital 523.3",
+   "page": 468,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Primary crushing and stockpile",
+   "value": 40.7,
+   "quote": "Primary crushing and stockpile 40.7",
+   "page": 472,
+   "l1": "process",
+   "l2": "comminution",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant general",
+   "value": 17.2,
+   "quote": "Process plant general 17.2",
+   "page": 472,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Primary/secondary grinding",
+   "value": 51.1,
+   "quote": "Primary/secondary grinding 51.1",
+   "page": 472,
+   "l1": "process",
+   "l2": "comminution",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Regrind and flotation",
+   "value": 42.0,
+   "quote": "Regrind and flotation 42.0",
+   "page": 472,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Leach",
+   "value": 28.7,
+   "quote": "Leach 28.7",
+   "page": 472,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Strip, regeneration, gold room",
+   "value": 11.7,
+   "quote": "Strip, regeneration, gold room 11.7",
+   "page": 472,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Detox, tailings dewatering",
+   "value": 9.3,
+   "quote": "Detox, tailings dewatering 9.3",
+   "page": 472,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Reagents and services",
+   "value": 15.5,
+   "quote": "Reagents and services 15.5",
+   "page": 472,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrate dewatering/handling",
+   "value": 2.2,
+   "quote": "Concentrate dewatering/handling 2.2",
+   "page": 472,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings/water pumps and pipelines",
+   "value": 6.3,
+   "quote": "Tailings/water pumps and pipelines 6.3",
+   "page": 472,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "part_of": "Processing Plant, Direct"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contractor Stripping",
+   "value": 46.4,
+   "quote": "Contractor Stripping (1) 46.4",
+   "page": 472,
+   "l1": "mining",
+   "l2": "pre_production",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Equipment",
+   "value": 81.2,
+   "quote": "Mining Equipment (1) 81.2",
+   "page": 472,
+   "l1": "mining",
+   "l2": "equipment",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing Operations",
+   "value": 5.0,
+   "quote": "Processing Operations (1) 5.0",
+   "page": 472,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailing Storage Facility",
+   "value": 5.6,
+   "quote": "Tailing Storage Facility (1) 5.6",
+   "page": 472,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 27.7,
+   "quote": "Contingency (1) 27.7",
+   "page": 472,
+   "l1": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 215.7,
+   "quote": "Total Sustaining Capital 215.7",
+   "page": 472,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Report's Total Sustaining Capital (215.7) includes Mine Closure 49.8, which is entered as closure.",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine Closure",
+   "value": 49.8,
+   "quote": "Mine Closure 49.8",
+   "page": 472,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labor",
+   "value": 0.55,
+   "quote": "Labor 3,007 0.55",
+   "page": 486,
+   "l1": "processing",
+   "l2": "labour",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Grinding Media",
+   "value": 1.54,
+   "quote": "Grinding Media 8,454 1.54",
+   "page": 486,
+   "l1": "processing",
+   "l2": "media_liners",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Reagents",
+   "value": 5.36,
+   "quote": "Reagents 29,367 5.36",
+   "page": 486,
+   "l1": "processing",
+   "l2": "reagents",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Liners",
+   "value": 1.28,
+   "quote": "Liners 7,011 1.28",
+   "page": 486,
+   "l1": "processing",
+   "l2": "media_liners",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Pumps, Piping, Valves, and Fittings",
+   "value": 0.72,
+   "quote": "Pumps, Piping, Valves, and Fittings 3,962 0.72",
+   "page": 486,
+   "l1": "processing",
+   "l2": "maintenance",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electrical Supplies",
+   "value": 0.28,
+   "quote": "Electrical Supplies 1,509 0.28",
+   "page": 486,
+   "l1": "processing",
+   "l2": "maintenance",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Miscellaneous Maintenance Supplies",
+   "value": 0.6,
+   "quote": "Miscellaneous Maintenance Supplies 3,304 0.60",
+   "page": 486,
+   "l1": "processing",
+   "l2": "maintenance",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Fuel and Lubricants",
+   "value": 0.2,
+   "quote": "Fuel and Lubricants 1,090 0.20",
+   "page": 486,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Miscellaneous Consumables",
+   "value": 0.29,
+   "quote": "Miscellaneous Consumables 1,604 0.29",
+   "page": 486,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Operating Costs",
+   "value": 0.34,
+   "quote": "Other Operating Costs 1,880 0.34",
+   "page": 486,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power Supply",
+   "value": 3.72,
+   "quote": "Power Supply 20,385 3.72",
+   "page": 486,
+   "l1": "processing",
+   "l2": "power",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "part_of": "Processing Operating Costs Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Operating Costs Total",
+   "value": 14.9,
+   "quote": "Total 81,573 14.90",
+   "page": 486,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_subtotal": true,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.66,
+   "quote": "The G&A build-up estimated unit rate is $0.66/ore tonne",
+   "page": 488,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Operating cost",
+   "value": 2.06,
+   "quote": "The Mine Operating cost is US$2.06/t",
+   "page": 484,
+   "basis_unit": "per_t_mined",
+   "multiplier": "",
+   "l1": "mining",
+   "review_note": "Report says US$2.06/t without stating whether per tonne mined or per tonne moved; excludes contractor pre-stripping."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "On-Site Operating Unit Cost",
+   "value": 32.98,
+   "quote": "On-Site Operating Unit Cost $/t process 32.98",
+   "page": 494,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Unit Cost",
+   "value": 34.29,
+   "quote": "Total Operating Unit Cost $/t process 34.29",
+   "page": 494,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": true,
+   "partial_breakdown": true
+  }
+ ]
+}
