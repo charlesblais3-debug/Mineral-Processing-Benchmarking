@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/771992/000077199225000090/juanicipiomineralresourcea.htm",
+  "source": "edgar",
+  "issuer": "PAN AMERICAN SILVER CORP  (PAAS, PAASF)",
+  "cik": "771992",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-12-03",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-12-03_pan-american-silver-corp_ex-99-1",
+  "sha256": "a618b75f2efb07cd626b77e49bca7a916471b58809b5b59159dca2abb4f70874",
+  "bytes": 4707797,
+  "format": "html",
+  "pages": 223,
+  "parsed_on": "2026-11-20"
+}

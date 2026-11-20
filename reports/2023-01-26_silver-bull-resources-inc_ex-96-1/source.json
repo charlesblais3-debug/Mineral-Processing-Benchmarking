@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1031093/000107997323000131/ex96x1.htm",
+  "source": "edgar",
+  "issuer": "SILVER BULL RESOURCES, INC.  (SVBL)",
+  "cik": "1031093",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2023-01-26",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-01-26_silver-bull-resources-inc_ex-96-1",
+  "sha256": "db4c18c681e942133a75eca70db9ea6d4c2fdf9ff4498a8028fd8d300b580b19",
+  "bytes": 1539447,
+  "format": "html",
+  "pages": 79,
+  "parsed_on": "2026-11-20"
+}

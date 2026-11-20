@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1340677/000110465926077395/tm2618518d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "SILVERCORP METALS INC  (SVM)",
+  "cik": "1340677",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-06-25",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-06-25_silvercorp-metals-inc_ex-99-1",
+  "sha256": "f8aef48b580b4592290392e7504595451447a43365d7a5c89bc40ed3d5a004ca",
+  "bytes": 3195969,
+  "format": "html",
+  "pages": 136,
+  "parsed_on": "2026-11-20"
+}

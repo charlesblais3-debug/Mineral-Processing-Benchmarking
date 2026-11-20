@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1548536/000149315226020908/ex99-19.htm",
+  "source": "edgar",
+  "issuer": "Santacruz Silver Mining Ltd.  (SCZM)",
+  "cik": "1548536",
+  "form": "40-F",
+  "exhibit": "EX-99.19",
+  "filed": "2026-05-01",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-05-01_santacruz-silver-mining-ltd_ex-99-19",
+  "sha256": "8c18d7dd428a47b36a08b1fceb97a7cc848050e6b0a5812b81e60743f1e52e6e",
+  "bytes": 1435038,
+  "format": "html",
+  "pages": 77,
+  "parsed_on": "2026-11-20"
+}

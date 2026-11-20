@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713930/000110465921039704/tm214609d3_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Nexa Resources S.A.  (NEXA)",
+  "cik": "1713930",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-03-22",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-03-22_nexa-resources-s-a_ex-99-1",
+  "sha256": "3ea8e34a4b0dd617a2220a6423e7ddfc30ab1ce83484b2aef7c08b6971b56d9e",
+  "bytes": 4763437,
+  "format": "html",
+  "pages": 151,
+  "parsed_on": "2026-11-20"
+}

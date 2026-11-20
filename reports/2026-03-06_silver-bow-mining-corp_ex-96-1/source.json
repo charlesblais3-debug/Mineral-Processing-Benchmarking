@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2067674/000153949726000886/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "SILVER BOW MINING CORP.",
+  "cik": "2067674",
+  "form": "S-1/A",
+  "exhibit": "EX-96.1",
+  "filed": "2026-03-06",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-03-06_silver-bow-mining-corp_ex-96-1",
+  "sha256": "0273486c0b230d42c2aa67b3a496de6c54dcaf99c5e13ab375dcb7813ddd8ebf",
+  "bytes": 2343725,
+  "format": "html",
+  "pages": 132,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1705259/000110465922030120/tm228083d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Sierra Metals Inc.  (SMTSF)",
+  "cik": "1705259",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-03-03",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-03-03_sierra-metals-inc_ex-99-1",
+  "sha256": "d8b6ee03b8bf09861056a594cc90a9707f82700dcabce82f9c763164c0d3a47d",
+  "bytes": 4804162,
+  "format": "html",
+  "pages": 172,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/771992/000077199226000047/a20260428pasni43-101xworki.htm",
+  "source": "edgar",
+  "issuer": "PAN AMERICAN SILVER CORP  (PAAS, PAASF)",
+  "cik": "771992",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-05-07",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-05-07_pan-american-silver-corp_ex-99-1",
+  "sha256": "64b676bcefbe869ecbf5ae798d7da9ce711fc61b3e9a08c3c7ff6822029d0374",
+  "bytes": 3130502,
+  "format": "html",
+  "pages": 176,
+  "parsed_on": "2026-11-20"
+}
