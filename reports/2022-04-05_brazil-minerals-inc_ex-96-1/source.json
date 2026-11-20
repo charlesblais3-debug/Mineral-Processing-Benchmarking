@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1540684/000149315222009157/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Brazil Minerals, Inc.  (ATLX)",
+  "cik": "1540684",
+  "form": "8-K",
+  "exhibit": "EX-96.1",
+  "filed": "2022-04-05",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-04-05_brazil-minerals-inc_ex-96-1",
+  "sha256": "feeaee2eb586a0aedde0b1def400ae9e71dba44a1985f55b68a3a21fc440cc24",
+  "bytes": 1679836,
+  "format": "html",
+  "pages": 68,
+  "parsed_on": "2026-11-20"
+}

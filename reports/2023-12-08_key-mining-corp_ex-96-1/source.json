@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1879717/000121390023094425/fs12023a1ex96-1_keymining.htm",
+  "source": "edgar",
+  "issuer": "Key Mining Corp.",
+  "cik": "1879717",
+  "form": "S-1/A",
+  "exhibit": "EX-96.1",
+  "filed": "2023-12-08",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-12-08_key-mining-corp_ex-96-1",
+  "sha256": "0293210710b69cc463ad5a6a4f60a24e1c7bfda60aff200043c0b9f781012f9c",
+  "bytes": 827653,
+  "format": "html",
+  "pages": 57,
+  "parsed_on": "2026-11-20"
+}

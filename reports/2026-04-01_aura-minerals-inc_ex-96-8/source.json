@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1468642/000117184326002150/exh_968.htm",
+  "source": "edgar",
+  "issuer": "Aura Minerals Inc.  (AUGO)",
+  "cik": "1468642",
+  "form": "20-F/A",
+  "exhibit": "EX-96.8",
+  "filed": "2026-04-01",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-04-01_aura-minerals-inc_ex-96-8",
+  "sha256": "ee010478cb5bbc1ca6b283a734a0b9d69b60bbd893d17230c026d5435d542d53",
+  "bytes": 511851,
+  "format": "html",
+  "pages": 98,
+  "parsed_on": "2026-11-20"
+}

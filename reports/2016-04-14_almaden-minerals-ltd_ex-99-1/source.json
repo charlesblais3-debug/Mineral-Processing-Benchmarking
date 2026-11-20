@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1015647/000110262416002555/exh99_1.htm",
+  "source": "edgar",
+  "issuer": "ALMADEN MINERALS LTD  (AAUAF)",
+  "cik": "1015647",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2016-04-14",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-04-14_almaden-minerals-ltd_ex-99-1",
+  "sha256": "ffbe0fddaae118f520b144cdea57ecf7f7726a5c7f741bf6d06aed3804d89d27",
+  "bytes": 2964688,
+  "format": "html",
+  "pages": 187,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1311605/000106299318002429/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "KLONDEX MINES LTD",
+  "cik": "1311605",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-05-30",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-05-30_klondex-mines-ltd_ex-99-1",
+  "sha256": "2e83dfd0367e6fc2ae4e88cffa50bed255f6dc133dc0c085aca97a05aa5af1de",
+  "bytes": 1759047,
+  "format": "html",
+  "pages": 188,
+  "parsed_on": "2026-11-20"
+}

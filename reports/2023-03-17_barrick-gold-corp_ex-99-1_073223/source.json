@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312523073223/d444217dex991.htm",
+  "source": "edgar",
+  "issuer": "BARRICK GOLD CORP  (GOLD)",
+  "cik": "756894",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-03-17",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-03-17_barrick-gold-corp_ex-99-1_073223",
+  "sha256": "44e61a9c7e302b51a41d567499d2b2af0dba394b68ee9a527c2164f03e36c164",
+  "bytes": 4289559,
+  "format": "html",
+  "pages": 278,
+  "parsed_on": "2026-11-20"
+}

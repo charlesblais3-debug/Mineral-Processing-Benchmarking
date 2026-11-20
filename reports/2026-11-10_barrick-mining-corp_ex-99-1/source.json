@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312526455707/d111970dex991.htm",
+  "source": "edgar",
+  "issuer": "BARRICK MINING CORP  (B)",
+  "cik": "756894",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-11-10",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-11-10_barrick-mining-corp_ex-99-1",
+  "sha256": "8c5a78770895f5714fcbd714b31a2ac1045c77874a6e5798a8daeeedbc4a4e37",
+  "bytes": 2821137,
+  "format": "html",
+  "pages": 266,
+  "parsed_on": "2026-11-20"
+}

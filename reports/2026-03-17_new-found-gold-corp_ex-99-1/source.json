@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1840616/000106299326001460/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "New Found Gold Corp.  (NFGC)",
+  "cik": "1840616",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-03-17",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-03-17_new-found-gold-corp_ex-99-1",
+  "sha256": "6dc4235b18aea6e6cba35d5491a6e4b0bc112c2cf540b5af4e26a6ed63283458",
+  "bytes": 4024676,
+  "format": "html",
+  "pages": 585,
+  "parsed_on": "2026-11-20"
+}

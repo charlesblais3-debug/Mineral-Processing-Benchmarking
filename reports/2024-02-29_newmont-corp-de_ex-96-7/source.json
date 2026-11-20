@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472724000016/exhibit967-lihiroperatio.htm",
+  "source": "edgar",
+  "issuer": "NEWMONT Corp /DE/  (NEM, NEMCL)",
+  "cik": "1164727",
+  "form": "10-K",
+  "exhibit": "EX-96.7",
+  "filed": "2024-02-29",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-02-29_newmont-corp-de_ex-96-7",
+  "sha256": "15ef0f0f7f17a776ec2f9385f93f3ea6df5dce5b13566232e3ea1d6b3e01c5e6",
+  "bytes": 485682,
+  "format": "html",
+  "pages": 98,
+  "parsed_on": "2026-11-20"
+}

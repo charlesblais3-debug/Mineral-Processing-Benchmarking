@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1279944/000110465916104524/a16-5719_3ex99d2.htm",
+  "source": "edgar",
+  "issuer": "LAKE SHORE GOLD CORP",
+  "cik": "1279944",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2016-03-11",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-03-11_lake-shore-gold-corp_ex-99-2",
+  "sha256": "f981066e6be8deade5fd334d7dab30f40addb04c3ef3f2b4d02d4f3c19b1fc4f",
+  "bytes": 6881586,
+  "format": "html",
+  "pages": 352,
+  "parsed_on": "2026-11-20"
+}

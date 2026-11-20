@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1364128/000110465920022392/tm208124d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "ALEXCO RESOURCE CORP",
+  "cik": "1364128",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-02-18",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-02-18_alexco-resource-corp_ex-99-1",
+  "sha256": "9be92c079ae8860f598c872deadaf5b79c32edfc45bf57c3cbb712ea37009410",
+  "bytes": 6716252,
+  "format": "html",
+  "pages": 388,
+  "parsed_on": "2026-11-20"
+}

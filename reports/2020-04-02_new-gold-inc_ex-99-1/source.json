@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/800166/000115752320000457/a52195740ex99_1.htm",
+  "source": "edgar",
+  "issuer": "New Gold Inc. /FI  (NGD)",
+  "cik": "800166",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-04-02",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-04-02_new-gold-inc_ex-99-1",
+  "sha256": "7b5d07c35e2a931ca6b3bbfa966d442317fa31bf9af0072118f47e46965e2609",
+  "bytes": 6367922,
+  "format": "html",
+  "pages": 263,
+  "parsed_on": "2026-11-20"
+}

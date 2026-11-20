@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713443/000106299319002978/exhibit99-4.htm",
+  "source": "edgar",
+  "issuer": "Kirkland Lake Gold Ltd.",
+  "cik": "1713443",
+  "form": "6-K",
+  "exhibit": "EX-99.4",
+  "filed": "2019-07-23",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2019-07-23_kirkland-lake-gold-ltd_ex-99-4",
+  "sha256": "1ed2cd09bd5d1604434599b41d10ce9c6471a6a5d7cc5aab566baddb330616fe",
+  "bytes": 827806,
+  "format": "html",
+  "pages": 126,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1286973/000106299317000127/exhibit99-73.htm",
+  "source": "edgar",
+  "issuer": "Americas Silver Corp  (USAS)",
+  "cik": "1286973",
+  "form": "40FR12B",
+  "exhibit": "EX-99.73",
+  "filed": "2017-01-11",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-01-11_americas-silver-corp_ex-99-73",
+  "sha256": "d532664ee22038e2186a2afc8464a59be7edfec7ca438d4667b70b64177b2048",
+  "bytes": 457310,
+  "format": "html",
+  "pages": 114,
+  "parsed_on": "2026-11-20"
+}

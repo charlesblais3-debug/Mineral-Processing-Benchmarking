@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1164771/000165495423004786/ndm_ex991.htm",
+  "source": "edgar",
+  "issuer": "NORTHERN DYNASTY MINERALS LTD  (NAK)",
+  "cik": "1164771",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-04-17",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-04-17_northern-dynasty-minerals-ltd_ex-99-1",
+  "sha256": "ac3328cdd8e8c8d5642ac3158dd1923941837be9d89eee761bc054c2875f14a9",
+  "bytes": 2985068,
+  "format": "html",
+  "pages": 249,
+  "parsed_on": "2026-11-20"
+}

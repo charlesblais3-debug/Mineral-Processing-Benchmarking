@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/701818/000114420418033836/tv496119_ex99-2.htm",
+  "source": "edgar",
+  "issuer": "KINROSS GOLD CORP  (KGC, KGCRF)",
+  "cik": "701818",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2018-06-12",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-06-12_kinross-gold-corp_ex-99-2",
+  "sha256": "56644d05f5230161a234de1c649f3012887aa540abe64b01fe0d1145e2da5edc",
+  "bytes": 2739210,
+  "format": "html",
+  "pages": 186,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1429937/000106299320001217/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "B2GOLD CORP  (BTG)",
+  "cik": "1429937",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-03-02",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-03-02_b2gold-corp_ex-99-1",
+  "sha256": "b6fee1322d917c2301d32820d499bbf3459d32dcb376508ebaf728208fde16db",
+  "bytes": 1465025,
+  "format": "html",
+  "pages": 189,
+  "parsed_on": "2026-11-20"
+}

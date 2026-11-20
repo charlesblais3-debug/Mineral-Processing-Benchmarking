@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1472619/000106299320002852/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Loncor Resources Inc.  (LONCF)",
+  "cik": "1472619",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-06-17",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-06-17_loncor-resources-inc_ex-99-1",
+  "sha256": "aef89083fa0114a455d9fedd36cae1ffb96b47caa7259611da456afb257e8b0d",
+  "bytes": 2016291,
+  "format": "html",
+  "pages": 252,
+  "parsed_on": "2026-11-20"
+}

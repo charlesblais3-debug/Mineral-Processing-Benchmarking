@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/800166/000080016622000020/ngdraim106-ni43x101xmast.htm",
+  "source": "edgar",
+  "issuer": "New Gold Inc. /FI  (NGD)",
+  "cik": "800166",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-04-05",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-04-05_new-gold-inc_ex-99-1",
+  "sha256": "5a8c7a83bdb175ca9e32d5c3d4cf29d7f26b41f2e211f9c91933120133082214",
+  "bytes": 880536,
+  "format": "html",
+  "pages": 116,
+  "parsed_on": "2026-11-20"
+}

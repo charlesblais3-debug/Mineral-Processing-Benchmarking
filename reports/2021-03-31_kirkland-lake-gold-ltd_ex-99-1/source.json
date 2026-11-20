@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713443/000162828021006208/kirklanddetourfinal30mar.htm",
+  "source": "edgar",
+  "issuer": "Kirkland Lake Gold Ltd.",
+  "cik": "1713443",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-03-31",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-03-31_kirkland-lake-gold-ltd_ex-99-1",
+  "sha256": "547515320f7aa32c1812276d2fcbfbb883300538e6b5175a2d14d7563532c02c",
+  "bytes": 883253,
+  "format": "html",
+  "pages": 367,
+  "parsed_on": "2026-11-20"
+}

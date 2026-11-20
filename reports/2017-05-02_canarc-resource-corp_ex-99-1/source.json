@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/868822/000113717117000053/report.htm",
+  "source": "edgar",
+  "issuer": "CANARC RESOURCE CORP  (CRCUF)",
+  "cik": "868822",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-05-02",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-05-02_canarc-resource-corp_ex-99-1",
+  "sha256": "56c4b5ebe5ecc6c9d48f5ca351bf420ab69f4c56e3751073761d7247f7015e20",
+  "bytes": 693842,
+  "format": "html",
+  "pages": 103,
+  "parsed_on": "2026-11-20"
+}

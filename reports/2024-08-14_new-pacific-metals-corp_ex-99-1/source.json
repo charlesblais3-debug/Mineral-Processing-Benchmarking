@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1369085/000117625624000083/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "NEW PACIFIC METALS CORP  (NEWP)",
+  "cik": "1369085",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2024-08-14",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-08-14_new-pacific-metals-corp_ex-99-1",
+  "sha256": "32f66ddc42f8171b82139ec783e672cf9e10de81e2759998404a530d7ae4d769",
+  "bytes": 4496876,
+  "format": "html",
+  "pages": 2,
+  "parsed_on": "2026-11-20"
+}

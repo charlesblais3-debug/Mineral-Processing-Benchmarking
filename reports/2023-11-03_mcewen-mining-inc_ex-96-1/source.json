@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/314203/000110465923114271/tm2329654d1_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "McEwen Mining Inc.  (MUX, MQMNW)",
+  "cik": "314203",
+  "form": "8-K/A",
+  "exhibit": "EX-96.1",
+  "filed": "2023-11-03",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-11-03_mcewen-mining-inc_ex-96-1",
+  "sha256": "ef783680e0810b5fac7b7cb68da791971dc36213a37405e26d4036a6868e07a0",
+  "bytes": 4035381,
+  "format": "html",
+  "pages": 193,
+  "parsed_on": "2026-11-20"
+}

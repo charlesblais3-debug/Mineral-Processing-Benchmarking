@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1067428/000162828022007855/a2021_-xagaxmineracaoxxx.htm",
+  "source": "edgar",
+  "issuer": "ANGLOGOLD ASHANTI LTD",
+  "cik": "1067428",
+  "form": "6-K",
+  "exhibit": "EX-96.6",
+  "filed": "2022-03-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-03-30_anglogold-ashanti-ltd_ex-96-6",
+  "sha256": "9f029fe029e74657b33ff16fe017d244adf9a09b3dfde6ce487dcf2fbae63b94",
+  "bytes": 255327,
+  "format": "html",
+  "pages": 21,
+  "parsed_on": "2026-11-20"
+}

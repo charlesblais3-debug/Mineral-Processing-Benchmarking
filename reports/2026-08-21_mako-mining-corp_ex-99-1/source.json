@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1784930/000106299326004556/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Mako Mining Corp.  (MAKO)",
+  "cik": "1784930",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-08-21",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-08-21_mako-mining-corp_ex-99-1",
+  "sha256": "2ab6a5944ca7a5260383ce9aebc7120a0bc4c3e611e27872c111a0499e7a65b7",
+  "bytes": 3285132,
+  "format": "html",
+  "pages": 284,
+  "parsed_on": "2026-11-20"
+}

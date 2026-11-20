@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1377757/000106299320001102/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Asanko Gold Inc.  (GAU)",
+  "cik": "1377757",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-02-21",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-02-21_asanko-gold-inc_ex-99-1",
+  "sha256": "1adb21201187e012bdfe0d1375a52a53c27ae7069396c3b6d4c66f9a175cc3f2",
+  "bytes": 269120,
+  "format": "html",
+  "pages": 11,
+  "parsed_on": "2026-11-20"
+}

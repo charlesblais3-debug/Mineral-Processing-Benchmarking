@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1852551/000149315223024101/filename2.htm",
+  "source": "edgar",
+  "issuer": "Nova Minerals Ltd  (NVA, NVAAF, NVAWW)",
+  "cik": "1852551",
+  "form": "DRS",
+  "exhibit": "EX-96.1",
+  "filed": "2023-07-10",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-07-10_nova-minerals-ltd_ex-96-1",
+  "sha256": "30045a1555624130278ad1dc38d0b00d162d58452abc9a4b16d1ac190a3e947b",
+  "bytes": 2276552,
+  "format": "html",
+  "pages": 85,
+  "parsed_on": "2026-11-20"
+}

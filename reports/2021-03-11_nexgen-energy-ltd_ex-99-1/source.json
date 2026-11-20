@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1698535/000119312521077538/d150103dex991.htm",
+  "source": "edgar",
+  "issuer": "NexGen Energy Ltd.  (NXE)",
+  "cik": "1698535",
+  "form": "6-K/A",
+  "exhibit": "EX-99.1",
+  "filed": "2021-03-11",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-03-11_nexgen-energy-ltd_ex-99-1",
+  "sha256": "963e978b96b0c9b9664a97eccbf4890351c7a85a6a6704c498306590a98d0129",
+  "bytes": 5375538,
+  "format": "html",
+  "pages": 391,
+  "parsed_on": "2026-11-20"
+}

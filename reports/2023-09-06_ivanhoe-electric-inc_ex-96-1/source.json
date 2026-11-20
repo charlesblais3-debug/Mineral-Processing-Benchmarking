@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1879016/000110465923098492/tm2324688d1_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Ivanhoe Electric Inc.  (IE)",
+  "cik": "1879016",
+  "form": "8-K",
+  "exhibit": "EX-96.1",
+  "filed": "2023-09-06",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-09-06_ivanhoe-electric-inc_ex-96-1",
+  "sha256": "f55df0c21e232dcd49cb0e405abcc8044dd4c879a39ce77023994c10e9c33bac",
+  "bytes": 8911569,
+  "format": "html",
+  "pages": 247,
+  "parsed_on": "2026-11-20"
+}

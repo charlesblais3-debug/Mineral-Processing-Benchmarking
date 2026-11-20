@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1855743/000107997322000803/ex99x1.htm",
+  "source": "edgar",
+  "issuer": "ARRAS MINERALS CORP.  (ARRKF)",
+  "cik": "1855743",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-06-28",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-06-28_arras-minerals-corp_ex-99-1_000803",
+  "sha256": "13f9d4bb370a2e0714c9817a39dd667ce1fb425bf86aaccccfa42c5f4f2ba7ba",
+  "bytes": 1677665,
+  "format": "html",
+  "pages": 164,
+  "parsed_on": "2026-11-20"
+}

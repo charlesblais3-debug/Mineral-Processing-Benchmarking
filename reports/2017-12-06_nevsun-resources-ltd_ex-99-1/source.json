@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/919991/000147237517000127/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "NEVSUN RESOURCES LTD",
+  "cik": "919991",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-12-06",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-12-06_nevsun-resources-ltd_ex-99-1",
+  "sha256": "d2533c6dddde464797b1cea554586b4578cac38843bf59e2d0d0749dae6f7279",
+  "bytes": 2397018,
+  "format": "html",
+  "pages": 247,
+  "parsed_on": "2026-11-20"
+}

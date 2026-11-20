@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1364128/000127956921000725/ex991.htm",
+  "source": "edgar",
+  "issuer": "ALEXCO RESOURCE CORP",
+  "cik": "1364128",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-05-28",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-05-28_alexco-resource-corp_ex-99-1",
+  "sha256": "9a5f4441b09ce676adfc98a27300e9b161ca68fd5ad9409f05a6eb5e1f2c2b1f",
+  "bytes": 9458611,
+  "format": "html",
+  "pages": 290,
+  "parsed_on": "2026-11-20"
+}

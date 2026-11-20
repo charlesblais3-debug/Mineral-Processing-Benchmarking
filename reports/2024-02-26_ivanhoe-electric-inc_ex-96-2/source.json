@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1879016/000187901624000005/uspr001830_ivnextinticxs.htm",
+  "source": "edgar",
+  "issuer": "Ivanhoe Electric Inc.  (IE)",
+  "cik": "1879016",
+  "form": "10-K",
+  "exhibit": "EX-96.2",
+  "filed": "2024-02-26",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-02-26_ivanhoe-electric-inc_ex-96-2",
+  "sha256": "6399cf19ac9f6fb607993de5fab1e6e6d4482ecfb9d9017d59b9b9a68d623da7",
+  "bytes": 490830,
+  "format": "html",
+  "pages": 210,
+  "parsed_on": "2026-11-20"
+}

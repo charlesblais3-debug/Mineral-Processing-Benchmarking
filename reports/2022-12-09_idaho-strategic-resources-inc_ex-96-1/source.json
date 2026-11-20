@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1030192/000165495422016284/njmc_ex961.htm",
+  "source": "edgar",
+  "issuer": "Idaho Strategic Resources, Inc.  (IDR)",
+  "cik": "1030192",
+  "form": "10-K/A",
+  "exhibit": "EX-96.1",
+  "filed": "2022-12-09",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-12-09_idaho-strategic-resources-inc_ex-96-1",
+  "sha256": "e37184e3e4606e9aaf05e6d79da16c3d97ce2285447fd7b653946a95c90feb9d",
+  "bytes": 544524,
+  "format": "html",
+  "pages": 92,
+  "parsed_on": "2026-11-20"
+}

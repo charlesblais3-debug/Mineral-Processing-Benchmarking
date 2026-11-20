@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/800166/000080016621000006/a2021annualinformationfo.htm",
+  "source": "edgar",
+  "issuer": "New Gold Inc. /FI  (NGD)",
+  "cik": "800166",
+  "form": "40-F",
+  "exhibit": "EX-99.1",
+  "filed": "2021-03-31",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-03-31_new-gold-inc_ex-99-1",
+  "sha256": "ca61d88e135cc6e7fab310b258d348e21094d63744772cb812c29f099ceebb85",
+  "bytes": 42792,
+  "format": "html",
+  "pages": 79,
+  "parsed_on": "2026-11-20"
+}

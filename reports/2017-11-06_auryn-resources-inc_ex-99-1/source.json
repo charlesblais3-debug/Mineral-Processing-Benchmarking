@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1514597/000117184317006661/exh_991.htm",
+  "source": "edgar",
+  "issuer": "AURYN RESOURCES INC.  (FURY)",
+  "cik": "1514597",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-11-06",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-11-06_auryn-resources-inc_ex-99-1",
+  "sha256": "e8b2e27ad8fe58a1c695a744fa9ad523f2fbf5c20de3285660b5a0076e7068a5",
+  "bytes": 852436,
+  "format": "html",
+  "pages": 147,
+  "parsed_on": "2026-11-20"
+}

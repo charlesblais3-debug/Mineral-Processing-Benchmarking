@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1718405/000110465920051093/tm207279d8_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Mudrick Capital Acquisition Corp  (HYMC, HYMCL, HYMCW)",
+  "cik": "1718405",
+  "form": "S-4/A",
+  "exhibit": "EX-96.1",
+  "filed": "2020-04-24",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-04-24_mudrick-capital-acquisition-co_ex-96-1",
+  "sha256": "ee28a248c0329bbc6d848942b76a3ae6c4473b1294a68a3eb8c996c521021fd6",
+  "bytes": 3637188,
+  "format": "html",
+  "pages": 229,
+  "parsed_on": "2026-11-20"
+}

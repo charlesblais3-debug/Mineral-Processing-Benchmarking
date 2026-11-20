@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1732379/000110465926004291/tm2533647d1_ex99-46.htm",
+  "source": "edgar",
+  "issuer": "Blue Moon Metals Inc.  (BMOOF)",
+  "cik": "1732379",
+  "form": "40FR12B",
+  "exhibit": "EX-99.46",
+  "filed": "2026-01-16",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-01-16_blue-moon-metals-inc_ex-99-46",
+  "sha256": "c56000fb1f11d308056becea9ef7064d212f802c13a70bca735a936076aa20de",
+  "bytes": 2397784,
+  "format": "html",
+  "pages": 84,
+  "parsed_on": "2026-11-20"
+}

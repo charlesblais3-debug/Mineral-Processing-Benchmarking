@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/910569/000127956917002108/tv478278_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "CANADIAN ZINC CORP",
+  "cik": "910569",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-11-06",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-11-06_canadian-zinc-corp_ex-99-1",
+  "sha256": "ca11cf91d748766b7daa2fa8b7c93d749dd0167259dc92d4fec72c190af39363",
+  "bytes": 4562907,
+  "format": "html",
+  "pages": 337,
+  "parsed_on": "2026-11-20"
+}

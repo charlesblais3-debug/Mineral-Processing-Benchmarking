@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713443/000162828019003767/a2019macassani4310101apr.htm",
+  "source": "edgar",
+  "issuer": "Kirkland Lake Gold Ltd.",
+  "cik": "1713443",
+  "form": "40-F",
+  "exhibit": "EX-99.20",
+  "filed": "2019-04-02",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2019-04-02_kirkland-lake-gold-ltd_ex-99-20",
+  "sha256": "20e3f05b89ea3afeb98a64d66444a54aab0769387cdefe94bcddbeaa8bda1582",
+  "bytes": 404856,
+  "format": "html",
+  "pages": 126,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1543418/000106299316009729/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "NovaCopper Inc.  (TMQ)",
+  "cik": "1543418",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2016-05-16",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-05-16_novacopper-inc_ex-99-1",
+  "sha256": "d711132e314db3a8139c9bc128cf421ddfda929b585cb3080433f966abbe3707",
+  "bytes": 692903,
+  "format": "html",
+  "pages": 170,
+  "parsed_on": "2026-11-20"
+}

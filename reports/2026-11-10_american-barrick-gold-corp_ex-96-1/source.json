@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2162540/000119312526455481/d338869dex961.htm",
+  "source": "edgar",
+  "issuer": "American Barrick Gold Corp",
+  "cik": "2162540",
+  "form": "S-1",
+  "exhibit": "EX-96.1",
+  "filed": "2026-11-10",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-11-10_american-barrick-gold-corp_ex-96-1",
+  "sha256": "a8163790cdf9baf4d193dcc95f914e32465424aabe7a79dba9acfc7863f421a6",
+  "bytes": 3692519,
+  "format": "html",
+  "pages": 256,
+  "parsed_on": "2026-11-20"
+}

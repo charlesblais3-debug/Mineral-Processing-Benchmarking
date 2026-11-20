@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1319643/000119983520000005/ex99-2.htm",
+  "source": "edgar",
+  "issuer": "Lode-Star Mining Inc.  (LSMG)",
+  "cik": "1319643",
+  "form": "8-K",
+  "exhibit": "EX-99.2",
+  "filed": "2020-01-21",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-01-21_lode-star-mining-inc_ex-99-2",
+  "sha256": "08e2a7b57adadd90d1153bc8ae113ab7831ac0ccf5f27e0d4ad7c0a6152b5607",
+  "bytes": 777183,
+  "format": "html",
+  "pages": 74,
+  "parsed_on": "2026-11-20"
+}

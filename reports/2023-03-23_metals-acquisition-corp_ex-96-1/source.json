@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853021/000110465923035686/tm2310320d2_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Metals Acquisition Corp",
+  "cik": "1853021",
+  "form": "425",
+  "exhibit": "EX-96.1",
+  "filed": "2023-03-23",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-03-23_metals-acquisition-corp_ex-96-1",
+  "sha256": "95c6aed9537ac0df4c3763314f88f9ac08c0667acabb0335a78c903c4756cfaa",
+  "bytes": 1885682,
+  "format": "html",
+  "pages": 130,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1472619/000106299321005799/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Loncor Gold Inc.  (LONCF)",
+  "cik": "1472619",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2021-06-21",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-06-21_loncor-gold-inc_ex-99-1",
+  "sha256": "f96454eea918594c11bfe0e752bc53699c4941552ed4ebee91702a353295b86d",
+  "bytes": 5180250,
+  "format": "html",
+  "pages": 337,
+  "parsed_on": "2026-11-20"
+}

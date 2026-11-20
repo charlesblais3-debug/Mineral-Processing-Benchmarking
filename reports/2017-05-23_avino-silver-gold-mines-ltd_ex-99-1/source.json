@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/316888/000147793217002512/avino_ex991.htm",
+  "source": "edgar",
+  "issuer": "AVINO SILVER & GOLD MINES LTD  (ASM)",
+  "cik": "316888",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-05-23",
+  "standard": "",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-05-23_avino-silver-gold-mines-ltd_ex-99-1",
+  "sha256": "59832609bae263bfb0b481333d24c7aebaae2c7d049e7e0f3e7edadb10c18719",
+  "bytes": 2400779,
+  "format": "html",
+  "pages": 253,
+  "parsed_on": "2026-11-20"
+}

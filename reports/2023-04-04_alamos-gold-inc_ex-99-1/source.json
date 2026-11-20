@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1178819/000117881923000038/ex991mulatosni43-101techni.htm",
+  "source": "edgar",
+  "issuer": "ALAMOS GOLD INC  (AGI)",
+  "cik": "1178819",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-04-04",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-04-04_alamos-gold-inc_ex-99-1",
+  "sha256": "7acb91c9f20e7c83746dc5b9c417bb949e19035018998654b3661a7ef639e595",
+  "bytes": 4963809,
+  "format": "html",
+  "pages": 313,
+  "parsed_on": "2026-11-20"
+}

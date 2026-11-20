@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1362898/000106299318003719/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Avalon Advanced Materials Inc.  (AVLNF)",
+  "cik": "1362898",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-09-12",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-09-12_avalon-advanced-materials-inc_ex-99-1",
+  "sha256": "92c8a4bd3af1d7f988c2c4d6032979d016c22561269d756cd289cdde0b9a5c3f",
+  "bytes": 1590836,
+  "format": "html",
+  "pages": 297,
+  "parsed_on": "2026-11-20"
+}

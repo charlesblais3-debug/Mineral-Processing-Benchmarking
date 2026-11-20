@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1502154/000106299317002714/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Alio Gold Inc.",
+  "cik": "1502154",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-05-30",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-05-30_alio-gold-inc_ex-99-1",
+  "sha256": "b083618a15f64987224fd6bfc66fc9059ae86e78eaa6b10215bc6fef34795c2d",
+  "bytes": 1519660,
+  "format": "html",
+  "pages": 278,
+  "parsed_on": "2026-11-20"
+}
