@@ -1,0 +1,419 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Caravel Copper",
+  "title": "Caravel Copper Project Pre-Feasibility Study (ASX announcement)",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "effective_date": "2022-07-12",
+  "effective_date_quote": "12 July 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag",
+   "Au"
+  ],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "flotation"
+  ],
+  "quote": "Primary crushing, secondary crushing, grinding by SAG and ball mill with a pebble crushing circuit, followed by conventional rougher and cleaning flotation",
+  "page": 10
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 27.8,
+   "unit": "Mt/a",
+   "quote": "27.8Mtpa throughput",
+   "page": 10,
+   "statistic": "design",
+   "context": {
+    "phase": "dual train, 2 x 13.9 Mtpa"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.24,
+   "unit": "%",
+   "quote": "715Mt of ore at an average grade of 0.24%",
+   "page": 19,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92,
+   "unit": "%",
+   "quote": "~92% Cu",
+   "page": 10,
+   "metal": "Cu",
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 180,
+   "unit": "um",
+   "quote": "primary grind size of P80 180μm be used as a basis of the process design",
+   "page": 23,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.0,
+   "unit": "USD/lb",
+   "quote": "long-term price of US$4.00/lb Cu",
+   "page": 33,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.72,
+   "unit": "USD/AUD",
+   "quote": "exchange rate of US$0.72:A$1.00",
+   "page": 33,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.72,
+   "unit": "USD/lb",
+   "quote": "The estimated C1 Cash cost is US$1.72/lb Cu after by-product credits.",
+   "page": 34,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "C1 after by-product credits, per lb sold"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Plant Direct Costs",
+   "value": 680,
+   "quote": "Plant Direct Costs 680 680",
+   "page": 33,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Infrastructure",
+   "value": 113,
+   "quote": "Site Infrastructure 113 113",
+   "page": 33,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Storage Management",
+   "value": 51,
+   "quote": "Tailings Storage Management 51 182 234",
+   "page": 33,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water Supply",
+   "value": 69,
+   "quote": "Water Supply 69 69",
+   "page": 33,
+   "l1": "tailings_water",
+   "l2": "water",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner Costs and Indirects",
+   "value": 172,
+   "quote": "Owner Costs and Indirects 172 172",
+   "page": 33,
+   "l1": "owners",
+   "l2": "owners",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingencies",
+   "value": 111,
+   "quote": "Contingencies 111 111",
+   "page": 33,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Infrastructure",
+   "value": 8,
+   "quote": "Mine Infrastructure 8 12 20",
+   "page": 33,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Equipment",
+   "value": 309,
+   "quote": "Mining Equipment 309 399 708",
+   "page": 33,
+   "l1": "mining",
+   "l2": "equipment",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Pre-strip",
+   "value": 189,
+   "quote": "Mining Pre-strip 189 291 480",
+   "page": 33,
+   "l1": "mining",
+   "l2": "pre_production",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant and Site Infrastructure subtotal",
+   "value": 1205,
+   "quote": "Plant and Infrastructure Sustaining 580 580 1,205 182 592 – 1,979",
+   "page": 33,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Expenditure",
+   "value": 1702,
+   "quote": "Total Capital Expenditure 1,702 474 991 50 3,216",
+   "page": 33,
+   "is_total": true,
+   "review_note": "Initial (year 0-3) column; includes mining equipment (309) and pre-strip (189); parsed sparse table, column allocation inferred from column sums.",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant and Infrastructure Sustaining",
+   "value": 580,
+   "quote": "Plant and Infrastructure Sustaining 580 580 1,205 182 592 – 1,979",
+   "page": 33,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Infrastructure",
+   "value": 12,
+   "quote": "Mine Infrastructure 8 12 20",
+   "page": 33,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Equipment",
+   "value": 399,
+   "quote": "Mining Equipment 309 399 708",
+   "page": 33,
+   "l1": "mining",
+   "l2": "equipment",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining",
+   "value": 991,
+   "quote": "Total Capital Expenditure 1,702 474 991 50 3,216",
+   "page": 33,
+   "is_total": true,
+   "review_note": "Parsed sparse table; sustaining column allocation inferred (580+12+399=991).",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Incremental Tailings Storage Management (year 4-28)",
+   "value": 182,
+   "quote": "Tailings Storage Management 51 182 234",
+   "page": 33,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Incremental Mining Pre-strip (year 4-28)",
+   "value": 291,
+   "quote": "Mining Pre-strip 189 291 480",
+   "page": 33,
+   "l1": "mining",
+   "l2": "pre_production",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Incremental Capital (year 4-28)",
+   "value": 474,
+   "quote": "Total Capital Expenditure 1,702 474 991 50 3,216",
+   "page": 33,
+   "is_total": true,
+   "review_note": "'Incremental Year 4 to 28' column (later tailings stages and pre-strip), not an expansion of an operating plant.",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Rehabilitation",
+   "value": 50,
+   "quote": "Rehabilitation 50 50",
+   "page": 33,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "AUD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 0.44,
+   "quote": "Mining Costs 0.44",
+   "page": 34,
+   "l1": "mining",
+   "review_note": "per lb sold, US$",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 1.01,
+   "quote": "Processing Cost 1.01",
+   "page": 34,
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "per lb sold, US$",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site and General Administration",
+   "value": 0.09,
+   "quote": "Site and General Administration 0.09",
+   "page": 34,
+   "l1": "ga",
+   "review_note": "per lb sold, US$",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics",
+   "value": 0.21,
+   "quote": "Logistics 0.21",
+   "page": 34,
+   "l1": "offsite",
+   "l2": "transport",
+   "review_note": "per lb sold, US$",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment and Refining Costs",
+   "value": 0.16,
+   "quote": "Treatment and Refining Costs 0.16",
+   "page": 34,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "review_note": "per lb sold, US$",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By-Product Credits",
+   "value": -0.19,
+   "quote": "By-Product Credits2 (0.19)",
+   "page": 34,
+   "l1": "other",
+   "l2": "unallocated",
+   "review_note": "per lb sold, US$",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total C1",
+   "value": 1.72,
+   "quote": "Total 1.72",
+   "page": 34,
+   "is_total": true,
+   "review_note": "C1 cash cost per lb Cu sold, US$, includes logistics, TC/RC and by-product credits",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_lb_payable"
+  }
+ ]
+}

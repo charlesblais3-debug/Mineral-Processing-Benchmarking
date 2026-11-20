@@ -56,6 +56,10 @@ def value_in_quote(value, quote: str) -> bool:
     q = re.sub(r"(?<=\d) ?, ?(?=\d{3}(?!\d))", "", quote)   # 1,234,567 / "2 , 040" -> 1234567 / 2040
     q = q.replace(" . ", ".").replace(" .", ".")             # "37 . 3" style spacing in some PDFs
     nums = {float(n) for n in re.findall(r"\d+(?:\.\d+)?", q)}
+    # Space as thousands separator ("5 455", common in European reports). Kept as extra candidates so
+    # table rows of separate numbers still match individually.
+    qs = re.sub(r"(?<=\d)[ \u00a0\u202f](?=\d{3}(?!\d))", "", q)
+    nums |= {float(n) for n in re.findall(r"\d+(?:\.\d+)?", qs)}
     v = abs(value)
     for scale in (1, 1e3, 1e-3, 1e6, 1e-6, 1e-2):   # 1e-2: 97.5 % stated as 0.975
         target = v * scale

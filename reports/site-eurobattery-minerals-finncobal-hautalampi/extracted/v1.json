@@ -199,9 +199,7 @@
    "l2": "other",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -213,9 +211,7 @@
    "l2": "general",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -227,9 +223,7 @@
    "l2": "tailings",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -241,9 +235,7 @@
    "l2": "water",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -255,9 +247,7 @@
    "l2": "other",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -269,9 +259,7 @@
    "review_note": "Closure line sits inside the direct-cost sum of the initial capital table",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -282,9 +270,7 @@
    "is_subtotal": true,
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -296,9 +282,7 @@
    "l2": "other",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -309,9 +293,7 @@
    "is_subtotal": true,
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -322,9 +304,7 @@
    "l1": "contingency",
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "initial_capex",
@@ -335,9 +315,7 @@
    "is_total": true,
    "multiplier": "k",
    "currency": "EUR",
-   "basis_unit": "total",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "basis_unit": "total"
   },
   {
    "cost_type": "sustaining",
@@ -349,9 +327,7 @@
    "multiplier": "",
    "currency": "EUR",
    "basis_unit": "total",
-   "review_note": "Stated without contingency",
-   "derived": true,
-   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+   "review_note": "Stated without contingency"
   },
   {
    "cost_type": "opex",

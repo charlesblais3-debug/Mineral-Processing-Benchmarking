@@ -94,3 +94,10 @@ def test_currency_conflict():
     assert currency_conflict("CAD", "Mining C$/t mined 2.22") is None
     assert currency_conflict("USD", "Process Plant 910.6") is None
     assert currency_conflict("AUD", "AU$ 1,600 M construction") is None
+
+
+def test_value_in_quote_space_thousands():
+    from pipeline.extract.load import value_in_quote
+    assert value_in_quote(5455, "Mine 5 455")
+    assert value_in_quote(58572, "Direct costs 58 572")
+    assert value_in_quote(1.85, "Totals 1.85 107.11 26.56")
