@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1172724/000117272425000010/a964-technicalreportsummar.htm",
+  "source": "edgar",
+  "issuer": "GOLD FIELDS LTD  (GFI, GFIOF)",
+  "cik": "1172724",
+  "form": "20-F",
+  "exhibit": "EX-96.4",
+  "filed": "2025-03-27",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-03-27_gold-fields-ltd_ex-96-4",
+  "sha256": "516fe45fb9f5790a8b5a7d4fe7078fb713742bbd88bf318f58b8ac0e0e4df236",
+  "bytes": 3222986,
+  "format": "html",
+  "pages": 113,
+  "parsed_on": "2026-11-20"
+}

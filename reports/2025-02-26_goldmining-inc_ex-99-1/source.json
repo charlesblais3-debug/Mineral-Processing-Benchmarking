@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1538847/000143774925005241/ex_781223.htm",
+  "source": "edgar",
+  "issuer": "GoldMining Inc.  (GLDG)",
+  "cik": "1538847",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-02-26",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-02-26_goldmining-inc_ex-99-1",
+  "sha256": "068b86faf69aabdf0dfb267e1a58995a7842c6b7ee416c418735931b0be59322",
+  "bytes": 1558822,
+  "format": "html",
+  "pages": 146,
+  "parsed_on": "2026-11-20"
+}

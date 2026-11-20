@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/918608/000165495425002129/ego_ex991.htm",
+  "source": "edgar",
+  "issuer": "ELDORADO GOLD CORP /FI  (EGO)",
+  "cik": "918608",
+  "form": "6-K/A",
+  "exhibit": "EX-99.1",
+  "filed": "2025-02-28",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-02-28_eldorado-gold-corp_ex-99-1",
+  "sha256": "a68743a36431add272361676058037465ae751bbafcffcc0ded1371d79b26225",
+  "bytes": 4093311,
+  "format": "html",
+  "pages": 283,
+  "parsed_on": "2026-11-20"
+}

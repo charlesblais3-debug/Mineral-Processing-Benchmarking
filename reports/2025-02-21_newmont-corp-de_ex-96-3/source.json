@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472725000011/q42024exhibit963.htm",
+  "source": "edgar",
+  "issuer": "NEWMONT Corp /DE/  (NEM, NEMCL)",
+  "cik": "1164727",
+  "form": "10-K",
+  "exhibit": "EX-96.3",
+  "filed": "2025-02-21",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-02-21_newmont-corp-de_ex-96-3",
+  "sha256": "4cdaf1b9d4b8b901180ba7f8a3653c0abdc532e68355d8e119b86167aaec0603",
+  "bytes": 597352,
+  "format": "html",
+  "pages": 275,
+  "parsed_on": "2026-11-20"
+}

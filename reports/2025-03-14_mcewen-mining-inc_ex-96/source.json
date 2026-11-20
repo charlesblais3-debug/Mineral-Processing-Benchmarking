@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/314203/000155837025003017/mux-20241231xex96.htm",
+  "source": "edgar",
+  "issuer": "McEwen Mining Inc.  (MUX)",
+  "cik": "314203",
+  "form": "10-K",
+  "exhibit": "EX-96",
+  "filed": "2025-03-14",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-03-14_mcewen-mining-inc_ex-96",
+  "sha256": "f8b666cb85543239529f1a4bce1a3882dcb8cf2cf0c96da22f0374ef875d31c6",
+  "bytes": 3761957,
+  "format": "html",
+  "pages": 312,
+  "parsed_on": "2026-11-20"
+}

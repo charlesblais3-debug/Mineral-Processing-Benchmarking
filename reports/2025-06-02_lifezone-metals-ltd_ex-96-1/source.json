@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1958217/000121390025049676/ea024404901ex96-1_lifezone.htm",
+  "source": "edgar",
+  "issuer": "Lifezone Metals Ltd  (LZM, LZM-WT)",
+  "cik": "1958217",
+  "form": "6-K",
+  "exhibit": "EX-96.1",
+  "filed": "2025-06-02",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-06-02_lifezone-metals-ltd_ex-96-1",
+  "sha256": "610c7f9bcab4e9a95e2db823ccf8d7fc909533df944bdfdea8a36c282e5b46ed",
+  "bytes": 4182745,
+  "format": "html",
+  "pages": 205,
+  "parsed_on": "2026-11-20"
+}
