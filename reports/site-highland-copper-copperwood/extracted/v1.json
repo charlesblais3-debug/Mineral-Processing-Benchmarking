@@ -1,0 +1,582 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Copperwood",
+  "title": "Feasibility Study Update, Copperwood Project, Michigan, USA",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2023-03-06",
+  "effective_date_quote": "Effective Date: March 06, 2023",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Michigan",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "Rougher flotation • Rougher concentrate regrinding • Cleaner flotation, using three stages of cleaning • Concentrate thickening and filtration",
+  "page": 52
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 6800,
+   "unit": "t/d",
+   "quote": "Plant Throughput mtpd 6,800",
+   "page": 38,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.35,
+   "unit": "%",
+   "quote": "Head Grade - LoM % Cu 1.35",
+   "page": 38,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.41,
+   "unit": "g/t",
+   "quote": "g/t Ag 3.41",
+   "page": 38,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 95,
+   "unit": "%",
+   "quote": "Plant Availability (Years 3 and after) % 95%",
+   "page": 38,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 20.3,
+   "unit": "kWh/t",
+   "quote": "Bond Crusher Work Index (CWi) kWh/t 20.3",
+   "page": 38
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.2,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (BWi) kWh/t 16.2",
+   "page": 38,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill work index"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 34.5,
+   "unit": "",
+   "quote": "SMC Axb1 34.5",
+   "page": 38,
+   "statistic": "design",
+   "context": {
+    "test": "SMC",
+    "statistic_note": "design value from 85th percentile of ore-type specific energies"
+   }
+  },
+  {
+   "parameter": "ai",
+   "value": 0.014,
+   "unit": "g",
+   "quote": "Bond Abrasion Index (Ai) G 0.014",
+   "page": 38
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 45,
+   "unit": "um",
+   "quote": "Grind Size (P80) µm 45",
+   "page": 38,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 20,
+   "unit": "um",
+   "quote": "Regrind Mill Product Size (P80) µm 20",
+   "page": 38,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86,
+   "unit": "%",
+   "quote": "testing with recovery of 86% for copper and 73.5% for silver",
+   "page": 40,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 73.5,
+   "unit": "%",
+   "quote": "testing with recovery of 86% for copper and 73.5% for silver",
+   "page": 40,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.0,
+   "unit": "USD/lb",
+   "quote": "reverting to a lower long-term price of US$4.00/lb",
+   "page": 55,
+   "metal": "Cu",
+   "context": {
+    "note": "long-term price; near-term 4.25/4.15 in 2025-2026"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 167.6,
+   "unit": "MUSD",
+   "quote": "the after-tax NPV8% is estimated at US$167.6M with an 17.6% IRR and 3.5 y payback period",
+   "page": 59,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 17.6,
+   "unit": "%",
+   "quote": "the after-tax NPV8% is estimated at US$167.6M with an 17.6% IRR and 3.5 y payback period",
+   "page": 59
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.5,
+   "unit": "years",
+   "quote": "the after-tax NPV8% is estimated at US$167.6M with an 17.6% IRR and 3.5 y payback period",
+   "page": 59
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "000 - General",
+   "value": 1150,
+   "quote": "000 - General 1,150",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "100 - Infrastructure",
+   "value": 31779,
+   "quote": "100 - Infrastructure 31,779",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "200 - Power & Electrical",
+   "value": 42460,
+   "quote": "200 - Power & Electrical 42,460",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "onsite_infra",
+   "l2": "power"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "300 - Water & TSF Mgmt.",
+   "value": 46198,
+   "quote": "300 - Water & TSF Mgmt. 46,198",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "400 - Mobile Equipment",
+   "value": 24932,
+   "quote": "400 - Mobile Equipment 24,932",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "500 - Mine Infrastructure",
+   "value": 51172,
+   "quote": "500 - Mine Infrastructure 51,172",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "600 - Process Plant",
+   "value": 105502,
+   "quote": "600 - Process Plant 105,502",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "700 - Construction Indirects",
+   "value": 51028,
+   "quote": "700 - Construction Indirects 51,028",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "indirects",
+   "l2": "construction"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "800 - General Services & Owner's Costs",
+   "value": 25377,
+   "quote": "800 - General Services & Owner's Costs 25,377",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "900 - Pre-Production, Commissioning",
+   "value": 7888,
+   "quote": "900 - Pre-Production, Commissioning 7,888",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "indirects",
+   "l2": "commissioning"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-Total Before Contingency",
+   "value": 387487,
+   "quote": "Sub-Total Before Contingency 387,487",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 37645,
+   "quote": "Contingency 9.7% 37,645",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "l1": "contingency",
+   "l2": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Incl. Contingency",
+   "value": 425131,
+   "quote": "Total Incl. Contingency 425,131",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "k",
+   "currency": "USD",
+   "is_total": true,
+   "review_note": "Pre-production revenue of (33,962) is deducted in a further line (net 391,170); not included here."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Disposal Facility Expansions",
+   "value": 54.77,
+   "quote": "Tailings Disposal Facility Expansions 54.77",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Water Treatment Plant",
+   "value": 17.11,
+   "quote": "Water Treatment Plant 17.11",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Equipment Purchases",
+   "value": 141.56,
+   "quote": "Mine Equipment Purchases 141.56",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development Expenditures",
+   "value": 33.11,
+   "quote": "Mine Development Expenditures 33.11",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining CAPEX - Other",
+   "value": 23.35,
+   "quote": "Sustaining CAPEX - Other 23.35",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining CAPEX",
+   "value": 269.89,
+   "quote": "Total Sustaining CAPEX 269.89",
+   "page": 58,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 606,
+   "quote": "Mining Costs 606 24.02 0.92",
+   "page": 59,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 24.02,
+   "quote": "Mining Costs 606 24.02 0.92",
+   "page": 59,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 0.92,
+   "quote": "Mining Costs 606 24.02 0.92",
+   "page": 59,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 369,
+   "quote": "Processing Costs 369 14.63 0.56",
+   "page": 59,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 14.63,
+   "quote": "Processing Costs 369 14.63 0.56",
+   "page": 59,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 0.56,
+   "quote": "Processing Costs 369 14.63 0.56",
+   "page": 59,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Costs",
+   "value": 102,
+   "quote": "G&A Costs 102 4.03 0.15",
+   "page": 59,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Costs",
+   "value": 4.03,
+   "quote": "G&A Costs 102 4.03 0.15",
+   "page": 59,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A Costs",
+   "value": 0.15,
+   "quote": "G&A Costs 102 4.03 0.15",
+   "page": 59,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 136,
+   "quote": "Royalties 136 5.37 0.20",
+   "page": 59,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "royalties_taxes",
+   "review_note": "Royalties are included in the stated Total OPEX (lines sum to it).",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 5.37,
+   "quote": "Royalties 136 5.37 0.20",
+   "page": 59,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "royalties_taxes",
+   "review_note": "Royalties are included in the stated Total OPEX (lines sum to it).",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 0.2,
+   "quote": "Royalties 136 5.37 0.20",
+   "page": 59,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "royalties_taxes",
+   "review_note": "Royalties are included in the stated Total OPEX (lines sum to it).",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total OPEX",
+   "value": 1212,
+   "quote": "Total OPEX 1,212 48.05 1.83",
+   "page": 59,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total OPEX",
+   "value": 48.05,
+   "quote": "Total OPEX 1,212 48.05 1.83",
+   "page": 59,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": true,
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total OPEX",
+   "value": 1.83,
+   "quote": "Total OPEX 1,212 48.05 1.83",
+   "page": 59,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "is_total": true,
+   "currency": "USD"
+  }
+ ]
+}

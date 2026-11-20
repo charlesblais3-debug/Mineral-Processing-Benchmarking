@@ -1,0 +1,243 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Don David",
+  "title": "Don David Gold Mine Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: Rodrigo Simidu, P.Eng. December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Cu",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Mexico",
+  "region": "Oaxaca",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "tank_leach"
+  ],
+  "quote": "The processing plant has a differential flotation circuit capable of processing polymetallic ores and producing up to three separate concentrate products for sale and an agitated leach circuit",
+  "page": 28
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2000,
+   "unit": "t/d",
+   "quote": "The DDGM mill flotation circuit and agitated leach processing capacities provide for a nominal 2,000 tpd.",
+   "page": 28,
+   "statistic": "design",
+   "context": {
+    "phase": "nominal plant capacity"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 1000,
+   "unit": "t/d",
+   "quote": "Mineral Reserves will sustain a two-year LOM for a mill throughput of approximately 1,000 tpd.",
+   "page": 166,
+   "statistic": "lom_average",
+   "context": {
+    "phase": "two-year LOM plan"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.2,
+   "unit": "g/t",
+   "quote": "on an average head grade of 1.2 g/t Au and 196 g/t Ag",
+   "page": 166,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 196,
+   "unit": "g/t",
+   "quote": "on an average head grade of 1.2 g/t Au and 196 g/t Ag",
+   "page": 166,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4365,
+   "unit": "USD/oz",
+   "quote": "Au $/oz 4,543 4,100 4,365",
+   "page": 15,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 61.92,
+   "unit": "USD/oz",
+   "quote": "Ag $/oz 64.13 58.50 61.92",
+   "page": 15,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 5.31,
+   "unit": "USD/lb",
+   "quote": "Cu $/lb 5.49 5.21 5.31",
+   "page": 15,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 18.5,
+   "unit": "MXN/USD",
+   "quote": "An exchange rate of 18.5 Mexican Pesos (“MXP”) exchange rate to 1 U.S. dollar",
+   "page": 210,
+   "context": {
+    "pair": "MXN per USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 71.7,
+   "unit": "MUSD",
+   "quote": "the Net Present Value (NPV) is $71.7 million",
+   "page": 211,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Development",
+   "value": 15431,
+   "quote": "Underground Development 10,954 4,477 15,431 15,431",
+   "page": 209,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Sustaining",
+   "value": 9446,
+   "quote": "Other Sustaining 9,446 - 9,446 9,446",
+   "page": 209,
+   "l1": "other",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Sustaining",
+   "value": 24877,
+   "quote": "Sustaining 20,400 4,477 24,877 24,877",
+   "page": 209,
+   "is_total": true,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine Closure",
+   "value": 14756,
+   "quote": "Mine Closure - - - 14,756",
+   "page": 209,
+   "is_total": true,
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 96.69,
+   "quote": "Mining 26% 74% 96.69",
+   "page": 210,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant",
+   "value": 41.97,
+   "quote": "Plant 22% 78% 41.97",
+   "page": 210,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site G&A",
+   "value": 65.02,
+   "quote": "Site G&A 58% 42% 65.02",
+   "page": 210,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mine Site Operating Cash Cost",
+   "value": 203.68,
+   "quote": "Total Mine Site Operating Cash Cost 35% 65% 203.68",
+   "page": 210,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transportation Cost",
+   "value": 10.33,
+   "quote": "Transportation Cost 0% 100% 10.33",
+   "page": 210,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 8.94,
+   "quote": "Royalties 0% 100% 8.94",
+   "page": 210,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining & Treatment Charges",
+   "value": 24.07,
+   "quote": "Refining & Treatment Charges 0% 100% 24.07",
+   "page": 210,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cash Cost",
+   "value": 247.03,
+   "quote": "Total Operating Cash Cost 24% 76% 247.03",
+   "page": 210,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "review_note": "Stated total includes transportation, royalties and refining/treatment charges"
+  }
+ ]
+}

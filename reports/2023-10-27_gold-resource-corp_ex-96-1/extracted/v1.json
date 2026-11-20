@@ -1,0 +1,595 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Back Forty",
+  "title": "SK1300 Technical Report Summary on the Back Forty Mine Project, Michigan, USA (Initial Assessment)",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2023-09-30",
+  "effective_date_quote": "The effective date is September 30 th , 2023",
+  "effective_date_page": 35,
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Cu",
+   "Zn"
+  ],
+  "country": "USA",
+  "region": "Michigan",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "flotation",
+   "conc_filter",
+   "tails_filter"
+  ],
+  "quote": "The flowsheet consists of a three-stage crushing followed by ball mill to a target P 80 size of 50 microns. The facility will have two flotation circuits to recover copper and zinc (Figure 1-4). The copper and zinc circuits will see their respective concentrate filtered to reduce residual moisture content to approximately 10%. Both concentrates will be loaded for shipment to smelters. Figure 1-4: Process Flow Diagram (Processing section) Zinc flotation tailings will be leached and dewatered using a press filter. Solids will be washed and dewatered to 15% humidity in the press filter before being sent to dry stack.",
+  "page": 40
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2500,
+   "unit": "t/d",
+   "quote": "nominal rate of 2,500 tpd of mineralized material",
+   "page": 40,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 50,
+   "unit": "µm",
+   "quote": "ball mill to a target P 80 size of 50 microns",
+   "page": 40,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.37,
+   "unit": "g/t",
+   "quote": "Grade Au g/t 2.37 2.37 2.37 2.35",
+   "page": 47,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 26.2,
+   "unit": "g/t",
+   "quote": "Ag g/t 26.2 26.2 26.2 25.8",
+   "page": 47,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.39,
+   "unit": "%",
+   "quote": "Cu % 0.39 0.39 0.39 0.38",
+   "page": 47,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 4.29,
+   "unit": "%",
+   "quote": "Zn % 4.29 4.29 4.29 4.34",
+   "page": 47,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1800,
+   "unit": "USD/oz",
+   "quote": "Au $/oz 1,800 1,841 1,850 1,700",
+   "page": 43,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 23.3,
+   "unit": "USD/oz",
+   "quote": "Ag $/oz 23.30 23.70 22.20 23.00",
+   "page": 43,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.9,
+   "unit": "USD/lb",
+   "quote": "Cu $/lb 3.90 3.95 3.70 3.69",
+   "page": 43,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.25,
+   "unit": "USD/lb",
+   "quote": "Zn $/lb 1.25 1.39 1.19 1.20",
+   "page": 43,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 214.5,
+   "unit": "MUSD",
+   "quote": "after-tax NPV at a discount rate of 6% of $214.5M",
+   "page": 47,
+   "context": {
+    "discount_rate_pct": 6
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 25.7,
+   "unit": "%",
+   "quote": "a 25.7% IRR and 2.4 years payback for the base case",
+   "page": 47
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.4,
+   "unit": "years",
+   "quote": "a 25.7% IRR and 2.4 years payback for the base case",
+   "page": 47
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mobile equipment",
+   "value": 5.8,
+   "quote": "Mobile equipment 5.8 24.3 30.1",
+   "page": 46,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open pit mine",
+   "value": 1.4,
+   "quote": "Open pit mine 1.4 1.7 3.1",
+   "page": 46,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized OPEX",
+   "value": 17.9,
+   "quote": "Capitalized OPEX 17.9 7.3 25.1",
+   "page": 46,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Electrical and communications",
+   "value": 8.1,
+   "quote": "Electrical and communications 8.1 - 8.1",
+   "page": 46,
+   "l1": "onsite_infra",
+   "l2": "power",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Surface infrastructures",
+   "value": 26.8,
+   "quote": "Surface infrastructures 26.8 4.9 31.7",
+   "page": 46,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant",
+   "value": 131.1,
+   "quote": "Process plant 131.1 5.4 136.5",
+   "page": 46,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Rock and tailings management",
+   "value": 27.9,
+   "quote": "Rock and tailings management 27.9 - 27.9",
+   "page": 46,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water treatment plant",
+   "value": 21.8,
+   "quote": "Water treatment plant 21.8 - 21.8",
+   "page": 46,
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction indirects",
+   "value": 22.0,
+   "quote": "Construction indirects 22.0 - 22.0",
+   "page": 46,
+   "l1": "indirects",
+   "l2": "construction",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner’s costs",
+   "value": 33.5,
+   "quote": "Owner’s costs 33.5 - 33.5",
+   "page": 46,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 28.9,
+   "quote": "Contingency 28.9 8.7 37.6",
+   "page": 46,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total initial capital",
+   "value": 325.1,
+   "quote": "Total 325.1 102.8 427.9",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile equipment",
+   "value": 24.3,
+   "quote": "Mobile equipment 5.8 24.3 30.1",
+   "page": 46,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open pit mine",
+   "value": 1.7,
+   "quote": "Open pit mine 1.4 1.7 3.1",
+   "page": 46,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground mine",
+   "value": 50.6,
+   "quote": "Underground mine - 50.6 50.6",
+   "page": 46,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized OPEX",
+   "value": 7.3,
+   "quote": "Capitalized OPEX 17.9 7.3 25.1",
+   "page": 46,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Surface infrastructures",
+   "value": 4.9,
+   "quote": "Surface infrastructures 26.8 4.9 31.7",
+   "page": 46,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process plant",
+   "value": 5.4,
+   "quote": "Process plant 131.1 5.4 136.5",
+   "page": 46,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 8.7,
+   "quote": "Contingency 28.9 8.7 37.6",
+   "page": 46,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital",
+   "value": 102.8,
+   "quote": "Total 325.1 102.8 427.9",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Site reclamation and closure",
+   "value": 22.6,
+   "quote": "Site reclamation and closure - 22.6 22.6",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Overburden Removal and Storage",
+   "value": 5.4,
+   "quote": "Overburden Removal and Storage 5.4 0.61",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Overburden Removal and Storage",
+   "value": 0.61,
+   "quote": "Overburden Removal and Storage 5.4 0.61",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 50.4,
+   "quote": "Open Pit Mining 50.4 5.75",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 5.75,
+   "quote": "Open Pit Mining 50.4 5.75",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 194.6,
+   "quote": "Underground Mining 194.6 22.19",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 22.19,
+   "quote": "Underground Mining 194.6 22.19",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rehandling",
+   "value": 1.0,
+   "quote": "Rehandling 1.0 0.12",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Rehandling",
+   "value": 0.12,
+   "quote": "Rehandling 1.0 0.12",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 256.9,
+   "quote": "Processing 256.9 29.30",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 29.3,
+   "quote": "Processing 256.9 29.30",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Deposition",
+   "value": 23.7,
+   "quote": "Tailings Deposition 23.7 2.70",
+   "page": 46,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Deposition",
+   "value": 2.7,
+   "quote": "Tailings Deposition 23.7 2.70",
+   "page": 46,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "WRMF Reclamation",
+   "value": 4.4,
+   "quote": "WRMF Reclamation 4.4 0.51",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "WRMF Reclamation",
+   "value": 0.51,
+   "quote": "WRMF Reclamation 4.4 0.51",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 79.6,
+   "quote": "General and Administration 79.6 9.07",
+   "page": 46,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 9.07,
+   "quote": "General and Administration 79.6 9.07",
+   "page": 46,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Shipping",
+   "value": 153.0,
+   "quote": "Concentrate Shipping 153.0 17.44",
+   "page": 46,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Shipping",
+   "value": 17.44,
+   "quote": "Concentrate Shipping 153.0 17.44",
+   "page": 46,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Capitalized OPEX",
+   "value": -25.1,
+   "quote": "Capitalized OPEX (25.1) (2.87)",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Capitalized OPEX",
+   "value": -2.87,
+   "quote": "Capitalized OPEX (25.1) (2.87)",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 743.8,
+   "quote": "Total 743.8 84.81",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 84.81,
+   "quote": "Total 743.8 84.81",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}
