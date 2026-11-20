@@ -1,0 +1,371 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "KCM Integrated Operations",
+  "title": "S-K 1300 Technical Report Summary: KCM Integrated Operations (Preliminary Feasibility Study)",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2026-04-01",
+  "effective_date_quote": "Effective Date of TRS: 1 April 2026",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Co"
+  ],
+  "country": "Zambia",
+  "region": "Copperbelt",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "via conventional sulfide flotation to produce copper concentrates",
+  "page": 141
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 6.0,
+   "unit": "Mt/a",
+   "quote": "designed as a nameplate 6.0 Mtpa throughput concentrator",
+   "page": 141,
+   "statistic": "design",
+   "context": {
+    "phase": "Konkola Concentrator nameplate"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.89,
+   "unit": "%",
+   "quote": "Konkola Underground Head Grade %TCu 2.89",
+   "page": 21,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {}
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.2,
+   "unit": "%",
+   "quote": "Konkola Underground Recovery % 89.2",
+   "page": 21,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Konkola underground ore",
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.64,
+   "unit": "%",
+   "quote": "Nchanga TLP Head Grade %TCu 0.64",
+   "page": 21,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {}
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 48.5,
+   "unit": "%",
+   "quote": "Nchanga TLP Recovery (Total Cu Recovery) % 48.50",
+   "page": 21,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Nchanga TLP tailings",
+    "to_product": "cathode"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1588,
+   "unit": "MUSD",
+   "quote": "NPV₈% (post-tax, real) US$M 1,588",
+   "page": 22,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 2.46,
+   "unit": "USD/lb",
+   "quote": "C1 Cash Cost 1 4,415 2.46 US$/lb Cu",
+   "page": 21,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 3.11,
+   "unit": "USD/lb",
+   "quote": "All-in Sustaining Cost (AISC) 1 5,583 3.11 US$/lb Cu",
+   "page": 21,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth Capital",
+   "value": 208,
+   "quote": "Growth Capital 208 16.6",
+   "page": 20,
+   "is_total": true,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "1390 mL Pump Chamber (Konkola)",
+   "value": 55,
+   "quote": "1390 mL Pump Chamber (Konkola) 55 4.4",
+   "page": 20,
+   "part_of": "Growth Capital",
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tramming Upgrade Phase 2 (875 mL) (Konkola)",
+   "value": 22,
+   "quote": "Tramming Upgrade Phase 2 (875 mL) (Konkola) 22 1.7",
+   "page": 20,
+   "part_of": "Growth Capital",
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Concentrator Stream 2 Refurbishment (Konkola)",
+   "value": 3.6,
+   "quote": "Concentrator Stream 2 Refurbishment (Konkola) 3.6 0.3",
+   "page": 20,
+   "part_of": "Growth Capital",
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Permanent Cathodes (TLP)",
+   "value": 20,
+   "quote": "Permanent Cathodes (TLP) 20 1.6",
+   "page": 20,
+   "part_of": "Growth Capital",
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other growth projects (incl. EPCM & contingency)",
+   "value": 109,
+   "quote": "Other growth projects (incl. EPCM & contingency) 109 8.7",
+   "page": 20,
+   "part_of": "Growth Capital",
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalised Mining Development (Sub-total)",
+   "value": 569,
+   "quote": "Capitalised Mining Development (Sub-total) 569 45.3",
+   "page": 20,
+   "is_subtotal": true,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Lateral Development",
+   "value": 505,
+   "quote": "Lateral Development 505 40.2",
+   "page": 20,
+   "part_of": "Capitalised Mining Development (Sub-total)",
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vertical Development",
+   "value": 64,
+   "quote": "Vertical Development 64 5.1",
+   "page": 20,
+   "part_of": "Capitalised Mining Development (Sub-total)",
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (Sub-total)",
+   "value": 461,
+   "quote": "461 36.7 KCM Underground Sustaining 302",
+   "page": 21,
+   "is_subtotal": true,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "KCM Underground Sustaining",
+   "value": 302,
+   "quote": "KCM Underground Sustaining 302 24.1",
+   "page": 21,
+   "part_of": "Sustaining Capital (Sub-total)",
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Nchanga Smelter Sustaining",
+   "value": 142,
+   "quote": "Nchanga Smelter Sustaining 142 11.3",
+   "page": 21,
+   "part_of": "Sustaining Capital (Sub-total)",
+   "l1": "offsite",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other sustaining (TLP)",
+   "value": 17,
+   "quote": "Other sustaining (TLP) 17 1.4",
+   "page": 21,
+   "part_of": "Sustaining Capital (Sub-total)",
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs (additional)",
+   "value": 133,
+   "quote": "Closure Costs (additional) 133",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Konkola Underground Mining (Mining + G&A)",
+   "value": 3639,
+   "quote": "Konkola Underground Mining (Mining + G&A) 3,639 125 US$/t ore",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Konkola Underground Mining (Mining + G&A)",
+   "value": 125,
+   "quote": "Konkola Underground Mining (Mining + G&A) 3,639 125 US$/t ore",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Nchanga Business Unit (NBU)",
+   "value": 11,
+   "quote": "Nchanga Business Unit (NBU) 11 N/A",
+   "page": 21,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Nchanga TLP Operations",
+   "value": 519,
+   "quote": "Nchanga TLP Operations 519 15 US$/t ore",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Nchanga TLP Operations",
+   "value": 15,
+   "quote": "Nchanga TLP Operations 519 15 US$/t ore",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal — Mining Operating Costs",
+   "value": 4169,
+   "quote": "Subtotal — Mining Operating Costs 4,169",
+   "page": 21,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelter & Refinery Operating Costs",
+   "value": 1376,
+   "quote": "Smelter & Refinery Operating Costs 1,376",
+   "page": 21,
+   "l1": "offsite",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelter & Refinery Credits",
+   "value": -729,
+   "quote": "Smelter & Refinery Credits (729)",
+   "page": 21,
+   "l1": "offsite",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 4816,
+   "quote": "Total Operating Costs 4,816",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  }
+ ]
+}
