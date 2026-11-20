@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1796073/000106299323006479/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Vizsla Silver Corp.  (VZLA)",
+  "cik": "1796073",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-03-10",
+  "standard": "",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-03-10_vizsla-silver-corp_ex-99-1",
+  "sha256": "8c7ca5f2b0b952aac6e5b1f6b894ecb28522a69883d84f60c41986fb29c99e3e",
+  "bytes": 1947602,
+  "format": "html",
+  "pages": 193,
+  "parsed_on": "2026-11-20"
+}

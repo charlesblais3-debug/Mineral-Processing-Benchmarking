@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1659520/000106299319002336/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "SilverCrest Metals Inc.  (SILV)",
+  "cik": "1659520",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2019-05-17",
+  "standard": "",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2019-05-17_silvercrest-metals-inc_ex-99-1",
+  "sha256": "2a210deaf50963fd69f203089a803a24c8d41718f6914568b1e0f1a7a4a14a60",
+  "bytes": 2207951,
+  "format": "html",
+  "pages": 205,
+  "parsed_on": "2026-11-20"
+}

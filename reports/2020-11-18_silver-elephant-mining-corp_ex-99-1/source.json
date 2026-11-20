@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1545224/000165495420012667/silef_ex99-1.pdf",
+  "source": "edgar",
+  "issuer": "Silver Elephant Mining Corp.  (SILEF)",
+  "cik": "1545224",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-11-18",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-11-18_silver-elephant-mining-corp_ex-99-1",
+  "sha256": "ea041e403d63c221e2cebd7d1cc0949cd7b9d894006684f23de6583d27c12673",
+  "bytes": 14784882,
+  "format": "pdf",
+  "pages": 278,
+  "parsed_on": "2026-11-20"
+}

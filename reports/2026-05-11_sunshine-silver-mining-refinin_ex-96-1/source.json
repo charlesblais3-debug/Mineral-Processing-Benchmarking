@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2091017/000114036126020608/ny20061035x4_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Sunshine Silver Mining & Refining Co",
+  "cik": "2091017",
+  "form": "S-1",
+  "exhibit": "EX-96.1",
+  "filed": "2026-05-11",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-05-11_sunshine-silver-mining-refinin_ex-96-1",
+  "sha256": "f64d274e62092be1e3bb955989609d7cb8e77012fb7f30ed01caad2ee1b8eb93",
+  "bytes": 8242302,
+  "format": "html",
+  "pages": 373,
+  "parsed_on": "2026-11-20"
+}
