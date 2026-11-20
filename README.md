@@ -76,3 +76,8 @@ This rebuilds `app/web/dist/index.html` from the database. Open that file in any
 - **Site OPEX (US$/t milled):** mining + processing + G&A + tailings/water lines per tonne milled, summed from the report's own lines, so every project has the same scope (by-product credits, royalties, freight, TC/RC and capitalised-stripping adjustments excluded). When a report gives no such breakdown, its stated total per tonne milled is used and labelled as such.
 - **OPEX per tonne product:** the report's stated cash cost per tonne of concentrate / pellets / product (iron ore and similar).
 - **Initial CAPEX:** new-build pre-production capital only; expansions, restarts and cost-to-complete are growth capital and are not plotted.
+
+- **Iron ore OPEX.** Iron ore studies state OPEX per tonne of product (dry concentrate or pellets), not per tonne milled.
+  The "Iron ore: OPEX per tonne product" chart sums the same site lines as Site OPEX (mining, processing, G&A,
+  tailings/water; rail, port, shipping and royalties excluded). Where a report states a mass yield, those lines are
+  also converted to per tonne milled (US$/t product × yield) so iron ore appears on the shared Site OPEX chart.

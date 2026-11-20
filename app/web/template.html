@@ -251,7 +251,7 @@ const PRESETS = [
   { id: "capex", title: `Initial CAPEX vs throughput`, x: "tpd", y: "capex", ylab: `Initial CAPEX (US$M, ${Y})`, fit: true, studiesOnly: true },
   { id: "plant", title: `Process plant CAPEX vs throughput`, x: "tpd", y: "plant_capex", ylab: `Process plant CAPEX (US$M, ${Y})`, fit: true, studiesOnly: true },
   { id: "siteopex", title: `Site OPEX per tonne vs throughput`, x: "tpd", y: "site_opex", ylab: `Site OPEX: mining + processing + G&A (US$/t milled, ${Y})`, fit: true },
-  { id: "prodopex", title: `OPEX per tonne product vs throughput`, x: "tpd", y: "product_opex", ylab: `Cash OPEX (US$/t product, ${Y})`, fit: true },
+  { id: "prodopex", title: `Iron ore: site OPEX per tonne of product vs throughput`, tab: "Iron ore: OPEX per tonne product", only: "Fe", x: "tpd", y: "product_opex", ylab: `Site OPEX: mining + processing + G&A (US$/t concentrate or pellets, ${Y})`, fit: true },
   { id: "procopex", title: `Process OPEX per tonne vs throughput`, x: "tpd", y: "process_opex", ylab: `Process OPEX (US$/t milled, ${Y})`, fit: true },
   { id: "bwi", title: `Bond ball mill work index vs throughput`, x: "tpd", y: "bwi", ylab: "Bond ball mill work index (kWh/t)", fit: false },
 ];
@@ -322,7 +322,10 @@ function renderFilters() {
 }
 
 function renderPresets() {
-  $("#presets").innerHTML = PRESETS.map(p => `<button role="tab" data-p="${p.id}" aria-selected="${state.preset === p.id}">${p.title.replace(" vs throughput", "")}</button>`).join("");
+  // presets for one commodity (iron ore's per-tonne-product OPEX) only show when that commodity can be in view
+  const avail = PRESETS.filter(p => !p.only || !state.com || state.com === p.only);
+  if (!avail.some(p => p.id === state.preset)) state.preset = "siteopex";
+  $("#presets").innerHTML = avail.map(p => `<button role="tab" data-p="${p.id}" aria-selected="${state.preset === p.id}">${p.tab || p.title.replace(" vs throughput", "")}</button>`).join("");
   $("#presets").querySelectorAll("button").forEach(b => b.onclick = () => { state.preset = b.dataset.p; save(); renderExplore(); });
 }
 
@@ -374,6 +377,10 @@ function renderChart(rows) {
   const parts = [`<span><i class="Au"></i>Gold</span><span><i class="Cu"></i>Copper</span><span><i class="Ni"></i>Nickel</span><span><i class="Fe"></i>Iron ore</span>`,
     `<span><i style="background:var(--muted)"></i>Study</span><span><i class="hollow"></i>Operating</span>`];
   if (hidden) parts.push(`<span>${hidden} operating mine${hidden > 1 ? "s" : ""} hidden: they report sustaining capital, not initial CAPEX</span>`);
+  const viaYield = pool.filter(p => p.metrics[pr.y]?.parts?.some(q => q.yield)).length;
+  if (pr.y === "site_opex" && viaYield) parts.push(`<span>${viaYield} iron ore project${viaYield > 1 ? "s" : ""}: converted from per tonne of product with the report's stated mass yield</span>`);
+  const asStated = pool.filter(p => (p.metrics[pr.y]?.derived || "").startsWith("report's stated total")).length;
+  if (["site_opex", "product_opex"].includes(pr.y) && asStated) parts.push(`<span>${asStated} use${asStated > 1 ? "" : "s"} the report's stated total (no site breakdown given)</span>`);
   parts.push(`<span>All costs escalated to ${Y} US$</span>`);
   $("#legend").innerHTML = parts.join("");
 }
@@ -609,6 +616,7 @@ function convSteps(c) {
   if (c.ccy !== "USD") out.push(`× ${fmt(c.fx, 4)} US$ per ${CCY[c.ccy] || c.ccy} (${esc(c.fx_src || "exchange rate")}) = <b>${fmtMoney(usd, "USD")}</b>`);
   if (c.esc != null) out.push(Math.abs(c.esc - 1) < 0.0005 ? `no escalation needed (${c.year} cost base, shown as ${Y} dollars)`
     : `× ${fmt(c.esc, 3)} escalation from ${c.year} to ${Y} = <b>${fmtMoney(usd * c.esc, "USD")}</b>`);
+  if (c.yield) out.push(`× ${fmt(c.yield, 1)}% mass yield (t product per t ore, p.${c.yield_page}) = <b>${fmtMoney(usd * (c.esc ?? 1) * c.yield / 100, "USD")} per t milled</b>`);
   return out.join(" → ");
 }
 function convHtml(s) {

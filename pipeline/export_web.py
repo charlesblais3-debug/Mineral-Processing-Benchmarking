@@ -97,18 +97,40 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
 
         SITE_L1 = ("mining", "processing", "ga", "tailings_water")
 
-        def site_opex():
-            """Consistent scope: mining + processing + G&A + tailings/water per tonne milled, from the report's own lines
-            (by-product credits, royalties and offsite costs excluded). Falls back to the report's stated total."""
-            rows = [c for c in costs if c["cost_type"] == "opex" and c["basis_unit"] == "per_t_milled" and not c["is_subtotal"]
+        def site_lines(basis: str):
+            return [c for c in costs if c["cost_type"] == "opex" and c["basis_unit"] == basis and not c["is_subtotal"]
                     and c["category_l1"] in SITE_L1 and c["value_usd_escalated"] is not None]
+
+        def site_sum(basis: str, unit: str, factor: float = 1.0, factor_note: dict | None = None):
+            """Consistent scope: mining + processing + G&A + tailings/water from the report's own lines
+            (rail, port, shipping, royalties, by-product credits and 'other' excluded). Falls back to the stated total."""
+            rows = site_lines(basis)
             if {"mining", "processing"} <= {c["category_l1"] for c in rows}:
-                return {"value": sum(c["value_usd_escalated"] for c in rows),
+                return {"value": sum(c["value_usd_escalated"] for c in rows) * factor,
                         "label": "Sum of site lines: " + " + ".join(c["raw_label"] for c in rows),
-                        "derived": "mining + processing + G&A + tailings/water lines", **_src(rows[0], url),
-                        "parts": [{"label": c["raw_label"], "page": c["page"], "usd_esc": c["value_usd_escalated"], **cv(c)} for c in rows]}
-            total = grand_total("opex", "per_t_milled")
-            return {**total, "derived": "report's stated total (scope as reported)"} if total else None
+                        "derived": f"mining + processing + G&A + tailings/water lines{unit}", **_src(rows[0], url),
+                        "parts": [{"label": c["raw_label"], "page": c["page"], "usd_esc": c["value_usd_escalated"] * factor,
+                                   **cv(c), **(factor_note or {})} for c in rows]}
+            if factor != 1.0:
+                return None
+            total = grand_total("opex", basis)
+            return {**total, "derived": "report's stated total (scope as reported, may include rail, port or royalties)"} if total else None
+
+        def site_opex():
+            direct = site_sum("per_t_milled", "")
+            if direct:
+                return direct
+            # Iron ore reports cost per tonne of product. With a stated mass yield (product t / ore t), the same
+            # site lines convert to per tonne milled: US$/t product x yield = US$/t ore.
+            y = best_fact("mass_yield_pct")
+            if y and 5 <= y["value"] <= 100:
+                f = y["value"] / 100
+                conv = site_sum("per_t_concentrate", f", per tonne of product × {y['value']:g}% stated mass yield", f,
+                                {"yield": y["value"], "yield_page": y["page"]})
+                if conv:
+                    conv["yield_src"] = {k: y[k] for k in ("page", "quote", "url", "verified")}
+                    return conv
+            return None
 
         tpd = best_fact("throughput_tpd")
         if tpd is None:
@@ -121,7 +143,7 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
             "capex": grand_total("initial_capex"),
             "plant_capex": category_sum("initial_capex", "process", "total"),
             "site_opex": site_opex(),
-            "product_opex": grand_total("opex", "per_t_concentrate"),
+            "product_opex": site_sum("per_t_concentrate", ", per tonne of product"),
             "process_opex": category_sum("opex", "processing", "per_t_milled"),
             "bwi": best_fact("bwi_ball"),
             "axb": best_fact("axb"),
