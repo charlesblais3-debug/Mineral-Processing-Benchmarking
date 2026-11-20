@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1203464/000106299325000625/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "IAMGOLD CORP  (IAG)",
+  "cik": "1203464",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-01-10",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-01-10_iamgold-corp_ex-99-1",
+  "sha256": "08e753851597055d39c31f3c5ffb99829ef4557cd7d96c0842551564e6be0b60",
+  "bytes": 2230007,
+  "format": "html",
+  "pages": 303,
+  "parsed_on": "2026-11-20"
+}

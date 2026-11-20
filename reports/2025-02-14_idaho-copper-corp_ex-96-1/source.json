@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1263364/000149315225006995/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Idaho Copper Corp  (COPR)",
+  "cik": "1263364",
+  "form": "S-1/A",
+  "exhibit": "EX-96.1",
+  "filed": "2025-02-14",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-02-14_idaho-copper-corp_ex-96-1",
+  "sha256": "5a6059c0c2eae967ba638892dde38629be5e75888936aa78b792eed819a64c4b",
+  "bytes": 4774579,
+  "format": "html",
+  "pages": 132,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2019435/000121390024110254/ea020701108ex96-1_blue.htm",
+  "source": "edgar",
+  "issuer": "Blue Gold Ltd",
+  "cik": "2019435",
+  "form": "F-4/A",
+  "exhibit": "EX-96.1",
+  "filed": "2024-12-19",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-12-19_blue-gold-ltd_ex-96-1",
+  "sha256": "47d29e76dd061814bc60959a28fa75b3c797b9aad8174ba90205aff469fbf996",
+  "bytes": 2609712,
+  "format": "html",
+  "pages": 144,
+  "parsed_on": "2026-11-20"
+}
