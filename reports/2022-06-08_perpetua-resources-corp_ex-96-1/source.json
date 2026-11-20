@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1526243/000110465922069319/tm2217499d1_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "PERPETUA RESOURCES CORP.  (PPTA)",
+  "cik": "1526243",
+  "form": "8-K/A",
+  "exhibit": "EX-96.1",
+  "filed": "2022-06-08",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-06-08_perpetua-resources-corp_ex-96-1",
+  "sha256": "175eb6834f24041815e4de720f17c6c25e923e49e553ad99604eb453c74a62ce",
+  "bytes": 6662325,
+  "format": "html",
+  "pages": 242,
+  "parsed_on": "2026-11-20"
+}

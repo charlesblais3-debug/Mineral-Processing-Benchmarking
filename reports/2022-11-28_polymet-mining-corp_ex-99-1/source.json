@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/866028/000106299322022781/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "POLYMET MINING CORP",
+  "cik": "866028",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-11-28",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-11-28_polymet-mining-corp_ex-99-1",
+  "sha256": "efc8de35f22aec2be8872714813117d7c3b7bc005e99b19326f89c79862ffc92",
+  "bytes": 873681,
+  "format": "html",
+  "pages": 143,
+  "parsed_on": "2026-11-20"
+}

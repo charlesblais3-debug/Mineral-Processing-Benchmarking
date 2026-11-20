@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/863064/000162828026009531/a962_melxtrsxdecember202.htm",
+  "source": "edgar",
+  "issuer": "RIO TINTO PLC  (RIO, RTPPF)",
+  "cik": "863064",
+  "form": "20-F",
+  "exhibit": "EX-96.2",
+  "filed": "2026-02-19",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-02-19_rio-tinto-plc_ex-96-2",
+  "sha256": "d666fe5897f5cae5ecb1ea199dabc7a569ee84937d8a410af0731c11306dc791",
+  "bytes": 530865,
+  "format": "html",
+  "pages": 110,
+  "parsed_on": "2026-11-20"
+}

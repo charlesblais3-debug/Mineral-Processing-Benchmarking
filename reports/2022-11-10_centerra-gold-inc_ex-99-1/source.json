@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1854640/000110465922116882/tm2230082d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Centerra Gold Inc.  (CGAU)",
+  "cik": "1854640",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-11-10",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-11-10_centerra-gold-inc_ex-99-1",
+  "sha256": "7d23168043556503db6aad1d23ce715758d26bc6dbf4f8f0b20b6097b1698eac",
+  "bytes": 801469,
+  "format": "html",
+  "pages": 296,
+  "parsed_on": "2026-11-20"
+}
