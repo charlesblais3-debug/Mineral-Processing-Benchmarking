@@ -1,0 +1,110 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Golden Chest",
+  "title": "Golden Chest Mine Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Idaho",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "The New Jersey Mill uses a conventional bulk sulfide flotation flowsheet utilizing crushing, grinding, flotation, and paste tailings disposal.",
+  "page": 16
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 6.95,
+   "unit": "g/t",
+   "quote": "Au 6.95 93 2,186,330 70,300",
+   "page": 14,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93,
+   "unit": "%",
+   "quote": "Au 6.95 93 2,186,330 70,300",
+   "page": 14,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2580,
+   "unit": "USD/oz",
+   "quote": "Gold price used in the economic analysis is a constant $2,580 per troy ounce",
+   "page": 14,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore mining with fill",
+   "value": 190.0,
+   "quote": "Ore mining with fill of $190.00 per tonne",
+   "page": 15,
+   "l1": "mining",
+   "review_note": "per tonne of ore (assumed equal to milled)",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Development cost",
+   "value": 60.0,
+   "quote": "Development cost of $60.00 per tonne",
+   "page": 15,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore haulage",
+   "value": 16.0,
+   "quote": "Ore haulage cost of $16.00 per tonne",
+   "page": 14,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling",
+   "value": 60.0,
+   "quote": "Milling cost of $60.00 per tonne",
+   "page": 14,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administrative",
+   "value": 15.0,
+   "quote": "General and Administrative cost of $15.00 per tonne",
+   "page": 15,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Pilar",
+  "title": "Technical Report on the Pilar Operations, Goiás State, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2018-05-31",
+  "effective_date_quote": "The effective date of the technical information in this Technical Report is May 31, 2018.",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Goiás",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2018,
+  "effective_date_page": 11
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "sag_mill",
+   "pebble_crush",
+   "gravity",
+   "ilr",
+   "tank_leach",
+   "cip",
+   "cyanide_detox",
+   "elution_ew"
+  ],
+  "quote": "• | Primary\njaw crushing;\n• | SAG\nmill feed bin;\n• | Single\nstage SAG mill grinding;\n• | Pebble\ncrushing;\n• | Gravity\nconcentration using centrifugal concentrators; treating the underflow of the grinding\ncyclones;\n• | Intensive\ncyanide leaching of the gravity concentrate using Acacia reactor;\n• | Grinding\ncircuit thickening producing a leach feed of 55% solids;\n• | Cyanide\nleaching using six tanks in series;\n• | Carbon\nin pulp gold recovery using eight tanks in series;\n• | Cyanide\ndetoxification using sodium metabisulphite in five tanks in series;\n• | Anglo\nAmerican Research Laboratory (AARL) stripping of the carbon;\n• | Electrowinning\nof the carbon eluent and gravity concentrate leach solution; and",
+  "page": 230
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3500,
+   "unit": "t/d",
+   "quote": "The plant was designed to process 3,500 tpd from the underground mines at Pilar.",
+   "page": 27,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "an average long-term gold price of US$1,200 per ounce",
+   "page": 198,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 3.7,
+   "unit": "BRL/USD",
+   "quote": "an exchange rate of US$1.00 = R$3.70",
+   "page": 198,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Buildings & Infrastructure",
+   "value": 0.85,
+   "quote": "& Infrastructure 0.00 0.47 0.31 0.01 0.07 0.00 0.85",
+   "page": 258,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Machinery & Equipment",
+   "value": 0.56,
+   "quote": "& Equipment 0.00 0.10 0.40 0.06 0.00 0.00 0.56",
+   "page": 258,
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 7.45,
+   "quote": "Development 2.80 2.37 2.28 0.00 0.00 0.00 7.45",
+   "page": 258,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam",
+   "value": 7.03,
+   "quote": "Dam 0.00 2.76 1.68 0.00 2.59 0.00 7.03",
+   "page": 258,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Other",
+   "value": 1.09,
+   "quote": "- Other 0.00 0.47 0.24 0.39 0.00 0.00 1.09",
+   "page": 258,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Três Buracos Open Pit",
+   "value": 2.26,
+   "quote": "Buracos Open Pit 0.00 0.00 0.00 1.98 0.27 0.00 2.26",
+   "page": 258,
+   "l1": "mining",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining",
+   "value": 19.25,
+   "quote": "Sustaining 2.80 6.16 4.90 2.45 2.94 0.00 19.25",
+   "page": 258,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure & Reclamation",
+   "value": 12.62,
+   "quote": "Reclamation 0.00 0.04 0.07 0.04 0.00 12.47 12.62",
+   "page": 258,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansionary Capital (3 Buracos)",
+   "value": 10.22,
+   "quote": "Capital (3 Buracos) 0.00 2.80 7.42 0.00 0.00 0.00 10.22",
+   "page": 258,
+   "l1": "mining",
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OP Mining (LOM)",
+   "value": 52.3,
+   "quote": "OP Mining 0.0 0.0 7.9 10.8 11.7 11.4 9.5 1.0 52.3",
+   "page": 260,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "UG Mining (LOM)",
+   "value": 52.7,
+   "quote": "UG Mining 18.4 19.6 11.8 2.9 0.0 0.0 0.0 0.0 52.7",
+   "page": 260,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling (LOM)",
+   "value": 69.4,
+   "quote": "Milling 5.7 6.8 11.0 10.4 11.0 11.0 10.5 3.1 69.4",
+   "page": 260,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (LOM)",
+   "value": 33.0,
+   "quote": "G&A 2.8 4.8 4.8 4.8 4.8 4.8 4.8 1.4 33.0",
+   "page": 260,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total (LOM)",
+   "value": 207.4,
+   "quote": "Total 26.9 31.1 35.4 28.9 27.5 27.2 24.8 5.5 207.4",
+   "page": 260,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mining",
+   "value": 14.99,
+   "quote": "Total Mining 29.00 29.04 17.98 13.19 10.64 10.36 9.02 3.24 14.99",
+   "page": 260,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 9.91,
+   "quote": "Processing 9.00 10.00 10.00 10.00 10.00 10.00 10.00 10.00 9.91",
+   "page": 260,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.71,
+   "quote": "G&A 4.41 7.11 4.38 4.62 4.36 4.36 4.56 4.53 4.71",
+   "page": 260,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit",
+   "value": 29.61,
+   "quote": "Total 42.41 46.16 32.37 27.81 25.00 24.73 23.58 17.77 29.61",
+   "page": 260,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

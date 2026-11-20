@@ -1,0 +1,476 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Johnson Tract",
+  "title": "Johnson Tract Project Initial Assessment Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2025-05-12",
+  "effective_date_quote": "Effective Date: May 12, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Zn",
+   "Cu",
+   "Pb",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "regrind",
+   "flotation"
+  ],
+  "quote": "By regrinding of the zinc rougher tailings and flotation to produce a pyrite concentrate grading 64 g/t Au",
+  "page": 34
+ },
+ "facts": [
+  {
+   "parameter": "metal_price",
+   "value": 2200,
+   "unit": "USD/oz",
+   "quote": "Au Metal US$/tr.oz 2,200.00",
+   "page": 270,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.0,
+   "unit": "USD/lb",
+   "quote": "Cu Metal US$/lb 4.00",
+   "page": 270,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.25,
+   "unit": "USD/lb",
+   "quote": "Zn Metal US$/lb 1.25",
+   "page": 270,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.5,
+   "unit": "%",
+   "quote": "Copper % 84.5%",
+   "page": 270,
+   "metal": "Cu",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.3,
+   "unit": "%",
+   "quote": "Zinc % 92.3%",
+   "page": 270,
+   "metal": "Zn",
+   "statistic": "design"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 224.5,
+   "unit": "MUSD",
+   "quote": "The estimated post-tax NPV of the Johnson Tract Project, using a discount rate of 5%, is $224.5M",
+   "page": 37,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 30.2,
+   "unit": "%",
+   "quote": "The internal rate of return (IRR) is 30.2% post-tax.",
+   "page": 37
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.1,
+   "unit": "years",
+   "quote": "Non-Discounted Payback Period yr 1.1",
+   "page": 38
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Team/Indirects",
+   "value": 5.0,
+   "quote": "Project Team/Indirects 5.0 5.0 0.0",
+   "page": 36,
+   "l1": "indirects",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Development - Lateral",
+   "value": 19.5,
+   "quote": "Development - Lateral 28.4 19.5 8.9",
+   "page": 36,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Development - Vertical",
+   "value": 0.6,
+   "quote": "Development - Vertical 1.0 0.6 0.4",
+   "page": 36,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mobile Equipment",
+   "value": 18.9,
+   "quote": "Mobile Equipment 21.4 18.9 2.5",
+   "page": 36,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Surface Infrastructure",
+   "value": 91.5,
+   "quote": "Surface Infrastructure 92.7 91.5 1.2",
+   "page": 36,
+   "l1": "onsite_infra",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Underground Infrastructure",
+   "value": 13.3,
+   "quote": "Underground Infrastructure 19.3 13.3 6.0",
+   "page": 36,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized Operating",
+   "value": 28.8,
+   "quote": "Capitalized Operating 28.8 28.8 0.0",
+   "page": 36,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 36.0,
+   "quote": "Contingency 48.3 36.0 12.3",
+   "page": 36,
+   "l1": "contingency",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capital Total (initial)",
+   "value": 213.6,
+   "quote": "Capital Total 274.9 213.6 61.3",
+   "page": 36,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development - Lateral (sustaining)",
+   "value": 8.9,
+   "quote": "Development - Lateral 28.4 19.5 8.9",
+   "page": 36,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development - Vertical (sustaining)",
+   "value": 0.4,
+   "quote": "Development - Vertical 1.0 0.6 0.4",
+   "page": 36,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile Equipment (sustaining)",
+   "value": 2.5,
+   "quote": "Mobile Equipment 21.4 18.9 2.5",
+   "page": 36,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Surface Infrastructure (sustaining)",
+   "value": 1.2,
+   "quote": "Surface Infrastructure 92.7 91.5 1.2",
+   "page": 36,
+   "l1": "onsite_infra",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Infrastructure (sustaining)",
+   "value": 6.0,
+   "quote": "Underground Infrastructure 19.3 13.3 6.0",
+   "page": 36,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency (sustaining)",
+   "value": 12.3,
+   "quote": "Contingency 48.3 36.0 12.3",
+   "page": 36,
+   "l1": "contingency",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Total (sustaining period)",
+   "value": 61.3,
+   "quote": "Capital Total 274.9 213.6 61.3",
+   "page": 36,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Sustaining-period total of 61.3 includes closure of 30.0 (listed separately under closure)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 30.0,
+   "quote": "Closure 30.0 0.0 30.0",
+   "page": 36,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Total (LOM)",
+   "value": 213.4,
+   "quote": "Mine Total 213.4 81.94",
+   "page": 37,
+   "basis_unit": "total",
+   "l1": "mining",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "LHOS Stope Production",
+   "value": 68.3,
+   "quote": "LHOS Stope Production 68.3 26.24",
+   "page": 36,
+   "basis_unit": "total",
+   "l1": "mining",
+   "part_of": "Mine Total (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "LHOS Operating Development",
+   "value": 22.7,
+   "quote": "LHOS Operating Development 22.7 8.72",
+   "page": 36,
+   "basis_unit": "total",
+   "l1": "mining",
+   "part_of": "Mine Total (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "C&F Operating Development",
+   "value": 16.3,
+   "quote": "C&F Operating Development 16.3 6.27",
+   "page": 36,
+   "basis_unit": "total",
+   "l1": "mining",
+   "part_of": "Mine Total (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore/Waste Handling",
+   "value": 12.9,
+   "quote": "Ore/Waste Handling 12.9 4.96",
+   "page": 36,
+   "basis_unit": "total",
+   "l1": "mining",
+   "part_of": "Mine Total (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Services/Ancillary",
+   "value": 53.9,
+   "quote": "Services/Ancillary 53.9 20.68",
+   "page": 36,
+   "basis_unit": "total",
+   "l1": "mining",
+   "part_of": "Mine Total (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance",
+   "value": 11.3,
+   "quote": "Maintenance 11.3 4.32",
+   "page": 36,
+   "basis_unit": "total",
+   "l1": "mining",
+   "part_of": "Mine Total (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Supervision and Technical",
+   "value": 28.0,
+   "quote": "Supervision and Technical 28.0 10.74",
+   "page": 36,
+   "basis_unit": "total",
+   "l1": "mining",
+   "part_of": "Mine Total (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill (LOM)",
+   "value": 102.9,
+   "quote": "Mill 102.9 39.50",
+   "page": 37,
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "review_note": "Study states processing is at an off-site facility; 'Mill' cost is the cost assumed for that processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and Transport (LOM)",
+   "value": 168.5,
+   "quote": "G&A and Transport 168.5 64.70",
+   "page": 37,
+   "basis_unit": "total",
+   "l1": "ga",
+   "review_note": "Combines site G&A with concentrate transport",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport to Dock",
+   "value": 11.6,
+   "quote": "Transport to Dock 11.6 4.45",
+   "page": 37,
+   "basis_unit": "total",
+   "l1": "offsite",
+   "l2": "transport",
+   "part_of": "G&A and Transport (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Transportation (Barge)",
+   "value": 85.0,
+   "quote": "Surface Transportation (Barge) 85.0 32.63",
+   "page": 37,
+   "basis_unit": "total",
+   "l1": "offsite",
+   "l2": "transport",
+   "part_of": "G&A and Transport (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Transportation (Truck to Mill)",
+   "value": 18.8,
+   "quote": "Surface Transportation (Truck to Mill) 18.8 7.24",
+   "page": 37,
+   "basis_unit": "total",
+   "l1": "offsite",
+   "l2": "transport",
+   "part_of": "G&A and Transport (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 53.1,
+   "quote": "G&A 53.1 20.39",
+   "page": 37,
+   "basis_unit": "total",
+   "l1": "ga",
+   "part_of": "G&A and Transport (LOM)",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Total (LOM)",
+   "value": 484.8,
+   "quote": "Operating Total 484.8 186.14",
+   "page": 37,
+   "basis_unit": "total",
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Total",
+   "value": 81.94,
+   "quote": "Mine Total 213.4 81.94",
+   "page": 37,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "mining",
+   "review_note": "$/tonne column headed 'Years 1 to 7'; basis assumed per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill",
+   "value": 39.5,
+   "quote": "Mill 102.9 39.50",
+   "page": 37,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and Transport",
+   "value": 64.7,
+   "quote": "G&A and Transport 168.5 64.70",
+   "page": 37,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Total",
+   "value": 186.14,
+   "quote": "Operating Total 484.8 186.14",
+   "page": 37,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": true
+  }
+ ]
+}

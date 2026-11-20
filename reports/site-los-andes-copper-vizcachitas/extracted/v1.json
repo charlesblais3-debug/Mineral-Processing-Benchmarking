@@ -1,0 +1,154 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Vizcachitas",
+  "title": "Vizcachitas Project Pre-Feasibility Study, Valparaiso Region, Chile, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2023-02-20",
+  "effective_date_quote": "Effective Date: February 20, 2023",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag"
+  ],
+  "country": "Chile",
+  "region": "Valparaiso",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "hpgr"
+  ],
+  "quote": "two HRC3000 high pressure grinding roll (HPGR) crushers arranged in a closed circuit with banana screens",
+  "page": 37
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 136000,
+   "unit": "t/d",
+   "quote": "The Vizcachitas processing plant is designed for a capacity of 136,000 tpd",
+   "page": 289,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 240,
+   "unit": "um",
+   "quote": "using HPGR followed by a milling stage to achieve a P80 of 240 µm",
+   "page": 289,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.1,
+   "unit": "%",
+   "quote": "good overall LOM recoveries for copper at 91.1%",
+   "page": 393,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 74.8,
+   "unit": "%",
+   "quote": "molybdenum at 74.8% and silver at 75.0%",
+   "page": 393,
+   "metal": "Mo",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 75.0,
+   "unit": "%",
+   "quote": "molybdenum at 74.8% and silver at 75.0%",
+   "page": 393,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13.1,
+   "unit": "kWh/t",
+   "quote": "the average result for the BWi was 13.1 kWh/t (11.9 kWh/st)",
+   "page": 147,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill work index",
+    "n_samples": 40,
+    "ore_type": "2017 drill hole samples"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.68,
+   "unit": "USD/lb",
+   "quote": "at US$ 3.68/lb copper, US$12.9/lb molybdenum",
+   "page": 22,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 12.9,
+   "unit": "USD/lb",
+   "quote": "at US$ 3.68/lb copper, US$12.9/lb molybdenum",
+   "page": 22,
+   "metal": "Mo"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2776,
+   "unit": "MUSD",
+   "quote": "The Project Net Present Value (NPV) after-tax at an applied discount rate of 8% is US$2,776",
+   "page": 40,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 24.2,
+   "unit": "%",
+   "quote": "The Project Internal Rate of Return (IRR) after-tax is 24.2%",
+   "page": 40
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.5,
+   "unit": "years",
+   "quote": "The Payback Period, from the start of production, is 2.5 years after-tax",
+   "page": 40
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.25,
+   "unit": "USD/lb",
+   "quote": "US$0.93/lb Cu, and US$1.25/lb Cu over the LOM",
+   "page": 40,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "C1 cash cost per lb Cu produced"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total initial capital cost",
+   "value": 2440,
+   "quote": "with an estimated initial capital cost of US$2.44 billion",
+   "page": 22,
+   "multiplier": "M",
+   "is_total": true,
+   "basis_unit": "total",
+   "derived": true,
+   "review_note": "Report states US$2.44 billion in prose; the cost tables (21.1, 1.14) are images with no text, so no line items extracted."
+  }
+ ]
+}

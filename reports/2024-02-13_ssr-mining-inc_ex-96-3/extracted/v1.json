@@ -1,0 +1,270 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Seabee",
+  "title": "Technical Report Summary on the Seabee Gold Operation, Saskatchewan, Canada",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Saskatchewan",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "ball_mill",
+   "gravity",
+   "cip",
+   "elution_ew"
+  ],
+  "quote": "a primary jaw crusher and secondary cone crusher in closed circuit with a screen to produce grinding circuit feed. The crushed ore is directed to the mill feed bin or external stockpile. The grinding circuit consists of two stages of grinding in ball mills, both in closed circuit with classifying cyclones. A portion of the cyclone underflow from the primary mill is directed to a gravity concentration circuit where between 50% and 70% of the gold in the mill feed is recovered. The gravity tail is recombined with the primary mill cyclone underflow. The primary mill cyclone overflow is ground in the secondary grinding circuit to a target 80% passing 115 µm for feed to the leaching circuit. The cyanide leaching circuit is followed by carbon adsorption in the CIP circuit, after which the carbon is stripped, regenerated, and returned to the CIP circuit. Gold is recovered by electrowinning",
+  "page": 18
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1200,
+   "unit": "t/d",
+   "quote": "current throughput of approximately 1,200 tpd",
+   "page": 17,
+   "statistic": "design",
+   "context": {
+    "phase": "current"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.4,
+   "unit": "%",
+   "quote": "Average LOM Mill Recovery 96.4%",
+   "page": 105,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 5.12,
+   "unit": "g/t",
+   "quote": "Total Ore Feed to Plant: 2,056 kt at 5.12 g/t of Au",
+   "page": 12,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 115,
+   "unit": "µm",
+   "quote": "ground in the secondary grinding circuit to a target 80% passing 115 µm",
+   "page": 18,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1854,
+   "unit": "USD/oz",
+   "quote": "LOM average gold price of US$1,854/oz",
+   "page": 106,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 94.9,
+   "unit": "MUSD",
+   "quote": "after-tax NPV at a 5% discount rate is approximately $94.9 million",
+   "page": 106,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1488,
+   "unit": "USD/oz",
+   "quote": "for an AISC after Silver by-product credits of US$1,488/oz Au",
+   "page": 106,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.33,
+   "unit": "CAD/USD",
+   "quote": "Exchange Rate US$/C$ 1.33 1.33 1.33 1.33 1.33",
+   "page": 93,
+   "context": {
+    "pair": "C$ per US$ (report writes US$1.00 = C$1.33)"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Development",
+   "value": 67.6,
+   "quote": "Capital Development 67.6",
+   "page": 104,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Diamond Drilling and Exploration",
+   "value": 22.5,
+   "quote": "Diamond Drilling and Exploration 22.5",
+   "page": 104,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Building and Civil Work",
+   "value": 9.4,
+   "quote": "Building and Civil Work 9.4",
+   "page": 104,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile Equipment",
+   "value": 13.3,
+   "quote": "Mobile Equipment 13.3",
+   "page": 104,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Machinery and Automation",
+   "value": 13.1,
+   "quote": "Machinery and Automation 13.1",
+   "page": 104,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital Cost",
+   "value": 125.8,
+   "quote": "Total Sustaining Capital Cost 125.8",
+   "page": 104,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure costs",
+   "value": 24,
+   "quote": "Closure costs of US$24 million are included in the analysis",
+   "page": 105,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 130.3,
+   "quote": "Mining 130.3 31.6 63.86",
+   "page": 104,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling (incl. Fixed Plant)",
+   "value": 66.3,
+   "quote": "Milling (incl. Fixed Plant) 66.3 16.1 32.25",
+   "page": 104,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 117.4,
+   "quote": "G&A 117.4 27.6 57.11",
+   "page": 104,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 314.0,
+   "quote": "Total Operating Cost 314.0 75.3 153.22",
+   "page": 104,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 63.86,
+   "quote": "Mining 130.3 31.6 63.86",
+   "page": 104,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling (incl. Fixed Plant)",
+   "value": 32.25,
+   "quote": "Milling (incl. Fixed Plant) 66.3 16.1 32.25",
+   "page": 104,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 57.11,
+   "quote": "G&A 117.4 27.6 57.11",
+   "page": 104,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 153.22,
+   "quote": "Total Operating Cost 314.0 75.3 153.22",
+   "page": 104,
+   "is_total": true,
+   "review_note": "Section 19.1.3 text states total unit operating cost of US$152.73/t; table value used",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

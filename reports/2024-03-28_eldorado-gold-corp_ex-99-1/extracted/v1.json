@@ -1,0 +1,208 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Efemçukuru",
+  "title": "Technical Report Efemçukuru Gold Mine, Türkiye",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Türkiye",
+  "region": "İzmir",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "The comminution circuit consists of a semi-autogenous grinding (SAG) mill operated in closed circuit with a pebble crusher, a ball mill operated in closed circuit with hydrocyclones, and a flash flotation cell",
+  "page": 26
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.545,
+   "unit": "Mt/a",
+   "quote": "can sustain a production rate of 545 ktpa until 2029",
+   "page": 30,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 54,
+   "unit": "µm",
+   "quote": "Ore is ground to a P80 target of 54 µm.",
+   "page": 26,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1700,
+   "unit": "USD/oz",
+   "quote": "using a gold price of $1,700/oz",
+   "page": 30,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Development (Kokarpınar & Batı)",
+   "value": 26.3,
+   "quote": "Mine Development (Kokarpınar & Batı) $26.3 M",
+   "page": 29,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Infrastructure (Kokarpınar & Batı)",
+   "value": 9.9,
+   "quote": "Mine Infrastructure (Kokarpınar & Batı) $9.9 M",
+   "page": 29,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Exploration and Resource Conversion",
+   "value": 24.9,
+   "quote": "Exploration and Resource Conversion $24.9 M",
+   "page": 29,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth Capital Subtotal",
+   "value": 61.1,
+   "quote": "Subtotal $61.1 M Sustaining Capital",
+   "page": 29,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine – Capital Development",
+   "value": 14.5,
+   "quote": "Mine – Capital Development $14.5 M",
+   "page": 29,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine – Other",
+   "value": 26.4,
+   "quote": "Mine – Other $26.4 M",
+   "page": 29,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process",
+   "value": 7.8,
+   "quote": "Process $7.8 M",
+   "page": 29,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Administration / Finance (hardware and software)",
+   "value": 1.9,
+   "quote": "Administration / Finance (hardware and software) $1.9 M",
+   "page": 29,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital Subtotal",
+   "value": 50.6,
+   "quote": "Subtotal $50.6 M Total Capital Costs",
+   "page": 29,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 9.8,
+   "quote": "Closure $9.8 M",
+   "page": 29,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 43.76,
+   "quote": "Mining 43.76",
+   "page": 29,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 35.09,
+   "quote": "Processing 35.09",
+   "page": 29,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site General & Administrative",
+   "value": 37.09,
+   "quote": "Site General & Administrative 37.09",
+   "page": 29,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mine Operating Costs",
+   "value": 115.95,
+   "quote": "Total Mine Operating Costs 115.95",
+   "page": 29,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

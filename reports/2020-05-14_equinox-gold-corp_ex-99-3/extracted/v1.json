@@ -1,0 +1,213 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Aurizona",
+  "title": "Technical Report on the Aurizona Gold Mine, Maranhão, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-01-24",
+  "effective_date_quote": "Date: January 24, 2020",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Maranhão",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "· | grinding circuit, including a SAG mill, ball mill, and associated pumping and material handling systems\n· | a gravity circuit with intensive leach reactor, an electrowinning cell and associated equipment\n· | cyanide Leach/CIP circuit and associated gold recovery and carbon handling circuits, including pre-leach thickening, leach\nand CIP tanks, acid wash and elution, carbon reactivation, gold electrowinning and melting\n· | cyanide destruction",
+  "page": 36
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 8000,
+   "unit": "t/d",
+   "quote": "nominal processing rate of 8,000 t/d",
+   "page": 36,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1350,
+   "unit": "USD/oz",
+   "quote": "based on a $1,350/oz gold price",
+   "page": 34,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Building/Infrastructure",
+   "value": 5895,
+   "quote": "Building/Infrastructure $ ‘000s 5,895",
+   "page": 285,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Hardware/Software",
+   "value": 4646,
+   "quote": "Hardware/Software $ ’000s 4,646",
+   "page": 285,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Stripping",
+   "value": 38731,
+   "quote": "Capitalized Stripping $ ’000s 38,731",
+   "page": 285,
+   "l1": "mining",
+   "l2": "pre_production",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mineral Properties",
+   "value": 138,
+   "quote": "Mineral Properties $ ’000s 138",
+   "page": 285,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Land Acquisition",
+   "value": 1836,
+   "quote": "Land Acquisition $ ’000s 1,836",
+   "page": 285,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Machinery, Equipment",
+   "value": 5462,
+   "quote": "Machinery, Equipment $ ’000s 5,462",
+   "page": 285,
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam Maintenance",
+   "value": 39937,
+   "quote": "Tailings Dam Maintenance $ ’000s 39,937",
+   "page": 285,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Miscellaneous Capital",
+   "value": 3153,
+   "quote": "Miscellaneous Capital $ ’000s 3,153",
+   "page": 285,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Exploration",
+   "value": 7251,
+   "quote": "Exploration $ ’000s 7,251",
+   "page": 285,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 107072,
+   "quote": "Total $ ’000s 107,072",
+   "page": 285,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost per tonne processed",
+   "value": 27.95,
+   "quote": "The total operating cost for the Aurizona Mine is $27.95 per tonne processed",
+   "page": 285,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "partial_breakdown": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per tonne moved",
+   "value": 2.3,
+   "quote": "Mining $/t moved 2.00 2.30",
+   "page": 286,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 10.39,
+   "quote": "Processing $/t ore 8.65 10.39",
+   "page": 286,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.89,
+   "quote": "G & A $/t ore 4.34 4.89",
+   "page": 286,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  }
+ ]
+}
