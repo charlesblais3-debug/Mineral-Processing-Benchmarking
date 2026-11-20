@@ -1,0 +1,472 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bornite",
+  "title": "Bornite Project Northwest Alaska, USA S-K 1300 Technical Report Summary on the Initial Assessment",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2024-11-30",
+  "effective_date_quote": "Mineral Resources for the Bornite Deposit as at November 30, 2024",
+  "primary_commodity": "Cu",
+  "by_products": [],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 12
+ },
+ "flowsheet": null,
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 10000,
+   "unit": "t/d",
+   "quote": "The process plant will process 10,000 t/d of material",
+   "page": 14,
+   "statistic": "design",
+   "context": {
+    "note": "campaign basis two weeks on one week off; mine rate 6,000 t/d"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.66,
+   "unit": "%",
+   "quote": "Plant Feed Grades – Copper, Average LOM % 2.66",
+   "page": 110,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.89,
+   "unit": "%",
+   "quote": "predicts a copper recovery of 90.89% at a copper feed grade of 2.66%",
+   "page": 11,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 9.52,
+   "unit": "kWh/t",
+   "quote": "Average Bond Ball Mill Work Index kWh/tonne 9.52",
+   "page": 78,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "n_samples": 33
+   }
+  },
+  {
+   "parameter": "ai",
+   "value": 0.054,
+   "unit": "g",
+   "quote": "Bond Abrasion Index, Design g 0.054",
+   "page": 110,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 100,
+   "unit": "µm",
+   "quote": "Grinding Circuit Product Size, P 80 µm 100",
+   "page": 110,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 20,
+   "unit": "µm",
+   "quote": "Product Particle Size P 80 µm 20",
+   "page": 110,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.2,
+   "unit": "USD/lb",
+   "quote": "long-term copper price of $4.20/lb was used in the economic analysis",
+   "page": 153,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 393.9,
+   "unit": "MUSD",
+   "quote": "After-Tax Valuation Indicators Undiscounted Cumulative Cash Flow $M 1,218.8 NPV @ 8% $M 393.9",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 20.0,
+   "unit": "%",
+   "quote": "IRR After Tax % 20.0",
+   "page": 18
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.4,
+   "unit": "years",
+   "quote": "Payback Period (undiscounted from start of operations) years 4.4",
+   "page": 18
+  },
+  {
+   "parameter": "lom_years",
+   "value": 17,
+   "unit": "years",
+   "quote": "The Bornite life-of-mine (LOM) is 17 years",
+   "page": 14
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 214.9,
+   "quote": "Mining 214.9 300.6 515.5",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 300.6,
+   "quote": "Mining 214.9 300.6 515.5",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process",
+   "value": 28.6,
+   "quote": "Process 28.6 - 28.6",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings",
+   "value": 10.4,
+   "quote": "Tailings 10.4 - 10.4",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Onsite Infrastructure",
+   "value": 85.3,
+   "quote": "Onsite Infrastructure 85.3 20.7 106.0",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Onsite Infrastructure",
+   "value": 20.7,
+   "quote": "Onsite Infrastructure 85.3 20.7 106.0",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Offsite Infrastructure",
+   "value": 1.7,
+   "quote": "Offsite Infrastructure 1.7 - 1.7",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "offsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 80.6,
+   "quote": "Indirect Costs 80.6 4.1 84.7",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Indirect Costs",
+   "value": 4.1,
+   "quote": "Indirect Costs 80.6 4.1 84.7",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "indirects",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners’ Costs",
+   "value": 9.5,
+   "quote": "Owners’ Costs 9.5 1.2 10.7",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owners’ Costs",
+   "value": 1.2,
+   "quote": "Owners’ Costs 9.5 1.2 10.7",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Provisions/Contingency",
+   "value": 72.5,
+   "quote": "Provisions/Contingency 72.5 36.5 109.0",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "contingency",
+   "l2": "contingency"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Provisions/Contingency",
+   "value": 36.5,
+   "quote": "Provisions/Contingency 72.5 36.5 109.0",
+   "page": 16,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "contingency",
+   "l2": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 340.8,
+   "quote": "Subtotal 340.8 321.3 662.1",
+   "page": 16,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal",
+   "value": 321.3,
+   "quote": "Subtotal 340.8 321.3 662.1",
+   "page": 16,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 503.4,
+   "quote": "Total 503.4 363.1 866.5",
+   "page": 16,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 363.1,
+   "quote": "Total 503.4 363.1 866.5",
+   "page": 16,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 1392.5,
+   "quote": "Underground Mining 1,392.5 37.74",
+   "page": 16,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 37.74,
+   "quote": "Underground Mining 1,392.5 37.74",
+   "page": 16,
+   "l1": "mining",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OTR Haulage",
+   "value": 197.3,
+   "quote": "OTR Haulage 197.3 5.35",
+   "page": 16,
+   "l1": "offsite",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OTR Haulage",
+   "value": 5.35,
+   "quote": "OTR Haulage 197.3 5.35",
+   "page": 16,
+   "l1": "offsite",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 915.8,
+   "quote": "Process 915.8 24.82",
+   "page": 16,
+   "l1": "processing",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 24.82,
+   "quote": "Process 915.8 24.82",
+   "page": 16,
+   "l1": "processing",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "AAP Road",
+   "value": 528.7,
+   "quote": "AAP Road 528.7 14.33",
+   "page": 16,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "AAP Road",
+   "value": 14.33,
+   "quote": "AAP Road 528.7 14.33",
+   "page": 16,
+   "l1": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 495.2,
+   "quote": "G&A 495.2 13.42",
+   "page": 16,
+   "l1": "ga",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 13.42,
+   "quote": "G&A 495.2 13.42",
+   "page": 16,
+   "l1": "ga",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Management",
+   "value": 105.8,
+   "quote": "Water Management 105.8 2.87",
+   "page": 16,
+   "l1": "tailings_water",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Management",
+   "value": 2.87,
+   "quote": "Water Management 105.8 2.87",
+   "page": 16,
+   "l1": "tailings_water",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Operations Cost",
+   "value": 16.4,
+   "quote": "Surface Operations Cost 16.4 0.44",
+   "page": 16,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Surface Operations Cost",
+   "value": 0.44,
+   "quote": "Surface Operations Cost 16.4 0.44",
+   "page": 16,
+   "l1": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 3651.6,
+   "quote": "Total 3,651.6 98.97",
+   "page": 16,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 98.97,
+   "quote": "Total 3,651.6 98.97",
+   "page": 16,
+   "l1": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": true
+  }
+ ]
+}

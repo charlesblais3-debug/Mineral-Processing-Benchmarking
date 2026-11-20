@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2093018/000157587226000392/ctm005_ex96-2.htm",
+  "source": "edgar",
+  "issuer": "CopperTech Metals Inc.  (CUX)",
+  "cik": "2093018",
+  "form": "S-1",
+  "exhibit": "EX-96.2",
+  "filed": "2026-06-02",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-06-02_coppertech-metals-inc_ex-96-2",
+  "sha256": "769f60ef3a2904a58deb42f2c9eea74df9dbb1f5ca0436609d68bb358cbb0350",
+  "bytes": 2972720,
+  "format": "html",
+  "pages": 209,
+  "parsed_on": "2026-11-20"
+}
