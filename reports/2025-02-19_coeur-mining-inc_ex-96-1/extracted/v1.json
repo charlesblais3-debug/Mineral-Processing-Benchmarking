@@ -1,0 +1,311 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Las Chispas",
+  "title": "Las Chispas Operation S-K 1300 Technical Report Summary, Sonora, Mexico",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Sonora",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "flotation",
+   "merrill_crowe",
+   "cyanide_detox"
+  ],
+  "quote": "The Process Plant includes semi-autogenous grinding (SAG), flotation, independent cyanide leaching circuits for flotation concentrate and tailings streams, Merrill Crowe circuit, Cyanide destruction and tailings handling facilities",
+  "page": 34
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1250,
+   "unit": "t/d",
+   "quote": "Plant Throughput t/d 1,250",
+   "page": 290,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 91.3,
+   "unit": "%",
+   "quote": "is achieving an overall availability of greater than the design value of 91.3%",
+   "page": 34,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.51,
+   "unit": "g/t",
+   "quote": "Average Gold Mill Head Grade g/t Au 3.51",
+   "page": 348,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 329.6,
+   "unit": "g/t",
+   "quote": "Average Silver Mill Head Grade g/t Ag 329.6",
+   "page": 348,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 98.0,
+   "unit": "%",
+   "quote": "Overall Recovery (%) Au Ag WOL 98.0 97.5",
+   "page": 206,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "dore"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 97.5,
+   "unit": "%",
+   "quote": "Overall Recovery (%) Au Ag WOL 98.0 97.5",
+   "page": 206,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "dore"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2493,
+   "unit": "USD/oz",
+   "quote": "Base Case (LOM average) 2,493 28.86 538.6",
+   "page": 351,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 28.86,
+   "unit": "USD/oz",
+   "quote": "Base Case (LOM average) 2,493 28.86 538.6",
+   "page": 351,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 538.6,
+   "unit": "MUSD",
+   "quote": "Base Case (LOM average) 2,493 28.86 538.6",
+   "page": 351,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine & Underground Infrastructure",
+   "value": 154.2,
+   "quote": "Mine & Underground Infrastructure $M 154.2",
+   "page": 347,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant",
+   "value": 4.0,
+   "quote": "Process Plant $M 4.0",
+   "page": 347,
+   "l1": "processing",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "G&A and Other",
+   "value": 4.9,
+   "quote": "G&A and Other $M 4.9",
+   "page": 347,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 163.1,
+   "quote": "Total $M 163.1",
+   "page": 347,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 11.9,
+   "quote": "Closure $M 11.9",
+   "page": 347,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 110.29,
+   "quote": "Mining* ($/t processed) 110.29",
+   "page": 338,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 42.05,
+   "quote": "Process ($/t processed) 42.05",
+   "page": 338,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 24.61,
+   "quote": "G&A ($/t processed) 24.61",
+   "page": 338,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total LOM Operating Cost",
+   "value": 176.95,
+   "quote": "Total LOM Operating Cost ($/t processed) 176.95",
+   "page": 338,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing & Milling",
+   "value": 7.98,
+   "quote": "Crushing & Milling 7.98",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Leaching & Bulk Leach Tank",
+   "value": 8.26,
+   "quote": "Leaching & Bulk Leach Tank 8.26",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Counter Current Decantation (CCD)",
+   "value": 0.62,
+   "quote": "Counter Current Decantation (CCD) 0.62",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Merril-Crowe & Refining",
+   "value": 7.1,
+   "quote": "Merril-Crowe & Refining 7.10",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Detox & Tailing Filters",
+   "value": 3.5,
+   "quote": "Detox & Tailing Filters 3.50",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "FTSF",
+   "value": 2.13,
+   "quote": "FTSF 2.13",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Services",
+   "value": 1.02,
+   "quote": "Services 1.02",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Management & Met Lab",
+   "value": 4.49,
+   "quote": "Management & Met Lab 4.49",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labor",
+   "value": 6.94,
+   "quote": "Labor 6.94",
+   "page": 341,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Process"
+  }
+ ]
+}

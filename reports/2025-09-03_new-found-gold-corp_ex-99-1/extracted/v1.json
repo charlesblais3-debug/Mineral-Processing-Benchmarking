@@ -1,0 +1,369 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Queensway",
+  "title": "NI 43-101 Technical Report for the Queensway Gold Project, Newfoundland and Labrador, Canada",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2025-06-30",
+  "effective_date_quote": "Effective Date - June 30, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Newfoundland and Labrador",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill"
+  ],
+  "quote": "The grinding circuit will consist of an open circuit SAG mill followed by a ball mill in closed circuit with hydrocyclones.",
+  "page": 192
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 7000,
+   "unit": "t/d",
+   "quote": "A new processing plant with a design throughput capacity of 7,000 tpd",
+   "page": 191,
+   "statistic": "design",
+   "context": {
+    "phase": "Queensway Mill (Y5 to Y15)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.85,
+   "unit": "g/t",
+   "quote": "Total Processing Feed: 27,373 kt at 1.85 g/t Au",
+   "page": 22,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.9,
+   "unit": "%",
+   "quote": "Total LOM Recovery 91.9%",
+   "page": 22,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "blended third-party mill (92.1%) and Queensway mill (dore plus concentrate)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2500,
+   "unit": "USD/oz",
+   "quote": "Gold price of US$2,500/oz over the LOM",
+   "page": 22,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.43,
+   "unit": "CAD/USD",
+   "quote": "Exchange rate of USD/CAD: 1.43",
+   "page": 22,
+   "context": {
+    "pair": "CAD per USD (report labels it USD/CAD)"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 743,
+   "unit": "MCAD",
+   "quote": "the Base Case after-tax NPV at a 5% discount rate is approximately C$743 million",
+   "page": 23,
+   "currency": "CAD",
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 56,
+   "unit": "%",
+   "quote": "the after-tax IRR is 56%",
+   "page": 24
+  },
+  {
+   "parameter": "aisc",
+   "value": 1256,
+   "unit": "USD/oz",
+   "quote": "All-in sustaining cost of US$1,256/oz of saleable gold",
+   "page": 23,
+   "metal": "Au",
+   "currency": "USD"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.9,
+   "unit": "kWh/t",
+   "quote": "KZ-MC-1 59.4 17.9 0.286",
+   "page": 120,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill (master composite)",
+    "n_samples": 1,
+    "ore_type": "KZ-MC-1 (Keats)"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.2,
+   "unit": "kWh/t",
+   "quote": "KZ-MC-2 60.4 16.2 0.089",
+   "page": 120,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill (master composite)",
+    "n_samples": 1,
+    "ore_type": "KZ-MC-2 (Keats)"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 18.3,
+   "unit": "kWh/t",
+   "quote": "LZ-MC 65.9 18.3 0.124",
+   "page": 120,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill (master composite)",
+    "n_samples": 1,
+    "ore_type": "LZ-MC (Lotto)"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 18.1,
+   "unit": "kWh/t",
+   "quote": "IB-MC 64.7 18.1 0.201",
+   "page": 120,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill (master composite)",
+    "n_samples": 1,
+    "ore_type": "IB-MC (Iceberg)"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 1 Initial Capital (off-site toll milling)",
+   "value": 154790,
+   "quote": "Total 154,790 442,218 142,702 325,365 1,065,075",
+   "page": 34,
+   "review_note": "Phase 1 processes ore off-site; the 7,000 t/d Queensway mill is Phase 2 capital. The report states no single new-build total, so all phases are recorded as growth.",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 2 Growth Capital (on-site processing plant)",
+   "value": 442218,
+   "quote": "Total 154,790 442,218 142,702 325,365 1,065,075",
+   "page": 34,
+   "l1": "process",
+   "is_total": false,
+   "partial_breakdown": true,
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 Growth Capital (underground mine)",
+   "value": 142702,
+   "quote": "Total 154,790 442,218 142,702 325,365 1,065,075",
+   "page": 34,
+   "l1": "mining",
+   "is_total": false,
+   "partial_breakdown": true,
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (all phases)",
+   "value": 325365,
+   "quote": "Total 154,790 442,218 142,702 325,365 1,065,075",
+   "page": 34,
+   "is_total": true,
+   "partial_breakdown": true,
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure costs, net of salvage value",
+   "value": 30,
+   "quote": "closure costs, net of salvage value, are estimated to be C$30 million",
+   "page": 34,
+   "multiplier": "M",
+   "currency": "CAD",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Open Pit)",
+   "value": 906607,
+   "quote": "Mining (Open Pit) 906,607 67,778 78,230",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Underground)",
+   "value": 188525,
+   "quote": "Mining (Underground) 188,525 - 40,956",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Third-Party Processing + Handling",
+   "value": 143747,
+   "quote": "Third-Party Processing + Handling 143,747 31,941 -",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 549501,
+   "quote": "Processing 549,501 - 53,232",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 188746,
+   "quote": "G&A 188,746 9,720 14,508",
+   "page": 35,
+   "l1": "ga",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal (operating)",
+   "value": 1977125,
+   "quote": "Subtotal 1,977,125 109,440 186,925",
+   "page": 35,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment and Refining Charges",
+   "value": 262412,
+   "quote": "Treatment and Refining Charges 262,412 701 29,941",
+   "page": 35,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 19774,
+   "quote": "Royalties 19,774 1,093 2,030",
+   "page": 35,
+   "l1": "royalties_taxes",
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal (charges and royalties)",
+   "value": 282186,
+   "quote": "Subtotal 282,186 1,794 31,972",
+   "page": 35,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 2259312,
+   "quote": "Total 2,259,312 111,234 218,897",
+   "page": 35,
+   "is_total": true,
+   "multiplier": "k",
+   "currency": "CAD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit operating costs",
+   "value": 72.23,
+   "quote": "Total unit operating costs of C$72.23/t processed",
+   "page": 22,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "partial_breakdown": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Queensway mill processing costs",
+   "value": 20.96,
+   "quote": "Queensway mill processing costs: C$20.96/t proc",
+   "page": 22,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining operating costs",
+   "value": 4.91,
+   "quote": "Open pit mining operating costs: C$4.91/t mined open pit",
+   "page": 22,
+   "multiplier": "",
+   "currency": "CAD",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  }
+ ]
+}

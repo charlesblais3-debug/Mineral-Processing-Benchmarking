@@ -1,0 +1,210 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Nevada Gold Mines Nevada Operations",
+  "title": "Nevada Gold Mines Joint Venture Nevada Operations Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Report current as at: December 31, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "pox",
+   "roasting",
+   "cil",
+   "flotation",
+   "heap_leach"
+  ],
+  "quote": "Autoclaves Goldstrike autoclave (Carlin) Converted from RIL to CIL in Q1 2023 Sage autoclave (Turquoise Ridge)) Roasters Gold Quarry roaster (Carlin)",
+  "page": 193
+ },
+ "facts": [
+  {
+   "parameter": "metal_price",
+   "value": 1400,
+   "unit": "USD/oz",
+   "quote": "Metal prices Gold $/oz Au 1,400",
+   "page": 239,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "Copper $/lb Cu 3.00",
+   "page": 239,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20,
+   "unit": "USD/oz",
+   "quote": "Silver $/oz Ag 20",
+   "page": 239,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.82,
+   "unit": "g/t",
+   "quote": "Gold grade g/t 2.82",
+   "page": 239,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "grade of gold-bearing ore (512 Mt) of 562 Mt total ore"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 3.8,
+   "quote": "Mine US$ B 3.8",
+   "page": 236,
+   "l1": "mining",
+   "review_note": "Table 18-1 does not split sustaining and growth; Mine/Process/G&A placed in sustaining",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process",
+   "value": 1.0,
+   "quote": "Process US$ B 1.0",
+   "page": 236,
+   "l1": "processing",
+   "l2": "general",
+   "review_note": "Table 18-1 does not split sustaining and growth",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General and administrative",
+   "value": 0.1,
+   "quote": "General and administrative US$ B 0.1",
+   "page": 236,
+   "l1": "ga",
+   "review_note": "Table 18-1 does not split sustaining and growth",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Goldrush ramp-up",
+   "value": 0.5,
+   "quote": "Goldrush ramp-up US$ B 0.5",
+   "page": 236,
+   "l1": "mining",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Robertson",
+   "value": 0.3,
+   "quote": "Robertson US$ B 0.3",
+   "page": 236,
+   "l1": "mining",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 18.2,
+   "quote": "Mining US$B 18.2",
+   "page": 236,
+   "l1": "mining",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 11.1,
+   "quote": "Processing US$B 11.1",
+   "page": 236,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 3.4,
+   "quote": "G&A US$B 3.4",
+   "page": 236,
+   "l1": "ga",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other (incl. stockpile)",
+   "value": 4.7,
+   "quote": "Other (incl. stockpile) US$B 4.7",
+   "page": 236,
+   "l1": "other",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 37.3,
+   "quote": "Total US$B 37.3",
+   "page": 236,
+   "is_total": true,
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (open pit and underground)",
+   "value": 10.79,
+   "quote": "Mining (open pit and underground): US$10.79/t mined",
+   "page": 236,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing costs",
+   "value": 19.66,
+   "quote": "Processing costs: US$19.66/t processed",
+   "page": 236,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative costs (inclusive of transport costs)",
+   "value": 14.22,
+   "quote": "General and administrative costs (inclusive of transport costs): US$14.22/t processed",
+   "page": 236,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  }
+ ]
+}

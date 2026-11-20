@@ -1,0 +1,581 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "CuMo",
+  "title": "S-K 1300 Technical Report Summary - CuMo Project (Idaho Copper Corp / International CuMo Mining Corp.)",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2022-11-01",
+  "effective_date_quote": "SMD | Cumo S-k 1300 Technical Report | November 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag"
+  ],
+  "country": "United States",
+  "region": "Idaho",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "flotation"
+  ],
+  "quote": "multi-train, SAG mill grinding and flotation plant",
+  "page": 87
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 150000,
+   "unit": "st/d",
+   "quote": "Nominal Flotation Process Capacity stpd 150,000",
+   "page": 14,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 28,
+   "unit": "years",
+   "quote": "Mine Life (years @ > 90% of full production) years 28",
+   "page": 14
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 1.53,
+   "unit": "t:t",
+   "quote": "LOM Strip Ratio (Waste:Mill Feed) ratio 1.53",
+   "page": 15
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.8,
+   "unit": "kWh/t",
+   "quote": "BWI kWh/t (tonne) 15.8",
+   "page": 86,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill work index"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 63,
+   "unit": "µm",
+   "quote": "Grind Size P80 microns 63",
+   "page": 86
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.105,
+   "unit": "%",
+   "quote": "Copper % 0.105%",
+   "page": 14,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.044,
+   "unit": "%",
+   "quote": "Molybdenum (elemental Mo) % 0.044%",
+   "page": 14,
+   "metal": "Mo",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.0,
+   "unit": "g/t",
+   "quote": "Silver grams per tonne 3.00",
+   "page": 14,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.87,
+   "unit": "%",
+   "quote": "Molybdenum (Mo Metal) % contained metal 91.87%",
+   "page": 109,
+   "metal": "Mo",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 76.33,
+   "unit": "%",
+   "quote": "Copper % contained metal 76.33%",
+   "page": 15,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 70.42,
+   "unit": "%",
+   "quote": "Silver % contained metal 70.42%",
+   "page": 15,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 15.0,
+   "unit": "USD/lb",
+   "quote": "Molybdenum metal $/lb $15.00",
+   "page": 114,
+   "metal": "Mo"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "Copper $/lb $3.00",
+   "page": 114,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 17.5,
+   "unit": "USD/oz",
+   "quote": "Silver $/oz $17.50",
+   "page": 114,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 356,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV @ 8% $M 356",
+   "page": 14,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1709,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV @ 5% $M 1,709",
+   "page": 14,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 9,
+   "unit": "%",
+   "quote": "After-Tax IRR % 9%",
+   "page": 14
+  },
+  {
+   "parameter": "payback_years",
+   "value": 8.0,
+   "unit": "years",
+   "quote": "Payback Period from Start of Processing years 8.0",
+   "page": 14
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 4.67,
+   "unit": "USD/lb",
+   "quote": "LOM C-1 Cash Costs After By-product Credits $/lb Mo 4.67",
+   "page": 14,
+   "metal": "Mo"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine - Equipment, etc.",
+   "value": 344,
+   "quote": "Mine - Equipment, etc. 344",
+   "page": 103,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalized Mine Operating Costs",
+   "value": 330,
+   "quote": "Capitalized Mine Operating Costs 330",
+   "page": 103,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sort Plants",
+   "value": 160,
+   "quote": "Sort Plants 160",
+   "page": 103,
+   "l1": "process",
+   "l2": "comminution",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mill",
+   "value": 1293,
+   "quote": "Mill 1,293",
+   "page": 103,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Roaster",
+   "value": 208,
+   "quote": "Roaster 208",
+   "page": 103,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings",
+   "value": 22,
+   "quote": "Tailings 22",
+   "page": 103,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 76,
+   "quote": "Infrastructure 76",
+   "page": 103,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital Directs",
+   "value": 2433,
+   "quote": "Total Initial Capital Directs 2,433",
+   "page": 103,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency on Initial Capital Directs (excl Mining)",
+   "value": 176,
+   "quote": "Contingency on Initial Capital Directs (excl Mining) 176",
+   "page": 103,
+   "l1": "contingency",
+   "l2": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects - Mine",
+   "value": 15,
+   "quote": "Indirects Mine 15",
+   "page": 103,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects - Plant (incl. Sort)",
+   "value": 354,
+   "quote": "Plant (incl. Sort) 354",
+   "page": 103,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects - Roaster",
+   "value": 81,
+   "quote": "Roaster 81",
+   "page": 103,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects - Infrastructure",
+   "value": 14,
+   "quote": "Infrastructure 14",
+   "page": 103,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital Indirects",
+   "value": 464,
+   "quote": "Total Initial Capital Indirects 464",
+   "page": 103,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Capex",
+   "value": 3071,
+   "quote": "Initial Capex 3,071",
+   "page": 103,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Mine",
+   "value": 428,
+   "quote": "Sustaining Capital Mine 428",
+   "page": 103,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Sort Plants",
+   "value": 42,
+   "quote": "Sort Plants 42",
+   "page": 103,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Mill",
+   "value": 349,
+   "quote": "Mill 349",
+   "page": 103,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Roaster",
+   "value": 56,
+   "quote": "Roaster 56",
+   "page": 103,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Tailings",
+   "value": 84,
+   "quote": "Tailings 84",
+   "page": 103,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining - Infrastructure",
+   "value": 10,
+   "quote": "Infrastructure 10",
+   "page": 103,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 970,
+   "quote": "Total Sustaining Capital 970",
+   "page": 103,
+   "is_total": true,
+   "review_note": "Report's summary table lists 'Sustaining and Expansion Capex' as 972; lines sum to 969",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Reclamation",
+   "value": 150,
+   "quote": "Closure and Reclamation 150",
+   "page": 103,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 5797,
+   "quote": "Mining 5,797 $3.66",
+   "page": 106,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Bulk Sort",
+   "value": 778,
+   "quote": "Bulk Sort 778 $0.49",
+   "page": 106,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Middling Sort",
+   "value": 192,
+   "quote": "Middling Sort 192 $0.12",
+   "page": 106,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (saleable product)",
+   "value": 7042,
+   "quote": "Processing (saleable product) 7,042 $4.45",
+   "page": 106,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sort Waste Delivery",
+   "value": 395,
+   "quote": "Sort Waste Delivery 395 $0.25",
+   "page": 106,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 805,
+   "quote": "G&A 805 $0.51",
+   "page": 106,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Less Capitalized Operating Costs",
+   "value": -329,
+   "quote": "Less Capitalized Operating Costs -329 -$0.21",
+   "page": 106,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 14680,
+   "quote": "Total Operating Costs 14,680 $9.28",
+   "page": 106,
+   "is_total": true,
+   "review_note": "Report states LOM operating costs include realization costs (TC/RC, freight) per section 18.2 text",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labor",
+   "value": 0.19,
+   "quote": "Labor $/ton 0.19",
+   "page": 107,
+   "l1": "processing",
+   "l2": "labour",
+   "part_of": "Total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power",
+   "value": 1.84,
+   "quote": "Power $/ton 1.84",
+   "page": 107,
+   "l1": "processing",
+   "l2": "power",
+   "part_of": "Total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance Materials and Services",
+   "value": 0.68,
+   "quote": "Maintenance Materials and Services $/ton 0.68",
+   "page": 107,
+   "l1": "processing",
+   "l2": "maintenance",
+   "part_of": "Total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Reagents and Consumables",
+   "value": 1.74,
+   "quote": "Reagents and Consumables $/ton 1.74",
+   "page": 107,
+   "l1": "processing",
+   "l2": "reagents",
+   "part_of": "Total",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 4.45,
+   "quote": "Total $/ton 4.45",
+   "page": 107,
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Unit costs in Table 18-6 are per ton of mill feed; Table 18-5 unit rate ($4.45) implies a larger divisor than LOM mill feed; basis ambiguous",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

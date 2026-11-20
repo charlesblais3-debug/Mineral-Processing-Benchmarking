@@ -1,0 +1,252 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Cripple Creek & Victor",
+  "title": "S-K 1300 Technical Report Summary, Cripple Creek and Victor Mine, Teller County, Colorado, USA",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-07-01",
+  "effective_date_quote": "with an effective date of July 1, 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Colorado",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 7
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "adr"
+  ],
+  "quote": "Since January of 2022, approximately 70 to 80 percent of less durable Run of Mine (ROM) ore is lime amended and placed on the leach pad, with the remaining 20 to 30 percent of the ore being crushed ore.",
+  "page": 150
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 52000,
+   "unit": "t/d",
+   "quote": "Max Process Rate (tpd) 52,000",
+   "page": 17,
+   "statistic": "max",
+   "context": {
+    "note": "maximum process rate (ore stacked on valley leach facilities VLF 1 / VLF 2, ADR plants)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.39,
+   "unit": "g/t",
+   "quote": "Au Head Grade (g/t) 0.39",
+   "page": 17,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 51.6,
+   "unit": "%",
+   "quote": "Average Recovery, Au 51.6%",
+   "page": 17,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3094,
+   "unit": "USD/oz",
+   "quote": "long term prices of $3,094/oz gold",
+   "page": 18,
+   "metal": "Au",
+   "context": {
+    "note": "long-term price; 2025-2030 average $3,433/oz"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 824,
+   "unit": "MUSD",
+   "quote": "The after-tax NPV at 5% is $824 million",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 2330,
+   "unit": "USD/oz",
+   "quote": "average all-in sustaining cost (AISC) of $2,330/oz Au",
+   "page": 19,
+   "metal": "Au"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1896,
+   "unit": "USD/oz",
+   "quote": "Total Cash Costs 3,403 1,896",
+   "page": 19,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth and Development Capital",
+   "value": 158580,
+   "quote": "Growth and Development Capital 158,580",
+   "page": 161,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other",
+   "review_note": "Operating mine; ore stacked on existing valley leach facilities / ADR plants, so capital is growth, not initial capex."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 263310,
+   "quote": "Sustaining Capital 263,310",
+   "page": 161,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation/Closure Capital",
+   "value": 517460,
+   "quote": "Reclamation/Closure Capital 517,460",
+   "page": 161,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LOM)",
+   "value": 1096,
+   "quote": "Mining 1,096 611",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process (LOM)",
+   "value": 1315,
+   "quote": "Process 1,315 732",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site G&A (LOM)",
+   "value": 568,
+   "quote": "Site G&A 568 316",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Site Costs (LOM)",
+   "value": 2979,
+   "quote": "Subtotal Site Costs 2,979 1,659",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining/Freight (LOM)",
+   "value": 2,
+   "quote": "Refining/Freight 2 1",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "offsite"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Royalties (LOM)",
+   "value": 422,
+   "quote": "Mining Royalties 422 235",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Costs (LOM)",
+   "value": 3403,
+   "quote": "Total Cash Costs 3,403 1,896",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OP Mining ($/t mined)",
+   "value": 2.94,
+   "quote": "OP Mining ($/t mined) 2.94",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mining ($/t ore)",
+   "value": 4.85,
+   "quote": "Total Mining ($/t ore) 4.85",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing ($/t ore)",
+   "value": 5.81,
+   "quote": "Processing ($/t ore) 5.81",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A ($/t ore)",
+   "value": 2.51,
+   "quote": "G&A ($/t ore) 2.51",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total ($/t ore)",
+   "value": 13.17,
+   "quote": "Total ($/t ore) 13.17",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

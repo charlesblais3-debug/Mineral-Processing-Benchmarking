@@ -1,0 +1,251 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Lamaque",
+  "title": "Lamaque Project, Québec, Canada Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Québec",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "rod_mill",
+   "ball_mill",
+   "gravity",
+   "cip"
+  ],
+  "quote": "The current configuration of the process uses two-stage crushing followed by primary grinding through an open circuit rod mill and closed-circuit ball mill, then secondary grinding through a closed-circuit ball mill. Gold is recovered by a gravity concentration circuit, and by a cyanide leaching and carbon-in-pulp circuit with subsequent gold refining.",
+  "page": 216
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2600,
+   "unit": "t/d",
+   "quote": "Mine Production per Day (dry tonnes) tpd 2,600",
+   "page": 222,
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 95,
+   "unit": "%",
+   "quote": "Mill Availability % 95",
+   "page": 222,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96,
+   "unit": "%",
+   "quote": "Gold Recovery % 96",
+   "page": 222,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 40,
+   "unit": "µm",
+   "quote": "Grinding P 80 µm 40",
+   "page": 223,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/oz",
+   "quote": "based on US$2,000/oz Au, indicates an after-tax net present value (NPV) of US$555.0M",
+   "page": 34,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 555.0,
+   "unit": "MUSD",
+   "quote": "after-tax net present value (NPV) of US$555.0M, using a discount rate of 5%",
+   "page": 34,
+   "context": {
+    "discount_rate_pct": 5,
+    "case": "Mineral Reserves"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining",
+   "value": 100.8,
+   "quote": "Mining 100.8 200.9 301.7",
+   "page": 33,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Processing",
+   "value": 96.4,
+   "quote": "Processing 96.4 11.8 108.2",
+   "page": 33,
+   "l1": "processing",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "General and Administration",
+   "value": 1.3,
+   "quote": "General and Administration 1.3 44.1 45.3",
+   "page": 33,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Exploration and Delineation Drilling",
+   "value": 28.0,
+   "quote": "Exploration and Delineation Drilling 28.0 4.7 32.8",
+   "page": 33,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total growth",
+   "value": 226.5,
+   "quote": "Total 226.5 270.3 496.8",
+   "page": 33,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 200.9,
+   "quote": "Mining 100.8 200.9 301.7",
+   "page": 33,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 11.8,
+   "quote": "Processing 96.4 11.8 108.2",
+   "page": 33,
+   "l1": "processing",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General and Administration",
+   "value": 44.1,
+   "quote": "General and Administration 1.3 44.1 45.3",
+   "page": 33,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Exploration and Delineation Drilling",
+   "value": 4.7,
+   "quote": "Exploration and Delineation Drilling 28.0 4.7 32.8",
+   "page": 33,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure",
+   "value": 11.8,
+   "quote": "Closure 0.0 11.8 11.8",
+   "page": 33,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Salvage (credit)",
+   "value": -3.0,
+   "quote": "Salvage (credit) 0.0 (3.0) (3.0)",
+   "page": 33,
+   "l1": "other",
+   "derived": true,
+   "derived_note": "printed as (3.0), a credit shown in parentheses",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining",
+   "value": 270.3,
+   "quote": "Total 226.5 270.3 496.8",
+   "page": 33,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 136.0,
+   "quote": "Underground Mining 96.7 136.00 662.46",
+   "page": 33,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 26.5,
+   "quote": "Processing 19.0 26.50 129.83",
+   "page": 33,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 26.52,
+   "quote": "General and Administration 19.0 26.52 129.96",
+   "page": 33,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 189.02,
+   "quote": "Total 134.6 189.02 922.25",
+   "page": 33,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

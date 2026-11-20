@@ -1,0 +1,330 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Minas-Rio",
+  "title": "NI 43-101 Technical Report - Minas-Rio Property, State of Minas Gerais, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-11-03",
+  "effective_date_quote": "Effective Date: November 3, 2025",
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Minas Gerais",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "hpgr",
+   "flotation",
+   "regrind",
+   "conc_thickener"
+  ],
+  "quote": "Ore undergoes crushing, HPGR grinding, desliming, flotation, regrinding, thickening and pipeline transport to the Port of Açu.",
+  "page": 19
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 48,
+   "unit": "Mt/a",
+   "quote": "has a nominal capacity of 8,440 t/h (about 48 Mt/a)",
+   "page": 19,
+   "statistic": "design",
+   "context": {
+    "note": "plant feed capacity; wet/dry basis not stated at this quote (mine production elsewhere quoted in Mt/a wet)"
+   }
+  },
+  {
+   "parameter": "reserve_tonnes",
+   "value": 3318.6,
+   "unit": "Mt",
+   "quote": "totals 3,318.6 Mt at 32.9% Fe",
+   "page": 16
+  },
+  {
+   "parameter": "reserve_grade",
+   "value": 32.9,
+   "unit": "%",
+   "quote": "totals 3,318.6 Mt at 32.9% Fe",
+   "page": 16,
+   "metal": "Fe"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 68.0,
+   "unit": "%",
+   "quote": "Product grades average 68.0% Fe for direct reduction pellet feed (DRPF)",
+   "page": 19,
+   "metal": "Fe",
+   "context": {
+    "concentrate": "DRPF"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 67.1,
+   "unit": "%",
+   "quote": "67.1% Fe for BFPF",
+   "page": 19,
+   "metal": "Fe",
+   "context": {
+    "concentrate": "BFPF"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 120,
+   "unit": "µm",
+   "quote": "the overflow at P80 120 µm reports to the desliming plant",
+   "page": 97
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 8.48,
+   "quote": "Mine $/wmt 8.48",
+   "page": 22,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Beneficiation",
+   "value": 10.02,
+   "quote": "Beneficiation $/wmt 10.02",
+   "page": 22,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Pipeline",
+   "value": 1.41,
+   "quote": "Pipeline $/wmt 1.41",
+   "page": 22,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Filtration",
+   "value": 1.17,
+   "quote": "Filtration $/wmt 1.17",
+   "page": 22,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating support",
+   "value": 5.02,
+   "quote": "Operating support $/wmt 5.02",
+   "page": 22,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total C1",
+   "value": 26.1,
+   "quote": "Total C1 $/wmt 26.10",
+   "page": 22,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Port",
+   "value": 2.96,
+   "quote": "Port $/wmt 2.96",
+   "page": 22,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other selling",
+   "value": 0.54,
+   "quote": "Other selling $/wmt 0.54",
+   "page": 22,
+   "l1": "offsite",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total FOB cash cost",
+   "value": 29.61,
+   "quote": "Total FOB cash cost $/wmt 29.61",
+   "page": 22,
+   "is_subtotal": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "SG&A",
+   "value": 1.69,
+   "quote": "SG&A $/wmt 1.69",
+   "page": 22,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "AAML",
+   "value": 0.5,
+   "quote": "AAML $/wmt 0.50",
+   "page": 22,
+   "l1": "other",
+   "l2": "unallocated",
+   "review_note": "AAML not defined at this table; allocation unknown",
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cash cost",
+   "value": 31.8,
+   "quote": "Total operating cash cost $/wmt 31.80",
+   "page": 22,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "SIB",
+   "value": 2.79,
+   "quote": "SIB $/wmt 2.79",
+   "page": 22,
+   "l1": "other",
+   "l2": "unallocated",
+   "outside_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty",
+   "value": 1.95,
+   "quote": "Royalty $/wmt 1.95",
+   "page": 22,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "outside_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_concentrate"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 1477,
+   "quote": "Processing 1,477",
+   "page": 22,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining equipment",
+   "value": 1141,
+   "quote": "Mining equipment 1,141",
+   "page": 22,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine continuity",
+   "value": 105,
+   "quote": "Mine continuity 105",
+   "page": 22,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TSF and waste dump",
+   "value": 488,
+   "quote": "TSF and waste dump 488",
+   "page": 22,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Social",
+   "value": 78,
+   "quote": "Social 78",
+   "page": 22,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure",
+   "value": 126,
+   "quote": "Closure 126",
+   "page": 22,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Port",
+   "value": 486,
+   "quote": "Port 486",
+   "page": 22,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 213,
+   "quote": "Other 213",
+   "page": 22,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total LoAP SIB",
+   "value": 4115,
+   "quote": "Total LoAP 4,115",
+   "page": 22,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  }
+ ]
+}

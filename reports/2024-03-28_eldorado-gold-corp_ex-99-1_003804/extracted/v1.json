@@ -1,0 +1,366 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Olympias",
+  "title": "Olympias Mine Greece Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Greece",
+  "region": "Chalkidiki",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "regrind",
+   "flotation"
+  ],
+  "quote": "Three-stage crushing. · Single-stage ball milling in closed circuit with hydrocyclones. · Hydrocyclone underflow (a split) is fed to lead flash flotation. · Lead flotation consists of rougher, scavenger, regrinding, three stages of cleaning.",
+  "page": 159
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1781,
+   "unit": "t/d",
+   "quote": "Daily (calendar) ore throughput dry tpd 1,100 1,244 1,781",
+   "page": 158,
+   "statistic": "design",
+   "context": {
+    "phase": "expansion 2025+ (650 ktpa)"
+   }
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92.0,
+   "unit": "%",
+   "quote": "Plant availability % 90.0 95.6 92.0",
+   "page": 158,
+   "statistic": "design",
+   "context": {
+    "phase": "expansion 2025+"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.5,
+   "unit": "%",
+   "quote": "Gold recovery to gold-arsenopyrite-pyrite concentrate % 86.0 83.8 82.5",
+   "page": 158,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "to_product": "gold-arsenopyrite-pyrite concentrate",
+    "phase": "expansion 2025+"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.1,
+   "unit": "%",
+   "quote": "Zinc recovery % 91.0 77.1 84.1",
+   "page": 158,
+   "metal": "Zn",
+   "statistic": "design",
+   "context": {
+    "to_product": "zinc concentrate",
+    "phase": "expansion 2025+"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 81.5,
+   "unit": "%",
+   "quote": "Lead recovery % 85.0 80.5 81.5",
+   "page": 158,
+   "metal": "Pb",
+   "statistic": "design",
+   "context": {
+    "to_product": "lead concentrate",
+    "phase": "expansion 2025+"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 6.7,
+   "unit": "g/t",
+   "quote": "Total 8,746.8 6.7 125.7 4.2 5.3",
+   "page": 155,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 8.5,
+   "unit": "kWh/t",
+   "quote": "80 2,357 145 8.5",
+   "page": 89,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 180,
+    "n_samples": 1,
+    "ore_type": "Fresh Ore"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 9.2,
+   "unit": "kWh/t",
+   "quote": "80 2,182 148 9.2",
+   "page": 89,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 180,
+    "n_samples": 1,
+    "ore_type": "Old Ore"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1400,
+   "unit": "USD/oz",
+   "quote": "Reserves have been determined at a gold price of $1,400 per troy ounce",
+   "page": 186,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.8,
+   "unit": "USD/CAD",
+   "quote": "C$ Canadian Dollar C$1.00 = US$0.80",
+   "page": 195,
+   "context": {
+    "pair": "USD/CAD"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.15,
+   "unit": "USD/EUR",
+   "quote": "Euro €1.00 = US$1.15",
+   "page": 195,
+   "context": {
+    "pair": "USD/EUR"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "U/G Development",
+   "value": 28.8,
+   "quote": "U/G Development 28.8",
+   "page": 195,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mill Expansion",
+   "value": 26.8,
+   "quote": "Mill Expansion 26.8",
+   "page": 195,
+   "l1": "processing",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Ancillary Facilities (Dry, Warehouse, Lab, Admin Building)",
+   "value": 9.0,
+   "quote": "Ancillary Facilities (Dry, Warehouse, Lab, Admin Building) 9.0",
+   "page": 195,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other",
+   "value": 10.4,
+   "quote": "Other 10.4",
+   "page": 195,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Growth Capital",
+   "value": 75.0,
+   "quote": "Total Growth Capital 75.0",
+   "page": 195,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 144.2,
+   "quote": "Mine 144.2",
+   "page": 195,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process",
+   "value": 59.5,
+   "quote": "Process 59.5",
+   "page": 195,
+   "l1": "processing",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Administration",
+   "value": 1.2,
+   "quote": "Administration 1.2",
+   "page": 195,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental",
+   "value": 1.0,
+   "quote": "Environmental 1.0",
+   "page": 195,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Health and safety",
+   "value": 0.2,
+   "quote": "Health and safety 0.2",
+   "page": 195,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 206.1,
+   "quote": "Total Sustaining Capital 206.1",
+   "page": 195,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 59.5,
+   "quote": "Closure 59.5",
+   "page": 195,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining costs",
+   "value": 1041.2,
+   "quote": "Mining costs 1,041.2 119.01",
+   "page": 196,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing costs",
+   "value": 532.5,
+   "quote": "Processing costs 532.5 60.87",
+   "page": 196,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A costs",
+   "value": 155.0,
+   "quote": "G&A costs 155.0 17.72",
+   "page": 196,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total direct operating cost",
+   "value": 1728.6,
+   "quote": "Total direct operating cost 1,728.6 197.60",
+   "page": 196,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining costs",
+   "value": 119.01,
+   "quote": "Mining costs 1,041.2 119.01",
+   "page": 196,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing costs",
+   "value": 60.87,
+   "quote": "Processing costs 532.5 60.87",
+   "page": 196,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A costs",
+   "value": 17.72,
+   "quote": "G&A costs 155.0 17.72",
+   "page": 196,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total direct operating cost",
+   "value": 197.6,
+   "quote": "Total direct operating cost 1,728.6 197.60",
+   "page": 196,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

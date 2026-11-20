@@ -1,0 +1,687 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Wafi-Golpu",
+  "title": "Technical Report Summary of the Mineral Resources and Mineral Reserves for Wafi-Golpu Project, Morobe Province, Papua New Guinea",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2024-06-30",
+  "effective_date_quote": "Effective Date: 30 June 2024",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Papua New Guinea",
+  "region": "Morobe Province",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2017,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "regrind"
+  ],
+  "quote": "copper flotation comprising rougher flotation, copper rougher cleaner (single Jameson cell) which processes the first rougher concentrate, copper concentrate regrind",
+  "page": 107
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 16.84,
+   "unit": "Mt/a",
+   "quote": "plant is expanded to a design capacity of 16.84Mt/a",
+   "page": 107,
+   "statistic": "design",
+   "context": {
+    "phase": "Golpu flowsheet (expanded); initial LEAN 8.42 Mt/a"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "The target grind size is a P80 of 106μm",
+   "page": 107
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.27,
+   "unit": "%",
+   "quote": "Cu grade | % | 1.27",
+   "page": 141,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.9,
+   "unit": "g/t",
+   "quote": "Au grade | g/t 0.90",
+   "page": 141,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 12.94,
+   "unit": "kWh/t",
+   "quote": "BWi (kWh/t) | 11.69 | 13.38 | 12.94 | 14.00 | 14.84 | 14.50",
+   "page": 63,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill work index",
+    "ore_type": "full set incl 2015 data"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.5,
+   "unit": "kWh/t",
+   "quote": "BWi (kWh/t) | 11.69 | 13.38 | 12.94 | 14.00 | 14.84 | 14.50",
+   "page": 63,
+   "statistic": "p75",
+   "context": {
+    "test": "Bond ball mill work index",
+    "ore_type": "full set incl 2015 data",
+    "statistic_note": "75th percentile used for BC44/BC42 design criteria"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 72.58,
+   "unit": "",
+   "quote": "Axb | 46.31 | 81.55 | 72.58 | 82.58 | 91.30 | 89.18",
+   "page": 63,
+   "statistic": "mean",
+   "context": {
+    "test": "SMC",
+    "ore_type": "full set incl 2015 data"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 89.18,
+   "unit": "",
+   "quote": "Axb | 46.31 | 81.55 | 72.58 | 82.58 | 91.30 | 89.18",
+   "page": 63,
+   "statistic": "p75",
+   "context": {
+    "test": "SMC",
+    "ore_type": "full set incl 2015 data"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Gold Price | USD/oz | 1 200",
+   "page": 142,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "Copper Price | USD/lb | 3.00",
+   "page": 142,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 0.26,
+   "unit": "USD/lb",
+   "quote": "USD/lb average | 0.26",
+   "page": 141,
+   "metal": "Cu",
+   "context": {
+    "note": "by-product (including gold credit) cash cost"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Underground mining",
+   "value": 819,
+   "quote": "Underground mining | 2 140 | 819 | 1 321",
+   "page": 137,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Underground mining",
+   "value": 1321,
+   "quote": "Underground mining | 2 140 | 819 | 1 321",
+   "page": 137,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Treatment",
+   "value": 695,
+   "quote": "Treatment | 774 | 695 | 79",
+   "page": 137,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Treatment",
+   "value": 79,
+   "quote": "Treatment | 774 | 695 | 79",
+   "page": 137,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Shared Services and Infrastructure",
+   "value": 210,
+   "quote": "Shared Services and Infrastructure | 283 | 210 | 73",
+   "page": 137,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Shared Services and Infrastructure",
+   "value": 73,
+   "quote": "Shared Services and Infrastructure | 283 | 210 | 73",
+   "page": 137,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Regional Infrastructure",
+   "value": 219,
+   "quote": "Regional Infrastructure | 219 | 219",
+   "page": 137,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Support Services",
+   "value": 117,
+   "quote": "Site Support Services | 148 | 117 | 31",
+   "page": 137,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Site Support Services",
+   "value": 31,
+   "quote": "Site Support Services | 148 | 117 | 31",
+   "page": 137,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Delivery Management",
+   "value": 462,
+   "quote": "Project Delivery Management | 606 | 462 | 144",
+   "page": 137,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Project Delivery Management",
+   "value": 144,
+   "quote": "Project Delivery Management | 606 | 462 | 144",
+   "page": 137,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Capitalised Costs",
+   "value": 187,
+   "quote": "Other Capitalised Costs | 225 | 187 | 38",
+   "page": 137,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other Capitalised Costs",
+   "value": 38,
+   "quote": "Other Capitalised Costs | 225 | 187 | 38",
+   "page": 137,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Provisions",
+   "value": 315,
+   "quote": "Provisions | 493 | 315 | 178",
+   "page": 137,
+   "l1": "contingency",
+   "l2": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Provisions",
+   "value": 178,
+   "quote": "Provisions | 493 | 315 | 178",
+   "page": 137,
+   "l1": "contingency",
+   "l2": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total execution capital",
+   "value": 3025,
+   "quote": "Total LOM Capital Cost (excluding sustaining capital) | 4 887 | 3 025 | 1 862",
+   "page": 137,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total expansionary capital",
+   "value": 1862,
+   "quote": "Total LOM Capital Cost (excluding sustaining capital) | 4 887 | 3 025 | 1 862",
+   "page": 137,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 693,
+   "quote": "Sustaining Capital | 693 | — | 693",
+   "page": 137,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Underground Mining",
+   "value": 4.16,
+   "quote": "Subtotal Underground Mining | 4.16",
+   "page": 26,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ventilation & Refrigeration",
+   "value": 1.27,
+   "quote": "Ventilation & Refrigeration | 1.27",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Production",
+   "value": 0.99,
+   "quote": "Production | 0.99",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Conveying",
+   "value": 0.69,
+   "quote": "Conveying | 0.69",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Engineering Maintenance & Services",
+   "value": 0.56,
+   "quote": "Engineering Maintenance & Services | 0.56",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Dewatering",
+   "value": 0.34,
+   "quote": "Dewatering | 0.34",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing",
+   "value": 0.15,
+   "quote": "Crushing | 0.15",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Technical Services",
+   "value": 0.12,
+   "quote": "Technical Services | 0.12",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administration",
+   "value": 0.04,
+   "quote": "Administration | 0.04",
+   "page": 26,
+   "part_of": "Subtotal Underground Mining",
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Treatment",
+   "value": 7.4,
+   "quote": "Subtotal Treatment | 7.40",
+   "page": 26,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant Operations",
+   "value": 5.04,
+   "quote": "Process Plant Operations | 5.04",
+   "page": 26,
+   "part_of": "Subtotal Treatment",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant Maintenance",
+   "value": 0.91,
+   "quote": "Process Plant Maintenance | 0.91",
+   "page": 26,
+   "part_of": "Subtotal Treatment",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Port Filtration Plant",
+   "value": 0.72,
+   "quote": "Port Filtration Plant | 0.72",
+   "page": 26,
+   "part_of": "Subtotal Treatment",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "DSTP",
+   "value": 0.47,
+   "quote": "DSTP 0.47",
+   "page": 26,
+   "part_of": "Subtotal Treatment",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment Plant",
+   "value": 0.25,
+   "quote": "Water Treatment Plant | 0.25",
+   "page": 26,
+   "part_of": "Subtotal Treatment",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Pipeline",
+   "value": 0.01,
+   "quote": "Concentrate Pipeline | 0.01",
+   "page": 26,
+   "part_of": "Subtotal Treatment",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Infrastructure",
+   "value": 1.78,
+   "quote": "Subtotal Infrastructure | 1.78",
+   "page": 26,
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power Generation Plant",
+   "value": 1.34,
+   "quote": "Power Generation Plant | 1.34",
+   "page": 26,
+   "part_of": "Subtotal Infrastructure",
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Infrastructure (roads and buildings)",
+   "value": 0.28,
+   "quote": "Infrastructure (roads and buildings) | 0.28",
+   "page": 26,
+   "part_of": "Subtotal Infrastructure",
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Services (power and waste)",
+   "value": 0.16,
+   "quote": "Services (power and waste) | 0.16",
+   "page": 26,
+   "part_of": "Subtotal Infrastructure",
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal Site Support Services",
+   "value": 3.99,
+   "quote": "Subtotal Site Support Services | 3.99",
+   "page": 26,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Community Affairs and Land",
+   "value": 0.89,
+   "quote": "Community Affairs and Land | 0.89",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Environmental",
+   "value": 0.44,
+   "quote": "Environmental | 0.44",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Commercial",
+   "value": 0.92,
+   "quote": "Commercial | 0.92",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Occupational Health and Safety (OH&S)",
+   "value": 0.47,
+   "quote": "Occupational Health and Safety (OH&S) | 0.47",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Training",
+   "value": 0.08,
+   "quote": "Training | 0.08",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Camp Services",
+   "value": 0.4,
+   "quote": "Camp Services | 0.40",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Information Technology (IT)",
+   "value": 0.33,
+   "quote": "Information Technology (IT) | 0.33",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Travel",
+   "value": 0.18,
+   "quote": "Travel | 0.18",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Supply and Logistics",
+   "value": 0.19,
+   "quote": "Supply and Logistics | 0.19",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Human Resources (HR)",
+   "value": 0.09,
+   "quote": "Human Resources (HR) | 0.09",
+   "page": 26,
+   "part_of": "Subtotal Site Support Services",
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 17.33,
+   "quote": "Total | 17.33",
+   "page": 26,
+   "is_total": true,
+   "review_note": "Total is inclusive of cost allocations for closure (per table note)",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

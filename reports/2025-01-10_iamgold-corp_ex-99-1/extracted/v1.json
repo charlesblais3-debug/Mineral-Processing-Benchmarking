@@ -1,0 +1,289 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Westwood",
+  "title": "Technical Report on the Westwood Complex, Quebec, Canada",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-09-30",
+  "effective_date_quote": "30 September, 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Quebec",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "gravity",
+   "cil",
+   "cip"
+  ],
+  "quote": "two-stage semi-autogenous grinding (SAG) mill and ball mill grinding circuit, gravity circuit, pre-leach, carbon in leach (CIL) and carbon in pulp (CIP) circuits",
+  "page": 48
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3106,
+   "unit": "t/d",
+   "quote": "nominal processing rate of 3,106 t/d",
+   "page": 256,
+   "statistic": "design",
+   "context": {
+    "note": "nominal rate quoted for the leach circuit retention time; plant capacity was modified from 3,200 t/d to 4,660 t/d in 2021 (Doyon plant)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 7.51,
+   "unit": "g/t",
+   "quote": "Head grade g/t Au 7.51",
+   "page": 54,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95,
+   "unit": "%",
+   "quote": "The current life of mine (LOM) plan assumes an average gold recovery of 95%",
+   "page": 28,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 11.1,
+   "unit": "kWh/t",
+   "quote": "averaging about 11.1 kWh/t",
+   "page": 172,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill work index (BWi)",
+    "ore_type": "Westwood ore (range 7.6-14.1 kWh/t)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1500,
+   "unit": "USD/oz",
+   "quote": "US$1,500/oz Au (Westwood);",
+   "page": 52,
+   "metal": "Au",
+   "context": {
+    "note": "Mineral Reserves price for Westwood; Grand Duc US$1,800/oz"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Buildings",
+   "value": 5.8,
+   "quote": "Buildings 2.2 1.0 2.6 - - - 5.8",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "buildings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Construction underground",
+   "value": 26.5,
+   "quote": "Construction underground 4.6 4.0 4.3 4.6 4.4 4.7 26.5",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development",
+   "value": 114.6,
+   "quote": "Development 31.7 18.8 21.8 19.2 11.8 11.3 114.6",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Fixed equipment (surface)",
+   "value": 9.7,
+   "quote": "Fixed equipment (surface) 4.9 0.4 0.4 0.1 3.8 - 9.7",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Fixed equipment (underground)",
+   "value": 21.6,
+   "quote": "Fixed equipment (underground) 6.3 5.5 5.9 0.1 2.2 1.6 21.6",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mill equipment",
+   "value": 24.0,
+   "quote": "Mill equipment 5.9 6.6 3.9 2.9 2.3 2.3 24.0",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile equipment",
+   "value": 46.8,
+   "quote": "Mobile equipment 11.5 13.7 12.3 5.7 3.2 0.5 46.8",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other equipment",
+   "value": 4.2,
+   "quote": "Other equipment 1.3 0.8 0.7 0.4 0.5 0.5 4.2",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other",
+   "l2": "unallocated"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 5.9,
+   "quote": "Tailings 4.3 0.9 0.7 - - - 5.9",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground core drilling",
+   "value": 1.6,
+   "quote": "Underground core drilling 1.6 - - - - - 1.6",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 260.7,
+   "quote": "Total 74.3 51.6 52.6 32.9 28.3 20.8 260.7",
+   "page": 284,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost (LOM, incl. open pit)",
+   "value": 646.4,
+   "quote": "Mining cost $M 646.4",
+   "page": 286,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process cost (LOM)",
+   "value": 155.0,
+   "quote": "Process cost $M 155.0",
+   "page": 286,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative cost (LOM)",
+   "value": 167.8,
+   "quote": "General and administrative cost $M 167.8",
+   "page": 286,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost (LOM)",
+   "value": 969.2,
+   "quote": "Total $M 969.2",
+   "page": 286,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost, underground",
+   "value": 252.78,
+   "quote": "Mining cost, underground $/t mined 252.78",
+   "page": 286,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost",
+   "value": 160.0,
+   "quote": "Mining cost $/t processed 160.00",
+   "page": 286,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process (incl. environmental) cost",
+   "value": 38.37,
+   "quote": "Process (incl. environmental) cost $/t processed 38.37",
+   "page": 286,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative cost",
+   "value": 41.54,
+   "quote": "General and administrative cost $/t processed 41.54",
+   "page": 286,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  }
+ ]
+}

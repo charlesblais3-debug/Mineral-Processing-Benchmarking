@@ -1,0 +1,357 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "CSA Copper Mine",
+  "title": "S-K 1300 Technical Report Summary - CSA Copper Mine, New South Wales, Australia",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-04-22",
+  "effective_date_quote": "report has an effective date of April 22nd, 2024.",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Australia",
+  "region": "New South Wales",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 5
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "The ground product from the ball mills also passes through a bank of hydrocyclones to provide a particle size distribution of 80% passing 106 micron (“P 80 =106µm”) which is sent to the copper flotation circuit",
+  "page": 80
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.4,
+   "unit": "Mt/a",
+   "quote": "further supports a processing capacity of 1.4Mtpa",
+   "page": 81,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 11,
+   "unit": "years",
+   "quote": "11-year mine life",
+   "page": 9
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "P 80 =106µm",
+   "page": 80
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.29,
+   "unit": "%",
+   "quote": "3.29 3.64 3.34 3.58",
+   "page": 109,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Table 19.1 Total/Avg column"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 12.9,
+   "unit": "g/t",
+   "quote": "Ag Grade g/t 12.9 15.6",
+   "page": 109,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 97.5,
+   "unit": "%",
+   "quote": "Cu Recovery % 97.5 97.5",
+   "page": 77,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80.0,
+   "unit": "%",
+   "quote": "Ag Recovery % 80.0 80.0",
+   "page": 77,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 26,
+   "unit": "%",
+   "quote": "The concentrate grade averages about 26% Cu",
+   "page": 81,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.76,
+   "unit": "USD/lb",
+   "quote": "(US$3.76/lb)",
+   "page": 13,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22.6,
+   "unit": "USD/oz",
+   "quote": "Silver Price – US$22.60/oz",
+   "page": 66,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 708,
+   "unit": "MUSD",
+   "quote": "the after tax NPV is US$708M at a discount rate of 8%",
+   "page": 108,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.71,
+   "unit": "USD/AUD",
+   "quote": "flat exchange rate of A$1= US$0.71",
+   "page": 102,
+   "context": {
+    "pair": "USD/AUD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 1138.5,
+   "quote": "(-) Mining Costs US$M (1,138.5",
+   "page": 109,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 286.7,
+   "quote": "(-) Processing Costs US$M (286.7",
+   "page": 109,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Minesite G&A",
+   "value": 299.8,
+   "quote": "(-) Minesite G&A US$M (299.8",
+   "page": 109,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight",
+   "value": 74.4,
+   "quote": "(-) Freight US$M (74.4",
+   "page": 109,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Realization Charge",
+   "value": 84.4,
+   "quote": "(-) Realization Charge US$M (84.4",
+   "page": 109,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TC/RCs",
+   "value": 171.6,
+   "quote": "(-) TC/RCs US$M (171.6",
+   "page": 109,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 141.7,
+   "quote": "(-) Royalties US$M (141.7",
+   "page": 109,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Corporate Costs",
+   "value": 97.5,
+   "quote": "(-) Corporate Costs US$M (97.5",
+   "page": 109,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost",
+   "value": 2.3,
+   "quote": "total operating cost is estimated to be US$2.3B including all off site, realization and corporate costs",
+   "page": 108,
+   "multiplier": "B",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Stated total rounded to US$2.3B; lines from Table 19.1 LOM column sum to 2,294.6"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total - Mining Opex",
+   "value": 78.2,
+   "quote": "Total - Mining Opex US$/t Ore 78.2 81.0",
+   "page": 105,
+   "l1": "mining",
+   "review_note": "Table 18.3 line items do not add to this total; per t ore",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total - Processing Opex",
+   "value": 19.7,
+   "quote": "Total - Processing Opex US$/t Milled 19.7 22.0",
+   "page": 105,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total - G&A Opex",
+   "value": 20.6,
+   "quote": "Total - G&A Opex US$/t Milled 20.6 23.1",
+   "page": 106,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Salaries (Employees)",
+   "value": 7.9,
+   "quote": "Salaries (Employees) US$/t Milled 7.9 10.2",
+   "page": 106,
+   "l1": "processing",
+   "l2": "labour",
+   "part_of": "Total - Processing Opex",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Salaries & Related Costs (Contractors)",
+   "value": 4.4,
+   "quote": "Salaries & Related Costs (Contractors) US$/t Milled 4.4 4.4",
+   "page": 106,
+   "l1": "processing",
+   "l2": "labour",
+   "part_of": "Total - Processing Opex",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Power & Water",
+   "value": 3.6,
+   "quote": "Power & Water US$/t Milled 3.6 3.6",
+   "page": 106,
+   "l1": "processing",
+   "l2": "power",
+   "part_of": "Total - Processing Opex",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Production Purchase Costs",
+   "value": 3.5,
+   "quote": "Production Purchase Costs US$/t Milled 3.5 3.5",
+   "page": 106,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Total - Processing Opex",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administrative/Office Expenses",
+   "value": 0.3,
+   "quote": "Administrative/Office Expenses US$/t Milled 0.3 0.3",
+   "page": 106,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Total - Processing Opex",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "CAPEX (Sustaining)",
+   "value": 106.8,
+   "quote": "(-) CAPEX (Sustaining) US$M (106.8",
+   "page": 109,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Development",
+   "value": 174.1,
+   "quote": "(-) Capitalized Development US$M (174.1",
+   "page": 109,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Rehabilitation Costs",
+   "value": 27.5,
+   "quote": "Rehabilitation Costs US$M 27.5",
+   "page": 102,
+   "multiplier": "M",
+   "basis_unit": "total"
+  }
+ ]
+}

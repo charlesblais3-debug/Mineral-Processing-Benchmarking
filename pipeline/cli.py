@@ -10,6 +10,7 @@ Commands
   export-web     build the web interface (app/web/benchmark.html, app/web/dist/index.html)
   rebuild        recreate data/benchmark.db from every reports/*/extracted/v1.json
   import-candidates  merge reports/_candidates/*.csv (search-agent finds) into the catalog [--parse]
+  locate         find stated project coordinates (lat/long or UTM) -> reports/<id>/extracted/location.json   [ids]
   audit          flag curve outliers, implausible unit costs, ambiguous throughputs, derived values
   brief          key summary tables of a report on one line each:  python -m pipeline brief <report_id> [regex]
   load           validate an extraction and load it:  python -m pipeline load <report_id>
@@ -100,6 +101,9 @@ def main(argv: list[str]) -> int:
         print({"issuers_added": candidates.merge_issuers()})
         if "--parse" in argv:
             candidates.parse(cands)
+    elif cmd == "locate":
+        from pipeline import geo
+        print(geo.run(argv[1:] or None))
     elif cmd == "audit":
         from pipeline import audit
         flags = audit.run()

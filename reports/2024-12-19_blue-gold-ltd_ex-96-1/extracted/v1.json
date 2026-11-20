@@ -1,0 +1,262 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bogoso-Prestea",
+  "title": "S-K 1300 Technical Report Summary - Bogoso-Prestea (Ghana) Property",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2024-04-01",
+  "effective_date_quote": "Effective Date: April 01, 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Ghana",
+  "region": "Western Region",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cil"
+  ],
+  "quote": "refurbishment of the existing oxide CIL plant for initial processing of the open pit and surface oxide resources",
+  "page": 14
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.4,
+   "unit": "Mt/a",
+   "quote": "to a maximum throughput of 1.4Mtpa",
+   "page": 14,
+   "statistic": "design",
+   "context": {
+    "phase": "refurbished oxide CIL plant (initial years)"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 4.5,
+   "unit": "Mt/a",
+   "quote": "to a maximum throughput of 4.5Mtpa",
+   "page": 14,
+   "statistic": "design",
+   "context": {
+    "phase": "new refractory sulphide plant from 2027 (process flowsheet to be determined)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80.0,
+   "unit": "%",
+   "quote": "OP Sulphide – Stages 1 & 2 80.00 1.95",
+   "page": 104,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "OP Sulphide (benchmark value; refractory process not yet selected)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 66.42,
+   "unit": "%",
+   "quote": "OP Oxide – Stage 1 66.42 2.79",
+   "page": 104,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "OP Oxide"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2006,
+   "unit": "USD/oz",
+   "quote": "Average Gold Price US$2,006/oz",
+   "page": 128,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 614,
+   "unit": "MUSD",
+   "quote": "Post Tax NPV (8% Discount Rate) US$614m",
+   "page": 128,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 30.0,
+   "unit": "%",
+   "quote": "Post Tax IRR 30.0%",
+   "page": 128
+  },
+  {
+   "parameter": "aisc",
+   "value": 940,
+   "unit": "USD/oz",
+   "quote": "Total AISC (US$/oz) 940",
+   "page": 129,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion CAPEX (total)",
+   "value": 481,
+   "quote": "Expansion CAPEX US$481m",
+   "page": 128,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Restart/refurbishment of existing Bogoso oxide CIL plant plus a new refractory sulphide plant; treated as growth (existing operation), not initial capex.",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "New refractory sulphide plant (4.5 Mtpa)",
+   "value": 275,
+   "quote": "the total capital cost for a 4.5Mtpa sulphide plant is estimated at US$275M",
+   "page": 124,
+   "l1": "process",
+   "l2": "general",
+   "review_note": "Stated excluding 15% contingency which is separately factored into the LOM plan.",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Oxide plant process capital (Stage 1 + Stage 2)",
+   "value": 9.8,
+   "quote": "for a combined total of US$9.8M",
+   "page": 123,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion underground mining capex",
+   "value": 9.0,
+   "quote": "Total Mining Capex US$M 2.7 6.3 9.0",
+   "page": 126,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining sustaining capex (SIB)",
+   "value": 380.0,
+   "quote": "Mining Sustaning Capex (US$M) SIB CAPEX 380.0",
+   "page": 129,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Asset Retirement Obligation - paid",
+   "value": 45.0,
+   "quote": "Asset Retirement Obligation – Paid (US$M) SIB CAPEX 45.0",
+   "page": 129,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mining Costs (direct)",
+   "value": 790.5,
+   "quote": "Total Mining Costs (US$M) Direct OPEX 790.5",
+   "page": 129,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Processing Costs (direct)",
+   "value": 1882.4,
+   "quote": "Total Processing Costs (US$M) Direct OPEX 1,882.4",
+   "page": 129,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total G&A (direct) Costs",
+   "value": 158.8,
+   "quote": "Total G&A (Direct) Costs (US$M) Direct OPEX 158.8",
+   "page": 129,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct OPEX",
+   "value": 2831.7,
+   "quote": "Total Direct OPEX US$M -2,831.70",
+   "page": 130,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Government Royalty",
+   "value": 389.6,
+   "quote": "Government Royalty 389.6",
+   "page": 129,
+   "l1": "royalties_taxes",
+   "outside_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit sulphide mining",
+   "value": 2.0,
+   "quote": "Stage 1. Open Pit Sulphide 2.00 1.00",
+   "page": 127,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "review_note": "Open pit mining cost US$/t (ore and waste), Stage 1/2 sulphide; oxide Stage 1 is US$1.00/t."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sulphide plant processing",
+   "value": 26.0,
+   "quote": "The sulphide plant operating cost calculates as circa US$26.0/t ROM ‘ore’",
+   "page": 126,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Scoping-level benchmark for a generic 4.5 Mtpa refractory sulphide plant; process route not yet selected."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Oxide plant processing (at 1.4 Mtpa)",
+   "value": 17.2,
+   "quote": "US$17.2/t ROM at 1.4Mtpa",
+   "page": 17,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Refurbished oxide CIL plant; US$26.3/t ROM at 0.3 Mtpa falling to US$17.2/t at 1.4 Mtpa."
+  }
+ ]
+}

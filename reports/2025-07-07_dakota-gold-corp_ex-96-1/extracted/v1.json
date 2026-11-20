@@ -1,0 +1,545 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Richmond Hill",
+  "title": "Richmond Hill Project S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2025-07-07",
+  "effective_date_quote": "This report is current as of July 7, 2025.",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "South Dakota",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "merrill_crowe"
+  ],
+  "quote": "Processing Scheme Crush/Heap Leach Crushing Circuit Configuration Three Stage Crushing Crush Size 80% -13.1 mm Heap Stacking Method Overland Conveyor with Radial Stacker Leach Cycle, days 120 Lift Height, ft 30 Solution Application Rate, gpm/ft 2 0.0025 Nominal Barren Solution Flow, gpm 6,000 Solution Application Method Drip Precious Metal Recovery Method Merrill-Crowe Zinc Precipitation",
+  "page": 123
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 30000,
+   "unit": "st/d",
+   "quote": "The heap leach operation will have a nominal capacity of 30,000 tons per day.",
+   "page": 122,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85,
+   "unit": "%",
+   "quote": "Au Recovery 85%",
+   "page": 123,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "oxide/transition heap leach"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 28,
+   "unit": "%",
+   "quote": "Ag Recovery 28%",
+   "page": 123,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "ore_type": "oxide/transition heap leach"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2350,
+   "unit": "USD/oz",
+   "quote": "The base case metal prices are $2,350 per ounce of gold and $29 per ounce of silver.",
+   "page": 15,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 29,
+   "unit": "USD/oz",
+   "quote": "The base case metal prices are $2,350 per ounce of gold and $29 per ounce of silver.",
+   "page": 15,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1622.071,
+   "unit": "MUSD",
+   "quote": "NPV @ 5% ($000) $ | 2,093,385 $ | 1,622,071",
+   "page": 15,
+   "derived": true,
+   "context": {
+    "discount_rate_pct": 5,
+    "derived_note": "table in $000: 1,622,071 K USD = 1,622.071 MUSD; M&I case",
+    "case": "M&I"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 55.0,
+   "unit": "%",
+   "quote": "IRR 61.4 | % 55.0 | %",
+   "page": 15,
+   "context": {
+    "case": "M&I"
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.7,
+   "unit": "years",
+   "quote": "Payback (years) 1.6 1.7",
+   "page": 15,
+   "context": {
+    "case": "M&I"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ore Preparation (Crush, Agglomerate, Stack)",
+   "value": 83533,
+   "quote": "Ore Preparation (Crush, Agglomerate, Stack) K USD $ | 83,533 $ | 0 $ | 83,533",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "comminution",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Heap Leach Pad & Ponds",
+   "value": 23324,
+   "quote": "Heap Leach Pad & Ponds K USD $ | 23,324 $ | 80,700 $ | 104,025",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "recovery",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Merrill Crowe & Refinery",
+   "value": 22662,
+   "quote": "Merrill Crowe & Refinery K USD $ | 22,662 $ | 0 $ | 22,662",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "recovery",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Support Systems (Water, Reagents, Power)",
+   "value": 18955,
+   "quote": "Process Support Systems (Water, Reagents, Power) K USD $ | 18,955 $ | 0 $ | 18,955",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ancillaries",
+   "value": 24711,
+   "quote": "Ancillaries K USD $ | 24,711 $ | 0 $ | 24,711",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Freight",
+   "value": 7793,
+   "quote": "Freight K USD $ | 7,793 $ | 888 $ | 8,681",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "construction",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-Total Direct Cost (Process Plant & Support)",
+   "value": 180978,
+   "quote": "Sub-Total Direct Cost (Process Plant & Support) K USD $ | 180,978 $ | 81,588 $ | 262,567",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "part_of": "Sub-Total Process Plant"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contractor Indirect Costs",
+   "value": 22100,
+   "quote": "Contractor Indirect Costs K USD $ | 22,100 $ | 16,242 $ | 38,342",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "other",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM",
+   "value": 30462,
+   "quote": "EPCM K USD $ | 30,462 $ | 14,675 $ | 45,136",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Vendor Support & Spare Parts",
+   "value": 5725,
+   "quote": "Vendor Support & Spare Parts K USD $ | 5,725 $ | 0 $ | 5,725",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "first_fills_spares",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 52650,
+   "quote": "Contingency K USD $ | 52,650 $ | 28,126 $ | 80,776",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "contingency",
+   "l2": "contingency",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs, Including First Fills",
+   "value": 17746,
+   "quote": "Owner's Costs, Including First Fills K USD $ | 17,746 $ | 7,826 $ | 25,572",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "owners",
+   "l2": "owners",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water Treatment Plant",
+   "value": 25000,
+   "quote": "Water Treatment Plant K USD $ | 25,000 $ | 0 $ | 25,000",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "water",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-Total Indirect Cost (Process Plant & Support)",
+   "value": 153682,
+   "quote": "Sub-Total Indirect Cost (Process Plant & Support) K USD $ | 153,682 $ | 66,869 $ | 220,551",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "part_of": "Sub-Total Process Plant"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-Total Process Plant",
+   "value": 334661,
+   "quote": "Sub-Total Process Plant K USD $ | 334,661 $ | 148,457 $ | 483,118",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sub-Total Mine Capital (RESPEC)",
+   "value": 49428,
+   "quote": "Sub-Total Mine Capital (RESPEC) K USD $ | 49,428 $ | 71,163 $ | 120,591",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TOTAL CAPITAL COST",
+   "value": 384088,
+   "quote": "TOTAL CAPITAL COST K USD $ | 384,088 $ | 219,620 $ | 603,708",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "M&I case used as base (Table 1-3/1-5/1-7); MI&I case (incl. Inferred) is reported separately in the report"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Heap Leach Pad & Ponds",
+   "value": 80700,
+   "quote": "Heap Leach Pad & Ponds K USD $ | 23,324 $ | 80,700 $ | 104,025",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "recovery",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Freight",
+   "value": 888,
+   "quote": "Freight K USD $ | 7,793 $ | 888 $ | 8,681",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "construction",
+   "part_of": "Sub-Total Direct Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Direct Cost (Process Plant & Support)",
+   "value": 81588,
+   "quote": "Sub-Total Direct Cost (Process Plant & Support) K USD $ | 180,978 $ | 81,588 $ | 262,567",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "part_of": "Sub-Total Process Plant"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contractor Indirect Costs",
+   "value": 16242,
+   "quote": "Contractor Indirect Costs K USD $ | 22,100 $ | 16,242 $ | 38,342",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "other",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "EPCM",
+   "value": 14675,
+   "quote": "EPCM K USD $ | 30,462 $ | 14,675 $ | 45,136",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "indirects",
+   "l2": "epcm",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 28126,
+   "quote": "Contingency K USD $ | 52,650 $ | 28,126 $ | 80,776",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "contingency",
+   "l2": "contingency",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owner's Costs, Including First Fills",
+   "value": 7826,
+   "quote": "Owner's Costs, Including First Fills K USD $ | 17,746 $ | 7,826 $ | 25,572",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "owners",
+   "l2": "owners",
+   "part_of": "Sub-Total Indirect Cost (Process Plant & Support)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Indirect Cost (Process Plant & Support)",
+   "value": 66869,
+   "quote": "Sub-Total Indirect Cost (Process Plant & Support) K USD $ | 153,682 $ | 66,869 $ | 220,551",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "part_of": "Sub-Total Process Plant"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Process Plant",
+   "value": 148457,
+   "quote": "Sub-Total Process Plant K USD $ | 334,661 $ | 148,457 $ | 483,118",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Mine Capital (RESPEC)",
+   "value": 71163,
+   "quote": "Sub-Total Mine Capital (RESPEC) K USD $ | 49,428 $ | 71,163 $ | 120,591",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TOTAL CAPITAL COST",
+   "value": 219620,
+   "quote": "TOTAL CAPITAL COST K USD $ | 384,088 $ | 219,620 $ | 603,708",
+   "page": 142,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "M&I case used as base (Table 1-3/1-5/1-7); MI&I case (incl. Inferred) is reported separately in the report"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 887322,
+   "quote": "Mining Costs $ | 887,322 $ | 4.78",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 4.78,
+   "quote": "Mining Costs $ | 887,322 $ | 4.78",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 874490,
+   "quote": "Process Plant $ | 874,490 $ | 4.71",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 4.71,
+   "quote": "Process Plant $ | 874,490 $ | 4.71",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 201722,
+   "quote": "G&A $ | 201,722 $ | 1.09",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.09,
+   "quote": "G&A $ | 201,722 $ | 1.09",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining",
+   "value": 26068,
+   "quote": "Refining $ | 26,068 $ | 0.14",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "offsite",
+   "l2": "tc_rc"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining",
+   "value": 0.14,
+   "quote": "Refining $ | 26,068 $ | 0.14",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "offsite",
+   "l2": "tc_rc"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TOTAL OPERATING COST",
+   "value": 1989602,
+   "quote": "TOTAL OPERATING COST $ | 1,989,602 $ | 10.73",
+   "page": 143,
+   "is_total": true,
+   "review_note": "M&I case used as base (Table 1-3/1-5/1-7); MI&I case (incl. Inferred) is reported separately in the report",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TOTAL OPERATING COST",
+   "value": 10.73,
+   "quote": "TOTAL OPERATING COST $ | 1,989,602 $ | 10.73",
+   "page": 143,
+   "is_total": true,
+   "review_note": "M&I case used as base (Table 1-3/1-5/1-7); MI&I case (incl. Inferred) is reported separately in the report",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

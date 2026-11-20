@@ -1,0 +1,343 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Quellaveco",
+  "title": "NI 43-101 Technical Report - Quellaveco Property, Mariscal Nieto Province, Peru",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-11-03",
+  "effective_date_quote": "Effective Date: November 3, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag"
+  ],
+  "country": "Peru",
+  "region": "Moquegua",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "tails_thickener"
+  ],
+  "quote": "primary crushing, milling, pebble crushing and flotation circuit designed to treat copper-molybdenum ore",
+  "page": 79
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 142000,
+   "unit": "t/d",
+   "quote": "The plant is achieving a capacity of 142 kt/d throughput, which is the basis of the LoAP.",
+   "page": 16,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 51.8,
+   "unit": "Mt/a",
+   "quote": "average mill throughput of 142 kt/d (or 51.8 Mt/a)",
+   "page": 14,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84,
+   "unit": "%",
+   "quote": "Metallurgical recoveries average 84% Cu with a 2.2% coarse particle flotation (CPF) uplift",
+   "page": 20,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "statistic_note": "includes 2.2% CPF uplift per text"
+   }
+  },
+  {
+   "parameter": "reserve_tonnes",
+   "value": 1488,
+   "unit": "Mt",
+   "quote": "stands at 1,488 Mt at 0.49% Cu and 0.017% Mo",
+   "page": 20
+  },
+  {
+   "parameter": "reserve_grade",
+   "value": 0.49,
+   "unit": "%",
+   "quote": "stands at 1,488 Mt at 0.49% Cu and 0.017% Mo",
+   "page": 20,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "reserve_grade",
+   "value": 0.017,
+   "unit": "%",
+   "quote": "stands at 1,488 Mt at 0.49% Cu and 0.017% Mo",
+   "page": 20,
+   "metal": "Mo"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 0.61,
+   "unit": "t:t",
+   "quote": "maintaining a strip ratio of about 0.61 (waste: ore)",
+   "page": 20
+  },
+  {
+   "parameter": "lom_years",
+   "value": 31,
+   "unit": "years",
+   "quote": "31-year concentrator life",
+   "page": 15
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 15.2,
+   "unit": "kWh/t",
+   "quote": "BBWi of 14.3 kWh/t for secondary ore and 15.2 kWh/t for primary ore",
+   "page": 56,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill (BBWi), 1996-1997 program",
+    "ore_type": "primary",
+    "n_samples": 289
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.3,
+   "unit": "kWh/t",
+   "quote": "BBWi of 14.3 kWh/t for secondary ore and 15.2 kWh/t for primary ore",
+   "page": 56,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill (BBWi), 1996-1997 program",
+    "ore_type": "secondary",
+    "n_samples": 289
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 3.63,
+   "quote": "Mining $/t rock mined 3.63",
+   "page": 19,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 7.89,
+   "quote": "Processing $/t ore processed 7.89",
+   "page": 19,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2.34,
+   "quote": "G&A $/t ore processed 2.34",
+   "page": 19,
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight",
+   "value": 112,
+   "quote": "Freight $/t conc 112",
+   "page": 19,
+   "basis_unit": "per_t_concentrate",
+   "l1": "offsite",
+   "l2": "transport",
+   "outside_total": true,
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TC",
+   "value": 47.89,
+   "quote": "TC $/t concentrate 47.89",
+   "page": 99,
+   "basis_unit": "per_t_concentrate",
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "outside_total": true,
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 9068,
+   "quote": "Mining 9,068 2,088",
+   "page": 99,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 12275,
+   "quote": "Processing 12,275 1,925",
+   "page": 99,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 3636,
+   "quote": "G&A 3,636 802",
+   "page": 99,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty",
+   "value": 2888,
+   "quote": "Royalty 2,888 593",
+   "page": 99,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight",
+   "value": 2931,
+   "quote": "Freight 2,931 549",
+   "page": 99,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Arsenic penalty",
+   "value": 6,
+   "quote": "Arsenic penalty 6 0 0",
+   "page": 99,
+   "l1": "offsite",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "TC",
+   "value": 1255,
+   "quote": "TC 1,255 211",
+   "page": 99,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "RC",
+   "value": 665,
+   "quote": "RC 665 136",
+   "page": 99,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 32722,
+   "quote": "Total 32,722 6,305",
+   "page": 99,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open pit SIB",
+   "value": 725,
+   "quote": "Open pit SIB 725",
+   "page": 19,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 4597,
+   "quote": "Processing 4,597",
+   "page": 19,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other SIB",
+   "value": 449,
+   "quote": "Other SIB 449",
+   "page": 19,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other capital",
+   "value": 113,
+   "quote": "Other capital 113",
+   "page": 19,
+   "l1": "other",
+   "review_note": "Called 'Expansion' in Table 21.1 (p98) but included in the SIB total here",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total SIB",
+   "value": 5883,
+   "quote": "Total 5,883",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Post-production closure costs",
+   "value": 1412,
+   "quote": "post-production closure costs totalling $1,412 million",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total"
+  }
+ ]
+}

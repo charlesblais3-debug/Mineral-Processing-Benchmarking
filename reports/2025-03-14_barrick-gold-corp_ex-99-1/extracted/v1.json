@@ -1,0 +1,209 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Carlin Complex",
+  "title": "NI 43-101 Technical Report on the Carlin Complex, Eureka and Elko County, Nevada, USA",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: 31 December 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "roasting",
+   "pox",
+   "cil",
+   "heap_leach"
+  ],
+  "quote": "through roasting, pressure oxidation, wet milling, or heap leaching",
+  "page": 262
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.62,
+   "unit": "g/t",
+   "quote": "Ore Au Grade Processed g/t 3.62",
+   "page": 260,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "plants": "Goldstrike Roaster, Goldstrike Autoclave, Gold Quarry Roaster (Carlin Complex Reserves processing plan)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 83.5,
+   "unit": "%",
+   "quote": "Recovery % 83.5",
+   "page": 260,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "plants": "Goldstrike Roaster, Goldstrike Autoclave, Gold Quarry Roaster (complex-level LOM; heap leach not separately listed)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1400,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are reported at a gold price of US$1,400/oz.",
+   "page": 20,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 865.5,
+   "quote": "Sustaining Capital 865.5",
+   "page": 309,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capital Drilling",
+   "value": 40.3,
+   "quote": "Capital Drilling 40.3",
+   "page": 309,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Stripping",
+   "value": 779.9,
+   "quote": "Open Pit Stripping 779.9",
+   "page": 309,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "pre_production"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Development",
+   "value": 743.6,
+   "quote": "Underground Development 743.6",
+   "page": 309,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 2429.3,
+   "quote": "Total 2,429.3",
+   "page": 309,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion Drilling",
+   "value": 48.1,
+   "quote": "Expansion Drilling 48.1",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total (expansion)",
+   "value": 48.1,
+   "quote": "Total 48.1",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining - OP",
+   "value": 1746.8,
+   "quote": "Mining – OP 1,746.8",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining - UG",
+   "value": 5134.8,
+   "quote": "Mining – UG 5,134.8",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 3841.0,
+   "quote": "Processing 3,841.0",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration",
+   "value": 1650.5,
+   "quote": "General & Administration 1,650.5",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Production Taxes",
+   "value": 180.3,
+   "quote": "Production Taxes 180.3",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight & Refining Costs",
+   "value": 4.9,
+   "quote": "Freight & Refining Costs 4.9",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "offsite"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 12558.3,
+   "quote": "Total Operating Costs 12,558.3",
+   "page": 310,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}

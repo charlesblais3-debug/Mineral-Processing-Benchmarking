@@ -1,0 +1,222 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "San Andres",
+  "title": "S-K 1300 Technical Report Summary, San Andres Mine, Department of Copan, Honduras",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "The effective date of the Mineral Resource estimate is December 31, 2024.",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Honduras",
+  "region": "Copan",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 7
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "heap_leach",
+   "adr"
+  ],
+  "quote": "The processing facilities include two stages of crushing and screening, drum agglomeration, HLPs, an ADR plant for recovering the gold from solution, and gold-silver doré casting.",
+  "page": 26
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 7.0,
+   "unit": "Mt/a",
+   "quote": "The Mine produces approximately 7 Mtpa of ROM material",
+   "page": 26,
+   "statistic": "steady_state",
+   "context": {
+    "note": "ROM material placed on the heap leach pads; LOM plan 7.3 Mt/y in 2026-2028 (7.6 Mt in 2025)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.44,
+   "unit": "g/t",
+   "quote": "Au Grade g/t 0.44",
+   "page": 16,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 68,
+   "unit": "%",
+   "quote": "based on a 68% recovery rate (weighted average)",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "doré (heap leach)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2531,
+   "unit": "USD/oz",
+   "quote": "Average Gold Price (realized) US$/oz 2,531",
+   "page": 16,
+   "metal": "Au",
+   "context": {
+    "note": "weighted average of annual consensus forecasts 2025-2029; Mineral Reserves use US$2,000/oz"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 203.5,
+   "unit": "MUSD",
+   "quote": "After-tax NPV @ 5% US$M 203.5",
+   "page": 16,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1380,
+   "unit": "USD/oz",
+   "quote": "All-In Sustaining Cost (AISC) US$/oz Au 1,380",
+   "page": 17,
+   "metal": "Au",
+   "context": {
+    "note": "text elsewhere states US$1,379/oz"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (2025-2029)",
+   "value": 7263847,
+   "quote": "Total 7,263,847 15,324,932 22,588,779",
+   "page": 142,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "other",
+   "review_note": "Table 18-1 values given in US$; Table 1-1 gives US$7.3M."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Development Capital (2025-2029)",
+   "value": 15324932,
+   "quote": "Total 7,263,847 15,324,932 22,588,779",
+   "page": 142,
+   "multiplier": "",
+   "basis_unit": "total",
+   "l1": "other",
+   "review_note": "Operating heap leach mine; development capital (mine development, plant improvements, community/SSMA projects) at an existing plant is growth. The report excludes it from the cash flow evaluation."
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Reclamation Costs",
+   "value": 31.4,
+   "quote": "Closure and Reclamation Costs US$M (31.4)",
+   "page": 16,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Open Pit) - LOM",
+   "value": 112223,
+   "quote": "Total 112,223 192,208 57,632 362,063",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing - LOM",
+   "value": 192208,
+   "quote": "Total 112,223 192,208 57,632 362,063",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A - LOM",
+   "value": 57632,
+   "quote": "Total 112,223 192,208 57,632 362,063",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost - LOM",
+   "value": 362063,
+   "quote": "Total 112,223 192,208 57,632 362,063",
+   "page": 143,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Open Pit) per tonne moved",
+   "value": 2.44,
+   "quote": "Mining (Open Pit) 2.44 3.67",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_moved",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Open Pit) per tonne processed",
+   "value": 3.67,
+   "quote": "Mining (Open Pit) 2.44 3.67",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 6.27,
+   "quote": "Processing 6.27",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.88,
+   "quote": "G&A 1.88 Total 11.82",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit operating cost",
+   "value": 11.82,
+   "quote": "Total 11.82",
+   "page": 143,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

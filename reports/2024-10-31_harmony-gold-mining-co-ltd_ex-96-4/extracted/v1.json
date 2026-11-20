@@ -1,0 +1,389 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Moab Khotsong",
+  "title": "Technical Report Summary of the Mineral Resources and Mineral Reserves for Moab Khotsong Operations, Free State Province, South Africa",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-06-30",
+  "effective_date_quote": "Effective Date: June 30, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "U",
+   "Ag"
+  ],
+  "country": "South Africa",
+  "region": "Free State",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "ZAR",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cip",
+   "elution_ew"
+  ],
+  "quote": "The milled ore follows a standard cyanide leach, CIP and electrowinning process in order to extract the gold bullion.",
+  "page": 80
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 9420,
+   "unit": "t/d",
+   "quote": "daily treatment rate of approximately 9,420tpd at 92% availability",
+   "page": 80,
+   "statistic": "design",
+   "context": {
+    "availability_pct": 92
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.6,
+   "unit": "%",
+   "quote": "Gold Recovery | % | 96.60 | 96.50",
+   "page": 106,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Moab Khotsong reserve plan (Zaaiplaats 96.50)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1772,
+   "unit": "USD/oz",
+   "quote": "2024 Mineral Reserve | 1,772 | 32.15 | 18.26 | 1,040,000",
+   "page": 104,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 18.26,
+   "unit": "ZAR/USD",
+   "quote": "2024 Mineral Reserve | 1,772 | 32.15 | 18.26 | 1,040,000",
+   "page": 104,
+   "context": {
+    "pair": "ZAR/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1545.31,
+   "unit": "MZAR",
+   "quote": "NPV - (Harmony Preferred) | @9% | 1,545,310",
+   "page": 107,
+   "currency": "ZAR",
+   "derived": true,
+   "context": {
+    "discount_rate_pct": 9,
+    "derived_note": "table is in ZAR'000: 1,545,310 thousand = 1,545.31 million ZAR"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "OCD",
+   "value": 4842375,
+   "quote": "OCD | 4,842,375",
+   "page": 102,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "AE",
+   "value": 1100617,
+   "quote": "AE | 1,100,617",
+   "page": 102,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Shaft Projects",
+   "value": 525490,
+   "quote": "Shaft Projects | 525,490",
+   "page": 102,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Major Projects",
+   "value": 7703930,
+   "quote": "Major Projects | 7,703,930",
+   "page": 102,
+   "l1": "other",
+   "review_note": "Includes Zaaiplaats project capital per section 18.1; split from sustaining not given",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "MCC",
+   "value": 526017,
+   "quote": "MCC | 526,017",
+   "page": 102,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total reserve plan capital (FY2025-FY2044)",
+   "value": 14698429,
+   "quote": "Total | 14,698,429",
+   "page": 102,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Wages - Payroll 1",
+   "value": 10493967,
+   "quote": "Wages - Payroll 1 | 10,493,967",
+   "page": 103,
+   "l1": "mining",
+   "part_of": "Direct Costs",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Wages - Payroll 2",
+   "value": 15497016,
+   "quote": "Wages - Payroll 2 | 15,497,016",
+   "page": 103,
+   "l1": "mining",
+   "part_of": "Direct Costs",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Stores and Materials",
+   "value": 9274723,
+   "quote": "Stores and Materials | 9,274,723",
+   "page": 103,
+   "l1": "mining",
+   "part_of": "Direct Costs",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electric Power and Water",
+   "value": 18776465,
+   "quote": "Electric Power and Water | 18,776,465",
+   "page": 103,
+   "l1": "mining",
+   "part_of": "Direct Costs",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Outside Contractors",
+   "value": 3483914,
+   "quote": "Outside Contractors | 3,483,914",
+   "page": 103,
+   "l1": "mining",
+   "part_of": "Direct Costs",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 7923905,
+   "quote": "Other | 7,923,905",
+   "page": 103,
+   "l1": "mining",
+   "part_of": "Direct Costs",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Direct Costs",
+   "value": 65449990,
+   "quote": "Direct Costs | 65,449,990",
+   "page": 103,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Pumping Allocation",
+   "value": 2242867,
+   "quote": "Pumping Allocation | 2,242,867",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining Charge",
+   "value": 232968,
+   "quote": "Refining Charge | 232,968",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Uranium Allocation",
+   "value": -2766022,
+   "quote": "Uranium Allocation | (2,766,022)",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Hostel Cost",
+   "value": -173039,
+   "quote": "Hostel Cost | (173,039)",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "ga",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Backfill Cost",
+   "value": 560843,
+   "quote": "Backfill Cost | 560,843",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant Treatment Cost",
+   "value": 8056681,
+   "quote": "Plant Treatment Cost | 8,056,681",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Working Cost Transfer to Capital",
+   "value": -507780,
+   "quote": "Working Cost Transfer to Capital | (507,780)",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Workshops allocations",
+   "value": 380651,
+   "quote": "Workshops allocations | 380,651",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Care and Maintenance",
+   "value": 1385604,
+   "quote": "Care and Maintenance | 1,385,604",
+   "page": 103,
+   "part_of": "Re-allocated costs",
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Re-allocated costs",
+   "value": 9412773,
+   "quote": "Re-allocated costs | 9,412,773",
+   "page": 103,
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Overheads Re-allocated",
+   "value": 4863126,
+   "quote": "Mine Overheads Re-allocated | 4,863,126",
+   "page": 103,
+   "l1": "ga",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 79725889,
+   "quote": "Total | 79,725,889",
+   "page": 103,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "ZAR"
+  }
+ ]
+}

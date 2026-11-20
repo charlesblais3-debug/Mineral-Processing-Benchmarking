@@ -1,0 +1,356 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Blyvoor Tailings Retreatment",
+  "title": "S-K 1300 Technical Report Summary on the Blyvoor Tailings Retreatment Project, South Africa",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2024-02-29",
+  "effective_date_quote": "The effective date of this Report is 29 February 2024.",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "South Africa",
+  "region": "Gauteng",
+  "mine_type": "tailings_retreatment",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "screening",
+   "cil",
+   "cyanide_detox"
+  ],
+  "quote": "starting with the trash screens and thickeners, followed by the conditioning tanks, CIL tanks and detox tank",
+  "page": 42
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 500,
+   "unit": "kt/month",
+   "quote": "The process plant is designed to treat 500 ktpm through two identical 250 ktpm circuits.",
+   "page": 41,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 15,
+   "unit": "years",
+   "quote": "The Project has a current LoM of 15 years",
+   "page": 65
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.301,
+   "unit": "g/t",
+   "quote": "Average Mined Grade g/t 0.301",
+   "page": 62,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 53.5,
+   "unit": "%",
+   "quote": "The average recovery over the LoM is 53.5% for an average recovered gold grade of 0.16 g/t.",
+   "page": 62,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1900,
+   "unit": "USD/oz",
+   "quote": "Gold Price USD/oz 2,086 2,040 1,900 1,900 1,900 1,900",
+   "page": 10,
+   "metal": "Au",
+   "review_note": "Long-term real gold price; 2024-2026 prices higher (2,086 / 2,040 / 1,900)"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 56,
+   "unit": "MUSD",
+   "quote": "best estimated value of USD56 million (USD56 million attributable to Blyvoor Ops) at a real calculated discount rate of 11.4%",
+   "page": 65,
+   "context": {
+    "discount_rate_pct": 11.4
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 27.0,
+   "unit": "%",
+   "quote": "The IRR of the Project is 27.0%.",
+   "page": 65
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.0,
+   "unit": "years",
+   "quote": "payback period of production of 3.0 years",
+   "page": 65
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 915,
+   "unit": "USD/oz",
+   "quote": "Operating Costs USD/Gold oz 915",
+   "page": 10,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 982,
+   "unit": "USD/oz",
+   "quote": "All-in Sustaining Costs (AISC) USD/Gold oz 982",
+   "page": 10,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 19.01,
+   "unit": "ZAR/USD",
+   "quote": "Currency ZAR /USD 19.01 18.679",
+   "page": 62,
+   "context": {
+    "pair": "ZAR/USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Hydro Mining Infrastructure - TSF 7 (at 500ktpm)",
+   "value": 0.78,
+   "quote": "Hydro Mining Infrastructure - TSF 7 (at 500ktpm) USDm 0.78",
+   "page": 55,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Hydro Mining TSF 6 and Shared Infrastructure",
+   "value": 16.58,
+   "quote": "Hydro Mining TSF 6 and Shared Infrastructure (Ramp up to 500ktpm in 12 months) USDm 16.58",
+   "page": 55,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Plant Direct Sub-Total",
+   "value": 36.58,
+   "quote": "Plant Direct Sub-Total USDm 36.58",
+   "page": 55,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM",
+   "value": 4.39,
+   "quote": "EPCM USDm 4.39",
+   "page": 55,
+   "l1": "indirects",
+   "l2": "epcm",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "First Fill",
+   "value": 1.11,
+   "quote": "First Fill USDm 1.11",
+   "page": 55,
+   "l1": "indirects",
+   "l2": "first_fills_spares",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TSF - Phase 1",
+   "value": 10.33,
+   "quote": "TSF - Phase 1 USDm 10.33",
+   "page": 55,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TSF - Phase 2",
+   "value": 5.46,
+   "quote": "TSF - Phase 2 USDm 5.46",
+   "page": 55,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TSF - Phase 3",
+   "value": 6.65,
+   "quote": "TSF - Phase 3 USDm 6.65",
+   "page": 55,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TSF - Phase 4",
+   "value": 12.69,
+   "quote": "TSF - Phase 4 USDm 12.69",
+   "page": 55,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalised Overheads",
+   "value": 0.57,
+   "quote": "Capitalised Overheads USDm 0.57",
+   "page": 55,
+   "l1": "owners",
+   "l2": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Study work",
+   "value": 1.05,
+   "quote": "Study work USDm 1.05",
+   "page": 55,
+   "l1": "owners",
+   "l2": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Capital Contingency",
+   "value": 2.6,
+   "quote": "Mining Capital Contingency USDm 2.60",
+   "page": 55,
+   "l1": "contingency",
+   "l2": "contingency",
+   "outside_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Plant Capital Contingency",
+   "value": 15.82,
+   "quote": "Plant Capital Contingency USDm 15.82",
+   "page": 55,
+   "l1": "contingency",
+   "l2": "contingency",
+   "outside_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Capital Contingency",
+   "value": 0.24,
+   "quote": "Other Capital Contingency USDm 0.24",
+   "page": 55,
+   "l1": "contingency",
+   "l2": "contingency",
+   "outside_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Initial Capital",
+   "value": 96.31,
+   "quote": "Total Initial Capital USDm 96.31",
+   "page": 55,
+   "is_total": true,
+   "review_note": "Stated total excludes contingency (USD 18.67M listed separately as Total Capital Contingencies) and SIB",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Stay in Business Plant Capital",
+   "value": 8.94,
+   "quote": "Stay in Business Plant Capital USDm 8.94",
+   "page": 55,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total SIB Capital",
+   "value": 8.94,
+   "quote": "Total SIB Capital USDm 8.94",
+   "page": 55,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Cost",
+   "value": 0.18,
+   "quote": "Mine Cost USD/Feed tonne 0.18",
+   "page": 58,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant Costs",
+   "value": 4.23,
+   "quote": "Plant Costs USD/Feed tonne 4.23",
+   "page": 58,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Costs",
+   "value": 0.33,
+   "quote": "Other Costs USD/Feed tonne 0.33",
+   "page": 58,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Costs",
+   "value": 4.74,
+   "quote": "Operating Costs USD/Feed tonne 4.74",
+   "page": 58,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

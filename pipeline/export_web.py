@@ -13,7 +13,7 @@ import json
 import sqlite3
 from pathlib import Path
 
-from pipeline import taxonomy
+from pipeline import geo, taxonomy
 from pipeline.db.init_db import DEFAULT_DB
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -115,6 +115,8 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
             "unit_ops": json.loads(fs["unit_ops"]) if fs else [],
             "flowsheet_src": {"page": fs["page"], "quote": fs["description_quote"], "url": url} if fs else None,
             "metrics": {k: v for k, v in metrics.items() if v},
+            "location": _location(r["id"], r["country"], r["region"], url),
+            "country_std": geo.country_key(r["country"]), "continent": geo.continent(r["country"]),
             "facts": [{"key": f["parameter_key"], "label": params[f["parameter_key"]]["label"],
                        "group": params[f["parameter_key"]]["group"], "metal": f["metal"],
                        "value": f["value_norm"] if f["value_norm"] is not None else f["value"],
@@ -135,7 +137,18 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
         "circuits": {c["key"]: c["label"] for c in flow_tax["comminution_circuits"]},
         "unit_ops": {k: v["label"] for k, v in flow_tax["unit_ops"].items()},
     }
-    return {"escalation_year": ppi_year, "projects": projects, "labels": labels}
+    return {"escalation_year": ppi_year, "projects": projects, "labels": labels, "world": geo.world_geojson(),
+            "continents": list(geo.CONTINENTS)}
+
+
+def _location(report_id: str, country, region, url) -> dict | None:
+    """Stated coordinates (with page + quote) if the report gives them, else an approximate region/country centre."""
+    f = ROOT / "reports" / report_id / "extracted" / "location.json"
+    if f.exists():
+        loc = json.loads(f.read_text())
+        return {"lat": loc["lat"], "lon": loc["lon"], "method": loc["method"], "page": loc["page"], "quote": loc["quote"],
+                "url": url, "verified": True}
+    return geo.approximate(country, region)
 
 
 def latest_per_project(projects: list[dict]) -> list[dict]:

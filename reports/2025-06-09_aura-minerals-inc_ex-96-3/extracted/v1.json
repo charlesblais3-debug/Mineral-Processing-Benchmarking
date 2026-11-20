@@ -1,0 +1,170 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Apoena (EPP Complex)",
+  "title": "S-K1300 Technical Report Summary, Apoena Mine (EPP Complex) Mineral Resource and Mineral Reserve, Mato Grosso, Brazil",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2023-10-31",
+  "effective_date_quote": "Effective date : October 31, 2023",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Mato Grosso",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "ilr",
+   "sag_mill",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "centrifuge gravimetry with the leaching of the concentrate in an intensive leaching reactor, with the rich liquor being then subjected to electrolysis and melting of the cathode concentrate. The single-stage SAG milling product, with P80 of 0.106 mm, proceeded to leaching into tanks in an LCIL configuration, that is, a leaching tank and the others containing activated carbon for gold adsorption, followed by elution, electrolysis, and casting of the concentrate obtained in the cathodes. The processing route also considered the treatment of the residual cyanide present in the final tailings",
+  "page": 26
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.91,
+   "unit": "g/t",
+   "quote": "Nosde & Lavrinha Total (2P) 7,560,412 0.91 221,687",
+   "page": 28,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Proven and Probable reserve grade for the 4-year LOM plan (7.56 Mt)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.5,
+   "unit": "%",
+   "quote": "metallurgical recovery of 93.5%",
+   "page": 28,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "reserve pit optimization parameter"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "The single-stage SAG milling product, with P80 of 0.106 mm",
+   "page": 26,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 11.7,
+   "unit": "kWh/t",
+   "quote": "Metaconglomerate - A 0.150 27.9 2.18 0.107 1.996 11.7",
+   "page": 94,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 150,
+    "ore_type": "Metaconglomerate"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 12.5,
+   "unit": "kWh/t",
+   "quote": "Metarenite - C 0.150 20.0 2.15 0.112 1.919 12.5",
+   "page": 94,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 150,
+    "ore_type": "Metarenite"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 6.7,
+   "unit": "kWh/t",
+   "quote": "Mylonite - B 0.150 38.8 1.68 0.091 3.653 6.7",
+   "page": 94,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill work index",
+    "closing_screen_um": 150,
+    "ore_type": "Mylonite"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1800,
+   "unit": "USD/oz",
+   "quote": "gold price of 1800 USD",
+   "page": 28,
+   "metal": "Au",
+   "context": {
+    "note": "Mineral Reserves price"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.1,
+   "unit": "BRL/USD",
+   "quote": "exchange rate of 5.1: USD 1",
+   "page": 28,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 91.38,
+   "unit": "MUSD",
+   "quote": "The base case estimates a post-tax NPV of US$91.38 million at a discount rate of 10% per year.",
+   "page": 36,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Total process cost",
+   "value": 11.8,
+   "quote": "total process cost of 11.8 USD/t",
+   "page": 28,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Reserve pit-optimization input (US$/t processed); table version of the same input gives 11.87.",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining cost",
+   "value": 2.26,
+   "quote": "mining costs of 2.26 USD/t",
+   "page": 28,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative costs",
+   "value": 3.79,
+   "quote": "general and administrative costs of 3.79 USD/t",
+   "page": 28,
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "multiplier": ""
+  }
+ ]
+}

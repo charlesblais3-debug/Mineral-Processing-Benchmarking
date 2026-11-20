@@ -1,0 +1,166 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Salares Norte",
+  "title": "Technical Report Summary of Mineral reserves and Mineral resources 31 December 2024 For Gold Fields Limited – Salares Norte – Chile",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-03-27",
+  "effective_date_quote": "Effective date of this report 27 March 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Chile",
+  "region": "Atacama",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "tank_leach",
+   "merrill_crowe",
+   "cip"
+  ],
+  "quote": "• Grinding circuit with SAG mill and ball mill. • Leaching thickener and four leach tanks. • Merrill-Crowe feed preparation circuit with two CCD thickeners. • Merrill-Crowe clarifier, clarifier filters, deaeration column and precipitate filters. • Refinery smelting furnaces and retorts. • CIP scavenging circuit with eight CIP tanks.",
+  "page": 71
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.0,
+   "unit": "Mt/a",
+   "quote": "is designed to process 2 Mt per annum (Table 12.2.10)",
+   "page": 71,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "The cyclones produce the required classification of 80 % passing 75 µm",
+   "page": 73,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1500,
+   "unit": "USD/oz",
+   "quote": "Metal prices | $1,500/oz Au, $17.50/oz Ag",
+   "page": 101,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 17.5,
+   "unit": "USD/oz",
+   "quote": "Metal prices | $1,500/oz Au, $17.50/oz Ag",
+   "page": 101,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1470,
+   "unit": "MUSD",
+   "quote": "Salares Norte’s NPV at a discount rate of 8.7 % is $1,470 million",
+   "page": 102,
+   "context": {
+    "discount_rate_pct": 8.7
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 700,
+   "unit": "CLP/USD",
+   "quote": "Exchange rate | CLP:USD 700:1",
+   "page": 101,
+   "context": {
+    "pair": "CLP/USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure",
+   "value": 96,
+   "quote": "The mine closure cost for Salares Norte is estimated at $96 million",
+   "page": 8,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Services",
+   "value": 2.35,
+   "quote": "Services | 2.35",
+   "page": 77,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Consumables",
+   "value": 13.9,
+   "quote": "Consumables | 13.90",
+   "page": 77,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labour",
+   "value": 8.03,
+   "quote": "Labour | 8.03",
+   "page": 77,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Energy",
+   "value": 12.54,
+   "quote": "Energy | 12.54",
+   "page": 77,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance",
+   "value": 3.77,
+   "quote": "Maintenance | 3.77",
+   "page": 77,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "part_of": "Total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 40.59,
+   "quote": "Total | 40.59",
+   "page": 77,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "is_total": true,
+   "review_note": "Processing operating cost only (Table 14.3.1), not total site cost"
+  }
+ ]
+}

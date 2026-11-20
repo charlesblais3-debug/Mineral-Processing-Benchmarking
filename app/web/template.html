@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: an engineer's workbench. Sticky header with two views (Explore, Estimate);
+/* Layout: an engineer's workbench. Sticky header with three views (Explore, Map, Estimate);
    one large chart over a dense project table; a project data sheet slides in from the right. */
 :root {
   --bg: #eef2f3; --surface: #ffffff; --sunk: #e3e9eb; --ink: #15212a; --muted: #5a6872; --line: #d3dce0;
@@ -62,6 +62,15 @@ select.sel { border: 1px solid var(--line); background: var(--surface); padding:
 .fit { font-size: 13px; color: var(--muted) }
 .fit b { color: var(--ink); font-weight: 500 }
 #chart { width: 100%; height: 440px }
+#map { width: 100%; height: 560px; touch-action: none }
+.tools { display: flex; gap: 6px; flex-wrap: wrap; align-items: center }
+.tool { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 5px 11px; cursor: pointer; font-size: 13px; font-weight: 500 }
+.tool[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink) }
+.tool.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+.tool:disabled { opacity: .45; cursor: default }
+.selchip { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-soft); border: 1px solid var(--accent); color: var(--ink); border-radius: 999px; padding: 3px 4px 3px 12px; font-size: 13px }
+.selchip button { border: 0; background: var(--surface); border-radius: 999px; padding: 2px 9px; cursor: pointer; font-size: 12px }
+.maphint { font-size: 12px; color: var(--muted); padding: 0 6px }
 .toggles { display: flex; gap: 14px; align-items: center; font-size: 13px; color: var(--muted) }
 .toggles label { display: flex; gap: 6px; align-items: center; cursor: pointer }
 .legend { display: flex; gap: 14px; font-size: 12px; color: var(--muted); flex-wrap: wrap; padding: 0 6px 8px }
@@ -135,7 +144,11 @@ footer.foot { font-size: 12px; color: var(--muted); padding-block: 8px 24px }
   .est-grid { grid-template-columns: 1fr }
   .cards { grid-template-columns: 1fr }
   #chart { height: 340px }
+  #map { height: 420px }
   .kv { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+}
+@media (max-width: 560px) {
+  #map { height: 300px }
 }
 @media (prefers-reduced-motion: no-preference) { aside.sheet { transition: transform .18s ease } }
 </style>
@@ -145,14 +158,15 @@ footer.foot { font-size: 12px; color: var(--muted); padding-block: 8px 24px }
     <div class="brand"><h1>Mineral Processing Benchmarks</h1><span id="countline"></span></div>
     <nav class="views" aria-label="Views">
       <a href="#explore" id="nav-explore">Explore</a>
+      <a href="#map" id="nav-map">Map</a>
       <a href="#estimate" id="nav-estimate">Estimate</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
+  <div class="controls" id="filters" style="margin-bottom:18px"></div>
   <section class="view" id="view-explore">
-    <div class="controls" id="filters"></div>
     <div class="presets" role="tablist" id="presets"></div>
     <div class="panel chartbox">
       <div class="chart-head">
@@ -167,6 +181,23 @@ footer.foot { font-size: 12px; color: var(--muted); padding-block: 8px 24px }
       <div class="legend" id="legend"></div>
     </div>
     <div class="panel tablewrap"><table class="grid" id="ptable"></table></div>
+  </section>
+
+  <section class="view" id="view-map" hidden>
+    <div class="panel chartbox">
+      <div class="chart-head">
+        <h2 id="map-title">Project locations</h2>
+        <div class="tools">
+          <button class="tool" id="map-box" aria-pressed="false" title="Drag a rectangle on the map to pick projects">Select area</button>
+          <button class="tool" id="map-clear">Clear selection</button>
+          <button class="tool primary" id="map-use">Use in charts</button>
+        </div>
+      </div>
+      <p class="maphint" id="map-hint"></p>
+      <div id="map" role="img" aria-label="World map of benchmark projects"></div>
+      <div class="legend" id="map-legend"></div>
+    </div>
+    <div class="panel tablewrap"><table class="grid" id="mtable"></table></div>
   </section>
 
   <section class="view" id="view-estimate" hidden>
@@ -221,15 +252,26 @@ const PRESETS = [
   { id: "procopex", title: `Process OPEX per tonne vs throughput`, x: "tpd", y: "process_opex", ylab: `Process OPEX (US$/t milled, ${Y})`, fit: true },
   { id: "bwi", title: `Bond ball mill work index vs throughput`, x: "tpd", y: "bwi", ylab: "Bond ball mill work index (kWh/t)", fit: false },
 ];
-const state = { com: "", stage: "", fam: "", preset: "capex", log: true, fit: true, sort: "name", dir: 1 };
+const state = { com: "", stage: "", fam: "", cont: "", ctry: "", sel: [], preset: "capex", log: true, fit: true, sort: "name", dir: 1 };
 try { const s = JSON.parse(localStorage.getItem("mpb-state") || "{}"); Object.assign(state, s); } catch (e) {}
 const save = () => { try { localStorage.setItem("mpb-state", JSON.stringify(state)); } catch (e) {} };
 
-function filtered() {
+/* Filters shared by Explore and Map. The map selection (a box drawn on the map) narrows everything further. */
+function filteredBase() {
   return P.filter(p => (!state.com || p.commodity === state.com)
     && (!state.stage || (state.stage === "op" ? OPERATING(p) : !OPERATING(p)))
-    && (!state.fam || p.families.includes(state.fam)));
+    && (!state.fam || p.families.includes(state.fam))
+    && (!state.cont || p.continent === state.cont)
+    && (!state.ctry || p.country_std === state.ctry));
 }
+function filtered() {
+  const rows = filteredBase();
+  if (!state.sel.length) return rows;
+  const sel = new Set(state.sel);
+  return rows.filter(p => sel.has(p.id));
+}
+const COUNTRY_LABEL = {};
+P.forEach(p => { if (p.country_std && (!COUNTRY_LABEL[p.country_std] || p.country.length < COUNTRY_LABEL[p.country_std].length)) COUNTRY_LABEL[p.country_std] = p.country; });
 
 /* ---------- regression: log10 y = a + b log10 x ---------- */
 function powerFit(pts) {
@@ -255,13 +297,24 @@ function powerFit(pts) {
 /* ---------- filters ---------- */
 function renderFilters() {
   const fams = [...new Set(P.flatMap(p => p.families))].sort((a, b) => famLabel(a).localeCompare(famLabel(b)));
+  const conts = (DATA.continents || []).filter(c => P.some(p => p.continent === c));
+  const counts = {};
+  P.filter(p => !state.cont || p.continent === state.cont).forEach(p => { if (p.country_std) counts[p.country_std] = (counts[p.country_std] || 0) + 1; });
+  const ctrys = Object.keys(counts).sort((a, b) => (COUNTRY_LABEL[a] || a).localeCompare(COUNTRY_LABEL[b] || b));
   const chip = (grp, val, text) => `<button class="chip" data-g="${grp}" data-v="${val}" aria-pressed="${state[grp] === val}">${text}</button>`;
   $("#filters").innerHTML = `
     <div class="group"><span class="lab">Commodity</span>${chip("com", "", "All")}${chip("com", "Au", '<span class="dot Au"></span> Gold')}${chip("com", "Cu", '<span class="dot Cu"></span> Copper')}${chip("com", "Ni", '<span class="dot Ni"></span> Nickel')}${chip("com", "Fe", '<span class="dot Fe"></span> Iron ore')}</div>
     <div class="group"><span class="lab">Stage</span>${chip("stage", "", "All")}${chip("stage", "st", "Studies")}${chip("stage", "op", "Operating")}</div>
-    <div class="group"><span class="lab">Flowsheet</span><select class="sel" id="f-fam" aria-label="Flowsheet"><option value="">All flowsheets</option>${fams.map(f => `<option value="${f}" ${state.fam === f ? "selected" : ""}>${esc(famLabel(f))}</option>`).join("")}</select></div>`;
-  $("#filters").querySelectorAll(".chip").forEach(b => b.onclick = () => { state[b.dataset.g] = b.dataset.v; save(); renderExplore(); });
-  $("#f-fam").onchange = e => { state.fam = e.target.value; save(); renderExplore(); };
+    <div class="group"><span class="lab">Flowsheet</span><select class="sel" id="f-fam" aria-label="Flowsheet"><option value="">All flowsheets</option>${fams.map(f => `<option value="${f}" ${state.fam === f ? "selected" : ""}>${esc(famLabel(f))}</option>`).join("")}</select></div>
+    <div class="group"><span class="lab">Region</span>
+      <select class="sel" id="f-cont" aria-label="Continent"><option value="">All continents</option>${conts.map(c => `<option ${state.cont === c ? "selected" : ""}>${esc(c)}</option>`).join("")}</select>
+      <select class="sel" id="f-ctry" aria-label="Country"><option value="">All countries</option>${ctrys.map(c => `<option value="${esc(c)}" ${state.ctry === c ? "selected" : ""}>${esc(COUNTRY_LABEL[c] || c)} (${counts[c]})</option>`).join("")}</select></div>
+    ${state.sel.length ? `<span class="selchip">Map selection: <b>${state.sel.length}</b> project${state.sel.length > 1 ? "s" : ""}<button id="f-selclear" title="Show all projects again">Clear ✕</button></span>` : ""}`;
+  $("#filters").querySelectorAll(".chip").forEach(b => b.onclick = () => { state[b.dataset.g] = b.dataset.v; save(); rerender(); });
+  $("#f-fam").onchange = e => { state.fam = e.target.value; save(); rerender(); };
+  $("#f-cont").onchange = e => { state.cont = e.target.value; if (state.ctry && !P.some(p => p.country_std === state.ctry && p.continent === state.cont)) state.ctry = ""; save(); rerender(true); };
+  $("#f-ctry").onchange = e => { state.ctry = e.target.value; save(); rerender(true); };
+  if ($("#f-selclear")) $("#f-selclear").onclick = () => { state.sel = []; save(); rerender(); };
   $("#e-fam").innerHTML = `<option value="">Any flowsheet</option>` + fams.map(f => `<option value="${f}">${esc(famLabel(f))}</option>`).join("");
 }
 
@@ -334,21 +387,100 @@ const COLS = [
   { k: "process_opex", t: "Process $/t", r: 1, v: p => p.metrics.process_opex?.value, f: p => fmt(p.metrics.process_opex?.value, 2) },
   { k: "site_opex", t: "Site $/t", r: 1, v: p => p.metrics.site_opex?.value, f: p => fmt(p.metrics.site_opex?.value, 2) },
 ];
-function renderTable(rows) {
+function renderTable(rows, el = $("#ptable")) {
   const c = COLS.find(c => c.k === state.sort) || COLS[0];
   rows = [...rows].sort((a, b) => { const x = c.v(a), y = c.v(b);
     if (x == null) return 1; if (y == null) return -1; return (x > y ? 1 : x < y ? -1 : 0) * state.dir; });
-  $("#ptable").innerHTML = `<thead><tr>${COLS.map(c => `<th class="${c.r ? "r" : ""}" data-k="${c.k}">${c.t}${state.sort === c.k ? (state.dir > 0 ? " ↑" : " ↓") : ""}</th>`).join("")}</tr></thead>
+  el.innerHTML = `<thead><tr>${COLS.map(c => `<th class="${c.r ? "r" : ""}" data-k="${c.k}">${c.t}${state.sort === c.k ? (state.dir > 0 ? " ↑" : " ↓") : ""}</th>`).join("")}</tr></thead>
     <tbody>${rows.map(p => `<tr data-id="${p.id}">${COLS.map(c => `<td class="${c.r ? "r num" : ""}">${c.f(p)}</td>`).join("")}</tr>`).join("")}</tbody>`;
-  $("#ptable").querySelectorAll("th").forEach(th => th.onclick = () => { state.dir = state.sort === th.dataset.k ? -state.dir : 1; state.sort = th.dataset.k; save(); renderTable(filtered()); });
-  $("#ptable").querySelectorAll("tbody tr").forEach(tr => tr.onclick = () => { location.hash = "p-" + tr.dataset.id; });
+  el.querySelectorAll("th").forEach(th => th.onclick = () => { state.dir = state.sort === th.dataset.k ? -state.dir : 1; state.sort = th.dataset.k; save(); rerender(); });
+  el.querySelectorAll("tbody tr").forEach(tr => tr.onclick = () => { location.hash = "p-" + tr.dataset.id; });
 }
 
 function renderExplore() {
   renderFilters(); renderPresets();
+  $("#presets").title = state.sel.length ? "Charts use the projects selected on the map" : "";
   $("#opt-log").checked = state.log; $("#opt-fit").checked = state.fit;
   const rows = filtered();
   renderChart(rows); renderTable(rows);
+}
+
+/* ---------- map ---------- */
+let map, mapFitKey = "";
+const hash01 = s => { let h = 2166136261; for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return ((h >>> 0) % 1000) / 1000; };
+function mapPoint(p) {
+  const L0 = p.location; if (!L0) return null;
+  if (L0.method === "region" || L0.method === "country") {        // spread approximate markers that share a centre
+    const a = hash01(p.id) * 2 * Math.PI, r = 0.35 + hash01(p.id + "r") * 0.9;
+    return [L0.lon + r * Math.cos(a), L0.lat + r * Math.sin(a)];
+  }
+  return [L0.lon, L0.lat];
+}
+function renderMap(refit) {
+  renderFilters();
+  const base = filteredBase(), sel = new Set(state.sel);
+  const shown = base.filter(p => mapPoint(p));
+  const ink = css("--ink"), muted = css("--muted"), line = css("--line"), land = css("--sunk"), surf = css("--surface");
+  const colors = { Au: css("--au"), Cu: css("--cu"), Ni: css("--ni"), Fe: css("--fe") };
+  const approx = p => p.location.method === "region" || p.location.method === "country";
+  const k = Math.max(.5, Math.min(1, map.getWidth() / 1100));       // smaller markers on narrow screens
+  const series = ["Au", "Cu", "Ni", "Fe"].map(c => ({
+    name: c, type: "scatter", coordinateSystem: "geo", geoIndex: 0,
+    symbolSize: d => k * (d[2] ? Math.max(7, Math.min(20, 3.2 * Math.log10(d[2]))) : 8),
+    data: shown.filter(p => p.commodity === c).map(p => ({
+      value: [...mapPoint(p), p.metrics.tpd?.value || 0], name: p.name, id: p.id,
+      itemStyle: approx(p) ? { color: "transparent", borderColor: colors[c], borderWidth: 2, opacity: sel.size && !sel.has(p.id) ? .3 : 1 }
+                           : { color: colors[c], borderColor: surf, borderWidth: 1, opacity: sel.size && !sel.has(p.id) ? .3 : 1 } })),
+    emphasis: { scale: 1.5 }, z: 3,
+  }));
+  // fit the view to the filtered projects when the region filters change
+  const key = [state.cont, state.ctry].join("|");
+  let view = {};
+  if (refit || key !== mapFitKey) {
+    mapFitKey = key;
+    const pts = shown.map(mapPoint);
+    if (pts.length && (state.cont || state.ctry)) {
+      const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+      const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+      const zoom = Math.max(1, Math.min(10, 0.75 * Math.min(330 / Math.max(x1 - x0, 6), 150 / Math.max(y1 - y0, 4))));
+      view = { center: [(x0 + x1) / 2, (y0 + y1) / 2], zoom };
+    } else view = { center: [10, 15], zoom: 1.15 };
+  }
+  map.setOption({
+    animation: false,
+    geo: { map: "world", roam: true, ...view, scaleLimit: { min: 1, max: 40 }, silent: true,
+      itemStyle: { areaColor: land, borderColor: surf, borderWidth: .6 }, emphasis: { disabled: true }, select: { disabled: true },
+      label: { show: false } },
+    tooltip: { trigger: "item", backgroundColor: surf, borderColor: line, textStyle: { color: ink, fontSize: 12 },
+      formatter: d => { const p = P.find(q => q.id === d.data.id); if (!p) return "";
+        const m = p.metrics;
+        return `<b>${esc(p.name)}</b> <span style="color:${muted}">${esc(STAGE(p))}</span><br>${esc([p.region, p.country].filter(Boolean).join(", "))}<br>`
+          + (m.tpd ? `${fmt(m.tpd.value, 0)} t/d<br>` : "") + (m.capex ? `Initial CAPEX ${fmt(m.capex.value, 0)} US$M<br>` : "")
+          + (m.site_opex ? `Site OPEX ${fmt(m.site_opex.value, 2)} US$/t<br>` : "")
+          + `<span style="color:${muted}">${approx(p) ? "Approximate location (" + (p.location.method === "region" ? "region centre" : "country") + ")" : "Location stated in report, p." + p.location.page}</span>`; } },
+    brush: { geoIndex: 0, brushType: "rect", brushMode: "single", throttleType: "debounce", throttleDelay: 250, removeOnClick: true,
+      brushStyle: { color: "rgba(29,95,166,.12)", borderColor: css("--accent"), borderWidth: 1.5 }, inBrush: { opacity: 1 }, outOfBrush: { opacity: 1 }, toolbox: [] },
+    series,
+  }, { replaceMerge: ["series"] });
+  if (!refit && key === mapFitKey && !view.center) { /* keep the user's pan/zoom */ }
+  const noLoc = base.length - shown.length;
+  const nStated = shown.filter(p => !approx(p)).length;
+  $("#map-title").textContent = `Project locations · ${shown.length} project${shown.length === 1 ? "" : "s"}`;
+  $("#map-hint").textContent = state.sel.length
+    ? `${state.sel.length} selected. Charts and tables in Explore use only these projects until you clear the selection.`
+    : `Scroll or pinch to zoom, drag to pan. Use "Select area" and drag a box to pick projects for the charts.`;
+  $("#map-legend").innerHTML = `<span><i class="Au"></i>Gold</span><span><i class="Cu"></i>Copper</span><span><i class="Ni"></i>Nickel</span><span><i class="Fe"></i>Iron ore</span>
+    <span><i style="background:var(--muted)"></i>Location stated in report (${nStated})</span><span><i class="hollow"></i>Approximate: region centre (${shown.length - nStated})</span>
+    <span>Marker size: throughput</span>${noLoc ? `<span>${noLoc} without a location</span>` : ""}`;
+  $("#map-use").disabled = !state.sel.length;
+  $("#map-use").textContent = state.sel.length ? `Use ${state.sel.length} in charts →` : "Use in charts";
+  $("#map-clear").disabled = !state.sel.length;
+  renderTable(state.sel.length ? shown.filter(p => sel.has(p.id)) : shown, $("#mtable"));
+}
+function setBoxMode(on) {
+  $("#map-box").setAttribute("aria-pressed", on);
+  map.setOption({ geo: { roam: !on } });          // setOption first: it can reset the global cursor
+  map.dispatchAction({ type: "takeGlobalCursor", key: "brush", brushOption: on ? { brushType: "rect", brushMode: "single" } : { brushType: false } });
 }
 
 /* ---------- estimator ---------- */
@@ -424,6 +556,9 @@ function renderSheet(p) {
         <span class="pill">${esc(p.standard || "")}</span>
         <span class="pill">${esc([p.region, p.country].filter(Boolean).join(", "))}</span>
         <span class="pill">Effective ${esc(p.effective_date || "–")}</span>
+        ${p.location ? (["stated", "utm"].includes(p.location.method)
+          ? `<span class="pill">${fmt(Math.abs(p.location.lat), 3)}°${p.location.lat >= 0 ? "N" : "S"} ${fmt(Math.abs(p.location.lon), 3)}°${p.location.lon >= 0 ? "E" : "W"}${p.location.method === "utm" ? " (from UTM)" : ""}</span>${srcBtn(p.location)}`
+          : `<span class="pill muted">Location approximate (${p.location.method === "region" ? "region centre" : "country"})</span>`) : ""}
       </div>
       <div class="muted" style="font-size:13px">${esc(p.title || "")} · ${esc((p.issuer || "").replace(/\s*\(.*$/, ""))} · <a href="${esc(p.url)}" target="_blank" rel="noopener" style="color:var(--accent)">Open report</a></div>
     </div>
@@ -477,23 +612,42 @@ function showSrc(s) {
 function route() {
   const h = location.hash.replace("#", "");
   const proj = h.startsWith("p-") ? P.find(p => p.id === h.slice(2)) : null;
-  const view = proj ? (window.lastView || "explore") : (h === "estimate" ? "estimate" : "explore");
+  const view = proj ? (window.lastView || "explore") : (["estimate", "map"].includes(h) ? h : "explore");
   if (!proj) window.lastView = view;
   $("#view-explore").hidden = view !== "explore";
   $("#view-estimate").hidden = view !== "estimate";
+  $("#view-map").hidden = view !== "map";
+  $("#filters").hidden = view === "estimate";
+  $("#nav-map").setAttribute("aria-current", view === "map" ? "page" : "false");
   $("#nav-explore").setAttribute("aria-current", view === "explore" ? "page" : "false");
   $("#nav-estimate").setAttribute("aria-current", view === "estimate" ? "page" : "false");
   $("#sheet").hidden = $("#sheet-bg").hidden = !proj;
   if (!proj) $("#srcbox").hidden = true;
   if (proj) { renderSheet(proj); $("#sheet").scrollTop = 0; }
   if (view === "explore") { renderExplore(); chart.resize(); }
+  else if (view === "map") { map.resize(); renderMap(); }
   else renderEstimate();
 }
 
 function init() {
   chart = echarts.init($("#chart"), null, { renderer: "svg" });
   chart.on("click", d => { if (d.data && d.data.id) location.hash = "p-" + d.data.id; });
-  window.addEventListener("resize", () => chart.resize());
+  echarts.registerMap("world", DATA.world);
+  map = echarts.init($("#map"), null, { renderer: "canvas" });
+  map.on("click", d => { if (d.data && d.data.id) location.hash = "p-" + d.data.id; });
+  map.on("brushSelected", e => {
+    const b = e.batch && e.batch[0]; if (!b || !b.areas || !b.areas.length) return;   // ignore clears
+    const ids = [];
+    (b.selected || []).forEach(s => { const ser = map.getOption().series[s.seriesIndex]; s.dataIndex.forEach(i => ids.push(ser.data[i].id)); });
+    state.sel = ids; save();
+    map.dispatchAction({ type: "brush", areas: [] });
+    setBoxMode(false); renderMap();
+  });
+  $("#map-box").onclick = () => setBoxMode($("#map-box").getAttribute("aria-pressed") !== "true");
+  $("#map-clear").onclick = () => { state.sel = []; save(); renderMap(); };
+  $("#map-use").onclick = () => { location.hash = "explore"; };
+  window.addEventListener("resize", () => { chart.resize(); map.resize(); });
+  window.rerender = refit => { const v = window.lastView || "explore"; if (v === "map") renderMap(refit); else renderExplore(); };
   $("#opt-log").onchange = e => { state.log = e.target.checked; save(); renderExplore(); };
   $("#opt-fit").onchange = e => { state.fit = e.target.checked; save(); renderExplore(); };
   $("#est-form").addEventListener("input", renderEstimate);

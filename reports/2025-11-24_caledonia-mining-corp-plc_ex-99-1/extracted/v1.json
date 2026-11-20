@@ -1,0 +1,342 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bilboes",
+  "title": "Bilboes Gold Project Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2025-10-31",
+  "effective_date_quote": "Its effective date is 31 October 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Zimbabwe",
+  "region": "Matabeleland North",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "biox",
+   "cil",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "· | Flotation (concentration of sulphides and gold into a small concentrate mass),\n· | Biological oxidation - BIOX® (dissolution of the sulphides in the concentrate using oxidising bacteria to expose the gold particles for downstream recovery),\n· | Carbon-in-leach (cyanidation leach of the BIOX® product and recovery of the solubilised gold onto activated carbon),\n· | Carbon treatment (Caustic elution for recovery of adsorbed gold into an eluant solution, with eluted carbon reactivated utilizing a regeneration kiln),\n· | Electrowinning and smelting,\n· | Tailings handling (Free cyanide destruction prior to tailings pumping to the tailings storage facility),",
+  "page": 64
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.88,
+   "unit": "Mt/a",
+   "quote": "Phase 1 Isabella McCays tpa 2,880,000 Years approx. 1-6",
+   "page": 63,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1 Isabella McCays (years 1-6), 240 ktpm"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.16,
+   "unit": "Mt/a",
+   "quote": "Phase 2 Bubi tpa 2,160,000 Years approx. 6-11",
+   "page": 63,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 Bubi (years 6-11), 180 ktpm"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.15,
+   "unit": "g/t",
+   "quote": "Ore Grade: Au (LoM Average) g/t 2.15",
+   "page": 93,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.1,
+   "unit": "%",
+   "quote": "Recovery: Au (LoM Average) % 86.1",
+   "page": 93,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "doré via flotation, BIOX and CIL"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.82,
+   "unit": "kWh/t",
+   "quote": "BBWi (Bond ball work index) Isabella McCays kWh/t 16.82",
+   "page": 63,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball work index (design criteria, average)",
+    "ore_type": "Isabella McCays"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 21.67,
+   "unit": "kWh/t",
+   "quote": "Bubi kWh/t 21.67 Average",
+   "page": 63,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball work index (design criteria, average)",
+    "ore_type": "Bubi"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2548,
+   "unit": "USD/oz",
+   "quote": "Gold Price (Ave) US$ / oz (Real) 2,548",
+   "page": 95,
+   "metal": "Au",
+   "context": {
+    "note": "consensus forecast price, LoM average realised; base case"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 582,
+   "unit": "MUSD",
+   "quote": "Post-Tax NPV 8% Real US$ M 582",
+   "page": 95,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 32.5,
+   "unit": "%",
+   "quote": "Post-Tax IRR % Real 32.5",
+   "page": 95
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.7,
+   "unit": "years",
+   "quote": "Payback period of 1.7 years, as measured from the date of first production",
+   "page": 95
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1032,
+   "unit": "USD/oz",
+   "quote": "The LoM average Total Cash Cost is US$1,032/oz (real 2025)",
+   "page": 18,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1061,
+   "unit": "USD/oz",
+   "quote": "TOTAL: AISC 1,603 149 1,061",
+   "page": 18,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 31.6,
+   "quote": "Mining 31.60 24.14 7.46",
+   "page": 90,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process",
+   "value": 221.21,
+   "quote": "Process 221.21 182.83 38.38",
+   "page": 90,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 123.62,
+   "quote": "Infrastructure 123.62 117.15 6.47",
+   "page": 90,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Storage Facility",
+   "value": 89.44,
+   "quote": "Tailings Storage Facility 89.44 61.66 27.78",
+   "page": 90,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 68.05,
+   "quote": "Indirect Costs 68.05 64.62 3.43",
+   "page": 90,
+   "l1": "indirects",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 49.53,
+   "quote": "Contingency 49.53 41.78 7.75",
+   "page": 90,
+   "l1": "contingency",
+   "l2": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Project Costs",
+   "value": 583.44,
+   "quote": "Total Project Costs 583.44 492.18 91.27",
+   "page": 90,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 12,
+   "quote": "Sustaining Capital 12 1.1 8",
+   "page": 18,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation & Closure Cost",
+   "value": 32,
+   "quote": "Reclamation & Closure Cost 32 3.0 21",
+   "page": 18,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open-Pit Mining",
+   "value": 564,
+   "quote": "Open-Pit Mining 564 52.5 373",
+   "page": 18,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing & Infrastructure",
+   "value": 716,
+   "quote": "Processing & Infrastructure 716 66.6 474",
+   "page": 18,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administrative",
+   "value": 70,
+   "quote": "General & Administrative 70 6.5 46",
+   "page": 18,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal: Minesite Costs",
+   "value": 1349,
+   "quote": "Subtotal: Minesite Costs 1,349 126 893",
+   "page": 18,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties (Government & Other)",
+   "value": 153,
+   "quote": "Royalties (Government & Other) 153 14.1 101",
+   "page": 18,
+   "l1": "royalties_taxes",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Selling Expenses",
+   "value": 57,
+   "quote": "Selling Expenses 57 5.2 37",
+   "page": 18,
+   "l1": "offsite",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal: Cash Cost",
+   "value": 1559,
+   "quote": "Subtotal: Cash Cost 1,559 145 1,032",
+   "page": 18,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining contractor cost per tonne mined",
+   "value": 2.83,
+   "quote": "Total 2.83 Diesel Cost",
+   "page": 90,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "review_note": "LoM average mining contractor price incl. ore transport to plant (US$/t of ore and waste mined)."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Phase 1 plant operating cost",
+   "value": 21.99,
+   "quote": "Total Cost US$/t ore 21.99",
+   "page": 90,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Phase 1 (Isabella McCays, 240 ktpm). Phase 2 (Bubi, 180 ktpm) plant opex is US$37.78/t ore; not loaded. Includes labour, energy, materials and consumables inclusive of G&A per the report."
+  }
+ ]
+}

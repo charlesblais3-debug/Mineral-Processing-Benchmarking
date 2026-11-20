@@ -1,0 +1,517 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "McIlvenna Bay",
+  "title": "Technical Report on the McIlvenna Bay Project, Saskatchewan, Canada (Eldorado Gold, Phase 1 refresh)",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2025-03-12",
+  "effective_date_quote": "Effective Date: Prepared by: March 12, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Au",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Saskatchewan",
+  "mine_type": "underground",
+  "project_status": "construction",
+  "currency": "CAD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "regrind"
+  ],
+  "quote": "The plant will consist of a comminution circuit followed by sequential copper and zinc flotation, with concentrate regrind and dewatering",
+  "page": 39
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4900,
+   "unit": "t/d",
+   "quote": "The process plant is designed to nominally treat 4,900 tpd of ore.",
+   "page": 39,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 20,
+   "unit": "years",
+   "quote": "mine life of approximately 20 years",
+   "page": 38
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "The grinding circuit is designed to produce a particle size with 80% passing 75 µm for flotation feed.",
+   "page": 39
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 25,
+   "unit": "µm",
+   "quote": "Both concentrates will be reground to P80 of approximately 25 µm and 20 µm, respectively.",
+   "page": 39,
+   "context": {
+    "note": "copper concentrate 25 um; zinc concentrate 20 um"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 12.4,
+   "unit": "kWh/t",
+   "quote": "Bond ball mill work index determinations ranged from 11.1 kWh/t to 13.5 kWh/t, with an average of 12.4 kWh/t.",
+   "page": 33,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill work index",
+    "min": 11.1,
+    "max": 13.5
+   }
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 15.0,
+   "unit": "kWh/t",
+   "quote": "Bond rod mill work index determinations for the composites ranged from 14.2 kWh/t to 15.9 kWh/t, with an average of 15.0 kWh/t.",
+   "page": 33,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond rod mill work index",
+    "min": 14.2,
+    "max": 15.9
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.7,
+   "unit": "%",
+   "quote": "Blended Mill Feed 90.7% 76.3% 87.5% 61.4%",
+   "page": 32,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 76.3,
+   "unit": "%",
+   "quote": "Blended Mill Feed 90.7% 76.3% 87.5% 61.4%",
+   "page": 32,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87.5,
+   "unit": "%",
+   "quote": "Blended Mill Feed 90.7% 76.3% 87.5% 61.4%",
+   "page": 32,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 61.4,
+   "unit": "%",
+   "quote": "Blended Mill Feed 90.7% 76.3% 87.5% 61.4%",
+   "page": 32,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 28,
+   "unit": "%",
+   "quote": "the average copper grade in the copper concentrate is forecast to be 28%",
+   "page": 32,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "concentrate": "copper concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 50.0,
+   "unit": "%",
+   "quote": "the average zinc grade in the zinc concentrate is forecast to be 50.0%",
+   "page": 32,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "concentrate": "zinc concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.27,
+   "unit": "USD/lb",
+   "quote": "Copper US$ / lb 4.27 4.36",
+   "page": 45,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.21,
+   "unit": "USD/lb",
+   "quote": "Zinc US$ / lb 1.21 1.27",
+   "page": 45,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2240,
+   "unit": "USD/oz",
+   "quote": "Gold US$ / oz 2,240 2,598",
+   "page": 45,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 28.26,
+   "unit": "USD/oz",
+   "quote": "Silver US$ / oz 28.26 31.63",
+   "page": 45,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 654.4,
+   "unit": "MCAD",
+   "quote": "On a post-tax basis, the NPV at 7% is $654.4M, the IRR is 23% and the payback period is 3.8 years.",
+   "page": 48,
+   "context": {
+    "discount_rate_pct": 7
+   },
+   "currency": "CAD"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 23,
+   "unit": "%",
+   "quote": "On a post-tax basis, the NPV at 7% is $654.4M, the IRR is 23% and the payback period is 3.8 years.",
+   "page": 48
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.8,
+   "unit": "years",
+   "quote": "On a post-tax basis, the NPV at 7% is $654.4M, the IRR is 23% and the payback period is 3.8 years.",
+   "page": 48
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.76,
+   "unit": "USD/CAD",
+   "quote": "CA$1.00 = US$0.76",
+   "page": 289,
+   "context": {
+    "pair": "USD/CAD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining (non-development)",
+   "value": 59.2,
+   "quote": "Mining (non-development) 59.2 306.3 365.5",
+   "page": 281,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Development",
+   "value": 35.0,
+   "quote": "Development 35.0 229.8 264.7",
+   "page": 281,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mineral Processing and Paste Plant",
+   "value": 145.8,
+   "quote": "Mineral Processing and Paste Plant 145.8 0.0 145.8",
+   "page": 281,
+   "l1": "process",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 125.0,
+   "quote": "Infrastructure 125.0 37.5 162.5",
+   "page": 281,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Development",
+   "value": -3.2,
+   "quote": "Site Development -3.2 0.0 -3.2",
+   "page": 281,
+   "l1": "onsite_infra",
+   "l2": "roads",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 285.9,
+   "quote": "Indirect Costs 285.9 0.0 285.9",
+   "page": 281,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total before Contingency",
+   "value": 647.6,
+   "quote": "Total before Contingency 647.6 573.5 1,221.2",
+   "page": 281,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 45.9,
+   "quote": "Contingency 45.9 0.0 45.9",
+   "page": 281,
+   "l1": "contingency",
+   "l2": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total (gross)",
+   "value": 693.5,
+   "quote": "Total 693.5 573.5 1,267.1",
+   "page": 281,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Commercial Production Revenue",
+   "value": -58.5,
+   "quote": "Pre-Commercial Production Revenue -58.5 -58.1",
+   "page": 281,
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Net Capital Costs",
+   "value": 635.0,
+   "quote": "Net Capital Costs 635.0 583.5 1,218.6",
+   "page": 281,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining (non-development)",
+   "value": 306.3,
+   "quote": "Mining (non-development) 59.2 306.3 365.5",
+   "page": 281,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Development",
+   "value": 229.8,
+   "quote": "Development 35.0 229.8 264.7",
+   "page": 281,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 37.5,
+   "quote": "Infrastructure 125.0 37.5 162.5",
+   "page": 281,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining",
+   "value": 573.5,
+   "quote": "Total 693.5 573.5 1,267.1",
+   "page": 281,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 10.0,
+   "quote": "Closure 10.0 10.0",
+   "page": 281,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 1731.7,
+   "quote": "Mining 1,731.7 59.27 58.25",
+   "page": 47,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing / Paste Plant",
+   "value": 760.6,
+   "quote": "Processing / Paste Plant 760.6 25.82 25.58",
+   "page": 47,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Facility",
+   "value": 50.8,
+   "quote": "Tailings Facility 50.8 1.73 1.71",
+   "page": 47,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administration",
+   "value": 283.6,
+   "quote": "General and administration 283.6 9.61 9.54",
+   "page": 47,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 2826.7,
+   "quote": "Total 2,826.7 96.43 95.08",
+   "page": 47,
+   "is_total": true,
+   "review_note": "Report text states LOM operating costs of $1,769.8M, inconsistent with Table 1-7 total of $2,826.7M; table values used",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 58.25,
+   "quote": "Mining 1,731.7 59.27 58.25",
+   "page": 47,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing / Paste Plant",
+   "value": 25.58,
+   "quote": "Processing / Paste Plant 760.6 25.82 25.58",
+   "page": 47,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Facility",
+   "value": 1.71,
+   "quote": "Tailings Facility 50.8 1.73 1.71",
+   "page": 47,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administration",
+   "value": 9.54,
+   "quote": "General and administration 283.6 9.61 9.54",
+   "page": 47,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 95.08,
+   "quote": "Total 2,826.7 96.43 95.08",
+   "page": 47,
+   "is_total": true,
+   "review_note": "Report text states LOM operating costs of $1,769.8M, inconsistent with Table 1-7 total of $2,826.7M; table values used",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "currency": "CAD"
+  }
+ ]
+}

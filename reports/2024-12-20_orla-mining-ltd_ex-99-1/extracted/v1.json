@@ -1,0 +1,499 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Musselwhite",
+  "title": "Technical Report - Musselwhite Mine, Ontario, Canada",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-11-18",
+  "effective_date_quote": "with an effective date of November 18, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "rod_mill",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "The product from the primary crusher reports to a secondary crusher on surface and is then milled in an open-circuit rod mill followed by a closed-circuit ball mill. The ball mill circuit contains gravity concentration and intensive cyanide leaching. The grinding circuit product passes through the remaining gold extraction processes consisting of cyanide leaching, carbon-in-pulp adsorption, carbon elution and regeneration, electrowinning and refining. Doré bars assay approximately 90% gold. Mill tailings are first treated in a two-thickener counter-current-decantation circuit to recycle cyanide, followed by cyanide detoxification",
+  "page": 2
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.051,
+   "unit": "Mt/a",
+   "quote": "Annual Mill Throughput (LoM average) ktpa 1,051",
+   "page": 2,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 6.2,
+   "unit": "g/t",
+   "quote": "Ore Grade Mined (LoM average) g/t Au 6.2",
+   "page": 2,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.0,
+   "unit": "%",
+   "quote": "Gold Recovery (LoM average) % 96.00",
+   "page": 2,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2150,
+   "unit": "USD/oz",
+   "quote": "long-term gold price assumption of $2,150 per ounce",
+   "page": 2,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 782,
+   "unit": "MUSD",
+   "quote": "a positive pre-tax NPV of $1,037 M and a positive after-tax NPV of $782 M",
+   "page": 2,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.75,
+   "unit": "USD/CAD",
+   "quote": "Exchange Rate 0.75 US$ / CA$",
+   "page": 2,
+   "context": {
+    "pair": "USD per CAD (mine operating cost factors); Table 1.14 states USD:CAD 1.00:1.33"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 941,
+   "unit": "USD/oz",
+   "quote": "Cash Costs (LoM Average) $/oz 941",
+   "page": 2,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1269,
+   "unit": "USD/oz",
+   "quote": "All-In Sustaining Cost (LoM average) $/oz 1,269",
+   "page": 2,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Lateral Devt.",
+   "value": 56.1,
+   "quote": "Lateral Devt. 56.1 16.6",
+   "page": 2,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vertical Devt.",
+   "value": 3.1,
+   "quote": "Vertical Devt. 3.1 0.3",
+   "page": 2,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Asset Integrity",
+   "value": 127.2,
+   "quote": "Asset Integrity 127.2 29.8",
+   "page": 2,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Project (mine plan capital category)",
+   "value": 63.9,
+   "quote": "Project 63.9 19.2",
+   "page": 2,
+   "l1": "mining",
+   "l2": "other",
+   "review_note": "Mine capex table has a 'Project' category of US$63.9M, but the report states all capital is sustaining ('the plan does not include any additional Project capital'); kept in sustaining.",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mill TSF",
+   "value": 7.9,
+   "quote": "TSF 7.9 2.2",
+   "page": 2,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mill Infrastructure",
+   "value": 4.5,
+   "quote": "Infrastructure 4.5 1.2",
+   "page": 2,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mill Upgrades",
+   "value": 0.3,
+   "quote": "Upgrades 0.3 0.1",
+   "page": 2,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "G&A sustaining capital",
+   "value": 37.4,
+   "quote": "The G&A sustaining capital amounts to US$37.4 million",
+   "page": 2,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (LoM)",
+   "value": 301,
+   "quote": "Sustaining Capital (LoM) $ M 301",
+   "page": 2,
+   "is_total": true,
+   "tolerance_pct": 2,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Capital",
+   "value": 105,
+   "quote": "Closure Capital $ M 105",
+   "page": 2,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine operating cost (LoM)",
+   "value": 841.4,
+   "quote": "Total (US$ M) 841.4 142.2",
+   "page": 2,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill operating cost (LoM)",
+   "value": 185.01,
+   "quote": "Total 22.18 25.14 185.01",
+   "page": 2,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A operating cost (LoM)",
+   "value": 313.9,
+   "quote": "operating cost estimate for the LoM is US$313.9 million",
+   "page": 2,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine cost per tonne milled",
+   "value": 114.37,
+   "quote": "Mine Cost / t milled 114.37",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill operating cost per tonne milled",
+   "value": 25.14,
+   "quote": "Total 22.18 25.14 185.01",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Labor",
+   "value": 5.4,
+   "quote": "Labor 5.71 5.40 39.76",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "labour",
+   "part_of": "Mill operating cost per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Labor (LoM total)",
+   "value": 39.76,
+   "quote": "Labor 5.71 5.40 39.76",
+   "page": 2,
+   "l1": "processing",
+   "l2": "labour",
+   "part_of": "Mill operating cost (LoM)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Flights & Accommodations",
+   "value": 1.17,
+   "quote": "Flights & Accommodations 0.82 1.17 8.60",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Mill operating cost per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Flights & Accommodations (LoM total)",
+   "value": 8.6,
+   "quote": "Flights & Accommodations 0.82 1.17 8.60",
+   "page": 2,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Mill operating cost (LoM)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Energy",
+   "value": 2.23,
+   "quote": "Energy 2.53 2.23 16.40",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "power",
+   "part_of": "Mill operating cost per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Energy (LoM total)",
+   "value": 16.4,
+   "quote": "Energy 2.53 2.23 16.40",
+   "page": 2,
+   "l1": "processing",
+   "l2": "power",
+   "part_of": "Mill operating cost (LoM)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Contractors & Technical Services",
+   "value": 4.03,
+   "quote": "Contractors & Technical Services 2.34 4.03 29.65",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Mill operating cost per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Contractors & Technical Services (LoM total)",
+   "value": 29.65,
+   "quote": "Contractors & Technical Services 2.34 4.03 29.65",
+   "page": 2,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Mill operating cost (LoM)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Reagents, Consumables & Supplies",
+   "value": 5.88,
+   "quote": "Reagents, Consumables & Supplies 5.79 5.88 43.27",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "reagents",
+   "part_of": "Mill operating cost per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Reagents, Consumables & Supplies (LoM total)",
+   "value": 43.27,
+   "quote": "Reagents, Consumables & Supplies 5.79 5.88 43.27",
+   "page": 2,
+   "l1": "processing",
+   "l2": "reagents",
+   "part_of": "Mill operating cost (LoM)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Freight",
+   "value": 0.84,
+   "quote": "Freight 0.28 0.84 6.20",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Mill operating cost per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Freight (LoM total)",
+   "value": 6.2,
+   "quote": "Freight 0.28 0.84 6.20",
+   "page": 2,
+   "l1": "processing",
+   "l2": "other",
+   "part_of": "Mill operating cost (LoM)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Maintenance",
+   "value": 5.59,
+   "quote": "Maintenance 4.71 5.59 41.13",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "maintenance",
+   "part_of": "Mill operating cost per tonne milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mill: Maintenance (LoM total)",
+   "value": 41.13,
+   "quote": "Maintenance 4.71 5.59 41.13",
+   "page": 2,
+   "l1": "processing",
+   "l2": "maintenance",
+   "part_of": "Mill operating cost (LoM)",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per oz)",
+   "value": 595,
+   "quote": "Mining $/oz 595",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_oz_payable",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (per oz)",
+   "value": 131,
+   "quote": "Processing $/oz 131",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_oz_payable",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administrative (per oz)",
+   "value": 195,
+   "quote": "General & Administrative $/oz 195",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_oz_payable",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight (per oz)",
+   "value": 2,
+   "quote": "Freight $/oz 2",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_oz_payable",
+   "l1": "offsite"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties (per oz)",
+   "value": 58,
+   "quote": "Royalties $/oz 58",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_oz_payable",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating costs (per oz)",
+   "value": 981,
+   "quote": "Total $/oz 981",
+   "page": 2,
+   "multiplier": "",
+   "basis_unit": "per_oz_payable",
+   "is_total": true
+  }
+ ]
+}
