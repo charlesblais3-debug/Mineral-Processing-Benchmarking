@@ -1,0 +1,625 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Yauricocha",
+  "title": "Preliminary Economic Assessment, Yauricocha Mine, Yauyos Province, Peru",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2021-03-31",
+  "effective_date_quote": "Effective Date: March 31, 2021",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Pb",
+   "Ag",
+   "Au"
+  ],
+  "country": "Peru",
+  "region": "Lima (Yauyos Province)",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "Each process line includes a grinding stage and a sequential differential flotation plant. Concentrate streams are diverted to a dedicated thickener that feeds a concentrate filter.",
+  "page": 118
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 5500,
+   "unit": "t/d",
+   "quote": "The 5,500 tpd (2024) proposed mine plan has a capital requirement",
+   "page": 11,
+   "statistic": "design",
+   "context": {
+    "phase": "expansion, 2024 onwards (3,800 tpd in 2021-2022)"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 104,
+   "unit": "µm",
+   "quote": "flotation feed target of approximately P80 = 104 micrometers",
+   "page": 118,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80.0,
+   "unit": "%",
+   "quote": "Copper % 75.0 5.0 - 80.0",
+   "page": 104,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "ore_type": "polymetallic"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.5,
+   "unit": "%",
+   "quote": "Lead % - 88.5 - 88.5",
+   "page": 104,
+   "metal": "Pb",
+   "statistic": "design",
+   "context": {
+    "ore_type": "polymetallic"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.0,
+   "unit": "%",
+   "quote": "Zinc % - - 88.0 88.0",
+   "page": 104,
+   "metal": "Zn",
+   "statistic": "design",
+   "context": {
+    "ore_type": "polymetallic"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 77.7,
+   "unit": "%",
+   "quote": "Silver % 25.4 43.0 9.3 77.7",
+   "page": 104,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "ore_type": "polymetallic"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 19.5,
+   "unit": "%",
+   "quote": "Gold % 10.5 9.0 - 19.5",
+   "page": 104,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "polymetallic"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.39,
+   "unit": "USD/lb",
+   "quote": "Copper 3.39 $/lb",
+   "page": 151,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.91,
+   "unit": "USD/lb",
+   "quote": "Lead 0.91 $/lb",
+   "page": 151,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.1,
+   "unit": "USD/lb",
+   "quote": "Zinc 1.10 $/lb",
+   "page": 151,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21.02,
+   "unit": "USD/oz",
+   "quote": "Silver 21.02 $/oz",
+   "page": 151,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1598,
+   "unit": "USD/oz",
+   "quote": "Gold 1,598 $/oz",
+   "page": 151,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 273.1,
+   "unit": "MUSD",
+   "quote": "after-tax NPV (8%) at 5,500 tpd (in 2024) of US$ 273.1 M",
+   "page": 11,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Exploration",
+   "value": 4825,
+   "quote": "Exploration $4,825 1,513",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development",
+   "value": 5464,
+   "quote": "Development $5,464",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment",
+   "value": 13142,
+   "quote": "Equipment $13,142",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Facilities",
+   "value": 2683,
+   "quote": "Facilities $2,683",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Support Areas",
+   "value": 3115,
+   "quote": "Mine Support Areas $3,115",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Central Shaft Rehab",
+   "value": 1700,
+   "quote": "Central Shaft Rehab $1,700",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Camp",
+   "value": 6759,
+   "quote": "Mine Camp $6,759",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "camp"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mascota Shaft",
+   "value": 892,
+   "quote": "Mascota Shaft $892",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrator Plant",
+   "value": 4836,
+   "quote": "Concentrator Plant $4,836",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Shotcrete Plant",
+   "value": 3389,
+   "quote": "Shotcrete Plant $3,389",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Drainage System",
+   "value": 3358,
+   "quote": "Drainage System $3,358",
+   "page": 10,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ventilation",
+   "value": 4845,
+   "quote": "Ventilation $4,845",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Personal transportation",
+   "value": 770,
+   "quote": "Personal transportation $770",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Water Plant Treatment",
+   "value": 2300,
+   "quote": "Water Plant Treatment $2,300",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental",
+   "value": 345,
+   "quote": "Environmental $345",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Fuel Distribution System",
+   "value": 350,
+   "quote": "Fuel Distribution System $350",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TDR Cable Installation",
+   "value": 350,
+   "quote": "TDR Cable Installation $350",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure (listed within sustaining)",
+   "value": 11607,
+   "quote": "Closure $11,607",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other",
+   "review_note": "Closure line is inside the report's sustaining capital table total of $70,730k; not repeated as a separate closure item"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Estimated Sustaining Capital",
+   "value": 70730,
+   "quote": "Total Estimated Sustaining Capital $70,730",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Includes closure $11,607k. Table 22-4 gives a different summary (growth US$213M, sustaining US$100M, total US$312M)"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Drilling Exploration",
+   "value": 4221,
+   "quote": "Drilling Exploration $4,221",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Regional Exploration",
+   "value": 4720,
+   "quote": "Regional Exploration $4,720",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Development",
+   "value": 39620,
+   "quote": "Development $39,620",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Cross-Cut 500",
+   "value": 3590,
+   "quote": "Cross-Cut 500 $3,590",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Equipment",
+   "value": 17787,
+   "quote": "Equipment $17,787",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Yauricocha Shaft",
+   "value": 24413,
+   "quote": "Yauricocha Shaft $24,413",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Integration Access to Yauricocha Shaft CX0545",
+   "value": 7595,
+   "quote": "CX0545 $7,595",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailing Dam",
+   "value": 81490,
+   "quote": "Tailing Dam $81,490",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "New Road, Access",
+   "value": 7000,
+   "quote": "New Road, Access $7,000",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "offsite_infra",
+   "l2": "access"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Comedor Esperanza",
+   "value": 118,
+   "quote": "Comedor Esperanza $118",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "camp"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Camp",
+   "value": 5940,
+   "quote": "Mine Camp $5,940",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "camp"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Concentrator Plant to increase prod.",
+   "value": 47423,
+   "quote": "Concentrator Plant to increase prod. $47,423",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Ventilation",
+   "value": 853,
+   "quote": "Ventilation $853",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Studies (trade off, SAG, Met, Auto, Permits)",
+   "value": 6999,
+   "quote": "Studies (trade off, SAG, Met, Auto, Permits) $6,999",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Waste Dump",
+   "value": 6488,
+   "quote": "Waste Dump $6,488",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Estimated Growth Capital",
+   "value": 258258,
+   "quote": "Total Estimated Growth Capital 258,258",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 521400,
+   "quote": "Mine 521,400",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant",
+   "value": 151816,
+   "quote": "Plant 151,816",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 93688,
+   "quote": "G&A 93,688",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 766904,
+   "quote": "Total 766,904",
+   "page": 11,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 29.92,
+   "quote": "$29.92/tonne for mining",
+   "page": 154,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 8.71,
+   "quote": "$8.71/tonne for processing",
+   "page": 154,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 5.38,
+   "quote": "$5.38/tonne for G&A",
+   "page": 154,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 44.01,
+   "quote": "total average operating cost of $44.01/tonne",
+   "page": 154,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

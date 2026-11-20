@@ -1,0 +1,362 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Lucky Friday",
+  "title": "Technical Report Summary on the Lucky Friday Mine, Idaho, USA",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2021-12-31",
+  "effective_date_page": 2,
+  "effective_date_quote": "Effective Date – December 31, 2021",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Pb",
+   "Zn"
+  ],
+  "country": "USA",
+  "region": "Idaho",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "tertiary_crush",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener"
+  ],
+  "page": 23,
+  "quote": "Primary jaw crushing ● Secondary cone crushing ● Tertiary cone crushing ● Triple deck screen closing both secondary and tertiary crushing circuits ● Ball milling ● Lead flash flotation with concentrate reporting to silver concentrate thickener ● Hydrocyclone classification ● Lead rougher and scavenger flotation in conventional cells ● Lead rougher scavenger concentrate to lead rougher feed ● Lead rougher scavenger tailings to zinc conditioners ● Lead rougher concentrate cleaning and recleaning using column flotation cells ● Lead cleaner scavenger flotation of cleaner tailings in conventional cells followed by column cells ● Lead cleaner scavenger and cleaner scavenger column tailings to regrind milling ● Regrind milling closed with hydrocyclones"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1164,
+   "unit": "st/d",
+   "quote": "to 425,000 stpa, or 1,164 stpd",
+   "page": 14,
+   "statistic": "design",
+   "context": {
+    "phase": "mine plan after 20% increase; current 930 stpd"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 13.7,
+   "unit": "oz/ton",
+   "quote": "Silver 13.7 oz/ton 96.4",
+   "page": 17,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 8.3,
+   "unit": "%",
+   "quote": "Lead 8.3% 95.7",
+   "page": 17,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.3,
+   "unit": "%",
+   "quote": "Zinc 3.3% 93.7",
+   "page": 17,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.4,
+   "unit": "%",
+   "quote": "Silver 13.7 oz/ton 96.4",
+   "page": 17,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.7,
+   "unit": "%",
+   "quote": "Lead 8.3% 95.7",
+   "page": 17,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.7,
+   "unit": "%",
+   "quote": "Zinc 3.3% 93.7",
+   "page": 17,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21.0,
+   "unit": "USD/oz",
+   "quote": "constant US$21/oz Ag, US$0.95/lb Pb, and US$1.25/lb Zn",
+   "page": 17,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.95,
+   "unit": "USD/lb",
+   "quote": "constant US$21/oz Ag, US$0.95/lb Pb, and US$1.25/lb Zn",
+   "page": 17,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.25,
+   "unit": "USD/lb",
+   "quote": "constant US$21/oz Ag, US$0.95/lb Pb, and US$1.25/lb Zn",
+   "page": 17,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 554,
+   "unit": "MUSD",
+   "quote": "pre-tax and after-tax net present value (NPV), using a 5% discount rate, of $557 million and $554 million, respectively",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Drilling",
+   "value": 27.0,
+   "quote": "Drilling 27.0",
+   "page": 177,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Major Projects",
+   "value": 75.0,
+   "quote": "Major Projects 75.0",
+   "page": 177,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ore processing",
+   "value": 13.0,
+   "quote": "Ore processing 13.0",
+   "page": 177,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile Equipment",
+   "value": 41.0,
+   "quote": "Mobile Equipment 41.0",
+   "page": 177,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 200.0,
+   "quote": "Mine Development 200.0",
+   "page": 177,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine infrastructure",
+   "value": 16.0,
+   "quote": "Mine infrastructure 16.0",
+   "page": 177,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 372.0,
+   "quote": "Total 372.0 51.0 40.0 49.0 36.0 26.0 170.0",
+   "page": 177,
+   "is_total": true,
+   "review_note": "Report's capital table is LOM capital for an operating mine (no growth/sustaining split stated); all treated as sustaining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Underground)",
+   "value": 415.3,
+   "quote": "Mining (Underground) $ millions 415.3",
+   "page": 179,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Underground) unit",
+   "value": 76.11,
+   "quote": "Mining (Underground) $/ton 76.11",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 117.5,
+   "quote": "Processing $ millions 117.5",
+   "page": 179,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing unit",
+   "value": 21.54,
+   "quote": "Processing $/ton 21.54",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance",
+   "value": 269.9,
+   "quote": "Maintenance $ millions 269.9",
+   "page": 179,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance unit",
+   "value": 49.46,
+   "quote": "Maintenance $/ton 49.46",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 182.7,
+   "quote": "G&A $ millions 182.7",
+   "page": 179,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A unit",
+   "value": 33.48,
+   "quote": "G&A $/ton 33.48",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Profit share",
+   "value": 39.4,
+   "quote": "Profit share $ millions 39.4",
+   "page": 179,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Profit share unit",
+   "value": 7.22,
+   "quote": "Profit share $/ton 7.22",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "royalties_taxes"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 1024.7,
+   "quote": "Total $ millions 1,024.7",
+   "page": 179,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit",
+   "value": 187.81,
+   "quote": "Total $/ton 187.81",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrate Freight Cost",
+   "value": 50,
+   "quote": "Concentrate Freight Cost (50)",
+   "page": 18,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "offsite",
+   "outside_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Offsite Costs",
+   "value": 234,
+   "quote": "Offsite Costs (234)",
+   "page": 18,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "offsite",
+   "outside_total": true
+  }
+ ]
+}

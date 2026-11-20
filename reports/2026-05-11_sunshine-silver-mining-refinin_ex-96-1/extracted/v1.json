@@ -1,0 +1,515 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Sunshine Mine",
+  "title": "S-K 1300 Technical Report Summary on the Initial Assessment, Sunshine Mine, Idaho, USA",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2026-03-25",
+  "effective_date_page": 1,
+  "effective_date_quote": "Report Date: March 25, 2026",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Cu",
+   "Pb"
+  ],
+  "country": "USA",
+  "region": "Idaho",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "tertiary_crush",
+   "ore_sorting",
+   "ball_mill",
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 233,
+  "quote": "Material will be drawn from the ROM storage bin into a three staged crushing circuit including a primary gyratory, a secondary standard, and tertiary shorthead crusher to produce a final grinding circuit feed size of P 100 10 mm and P 80 6 mm. Secondary crushed material will be screened to produce a 10 mm × 50 mm fraction that will be conveyed to an ore sorter for waste rejection. Ore sorter waste reject, approximately 44.2% of ore sorter feed, (28.9% of mine feed), will be stockpiled, and the ore sorter product will be conveyed to tertiary crushing. Final crushed material will be conveyed into a fine ore storage bin. Process feed will be drawn from the fine ore bin to feed the grinding and flotation circuits. The grinding circuit will consist of a ball mill and flash flotation cell closed by hydro cyclones. Flotation will include rougher/scavenger and cleaner flotation cells producing silver-copper, and lead-silver flotation concentrates. The two concentrates will be thickened, filtered, and stored for bulk shipment"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1000,
+   "unit": "st/d",
+   "quote": "will receive a nominal 1,000 stpd of ROM",
+   "page": 233,
+   "statistic": "design",
+   "context": {
+    "phase": "Base Case"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 106,
+   "unit": "µm",
+   "quote": "The material will be ground to a P 80 106 μm",
+   "page": 235,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.8,
+   "unit": "%",
+   "quote": "Silver metallurgical recovery, including ore sorting, as indicated by historical averages and test work, averaging 95.8%.",
+   "page": 30,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "scenario": "Base Case",
+    "note": "includes ore sorting"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 46.36,
+   "unit": "USD/oz",
+   "quote": "Metal price: $46.36 per ounce silver (all years).",
+   "page": 30,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1430,
+   "unit": "MUSD",
+   "quote": "The after-tax Net Present Value (NPV) at a 5% discount rate is approximately $1.43 billion",
+   "page": 31,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 38.3,
+   "unit": "%",
+   "quote": "the after-tax Internal Rate of Return (IRR) is approximately 38.3%",
+   "page": 31
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.9,
+   "unit": "years",
+   "quote": "simple payback occurs 1.9 years from the start of production in Year 1",
+   "page": 31
+  },
+  {
+   "parameter": "aisc",
+   "value": 18.81,
+   "unit": "USD/oz",
+   "quote": "The Total All-in Sustaining Cost (AISC) is approximately $18.81 per ounce of silver",
+   "page": 31,
+   "metal": "Ag"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Total",
+   "value": 167.0,
+   "quote": "Mine Total $ million 167.0 494.4 661.4",
+   "page": 266,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Infrastructure",
+   "value": 48.8,
+   "quote": "Mine Infrastructure $ million 35.0 13.4 0.4 48.8",
+   "page": 267,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Mine Total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Equipment",
+   "value": 26.5,
+   "quote": "Mine Equipment $ million 5.5 12.0 9.0 26.5",
+   "page": 267,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Mine Total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine Development",
+   "value": 44.9,
+   "quote": "Mine Development $ million 4.6 23.0 17.4 44.9",
+   "page": 267,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Mine Total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine General",
+   "value": 46.8,
+   "quote": "Mine General $ million 10.4 15.7 20.7 46.8",
+   "page": 267,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Mine Total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Plant and Surface Total",
+   "value": 57.0,
+   "quote": "Plant and Surface Total $ million 57.0 44.6 101.6",
+   "page": 266,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site-Prep Demolition",
+   "value": 0.7,
+   "quote": "Site-Prep Demolition $ million 0.7 - - 0.7",
+   "page": 267,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Plant and Surface Total",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrator",
+   "value": 32.5,
+   "quote": "Concentrator $ million - 13.0 19.5 32.5",
+   "page": 268,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Plant and Surface Total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Filtration and Dry-Stack Tailings",
+   "value": 16.6,
+   "quote": "Filtration and Dry-Stack Tailings $ million - 6.6 9.9 16.6",
+   "page": 268,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Plant and Surface Total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Paste Backfill (Surface Facility)",
+   "value": 3.0,
+   "quote": "Paste Backfill (Surface Facility) $ million - 1.2 1.8 3.0",
+   "page": 268,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Plant and Surface Total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water Treatment Plant",
+   "value": 4.3,
+   "quote": "Water Treatment Plant $ million - 1.7 2.6 4.3",
+   "page": 268,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "part_of": "Plant and Surface Total",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 62.9,
+   "quote": "Contingency $ million 62.9 - 62.9",
+   "page": 266,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Grand Total",
+   "value": 286.9,
+   "quote": "Grand Total $ million 286.9 560.2 847.2",
+   "page": 266,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Equipment",
+   "value": 3.3,
+   "quote": "Mine Equipment $ million 3.3 3.3",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 353.5,
+   "quote": "Mine Development $ million 353.5",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine General",
+   "value": 137.7,
+   "quote": "Mine General $ million 137.7",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ore Sorting",
+   "value": 7.4,
+   "quote": "Ore Sorting $ million 7.4",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrator",
+   "value": 21.5,
+   "quote": "Concentrator $ million 21.5",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Filtration and Dry-Stack Tailings",
+   "value": 10.9,
+   "quote": "Filtration and Dry-Stack Tailings $ million 10.9",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Paste Backfill (Surface Facility)",
+   "value": 2.0,
+   "quote": "Paste Backfill (Surface Facility) $ million 2.0",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Water Treatment Plant",
+   "value": 2.8,
+   "quote": "Water Treatment Plant $ million 2.8",
+   "page": 269,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine, Plant, and Surface (sustaining total excl. closure)",
+   "value": 539.0,
+   "quote": "Mine, Plant, and Surface $ million 224.0 539.0 763.1",
+   "page": 266,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Table 18-1 Grand Total sustaining 560.2 includes closure 21.2; closure recorded separately"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 21.2,
+   "quote": "Closure $ million - 21.2 21.2",
+   "page": 266,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Services and Technical",
+   "value": 580.8,
+   "quote": "Mine Services and Technical 73.84 580.8",
+   "page": 47,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Services and Technical unit",
+   "value": 73.84,
+   "quote": "Mine Services and Technical 73.84 580.8",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mineralized Material Mining",
+   "value": 507.0,
+   "quote": "Mineralized Material Mining 64.45 507.0",
+   "page": 47,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mineralized Material Mining unit",
+   "value": 64.45,
+   "quote": "Mineralized Material Mining 64.45 507.0",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore Sorting",
+   "value": 4.0,
+   "quote": "Ore Sorting 0.51 4.0",
+   "page": 47,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore Sorting unit",
+   "value": 0.51,
+   "quote": "Ore Sorting 0.51 4.0",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 127.6,
+   "quote": "Processing 16.22 127.6",
+   "page": 47,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing unit",
+   "value": 16.22,
+   "quote": "Processing 16.22 127.6",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Storage",
+   "value": 5.9,
+   "quote": "Tailings Storage 0.75 5.9",
+   "page": 47,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Storage unit",
+   "value": 0.75,
+   "quote": "Tailings Storage 0.75 5.9",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 201.5,
+   "quote": "G&A 25.62 201.5",
+   "page": 47,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A unit",
+   "value": 25.62,
+   "quote": "G&A 25.62 201.5",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 1426.8,
+   "quote": "Total Operating Cost 181.38 1,426.8",
+   "page": 47,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost unit",
+   "value": 181.38,
+   "quote": "Total Operating Cost 181.38 1,426.8",
+   "page": 47,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "is_total": true
+  }
+ ]
+}

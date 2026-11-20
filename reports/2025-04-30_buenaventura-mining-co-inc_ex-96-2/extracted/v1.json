@@ -1,0 +1,392 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "San Gabriel",
+  "title": "S-K 1300 Technical Report Summary San Gabriel Project, General Sánchez Cerro Province, Peru",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date:  December 31, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Peru",
+  "region": "Moquegua",
+  "mine_type": "underground",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cil",
+   "cyanide_detox",
+   "elution_ew",
+   "tails_thickener",
+   "tails_filter"
+  ],
+  "quote": "The San Gabriel process plant comprises primary crushing, SAG mill and ball mill grinding, gravity gold recovery with intensive cyanide leaching, cyclone classification, pre-oxidation using oxygen sparging, CIL, INCO SO2-air cyanide detoxification, ZADRA carbon elution, regeneration electrowinning and doré casting, tailings thickening and filtration, and water treatment.",
+  "page": 32
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3000,
+   "unit": "t/d",
+   "quote": "1,095 Mtpa (3,000 tpd) of ore from the underground mine",
+   "page": 17,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.71,
+   "unit": "g/t",
+   "quote": "Au grade gr/t 3.71",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 6.32,
+   "unit": "g/t",
+   "quote": "Ag Grade gr/t 6.32",
+   "page": 26,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85.3,
+   "unit": "%",
+   "quote": "Gold Recovery:  85.3%",
+   "page": 24,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 45.0,
+   "unit": "%",
+   "quote": "Silver Recovery:  45.0%",
+   "page": 24,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2200,
+   "unit": "USD/oz",
+   "quote": "LOM LT price - Au US$/oz 2,200",
+   "page": 26,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 29.1,
+   "unit": "USD/oz",
+   "quote": "LOM LT price - Ag US$/oz 29.10",
+   "page": 26,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 191,
+   "unit": "MUSD",
+   "quote": "the after- tax NPV at a 8.26% discount rate is approximately US$191 million",
+   "page": 26,
+   "context": {
+    "discount_rate_pct": 8.26
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 21.8,
+   "unit": "%",
+   "quote": "After-tax IRR % 21.8%",
+   "page": 27
+  },
+  {
+   "parameter": "payback_years",
+   "value": 5.3,
+   "unit": "years",
+   "quote": "After-Tax payback years 5.3",
+   "page": 27
+  },
+  {
+   "parameter": "aisc",
+   "value": 1568,
+   "unit": "USD/oz",
+   "quote": "for an All-in Sustaining Cost (AISC) of US$1,568/oz Au",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Development (ramps, accesses), Administration/Production/Infrastructure Buildings",
+   "value": 131.1,
+   "quote": "Administration/Production/Infrastructure Buildings 131.1",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Equipment & Machinery",
+   "value": 28.2,
+   "quote": "Equipment & Machinery 28.2",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Equipment & Vehicles",
+   "value": 11.2,
+   "quote": "Other Equipment & Vehicles 11.2",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Equipment, Lines, PADs",
+   "value": 6.1,
+   "quote": "Other Equipment, Lines, PADs 6.1",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 177.4,
+   "quote": "Total 177.4",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Remaining initial capital at effective date (Estimate to Complete); project 62% constructed. Includes contingency and indirects per report."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 42.5,
+   "quote": "Tailings 42.5",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mine",
+   "value": 40.4,
+   "quote": "Underground Mine 40.4",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant",
+   "value": 21.5,
+   "quote": "Plant 21.5",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 22.7,
+   "quote": "Infrastructure 22.7",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Assets Overhauls",
+   "value": 59.4,
+   "quote": "Assets Overhauls 59.4",
+   "page": 221,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 186.5,
+   "quote": "Total 186.5",
+   "page": 222,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Concurrent reclamation 2025-2039",
+   "value": 3.0,
+   "quote": "Concurrent reclamation between 2025 and 2039 of US$3.0 million",
+   "page": 24,
+   "part_of": "Mine closure costs total",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure 2040-2041",
+   "value": 13.5,
+   "quote": "Mine closure costs between 2040 and 2041 of US$13.5 million",
+   "page": 24,
+   "part_of": "Mine closure costs total",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Post-closure 2042-2046",
+   "value": 0.5,
+   "quote": "Post-closure costs between 2042 and 2046 of US$0.5 million",
+   "page": 24,
+   "part_of": "Mine closure costs total",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure costs total",
+   "value": 17.0,
+   "quote": "Mine closure costs total US$17.0 million over the LOM",
+   "page": 24,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "UG Mining",
+   "value": 1135,
+   "quote": "UG Mining 1,135 84.7 74.17",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 553,
+   "quote": "Processing 553 41.9 36.14",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A / Site Services",
+   "value": 281,
+   "quote": "G&A / Site Services 281 20.9 18.36",
+   "page": 35,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "BOOT",
+   "value": 53,
+   "quote": "BOOT 53 4.0 3.46",
+   "page": 35,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 2022,
+   "quote": "Total Site Operating Cost 2,022 151.5 132.14",
+   "page": 35,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "UG Mining",
+   "value": 74.17,
+   "quote": "UG Mining 1,135 84.7 74.17",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 36.14,
+   "quote": "Processing 553 41.9 36.14",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A / Site Services",
+   "value": 18.36,
+   "quote": "G&A / Site Services 281 20.9 18.36",
+   "page": 35,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "BOOT",
+   "value": 3.46,
+   "quote": "BOOT 53 4.0 3.46",
+   "page": 35,
+   "l1": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 132.14,
+   "quote": "Total Site Operating Cost 2,022 151.5 132.14",
+   "page": 35,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

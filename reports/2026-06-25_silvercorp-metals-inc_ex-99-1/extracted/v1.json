@@ -1,0 +1,332 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Gaocheng",
+  "title": "Technical Report on Gaocheng Silver-Lead-Zinc Project in Guangdong Province, China",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: Dec. 31, 2025",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Pb",
+   "Zn"
+  ],
+  "country": "China",
+  "region": "Guangdong",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ore_sorting",
+   "flotation",
+   "gravity",
+   "conc_thickener",
+   "conc_filter",
+   "tails_thickener",
+   "tails_filter"
+  ],
+  "quote": "It includes crushing-screening, XRT intelligent sorting, grinding-classification, lead preferential flotation, zinc-sulphur mixed flotation and zinc-sulfur separation flotation, tin recovery by gravity separation, concentrate thickening-filtering, tailings thickening-filtering",
+  "page": 93
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1600,
+   "unit": "t/d",
+   "quote": "designed processing capacity of 528 ktpa (1,600 tpd)",
+   "page": 93,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.369,
+   "unit": "Mt/a",
+   "quote": "Capacity (average over LOM) ktpa 369",
+   "page": 120,
+   "statistic": "lom_average",
+   "derived": true,
+   "context": {
+    "derived_note": "369 ktpa stated, converted to Mt/a"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "final overflow fineness of 80% passing 75 µm (P 80 =75μm)",
+   "page": 94,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 68.36,
+   "unit": "g/t",
+   "quote": "Processing Feed tonnes kt 5,444 Ag Grade g/t 68.36",
+   "page": 120,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "note": "processing feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.99,
+   "unit": "%",
+   "quote": "Pb Grade % 0.99",
+   "page": 120,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "note": "processing feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.43,
+   "unit": "%",
+   "quote": "Zn Grade % 2.43 Pb Concentrate",
+   "page": 120,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "note": "processing feed"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 59.28,
+   "unit": "%",
+   "quote": "Ag Recovery Rate % 59.28",
+   "page": 120,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.86,
+   "unit": "%",
+   "quote": "Pb Recovery Rate % 89.86",
+   "page": 120,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 23.26,
+   "unit": "%",
+   "quote": "Ag Recovery Rate % 23.26",
+   "page": 120,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.85,
+   "unit": "%",
+   "quote": "Zn Recovery Rate % 89.85",
+   "page": 120,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 32.5,
+   "unit": "USD/oz",
+   "quote": "Silver USD/oz 72.75 66.50 42.00 40.00 37.50 32.50 32.50",
+   "page": 105,
+   "metal": "Ag",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/t",
+   "quote": "Lead USD/t 2,000 1,950 1,950 1,900 1,950 2,000 2,000",
+   "page": 105,
+   "metal": "Pb",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2800,
+   "unit": "USD/t",
+   "quote": "Zinc USD/t 2,800 2,650 2,600 2,600 2,650 2,800 2,800",
+   "page": 105,
+   "metal": "Zn",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 101.4,
+   "unit": "MUSD",
+   "quote": "Net Present Value, post-tax @ 8% discount rate USDm 101.4",
+   "page": 121,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 7.12,
+   "unit": "CNY/USD",
+   "quote": "The exchange rate is set statically at USD1 = RMB7.12",
+   "page": 21,
+   "context": {
+    "pair": "CNY per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalization Development",
+   "value": 21.2,
+   "quote": "Capitalization Development USD Million 21.2",
+   "page": 21,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing Upgrades",
+   "value": 2.4,
+   "quote": "Processing Upgrades USD Million 2.4",
+   "page": 21,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure Upgrades",
+   "value": 0.2,
+   "quote": "Infrastructure Upgrades USD Million 0.2",
+   "page": 21,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Closure & Reclamation",
+   "value": 2.0,
+   "quote": "Mine Closure & Reclamation USD Million 2.0",
+   "page": 21,
+   "l1": "other",
+   "review_note": "Closure is listed inside the report's Capex summary total",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 26,
+   "quote": "Total USD Million 26",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 40.9,
+   "quote": "Mining USD/t ROM 39.8 44.4 38.5 40.9",
+   "page": 21,
+   "l1": "mining",
+   "review_note": "Unit is USD/t ROM; ROM equals plant feed tonnage in 2023-2025 (300/290/291 kt)",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant",
+   "value": 16.4,
+   "quote": "Plant USD/t Feed 15.8 16.5 16.8 16.4",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Backfill",
+   "value": 3.1,
+   "quote": "Backfill USD/t ROM 3.1 2.9 3.1 3.1",
+   "page": 21,
+   "l1": "mining",
+   "review_note": "Unit is USD/t ROM; ROM equals plant feed tonnage in 2023-2025 (300/290/291 kt)",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings filtration",
+   "value": 0.4,
+   "quote": "Tailings filtration USD/t Feed 0.5 0.3 0.4 0.4",
+   "page": 21,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "S&GA",
+   "value": 8.6,
+   "quote": "S&GA USD/t Feed 8.3 9.0 8.5 8.6",
+   "page": 21,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "CSR",
+   "value": 0.1,
+   "quote": "CSR USD/t Feed 0.1 0.1 0.0 0.1",
+   "page": 21,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total cash unit cost",
+   "value": 69.4,
+   "quote": "Total cash unit cost USD/t 67.6 73.2 67.3 69.4",
+   "page": 21,
+   "is_total": true,
+   "review_note": "Weighted average of 2023-2025 actual costs used as forecast",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

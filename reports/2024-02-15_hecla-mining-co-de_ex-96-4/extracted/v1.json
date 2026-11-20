@@ -1,0 +1,309 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Keno Hill",
+  "title": "S-K 1300 Technical Report Summary on the Keno Hill Mine, Yukon, Canada",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_page": 2,
+  "effective_date_quote": "Report Effective Date – December 31, 2023",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Pb",
+   "Zn"
+  ],
+  "country": "Canada",
+  "region": "Yukon",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "ball_mill",
+   "flotation"
+  ],
+  "page": 295,
+  "quote": "ROM ore from Bermingham is dumped onto a ROM ore stockpile and then into the primary jaw crusher. The hopper is equipped with a stationary grizzly with a 450 mm aperture opening to prevent oversized ore from entering the downstream jaw crusher. The primary crushing products, joined by the secondary crushing discharge, feed the sizing screen to produce the final crushed product. The oversize product from the sizing screen feeds the secondary cone crusher. The crushed material is conveyed to a fine ore stockpile with 550 t live capacity. Crushed ore reclaim is achieved via a draw-down pocket located beneath the fine ore stockpile. 14.2.3 Primary Grinding Circuit Crushed ore is reclaimed from the stockpile onto the ball mill feed conveyor belt at a nominal rate of 18.1 t per operating hour (434 tpd). The primary grinding circuit is a two-stage ball milling process producing a ground material with a P 80 size of 100 to 120 µm. Ore from the ball mill discharges into the feed chute of the primary No.1 ball grinding mill which is a heavy-duty tire-driven type grinding mill 1,800 mm in diameter and 3,600 mm long, with an installed power of 150 kW. The primary mill slurry is discharged into a pump box and then pumped to join the secondary No.2 ball mill discharge. The combined streams are pumped to the classifying cyclones. The cyclone underflow returns as feed to the secondary ball mill, while the cyclone overflow reports to the flotation circuit"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 434,
+   "unit": "t/d",
+   "quote": "at a nominal rate of 18.1 t per operating hour (434 tpd)",
+   "page": 295,
+   "statistic": "design",
+   "context": {
+    "phase": "ball mill feed; LOM plan processes 400 to 550 t/d"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 912,
+   "unit": "g/t",
+   "quote": "Silver Grade g/t 912",
+   "page": 361,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.22,
+   "unit": "g/t",
+   "quote": "Gold Grade g/t 0.22",
+   "page": 361,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.81,
+   "unit": "%",
+   "quote": "Lead Grade % 2.81",
+   "page": 361,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.53,
+   "unit": "%",
+   "quote": "Zinc Grade % 2.53",
+   "page": 361,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.0,
+   "unit": "%",
+   "quote": "Silver (Ag) % 96.0",
+   "page": 358,
+   "metal": "Ag",
+   "context": {
+    "note": "Mill recovery (net)"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.2,
+   "unit": "%",
+   "quote": "Lead (Pb) % 93.2",
+   "page": 358,
+   "metal": "Pb",
+   "context": {
+    "note": "Mill recovery (net)"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 72.0,
+   "unit": "%",
+   "quote": "Zinc (Zn) % 72.0",
+   "page": 358,
+   "metal": "Zn",
+   "context": {
+    "note": "Mill recovery (net)"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22.0,
+   "unit": "USD/oz",
+   "quote": "constant USD 22.00/oz Ag, USD 0.95/lb Pb, and USD 1.15/lb Zn",
+   "page": 358,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.95,
+   "unit": "USD/lb",
+   "quote": "constant USD 22.00/oz Ag, USD 0.95/lb Pb, and USD 1.15/lb Zn",
+   "page": 358,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.15,
+   "unit": "USD/lb",
+   "quote": "constant USD 22.00/oz Ag, USD 0.95/lb Pb, and USD 1.15/lb Zn",
+   "page": 358,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 304.5,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV 5% $ million $304.5",
+   "page": 363,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth Capital",
+   "value": 79.9,
+   "quote": "Growth Capital $ million 79.9",
+   "page": 362,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Growth and sustaining totals from Table 19-5 (mining 158.4 + processing 15.9 + infrastructure 11.8 = 186.1 = 79.9 + 106.2); Table 18-1 category lines are not split by type so not recorded"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 106.2,
+   "quote": "Sustaining Capital $ million 106.2",
+   "page": 362,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation and Closure",
+   "value": 8.74,
+   "quote": "Reclamation and Closure USDM 8.74",
+   "page": 351,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 244.15,
+   "quote": "Mining 244.15 130.05",
+   "page": 359,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining unit",
+   "value": 130.05,
+   "quote": "Mining 244.15 130.05",
+   "page": 359,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 88.31,
+   "quote": "Processing 88.31 47.04",
+   "page": 359,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing unit",
+   "value": 47.04,
+   "quote": "Processing 88.31 47.04",
+   "page": 359,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 150.84,
+   "quote": "General and Administration 150.84 80.35",
+   "page": 359,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration unit",
+   "value": 80.35,
+   "quote": "General and Administration 150.84 80.35",
+   "page": 359,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 483.29,
+   "quote": "Total Operating Cost 483.29 257.43",
+   "page": 359,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost unit",
+   "value": 257.43,
+   "quote": "Total Operating Cost 483.29 257.43",
+   "page": 359,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment and Refinement",
+   "value": 68.27,
+   "quote": "Treatment and Refinement 68.27 36.36",
+   "page": 359,
+   "l1": "offsite",
+   "outside_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment and Refinement unit",
+   "value": 36.36,
+   "quote": "Treatment and Refinement 68.27 36.36",
+   "page": 359,
+   "l1": "offsite",
+   "outside_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport",
+   "value": 63.55,
+   "quote": "Transport 63.55 33.85",
+   "page": 359,
+   "l1": "offsite",
+   "outside_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport unit",
+   "value": 33.85,
+   "quote": "Transport 63.55 33.85",
+   "page": 359,
+   "l1": "offsite",
+   "outside_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

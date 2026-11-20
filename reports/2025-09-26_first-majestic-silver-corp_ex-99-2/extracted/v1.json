@@ -1,0 +1,240 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "La Encantada",
+  "title": "La Encantada Silver Mine, State of Coahuila, Mexico, NI 43-101 Technical Report on Mineral Resource and Mineral Reserve Estimates",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-08-31",
+  "effective_date_quote": "August 31, 2025",
+  "primary_commodity": "Ag",
+  "by_products": [],
+  "country": "Mexico",
+  "region": "Coahuila",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "tank_leach",
+   "merrill_crowe"
+  ],
+  "page": 173,
+  "quote": "utilizes cyanide tank leaching followed by Merrill-Crowe processing to recover silver from ground run-of-mine (ROM) ore"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3400,
+   "unit": "t/d",
+   "quote": "crushing and grinding capacity of 3,400 tonnes per day (tpd)",
+   "page": 173,
+   "statistic": "design",
+   "context": {
+    "phase": "crushing/grinding capacity; leach circuit capacity 4,500 tpd"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 90,
+   "unit": "µm",
+   "quote": "75% passing 200 mesh (P80 ~90 µm)",
+   "page": 176,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 73.2,
+   "unit": "%",
+   "quote": "Yearly Average 973 73.2",
+   "page": 96,
+   "metal": "Ag",
+   "statistic": "mean",
+   "basis": "actual",
+   "context": {
+    "ore_type": "2021-2024 plant average"
+   }
+  },
+  {
+   "parameter": "reserve_grade",
+   "value": 137,
+   "unit": "g/t",
+   "quote": "Total Probable Oxides 3,388 137 137 14,883 14,883",
+   "page": 23,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 26.0,
+   "unit": "USD/oz",
+   "quote": "Metal prices considered for Mineral Reserves estimates were $26.00/oz Ag",
+   "page": 23,
+   "metal": "Ag"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 15,
+   "quote": "Mining Cost 15 Processing Cost 20.7",
+   "page": 28,
+   "l1": "mining",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 20.7,
+   "quote": "Processing Cost 20.7 Indirect Costs 13.4",
+   "page": 28,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Indirect Costs",
+   "value": 13.4,
+   "quote": "Indirect Costs 13.4 Total Production Cost 49.1",
+   "page": 28,
+   "l1": "ga",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Production Cost",
+   "value": 49.1,
+   "quote": "Total Production Cost 49.1 Selling Cost 0.8",
+   "page": 28,
+   "is_subtotal": true,
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Selling Cost",
+   "value": 0.8,
+   "quote": "Selling Cost 0.8 Total Cash Cost 49.9",
+   "page": 28,
+   "l1": "offsite",
+   "l2": "other",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 49.9,
+   "quote": "Total Cash Cost 49.9",
+   "page": 28,
+   "is_total": true,
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 52.8,
+   "quote": "Mining Cost $ 52.8 $ 17.7",
+   "page": 28,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 72.7,
+   "quote": "Processing Cost $ 72.7 $ 24.4",
+   "page": 28,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Indirect Costs",
+   "value": 47.2,
+   "quote": "Indirect Costs $ 47.2 $ 15.8",
+   "page": 28,
+   "l1": "ga",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Production Cost",
+   "value": 172.7,
+   "quote": "Total Production Cost $ 172.7 $ 58.0",
+   "page": 28,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Selling Costs",
+   "value": 2.7,
+   "quote": "Selling Costs $ 2.7 $ 0.9",
+   "page": 28,
+   "l1": "offsite",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 175.5,
+   "quote": "Total Cash Cost $ 175.5 $ 58.9",
+   "page": 28,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 16.6,
+   "quote": "Mine Development $ 16.6 $ 5.6",
+   "page": 28,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Property, Plant & Equipment",
+   "value": 12.4,
+   "quote": "Property, Plant & Equipment $ 12.4 $ 4.2",
+   "page": 28,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Sustaining Costs",
+   "value": 4.1,
+   "quote": "Other Sustaining Costs $ 4.1 $ 1.3",
+   "page": 28,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital Costs",
+   "value": 33.0,
+   "quote": "Total Sustaining Capital Costs $ 33.0 $ 11.0",
+   "page": 28,
+   "is_total": true,
+   "review_note": "LOM plan covers 2025-2027; near-mine exploration (1.5) is outside this total.",
+   "basis_unit": "total",
+   "multiplier": "M"
+  }
+ ]
+}

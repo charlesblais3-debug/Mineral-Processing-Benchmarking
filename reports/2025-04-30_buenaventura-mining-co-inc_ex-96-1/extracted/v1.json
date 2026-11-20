@@ -1,0 +1,261 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Cerro Verde",
+  "title": "Technical Report Summary of Mineral Reserves and Mineral Resources for Cerro Verde Mine, Arequipa, Peru",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date:   December 31, 2024",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag"
+  ],
+  "country": "Peru",
+  "region": "Arequipa",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "hpgr",
+   "ball_mill",
+   "flotation",
+   "heap_leach",
+   "sx_ew"
+  ],
+  "quote": "each line consisting of a primary gyratory crusher, secondary cone crushers, tertiary high-pressure grinding roll (HPGR) crushers,  and ball mills. The ore is floated in rougher and cleaner flotation circuits",
+  "page": 58
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 420000,
+   "unit": "t/d",
+   "quote": "support the LOM plan achieving a combined concentrator capacity of up to 420,000 metric  tons per day",
+   "page": 58,
+   "statistic": "design",
+   "context": {
+    "note": "C1 (upgraded to 120 kt/d) + C2 (288 kt/d), debottlenecked"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.34,
+   "unit": "%",
+   "quote": "Copper grade (%) 0.34",
+   "page": 70,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "LOM plan, 3.9 billion metric tons of ore"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.7,
+   "unit": "%",
+   "quote": "Copper metallurgical recovery (%) 88.7",
+   "page": 70,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "Primary Sulfides 90 55",
+   "page": 41,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "ore_type": "primary sulfides"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 55,
+   "unit": "%",
+   "quote": "Primary Sulfides 90 55",
+   "page": 41,
+   "metal": "Mo",
+   "statistic": "design",
+   "context": {
+    "ore_type": "primary sulfides"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.25,
+   "unit": "USD/lb",
+   "quote": "Copper ($ per pound) $3.25",
+   "page": 70,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 12,
+   "unit": "USD/lb",
+   "quote": "Molybdenum ($ per pound) $12",
+   "page": 70,
+   "metal": "Mo"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20,
+   "unit": "USD/oz",
+   "quote": "Silver ($ per ounce) $20",
+   "page": 70,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 5200,
+   "unit": "MUSD",
+   "quote": "Net present value @ 8% ($ billions) $5.2",
+   "page": 70,
+   "context": {
+    "discount_rate_pct": 8,
+    "derived_note": "$5.2 billion stated; converted to MUSD"
+   },
+   "derived": true
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 2.23,
+   "unit": "USD/lb",
+   "quote": "Unit net cash cost ($ per pound of copper) $ 2.23",
+   "page": 15,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "net of by-product credits"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 1.7,
+   "quote": "Mine $1.7",
+   "page": 68,
+   "l1": "mining",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Concentrator",
+   "value": 1.1,
+   "quote": "Concentrator 1.1",
+   "page": 68,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Supporting Infrastructure and Environmental",
+   "value": 2.4,
+   "quote": "Supporting Infrastructure and Environmental 2.4",
+   "page": 68,
+   "l1": "onsite_infra",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Expenditures",
+   "value": 5.2,
+   "quote": "Total Capital Expenditures $5.2",
+   "page": 68,
+   "is_total": true,
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 23.0,
+   "quote": "Mine $23.0",
+   "page": 69,
+   "l1": "mining",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 24.1,
+   "quote": "Processing 24.1",
+   "page": 69,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Balance",
+   "value": 5.6,
+   "quote": "Balance 5.6",
+   "page": 69,
+   "l1": "other",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total site cash operating costs",
+   "value": 52.7,
+   "quote": "Total site cash operating costs 52.7",
+   "page": 69,
+   "is_total": true,
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Freight",
+   "value": 4.0,
+   "quote": "Freight 4.0",
+   "page": 69,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment charges",
+   "value": 7.2,
+   "quote": "Treatment charges 7.2",
+   "page": 69,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "multiplier": "B",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Peruvian mining royalty tax",
+   "value": 0.4,
+   "quote": "Peruvian mining royalty tax 0.4",
+   "page": 69,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "B",
+   "basis_unit": "total"
+  }
+ ]
+}

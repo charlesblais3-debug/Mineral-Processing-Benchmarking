@@ -1,0 +1,194 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "San Jose",
+  "title": "Fortuna Silver Mines Inc.: San Jose Mine, Oaxaca, Mexico Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2023",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Mexico",
+  "region": "Oaxaca",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "is first sent to a flotation stage performed in ten mechanic cells",
+  "page": 116
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2100,
+   "unit": "t/d",
+   "quote": "350 days at an average mill throughput rate of 2,100 tonnes per day (tpd)",
+   "page": 15,
+   "statistic": "design",
+   "context": {
+    "note": "2024 LOM plan (one-year mine life); plant maximum capacity 3,000 dry tpd"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 105,
+   "unit": "µm",
+   "quote": "80 % of the product must be under the 150-mesh size (equivalent to 105 µm)",
+   "page": 116,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 156,
+   "unit": "g/t",
+   "quote": "average head grade of 156 g/t Ag and 0.98 g/t Au",
+   "page": 15,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.98,
+   "unit": "g/t",
+   "quote": "average head grade of 156 g/t Ag and 0.98 g/t Au",
+   "page": 15,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.5,
+   "unit": "%",
+   "quote": "are 90.5 % for silver and 89.8 % for gold based on actual plant recoveries",
+   "page": 15,
+   "metal": "Ag",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.8,
+   "unit": "%",
+   "quote": "are 90.5 % for silver and 89.8 % for gold based on actual plant recoveries",
+   "page": 15,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 23.9,
+   "unit": "USD/oz",
+   "quote": "US$ 23.90/oz for silver and US$ 1,880/oz for gold",
+   "page": 15,
+   "metal": "Ag",
+   "context": {
+    "note": "Mineral Reserve NSR price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1880,
+   "unit": "USD/oz",
+   "quote": "US$ 23.90/oz for silver and US$ 1,880/oz for gold",
+   "page": 15,
+   "metal": "Au",
+   "context": {
+    "note": "Mineral Reserve NSR price"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "closure",
+   "raw_label": "Progressive mine closure and monitoring plan budget",
+   "value": 27,
+   "quote": "current estimated budget of US$ 27 million",
+   "page": 18,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 48,
+   "quote": "Mine US$/t 60 56 43 39 48",
+   "page": 134,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant",
+   "value": 23,
+   "quote": "Plant US$/t 29 29 20 19 23",
+   "page": 134,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Indirect",
+   "value": 24,
+   "quote": "Indirect US$/t 31 31 21 19 24",
+   "page": 134,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Distribution",
+   "value": 8,
+   "quote": "Distribution US$/t 8 9 7 7 8",
+   "page": 134,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Community Relations",
+   "value": 4,
+   "quote": "Community Relations US$/t 5 6 4 3 4",
+   "page": 134,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sustaining Capital expenses",
+   "value": 12,
+   "quote": "Sustaining Capital expenses US$/t 15 24 10 6 12",
+   "page": 134,
+   "l1": "other",
+   "review_note": "Sustaining capital expenses are included inside the report's total of US$120/t",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 120,
+   "quote": "Total US$/t 148 155 104 93 120",
+   "page": 134,
+   "is_total": true,
+   "review_note": "Projected 2024 operating costs; 2024 is the last planned year (mine life under 12 months), so these are effectively LOM",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

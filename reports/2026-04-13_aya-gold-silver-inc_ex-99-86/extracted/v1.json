@@ -1,0 +1,318 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Zgounder",
+  "title": "Zgounder Silver Mine Operations, Updated Mineral Resources and Reserves Estimate (NI 43-101 Technical Report)",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-12-16",
+  "effective_date_page": 1,
+  "effective_date_quote": "Effective Date: December 16, 2025",
+  "primary_commodity": "Ag",
+  "by_products": [],
+  "country": "Morocco",
+  "region": "Souss-Massa",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "tank_leach",
+   "merrill_crowe"
+  ],
+  "page": 170,
+  "quote": "Two stage crushing closed out by a dry vibrating screening. • Single stage ball milling circuit closed out by hydrocyclones. • Gravity concentration and intensive leaching • Leaching circuit, preceded by a pre-leach stage. • Counter-Current-Decantation (CCD). • Silver Recovery in a Merrill-Crowe circuit"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2000,
+   "unit": "t/d",
+   "quote": "New Plant throughput dry t/yr 2000",
+   "page": 169,
+   "context": {
+    "phase": "New Plant #1; existing Plant #2 500 t/d, Plant #3 180 t/d"
+   },
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 100,
+   "unit": "µm",
+   "quote": "Grind Size, P 80 µm 100",
+   "page": 169,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.9,
+   "unit": "%",
+   "quote": "Overall Silver Recovery % 90.9",
+   "page": 169,
+   "metal": "Ag",
+   "statistic": "design"
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 91.3,
+   "unit": "%",
+   "quote": "Downstream Plant Availability % 91.3",
+   "page": 169,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 18.5,
+   "unit": "kWh/t",
+   "quote": "Crushing Work Index (CWi, design) kWh/t 18.5",
+   "page": 169,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 24.9,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (BWi, design) kWh/t 24.9",
+   "page": 169,
+   "context": {
+    "test": "Bond ball mill (design value)"
+   },
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_rod",
+   "value": 23.9,
+   "unit": "kWh/t",
+   "quote": "Bond Rod Mill Work Index (RWi, design) kWh/t 23.9",
+   "page": 169,
+   "context": {
+    "test": "Bond rod mill (design value)"
+   },
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 23.2,
+   "unit": "",
+   "quote": "SMC Axb (design) 23.2",
+   "page": 169,
+   "statistic": "design"
+  },
+  {
+   "parameter": "leach_residence_h",
+   "value": 60,
+   "unit": "h",
+   "quote": "Leach Circuit Residence Time hr 60",
+   "page": 169,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 26,
+   "unit": "USD/oz",
+   "quote": "Silver price US$/oz 26",
+   "page": 154,
+   "metal": "Ag",
+   "context": {
+    "note": "Mineral Reserve pit optimization price"
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 16.26,
+   "unit": "USD/oz",
+   "quote": "Cash cost $/oz 21.21 19.78 18.94 18.26 19.91 15.70 14.96 11.23 11.44 11.94 14.70 16.26",
+   "page": 25,
+   "metal": "Ag",
+   "context": {
+    "period": "LOM from 2026"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Lateral and Declined Development",
+   "value": 17.62,
+   "quote": "Lateral and Declined Development 17.62",
+   "page": 23,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vertical Development",
+   "value": 3.22,
+   "quote": "Vertical Development 3.22",
+   "page": 24,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Equipment",
+   "value": 6.62,
+   "quote": "Mining Equipment 6.62",
+   "page": 24,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Services",
+   "value": 4.1,
+   "quote": "Mining Services 4.10",
+   "page": 24,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailing storage facility",
+   "value": 24.77,
+   "quote": "Tailing storage facility 24.77",
+   "page": 24,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Closure Costs",
+   "value": 4.09,
+   "quote": "Closure Costs 4.09",
+   "page": 24,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant",
+   "value": 11.0,
+   "quote": "Process Plant 11.00",
+   "page": 24,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total capital costs",
+   "value": 71.42,
+   "quote": "Total 71.42",
+   "page": 24,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Operating mine LOM capital from 2026 (no sustaining/growth split stated); includes closure 4.09 and process plant 11.00; all treated as sustaining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit production",
+   "value": 302.0,
+   "quote": "Open pit production $M 39.7 39.8 44.0 39.2 45.1 19.4 25.5 13.5 13.7 15.5 6.6 302.0",
+   "page": 25,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground prod.",
+   "value": 159.8,
+   "quote": "Underground prod. $M 29.8 27.2 20.3 21.3 25.0 24.6 11.6 - - - - 159.8",
+   "page": 25,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 325.1,
+   "quote": "Processing $M 28.3 29.7 29.7 29.7 29.7 29.7 29.7 29.7 29.7 29.7 29.4 325.1",
+   "page": 25,
+   "l1": "processing",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G/A",
+   "value": 280.5,
+   "quote": "G/A $M 25.3 25.8 26.1 26.1 26.1 26.1 25.9 25.7 25.5 25.4 22.6 280.5",
+   "page": 25,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 1067.5,
+   "quote": "Total $M 123.2 122.5 120.1 116.3 125.9 99.8 92.8 68.8 68.9 70.6 58.7 1 067.5",
+   "page": 25,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Blended mining cost per tonne of ore mined",
+   "value": 30.53,
+   "quote": "Blended mining cost per tonne of ore mined 30.53",
+   "page": 24,
+   "l1": "mining",
+   "review_note": "Stated per tonne of ore mined (open pit 23.87, underground 64.63); treated as per tonne milled for the sum check",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing cost per tonne processed",
+   "value": 21.16,
+   "quote": "Processing cost per tonne processed 21.16",
+   "page": 24,
+   "l1": "processing",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G/A cost per tonne processed",
+   "value": 18.25,
+   "quote": "G/A cost per tonne processed* 18.25",
+   "page": 24,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total cost per tonne processed",
+   "value": 69.47,
+   "quote": "Total cost per tonne processed** 69.47",
+   "page": 24,
+   "is_total": true,
+   "review_note": "Report notes sum of unit costs is 69.94 because of existing stockpiles",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

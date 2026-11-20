@@ -1,0 +1,76 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Guanajuato Mine Complex",
+  "title": "NI 43-101 Mineral Resource Update Technical Report on the Guanajuato Mine Complex, Guanajuato and San Ignacio operations, Guanajuato State, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-07-31",
+  "effective_date_quote": "Effective Date of the Report:\nJuly 31, 2021",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Mexico",
+  "region": "Guanajuato",
+  "mine_type": "underground",
+  "project_status": "care_maintenance",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "The processing plant utilized five stages as follows: crushing, milling, flotation, thickening and filtering",
+  "page": 96
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 679,
+   "unit": "t/d",
+   "quote": "approximately 679 tonnes per operating day (August 1, 2020 - July 31, 2021)",
+   "page": 96,
+   "statistic": "steady_state",
+   "basis": "actual",
+   "context": {
+    "phase": "Aug 2020 - Jul 2021 per operating day"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 1000,
+   "unit": "t/d",
+   "quote": "A nominal 1,000tpd flotation concentrator",
+   "page": 101,
+   "statistic": "design"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant Cost",
+   "value": 15.5,
+   "quote": "Plant Cost $15.5 $15.5 $15.5 $15.5 $15.5 $15.5 $15.5",
+   "page": 107,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Planned full operating cost per tonne milled used for 2021 resource cut-offs (Table 21.1), not LOM study estimate. Mine cost varies by area so no total given."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Admin Cost",
+   "value": 38.9,
+   "quote": "Admin Cost $38.9 $38.9 $38.9 $38.9 $38.9 $38.9 $38.9",
+   "page": 107,
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "review_note": "Planned cost per tonne milled used for resource cut-offs (Table 21.1)."
+  }
+ ]
+}

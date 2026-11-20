@@ -1,0 +1,483 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Boumadine",
+  "title": "Updated Preliminary Economic Assessment, Boumadine Project, Kingdom of Morocco",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-09-09",
+  "effective_date_page": 15,
+  "effective_date_quote": "The Report has an effective date of September 9, 2026.",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag",
+   "Zn",
+   "Pb"
+  ],
+  "country": "Morocco",
+  "region": "Drâa-Tafilalet",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "page": 23,
+  "quote": "The crushed product will be stockpiled before entering the grinding circuit, which will include a SAG mill, ball mill, and hydrocyclones for particle size classification. The ground product will feed the lead rougher flotation circuit. The lead rougher concentrate will proceed to a classification and regrind circuit, followed by three cleaner flotation stages and a cleaner-scavenger stage. The final lead concentrate will be thickened, filtered and bagged for shipment. The lead rougher tails and cleaner-scavenger tails will feed the zinc rougher flotation circuit. The zinc rougher concentrate will follow a similar regrind and cleaning process, including three cleaning stages and a cleaner-scavenger stage. The final zinc concentrate will be thickened, filtered, and stockpiled for shipment."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.92,
+   "unit": "Mt/a",
+   "quote": "Plant Throughput | Mtpa | 2.92",
+   "page": 280,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.77,
+   "unit": "g/t",
+   "quote": "Au | g/t | 2.05 | 1.77",
+   "page": 25,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 63.5,
+   "unit": "g/t",
+   "quote": "Ag | g/t | 101.6 | 63.5",
+   "page": 25,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.37,
+   "unit": "%",
+   "quote": "Zn | % | 2.04 | 1.37",
+   "page": 25,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.58,
+   "unit": "%",
+   "quote": "Pb | % | 0.87 | 0.58",
+   "page": 25,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.1,
+   "unit": "%",
+   "quote": "Au rec (%) | % | 96.1% | 96.1%",
+   "page": 25,
+   "metal": "Au",
+   "context": {
+    "note": "Table 1-5 model recovery; Table 17-1 gives flotation recovery of Au to pyrite concentrate 71.4%"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.4,
+   "unit": "%",
+   "quote": "Ag Rec (%) | % | 96.4% | 96.4%",
+   "page": 25,
+   "metal": "Ag",
+   "context": {
+    "note": "Table 1-5 model recovery; Table 17-1 gives flotation recovery of Ag to pyrite concentrate 41.4%"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 74.7,
+   "unit": "%",
+   "quote": "Zn rec (%) | % | 74.7% | 74.7%",
+   "page": 25,
+   "metal": "Zn",
+   "context": {
+    "to_product": "Zn concentrate"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.0,
+   "unit": "%",
+   "quote": "Pb Rec (%) | % | 82.0% | 82.0%",
+   "page": 25,
+   "metal": "Pb",
+   "context": {
+    "to_product": "Pb concentrate"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3500,
+   "unit": "USD/oz",
+   "quote": "Gold Price | $/oz | $3,500",
+   "page": 326,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 50,
+   "unit": "USD/oz",
+   "quote": "Silver Price | $/oz | $50",
+   "page": 326,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.37,
+   "unit": "USD/lb",
+   "quote": "Zinc Price | $/lb | $1.37",
+   "page": 326,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.9,
+   "unit": "USD/lb",
+   "quote": "Lead Price | $/lb | $0.90",
+   "page": 326,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 3500,
+   "unit": "MUSD",
+   "quote": "On an after-tax basis, the NPV discounted at 5% is $3.5B",
+   "page": 24,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 93,
+   "unit": "%",
+   "quote": "after-tax IRR of 93%",
+   "page": 24
+  },
+  {
+   "parameter": "payback_years",
+   "value": 0.7,
+   "unit": "years",
+   "quote": "after-tax IRR of 93%, and payback period of 0.7",
+   "page": 24
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1169,
+   "unit": "USD/oz",
+   "quote": "Total Cash Costs 1 $/oz AuEq | 998 | 1,169",
+   "page": 26,
+   "metal": "Au",
+   "context": {
+    "basis": "AuEq",
+    "period": "LOM"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1300,
+   "unit": "USD/oz",
+   "quote": "Total AISC 2 $/oz AuEq | 1,105 | 1,300",
+   "page": 26,
+   "metal": "Au",
+   "context": {
+    "basis": "AuEq",
+    "period": "LOM"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Direct Costs",
+   "value": 299,
+   "quote": "Direct Costs | 299 | 507 | 806",
+   "page": 24,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Open Pit Mining",
+   "value": 52,
+   "quote": "Open Pit Mining | 52 | 59 | 112",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant",
+   "value": 175,
+   "quote": "Processing Plant | 175 | 0 | 175",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Shipping Infrastructure",
+   "value": 11,
+   "quote": "Shipping Infrastructure | 11 | 0 | 11",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Electrical Line",
+   "value": 18,
+   "quote": "Electrical Line | 18 | 0 | 18",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "offsite_infra",
+   "l2": "power",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Raw Water Supply",
+   "value": 33,
+   "quote": "Raw Water Supply | 33 | 0 | 33",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Storage Facility",
+   "value": 9,
+   "quote": "Tailings Storage Facility | 9 | 30 | 40",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects Costs",
+   "value": 65,
+   "quote": "Indirects Costs | 65 | 0 | 65",
+   "page": 24,
+   "l1": "indirects",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 364,
+   "quote": "Subtotal | 364 | 507 | 871",
+   "page": 24,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 99,
+   "quote": "Contingency | 99 | 0 | 99",
+   "page": 24,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 463,
+   "quote": "Total | 463 | 507 | 970",
+   "page": 24,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Direct Costs",
+   "value": 507,
+   "quote": "Direct Costs | 299 | 507 | 806",
+   "page": 24,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Mining",
+   "value": 59,
+   "quote": "Open Pit Mining | 52 | 59 | 112",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mining",
+   "value": 407,
+   "quote": "Underground Mining | 0 | 407 | 407",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Storage Facility",
+   "value": 30,
+   "quote": "Tailings Storage Facility | 9 | 30 | 40",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TSF Closure Costs",
+   "value": 11,
+   "quote": "TSF Closure Costs | 0 | 11 | 11",
+   "page": 24,
+   "part_of": "Direct Costs",
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 507,
+   "quote": "Total | 463 | 507 | 970",
+   "page": 24,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 43.7,
+   "quote": "Mining | $/t milled | 51.47 | 43.70",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 17.96,
+   "quote": "Processing | $/t milled | 18.08 | 17.96",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 5.45,
+   "quote": "G&A | $/t milled | 5.58 | 5.45",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings, Environmental and Water Management",
+   "value": 0.5,
+   "quote": "Tailings, Environmental and Water Management | $/t milled | 0.47 | 0.50",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total On-Site Operating Cost",
+   "value": 67.61,
+   "quote": "Total On-Site Operating Cost | $/t milled | 75.60 | 67.61",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transportation",
+   "value": 34.33,
+   "quote": "Transportation | $/t milled | 38.63 | 34.33",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "outside_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 8.0,
+   "quote": "Royalties | $/t milled | 10.65 | 8.00",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes",
+   "outside_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Tax",
+   "value": 0.32,
+   "quote": "Mining Tax | $/t milled | 0.34 | 0.32",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes",
+   "outside_total": true
+  }
+ ]
+}

@@ -1,0 +1,340 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Manh Choh",
+  "title": "Technical Report Summary on the Manh Choh Project, Alaska, USA",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2023-05-12",
+  "effective_date_page": 1,
+  "effective_date_quote": "May 12, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cip",
+   "primary_gyratory",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill"
+  ],
+  "page": 35,
+  "quote": "Gold is recovered by gravity concentration and CIP process. During the third quarter of the Manh Choh ore processing campaign in 2024, the gold and silver recoveries are reduced by 5% to account for processing ramp-up. The existing Fort Knox processing facility will be modified to process Manh Choh ore on a campaign or batch basis. ROM ore will be trucked from Manh Choh to Fort Knox and side dumped onto a coarse ore stockpile. From the coarse ore stockpile, ore will be transported to the Gyratory crusher. Crushed ore will be drawn from the crushed ore stockpile using variable speed apron feeders which will feed the semi-autogenous grinding (SAG) mill feed conveyor. The SAG mill product will discharge onto a wet vibrating screen where the undersize will flow into a common mill sump along with the ball mill product and the oversize, to the pebble crusher to further reduce the critical size material which will then be recycled back to the feed end of the SAG mill. From the common mill sump, SAG mill discharge screen undersize and ball mill discharge will be pumped to a set of hydrocyclones. The cyclone overflow will flow to trash screens to remove grit and wood chips. Screen underflow will report to the pre-leach thickener where flocculant is added to aid in the settling process. Thickener underflow will be pumped to the leach circuit, consisting of six CIP tanks"
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 7.9,
+   "unit": "g/t",
+   "quote": "Process Plant Feed '000 tonnes 1,181 Au Grade g/t 7.9",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 13.6,
+   "unit": "g/t",
+   "quote": "Ag Grade g/t 13.6 Total Contained Production",
+   "page": 26,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.3,
+   "unit": "%",
+   "quote": "Au Recovery % 90.3%",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 69.2,
+   "unit": "%",
+   "quote": "Ag Recovery % 69.2%",
+   "page": 26,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "quote": "Gold Price - average $/oz 1,600",
+   "page": 26,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22.0,
+   "unit": "USD/oz",
+   "quote": "Silver Price - average $/oz 22.00",
+   "page": 26,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 29.7,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV at 5% $ million 29.7",
+   "page": 26,
+   "context": {
+    "discount_rate_pct": 5,
+    "basis": "Contango 30% interest"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 22.5,
+   "unit": "%",
+   "quote": "IRR % 22.5",
+   "page": 26,
+   "context": {
+    "basis": "Contango 30% interest"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1116,
+   "unit": "USD/oz",
+   "quote": "for an All-In Sustaining Cost (AISC) of $1,116 per AuEq oz",
+   "page": 25,
+   "metal": "Au",
+   "context": {
+    "basis": "AuEq"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining & Mobile Equipment",
+   "value": 7.2,
+   "quote": "Mining & Mobile Equipment $4.7 $2.5 $7.2",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Site Development",
+   "value": 80.6,
+   "quote": "Site Development $77.4 $3.2 $80.6",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "roads"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Process Facilities",
+   "value": 22.2,
+   "quote": "Process Facilities - $22.2 $22.2",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings",
+   "value": 2.6,
+   "quote": "Tailings - $2.6 $2.6",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "General Contracts",
+   "value": 2.7,
+   "quote": "General Contracts - $2.7 $2.7",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Indirect Costs",
+   "value": 30.8,
+   "quote": "Indirect Costs $18.8 $12.0 $30.8",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "indirects"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency & Escalation",
+   "value": 20.4,
+   "quote": "Contingency & Escalation $14.0 $6.4 $20.4",
+   "page": 39,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Initial Capital",
+   "value": 166.5,
+   "quote": "Initial Capital $114.9 $51.6 $166.5",
+   "page": 39,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pre-Production G&A",
+   "value": 12.9,
+   "quote": "Pre-Production G&A $12.9",
+   "page": 39,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Admin Fee",
+   "value": 6.4,
+   "quote": "Admin Fee $6.4",
+   "page": 39,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Highway Ore Transport",
+   "value": 33.6,
+   "quote": "Highway Ore Transport $33.6",
+   "page": 39,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pre-Production Capitalized Stripping",
+   "value": 21.4,
+   "quote": "Pre-Production Capitalized Stripping $21.4",
+   "page": 39,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Capital Costs",
+   "value": 240.8,
+   "quote": "Total Capital Costs $240.8",
+   "page": 39,
+   "is_total": true,
+   "review_note": "Manh Choh ore is trucked to and processed at the existing Fort Knox mill, so all new-mine capital (incl. $51.6M Fort Knox mill mods) is recorded as growth; 100% Peak Gold JV basis; Contango holds 30%",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital Costs",
+   "value": 20.1,
+   "quote": "Sustaining Capital Costs $ million 20.1",
+   "page": 23,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Waste Development - Sustaining",
+   "value": 55.8,
+   "quote": "Capitalized Waste Development - Sustaining $ million 55.8",
+   "page": 23,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure/Reclamation Capital",
+   "value": 105.6,
+   "quote": "Closure/Reclamation Capital $ million 105.6",
+   "page": 23,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 5.97,
+   "quote": "Mining $/t mined 1 5.97",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Ore Haul",
+   "value": 63.39,
+   "quote": "Ore Haul 2 $/t ore 63.39",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (toll milling)",
+   "value": 52.26,
+   "quote": "Processing $/t ore 52.26",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 18.47,
+   "quote": "G&A $/t ore 18.47",
+   "page": 39,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit operating costs",
+   "value": 183.43,
+   "quote": "Total unit operating costs: $183.43/t milled",
+   "page": 24,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Mining is per tonne mined (incl. capitalized waste credit of $2.07/t mined), so the per-milled breakdown is incomplete"
+  }
+ ]
+}

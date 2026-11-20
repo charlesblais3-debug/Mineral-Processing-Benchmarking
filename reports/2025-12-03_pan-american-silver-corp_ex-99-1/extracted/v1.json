@@ -1,0 +1,360 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Juanicipio",
+  "title": "Juanicipio Mineral Resource and Mineral Reserves NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-03-04",
+  "effective_date_quote": "The Report has an effective date of 4 March 2024.",
+  "effective_date_page": 2,
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Mexico",
+  "region": "Zacatecas",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation"
+  ],
+  "page": 10,
+  "quote": "consists of a comminution circuit with primary crushing and a semi-autogenous grinding mill and ball mill, followed by sequential flotation"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4000,
+   "unit": "t/d",
+   "quote": "The Juanicipio plant has a nominal capacity of 4,000 tpd",
+   "page": 10,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 248,
+   "unit": "g/t",
+   "quote": "Silver grade 1 g/t 248",
+   "page": 17,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.58,
+   "unit": "g/t",
+   "quote": "Gold grade 1 g/t 1.58",
+   "page": 17,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.64,
+   "unit": "%",
+   "quote": "Lead grade 1 % 2.64",
+   "page": 17,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 4.8,
+   "unit": "%",
+   "quote": "Zinc grade 1 % 4.80",
+   "page": 17,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.6,
+   "unit": "%",
+   "quote": "Silver recovery 1 % 86.6",
+   "page": 17,
+   "metal": "Ag",
+   "context": {
+    "basis_note": "LOM average recovery to concentrates"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.4,
+   "unit": "%",
+   "quote": "Gold recovery 1 % 84.4",
+   "page": 17,
+   "metal": "Au",
+   "context": {
+    "basis_note": "LOM average recovery to concentrates"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.8,
+   "unit": "%",
+   "quote": "Lead recovery 1 % 86.8",
+   "page": 17,
+   "metal": "Pb",
+   "context": {
+    "basis_note": "LOM average recovery to concentrates"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 72.3,
+   "unit": "%",
+   "quote": "Zinc recovery 1 % 72.3",
+   "page": 17,
+   "metal": "Zn",
+   "context": {
+    "basis_note": "LOM average recovery to concentrates"
+   },
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22.0,
+   "unit": "USD/oz",
+   "quote": "Silver price $/oz 22.00",
+   "page": 17,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1750,
+   "unit": "USD/oz",
+   "quote": "Gold price $/oz 1,750",
+   "page": 17,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.0,
+   "unit": "USD/lb",
+   "quote": "Lead price $/lb 1.00",
+   "page": 17,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.15,
+   "unit": "USD/lb",
+   "quote": "Zinc price $/lb 1.15",
+   "page": 17,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1224,
+   "unit": "MUSD",
+   "quote": "Post-tax NPV @ 5% discount rate 5 $M 1,224",
+   "page": 17,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mobile equipment purchases (capacity increase)",
+   "value": 5.78,
+   "quote": "Total 5.78 34.30 40.08",
+   "page": 192,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining infrastructure",
+   "value": 34.3,
+   "quote": "Total 5.78 34.30 40.08",
+   "page": 192,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total project capital",
+   "value": 40.08,
+   "quote": "Total 5.78 34.30 40.08",
+   "page": 192,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Remaining project capital of operating mine (underground conveyor etc.), treated as growth"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining development",
+   "value": 97.4,
+   "quote": "Total 97.40 67.57 54.40 32.40 123.14 38.04 412.94",
+   "page": 193,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other mining activities",
+   "value": 67.57,
+   "quote": "Total 97.40 67.57 54.40 32.40 123.14 38.04 412.94",
+   "page": 193,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile equipment replacement & rebuilds",
+   "value": 54.4,
+   "quote": "Total 97.40 67.57 54.40 32.40 123.14 38.04 412.94",
+   "page": 193,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining infrastructure investment",
+   "value": 32.4,
+   "quote": "Total 97.40 67.57 54.40 32.40 123.14 38.04 412.94",
+   "page": 193,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing",
+   "value": 123.14,
+   "quote": "Total 97.40 67.57 54.40 32.40 123.14 38.04 412.94",
+   "page": 193,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "G&A",
+   "value": 38.04,
+   "quote": "Total 97.40 67.57 54.40 32.40 123.14 38.04 412.94",
+   "page": 193,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital",
+   "value": 412.94,
+   "quote": "Total 97.40 67.57 54.40 32.40 123.14 38.04 412.94",
+   "page": 193,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 972,
+   "quote": "Mine | 972 63.32",
+   "page": 194,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine unit",
+   "value": 63.32,
+   "quote": "Mine | 972 63.32",
+   "page": 194,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process plant and surface equipment",
+   "value": 187,
+   "quote": "Process plant and surface equipment 187 12.15",
+   "page": 194,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process plant and surface equipment unit",
+   "value": 12.15,
+   "quote": "Process plant and surface equipment 187 12.15",
+   "page": 194,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administration",
+   "value": 159,
+   "quote": "General and administration 159 10.38",
+   "page": 194,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administration unit",
+   "value": 10.38,
+   "quote": "General and administration 159 10.38",
+   "page": 194,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total site operating cost",
+   "value": 1318,
+   "quote": "Total | 1,318 85.85",
+   "page": 194,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total site operating cost unit",
+   "value": 85.85,
+   "quote": "Total | 1,318 85.85",
+   "page": 194,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

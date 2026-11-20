@@ -1,0 +1,342 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Cerro Los Gatos",
+  "title": "Mineral Resource and Mineral Reserve Update, Los Gatos Joint Venture, Chihuahua, Mexico (Cerro Los Gatos S-K 1300 Technical Report Summary)",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-07-01",
+  "effective_date_quote": "Effective Date: July 1, 2024",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Zn",
+   "Pb",
+   "Au",
+   "Cu"
+  ],
+  "country": "Mexico",
+  "region": "Chihuahua",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind",
+   "conc_thickener"
+  ],
+  "page": 22,
+  "quote": "semi-autogenous grinding (SAG) mill and ball mill, which feeds a flotation plant consisting of lead and zinc flotation circuits (including rougher, regrind and cleaner stages), lead and zinc concentrate thickening, and tailings thickening."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3401,
+   "unit": "t/d",
+   "quote": "Average Mill Throughput Rate tpd 3,401",
+   "page": 28,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 172,
+   "unit": "g/t",
+   "quote": "Ag Grade g/t 260 221 193 167 154 153 153 146 141 172",
+   "page": 23,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.89,
+   "unit": "%",
+   "quote": "Zn Grade % 4.02 4.30 4.42 4.05 3.98 4.22 3.35 3.30 3.24 3.89",
+   "page": 23,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.07,
+   "unit": "%",
+   "quote": "Pb Grade % 1.89 2.04 2.13 2.10 2.12 2.13 1.99 2.05 2.09 2.07",
+   "page": 23,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.22,
+   "unit": "g/t",
+   "quote": "Au Grade g/t 0.26 0.23 0.25 0.20 0.22 0.24 0.21 0.19 0.18 0.22",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.2,
+   "unit": "%",
+   "quote": "Ag recovery, % 88.9 88.2",
+   "page": 77,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Pb concentrate and Zn concentrate (total)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.4,
+   "unit": "%",
+   "quote": "Pb recovery, % 88.9 89.4",
+   "page": 77,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 63.2,
+   "unit": "%",
+   "quote": "Zn recovery, % 65.6 63.2",
+   "page": 77,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 54.2,
+   "unit": "%",
+   "quote": "Au recovery, % 52.0 54.2",
+   "page": 77,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 23.0,
+   "unit": "USD/oz",
+   "quote": "Silver Price $/oz 23.00",
+   "page": 27,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1850,
+   "unit": "USD/oz",
+   "quote": "Gold Price $/oz 1,850.00",
+   "page": 27,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.25,
+   "unit": "USD/lb",
+   "quote": "Zinc Price $/lb 1.25",
+   "page": 27,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.95,
+   "unit": "USD/lb",
+   "quote": "Lead Price $/lb 0.95",
+   "page": 27,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 538.8,
+   "unit": "MUSD",
+   "quote": "Post-Tax NPV (5%) $M 538.8",
+   "page": 28,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 4.94,
+   "unit": "USD/oz",
+   "quote": "By-Product AISC (2) $/oz Ag Pay. 4.94",
+   "page": 28,
+   "metal": "Ag",
+   "context": {
+    "basis": "by-product"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 14.24,
+   "unit": "USD/oz",
+   "quote": "Co-Product AISC (2) $/oz AgEq Pay. 14.24",
+   "page": 28,
+   "metal": "Ag",
+   "context": {
+    "basis": "AgEq"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 96.1,
+   "quote": "Mine Development $M 96.1",
+   "page": 27,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure & Equipment - Mine",
+   "value": 61.4,
+   "quote": "Mine $M 61.4",
+   "page": 27,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "part_of": "Infrastructure & Equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure & Equipment - Process Plant",
+   "value": 26.2,
+   "quote": "Process Plant $M 26.2",
+   "page": 27,
+   "l1": "process",
+   "l2": "general",
+   "part_of": "Infrastructure & Equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure & Equipment - Others",
+   "value": 3.2,
+   "quote": "Others $M 3.2",
+   "page": 27,
+   "l1": "other",
+   "part_of": "Infrastructure & Equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure & Equipment",
+   "value": 90.8,
+   "quote": "Infrastructure & Equipment $M 90.8",
+   "page": 27,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 186.9,
+   "quote": "Total Sustaining Capital $M 186.9",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 16.4,
+   "quote": "Closure Costs $M 16.4",
+   "page": 28,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 435.5,
+   "quote": "Mining 435.5 42.16",
+   "page": 26,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining unit",
+   "value": 42.16,
+   "quote": "Mining 435.5 42.16",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 256.0,
+   "quote": "Processing 256.0 24.77",
+   "page": 26,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing unit",
+   "value": 24.77,
+   "quote": "Processing 256.0 24.77",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 157.1,
+   "quote": "G&A 157.1 15.20",
+   "page": 26,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A unit",
+   "value": 15.2,
+   "quote": "G&A 157.1 15.20",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 848.6,
+   "quote": "Total Operating Costs 848.6 82.14",
+   "page": 26,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs unit",
+   "value": 82.14,
+   "quote": "Total Operating Costs 848.6 82.14",
+   "page": 26,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

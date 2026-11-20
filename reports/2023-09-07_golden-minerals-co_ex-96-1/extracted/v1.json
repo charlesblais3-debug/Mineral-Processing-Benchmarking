@@ -1,0 +1,371 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Velardeña",
+  "title": "Velardeña Project Technical Report Summary, Durango State, Mexico",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2023-06-01",
+  "effective_date_quote": "Estimated Mineral Resources with an effective date of June 1, 2023",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Mexico",
+  "region": "Durango",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 13
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "conventional flow sheet of crushing, grinding, and differential flotation",
+  "page": 57
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 338,
+   "unit": "t/d",
+   "quote": "operating capacity of 338 tpd with net capacity of 325 tpd",
+   "page": 57,
+   "statistic": "design",
+   "context": {
+    "phase": "Plant 1 operating capacity (net 325 tpd)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 359,
+   "unit": "g/t",
+   "quote": "Grade Ag (g/t) 359",
+   "page": 77,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "phase": "MII plan (Measured+Indicated+Inferred), 10.5-year LOM"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 5.44,
+   "unit": "g/t",
+   "quote": "Grade Au (g/t) 5.44",
+   "page": 77,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "phase": "MII plan (Measured+Indicated+Inferred), 10.5-year LOM"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.21,
+   "unit": "%",
+   "quote": "Grade Pb (%) 2.21",
+   "page": 77,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "phase": "MII plan (Measured+Indicated+Inferred), 10.5-year LOM"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.88,
+   "unit": "%",
+   "quote": "Grade Zn (%) 1.88",
+   "page": 77,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "phase": "MII plan (Measured+Indicated+Inferred), 10.5-year LOM"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 75.83,
+   "unit": "%",
+   "quote": "Ag Rec 75.83",
+   "page": 43,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 7.45,
+   "unit": "%",
+   "quote": "Au Rec 7.45",
+   "page": 43,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 63.01,
+   "unit": "%",
+   "quote": "Pb Rec 63.01",
+   "page": 43,
+   "metal": "Pb",
+   "statistic": "design",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 12.35,
+   "unit": "%",
+   "quote": "Zn Rec 12.35",
+   "page": 43,
+   "metal": "Zn",
+   "statistic": "design",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22.71,
+   "unit": "USD/oz",
+   "quote": "Silver (Ag) $22.71 /oz",
+   "page": 65,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1826,
+   "unit": "USD/oz",
+   "quote": "Gold (Au) $1,826.00 /oz",
+   "page": 65,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.02,
+   "unit": "USD/lb",
+   "quote": "Lead (Pb) $1.02 /lb",
+   "page": 65,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.31,
+   "unit": "USD/lb",
+   "quote": "Zinc (Zn) $1.31 /lb",
+   "page": 65,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 87.6,
+   "unit": "MUSD",
+   "quote": "after-tax NPV8% of $87.6M",
+   "page": 77,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Equipment (pre-production)",
+   "value": 763,
+   "quote": "Mine Equipment $763 $0 $763",
+   "page": 71,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Restart of existing Plant 1 / mine; pre-production capital treated as growth. Table 18-1 values in $ thousands (report: preproduction costs of $763k)."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Process Plant (pre-production)",
+   "value": 115,
+   "quote": "Process Plant $115 $0 $115",
+   "page": 71,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Restart of existing Plant 1 / mine; pre-production capital treated as growth. Table 18-1 values in $ thousands (report: preproduction costs of $763k)."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency (15%) (pre-production)",
+   "value": 132,
+   "quote": "Contingency (15%) $132 $586 $942",
+   "page": 71,
+   "l1": "contingency",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Restart of existing Plant 1 / mine; pre-production capital treated as growth. Table 18-1 values in $ thousands (report: preproduction costs of $763k)."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total pre-production",
+   "value": 1010,
+   "quote": "Total(1) $1,010 $4,491 $7,225",
+   "page": 71,
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Restart of existing Plant 1 / mine; pre-production capital treated as growth. Table 18-1 values in $ thousands (report: preproduction costs of $763k)."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital (LOM)",
+   "value": 3630,
+   "quote": "Sustaining Capital $0 $3,630 $3,630",
+   "page": 71,
+   "l1": "other",
+   "is_total": true,
+   "review_note": "Excludes the 15% contingency (586) shown only in the combined LOM column.",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Reclamation",
+   "value": 1500,
+   "quote": "Closure and Reclamation $1,500",
+   "page": 71,
+   "l1": "other",
+   "is_total": true,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 154407,
+   "quote": "Mining Costs $154,407 $126.99",
+   "page": 72,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 33921,
+   "quote": "Processing Costs $33,921 $27.90",
+   "page": 72,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and Overhead",
+   "value": 49375,
+   "quote": "G&A and Overhead $49,375 $40.61",
+   "page": 72,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contingency",
+   "value": 35655,
+   "quote": "Contingency $35,655 $29.32",
+   "page": 72,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 273358,
+   "quote": "Total1 $273,358 $224.82",
+   "page": 72,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mexico Precious Metals Royalty",
+   "value": 2679,
+   "quote": "Mexico Precious Metals Royalty $2,679 $2.20",
+   "page": 72,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "royalties_taxes",
+   "outside_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 126.99,
+   "quote": "Mining Costs $154,407 $126.99",
+   "page": 72,
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 27.9,
+   "quote": "Processing Costs $33,921 $27.90",
+   "page": 72,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and Overhead",
+   "value": 40.61,
+   "quote": "G&A and Overhead $49,375 $40.61",
+   "page": 72,
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contingency",
+   "value": 29.32,
+   "quote": "Contingency $35,655 $29.32",
+   "page": 72,
+   "basis_unit": "per_t_milled",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 224.82,
+   "quote": "Total1 $273,358 $224.82",
+   "page": 72,
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mexico Precious Metals Royalty",
+   "value": 2.2,
+   "quote": "Mexico Precious Metals Royalty $2,679 $2.20",
+   "page": 72,
+   "basis_unit": "per_t_milled",
+   "l1": "royalties_taxes",
+   "outside_total": true
+  }
+ ]
+}

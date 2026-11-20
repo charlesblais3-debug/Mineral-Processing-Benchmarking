@@ -1,0 +1,374 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Ying",
+  "title": "NI 43-101 Technical Report Update on the Ying Ag-Pb-Zn-Au Property in Henan Province, People’s Republic of China",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2026-05-18",
+  "effective_date_quote": "Effective date: 18 May 2026",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Pb",
+   "Zn",
+   "Au",
+   "Cu"
+  ],
+  "country": "China",
+  "region": "Henan",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "gravity"
+  ],
+  "quote": "comprise crushing, grinding, flotation of lead and zinc concentrates, and concentrate dewatering. A Knelson concentrator was also installed at Plant 2",
+  "page": 16
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4300,
+   "unit": "t/d",
+   "quote": "The combined, designed plant capacity is 4,300 tpd, and the actual, demonstrated capacity is 4,000 tpd",
+   "page": 16,
+   "statistic": "design",
+   "context": {
+    "phase": "current Plants 1 and 2"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 6500,
+   "unit": "t/d",
+   "quote": "each with two flotation lines and a combined design capacity of 6,500 tpd (3,500 tpd from Plant 2 and 3,000 tpd from Plant 3)",
+   "page": 16,
+   "statistic": "design",
+   "context": {
+    "phase": "from 2027, Plant 2 + Plant 3"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 173.64,
+   "unit": "g/t",
+   "quote": "165.59 173.64 Pb (%)",
+   "page": 265,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "note": "LOM plan"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.47,
+   "unit": "%",
+   "quote": "2.49 2.47 Cu (%)",
+   "page": 265,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "note": "LOM plan"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.79,
+   "unit": "%",
+   "quote": "1.08 0.79 Metal Production",
+   "page": 265,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "note": "LOM plan"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.89,
+   "unit": "%",
+   "quote": "Ying LOM average recoveries for economic assessment: Au – 86.43%, Ag – 91.89%, Pb – 91.01%, Zn – 63.81%, Cu – 91.85%.",
+   "page": 265,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.01,
+   "unit": "%",
+   "quote": "Ying LOM average recoveries for economic assessment: Au – 86.43%, Ag – 91.89%, Pb – 91.01%, Zn – 63.81%, Cu – 91.85%.",
+   "page": 265,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 63.81,
+   "unit": "%",
+   "quote": "Ying LOM average recoveries for economic assessment: Au – 86.43%, Ag – 91.89%, Pb – 91.01%, Zn – 63.81%, Cu – 91.85%.",
+   "page": 265,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.43,
+   "unit": "%",
+   "quote": "Ying LOM average recoveries for economic assessment: Au – 86.43%, Ag – 91.89%, Pb – 91.01%, Zn – 63.81%, Cu – 91.85%.",
+   "page": 265,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.85,
+   "unit": "%",
+   "quote": "Ying LOM average recoveries for economic assessment: Au – 86.43%, Ag – 91.89%, Pb – 91.01%, Zn – 63.81%, Cu – 91.85%.",
+   "page": 265,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 31.74,
+   "unit": "USD/oz",
+   "quote": "26.88 26.88 31.74 Pb ($/lb)",
+   "page": 266,
+   "metal": "Ag",
+   "context": {
+    "note": "LOM average net realized selling price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.9,
+   "unit": "USD/lb",
+   "quote": "Pb ($/lb) 0.90 0.90",
+   "page": 266,
+   "metal": "Pb",
+   "context": {
+    "note": "LOM average net realized selling price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.92,
+   "unit": "USD/lb",
+   "quote": "Zn ($/lb) 0.92 0.92",
+   "page": 266,
+   "metal": "Zn",
+   "context": {
+    "note": "LOM average net realized selling price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2475,
+   "unit": "USD/oz",
+   "quote": "2,380 2,380 2,475 Ag ($/oz)",
+   "page": 266,
+   "metal": "Au",
+   "context": {
+    "note": "LOM average net realized selling price"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1030,
+   "unit": "MUSD",
+   "quote": "NPV5% post-tax $M1,030",
+   "page": 267,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 7.0,
+   "unit": "CNY/USD",
+   "quote": "An exchange rate of United States Dollar (US$)1 = CNY 7.00 is assumed",
+   "page": 21,
+   "context": {
+    "pair": "CNY per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining capital (Table 22.2)",
+   "value": 178.29,
+   "quote": "-0.44 -0.37 -0.24 -178.29",
+   "page": 267,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Table 22.2 splits LOM capex into sustaining 178.29 and growth 186.56 (sum 364.85 = Table 1.5 total 364.84); Table 1.5 sub-lines (exploration/tunnelling, facilities, 'Investment Capex') do not map onto this split"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth capital (Table 22.2)",
+   "value": 186.56,
+   "quote": "-0.85 -186.56",
+   "page": 267,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Includes construction of Mill Plant 3, ore sorting and TSF3 per section 1.13 (total LOM capex US$365M)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 1442.1,
+   "quote": "Ying total Mining 75.43 1442.1",
+   "page": 25,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Shipping",
+   "value": 58.56,
+   "quote": "Shipping 3.06 58.56",
+   "page": 25,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling",
+   "value": 237.13,
+   "quote": "Milling 12.40 237.13",
+   "page": 25,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and product selling",
+   "value": 134.89,
+   "quote": "G&A and product selling 7.06 134.89",
+   "page": 25,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mineral Resources tax and royalty",
+   "value": 188.03,
+   "quote": "Mineral Resources tax and royalty 9.83 188.03",
+   "page": 25,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Government fee and other taxes",
+   "value": 67.24,
+   "quote": "3.52 67.24",
+   "page": 26,
+   "l1": "royalties_taxes",
+   "l2": "taxes",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Ying Opex",
+   "value": 2128,
+   "quote": "Total Ying Opex 111.30 2,128",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 75.43,
+   "quote": "Ying total Mining 75.43 1442.1",
+   "page": 25,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Shipping",
+   "value": 3.06,
+   "quote": "Shipping 3.06 58.56",
+   "page": 25,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling",
+   "value": 12.4,
+   "quote": "Milling 12.40 237.13",
+   "page": 25,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A and product selling",
+   "value": 7.06,
+   "quote": "G&A and product selling 7.06 134.89",
+   "page": 25,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mineral Resources tax and royalty",
+   "value": 9.83,
+   "quote": "Mineral Resources tax and royalty 9.83 188.03",
+   "page": 25,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Government fee and other taxes",
+   "value": 3.52,
+   "quote": "3.52 67.24",
+   "page": 26,
+   "l1": "royalties_taxes",
+   "l2": "taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Ying Opex",
+   "value": 111.3,
+   "quote": "Total Ying Opex 111.30 2,128",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

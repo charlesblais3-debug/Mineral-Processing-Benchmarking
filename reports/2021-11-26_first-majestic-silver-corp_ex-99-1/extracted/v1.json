@@ -1,0 +1,350 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Santa Elena",
+  "title": "Santa Elena Silver/Gold Mine, Sonora, Mexico, NI 43-101 Technical Report on Mineral Resource and Mineral Reserve Estimates",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-06-30",
+  "effective_date_quote": "Effective Date: June 30, 2021",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Sonora",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "tank_leach",
+   "merrill_crowe"
+  ],
+  "page": 28,
+  "quote": "The process is based on cyanide tank leaching and Merrill-Crowe smelting of fine-ground ore to produce silver-gold doré bars."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3000,
+   "unit": "t/d",
+   "quote": "The nominal plant capacity is for the processing of 3,000 tpd",
+   "page": 28,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 2450,
+   "unit": "t/d",
+   "quote": "Throughput levels averaged 2,150 tpd in 2020 and 2,450 in the first half of 2021",
+   "page": 28,
+   "statistic": "steady_state",
+   "basis": "actual",
+   "context": {
+    "phase": "H1 2021 actual average"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 94.0,
+   "unit": "%",
+   "quote": "Processing Recovery Santa Elena % 94.0 96.0",
+   "page": 278,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Santa Elena mine"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 96.0,
+   "unit": "%",
+   "quote": "Processing Recovery Santa Elena % 94.0 96.0",
+   "page": 278,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Santa Elena mine"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 64.0,
+   "unit": "%",
+   "quote": "Processing Recovery Ermitaño % 64.0 95.0",
+   "page": 278,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Ermitaño"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.0,
+   "unit": "%",
+   "quote": "Processing Recovery Ermitaño % 64.0 95.0",
+   "page": 278,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "Ermitaño"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22.5,
+   "unit": "USD/oz",
+   "quote": "base case metal price inputs of $22.50/oz Ag and $1,700/oz Au",
+   "page": 281,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1700,
+   "unit": "USD/oz",
+   "quote": "base case metal price inputs of $22.50/oz Ag and $1,700/oz Au",
+   "page": 281,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 64.8,
+   "unit": "MUSD",
+   "quote": "NPV After Tax (DCFAT @ 5%) (37.5%) $M 64.8",
+   "page": 279,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 34,
+   "unit": "%",
+   "quote": "IRR After Tax (37.5%) % 34%",
+   "page": 279
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Development (Santa Elena mine)",
+   "value": 23.8,
+   "quote": "Mining Development $ M $23.8 $7.4",
+   "page": 273,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Property, Plant & Equipment (Santa Elena mine)",
+   "value": 21.5,
+   "quote": "Property, Plant & Equipment $ M $21.5 $0.2",
+   "page": 273,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Costs (Santa Elena mine)",
+   "value": 45.3,
+   "quote": "Total Capital Costs $ M $45.3 $7.6",
+   "page": 273,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Shared Capital (Surface) (Ermitaño)",
+   "value": 23.7,
+   "quote": "Shared Capital (Surface) $ M $23.7 $1.1",
+   "page": 274,
+   "l1": "onsite_infra",
+   "review_note": "Ermitaño new-mine capital feeding the existing Santa Elena plant; report labels the consolidated 194.5 as sustaining capital.",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining Development (Ermitaño)",
+   "value": 46.2,
+   "quote": "Mining Development $ M $46.2 $10.6",
+   "page": 274,
+   "l1": "mining",
+   "l2": "ug_development",
+   "review_note": "Ermitaño new-mine capital feeding the existing Santa Elena plant.",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Property, Plant & Equipment (Ermitaño)",
+   "value": 79.3,
+   "quote": "Property, Plant & Equipment $ M $79.3 $20.4",
+   "page": 274,
+   "l1": "other",
+   "review_note": "Ermitaño new-mine capital feeding the existing Santa Elena plant.",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Capital Costs (Ermitaño)",
+   "value": 149.1,
+   "quote": "Total Capital Costs $ M $149.1 $32.1",
+   "page": 274,
+   "is_total": true,
+   "tolerance_pct": 2,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 57.6,
+   "quote": "Mining Cost $57.6",
+   "page": 276,
+   "l1": "mining",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 39.0,
+   "quote": "Processing Cost $39.0",
+   "page": 276,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Indirect Costs",
+   "value": 2.8,
+   "quote": "Indirect Costs $2.8",
+   "page": 276,
+   "l1": "ga",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Production Cost",
+   "value": 99.3,
+   "quote": "Total Production Cost $99.3",
+   "page": 276,
+   "is_subtotal": true,
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining, Selling Costs",
+   "value": 0.8,
+   "quote": "Refining, Selling Costs $0.8",
+   "page": 276,
+   "l1": "offsite",
+   "l2": "other",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 4.9,
+   "quote": "Royalties $4.9",
+   "page": 276,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 105.1,
+   "quote": "Total Cash Cost $105.1",
+   "page": 276,
+   "is_total": true,
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 287.6,
+   "quote": "Mining Cost $ M $287.6 $29.5",
+   "page": 277,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 194.7,
+   "quote": "Processing Costs $ M $194.7 $15.9",
+   "page": 277,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Indirect Costs",
+   "value": 14.1,
+   "quote": "Indirect Costs $ M $14.1 $1.1",
+   "page": 277,
+   "l1": "ga",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Production Cost",
+   "value": 496.3,
+   "quote": "Total Production Cost $ M $496.3 $46.6",
+   "page": 277,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Refining, Selling Costs",
+   "value": 4.0,
+   "quote": "Refining, Selling Costs $ M $4.0 $0.3",
+   "page": 277,
+   "l1": "offsite",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 24.5,
+   "quote": "Royalties $ M $24.5 $0.6",
+   "page": 277,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 524.9,
+   "quote": "Total Cash Cost $ M $524.9 $47.6",
+   "page": 277,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  }
+ ]
+}

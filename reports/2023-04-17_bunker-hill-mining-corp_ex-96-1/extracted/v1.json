@@ -1,0 +1,146 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bunker Hill",
+  "title": "S-K 1300 Technical Report Summary, Bunker Hill Mine Pre-Feasibility Study, Coeur D'Alene Mining District, Shoshone County, Idaho, USA",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "effective_date": "2022-08-29",
+  "effective_date_page": 1,
+  "effective_date_quote": "This report is effective as of August 29, 2022 for S-K 1300 purposes",
+  "primary_commodity": "Zn",
+  "by_products": [
+   "Pb",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Idaho",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "page": 105,
+  "quote": "jaw crusher. Jaw crusher discharge is set to a top size of approximately 2”. From the jaw crusher discharge, material will travel by conveyor to the secondary crushing circuit. A set of 2 Metso 7-60 Hydro-Cone cone crushers will be housed in the secondary crushing building. Both crushers will be utilized during the crushing campaigns so crushing activities can be limited to one shift per day. Should it be required, one crusher can remain in use for secondary crushing while the second maintenance is conducted on the other crusher. Screens for the oversize separation step are 4’x10’ and a return conveyor is planned for delivery back to the cone crusher for oversized material. From the secondary crushing circuit, material travels to the fine ore bin. Crushed material has a P 80 between 0.265” and 0.375”. The fine ore bin is to be located on the north end of the future process facility structure. Table 14-2 Crusher Configuration Bunker Hill Mining Corp. Technical Report Effective August 29, 2022 | Page 149 Figure 14-2 General View of Crusher Area Material from the fine ore bin is conveyed to a closed loop ball mill circuit for primary grinding. Primary grinding will reduce the material to a P 80 of 74 microns. Classification will take place via a multi hydrocyclone cluster that receives the ground material for classification with the oversize material in the cyclone underflow returning to the ball mill for further grinding. Classified material in the cyclone overflow will be sent to the lead rougher/scavenger stage of flotation. The initial flotation stage consists of a bank of lead rougher/scavenger cells. From this stage the rougher concentrate overflow component will be sent to a re-grind milling circuit, while the rougher tailings will be sent to the zinc flotation circuit. Lead rougher concentrate is sent to a regrind ball mill"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1800,
+   "unit": "st/d",
+   "quote": "The plant is designed to process 1,800 short tons per day (stpd)",
+   "page": 104,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 74,
+   "unit": "µm",
+   "quote": "Primary grinding will reduce the material to a P 80 of 74 microns",
+   "page": 105,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.2,
+   "unit": "%",
+   "quote": "net recoveries of 88.2% lead and 84.2% silver as the payable metals",
+   "page": 106,
+   "metal": "Pb",
+   "statistic": "design",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.2,
+   "unit": "%",
+   "quote": "net recoveries of 88.2% lead and 84.2% silver as the payable metals",
+   "page": 106,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85.1,
+   "unit": "%",
+   "quote": "The zinc concentrate assays 58% zinc, with a net recovery of 85.1% zinc",
+   "page": 106,
+   "metal": "Zn",
+   "statistic": "design",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.25,
+   "unit": "USD/lb",
+   "quote": "Projected long term metal prices of $1.25/lb zinc, $0.95/lb lead and $21.50/oz silver",
+   "page": 126,
+   "metal": "Zn",
+   "context": {
+    "note": "Section 1 summary (p.8) states $1.20/lb Zn, $1.00/lb Pb, $20.00/oz Ag"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.95,
+   "unit": "USD/lb",
+   "quote": "Projected long term metal prices of $1.25/lb zinc, $0.95/lb lead and $21.50/oz silver",
+   "page": 126,
+   "metal": "Pb",
+   "context": {
+    "note": "Section 1 summary (p.8) states $1.20/lb Zn, $1.00/lb Pb, $20.00/oz Ag"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21.5,
+   "unit": "USD/oz",
+   "quote": "Projected long term metal prices of $1.25/lb zinc, $0.95/lb lead and $21.50/oz silver",
+   "page": 126,
+   "metal": "Ag",
+   "context": {
+    "note": "Section 1 summary (p.8) states $1.20/lb Zn, $1.00/lb Pb, $20.00/oz Ag"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 0.77,
+   "unit": "USD/lb",
+   "quote": "all-in sustaining cost (“AISC”) of $0.77 per payable pound of zinc (net of by-products)",
+   "page": 8,
+   "metal": "Zn",
+   "context": {
+    "basis": "net of by-products"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial capital investment (restart)",
+   "value": 55,
+   "quote": "An initial capital investment of $55 million (including variable contingency) is required to restart the mine",
+   "page": 8,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Only the headline total is in text; capital and opex tables are images in the parsed report, so no line items. Mine restart on an existing site."
+  }
+ ]
+}

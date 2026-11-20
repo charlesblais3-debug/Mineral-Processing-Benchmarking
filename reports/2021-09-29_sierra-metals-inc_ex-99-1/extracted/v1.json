@@ -1,0 +1,450 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bolivar",
+  "title": "Updated Preliminary Economic Assessment, Bolivar Mine, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2019-12-31",
+  "effective_date_quote": "Effective Date: December 31,\n2019",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ag",
+   "Au",
+   "Fe"
+  ],
+  "country": "Mexico",
+  "region": "Chihuahua",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "concentration plant consisting of crushing, grinding, flotation, thickening, and filtration of the final concentrate",
+  "page": 5
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 10000,
+   "unit": "t/d",
+   "quote": "10,000 tpd in 2024",
+   "page": 5,
+   "statistic": "design",
+   "context": {
+    "phase": "10,000 tpd (2024) case incl. magnetite recovery project"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 5000,
+   "unit": "t/d",
+   "quote": "5,000 tpd (base case)",
+   "page": 5,
+   "statistic": "design",
+   "context": {
+    "phase": "PEA base case"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88,
+   "unit": "%",
+   "quote": "Copper Concentrate 88 78.7 62.43",
+   "page": 79,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 78.7,
+   "unit": "%",
+   "quote": "Copper Concentrate 88 78.7 62.43",
+   "page": 79,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 62.43,
+   "unit": "%",
+   "quote": "Copper Concentrate 88 78.7 62.43",
+   "page": 79,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.72,
+   "unit": "%",
+   "quote": "LOM Average grade - Cu % 0.72",
+   "page": 8,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 13.56,
+   "unit": "g/t",
+   "quote": "LOM Average grade – Ag g/t 13.56",
+   "page": 8,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.19,
+   "unit": "g/t",
+   "quote": "LOM Average grade - Au g/t 0.19",
+   "page": 8,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 25,
+   "unit": "%",
+   "quote": "Concentrate Grades Cu % 25",
+   "page": 8,
+   "metal": "Cu",
+   "context": {
+    "concentrate": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.05,
+   "unit": "USD/lb",
+   "quote": "Cu $/lb 2.65 2.86 2.89 2.93 3.05",
+   "page": 8,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20.0,
+   "unit": "USD/oz",
+   "quote": "Ag $/oz 19.83 24.12 22.22 22.47 20.0",
+   "page": 8,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1541,
+   "unit": "USD/oz",
+   "quote": "Au $/oz 1,755 1,907 1,782 1,737 1,541",
+   "page": 8,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 361,
+   "unit": "MUSD",
+   "quote": "Net Present Value (After Tax 8% Discount Rate) US$ M 361",
+   "page": 11,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development sustaining capital",
+   "value": 89940,
+   "quote": "Development sustaining capital 89,940",
+   "page": 7,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "ug_development",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ventilation sustaining capital",
+   "value": 4588,
+   "quote": "Ventilation sustaining capital 4,588",
+   "page": 7,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "infrastructure",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Development expansion capital",
+   "value": 5852,
+   "quote": "Development expansion capital 5,852",
+   "page": 7,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "ug_development",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment sustaining capital",
+   "value": 41200,
+   "quote": "Equipment sustaining capital 41,200",
+   "page": 7,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "equipment",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Exploration sustaining capital",
+   "value": 18800,
+   "quote": "Exploration sustaining capital 18,800",
+   "page": 7,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Exploration capital",
+   "value": 35897,
+   "quote": "Exploration capital 35,897",
+   "page": 7,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Backfill plant capital",
+   "value": 24884,
+   "quote": "Backfill plant capital 24,884",
+   "page": 7,
+   "l1": "mining",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "infrastructure",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant sustaining capital",
+   "value": 13940,
+   "quote": "Plant sustaining capital 13,940",
+   "page": 7,
+   "l1": "process",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "general",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Plant expansion capital",
+   "value": 67500,
+   "quote": "Plant expansion capital 67,500",
+   "page": 7,
+   "l1": "process",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "general",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings storage facility capital",
+   "value": 5369,
+   "quote": "Tailings storage facility capital 5,369",
+   "page": 7,
+   "l1": "tailings_water",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "tailings",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings storage facility sustaining capital",
+   "value": 1380,
+   "quote": "Tailings storage facility sustaining capital 1,380",
+   "page": 7,
+   "l1": "tailings_water",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "tailings",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Magnetite recovery project",
+   "value": 28172,
+   "quote": "Magnetite recovery project 28,172",
+   "page": 7,
+   "l1": "process",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l2": "recovery",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Additional studies capital",
+   "value": 2274,
+   "quote": "Additional studies capital 2,274",
+   "page": 7,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure capital",
+   "value": 5000,
+   "quote": "Closure capital 5,000",
+   "page": 7,
+   "l1": "other",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "review_note": "Classification of sustaining vs growth follows the report's own line names; Table 1-3 total (344,796) spans all types so no per-type total is marked."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 433099,
+   "quote": "Underground Mining 433,099 10.36 0.61 0.51",
+   "page": 7,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 225578,
+   "quote": "Process 225,578 5.37 0.32 0.27",
+   "page": 7,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 55409,
+   "quote": "G&A 55,409 1.33 0.08 0.07",
+   "page": 7,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Magnetite recovery",
+   "value": 290958,
+   "quote": "Magnetite recovery 290,958 6.96 0.41 0.34",
+   "page": 7,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Magnetite recovery project opex includes plant, yard, port and G&A components (Table 21-14)."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Backfill plant",
+   "value": 112383,
+   "quote": "Backfill plant 112,383 2.69 0.16 0.13",
+   "page": 7,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating",
+   "value": 1117427,
+   "quote": "Total Operating 1,117,427 26.73 1.56 1.32",
+   "page": 7,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 10.36,
+   "quote": "Underground Mining 433,099 10.36 0.61 0.51",
+   "page": 7,
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 5.37,
+   "quote": "Process 225,578 5.37 0.32 0.27",
+   "page": 7,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.33,
+   "quote": "G&A 55,409 1.33 0.08 0.07",
+   "page": 7,
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Magnetite recovery",
+   "value": 6.96,
+   "quote": "Magnetite recovery 290,958 6.96 0.41 0.34",
+   "page": 7,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Backfill plant",
+   "value": 2.69,
+   "quote": "Backfill plant 112,383 2.69 0.16 0.13",
+   "page": 7,
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating",
+   "value": 26.73,
+   "quote": "Total Operating 1,117,427 26.73 1.56 1.32",
+   "page": 7,
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

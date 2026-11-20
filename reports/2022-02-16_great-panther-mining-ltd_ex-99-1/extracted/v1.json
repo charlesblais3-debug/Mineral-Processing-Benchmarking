@@ -1,0 +1,83 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Topia",
+  "title": "NI 43-101 Report on the Topia Mine Mineral Resource Estimates as of March 31st, 2021",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2021-03-31",
+  "effective_date_quote": "Effective Date of the Report:\n■ | March 31, 2021",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Mexico",
+  "region": "Durango",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "A nominal 260tpd flotation concentrator with surface bins, crushing facilities, grinding mills, flotation cells, and a concentrate dewatering circuit",
+  "page": 10
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 260,
+   "unit": "t/d",
+   "quote": "A nominal 260tpd flotation concentrator",
+   "page": 10,
+   "statistic": "design"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant & Administration",
+   "value": 121,
+   "quote": "Plant & Administration $121",
+   "page": 76,
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "l2": "unallocated",
+   "review_note": "Combined plant and administration cost per tonne (Q1 2021 average cost of production); basis tonne not explicitly stated as milled."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 140,
+   "quote": "Mining $140",
+   "page": 76,
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "Per tonne of production, basis tonne not explicitly stated (assumed milled)."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Unit Costs",
+   "value": 261,
+   "quote": "Total Unit Costs $261",
+   "page": 76,
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure cost",
+   "value": 9.0,
+   "quote": "The cost for closure, adjusted for inflation, is estimated to be approximately US$9.0 million",
+   "page": 76,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}

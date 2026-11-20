@@ -1,0 +1,514 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "La Colorada Skarn",
+  "title": "NI 43-101 Technical Report for the La Colorada Property, Zacatecas, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2026-03-24",
+  "effective_date_quote": "Effective Date: March 24, 2026",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Zn",
+   "Pb"
+  ],
+  "country": "Mexico",
+  "region": "Zacatecas",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "pebble_crush",
+   "flotation"
+  ],
+  "page": 137,
+  "quote": "semi-autogenous grinding (SAG)-ball mill-pebble crusher (SABC) grinding circuit, followed by staged selective flotation to produce separate lead and zinc concentrates"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 15000,
+   "unit": "t/d",
+   "quote": "designed for an average throughput of approximately 15,000 tonnes per day (5.5 Mtpa), including 2,000 tonnes per day from the vein mine",
+   "page": 137,
+   "statistic": "design",
+   "context": {
+    "phase": "Skarn project new plant incl. 2,000 t/d vein mine"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 5.5,
+   "unit": "Mt/a",
+   "quote": "designed for an average throughput of approximately 15,000 tonnes per day (5.5 Mtpa), including 2,000 tonnes per day from the vein mine",
+   "page": 137,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 90,
+   "unit": "µm",
+   "quote": "This circuit will produce a grind size of 80% passing 90 µm for the flotation circuit.",
+   "page": 145,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 58,
+   "unit": "g/t",
+   "quote": "58 g/t Ag. LOM average recoveries",
+   "page": 138,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.79,
+   "unit": "%",
+   "quote": "approximately 1.79% Pb, 3.68% Zn, and",
+   "page": 137,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.68,
+   "unit": "%",
+   "quote": "approximately 1.79% Pb, 3.68% Zn, and",
+   "page": 137,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.7,
+   "unit": "%",
+   "quote": "approximately 87.7% for lead, 93.4% for zinc, and 89.7% for silver",
+   "page": 138,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.4,
+   "unit": "%",
+   "quote": "approximately 87.7% for lead, 93.4% for zinc, and 89.7% for silver",
+   "page": 138,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87.7,
+   "unit": "%",
+   "quote": "approximately 87.7% for lead, 93.4% for zinc, and 89.7% for silver",
+   "page": 138,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 45,
+   "unit": "USD/oz",
+   "quote": "US $45.00/oz of silver, US $2,800/t of zinc, and US $2,000/t of lead",
+   "page": 163,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2800,
+   "unit": "USD/t",
+   "quote": "US $45.00/oz of silver, US $2,800/t of zinc, and US $2,000/t of lead",
+   "page": 163,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/t",
+   "quote": "US $45.00/oz of silver, US $2,800/t of zinc, and US $2,000/t of lead",
+   "page": 163,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2600,
+   "unit": "MUSD",
+   "quote": "NPV (After-tax) in billions US $2.6",
+   "page": 164,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 17,
+   "unit": "%",
+   "quote": "IRR (After-tax) 17%",
+   "page": 164
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4,
+   "unit": "years",
+   "quote": "Pay-back period (After-tax, undiscounted) in years 4",
+   "page": 164
+  },
+  {
+   "parameter": "cash_cost",
+   "value": -15.89,
+   "unit": "USD/oz",
+   "quote": "Cash cost per payable silver ounce (LOM) US$ (15.89)",
+   "page": 164,
+   "metal": "Ag",
+   "context": {
+    "basis": "by-product credit, LOM; negative"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": -10.5,
+   "unit": "USD/oz",
+   "quote": "All-in sustaining cost per payable silver ounce (LOM) US$ (10.50)",
+   "page": 164,
+   "metal": "Ag",
+   "context": {
+    "basis": "by-product credit, LOM; negative"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Surface Infrastructure",
+   "value": 135,
+   "quote": "Surface Infrastructure 135",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing Plant",
+   "value": 277,
+   "quote": "Processing Plant 277",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Paste Backfill Plant",
+   "value": 66,
+   "quote": "Paste Backfill Plant 66",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial TSF Works",
+   "value": 42,
+   "quote": "Initial TSF Works 42",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Power",
+   "value": 34,
+   "quote": "Power 34",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Underground Access and Development",
+   "value": 622,
+   "quote": "Underground Access and Development 622",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Equipment",
+   "value": 100,
+   "quote": "Mining Equipment 100",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Dewatering",
+   "value": 19,
+   "quote": "Dewatering 19",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Underground Infrastructure",
+   "value": 153,
+   "quote": "Underground Infrastructure 153",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct Costs",
+   "value": 1448,
+   "quote": "Subtotal Direct Costs 1,448",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect Costs",
+   "value": 176,
+   "quote": "Indirect Costs 176",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal Direct and Indirect Costs",
+   "value": 1625,
+   "quote": "Subtotal Direct and Indirect Costs 1,625",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 323,
+   "quote": "Contingency 323",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 1947,
+   "quote": "Total 1,947",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Initial TSF Works",
+   "value": 152,
+   "quote": "Initial TSF Works 152",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Surface",
+   "value": 152,
+   "quote": "Total Surface 152",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Access and Development",
+   "value": 254,
+   "quote": "Underground Access and Development 254",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Equipment",
+   "value": 574,
+   "quote": "Mining Equipment 574",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Paste Backfill Distribution System",
+   "value": 20,
+   "quote": "Paste Backfill Distribution System 20",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Dewatering",
+   "value": 32,
+   "quote": "Dewatering 32",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Infrastructure",
+   "value": 102,
+   "quote": "Underground Infrastructure 102",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Underground",
+   "value": 982,
+   "quote": "Total Underground 982",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 1134,
+   "quote": "Total Sustaining Capital 1,134",
+   "page": 159,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Table 24-13 total 1,134 vs 1.25 billion sustaining (incl. capital leases) in Tables 24-10/24-17; table lines used"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure costs",
+   "value": 104,
+   "quote": "The closure costs are US $104 million",
+   "page": 158,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 8845,
+   "quote": "Mining 8,845 54.49",
+   "page": 162,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per t",
+   "value": 54.49,
+   "quote": "Mining 8,845 54.49",
+   "page": 162,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process and Tailings",
+   "value": 1377,
+   "quote": "Process and Tailings 1,377 8.48",
+   "page": 162,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process and Tailings per t",
+   "value": 8.48,
+   "quote": "Process and Tailings 1,377 8.48",
+   "page": 162,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1203,
+   "quote": "G&A 1,203 7.41",
+   "page": 162,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A per t",
+   "value": 7.41,
+   "quote": "G&A 1,203 7.41",
+   "page": 162,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 11425,
+   "quote": "Total Operating Cost 11,425 70.38",
+   "page": 162,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost per t",
+   "value": 70.38,
+   "quote": "Total Operating Cost 11,425 70.38",
+   "page": 162,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport, Shipping, and Refining Cost",
+   "value": 1324,
+   "quote": "Transport, Shipping, and Refining Cost 1,324 8.16",
+   "page": 162,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "offsite",
+   "outside_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport, Shipping, and Refining Cost per t",
+   "value": 8.16,
+   "quote": "Transport, Shipping, and Refining Cost 1,324 8.16",
+   "page": 162,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "offsite",
+   "outside_total": true
+  }
+ ]
+}

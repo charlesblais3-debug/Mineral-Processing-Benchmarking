@@ -1,0 +1,576 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Panuco",
+  "title": "Technical Report - Updated Mineral Resource Estimate and Preliminary Economic Assessment, Panuco Ag-Au-Pb-Zn Project, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2024-09-09",
+  "effective_date_quote": "Effective Date: September 9, 2024",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Mexico",
+  "region": "Sinaloa",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "tank_leach",
+   "merrill_crowe",
+   "flotation",
+   "regrind"
+  ],
+  "page": 244,
+  "quote": "through crushing, grinding cyanide leaching and precious metal recovery via the Merrill Crowe process and converted to bulk flotation with concentrate regrind and concentrate leach in Year 4"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.2,
+   "unit": "Mt/a",
+   "quote": "Plant capacity Mt/a 1.2 1.5",
+   "page": 244,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1 (Years 1-3)"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.5,
+   "unit": "Mt/a",
+   "quote": "Plant capacity Mt/a 1.2 1.5",
+   "page": 244,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 (Year 4+)"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 3300,
+   "unit": "t/d",
+   "quote": "based on 3,300 t/d in Phase 1 and 4,000 t/d in Phase 2 mill",
+   "page": 306,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 1 (Years 1-3)"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 4000,
+   "unit": "t/d",
+   "quote": "based on 3,300 t/d in Phase 1 and 4,000 t/d in Phase 2 mill",
+   "page": 306,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 (Year 4+)"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 11,
+   "unit": "years",
+   "quote": "Life of mine years 11",
+   "page": 244
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Grinding availability % 92",
+   "page": 244,
+   "statistic": "design"
+  },
+  {
+   "parameter": "axb",
+   "value": 31,
+   "unit": "",
+   "quote": "JK Axb parameter, design - 31",
+   "page": 244,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 18.3,
+   "unit": "kWh/t",
+   "quote": "Bond ball mill work index, design kWh/t 18.3",
+   "page": 244,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill work index (design value)"
+   }
+  },
+  {
+   "parameter": "ai",
+   "value": 0.453,
+   "unit": "g",
+   "quote": "Bond abrasion index, design g 0.453",
+   "page": 244,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 70,
+   "unit": "µm",
+   "quote": "Grinding circuit product size, P 80 µm 70",
+   "page": 244,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 20,
+   "unit": "µm",
+   "quote": "Bulk flotation regrind mill product size, P 80 microns - 20",
+   "page": 244,
+   "statistic": "design",
+   "context": {
+    "phase": "Phase 2 (Year 4+)"
+   }
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 14.3,
+   "unit": "%",
+   "quote": "Bulk flotation mass pull, design % plant feed - 14.3",
+   "page": 244,
+   "statistic": "design",
+   "context": {
+    "product": "bulk flotation concentrate (Phase 2)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 228,
+   "unit": "g/t",
+   "quote": "Head Grade - Ag g/t 228",
+   "page": 36,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.9,
+   "unit": "g/t",
+   "quote": "Head Grade - Au g/t 1.90",
+   "page": 36,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 92.2,
+   "unit": "%",
+   "quote": "Recovery Rate - Ag to doré % 92.2%",
+   "page": 36,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "doré"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.8,
+   "unit": "%",
+   "quote": "Recovery Rate - Au to doré % 93.8%",
+   "page": 36,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "doré"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 26.0,
+   "unit": "USD/oz",
+   "quote": "Silver Price US$/oz 26.00",
+   "page": 36,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1975,
+   "unit": "USD/oz",
+   "quote": "Gold Price US$/oz 1,975",
+   "page": 36,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 1137,
+   "unit": "MUSD",
+   "quote": "Post-tax NPV @ 5% US$M 1,137",
+   "page": 36,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 85.7,
+   "unit": "%",
+   "quote": "Post-tax IRR % 85.7",
+   "page": 36
+  },
+  {
+   "parameter": "payback_years",
+   "value": 0.8,
+   "unit": "years",
+   "quote": "Post-tax Payback years 0.8",
+   "page": 36
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 7.98,
+   "unit": "USD/oz",
+   "quote": "Cash Cost* US$/oz AgEq 7.98",
+   "page": 36,
+   "metal": "Ag",
+   "context": {
+    "basis": "AgEq, co-product"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 9.4,
+   "unit": "USD/oz",
+   "quote": "All-in Sustaining Cost** US$/oz AgEq 9.40",
+   "page": 36,
+   "metal": "Ag",
+   "context": {
+    "basis": "AgEq, co-product"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine",
+   "value": 64.5,
+   "quote": "Mine 64.5 207.7 - 272.3",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 63.2,
+   "quote": "Process Plant 63.2 - 7.2 70.4",
+   "page": 35,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Additional Process Facilities",
+   "value": 8.7,
+   "quote": "Additional Process Facilities 8.7 22.4 - 31.1",
+   "page": 35,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "review_note": "Additional process facilities = TSF (initial) and paste plant (sustaining) per Tables 21-4.",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "On-Site Infrastructure",
+   "value": 13.5,
+   "quote": "On-Site Infrastructure 13.5 - - 13.5",
+   "page": 35,
+   "l1": "onsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Off-Site Infrastructure",
+   "value": 0.8,
+   "quote": "Off-Site Infrastructure 0.8 - - 0.8",
+   "page": 35,
+   "l1": "offsite_infra",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Directs",
+   "value": 150.7,
+   "quote": "Total Directs 150.7 230.2 7.2 388.2",
+   "page": 35,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Indirects",
+   "value": 6.1,
+   "quote": "Project Indirects 6.1 - 0.6 6.7",
+   "page": 35,
+   "l1": "indirects",
+   "l2": "construction",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Delivery",
+   "value": 12.9,
+   "quote": "Project Delivery 12.9 - 0.7 13.7",
+   "page": 35,
+   "l1": "indirects",
+   "l2": "epcm",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Indirect",
+   "value": 19.0,
+   "quote": "Total Indirect 19.0 - 1.3 20.4",
+   "page": 35,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Cost",
+   "value": 7.5,
+   "quote": "Owner's Cost 7.5 - 0.4 7.9",
+   "page": 35,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Provisions (Contingency incl. closure)",
+   "value": 46.3,
+   "quote": "Provisions (Contingency incl. closure) 46.3 31.8 2.1 80.2",
+   "page": 35,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Totals",
+   "value": 223.5,
+   "quote": "Project Totals 223.5 262.0 11.1 496.7",
+   "page": 35,
+   "is_total": true,
+   "review_note": "Table 1-4 shows 223.5; Table 21-1 and Table 1-6 show 223.6 / 224 (rounding).",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 207.7,
+   "quote": "Mine 64.5 207.7 - 272.3",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Additional Process Facilities",
+   "value": 22.4,
+   "quote": "Additional Process Facilities 8.7 22.4 - 31.1",
+   "page": 35,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Provisions (Contingency incl. closure)",
+   "value": 31.8,
+   "quote": "Provisions (Contingency incl. closure) 46.3 31.8 2.1 80.2",
+   "page": 35,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Project Totals",
+   "value": 262.0,
+   "quote": "Project Totals 223.5 262.0 11.1 496.7",
+   "page": 35,
+   "is_total": true,
+   "review_note": "Table 1-6 states sustaining capital 230 excl. closure and salvage.",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Process Plant (expansion)",
+   "value": 7.2,
+   "quote": "Process Plant 63.2 - 7.2 70.4",
+   "page": 35,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Project Indirects (expansion)",
+   "value": 0.6,
+   "quote": "Project Indirects 6.1 - 0.6 6.7",
+   "page": 35,
+   "l1": "indirects",
+   "l2": "construction",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Project Delivery (expansion)",
+   "value": 0.7,
+   "quote": "Project Delivery 12.9 - 0.7 13.7",
+   "page": 35,
+   "l1": "indirects",
+   "l2": "epcm",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Owner's Cost (expansion)",
+   "value": 0.4,
+   "quote": "Owner's Cost 7.5 - 0.4 7.9",
+   "page": 35,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Provisions (expansion)",
+   "value": 2.1,
+   "quote": "Provisions (Contingency incl. closure) 46.3 31.8 2.1 80.2",
+   "page": 35,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Project Totals (expansion)",
+   "value": 11.1,
+   "quote": "Project Totals 223.5 262.0 11.1 496.7",
+   "page": 35,
+   "is_total": true,
+   "tolerance_pct": 2,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 32,
+   "quote": "Closure Costs US$M 32",
+   "page": 36,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 47.21,
+   "quote": "Mining 64.7 47.21",
+   "page": 35,
+   "l1": "mining",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process (incl. TSF)",
+   "value": 21.96,
+   "quote": "Process 29.7 21.96",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 7.24,
+   "quote": "G&A 9.9 7.24",
+   "page": 35,
+   "l1": "ga",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 76.4,
+   "quote": "Total 104.3 76.40",
+   "page": 35,
+   "is_total": true,
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 64.7,
+   "quote": "Mining 64.7 47.21",
+   "page": 35,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process (incl. TSF)",
+   "value": 29.7,
+   "quote": "Process 29.7 21.96",
+   "page": 35,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 9.9,
+   "quote": "G&A 9.9 7.24",
+   "page": 35,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 104.3,
+   "quote": "Total 104.3 76.40",
+   "page": 35,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "per_year"
+  }
+ ]
+}

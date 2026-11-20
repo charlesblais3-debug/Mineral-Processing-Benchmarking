@@ -1,0 +1,179 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Caylloma",
+  "title": "Fortuna Silver Mines Inc.: Caylloma Mine, Caylloma District, Peru Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2023",
+  "primary_commodity": "Zn",
+  "by_products": [
+   "Ag",
+   "Pb",
+   "Au"
+  ],
+  "country": "Peru",
+  "region": "Arequipa",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "The Bateas processing plant is a typical flotation operation and consists of five stages: crushing; milling; flotation; thickening and filtering and tailings disposal.",
+  "page": 115
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1500,
+   "unit": "t/d",
+   "quote": "The plant has a 1,500 tpd throughput rate.",
+   "page": 16,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 83,
+   "unit": "g/t",
+   "quote": "Ag (g/t) 64 54 60 125 86 83",
+   "page": 109,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.13,
+   "unit": "g/t",
+   "quote": "Au (g/t) 0.18 0.15 0.16 0.29 0.10 0.13",
+   "page": 109,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.78,
+   "unit": "%",
+   "quote": "Pb (%) 2.53 2.04 1.80 1.96 2.25 2.78",
+   "page": 109,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 4.04,
+   "unit": "%",
+   "quote": "Zn (%) 3.87 3.67 3.58 3.41 3.93 4.04",
+   "page": 109,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82,
+   "unit": "%",
+   "quote": "82 81 82 83 86 82 Au (%)",
+   "page": 110,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 25,
+   "unit": "%",
+   "quote": "Au (%) 17 18 25 18 55 25",
+   "page": 110,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89,
+   "unit": "%",
+   "quote": "Pb (%) 90 88 88 89 88 89",
+   "page": 110,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88,
+   "unit": "%",
+   "quote": "Zn (%) 89 88 89 89 88 88",
+   "page": 110,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21,
+   "unit": "USD/oz",
+   "quote": "US$ 21/oz for silver, US$ 1,600/oz for gold, US$ 2,000/t for lead, and US$ 2,600/t for zinc",
+   "page": 13,
+   "metal": "Ag",
+   "context": {
+    "note": "Mineral Reserve NSR price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "quote": "US$ 21/oz for silver, US$ 1,600/oz for gold, US$ 2,000/t for lead, and US$ 2,600/t for zinc",
+   "page": 13,
+   "metal": "Au",
+   "context": {
+    "note": "Mineral Reserve NSR price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/t",
+   "quote": "US$ 21/oz for silver, US$ 1,600/oz for gold, US$ 2,000/t for lead, and US$ 2,600/t for zinc",
+   "page": 13,
+   "metal": "Pb",
+   "context": {
+    "note": "Mineral Reserve NSR price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2600,
+   "unit": "USD/t",
+   "quote": "US$ 21/oz for silver, US$ 1,600/oz for gold, US$ 2,000/t for lead, and US$ 2,600/t for zinc",
+   "page": 13,
+   "metal": "Zn",
+   "context": {
+    "note": "Mineral Reserve NSR price"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 3.6,
+   "unit": "PEN/USD",
+   "quote": "exchange rates were estimated at S/3.60 (Peruvian Soles) to one US dollar",
+   "page": 148,
+   "context": {
+    "pair": "PEN per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure budget (2024-2028)",
+   "value": 16060,
+   "quote": "Budget (US$000) 471 71 2,098 1,896 11,524 16,060",
+   "page": 147,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "is_total": true
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Bolañitos",
+  "title": "NI 43-101 Technical Report: Updated Mineral Resource and Reserve Estimates for the Bolañitos Project, Guanajuato State, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2022-11-09",
+  "effective_date_quote": "Effective Date: November 9, 2022",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Mexico",
+  "region": "Guanajuato",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 2,
+  "review_note": "Primary commodity Ag follows the report's AgEq basis; its 2021 production (24.7 koz Au vs 483 koz Ag) implies gold brings most revenue, so Au is arguable."
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "There is a separate line including rougher and scavenger flotation cells for each ball mill.",
+  "page": 186
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1100,
+   "unit": "t/d",
+   "quote": "The plant processing rate is a planned 1,100 t/d.",
+   "page": 183,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 1163,
+   "unit": "t/d",
+   "quote": "Average throughput in 2021 was 1,163 tonnes per operating day",
+   "page": 183,
+   "statistic": "steady_state",
+   "basis": "actual",
+   "context": {
+    "phase": "2021 actual per operating day"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 42,
+   "unit": "g/t",
+   "quote": "milled 418,514t of ore grading 42 g/t silver and 2.02 g/t gold",
+   "page": 183,
+   "metal": "Ag",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "2021 plant feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.02,
+   "unit": "g/t",
+   "quote": "milled 418,514t of ore grading 42 g/t silver and 2.02 g/t gold",
+   "page": 183,
+   "metal": "Au",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "2021 plant feed"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87,
+   "unit": "%",
+   "quote": "Silver and gold recoveries averaged 87% and 90.7%, respectively.",
+   "page": 183,
+   "metal": "Ag",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "2021 plant, to concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.7,
+   "unit": "%",
+   "quote": "Silver and gold recoveries averaged 87% and 90.7%, respectively.",
+   "page": 183,
+   "metal": "Au",
+   "statistic": "single",
+   "basis": "actual",
+   "context": {
+    "ore_type": "2021 plant, to concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85.7,
+   "unit": "%",
+   "quote": "Silver Recovery: 85.7%",
+   "page": 169,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "ore_type": "reserve calculation parameter"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90.1,
+   "unit": "%",
+   "quote": "Gold Recovery: 90.1%",
+   "page": 169,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "reserve calculation parameter"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 21.8,
+   "unit": "USD/oz",
+   "quote": "Silver Price: US $21.80 /oz",
+   "page": 169,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1735,
+   "unit": "USD/oz",
+   "quote": "Gold Price: US $1,735 /oz",
+   "page": 169,
+   "metal": "Au"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": -19.77,
+   "unit": "USD/oz",
+   "quote": "was negative US$19.77/oz",
+   "page": 197,
+   "metal": "Ag",
+   "context": {
+    "basis": "net of gold credits and royalties, 2021 actual"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Development",
+   "value": 9714199,
+   "quote": "Mine Development 9,714,199 8,443,082",
+   "page": 197,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Equipment",
+   "value": 5656557,
+   "quote": "Mine Equipment 5,656,557 3,423,000",
+   "page": 197,
+   "l1": "mining",
+   "l2": "equipment",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Plant Equipment/Infrastructure",
+   "value": 2247134,
+   "quote": "Plant Equipment/Infrastructure 2,247,134 4,834,200",
+   "page": 197,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vehicles",
+   "value": 361505,
+   "quote": "Vehicles 361,505 418,000",
+   "page": 197,
+   "l1": "other",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Office and IT",
+   "value": 352229,
+   "quote": "Office and IT 352,229 313,100",
+   "page": 197,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Buildings",
+   "value": 1082528,
+   "quote": "Buildings 1,082,528 1,109,449",
+   "page": 197,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 19414152,
+   "quote": "Total 19,414,152 18,540,831",
+   "page": 197,
+   "is_total": true,
+   "review_note": "Actual 2021 capital (table caption says 2020/2021; column header is Actual 2021).",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 40.94,
+   "quote": "Mining $37.00 $40.94 $47.53",
+   "page": 197,
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "Actual 2021 column; 2022 planned was 47.53."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 21.25,
+   "quote": "Processing $18.38 $21.25 $20.80",
+   "page": 197,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 17.18,
+   "quote": "G&A $14.73 $17.18 $19.01",
+   "page": 197,
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 79.37,
+   "quote": "Total $70.11 $79.37 $87.34",
+   "page": 197,
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

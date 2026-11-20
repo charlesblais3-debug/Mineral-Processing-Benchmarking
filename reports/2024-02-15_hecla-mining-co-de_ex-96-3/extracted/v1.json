@@ -1,0 +1,227 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Casa Berardi",
+  "title": "Technical Report Summary on the Casa Berardi Mine, Northwestern Québec, Canada",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_page": 3,
+  "effective_date_quote": "EFFECTIVE DATE: December 31, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "Québec",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "ilr",
+   "elution_ew",
+   "cil",
+   "cyanide_detox"
+  ],
+  "page": 238,
+  "quote": "The gravity concentrate flows to an intensive leach reactor (ILR) for leaching. To promote gold leaching and control the pH, hydrogen peroxide, cyanide, and caustic soda are added to the ILR unit from their respective tanks using dosing pumps. The high-grade pregnant gold solution from the ILR unit is pumped to the electrowinning buffer tank and the tailings report to the ball mill feed chute. 14.2.4 CIL Circuit The production thickener is fed the cyclone overflow material after passing through the trash screen. Process water recycled from the tailings pond is added to the thickener feed well. The thickener overflow feeds the mill water tank for use in the process and the thickener underflow is pumped to the first CIL tank. CIL feed is sampled on the production thickener underflow stream. A CIL circuit is used to recover gold instead of a carbon-in-pulp circuit to hinder preg-robbing due to graphite in the ore and to maximize gold recovery by placing the gold in solution in contact with activated carbon immediately. The circuit comprises seven CIL tanks in series. To promote gold leaching, a cyanide solution and lead nitrate is added to the #1 CIL tank. Compressed air is added to each CIL tank. Gold is leached from the ore and adsorbed onto activated carbon. Carbon is added in the #7 CIL tank and is pumped in counter-current fashion from the #7 CIL tank to the #1 CIL tank. Screens at the discharge of each CIL tank prevent carbon from overflowing from tank to tank with the pulp. The #7 CIL tank overflows onto a safety screen to recover any fugitive carbon. Recovered carbon is bagged to return in the circuit or sent to a refinery to recover the gold. The safety screen undersize is sampled and reports to the mixing tank. Fine quicklime is added to the mixing tank to prepare for cyanide destruction. Residual pulp from the CIL mixing tank is pumped to the two cyanide destruction tanks in series"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3500,
+   "unit": "t/d",
+   "quote": "The processing plant will average a throughput of 3,500tpd over the LOM.",
+   "page": 234,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 3730,
+   "unit": "t/d",
+   "quote": "The Casa Berardi mill processes 3,730tpd, with future maximum production of 4,400tpd.",
+   "page": 236,
+   "statistic": "design",
+   "context": {
+    "phase": "current mill rate; maximum 4,400 t/d"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.75,
+   "unit": "g/t",
+   "quote": "Gold grade: 2.75g/t Au",
+   "page": 287,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 81.5,
+   "unit": "%",
+   "quote": "Average LOM Plant Recovery 81.5%",
+   "page": 287,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1950,
+   "unit": "USD/oz",
+   "quote": "a flat long-term price of US$1,950/oz Au",
+   "page": 288,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 356,
+   "unit": "MUSD",
+   "quote": "pre-tax and after-tax NPV, using a 5% discount rate, of $428 million and $356 million, respectively",
+   "page": 289,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ore Processing",
+   "value": 90123,
+   "quote": "Ore Processing US$(000) 90,123",
+   "page": 282,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Major Projects",
+   "value": 10352,
+   "quote": "Major Projects US$(000) 10,352",
+   "page": 282,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Administration",
+   "value": 387,
+   "quote": "Administration US$(000) 387",
+   "page": 282,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Stripping, Mine infrastructure",
+   "value": 302754,
+   "quote": "Mine Stripping, Mine infrastructure US$(000) 302,754",
+   "page": 282,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile Equipment",
+   "value": 94813,
+   "quote": "Mobile Equipment US$(000) 94,813",
+   "page": 282,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Operating Capital Costs",
+   "value": 498428,
+   "quote": "Total Operating Capital Costs USD$ US$(000) 498,428",
+   "page": 282,
+   "is_total": true,
+   "review_note": "LOM operating capital of an operating mine (no growth split stated); salvage value -19.7M not netted",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation & Closure",
+   "value": 21561,
+   "quote": "Reclamation & Closure US$(000) 21,561",
+   "page": 283,
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining",
+   "value": 26.45,
+   "quote": "Open Pit mining: US$26.45/t ore mined",
+   "page": 288,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground mining",
+   "value": 106.23,
+   "quote": "Underground mining: US$106.23/t ore mined",
+   "page": 288,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 22.96,
+   "quote": "Processing: US$22.96/t ore milled",
+   "page": 288,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 4.99,
+   "quote": "G&A US$4.99/t ore milled",
+   "page": 288,
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit operating costs",
+   "value": 55.45,
+   "quote": "Total unit operating costs US$55.45/t ore milled",
+   "page": 288,
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Mining per tonne milled not stated (mining given per tonne mined)",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "LOM total operating costs",
+   "value": 797.6,
+   "quote": "LOM total operating costs US$797.6 million",
+   "page": 288,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true,
+   "partial_breakdown": true
+  }
+ ]
+}

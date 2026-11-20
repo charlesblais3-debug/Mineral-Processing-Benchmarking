@@ -1,0 +1,392 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Cusi",
+  "title": "Preliminary Economic Assessment for the Cusi Mine, Chihuahua State, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2020-08-31",
+  "effective_date_quote": "Effective Date: August 31, 2020",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Au",
+   "Pb",
+   "Zn"
+  ],
+  "country": "Mexico",
+  "region": "Chihuahua",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "a conventional concentration plant including crushing, grinding, flotation, dewatering of final concentrate",
+  "page": 4
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2400,
+   "unit": "t/d",
+   "quote": "Increases from 1,200 tpd to 2,400 tpd gradually",
+   "page": 2,
+   "statistic": "design",
+   "context": {
+    "phase": "2,400 tpd (2024) recommended case"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 1200,
+   "unit": "t/d",
+   "quote": "1,200 (base case)",
+   "page": 2,
+   "statistic": "design",
+   "context": {
+    "phase": "base case, constant rate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87,
+   "unit": "%",
+   "quote": "87% Ag, 57% Au, 86% Pb, 51% Zn",
+   "page": 5,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "ore_type": "cut-off grade assumption from production averages"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 57,
+   "unit": "%",
+   "quote": "87% Ag, 57% Au, 86% Pb, 51% Zn",
+   "page": 5,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "cut-off grade assumption from production averages"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86,
+   "unit": "%",
+   "quote": "87% Ag, 57% Au, 86% Pb, 51% Zn",
+   "page": 5,
+   "metal": "Pb",
+   "statistic": "design",
+   "context": {
+    "ore_type": "cut-off grade assumption from production averages"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 51,
+   "unit": "%",
+   "quote": "87% Ag, 57% Au, 86% Pb, 51% Zn",
+   "page": 5,
+   "metal": "Zn",
+   "statistic": "design",
+   "context": {
+    "ore_type": "cut-off grade assumption from production averages"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.54,
+   "unit": "%",
+   "quote": "Average grades of Zn 0.54 %, Pb 0.40%",
+   "page": 109,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.4,
+   "unit": "%",
+   "quote": "Average grades of Zn 0.54 %, Pb 0.40%",
+   "page": 109,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.1,
+   "unit": "g/t",
+   "quote": "Ag 4.8 oz/t and Au 0.1 g/t",
+   "page": 109,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20.0,
+   "unit": "USD/oz",
+   "quote": "Silver Price US$/oz 20.0",
+   "page": 5,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1541,
+   "unit": "USD/oz",
+   "quote": "Gold Price US$/oz 1,541.00",
+   "page": 5,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 0.91,
+   "unit": "USD/lb",
+   "quote": "Lead Price US$/lb 0.91",
+   "page": 5,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.07,
+   "unit": "USD/lb",
+   "quote": "Zinc Price US$/lb 1.07",
+   "page": 5,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 81,
+   "unit": "MUSD",
+   "quote": "after-tax NPV (8%) at 2,400 tpd (in 2024) of US$ 81 M",
+   "page": 110,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 206263,
+   "quote": "Mine 206,263 12,715 16,148",
+   "page": 107,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant",
+   "value": 132065,
+   "quote": "Plant 132,065 7,270 9,233",
+   "page": 107,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 13991,
+   "quote": "G&A 13,991 1,031 1,090",
+   "page": 107,
+   "l1": "ga",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 352319,
+   "quote": "Total 352,319 21,016 26,471",
+   "page": 107,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost per tonne milled",
+   "value": 35.24,
+   "quote": "total operating cost of US$ 35.24 per tonne milled",
+   "page": 110,
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "multiplier": ""
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development",
+   "value": 30317,
+   "quote": "Development 30,317 2,028",
+   "page": 107,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment",
+   "value": 15336,
+   "quote": "Equipment 15,336 570 5,013",
+   "page": 107,
+   "l1": "mining",
+   "l2": "equipment",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Personnel transportation",
+   "value": 600,
+   "quote": "transportation 600 200",
+   "page": 107,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ventilation",
+   "value": 6236,
+   "quote": "Ventilation 6,236 630 756",
+   "page": 107,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Environmental",
+   "value": 915,
+   "quote": "Environmental 915 82 82",
+   "page": 107,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Seismograph Study and Instrumentation",
+   "value": 250,
+   "quote": "Instrumentation 250 150 50",
+   "page": 107,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Geomechanical Model Study",
+   "value": 500,
+   "quote": "Study 500 - 250",
+   "page": 107,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Fuel Distribution System",
+   "value": 300,
+   "quote": "System 300 300",
+   "page": 107,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capex",
+   "value": 54453,
+   "quote": "Total 54,453 3,960 8,834",
+   "page": 107,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailing Dam",
+   "value": 15997,
+   "quote": "Dam 15,997 1,600 3,199",
+   "page": 107,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Concentrator Plant to increase prod.",
+   "value": 12687,
+   "quote": "Plant to increase prod. 12,687 6,343",
+   "page": 107,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Ventilation and Services",
+   "value": 3833,
+   "quote": "and Services 3,833 387",
+   "page": 107,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Studies (Increase production)",
+   "value": 500,
+   "quote": "Studies (Increase production) 500 250 250",
+   "page": 107,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Studies (geometallurgical)",
+   "value": 450,
+   "quote": "Studies (geometallurgical) 450 150 150",
+   "page": 107,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Closure (within growth capex table)",
+   "value": 2988,
+   "quote": "Closure 2,988 692 691",
+   "page": 107,
+   "l1": "other",
+   "review_note": "Closure listed inside the growth capex table in the report; kept here so lines sum to the stated total.",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total growth capex",
+   "value": 36455,
+   "quote": "Total 36,455 8,730 10,407",
+   "page": 107,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "k"
+  }
+ ]
+}

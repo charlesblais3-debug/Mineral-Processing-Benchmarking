@@ -1,0 +1,266 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Coimolache",
+  "title": "Technical Report Summary on the Coimolache Mine, Peru",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2023-12-31",
+  "effective_date_quote": "Effective Date:  December 31, 2023",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Peru",
+  "region": "Cajamarca",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "adr",
+   "merrill_crowe"
+  ],
+  "quote": "Coimolache’s processing facilities consist of a ROM heap leaching operation on two leach pads,  associated adsorption-desorption-recovery (ADR) and Merrill-Crowe plants",
+  "page": 29
+ },
+ "facts": [
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.28,
+   "unit": "g/t",
+   "quote": "Total Ore Feed to Process:  43,692 kt ore at 0.28 g/t of Au and 9.61 g/t of Ag",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 9.61,
+   "unit": "g/t",
+   "quote": "Total Ore Feed to Process:  43,692 kt ore at 0.28 g/t of Au and 9.61 g/t of Ag",
+   "page": 20,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 74.3,
+   "unit": "%",
+   "quote": "Gold Recovery:  74.3%",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 32.1,
+   "unit": "%",
+   "quote": "Silver Recovery:  32.1%",
+   "page": 21,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1793,
+   "unit": "USD/oz",
+   "quote": "Au ($/oz) US$/oz 1,793",
+   "page": 22,
+   "metal": "Au",
+   "context": {
+    "note": "LOM average realized price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 22.9,
+   "unit": "USD/oz",
+   "quote": "Ag ($/oz) US$/oz 22.90",
+   "page": 22,
+   "metal": "Ag",
+   "context": {
+    "note": "LOM average realized price"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 4.7,
+   "unit": "MUSD",
+   "quote": "the Base Case after-tax NPV at a 7.94% discount rate is approximately  US$4.7 million",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 7.94
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing (Pads, Plants and Waste Rock Storage Facilities)",
+   "value": 46.3,
+   "quote": "Processing (Leach Pads, Plants, and WRFs) 46.3",
+   "page": 228,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 6.8,
+   "quote": "Infrastructure 6.8",
+   "page": 228,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Assets Sustaining Capital",
+   "value": 2.9,
+   "quote": "Other Assets Sustaining Capital 2.9",
+   "page": 228,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital Cost",
+   "value": 56.0,
+   "quote": "Total Sustaining Capital Cost 56.0",
+   "page": 228,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Concurrent reclamation 2024-2028",
+   "value": 85.6,
+   "quote": "Concurrent reclamation between 2024 and 2028 of $85.6 million",
+   "page": 22,
+   "part_of": "Total Closure/Reclamation Capital",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure 2029-2036",
+   "value": 33.6,
+   "quote": "Mine closure costs between 2029 and 2036 of $33.6 million",
+   "page": 22,
+   "part_of": "Total Closure/Reclamation Capital",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Post-closure 2037-2041",
+   "value": 2.9,
+   "quote": "Post-closure costs between 2037 and 2041 of $2.9 million",
+   "page": 22,
+   "part_of": "Total Closure/Reclamation Capital",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total Closure/Reclamation Capital",
+   "value": 122,
+   "quote": "Total Closure/Reclamation Capital US$ million (122)",
+   "page": 22,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 220.5,
+   "quote": "Mining 220.5 50.9 5.05",
+   "page": 229,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 104.1,
+   "quote": "Processing 104.1 21.5 2.38",
+   "page": 229,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 110.1,
+   "quote": "G&A 110.1 21.7 2.52",
+   "page": 229,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 434.8,
+   "quote": "Total Site Operating Cost 434.8 94.1 9.95",
+   "page": 229,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 5.05,
+   "quote": "Mining 220.5 50.9 5.05",
+   "page": 229,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 2.38,
+   "quote": "Processing 104.1 21.5 2.38",
+   "page": 229,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 2.52,
+   "quote": "G&A 110.1 21.7 2.52",
+   "page": 229,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 9.95,
+   "quote": "Total Site Operating Cost 434.8 94.1 9.95",
+   "page": 229,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

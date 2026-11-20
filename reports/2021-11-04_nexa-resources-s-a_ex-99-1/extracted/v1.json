@@ -1,0 +1,532 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "El Porvenir",
+  "title": "Technical Report Summary on the El Porvenir Mine, Department of Pasco, Peru",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2020-12-31",
+  "effective_date_quote": "Effective Date – December 31, 2020",
+  "primary_commodity": "Zn",
+  "by_products": [
+   "Pb",
+   "Cu",
+   "Ag"
+  ],
+  "country": "Peru",
+  "region": "Pasco",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "Discharge from the primary ball mills reports to two flash flotation cells which produce lead concentrate",
+  "page": 138
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.2,
+   "unit": "Mt/a",
+   "quote": "El Porvenir concentrator has an ore processing capacity of approximately 2.2 Mtpa",
+   "page": 138,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.75,
+   "unit": "%",
+   "quote": "Zn grade: 3.75% Zn",
+   "page": 13,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.88,
+   "unit": "%",
+   "quote": "Pb grade: 0.88% Pb",
+   "page": 13,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.23,
+   "unit": "%",
+   "quote": "Cu grade: 0.23% Cu",
+   "page": 13,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 62.8,
+   "unit": "g/t",
+   "quote": "Ag grade: 62.8 g/t Ag",
+   "page": 13,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Table 1-2 prints Ag grade as 2.02 g/t; the bulleted physicals and sensitivity table give 62.8 g/t"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.6,
+   "unit": "%",
+   "quote": "Zn recovery 89.6%",
+   "page": 13,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 79.2,
+   "unit": "%",
+   "quote": "Pb recovery 79.2%",
+   "page": 13,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 14.3,
+   "unit": "%",
+   "quote": "Cu recovery 14.3%",
+   "page": 13,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 3.8,
+   "unit": "%",
+   "quote": "Ag in Cu recovery 3.8%",
+   "page": 13,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 14.6,
+   "unit": "%",
+   "quote": "Ag in Zn recovery 14.6%",
+   "page": 13,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 59.1,
+   "unit": "%",
+   "quote": "Ag in Pb recovery 59.1%",
+   "page": 13,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 6388,
+   "unit": "USD/t",
+   "quote": "Cu price: US$6,388/t Cu",
+   "page": 13,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2511,
+   "unit": "USD/t",
+   "quote": "Zn price: US$2,511/t Zn",
+   "page": 13,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1977,
+   "unit": "USD/t",
+   "quote": "Pb price: US$1,977/t Pb",
+   "page": 13,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 17.2,
+   "unit": "USD/oz",
+   "quote": "Ag price: US$17.20/oz Ag",
+   "page": 13,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 130,
+   "unit": "MUSD",
+   "quote": "the after-tax NPV at a 9% discount rate is US$130 million, on a 100% Mine basis",
+   "page": 14,
+   "context": {
+    "discount_rate_pct": 9
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailing Dam & Waste Deposit Raising",
+   "value": 53858,
+   "quote": "Raising 53,858",
+   "page": 22,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "New Dam",
+   "value": 13246,
+   "quote": "New Dam 13,246",
+   "page": 22,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailing Treatment",
+   "value": 3782,
+   "quote": "Tailing Treatment 3,782",
+   "page": 22,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Heavy Mobile Equipment - Replacement",
+   "value": 23284,
+   "quote": "Replacement 23,284",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Heavy Mobile Equipment - Addition",
+   "value": 3335,
+   "quote": "Addition 3,335",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Asset Integrity – Plant",
+   "value": 11365,
+   "quote": "Asset Integrity – Plant 11,365",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Asset Integrity – Mine",
+   "value": 150,
+   "quote": "Asset Integrity – Mine 150",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Sustaining - Others",
+   "value": 1340,
+   "quote": "Others 1,340",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Civil Construction",
+   "value": 200,
+   "quote": "Civil Construction 200",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Communication system",
+   "value": 2450,
+   "quote": "Communication system 2,450",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Pumping",
+   "value": 2500,
+   "quote": "Pumping 2,500",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Electrical Substation",
+   "value": 1650,
+   "quote": "Electrical Substation 1,650",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Ventilation / Cooling",
+   "value": 950,
+   "quote": "Ventilation / Cooling 950",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "infrastructure"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Operation Unit Projects Improvements",
+   "value": 4631,
+   "quote": "Projects Improvements 4,631",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Audit & Inspection",
+   "value": 2380,
+   "quote": "Audit & Inspection 2,380",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Information Technology",
+   "value": 1020,
+   "quote": "Information Technology 1,020",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Automation Project",
+   "value": 2190,
+   "quote": "Automation Project 2,190",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mine Development",
+   "value": 92745,
+   "quote": "Underground Mine Development 92,745",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 221075,
+   "quote": "Total 221,075",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and reclamation",
+   "value": 25.2,
+   "quote": "closure and reclamation cost assessed at US$25.2 million",
+   "page": 23,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Underground",
+   "value": 454350,
+   "quote": "Mine Underground 454,350",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 176174,
+   "quote": "Processing 176,174",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 101109,
+   "quote": "G&A 101,109",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Development Operating Cost",
+   "value": 90887,
+   "quote": "Development Operating Cost 90,887",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 822519,
+   "quote": "Total 822,519",
+   "page": 23,
+   "multiplier": "k",
+   "basis_unit": "total",
+   "currency": "USD",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Development",
+   "value": 6.56,
+   "quote": "Mine Development: US$6.56/t mined",
+   "page": 14,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 32.81,
+   "quote": "Underground Mining: US$32.81/t mined",
+   "page": 14,
+   "basis_unit": "per_t_mined",
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 12.72,
+   "quote": "Processing: US$12.72/t milled",
+   "page": 14,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 7.3,
+   "quote": "General and administrative (G&A): US$7.30/t milled",
+   "page": 14,
+   "basis_unit": "per_t_milled",
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit operating costs",
+   "value": 59.39,
+   "quote": "Total unit operating costs of US$59.39/t milled",
+   "page": 14,
+   "basis_unit": "per_t_milled",
+   "is_total": true,
+   "partial_breakdown": true,
+   "multiplier": "",
+   "currency": "USD"
+  }
+ ]
+}

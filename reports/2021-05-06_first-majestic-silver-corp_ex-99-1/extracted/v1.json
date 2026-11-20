@@ -1,0 +1,277 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Jerritt Canyon",
+  "title": "Technical Report on the Jerritt Canyon Gold Mine, Elko County, Nevada, USA",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-12-31",
+  "effective_date_page": 2,
+  "effective_date_quote": "Effective Date – December 31, 2020",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "tertiary_crush",
+   "roasting",
+   "cil",
+   "elution_ew"
+  ],
+  "page": 30,
+  "quote": "Primary crushing · Ore drying · Secondary crushing · Tertiary crushing · Dry grinding · Roasting · Thickening · CIL · Carbon stripping · Carbon reactivation · Electrowinning"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4500,
+   "unit": "st/d",
+   "quote": "designed to operate at a rate of 4,500 stpd with an operating availability of 90%",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "phase": "plant design capacity"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 2300,
+   "unit": "st/d",
+   "quote": "planning to produce, on average, 2,300 tons per day (stpd) from underground operations",
+   "page": 11,
+   "statistic": "lom_average",
+   "context": {
+    "phase": "LOM plan"
+   }
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 90,
+   "unit": "%",
+   "quote": "designed to operate at a rate of 4,500 stpd with an operating availability of 90%",
+   "page": 30,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.2,
+   "unit": "oz/st",
+   "quote": "Gold grade: 0.20 oz/st Au",
+   "page": 236,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86,
+   "unit": "%",
+   "quote": "Gold recovery 86%",
+   "page": 236,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1500,
+   "unit": "USD/oz",
+   "quote": "Gold price: US$1,500/oz Au",
+   "page": 236,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 178,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV at 5% discount 5% US$ million 178",
+   "page": 240,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1037.85,
+   "unit": "USD/oz",
+   "quote": "All in Sustaining Cost $1037.85/oz Au",
+   "page": 24,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 21.4,
+   "quote": "Mining 21.4 6.00",
+   "page": 234,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Facility",
+   "value": 9.0,
+   "quote": "Tailings Facility 9.0 $9M in 2021",
+   "page": 234,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing Plant",
+   "value": 3.6,
+   "quote": "Processing Plant 3.6 1.00",
+   "page": 234,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Reclamation and closure",
+   "value": 5.3,
+   "quote": "Reclamation and closure 5.3 1.50",
+   "page": 234,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Exploration Diamond Drilling",
+   "value": 3.6,
+   "quote": "Sustaining Exploration Diamond Drilling 3.6 1.00",
+   "page": 234,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 42.8,
+   "quote": "Total 42.8 -",
+   "page": 234,
+   "is_total": true,
+   "review_note": "Includes progressive reclamation and closure 5.3",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 315.6,
+   "quote": "Mining 315.6 65.6 88.69",
+   "page": 235,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining unit",
+   "value": 88.69,
+   "quote": "Mining 315.6 65.6 88.69",
+   "page": 235,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Development",
+   "value": 46.2,
+   "quote": "Development 46.2 9.5 12.99",
+   "page": 235,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Development unit",
+   "value": 12.99,
+   "quote": "Development 46.2 9.5 12.99",
+   "page": 235,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 160.2,
+   "quote": "Processing 160.2 33.1 45.00",
+   "page": 235,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing unit",
+   "value": 45.0,
+   "quote": "Processing 160.2 33.1 45.00",
+   "page": 235,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "processing"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 64.1,
+   "quote": "G&A 64.1 13.2 18.00",
+   "page": 235,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A unit",
+   "value": 18.0,
+   "quote": "G&A 64.1 13.2 18.00",
+   "page": 235,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 586.1,
+   "quote": "Total 586.1 121.5 164.68",
+   "page": 235,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit",
+   "value": 164.68,
+   "quote": "Total 586.1 121.5 164.68",
+   "page": 235,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "is_total": true
+  }
+ ]
+}

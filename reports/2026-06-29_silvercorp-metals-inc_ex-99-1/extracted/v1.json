@@ -1,0 +1,505 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Curipamba-El Domo",
+  "title": "Technical Report on Curipamba-El Domo Polymetallic Project, in Ecuador",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: Dec. 31, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Au",
+   "Ag",
+   "Pb"
+  ],
+  "country": "Ecuador",
+  "region": "Bolivar and Los Rios",
+  "mine_type": "open_pit",
+  "project_status": "construction",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "The comminution circuit has been designed as a “crushing – semi-autogenous grinding – ball milling (SAB)” configuration. The downstream beneficiation flowsheet comprises “partial preferential Cu–Pb flotation, Cu–Pb–Zn bulk flotation, regrinding of the bulk flotation concentrate",
+  "page": 20
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 1850,
+   "unit": "t/d",
+   "quote": "The plant has a nominal design capacity of 1,850 tpd",
+   "page": 99,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 125,
+   "unit": "µm",
+   "quote": "the same grinding fineness of 80% passing -125 µm",
+   "page": 100,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.93,
+   "unit": "%",
+   "quote": "2.55 g/t Au, 47.82 g/t Ag, 1.93% Cu, 0.26% Pb, 2.63% Zn",
+   "page": 17,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Proven and Probable reserve grade"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.63,
+   "unit": "%",
+   "quote": "2.55 g/t Au, 47.82 g/t Ag, 1.93% Cu, 0.26% Pb, 2.63% Zn",
+   "page": 17,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Proven and Probable reserve grade"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.26,
+   "unit": "%",
+   "quote": "2.55 g/t Au, 47.82 g/t Ag, 1.93% Cu, 0.26% Pb, 2.63% Zn",
+   "page": 17,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Proven and Probable reserve grade"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.55,
+   "unit": "g/t",
+   "quote": "2.55 g/t Au, 47.82 g/t Ag, 1.93% Cu, 0.26% Pb, 2.63% Zn",
+   "page": 17,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Proven and Probable reserve grade"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 47.82,
+   "unit": "g/t",
+   "quote": "2.55 g/t Au, 47.82 g/t Ag, 1.93% Cu, 0.26% Pb, 2.63% Zn",
+   "page": 17,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Proven and Probable reserve grade"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87.82,
+   "unit": "%",
+   "quote": "Copper Concentrate 6.79 125.62 5.23 25.35 1.64 3.80 12.50 197.00 87.82 48.42 10.12 41.40 32.63",
+   "page": 20,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 41.4,
+   "unit": "%",
+   "quote": "Copper Concentrate 6.79 125.62 5.23 25.35 1.64 3.80 12.50 197.00 87.82 48.42 10.12 41.40 32.63",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 32.63,
+   "unit": "%",
+   "quote": "Copper Concentrate 6.79 125.62 5.23 25.35 1.64 3.80 12.50 197.00 87.82 48.42 10.12 41.40 32.63",
+   "page": 20,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.24,
+   "unit": "%",
+   "quote": "Zinc Concentrate 3.92 72.52 3.02 2.10 0.70 53.50 8.50 340.00 4.20 11.93 82.24 16.25 32.51",
+   "page": 20,
+   "metal": "Zn",
+   "statistic": "design",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 16.25,
+   "unit": "%",
+   "quote": "Zinc Concentrate 3.92 72.52 3.02 2.10 0.70 53.50 8.50 340.00 4.20 11.93 82.24 16.25 32.51",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 32.51,
+   "unit": "%",
+   "quote": "Zinc Concentrate 3.92 72.52 3.02 2.10 0.70 53.50 8.50 340.00 4.20 11.93 82.24 16.25 32.51",
+   "page": 20,
+   "metal": "Ag",
+   "statistic": "design",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 21.54,
+   "unit": "%",
+   "quote": "Lead Concentrate 0.24 4.44 0.19 15.52 20.65 3.63 6.08 425.25 1.90 21.54 0.34 0.71 2.49",
+   "page": 20,
+   "metal": "Pb",
+   "statistic": "design",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 9700,
+   "unit": "USD/t",
+   "quote": "Copper USD/t 10,400 10,450 10,350 10,300 9,700 9,700",
+   "page": 126,
+   "metal": "Cu",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2800,
+   "unit": "USD/t",
+   "quote": "Zinc USD/t 2,650 2,600 2,600 2,650 2,800 2,800",
+   "page": 126,
+   "metal": "Zn",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/t",
+   "quote": "Lead USD/t 1,950 1,950 1,900 1,950 2,000 2,000",
+   "page": 126,
+   "metal": "Pb",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3000,
+   "unit": "USD/oz",
+   "quote": "Gold USD/oz 3,670 3,390 3,160 3,020 3,000 3,000",
+   "page": 126,
+   "metal": "Au",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 32.5,
+   "unit": "USD/oz",
+   "quote": "Silver USD/oz 66.50 42.00 40.00 37.50 32.50 32.50",
+   "page": 126,
+   "metal": "Ag",
+   "context": {
+    "note": "long-term price"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 573,
+   "unit": "MUSD",
+   "quote": "Net Present Value, post-tax USD M 573",
+   "page": 147,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 45,
+   "unit": "%",
+   "quote": "IRR % 45%",
+   "page": 147
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3,
+   "unit": "years",
+   "quote": "Payback in year 3",
+   "page": 147
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Project Construction Cost",
+   "value": 188.84,
+   "quote": "Project Construction Cost USD Million 188.84",
+   "page": 21,
+   "l1": "process",
+   "l2": "general",
+   "review_note": "Single construction line, not split by area",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Imported Equipment Procurement",
+   "value": 42.39,
+   "quote": "Imported Equipment Procurement USD Million 42.39",
+   "page": 21,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Cost",
+   "value": 35.4,
+   "quote": "Owner's Cost USD Million 35.40",
+   "page": 21,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency (10%)",
+   "value": 17.05,
+   "quote": "Contingency (10%) USD Million 17.05",
+   "page": 21,
+   "l1": "contingency",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Capex",
+   "value": 283.68,
+   "quote": "Initial Capex USD Million 283.68",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalization Stripping",
+   "value": 12.48,
+   "quote": "Capitalization Stripping USD Million 12.48",
+   "page": 21,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General Sustaining",
+   "value": 60.0,
+   "quote": "General Sustaining USD Million 60 .00",
+   "page": 21,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capex",
+   "value": 72.48,
+   "quote": "Sustaining Capex USD Million 72 .48",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Cost",
+   "value": 17.3,
+   "quote": "Closure Cost USD Million 17.30",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 12.19,
+   "quote": "Mining Cost 1.71 (USD/t-ore) 1.71 12.19",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Stripping Cost",
+   "value": 117.21,
+   "quote": "Stripping Cost 2.20 (USD/t-waste) 16.44 117.21",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 178.23,
+   "quote": "Processing Cost 25.00 (USD/t-milled) 25.00 178.23",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment",
+   "value": 26.09,
+   "quote": "Water Treatment 3.66 (USD/t-milled) 3.66 26.09",
+   "page": 21,
+   "l1": "tailings_water",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "SG&A costs",
+   "value": 82.56,
+   "quote": "SG&A costs 14.00 (USD/t-milled) 11.58 82.56",
+   "page": 21,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 416.29,
+   "quote": "Total N/A 58.39 416.29",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 1.71,
+   "quote": "Mining Cost 1.71 (USD/t-ore) 1.71 12.19",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Stripping Cost",
+   "value": 16.44,
+   "quote": "Stripping Cost 2.20 (USD/t-waste) 16.44 117.21",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Cost",
+   "value": 25.0,
+   "quote": "Processing Cost 25.00 (USD/t-milled) 25.00 178.23",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Treatment",
+   "value": 3.66,
+   "quote": "Water Treatment 3.66 (USD/t-milled) 3.66 26.09",
+   "page": 21,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "SG&A costs",
+   "value": 11.58,
+   "quote": "SG&A costs 14.00 (USD/t-milled) 11.58 82.56",
+   "page": 21,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 58.39,
+   "quote": "Total N/A 58.39 416.29",
+   "page": 21,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 460,
+   "quote": "Royalties USDm 460",
+   "page": 147,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "multiplier": "M",
+   "basis_unit": "total"
+  }
+ ]
+}

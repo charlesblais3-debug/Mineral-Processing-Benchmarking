@@ -1,0 +1,521 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "La Negra",
+  "title": "Technical Report - Preliminary Economic Assessment Study, La Negra Mine, Minera La Negra S.A. de C.V., Querétaro, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2022-03-31",
+  "effective_date_quote": "date: March 31, 2022",
+  "primary_commodity": "Ag",
+  "by_products": [
+   "Zn",
+   "Cu",
+   "Pb"
+  ],
+  "country": "Mexico",
+  "region": "Querétaro",
+  "mine_type": "underground",
+  "project_status": "care_maintenance",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "conventional crushing, grinding and differential flotation process",
+  "page": 103
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2500,
+   "unit": "t/d",
+   "quote": "will treat 2,500 tonnes per day, or 842,500 tonnes per annum",
+   "page": 103,
+   "statistic": "design",
+   "context": {
+    "phase": "restart plan (plant capacity 3,000 tpd)"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 7.5,
+   "unit": "years",
+   "quote": "Mine Life years 7.5",
+   "page": 104
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13,
+   "unit": "kWh/t",
+   "quote": "Bond Work Index KWh/t 13",
+   "page": 104,
+   "statistic": "design",
+   "context": {
+    "test": "Bond work index (design criteria, type not stated)"
+   }
+  },
+  {
+   "parameter": "ai",
+   "value": 0.41,
+   "unit": "g",
+   "quote": "Abrasion Index g 0.41",
+   "page": 104,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Ball Mill Product P80 μ 75",
+   "page": 104,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 76.3,
+   "unit": "g/t",
+   "quote": "Grade (LOM Average) g/t 76.3",
+   "page": 104,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.1,
+   "unit": "%",
+   "quote": "Recovery (LOM Average) % 82.1",
+   "page": 104,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "total plant silver recovery"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.5,
+   "unit": "%",
+   "quote": "Feed Grade (LOM Average) % 0.5",
+   "page": 104,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 73.9,
+   "unit": "%",
+   "quote": "Recovery (LOM Average) % 73.9",
+   "page": 104,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 60.2,
+   "unit": "%",
+   "quote": "Concentrate Grade (LOM Average) % 60.2",
+   "page": 104,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "concentrate": "Pb concentrate"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.51,
+   "unit": "%",
+   "quote": "Grade (LOM Average) % 1.51",
+   "page": 104,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 84.4,
+   "unit": "%",
+   "quote": "Recovery (LOM Average) % 84.4",
+   "page": 104,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 44.1,
+   "unit": "%",
+   "quote": "Concentrate Grade (LOM Average) % 44.1",
+   "page": 104,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "concentrate": "Zn concentrate"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.35,
+   "unit": "%",
+   "quote": "Grade (LOM Average) % 0.35",
+   "page": 104,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 68.3,
+   "unit": "%",
+   "quote": "Recovery (LOM Average) % 68.3",
+   "page": 104,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 23.9,
+   "unit": "%",
+   "quote": "Concentrate Grade (LOM Average) % 23.9",
+   "page": 104,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "concentrate": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 21.0,
+   "unit": "MXN/USD",
+   "quote": "MXN per US$ 21.00 21.00",
+   "page": 19,
+   "context": {
+    "pair": "MXN/USD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 132.4,
+   "unit": "MUSD",
+   "quote": "After-tax NPV (5%) US$ m 132.4",
+   "page": 19,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 12.95,
+   "unit": "USD/oz",
+   "quote": "AISC US$/oz Ageq 12.95",
+   "page": 19,
+   "metal": "Ag",
+   "context": {
+    "basis": "AgEq"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Processing Plant",
+   "value": 2.41,
+   "quote": "Processing Plant 2.41 2.38 - 4.79",
+   "page": 17,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing Plant",
+   "value": 2.38,
+   "quote": "Processing Plant 2.41 2.38 - 4.79",
+   "page": 17,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "TSF",
+   "value": 13.55,
+   "quote": "TSF 13.55 4.11 - 17.66",
+   "page": 17,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TSF",
+   "value": 4.11,
+   "quote": "TSF 13.55 4.11 - 17.66",
+   "page": 17,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Underground Development",
+   "value": 0.57,
+   "quote": "Underground Development 0.57 18.18 - 18.75",
+   "page": 17,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Development",
+   "value": 18.18,
+   "quote": "Underground Development 0.57 18.18 - 18.75",
+   "page": 17,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Equipment Replacement/Refurb",
+   "value": 0.46,
+   "quote": "Equipment Replacement/Refurb 0.46 12.31 - 12.77",
+   "page": 17,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment Replacement/Refurb",
+   "value": 12.31,
+   "quote": "Equipment Replacement/Refurb 0.46 12.31 - 12.77",
+   "page": 17,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Indirect Costs",
+   "value": 2.03,
+   "quote": "Indirect Costs 2.03",
+   "page": 17,
+   "l1": "indirects",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Owner's Costs",
+   "value": 1.63,
+   "quote": "Owner’s Costs 1.63 - - 1.63",
+   "page": 18,
+   "l1": "owners",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capitalized Exploration",
+   "value": 0.29,
+   "quote": "Capitalized Exploration 0.29 4.57 - 4.85",
+   "page": 18,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Restart Capital",
+   "value": 20.94,
+   "quote": "Total Capital 20.94 42.13 5.00 68.06",
+   "page": 18,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Restart of a brownfield mine and plant; restart capital treated as growth."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Exploration",
+   "value": 4.57,
+   "quote": "Capitalized Exploration 0.29 4.57 - 4.85",
+   "page": 18,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other",
+   "value": 0.58,
+   "quote": "Other - 0.58 - 0.58",
+   "page": 18,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 42.13,
+   "quote": "Total Capital 20.94 42.13 5.00 68.06",
+   "page": 18,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 5.0,
+   "quote": "Closure - - 5.00 5.00",
+   "page": 18,
+   "l1": "other",
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mining Costs",
+   "value": 52220404,
+   "quote": "Total Mining Costs 52,220,404 7,040,953 8.39",
+   "page": 18,
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mining Costs",
+   "value": 8.39,
+   "quote": "Total Mining Costs 52,220,404 7,040,953 8.39",
+   "page": 18,
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Processing Costs",
+   "value": 75141922,
+   "quote": "Total Processing Costs 75,141,922 10,131,495 12.07",
+   "page": 18,
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Processing Costs",
+   "value": 12.07,
+   "quote": "Total Processing Costs 75,141,922 10,131,495 12.07",
+   "page": 18,
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings",
+   "value": 14597557,
+   "quote": "Tailings 14,597,557 1,968,210 2.35",
+   "page": 18,
+   "basis_unit": "total",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings",
+   "value": 2.35,
+   "quote": "Tailings 14,597,557 1,968,210 2.35",
+   "page": 18,
+   "basis_unit": "per_t_milled",
+   "l1": "tailings_water"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total G&A",
+   "value": 27787644,
+   "quote": "Total G&A 27,787,644 3,746,649 4.47",
+   "page": 18,
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total G&A",
+   "value": 4.47,
+   "quote": "Total G&A 27,787,644 3,746,649 4.47",
+   "page": 18,
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Technical Services",
+   "value": 4975345,
+   "quote": "Technical Services 4,975,345 670,833 0.80",
+   "page": 18,
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Technical Services",
+   "value": 0.8,
+   "quote": "Technical Services 4,975,345 670,833 0.80",
+   "page": 18,
+   "basis_unit": "per_t_milled",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 174722872,
+   "quote": "Total Operating Cost 174,722,872 23,558,140 28.08",
+   "page": 18,
+   "basis_unit": "total",
+   "l1": "other",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Cost",
+   "value": 28.08,
+   "quote": "Total Operating Cost 174,722,872 23,558,140 28.08",
+   "page": 18,
+   "basis_unit": "per_t_milled",
+   "l1": "other",
+   "is_total": true
+  }
+ ]
+}

@@ -1,0 +1,457 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "El Brocal",
+  "title": "S-K 1300 Technical Report Summary El Brocal Property, District of Colquijirca, Province of Pasco, Peru",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date:  December 31, 2024",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ag",
+   "Zn",
+   "Pb",
+   "Au"
+  ],
+  "country": "Peru",
+  "region": "Pasco",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "El Brocal operates two independent conventional flotation lines referred to as Plant 1 and Plant 2.",
+  "page": 41
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 13500,
+   "unit": "t/d",
+   "quote": "reduced the overall throughput capacity of the two plants to 13,500 tpd (4,000 tpd for Plant 1 and 9,500 tpd for plant 2)",
+   "page": 41,
+   "statistic": "design",
+   "context": {
+    "phase": "after 2023-24 plant modifications; earlier combined capacity 18,000 tpd"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.26,
+   "unit": "%",
+   "quote": "o Cu grade: 1.26%",
+   "page": 26,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "total LOM processing mill feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 24.23,
+   "unit": "g/t",
+   "quote": "o Ag grade: 24.23 g/t",
+   "page": 26,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "note": "total LOM processing mill feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.55,
+   "unit": "g/t",
+   "quote": "o Au grade: 0.55 g/t",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "total LOM processing mill feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.04,
+   "unit": "%",
+   "quote": "o Pb grade: 0.04%",
+   "page": 26,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "note": "total LOM processing mill feed"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.09,
+   "unit": "%",
+   "quote": "o Zn grade: 0.09%",
+   "page": 26,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "note": "total LOM processing mill feed"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 85.4,
+   "unit": "%",
+   "quote": "o Cu recovery: 85.4%",
+   "page": 27,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "average LOM net recovery"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 51.6,
+   "unit": "%",
+   "quote": "o Ag recovery: 51.6%",
+   "page": 27,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "note": "average LOM net recovery"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 27.0,
+   "unit": "%",
+   "quote": "o Au recovery: 27.0%",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "average LOM net recovery"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 28.3,
+   "unit": "%",
+   "quote": "o Pb recovery: 28.3%",
+   "page": 27,
+   "metal": "Pb",
+   "statistic": "lom_average",
+   "context": {
+    "note": "average LOM net recovery"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 53.4,
+   "unit": "%",
+   "quote": "o Zn recovery: 53.4%",
+   "page": 27,
+   "metal": "Zn",
+   "statistic": "lom_average",
+   "context": {
+    "note": "average LOM net recovery"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.9,
+   "unit": "USD/lb",
+   "quote": "LOM LT price - Cu US$/lb $4.90",
+   "page": 30,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2172,
+   "unit": "USD/oz",
+   "quote": "LOM LT price - Au US$/oz $2,172",
+   "page": 30,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 29.0,
+   "unit": "USD/oz",
+   "quote": "LOM LT price - Ag US$/oz $29.00",
+   "page": 30,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.02,
+   "unit": "USD/lb",
+   "quote": "LOM LT price - Pb US$/lb $1.02",
+   "page": 30,
+   "metal": "Pb"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.22,
+   "unit": "USD/lb",
+   "quote": "LOM LT price - Zn US$/lb $1.22",
+   "page": 30,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 619,
+   "unit": "MUSD",
+   "quote": "the after-tax NPV at an 10.18% discount rate is approximately US$619 million",
+   "page": 22,
+   "context": {
+    "discount_rate_pct": 10.18
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Mining",
+   "value": 17.6,
+   "quote": "Open Pit Mining 17.6",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam",
+   "value": 113.1,
+   "quote": "Tailings Dam 113.1",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing Plant",
+   "value": 30.6,
+   "quote": "Processing Plant 30.6",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Sustaining",
+   "value": 8.4,
+   "quote": "Other Sustaining 8.4",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mining",
+   "value": 101.7,
+   "quote": "Underground Mining 101.7",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Water Management",
+   "value": 5.5,
+   "quote": "Water Management 5.5",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "water"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 9.4,
+   "quote": "Infrastructure 9.4",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Assets Sustaining Capital",
+   "value": 95.5,
+   "quote": "Other Assets Sustaining Capital 95.5",
+   "page": 44,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital Cost",
+   "value": 381.7,
+   "quote": "Total Sustaining Capital Cost 381.7",
+   "page": 45,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Concurrent reclamation 2025-2041",
+   "value": 48.83,
+   "quote": "Concurrent reclamation between 2025 and 2041 of US$48.83 million",
+   "page": 28,
+   "part_of": "Reclamation & Closure - El Brocal",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine closure and water treatment 2042-2044",
+   "value": 18.47,
+   "quote": "Mine closure and water treatment costs between 2042 and 2044 of US$18.47 million",
+   "page": 28,
+   "part_of": "Reclamation & Closure - El Brocal",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Post-closure 2045-2049",
+   "value": 0.56,
+   "quote": "Post-closure and water treatment and monitoring costs between 2045 and 2049 of US$0.56 million",
+   "page": 28,
+   "part_of": "Reclamation & Closure - El Brocal",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation & Closure - El Brocal",
+   "value": 68,
+   "quote": "Reclamation & Closure - El Brocal US$ million $(68)",
+   "page": 30,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Open Pit + Underground)",
+   "value": 2670,
+   "quote": "Mining 2,670 157 32.82",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 1491,
+   "quote": "Processing 1,491 88 18.33",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A / Site Services",
+   "value": 608,
+   "quote": "G&A / Site Services 608 36 7.47",
+   "page": 46,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 4769,
+   "quote": "Total Site Operating Cost 4,769 281 58.62",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (Open Pit + Underground)",
+   "value": 32.82,
+   "quote": "Mining 2,670 157 32.82",
+   "page": 46,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 18.33,
+   "quote": "Processing 1,491 88 18.33",
+   "page": 46,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A / Site Services",
+   "value": 7.47,
+   "quote": "G&A / Site Services 608 36 7.47",
+   "page": 46,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Cost",
+   "value": 58.62,
+   "quote": "Total Site Operating Cost 4,769 281 58.62",
+   "page": 46,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Selling Expenses",
+   "value": 292,
+   "quote": "Selling Expenses US$ million $(292)",
+   "page": 30,
+   "outside_total": true,
+   "l1": "offsite",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Off-site G&A (Corporate allocation)",
+   "value": 1.72,
+   "quote": "Offsite G&A (Corporate allocation): $1.72/t processed",
+   "page": 28,
+   "outside_total": true,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}
