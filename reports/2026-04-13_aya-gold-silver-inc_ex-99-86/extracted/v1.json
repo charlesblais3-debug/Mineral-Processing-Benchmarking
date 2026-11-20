@@ -279,9 +279,8 @@
    "quote": "Blended mining cost per tonne of ore mined 30.53",
    "page": 24,
    "l1": "mining",
-   "review_note": "Stated per tonne of ore mined (open pit 23.87, underground 64.63); treated as per tonne milled for the sum check",
    "multiplier": "",
-   "basis_unit": "per_t_milled"
+   "basis_unit": "per_t_mined"
   },
   {
    "cost_type": "opex",
@@ -312,7 +311,8 @@
    "is_total": true,
    "review_note": "Report notes sum of unit costs is 69.94 because of existing stockpiles",
    "multiplier": "",
-   "basis_unit": "per_t_milled"
+   "basis_unit": "per_t_milled",
+   "partial_breakdown": true
   }
  ]
 }

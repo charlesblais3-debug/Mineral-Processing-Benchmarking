@@ -230,10 +230,14 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
     partial_parents: set[str] = set()
     mapped: dict[str, tuple] = {}         # label -> (l1, l2), so breakdown lines can inherit their parent's category
     for c in data.get("costs", []):
-        mult = multiplier(c.get("multiplier", "M"))
+        # Totals and annual amounts default to millions; unit costs (per t, per oz, per lb ...) to 1.
+        per_unit = c.get("basis_unit", "total") not in ("total", "per_year")
+        mult = multiplier(c.get("multiplier", "" if per_unit else "M"))
         if mult is None:
             problems.append(f"cost '{c['raw_label']}': unknown multiplier {c.get('multiplier')!r}")
             mult = 1
+        elif per_unit and mult != 1:
+            problems.append(f"cost '{c['raw_label']}': multiplier {c.get('multiplier')!r} on a unit cost ({c.get('basis_unit')})")
         value = c["value"] * mult
         note = None
         if c.get("per_short_ton"):           # $/short ton -> $/tonne (1 t = 1.10231 st)

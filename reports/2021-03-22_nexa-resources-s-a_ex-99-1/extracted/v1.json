@@ -206,7 +206,7 @@
  ],
  "costs": [
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Mine Development",
    "value": 25.2,
    "quote": "Mine Development US$ million 25.2",
@@ -217,7 +217,7 @@
    "l2": "ug_development"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Mobile Equipment",
    "value": 4.5,
    "quote": "Mobile Equipment US$ million 4.5",
@@ -228,7 +228,7 @@
    "l2": "equipment"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Site Prep & Earthworks",
    "value": 53.9,
    "quote": "Site Prep & Earthworks US$ million 53.9",
@@ -239,7 +239,7 @@
    "l2": "roads"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Civil & Roadwork",
    "value": 14.7,
    "quote": "Civil & Roadwork US$ million 14.7",
@@ -249,7 +249,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Steelwork",
    "value": 2.4,
    "quote": "Steelwork US$ million 2.4",
@@ -259,7 +259,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Electrical",
    "value": 12.6,
    "quote": "Electrical US$ million 12.6",
@@ -269,7 +269,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Instrumentation",
    "value": 8.4,
    "quote": "Instrumentation US$ million 8.4",
@@ -279,7 +279,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Mechanical Equipment",
    "value": 14.9,
    "quote": "Mechanical Equipment US$ million 14.9",
@@ -289,7 +289,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Piping",
    "value": 8.3,
    "quote": "Piping US$ million 8.3",
@@ -299,7 +299,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Subtotal Direct Costs",
    "value": 144.9,
    "quote": "Subtotal Direct Costs US$ million 144.9",
@@ -309,7 +309,7 @@
    "is_subtotal": true
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "EPCM",
    "value": 7.2,
    "quote": "EPCM US$ million 7.2",
@@ -320,7 +320,7 @@
    "l2": "epcm"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Temporary Services",
    "value": 7.3,
    "quote": "Temporary Services US$ million 7.3",
@@ -331,7 +331,7 @@
    "l2": "construction"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Owner’s Team",
    "value": 10.2,
    "quote": "Owner’s Team US$ million 10.2",
@@ -341,7 +341,7 @@
    "l1": "owners"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Other indirects",
    "value": 42.6,
    "quote": "Other US$ million 42.6",
@@ -352,7 +352,7 @@
    "l2": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Subtotal Indirects",
    "value": 67.3,
    "quote": "Subtotal Indirects US$ million 67.3",
@@ -362,7 +362,7 @@
    "is_subtotal": true
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Contingency",
    "value": 16.0,
    "quote": "Contingency US$ million 16.0",
@@ -372,7 +372,7 @@
    "l1": "contingency"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Total Capital Cost",
    "value": 228.2,
    "quote": "Total Capital Cost US$ million 228.2",
@@ -380,7 +380,7 @@
    "multiplier": "M",
    "basis_unit": "total",
    "is_total": true,
-   "review_note": "Pre-production capital forecast prior to end of 2020 (remaining at start of 2021: US$234M; total project US$547M incl. spent)"
+   "review_note": "2020 pre-production spend forecast for a project already under construction (cost to complete), not the full build cost; the total project capital of US$547M is recorded as initial_capex."
   },
   {
    "cost_type": "sustaining",
@@ -485,6 +485,19 @@
    "is_total": true,
    "multiplier": "",
    "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Project capital cost (updated estimate)",
+   "value": 547,
+   "multiplier": "M",
+   "currency": "USD",
+   "page": 138,
+   "quote": "the estimated capital costs of the Project increasing to US$547 million compared to US$392 million estimated in the feasibility study",
+   "is_total": true,
+   "l1": "other",
+   "l2": "grand_total",
+   "review_note": "Updated total project capital (US$392M in the feasibility study); no breakdown of the US$547M is given."
   }
  ]
 }

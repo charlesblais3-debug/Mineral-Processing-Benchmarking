@@ -131,7 +131,7 @@
  ],
  "costs": [
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Development (ramps, accesses), Administration/Production/Infrastructure Buildings",
    "value": 131.1,
    "quote": "Administration/Production/Infrastructure Buildings 131.1",
@@ -142,7 +142,7 @@
    "l2": "ug_development"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Equipment & Machinery",
    "value": 28.2,
    "quote": "Equipment & Machinery 28.2",
@@ -153,7 +153,7 @@
    "l2": "equipment"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Other Equipment & Vehicles",
    "value": 11.2,
    "quote": "Other Equipment & Vehicles 11.2",
@@ -163,7 +163,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Other Equipment, Lines, PADs",
    "value": 6.1,
    "quote": "Other Equipment, Lines, PADs 6.1",
@@ -173,7 +173,7 @@
    "l1": "other"
   },
   {
-   "cost_type": "initial_capex",
+   "cost_type": "growth",
    "raw_label": "Total",
    "value": 177.4,
    "quote": "Total 177.4",
@@ -181,7 +181,7 @@
    "multiplier": "M",
    "basis_unit": "total",
    "is_total": true,
-   "review_note": "Remaining initial capital at effective date (Estimate to Complete); project 62% constructed. Includes contingency and indirects per report."
+   "review_note": "Estimate to complete at 31 Dec 2024 for a project under construction; the report states no full project capital, so this is growth (cost to complete), not initial_capex."
   },
   {
    "cost_type": "sustaining",

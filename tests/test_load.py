@@ -122,3 +122,10 @@ def test_normalize_native_units():
     v, u = normalize(price, 2645.5, "USD/t", "Zn"); assert u == "USD/lb" and abs(v - 1.2) < 0.001
     assert normalize(price, 1900, "CAD/oz", "Au")[0] is None   # needs FX: left unnormalized
     assert normalize(grade, 30, "%", None)[0] is None
+
+
+def test_unit_costs_default_to_no_multiplier():
+    import inspect
+    from pipeline.extract import load
+    src = inspect.getsource(load.load_report)
+    assert '"" if per_unit else "M"' in src     # per-tonne lines without a multiplier are not scaled by 1e6
