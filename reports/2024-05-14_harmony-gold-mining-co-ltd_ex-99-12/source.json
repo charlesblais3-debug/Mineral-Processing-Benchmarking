@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828024023115/tshepongnorthtshepong-sxk1.htm",
+  "source": "edgar",
+  "issuer": "HARMONY GOLD MINING CO LTD  (HMY, HGMCF)",
+  "cik": "1023514",
+  "form": "6-K",
+  "exhibit": "EX-99.12",
+  "filed": "2024-05-14",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-05-14_harmony-gold-mining-co-ltd_ex-99-12",
+  "sha256": "3731baf61deabc7d2c2227b29b1351df17b4e318f491f8795498c5dc88f5f0aa",
+  "bytes": 1591226,
+  "format": "html",
+  "pages": 110,
+  "parsed_on": "2026-11-20"
+}

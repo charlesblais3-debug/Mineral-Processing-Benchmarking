@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2019103/000121390024076306/ea021317601ex99-1_solaris.htm",
+  "source": "edgar",
+  "issuer": "Solaris Resources Inc.  (SLSR)",
+  "cik": "2019103",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2024-09-06",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-09-06_solaris-resources-inc_ex-99-1",
+  "sha256": "5e944405176f671451e085c2b50a3b8e6cb804814c72c26a0f2937cc4e595497",
+  "bytes": 1990888,
+  "format": "html",
+  "pages": 92,
+  "parsed_on": "2026-11-20"
+}

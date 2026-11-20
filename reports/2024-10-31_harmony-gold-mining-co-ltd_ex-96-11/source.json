@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828024044479/wafi-golpuxsxk1300trs2024.htm",
+  "source": "edgar",
+  "issuer": "HARMONY GOLD MINING CO LTD  (HMY, HGMCF)",
+  "cik": "1023514",
+  "form": "20-F",
+  "exhibit": "EX-96.11",
+  "filed": "2024-10-31",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-10-31_harmony-gold-mining-co-ltd_ex-96-11",
+  "sha256": "8f9c75cc9e7e2f60c6446284084503080c9de4efb73041bacbabca94ef6f64d3",
+  "bytes": 2631486,
+  "format": "html",
+  "pages": 159,
+  "parsed_on": "2026-11-20"
+}

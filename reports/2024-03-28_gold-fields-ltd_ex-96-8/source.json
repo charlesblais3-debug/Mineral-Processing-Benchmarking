@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1172724/000117272424000013/exhibit968-technicalrepo.htm",
+  "source": "edgar",
+  "issuer": "GOLD FIELDS LTD  (GFI, GFIOF)",
+  "cik": "1172724",
+  "form": "6-K",
+  "exhibit": "EX-96.8",
+  "filed": "2024-03-28",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-03-28_gold-fields-ltd_ex-96-8",
+  "sha256": "5ef475724ff2b54d9491b1691cde32c49c4dac22b482fade2d45846f03da9411",
+  "bytes": 342198,
+  "format": "html",
+  "pages": 29,
+  "parsed_on": "2026-11-20"
+}

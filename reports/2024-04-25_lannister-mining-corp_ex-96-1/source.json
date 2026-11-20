@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1851535/000121390024036094/filename2.htm",
+  "source": "edgar",
+  "issuer": "Lannister Mining Corp.  (DRIL)",
+  "cik": "1851535",
+  "form": "DRS/A",
+  "exhibit": "EX-96.1",
+  "filed": "2024-04-25",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-04-25_lannister-mining-corp_ex-96-1",
+  "sha256": "6c26880f047e28dab0214d65e4cf3a13a211e9684436f256eb27245e475319cb",
+  "bytes": 865443,
+  "format": "html",
+  "pages": 58,
+  "parsed_on": "2026-11-20"
+}

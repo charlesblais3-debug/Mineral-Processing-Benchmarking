@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1950246/000110465924052288/tm2412599d1_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Metals Acquisition Ltd  (MTAL)",
+  "cik": "1950246",
+  "form": "POS EX",
+  "exhibit": "EX-96.1",
+  "filed": "2024-04-26",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-04-26_metals-acquisition-ltd_ex-96-1",
+  "sha256": "7f9bb08a692cd46f152164317c61d874c24a27c43974a43ba9870dd0c2ac1609",
+  "bytes": 2001190,
+  "format": "html",
+  "pages": 121,
+  "parsed_on": "2026-11-20"
+}

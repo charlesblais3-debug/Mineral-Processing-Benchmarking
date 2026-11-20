@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828024044479/moabkhotsongs-k1300trs2024.htm",
+  "source": "edgar",
+  "issuer": "HARMONY GOLD MINING CO LTD  (HMY, HGMCF)",
+  "cik": "1023514",
+  "form": "20-F",
+  "exhibit": "EX-96.4",
+  "filed": "2024-10-31",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-10-31_harmony-gold-mining-co-ltd_ex-96-4",
+  "sha256": "916d55e849e7710cbddce6e3871e092c439dab893e3ed3418c5d40af5e78257f",
+  "bytes": 1904665,
+  "format": "html",
+  "pages": 117,
+  "parsed_on": "2026-11-20"
+}

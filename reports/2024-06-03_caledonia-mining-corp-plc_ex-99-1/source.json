@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/766011/000117184324003230/exh_991.htm",
+  "source": "edgar",
+  "issuer": "Caledonia Mining Corp Plc  (CMCL)",
+  "cik": "766011",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2024-06-03",
+  "standard": "",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-06-03_caledonia-mining-corp-plc_ex-99-1",
+  "sha256": "4f79f53ae7c13d530b4ba8a518f8a4c56b334156b96c6fa63370c7955888e3bc",
+  "bytes": 463561,
+  "format": "html",
+  "pages": 88,
+  "parsed_on": "2026-11-20"
+}

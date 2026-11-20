@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/795800/000110465924076291/pnrlf-20231231xex96d1.htm",
+  "source": "edgar",
+  "issuer": "Premium Nickel Resources Ltd.  (PNRLF)",
+  "cik": "795800",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2024-06-28",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-06-28_premium-nickel-resources-ltd_ex-96-1",
+  "sha256": "19b9ee7a305993bc37488469714bdf0b0f26b6253728977f2fc12d1d80526665",
+  "bytes": 2623361,
+  "format": "html",
+  "pages": 128,
+  "parsed_on": "2026-11-20"
+}

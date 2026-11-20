@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2809/000110465924037982/aem-20231231xex99d3.htm",
+  "source": "edgar",
+  "issuer": "AGNICO EAGLE MINES LTD  (AEM)",
+  "cik": "2809",
+  "form": "40-F",
+  "exhibit": "EX-99.3",
+  "filed": "2024-03-25",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-03-25_agnico-eagle-mines-ltd_ex-99-3",
+  "sha256": "1c5db570e8bbc46918e53f3b03d52f3818ab3342292c501a08374e08a83d3ced",
+  "bytes": 3868102,
+  "format": "html",
+  "pages": 77,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2025049/000182912624004947/projectblazerigel_ex96-2.htm",
+  "source": "edgar",
+  "issuer": "Aurous Resources  (AURS)",
+  "cik": "2025049",
+  "form": "F-4",
+  "exhibit": "EX-96.2",
+  "filed": "2024-07-24",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-07-24_aurous-resources_ex-96-2",
+  "sha256": "1e04f40e8987a311eb7b9de093dd361eeecc60f8c72393177d6041148482e8b3",
+  "bytes": 1788717,
+  "format": "html",
+  "pages": 71,
+  "parsed_on": "2026-11-20"
+}

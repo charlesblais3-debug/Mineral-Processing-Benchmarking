@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2026514/000121390024078221/filename6.htm",
+  "source": "edgar",
+  "issuer": "Namib Minerals",
+  "cik": "2026514",
+  "form": "DRS",
+  "exhibit": "EX-96.3",
+  "filed": "2024-09-13",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-09-13_namib-minerals_ex-96-3",
+  "sha256": "49014ffbe49211c626167d2ef110049cc0e6e01eb6a2857d3755c68ca17d9aca",
+  "bytes": 1047055,
+  "format": "html",
+  "pages": 60,
+  "parsed_on": "2026-11-20"
+}
