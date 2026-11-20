@@ -1,0 +1,99 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Estelle",
+  "title": "SK-1300 Initial Assessment Technical Summary Report, Estelle Gold Project, Alaska, USA",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2024-01-31",
+  "effective_date_quote": "Effective Date: January 31, 2024",
+  "effective_date_page": 91,
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Alaska",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "secondary_crush",
+   "hpgr",
+   "ore_sorting",
+   "ball_mill",
+   "flotation",
+   "vertical_mill",
+   "cip",
+   "elution_ew",
+   "cyanide_detox"
+  ],
+  "quote": "it will be crushed in a primary gyratory crusher before going through a sizing screen. The fines fraction head will be fed directly to the High-Pressure Grinding Rolls (HPGR), the mid-sized material will be fed to the XRT ore sorting system, and the oversize material will be crushed in a secondary cone crusher. The ore sorting system will separate the economical ore out from the waste, transporting it to an HPGR. The product of the HPGR will be sent to a closed circuit consisting of a ball mill and hydro-cyclone cluster. The P80 overflow of 75µm will flow through the flotation circuit. The tailings from this process will be sent to the tailing’s thickener. The concentrate will move on to the cyclone cluster and IsaMill for fine grinding to P80 of 22µm before finally moving on to the pre-leach thickener where the underflow will report to the leach and CIP circuits. The gold leached in the CIP circuit will be recovered by activated carbon and elution. From this elution circuit, the gold will be recovered by electrowinning cells in the gold room. The gold sludge will be dried, mixed with fluxes, and then smelted in a furnace to produce doré bars. Carbon will be re-activated in a regeneration kiln before being re-used in the CIP circuit. The CIP tailings will be treated for cyanide in the cyanide destruction circuit",
+  "page": 70
+ },
+ "facts": [
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/oz",
+   "quote": "RPM North & South Gold Price 2,000 $/oz",
+   "page": 70,
+   "metal": "Au",
+   "review_note": "Price used for resource cut-off / pit shells; no economic analysis in the report"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.2,
+   "unit": "%",
+   "quote": "Process Recovery 88.2 %",
+   "page": 70,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "ore_type": "RPM North & South (also Korbel); resource cut-off parameter, not an LOM schedule average"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "The P80 overflow of 75µm will flow through the flotation circuit.",
+   "page": 70,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 22,
+   "unit": "µm",
+   "quote": "IsaMill for fine grinding to P80 of 22µm",
+   "page": 70,
+   "statistic": "design"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (RPM)",
+   "value": 9.8,
+   "quote": "RPM processing costs are estimated to be $9.80 per tonne of resource",
+   "page": 85,
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "Korbel processing (with ore sorting) is $5.23/t, not loaded to avoid two values for one line",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 1.3,
+   "quote": "The total G&A unit operating cost is estimated to be $1.30 per tonne of resource",
+   "page": 85,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

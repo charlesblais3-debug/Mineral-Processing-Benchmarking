@@ -1,0 +1,89 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Wassa",
+  "title": "NI 43-101 Technical Report on the Wassa Gold Mine",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-12-31",
+  "effective_date_quote": "Effective date of the Wassa Mineral Reserve: 31 December 2020",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Ghana",
+  "region": "Western Region",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 32
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "cil",
+   "ball_mill"
+  ],
+  "quote": "The Wassa processing plant is a conventional CIL plant with a four stage crushing circuit (p80 <8 mm) feeding two independent ball mills of 3 MW each (p80 <75 μm).",
+  "page": 21
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.7,
+   "unit": "Mt/a",
+   "quote": "Processing facilities for processing up to 2.7 Mtpa;",
+   "page": 22,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "two independent ball mills of 3 MW each (p80 <75 μm)",
+   "page": 21,
+   "statistic": "design",
+   "context": {
+    "note": "stated as p80 <75 µm"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1300,
+   "unit": "USD/oz",
+   "quote": "at the $1300 /oz reserve selling price",
+   "page": 24,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 121.2,
+   "unit": "MUSD",
+   "quote": "Base Case ($1,300 /oz): $121.2 M (100% basis)",
+   "page": 24,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 881,
+   "unit": "USD/oz",
+   "quote": "All-in Sustaining Cost: $881 /oz; and",
+   "page": 24,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Growth Capital",
+   "value": 47.7,
+   "quote": "Growth Capital: $47.7 M;",
+   "page": 24,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total",
+   "is_total": true,
+   "review_note": "Only growth capital stated in text; capital and opex summary tables are images with no extractable text"
+  }
+ ]
+}
