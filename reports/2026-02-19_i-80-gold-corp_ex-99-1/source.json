@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853962/000162828026009889/i-80goldcorppressreleaseq4.htm",
+  "source": "edgar",
+  "issuer": "i-80 Gold Corp.  (IAUX, IAUX-WT)",
+  "cik": "1853962",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-02-19",
+  "standard": "",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-02-19_i-80-gold-corp_ex-99-1",
+  "sha256": "26f65f045ab77fcd73c771d601dfb47af77548293db54a8622b9d147e6fb2456",
+  "bytes": 282632,
+  "format": "html",
+  "pages": 16,
+  "parsed_on": "2026-11-20"
+}

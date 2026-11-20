@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1798562/000121390021033645/fs42021a2ex96-1_sustainable.htm",
+  "source": "edgar",
+  "issuer": "Sustainable Opportunities Acquisition Corp.  (TMC, TMCWW)",
+  "cik": "1798562",
+  "form": "S-4/A",
+  "exhibit": "EX-96.1",
+  "filed": "2021-06-23",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-06-23_sustainable-opportunities-acqu_ex-96-1",
+  "sha256": "eaca0724477f8ab554cf0e70a7bfc50c624aba58655de5bc55e38b8a9de7e9e9",
+  "bytes": 3415441,
+  "format": "html",
+  "pages": 220,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/917225/000091722517000026/pea8k.htm",
+  "source": "edgar",
+  "issuer": "SOLITARIO ZINC CORP.  (XPL)",
+  "cik": "917225",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-08-08",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-08-08_solitario-zinc-corp_ex-99-1",
+  "sha256": "c8403c9c6d58ce22826b542f5f8df18f8dd7376343f0a2544ef7e7b9e3124b47",
+  "bytes": 3508780,
+  "format": "html",
+  "pages": 214,
+  "parsed_on": "2026-11-20"
+}

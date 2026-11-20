@@ -8,12 +8,12 @@
   "filed": "2022-08-11",
   "standard": "NI 43-101",
   "study_level": "PFS",
-  "project": "KSM",
+  "project": "",
   "commodity": "",
   "report_id": "2022-08-11_seabridge-gold-inc_ex-99-2",
-  "sha256": "ec6ff885b3e870c24b7dccad9d3349a6e3e51d33ef03a8e97de8603dc601790b",
-  "bytes": 6125715,
+  "sha256": "f24927cf400ecc6c0d1807598f820c39ee3df5ed6a000f249a0693186f09c493",
+  "bytes": 6125729,
   "format": "html",
   "pages": 342,
-  "parsed_on": "2026-11-19"
+  "parsed_on": "2026-11-20"
 }

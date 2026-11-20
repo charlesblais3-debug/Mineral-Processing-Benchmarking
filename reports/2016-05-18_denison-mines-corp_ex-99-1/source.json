@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1063259/000165495416000345/dnn_pea.htm",
+  "source": "edgar",
+  "issuer": "DENISON MINES CORP.  (DNN)",
+  "cik": "1063259",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2016-05-18",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-05-18_denison-mines-corp_ex-99-1",
+  "sha256": "40111284637697be371393a81f2d96ce92f2b6b8b26b767462fd1d2815411cd7",
+  "bytes": 3423665,
+  "format": "html",
+  "pages": 172,
+  "parsed_on": "2026-11-20"
+}

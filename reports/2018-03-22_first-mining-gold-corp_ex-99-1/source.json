@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1641229/000106299318001316/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "First Mining Gold Corp.  (FFMGF)",
+  "cik": "1641229",
+  "form": "40-F",
+  "exhibit": "EX-99.1",
+  "filed": "2018-03-22",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-03-22_first-mining-gold-corp_ex-99-1",
+  "sha256": "63a0a90018f56f521736f31ccc4012a7f5578d5abdcf20c3b44e9e7cffb78286",
+  "bytes": 1322733,
+  "format": "html",
+  "pages": 154,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125922000009/a2021trscerroverde-exhibit.htm",
+  "source": "edgar",
+  "issuer": "FREEPORT-MCMORAN INC  (FCX)",
+  "cik": "831259",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2022-02-15",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-02-15_freeport-mcmoran-inc_ex-96-1",
+  "sha256": "05b430d64259144229f2c618a4bf12417783656aec37fc1c0320d65ba86f2d31",
+  "bytes": 717072,
+  "format": "html",
+  "pages": 75,
+  "parsed_on": "2026-11-20"
+}

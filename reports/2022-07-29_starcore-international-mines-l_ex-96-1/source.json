@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1301713/000156459022027033/sam-ex961_2614.htm",
+  "source": "edgar",
+  "issuer": "STARCORE INTERNATIONAL MINES LTD.  (SHVLF)",
+  "cik": "1301713",
+  "form": "20-F",
+  "exhibit": "EX-96.1",
+  "filed": "2022-07-29",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-07-29_starcore-international-mines-l_ex-96-1",
+  "sha256": "d3d2bf20a6e1dee052ca7f78d9d5b8e8b169c6f4763ce43c6dc01eeb4bb47082",
+  "bytes": 935714,
+  "format": "html",
+  "pages": 81,
+  "parsed_on": "2026-11-20"
+}

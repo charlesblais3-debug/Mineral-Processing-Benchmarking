@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/921638/000092163817000053/a2017-05x15xchinchillaspro.htm",
+  "source": "edgar",
+  "issuer": "SILVER STANDARD RESOURCES INC  (SSRM, SSRGF)",
+  "cik": "921638",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-06-08",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-06-08_silver-standard-resources-inc_ex-99-1",
+  "sha256": "3fbb5d9b48705c5a01a6e9e54d1fa40ef6d1c76ff5872772bc03463ed823587d",
+  "bytes": 9780455,
+  "format": "html",
+  "pages": 304,
+  "parsed_on": "2026-11-20"
+}

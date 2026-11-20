@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/917851/000110465922046078/vale-20211231xex96d1.pdf",
+  "source": "edgar",
+  "issuer": "Vale S.A.  (VALE)",
+  "cik": "917851",
+  "form": "20-F",
+  "exhibit": "EX-96.1",
+  "filed": "2022-04-14",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-04-14_vale-s-a_ex-96-1",
+  "sha256": "442d7f9cdf8c03414f5940aaf97ade400dd37f8429f5db6a2595f9e8186d8898",
+  "bytes": 23751837,
+  "format": "pdf",
+  "pages": 202,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1507964/000117184318008035/exh_991.htm",
+  "source": "edgar",
+  "issuer": "Corvus Gold Inc.",
+  "cik": "1507964",
+  "form": "8-K/A",
+  "exhibit": "EX-99.1",
+  "filed": "2018-11-19",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-11-19_corvus-gold-inc_ex-99-1",
+  "sha256": "8c9be95c1aeccf93b2e3a1b6c40100cefa44ff00f8868de081c1670684d143a4",
+  "bytes": 3085478,
+  "format": "html",
+  "pages": 279,
+  "parsed_on": "2026-11-20"
+}

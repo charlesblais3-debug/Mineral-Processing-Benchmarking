@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1264089/000110465920067965/a20-21151_1ex99d1.htm",
+  "source": "edgar",
+  "issuer": "YAMANA GOLD INC.",
+  "cik": "1264089",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-06-01",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-06-01_yamana-gold-inc_ex-99-1",
+  "sha256": "3aab4cf146b75f7cc9236a28e490a0f3963376cc7398c702a5acca52f08492ae",
+  "bytes": 3865863,
+  "format": "html",
+  "pages": 205,
+  "parsed_on": "2026-11-20"
+}

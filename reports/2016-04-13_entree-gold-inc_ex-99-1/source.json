@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1271554/000110262416002548/exh99_1.htm",
+  "source": "edgar",
+  "issuer": "ENTREE GOLD INC  (ERLFF)",
+  "cik": "1271554",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2016-04-13",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-04-13_entree-gold-inc_ex-99-1",
+  "sha256": "5f128316687962e53f3aa1280eea2a87e2ee89dc28c9cd754106a069aed85274",
+  "bytes": 7693151,
+  "format": "html",
+  "pages": 562,
+  "parsed_on": "2026-11-20"
+}

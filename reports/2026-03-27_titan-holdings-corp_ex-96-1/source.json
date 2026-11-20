@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2107523/000149315226013041/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Titan Holdings Corp.  (KMCM)",
+  "cik": "2107523",
+  "form": "S-4/A",
+  "exhibit": "EX-96.1",
+  "filed": "2026-03-27",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-03-27_titan-holdings-corp_ex-96-1",
+  "sha256": "97ae7df8f84f9634994d9b0ec709324c57b3624587e82929b4b1198889327a9f",
+  "bytes": 830123,
+  "format": "html",
+  "pages": 58,
+  "parsed_on": "2026-11-20"
+}

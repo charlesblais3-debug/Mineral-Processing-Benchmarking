@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1063259/000110465923089400/tm2322992d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "DENISON MINES CORP.  (DNN)",
+  "cik": "1063259",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-08-10",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-08-10_denison-mines-corp_ex-99-1",
+  "sha256": "f5fe63686e5ca4e0c02152394fe315111befd02fa670503cab017649ad7fb419",
+  "bytes": 4627680,
+  "format": "html",
+  "pages": 311,
+  "parsed_on": "2026-11-20"
+}

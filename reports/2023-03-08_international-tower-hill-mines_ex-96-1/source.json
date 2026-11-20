@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1134115/000141057823000217/thm-20221231xex96d1.htm",
+  "source": "edgar",
+  "issuer": "INTERNATIONAL TOWER HILL MINES LTD  (THM)",
+  "cik": "1134115",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2023-03-08",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-03-08_international-tower-hill-mines_ex-96-1",
+  "sha256": "f9c239f07b728bde0cc54fc38a478e90dae394560cc513135e9add99c449bfce",
+  "bytes": 9525391,
+  "format": "html",
+  "pages": 408,
+  "parsed_on": "2026-11-20"
+}

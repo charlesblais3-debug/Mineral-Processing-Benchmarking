@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1510400/000106299317004208/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "TAHOE RESOURCES INC.",
+  "cik": "1510400",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2017-09-22",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-09-22_tahoe-resources-inc_ex-99-1",
+  "sha256": "84a88fe1d3d69edcb5f27d474fef3e31c17d76c9fa847e03362dcd0ea08fa4eb",
+  "bytes": 1490813,
+  "format": "html",
+  "pages": 247,
+  "parsed_on": "2026-11-20"
+}

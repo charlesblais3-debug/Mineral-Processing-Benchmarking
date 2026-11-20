@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1543418/000110465923020299/tm231507d2_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Trilogy Metals Inc.  (TMQ)",
+  "cik": "1543418",
+  "form": "8-K",
+  "exhibit": "EX-96.1",
+  "filed": "2023-02-14",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-02-14_trilogy-metals-inc_ex-96-1_020299",
+  "sha256": "47537a2d57efc8b78cb5083bf16f04e26ee3cc1f004f2d3df794fb67cff24455",
+  "bytes": 1426314,
+  "format": "html",
+  "pages": 89,
+  "parsed_on": "2026-11-20"
+}

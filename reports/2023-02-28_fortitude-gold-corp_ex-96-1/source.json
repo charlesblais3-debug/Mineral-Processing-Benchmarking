@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1828377/000155837023002344/ftco-20221231xex96d1.htm",
+  "source": "edgar",
+  "issuer": "Fortitude Gold Corp  (FTCO)",
+  "cik": "1828377",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2023-02-28",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-02-28_fortitude-gold-corp_ex-96-1",
+  "sha256": "fd1a25c27a35fd12ac3b288f3e1fbd9e50c9b875c9c8b9250cf9f0941c1e88c0",
+  "bytes": 3532188,
+  "format": "html",
+  "pages": 180,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1883037/000110465922084321/tm2127701d23_ex96-3.htm",
+  "source": "edgar",
+  "issuer": "Sedibelo Resources Ltd",
+  "cik": "1883037",
+  "form": "F-1",
+  "exhibit": "EX-96.3",
+  "filed": "2022-07-29",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-07-29_sedibelo-resources-ltd_ex-96-3",
+  "sha256": "867163fad17c801f33366b2d6cf66ac95eae189cda1e86c1c4d4990079c7f53d",
+  "bytes": 3347012,
+  "format": "html",
+  "pages": 115,
+  "parsed_on": "2026-11-20"
+}

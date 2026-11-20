@@ -8,12 +8,12 @@
   "filed": "2023-12-22",
   "standard": "NI 43-101",
   "study_level": "FS",
-  "project": "Eskay Creek",
+  "project": "",
   "commodity": "",
   "report_id": "2023-12-22_skeena-resources-ltd_ex-99-2",
-  "sha256": "5da5e214db6f094acbc928a6e93bf2c0263813e123040e8ea8cc61149d328874",
-  "bytes": 3259875,
+  "sha256": "87dc94b3e48273630604da0a29010ddf2833ceb39d762dc6ff2c6e04fe7d2095",
+  "bytes": 3259889,
   "format": "html",
   "pages": 168,
-  "parsed_on": "2026-11-19"
+  "parsed_on": "2026-11-20"
 }

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1853860/000117184322008204/exh_991.htm",
+  "source": "edgar",
+  "issuer": "Ero Copper Corp.  (ERO)",
+  "cik": "1853860",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-12-27",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-12-27_ero-copper-corp_ex-99-1",
+  "sha256": "30284d2696c4cc6a322ff2eb613e9e30fcd5406418179b6c709cab4f71132506",
+  "bytes": 1204340,
+  "format": "html",
+  "pages": 197,
+  "parsed_on": "2026-11-20"
+}

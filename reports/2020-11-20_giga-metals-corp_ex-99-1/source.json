@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1336364/000106299320005835/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Giga Metals Corp  (GIGGF)",
+  "cik": "1336364",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-11-20",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-11-20_giga-metals-corp_ex-99-1",
+  "sha256": "491c9087e945d49326d2b3b25043dcf783da302f30fe1cff2a50a43c9ff132ec",
+  "bytes": 24433,
+  "format": "html",
+  "pages": 5,
+  "parsed_on": "2026-11-20"
+}

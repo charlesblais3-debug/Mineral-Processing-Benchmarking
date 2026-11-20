@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/919239/000119312518244579/d584780dex991.htm",
+  "source": "edgar",
+  "issuer": "GOLDCORP INC",
+  "cik": "919239",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-08-09",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-08-09_goldcorp-inc_ex-99-1",
+  "sha256": "56993a251e01e848bf5bbb99d0d859dda9e8fe778cd2e5b8ba67f9ab09bdf206",
+  "bytes": 1826858,
+  "format": "html",
+  "pages": 200,
+  "parsed_on": "2026-11-20"
+}

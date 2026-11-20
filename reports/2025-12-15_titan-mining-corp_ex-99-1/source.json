@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1791703/000121390025121665/ea026945301ex99-1_titan.htm",
+  "source": "edgar",
+  "issuer": "Titan Mining Corp  (TII, TIMCD)",
+  "cik": "1791703",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-12-15",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-12-15_titan-mining-corp_ex-99-1",
+  "sha256": "0bacc143ba4ffeeced70c8d194589c2c3308f5b1c2121f6cb2b9122d781093f5",
+  "bytes": 6206137,
+  "format": "html",
+  "pages": 271,
+  "parsed_on": "2026-11-20"
+}

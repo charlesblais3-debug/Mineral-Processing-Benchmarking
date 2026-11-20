@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1072725/000107272518000007/rpagrisiembraminera43-101.htm",
+  "source": "edgar",
+  "issuer": "GOLD RESERVE INC  (GDRZF)",
+  "cik": "1072725",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-04-06",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-04-06_gold-reserve-inc_ex-99-1",
+  "sha256": "3693446ef6897fcb4fc2aa0cb0fb3fe844d1ef49ae3a2ce4a56c2845f5730e0c",
+  "bytes": 3199567,
+  "format": "html",
+  "pages": 270,
+  "parsed_on": "2026-11-20"
+}

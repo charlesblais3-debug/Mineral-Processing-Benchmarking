@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1517006/000095010322016980/dp181684_ex9901.htm",
+  "source": "edgar",
+  "issuer": "Gatos Silver, Inc.  (GATO)",
+  "cik": "1517006",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-10-03",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-10-03_gatos-silver-inc_ex-99-1",
+  "sha256": "71de3136473b94bbd75a8783483f9cefeb0a8111ff409bebe7bb4b5be6132cb6",
+  "bytes": 286323,
+  "format": "html",
+  "pages": 17,
+  "parsed_on": "2026-11-20"
+}

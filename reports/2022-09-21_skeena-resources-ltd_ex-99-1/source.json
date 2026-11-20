@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1713748/000110465922101694/tm2225806d5_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Skeena Resources Ltd  (SKE)",
+  "cik": "1713748",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-09-21",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-09-21_skeena-resources-ltd_ex-99-1",
+  "sha256": "fc5c58f66c482b3d8523d157cfbe12fbd4d36385e53c640b960d4ccaa6e7884a",
+  "bytes": 8773423,
+  "format": "html",
+  "pages": 316,
+  "parsed_on": "2026-11-20"
+}

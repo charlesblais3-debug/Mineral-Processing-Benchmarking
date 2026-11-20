@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1769697/000121390021039589/ea145027ex96-1_snowlake.htm",
+  "source": "edgar",
+  "issuer": "Snow Lake Resources Ltd.  (LITM)",
+  "cik": "1769697",
+  "form": "F-1/A",
+  "exhibit": "EX-96.1",
+  "filed": "2021-07-30",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-07-30_snow-lake-resources-ltd_ex-96-1",
+  "sha256": "9c6f8013eff3ff9868cae092ed45fe030da6bf0c5247bd1abb73e49750711d4e",
+  "bytes": 731292,
+  "format": "html",
+  "pages": 37,
+  "parsed_on": "2026-11-20"
+}

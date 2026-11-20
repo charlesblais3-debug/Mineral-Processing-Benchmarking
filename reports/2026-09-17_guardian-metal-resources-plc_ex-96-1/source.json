@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2039972/000110465926108373/gmtl-20260630xex96d1.htm",
+  "source": "edgar",
+  "issuer": "Guardian Metal Resources PLC  (GMTL)",
+  "cik": "2039972",
+  "form": "20-F",
+  "exhibit": "EX-96.1",
+  "filed": "2026-09-17",
+  "standard": "S-K 1300",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-09-17_guardian-metal-resources-plc_ex-96-1",
+  "sha256": "0641912091b4c937cc19c43190a6bbeced946f9aadf970e44513ef95f217ea4a",
+  "bytes": 808529,
+  "format": "html",
+  "pages": 249,
+  "parsed_on": "2026-11-20"
+}

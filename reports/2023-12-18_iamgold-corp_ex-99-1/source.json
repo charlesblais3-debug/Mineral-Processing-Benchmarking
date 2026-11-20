@@ -8,12 +8,12 @@
   "filed": "2023-12-18",
   "standard": "NI 43-101",
   "study_level": "",
-  "project": "Essakane",
+  "project": "",
   "commodity": "",
   "report_id": "2023-12-18_iamgold-corp_ex-99-1",
-  "sha256": "ef6f69e97e3ff467bc38c88e7585c99f5dfcf42a8f6407a04a96adfac264cd09",
-  "bytes": 1515251,
+  "sha256": "175c3b53a784ee57829249ae0f30c7941645b33b325dd82ced7781ceebf20af7",
+  "bytes": 1515265,
   "format": "html",
   "pages": 275,
-  "parsed_on": "2026-11-19"
+  "parsed_on": "2026-11-20"
 }

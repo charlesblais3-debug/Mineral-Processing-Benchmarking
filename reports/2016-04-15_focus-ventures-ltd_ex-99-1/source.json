@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1471603/000121716016000481/focus2016bayovartechreportam.htm",
+  "source": "edgar",
+  "issuer": "Focus Ventures Ltd.",
+  "cik": "1471603",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2016-04-15",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-04-15_focus-ventures-ltd_ex-99-1",
+  "sha256": "ef511b80a624ad3d0768f73974c4f19f2eef2bbf587229dff396c9fe858c4174",
+  "bytes": 3865951,
+  "format": "html",
+  "pages": 2,
+  "parsed_on": "2026-11-20"
+}

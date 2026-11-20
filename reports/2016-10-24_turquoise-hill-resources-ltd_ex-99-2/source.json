@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1158041/000119312516744935/d255363dex992.htm",
+  "source": "edgar",
+  "issuer": "TURQUOISE HILL RESOURCES LTD.",
+  "cik": "1158041",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2016-10-24",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-10-24_turquoise-hill-resources-ltd_ex-99-2",
+  "sha256": "200899528bddffa62577285265a7a73d8ea57bad9a4aacdca01bd76b7ad04ac6",
+  "bytes": 9760254,
+  "format": "html",
+  "pages": 597,
+  "parsed_on": "2026-11-20"
+}

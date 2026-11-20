@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1641229/000106299317004223/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "First Mining Finance Corp.  (FFMGF)",
+  "cik": "1641229",
+  "form": "40-F/A",
+  "exhibit": "EX-99.1",
+  "filed": "2017-09-25",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2017-09-25_first-mining-finance-corp_ex-99-1",
+  "sha256": "8c3953b333ce4044f296513529a9a62c179abfdd92062e96e1fefdb1b0b08f87",
+  "bytes": 604909,
+  "format": "html",
+  "pages": 100,
+  "parsed_on": "2026-11-20"
+}

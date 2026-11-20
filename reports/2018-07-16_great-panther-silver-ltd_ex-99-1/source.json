@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1300050/000127956918001474/ex991.htm",
+  "source": "edgar",
+  "issuer": "Great Panther Silver Ltd  (GPLDF)",
+  "cik": "1300050",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-07-16",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-07-16_great-panther-silver-ltd_ex-99-1",
+  "sha256": "96a5e6ab10ad6ad61064edaa4a7703512bdac82c5af388b0032c2386d6967b56",
+  "bytes": 2397117,
+  "format": "html",
+  "pages": 201,
+  "parsed_on": "2026-11-20"
+}

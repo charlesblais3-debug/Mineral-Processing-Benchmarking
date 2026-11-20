@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1471603/000121716016000634/focusjune2016bayovar_techrep.htm",
+  "source": "edgar",
+  "issuer": "Focus Ventures Ltd.",
+  "cik": "1471603",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2016-08-04",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-08-04_focus-ventures-ltd_ex-99-1",
+  "sha256": "6857e5d45ea35bd8f0665331e51ee191b97e002800eec115a37f0f7a91c2793c",
+  "bytes": 4641210,
+  "format": "html",
+  "pages": 211,
+  "parsed_on": "2026-11-20"
+}

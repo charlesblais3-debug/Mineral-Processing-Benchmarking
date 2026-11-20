@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1173643/000127351121000236/ni43-01_itr.htm",
+  "source": "edgar",
+  "issuer": "Tanzanian Gold Corp  (TRX)",
+  "cik": "1173643",
+  "form": "6-K/A",
+  "exhibit": "EX-99.2",
+  "filed": "2021-07-20",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2021-07-20_tanzanian-gold-corp_ex-99-2",
+  "sha256": "b8992bfc3f9f78847ee5445548b99d8a03ab3f333ce8fbf0a76815c21ef297d2",
+  "bytes": 7482848,
+  "format": "html",
+  "pages": 241,
+  "parsed_on": "2026-11-20"
+}

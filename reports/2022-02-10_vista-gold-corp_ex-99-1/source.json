@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/783324/000110465922019233/tm226078d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "VISTA GOLD CORP  (VGZ)",
+  "cik": "783324",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-02-10",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-02-10_vista-gold-corp_ex-99-1",
+  "sha256": "2d379c63887d18d39837ca57d7dd5b33ce463492e8817b6adb15771b37fdaa5c",
+  "bytes": 175559,
+  "format": "html",
+  "pages": 12,
+  "parsed_on": "2026-11-20"
+}

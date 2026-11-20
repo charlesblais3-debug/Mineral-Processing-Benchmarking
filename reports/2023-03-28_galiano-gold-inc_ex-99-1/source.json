@@ -8,12 +8,12 @@
   "filed": "2023-03-28",
   "standard": "NI 43-101",
   "study_level": "FS",
-  "project": "Galiano",
+  "project": "",
   "commodity": "",
   "report_id": "2023-03-28_galiano-gold-inc_ex-99-1",
-  "sha256": "b0eab1ff8448209dfce92e499837eb2a07f29ee63ac101b7c4461e3f1becea28",
-  "bytes": 5351612,
+  "sha256": "e92edda0c2bc703861fb5a545e8aa9eb18f13ca906943405591eb0a1f44e25e2",
+  "bytes": 5351626,
   "format": "html",
   "pages": 418,
-  "parsed_on": "2026-11-19"
+  "parsed_on": "2026-11-20"
 }

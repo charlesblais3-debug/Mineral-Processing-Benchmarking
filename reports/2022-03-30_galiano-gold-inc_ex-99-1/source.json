@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1377757/000106299322008929/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Galiano Gold Inc.  (GAU)",
+  "cik": "1377757",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-03-30",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-03-30_galiano-gold-inc_ex-99-1",
+  "sha256": "022109c609f48ec399e19d0113bc97bc3e693446a39ae37bcb0f76ca342591bb",
+  "bytes": 4469089,
+  "format": "html",
+  "pages": 432,
+  "parsed_on": "2026-11-20"
+}

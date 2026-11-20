@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1271554/000127956918000373/tv487417_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Entree Resources Ltd.  (ERLFF)",
+  "cik": "1271554",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-03-02",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-03-02_entree-resources-ltd_ex-99-1",
+  "sha256": "1dff95d62847dbda597d8bb8f37d96c43677326459837f71beb132b5486fba08",
+  "bytes": 4066832,
+  "format": "html",
+  "pages": 418,
+  "parsed_on": "2026-11-20"
+}

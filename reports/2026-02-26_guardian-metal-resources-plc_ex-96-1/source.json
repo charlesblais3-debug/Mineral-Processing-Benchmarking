@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2039972/000110465926020524/tm2532978d7_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Guardian Metal Resources PLC",
+  "cik": "2039972",
+  "form": "F-1",
+  "exhibit": "EX-96.1",
+  "filed": "2026-02-26",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-02-26_guardian-metal-resources-plc_ex-96-1",
+  "sha256": "67e50df27bcb22bc99c0dfd7a5be75f3f1b740253df645152f33176e2e38a09f",
+  "bytes": 328915,
+  "format": "html",
+  "pages": 115,
+  "parsed_on": "2026-11-20"
+}

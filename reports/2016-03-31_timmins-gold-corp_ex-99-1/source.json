@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1502154/000106299316008668/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Timmins Gold Corp.",
+  "cik": "1502154",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2016-03-31",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2016-03-31_timmins-gold-corp_ex-99-1",
+  "sha256": "8858aa60391a3e972c5b6745e2564f9c7d76163cb44137848f0f292355d498ff",
+  "bytes": 1368429,
+  "format": "html",
+  "pages": 253,
+  "parsed_on": "2026-11-20"
+}

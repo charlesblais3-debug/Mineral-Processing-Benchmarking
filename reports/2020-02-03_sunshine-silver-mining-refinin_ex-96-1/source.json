@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1517006/000091205720000040/filename2.htm",
+  "source": "edgar",
+  "issuer": "Sunshine Silver Mining & Refining Corp  (GATO)",
+  "cik": "1517006",
+  "form": "DRS/A",
+  "exhibit": "EX-96.1",
+  "filed": "2020-02-03",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-02-03_sunshine-silver-mining-refinin_ex-96-1",
+  "sha256": "a7167b9f915c9c063af8f9266df68a0bdf187f5b8727c9e7d000d31250452213",
+  "bytes": 6680224,
+  "format": "html",
+  "pages": 382,
+  "parsed_on": "2026-11-20"
+}

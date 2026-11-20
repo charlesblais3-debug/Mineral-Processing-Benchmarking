@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/783324/000155837020011827/vgz-20201027xex99d1.htm",
+  "source": "edgar",
+  "issuer": "VISTA GOLD CORP  (VGZ)",
+  "cik": "783324",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2020-10-28",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2020-10-28_vista-gold-corp_ex-99-1",
+  "sha256": "d74f6d673f8ec2d73a48c8a17ad8a4fdc0c64313b06800987442d39e990a4305",
+  "bytes": 1321299,
+  "format": "html",
+  "pages": 445,
+  "parsed_on": "2026-11-20"
+}
