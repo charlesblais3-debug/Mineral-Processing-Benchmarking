@@ -93,7 +93,7 @@
   {
    "parameter": "npv_after_tax",
    "value": 6.9,
-   "unit": "MUSD",
+   "unit": "MCAD",
    "quote": "after tax NPV of $6.9 million CAD",
    "page": 162,
    "context": {

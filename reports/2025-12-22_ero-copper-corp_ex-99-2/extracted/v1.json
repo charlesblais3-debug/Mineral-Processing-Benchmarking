@@ -1,0 +1,118 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Xavantina Operations",
+  "title": "Technical Report on the Xavantina Operations, Mato Grosso, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2025-06-30",
+  "effective_date_quote": "The effective date of this report is June 30 , 2025 .",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Brazil",
+  "region": "Mato Grosso",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "cil"
+  ],
+  "quote": "The CIL unit operation, which processes the flotation concentrate",
+  "page": 86
+ },
+ "facts": [
+  {
+   "parameter": "metal_price",
+   "value": 2100,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are based on a long - term gold price of US $ 2 , 100 per ounce",
+   "page": 16,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 5.5,
+   "unit": "BRL/USD",
+   "quote": "a USD : BRL foreign exchange rate of 5 . 50",
+   "page": 16,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "UG Mine Development",
+   "value": 61257,
+   "quote": "61,257 UG Mine Development",
+   "page": 90,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 22282,
+   "quote": "22,282 Infrastructure",
+   "page": 90,
+   "l1": "onsite_infra",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Safety & Environment",
+   "value": 8569,
+   "quote": "8,569 Safety & Environment",
+   "page": 90,
+   "l1": "other",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "UG Equipment",
+   "value": 28914,
+   "quote": "28,914 UG Equipment",
+   "page": 90,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Capital Costs",
+   "value": 8706,
+   "quote": "8,706 Other Capital Costs",
+   "page": 90,
+   "l1": "other",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Cost",
+   "value": 129728,
+   "quote": "129,728 Total Capital Cost",
+   "page": 90,
+   "is_total": true,
+   "review_note": "Report text labels this the total LOM capital (capitalized development, equipment and sustaining); value precedes label in the parsed table",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure & reclamation",
+   "value": 10.9,
+   "quote": "approximately BRL 59 . 8 M (USD 10 . 9 )",
+   "page": 90,
+   "multiplier": "M",
+   "is_total": true
+  }
+ ]
+}

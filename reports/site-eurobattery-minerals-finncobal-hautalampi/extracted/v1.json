@@ -1,0 +1,492 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Hautalampi",
+  "title": "PFS Study for Hautalampi Ni-, Cu-, Co-Deposit, Outokumpu, Finland (JORC 2012)",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "effective_date": "2023-03-07",
+  "effective_date_quote": "Effective date: 7th March 2023",
+  "effective_date_page": 1,
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co",
+   "Cu"
+  ],
+  "country": "Finland",
+  "region": "North Karelia (Outokumpu)",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "EUR",
+  "cost_base_year": 2023,
+  "review_note": "Report is prepared under JORC 2012 (stated in 1.1); standard field set to JORC. Region (Outokumpu municipality, eastern Finland) from text; North Karelia is not stated."
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "rod_mill",
+   "ball_mill",
+   "flotation"
+  ],
+  "page": 143,
+  "quote": "The grinding section consists of primary rod mill grinding in an open circuit and secondary ball mill grinding in a closed circuit. The target particle size (P80) to the copper flotation is assumed to be 68 µm. Ore is fed to the primary rod mill from the ore stockpile by a belt conveyor. The primary rod mill installed power is 400 kW and the main dimensions are 2.7 x 3.6 m. Rod mill discharge is pumped to the classification hydro cyclone together with ball mill discharge. Hydrocyclone underflow is fed to the ball mill. Ball mill power is 1350 kW and the main dimensions are 3.6 x 6 m. Hydrocyclone overflow is fed to the copper flotation conditioning tank. 150 % circulation load has been assumed for the ball mill circuit. Grinding mill power requirements have been assumed based on operational values from former Keretti operations with similar type ore properties. Grinding rod and ball consumptions per feed tonne have been assumed based on experience from former Keretti operations. Rod consumption is estimated to be 0.5 kg/t and ball consumption is 1.5 kg/t. 16.4.3 Copper Flotation and Dewatering Copper flotation consists of rougher/scavenger flotation and two cleaning flotation stages."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.5,
+   "unit": "Mt/a",
+   "quote": "The plant is designed for 500 ktpa nominal ore throughput",
+   "page": 21,
+   "statistic": "design",
+   "derived": true,
+   "context": {
+    "derived_note": "500 ktpa = 0.5 Mt/a"
+   }
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Concentrator plant availability has been assumed to be 92%",
+   "page": 21,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.28,
+   "unit": "%",
+   "quote": "0.17 % 0.28 % Cu (%)",
+   "page": 20,
+   "metal": "Ni",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.22,
+   "unit": "%",
+   "quote": "0.18 % 0.22 % Co (%)",
+   "page": 20,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.07,
+   "unit": "%",
+   "quote": "0.06 % 0.07 % S (%)",
+   "page": 20,
+   "metal": "Co",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82,
+   "unit": "%",
+   "quote": "Ni: 7 % (Ni recovery 82%)",
+   "page": 16,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "to_product": "Ni-Co concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82,
+   "unit": "%",
+   "quote": "Co: 1.93 % (Co recovery 82%)",
+   "page": 16,
+   "metal": "Co",
+   "statistic": "design",
+   "context": {
+    "to_product": "Ni-Co concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 86.5,
+   "unit": "%",
+   "quote": "Cu: 26.5 % (Cu recovery 86.5%)",
+   "page": 16,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "to_product": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 7,
+   "unit": "%",
+   "quote": "Ni: 7 % (Ni recovery 82%)",
+   "page": 16,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "concentrate": "Ni-Co concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 1.93,
+   "unit": "%",
+   "quote": "Co: 1.93 % (Co recovery 82%)",
+   "page": 16,
+   "metal": "Co",
+   "statistic": "design",
+   "context": {
+    "concentrate": "Ni-Co concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 26.5,
+   "unit": "%",
+   "quote": "Cu: 26.5 % (Cu recovery 86.5%)",
+   "page": 16,
+   "metal": "Cu",
+   "statistic": "design",
+   "context": {
+    "concentrate": "Cu concentrate"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 68,
+   "unit": "µm",
+   "quote": "The target particle size (P80) to the copper flotation is assumed to be 68 µm",
+   "page": 143,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20000,
+   "unit": "USD/t",
+   "quote": "Nickel\n82%\n68%\n20 000",
+   "page": 208,
+   "metal": "Ni",
+   "context": {
+    "note": "USD per tonne (20,000 USD/t)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 70000,
+   "unit": "USD/t",
+   "quote": "Cobalt\n82%\n55%\n70 000",
+   "page": 208,
+   "metal": "Co"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.0,
+   "unit": "USD/EUR",
+   "quote": "USD:EUR rate is assumed to be 1:1",
+   "page": 208,
+   "context": {
+    "pair": "USD per EUR"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine",
+   "value": 5455,
+   "quote": "Mine 5 455",
+   "page": 27,
+   "l1": "mining",
+   "l2": "other",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrator plant",
+   "value": 24675,
+   "quote": "Concentrator plant 24 675",
+   "page": 27,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings and Waste Rock",
+   "value": 11577,
+   "quote": "Tailings and Waste Rock 11 577",
+   "page": 27,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Water management",
+   "value": 2221,
+   "quote": "Water management 2 221",
+   "page": 27,
+   "l1": "tailings_water",
+   "l2": "water",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site infrastructure",
+   "value": 11636,
+   "quote": "Site infrastructure 11 636",
+   "page": 27,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine closure",
+   "value": 3009,
+   "quote": "Mine closure 3 009",
+   "page": 27,
+   "l1": "other",
+   "review_note": "Closure line sits inside the direct-cost sum of the initial capital table",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Direct costs",
+   "value": 58572,
+   "quote": "Direct costs 58 572",
+   "page": 27,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect costs",
+   "value": 6505,
+   "quote": "Indirect costs 6 505",
+   "page": 27,
+   "l1": "indirects",
+   "l2": "other",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Base estimate",
+   "value": 65078,
+   "quote": "Base estimate 65 078",
+   "page": 27,
+   "is_subtotal": true,
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency 15%",
+   "value": 9762,
+   "quote": "Contingency 15% 9 762",
+   "page": 27,
+   "l1": "contingency",
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total investment cost (TIC)",
+   "value": 74840,
+   "quote": "Total investment cost (TIC) 74 840",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "k",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining CAPEX",
+   "value": 3886000,
+   "quote": "Sustaining CAPEX is  EUR 3 886 000",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "total",
+   "review_note": "Stated without contingency",
+   "derived": true,
+   "derived_note": "number printed with space as thousands separator (e.g. '5 455'); value is as printed"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Admin",
+   "value": 3.1,
+   "quote": "Admin 1 552 352 3.10",
+   "page": 27,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 21.55,
+   "quote": "Mining 10 772 550 21.55",
+   "page": 27,
+   "l1": "mining",
+   "review_note": "Table 22-3 (mining chapter) shows total mining opex 23.82 EUR/t ore; summary Table 1-12 used",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Concentrator Plant",
+   "value": 15.53,
+   "quote": "Concentrator Plant 7 763 856 15.53",
+   "page": 27,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics",
+   "value": 0.98,
+   "quote": "Logistics 489 352 0.98",
+   "page": 27,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost",
+   "value": 41.16,
+   "quote": "Total 20 578 109 41.16",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Consumables Costs",
+   "value": 8.93,
+   "quote": "Consumables Costs 4 463 424 8.93",
+   "page": 206,
+   "l1": "processing",
+   "l2": "maintenance",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled",
+   "part_of": "Concentrator Plant"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Electricity Costs",
+   "value": 2.2,
+   "quote": "Electricity Costs 1 098 828 2.20",
+   "page": 206,
+   "l1": "processing",
+   "l2": "power",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled",
+   "part_of": "Concentrator Plant"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance Costs",
+   "value": 0.46,
+   "quote": "Maintenance Costs 227 736 0.46",
+   "page": 206,
+   "l1": "processing",
+   "l2": "maintenance",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled",
+   "part_of": "Concentrator Plant"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Laboratory & Analyses Costs",
+   "value": 0.6,
+   "quote": "Laboratory & Analyses Costs 300 000 0.60",
+   "page": 206,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled",
+   "part_of": "Concentrator Plant"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water Handling & Treatment Costs",
+   "value": 0.11,
+   "quote": "Water Handling & Treatment Costs 53 868 0.11",
+   "page": 206,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled",
+   "part_of": "Concentrator Plant"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labour Costs",
+   "value": 3.24,
+   "quote": "Labour Costs 1 620 000 3.24",
+   "page": 206,
+   "l1": "processing",
+   "l2": "labour",
+   "multiplier": "",
+   "currency": "EUR",
+   "basis_unit": "per_t_milled",
+   "part_of": "Concentrator Plant"
+  }
+ ]
+}

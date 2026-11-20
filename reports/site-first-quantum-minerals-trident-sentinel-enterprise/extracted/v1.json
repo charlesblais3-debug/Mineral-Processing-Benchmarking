@@ -1,0 +1,227 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Trident (Sentinel / Enterprise)",
+  "title": "Trident Project NI 43-101 Technical Report, North West Province, Zambia",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2019-12-31",
+  "effective_date_quote": "The effective date for the Mineral Resource and Mineral Reserve estimates is 31st December 2019.",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Ni"
+  ],
+  "country": "Zambia",
+  "region": "North West Province",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "effective_date_page": 15
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill"
+  ],
+  "quote": "SAG and ball milling of crushed ore, with size classification by hydrocyclones.",
+  "page": 230
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 62,
+   "unit": "Mt/a",
+   "quote": "62 Mtpa processing is now proposed, commencing from 2022",
+   "page": 15,
+   "statistic": "design",
+   "context": {
+    "phase": "Sentinel copper circuit, proposed expansion from 2022 (55 Mtpa existing)"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 212,
+   "unit": "um",
+   "quote": "A grind size of 80% passing 212 µm is targeted",
+   "page": 230,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "AVERAGE RECOVERIES % 90% 89% 90% 90%",
+   "page": 32,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.46,
+   "unit": "%",
+   "quote": "Grade % 0.46 0.51 0.46 0.39",
+   "page": 32,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.0,
+   "unit": "USD/lb",
+   "quote": "equivalent to 7.5% of the $3.00/lb copper price",
+   "page": 257,
+   "metal": "Cu"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining capital",
+   "value": 111.7,
+   "quote": "subtotal ($M) $33.5 $78.2 $0.0 $0.0 $0.0 $111.7",
+   "page": 249,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Processing capital",
+   "value": 41.8,
+   "quote": "subtotal ($M) $3.8 $2.0 $12.0 $2.0 $22.0 $41.8",
+   "page": 249,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other capital",
+   "value": 3.7,
+   "quote": "subtotal ($M) $2.7 $1.0 $0.0 $0.0 $0.0 $3.7",
+   "page": 249,
+   "l1": "other",
+   "l2": "unallocated",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Sentinel capital cost provisions - Total",
+   "value": 157.2,
+   "quote": "Total ($M) $40.0 $81.2 $12.0 $2.0 $22.0 $157.2",
+   "page": 249,
+   "is_total": true,
+   "review_note": "Sentinel 2020-2024 capital provisions (in-pit crusher, fleet additions for expansion to 62 Mtpa) at an operating mine.",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining sustaining",
+   "value": 296.7,
+   "quote": "subtotal ($M) $47.8 $42.5 $38.1 $39.1 $18.1 $111.0 $296.7",
+   "page": 29,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process sustaining",
+   "value": 129.8,
+   "quote": "subtotal ($M) $0.0 $1.0 $2.4 $0.5 $0.0 $125.8 $129.8",
+   "page": 29,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other sustaining",
+   "value": 62.3,
+   "quote": "subtotal ($M) $11.4 $27.1 $7.5 $10.1 $6.2 $62.3",
+   "page": 29,
+   "l1": "other",
+   "l2": "unallocated",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sentinel sustaining - Total",
+   "value": 488.7,
+   "quote": "Total ($M) $59.2 $70.6 $48.0 $49.7 $24.3 $236.9 $488.7",
+   "page": 29,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total closure costs",
+   "value": 78.2,
+   "quote": "Total closure costs $40.0 $38.2 $78.2",
+   "page": 29,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (variable + fixed)",
+   "value": 4.85,
+   "quote": "Average $1.00 $3.98 $0.87 $4.85 $5.85 $6.02",
+   "page": 256,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.0,
+   "quote": "Average $1.00 $3.98 $0.87 $4.85 $5.85 $6.02",
+   "page": 256,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing + G&A (pit optimisation basis)",
+   "value": 5.85,
+   "quote": "Average $1.00 $3.98 $0.87 $4.85 $5.85 $6.02",
+   "page": 256,
+   "is_total": true,
+   "review_note": "Report states the cashflow-model average was updated to $6.02/t (processing + G&A); lines shown are the 5.85 optimisation basis.",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (per t mined, LOM average)",
+   "value": 1.8,
+   "quote": "Average $1.66 $1.86 $1.80",
+   "page": 255,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  }
+ ]
+}

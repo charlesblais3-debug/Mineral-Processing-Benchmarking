@@ -160,6 +160,11 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         if not f.get("derived") and not value_in_quote(value, f["quote"]):
             status = "needs_review"
             problems.append(f"fact {key}: value {value} not in its quote (mark derived: true with a note if computed)")
+        cur = f.get("currency")
+        for code in ("USD", "CAD", "AUD", "EUR", "GBP", "BRL", "ZAR"):
+            if cur and cur != code and code in str(f.get("unit", "")):
+                status = "needs_review"
+                problems.append(f"fact {key}: unit {f.get('unit')} contradicts currency {cur}")
         rng = p.get("range")
         if rng and vnorm is not None and not (rng[0] <= vnorm <= rng[1]):
             status = "needs_review"

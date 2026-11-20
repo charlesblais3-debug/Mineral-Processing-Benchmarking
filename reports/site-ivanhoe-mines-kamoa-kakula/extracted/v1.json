@@ -1,0 +1,625 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kamoa-Kakula",
+  "title": "Kamoa-Kakula Integrated Development Plan 2023",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2023-03-06",
+  "effective_date_quote": "Effective Date of Technical Report: 6 March 2023",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "H2SO4"
+  ],
+  "country": "DRC",
+  "region": "Lualaba Province",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 3
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "hpgr",
+   "screening"
+  ],
+  "quote": "The crushed ore is fed to the High-Pressure Grinding Rolls (HPGR) operating in closed circuit with wet screening",
+  "page": 55
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 19.2,
+   "unit": "Mt/a",
+   "quote": "Kamoa-Kakula 2023 PFS (Plant expansion to 19.2 Mtpa",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "phase": "expanded complex: Kakula 9.2 Mtpa + Kamoa 10.0 Mtpa"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 3.94,
+   "unit": "%",
+   "quote": "schedules 472 Mt to be mined at an average grade of 3.94% copper",
+   "page": 62,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 53,
+   "unit": "um",
+   "quote": "classification to a target grind size of 80% passing 53 micrometres",
+   "page": 55,
+   "statistic": "design",
+   "context": {}
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 10,
+   "unit": "um",
+   "quote": "re-ground to a P80 of 10 µm",
+   "page": 56,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.7,
+   "unit": "USD/lb",
+   "quote": "long-term price assumption of US$3.70/lb of copper",
+   "page": 62,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 19062,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV8% US$M 19,062",
+   "page": 34,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.6,
+   "unit": "years",
+   "quote": "has a payback period of 1.6-years",
+   "page": 62
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.31,
+   "unit": "USD/lb",
+   "quote": "C1 cash cost is US$1.31/lb of copper",
+   "page": 62,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "C1 per lb payable Cu"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Underground Mining",
+   "value": 543,
+   "quote": "Underground Mining 543 684 2,747 3,974",
+   "page": 578,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mining",
+   "value": 2747,
+   "quote": "Underground Mining 543 684 2,747 3,974",
+   "page": 578,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Mining Mobile Equipment",
+   "value": 63,
+   "quote": "Mining Mobile Equipment 63 66 1,238 1,367",
+   "page": 578,
+   "l1": "mining",
+   "l2": "equipment",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Mobile Equipment",
+   "value": 1238,
+   "quote": "Mining Mobile Equipment 63 66 1,238 1,367",
+   "page": 578,
+   "l1": "mining",
+   "l2": "equipment",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Smelter Total",
+   "value": 906,
+   "quote": "Smelter Total 906 – 165 1,071",
+   "page": 578,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Smelter Total",
+   "value": 165,
+   "quote": "Smelter Total 906 – 165 1,071",
+   "page": 578,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Power Infrastructure",
+   "value": 84,
+   "quote": "Power Infrastructure 84 134 – 218",
+   "page": 578,
+   "l1": "offsite_infra",
+   "l2": "power",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Process Plant",
+   "value": 262,
+   "quote": "Process Plant 262 238 193 693",
+   "page": 578,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant",
+   "value": 193,
+   "quote": "Process Plant 262 238 193 693",
+   "page": 578,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Tailings",
+   "value": 57,
+   "quote": "Tailings 57 – 404 461",
+   "page": 578,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 404,
+   "quote": "Tailings 57 – 404 461",
+   "page": 578,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - General Surface Infrastructure",
+   "value": 662,
+   "quote": "General Surface Infrastructure 662 98 150 910",
+   "page": 578,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "General Surface Infrastructure",
+   "value": 150,
+   "quote": "General Surface Infrastructure 662 98 150 910",
+   "page": 578,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Rail Spur",
+   "value": 70,
+   "quote": "Rail Spur – 84 70 154",
+   "page": 578,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - EPCM",
+   "value": 127,
+   "quote": "EPCM 127 141 5 273",
+   "page": 578,
+   "l1": "indirects",
+   "l2": "epcm",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "EPCM",
+   "value": 5,
+   "quote": "EPCM 127 141 5 273",
+   "page": 578,
+   "l1": "indirects",
+   "l2": "epcm",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Owners Cost",
+   "value": 83,
+   "quote": "Owners Cost 83 – 15 98",
+   "page": 578,
+   "l1": "owners",
+   "l2": "owners",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owners Cost",
+   "value": 15,
+   "quote": "Owners Cost 83 – 15 98",
+   "page": 578,
+   "l1": "owners",
+   "l2": "owners",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Customs Duties",
+   "value": 92,
+   "quote": "Customs Duties 92 44 175 311",
+   "page": 578,
+   "l1": "indirects",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Customs Duties",
+   "value": 175,
+   "quote": "Customs Duties 92 44 175 311",
+   "page": 578,
+   "l1": "indirects",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Contingency",
+   "value": 157,
+   "quote": "Contingency 157 65 277 499",
+   "page": 578,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 277,
+   "quote": "Contingency 157 65 277 499",
+   "page": 578,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Phase 3 - Capital Expenditure After Contingency",
+   "value": 3037,
+   "quote": "Capital Expenditure After Contingency 3,037 1,553 5,583 10,173",
+   "page": 578,
+   "is_total": true,
+   "review_note": "Phase 3 column only (expansion); Phase 4 column (US$1,553M) not extracted.",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital Expenditure After Contingency",
+   "value": 5583,
+   "quote": "Capital Expenditure After Contingency 3,037 1,553 5,583 10,173",
+   "page": 578,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Sustaining column total includes closure of 145 (listed under Indirects) which is recorded as closure.",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 145,
+   "quote": "Closure – – 145 145",
+   "page": 578,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "UG Mining",
+   "value": 19380,
+   "quote": "UG Mining 19,380 48 40 42 41",
+   "page": 577,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "UG Mining",
+   "value": 41,
+   "quote": "UG Mining 19,380 48 40 42 41",
+   "page": 577,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 7167,
+   "quote": "Processing 7,167 17 15 15 15",
+   "page": 577,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 15,
+   "quote": "Processing 7,167 17 15 15 15",
+   "page": 577,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelter",
+   "value": 5298,
+   "quote": "Smelter 5,298 – 16 12 11",
+   "page": 577,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "On-site smelter operating cost, included in the report's site operating cost total.",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelter",
+   "value": 11,
+   "quote": "Smelter 5,298 – 16 12 11",
+   "page": 577,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "processing",
+   "l2": "other",
+   "review_note": "On-site smelter operating cost, included in the report's site operating cost total.",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 2800,
+   "quote": "General and Administration 2,800 14 10 9 6",
+   "page": 577,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 6,
+   "quote": "General and Administration 2,800 14 10 9 6",
+   "page": 577,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Costs",
+   "value": 34644,
+   "quote": "Total 34,644 79 81 78 73",
+   "page": 577,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Site Operating Costs",
+   "value": 73,
+   "quote": "Total 34,644 79 81 78 73",
+   "page": 577,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": true,
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 0.56,
+   "quote": "Mining 0.41 0.44 0.47 0.56",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 0.2,
+   "quote": "Processing 0.16 0.15 0.16 0.20",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Smelter",
+   "value": 0.15,
+   "quote": "Smelter – 0.16 0.13 0.15",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "l2": "other",
+   "l1": "processing",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics",
+   "value": 0.26,
+   "quote": "Logistics 0.51 0.24 0.29 0.26",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "l2": "transport",
+   "l1": "offsite",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Treatment, refining and smelter charges",
+   "value": 0.13,
+   "quote": "Treatment, refining and smelter |charges |0.24 |0.12 |0.14 |0.13",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "l2": "tc_rc",
+   "l1": "offsite",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 0.08,
+   "quote": "General and Administration 0.13 0.10 0.09 0.08",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Sulfuric Acid Credits",
+   "value": -0.07,
+   "quote": "Sulfuric Acid Credits1 – –0.07 –0.06 -0.07",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "l2": "unallocated",
+   "l1": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "C1 Cash Cost",
+   "value": 1.31,
+   "quote": "C1 Cash Cost 1.45 1.15 1.22 1.31",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "is_total": true,
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties and Export Tax",
+   "value": 0.21,
+   "quote": "Royalties and Export Tax 0.29 0.21 0.22 0.21",
+   "page": 577,
+   "basis_unit": "per_lb_payable",
+   "multiplier": "",
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "currency": "USD"
+  }
+ ]
+}

@@ -1,0 +1,379 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "McIlvenna Bay",
+  "title": "NI 43-101 Technical Report, Pre-feasibility Study for the McIlvenna Bay Project, Saskatchewan, Canada",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "effective_date": "2020-03-12",
+  "effective_date_quote": "Effective Date: 12 March 2020",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Au",
+   "Ag",
+   "Pb"
+  ],
+  "country": "Canada",
+  "region": "Saskatchewan",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "CAD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "The grinding circuit consists of a two‐stage ball mill combination which is well suited to handling the variable hardness expected from mixtures of the high‐silica copper stockwork material and the softer massive sulphide rock. The grinding circuit is designed to reduce the particle size of flotation feed slurry to a nominal 80% ‐75µm as indicated by recent metallurgical testwork. Cyclone overflow slurry from the secondary mill would be directed to the flotation section for sequential copper/lead and zinc concentrate recovery.",
+  "page": 39
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3700,
+   "unit": "t/d",
+   "quote": "nominal 3,700 dmtpd capacity in year 3",
+   "page": 39,
+   "statistic": "design",
+   "context": {
+    "phase": "year 3 onward; initial capacity 3,400 tpd"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "um",
+   "quote": "nominal 80% ‐75µm as indicated by recent metallurgical testwork",
+   "page": 39,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.2,
+   "unit": "%",
+   "quote": "Average Blend Recovery % 88.2 80.0 79.1 58.0",
+   "page": 35,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80.0,
+   "unit": "%",
+   "quote": "Average Blend Recovery % 88.2 80.0 79.1 58.0",
+   "page": 35,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 79.1,
+   "unit": "%",
+   "quote": "Average Blend Recovery % 88.2 80.0 79.1 58.0",
+   "page": 35,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 58.0,
+   "unit": "%",
+   "quote": "Average Blend Recovery % 88.2 80.0 79.1 58.0",
+   "page": 35,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2.82,
+   "unit": "USD/lb",
+   "quote": "Copper Price US$/lb 2.82",
+   "page": 45,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.26,
+   "unit": "USD/lb",
+   "quote": "Zinc Price US$/lb 1.26",
+   "page": 45,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 147.1,
+   "unit": "MCAD",
+   "quote": "Post‐Tax NPV (7.5%) Post‐Tax IRR $147.1 M 19.2%",
+   "page": 44,
+   "context": {
+    "discount_rate_pct": 7.5
+   },
+   "currency": "CAD"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 19.2,
+   "unit": "%",
+   "quote": "Post‐Tax NPV (7.5%) Post‐Tax IRR $147.1 M 19.2%",
+   "page": 44
+  },
+  {
+   "parameter": "payback_years",
+   "value": 3.8,
+   "unit": "years",
+   "quote": "Payback Period from start of processing (undiscounted, after‐tax cash flow) 3.8 years",
+   "page": 44
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 0.44,
+   "unit": "USD/lb",
+   "quote": "LOM Cash Cost (net of by‐products) per lb. Copper US$ 0.41 US$ 0.44",
+   "page": 44,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "net of by-products"
+   },
+   "review_note": "Table lists zinc then copper labels followed by US$0.41 and US$0.44; assumed in the same order (Zn 0.41, Cu 0.44)."
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.3,
+   "unit": "CAD/USD",
+   "quote": "a CAD:USD exchange rate of 1.30 was used where necessary",
+   "page": 44,
+   "context": {
+    "pair": "CAD per USD"
+   },
+   "review_note": "Report writes 'CAD:USD exchange rate of 1.30'; interpreted as 1.30 CAD per USD."
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine",
+   "value": 72.7,
+   "quote": "Mine 72.7 273.9 346.6",
+   "page": 43,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine",
+   "value": 273.9,
+   "quote": "Mine 72.7 273.9 346.6",
+   "page": 43,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 100.6,
+   "quote": "Process Plant 100.6 7.2 107.8",
+   "page": 43,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant",
+   "value": 7.2,
+   "quote": "Process Plant 100.6 7.2 107.8",
+   "page": 43,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 50.8,
+   "quote": "Infrastructure 50.8 ‐ 50.8",
+   "page": 43,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "G&A",
+   "value": 0.7,
+   "quote": "G&A 0.7 ‐ 0.7",
+   "page": 43,
+   "l1": "owners",
+   "l2": "owners",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings",
+   "value": 5.9,
+   "quote": "Tailings 5.9 11.8 17.6",
+   "page": 43,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 11.8,
+   "quote": "Tailings 5.9 11.8 17.6",
+   "page": 43,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 30.7,
+   "quote": "Contingency 30.7 39.4 70",
+   "page": 43,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 39.4,
+   "quote": "Contingency 30.7 39.4 70",
+   "page": 43,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total CAPEX",
+   "value": 261.3,
+   "quote": "Total CAPEX 261.3 338.6 600.0",
+   "page": 43,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total CAPEX (sustaining, incl. closure)",
+   "value": 338.6,
+   "quote": "Total CAPEX 261.3 338.6 600.0",
+   "page": 43,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Sustaining total includes closure of 6.4 shown as a separate line.",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 6.4,
+   "quote": "Closure ‐ 6.4 6.4",
+   "page": 43,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "CAD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 41.19,
+   "quote": "Mine 43.08 41.19",
+   "page": 44,
+   "l1": "mining",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 19.55,
+   "quote": "Process Plant 19.86 19.55",
+   "page": 44,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Infrastructure",
+   "value": 2.82,
+   "quote": "Infrastructure 2.92 2.82",
+   "page": 44,
+   "l1": "ga",
+   "l2": "ga",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Admin",
+   "value": 4.13,
+   "quote": "General and Admin 4.37 4.13",
+   "page": 44,
+   "l1": "ga",
+   "l2": "ga",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings",
+   "value": 1.78,
+   "quote": "Tailings 1.78 1.78",
+   "page": 44,
+   "l1": "tailings_water",
+   "l2": "tailings_water",
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total OPEX",
+   "value": 69.48,
+   "quote": "Total OPEX 72.01 69.48",
+   "page": 44,
+   "is_total": true,
+   "currency": "CAD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

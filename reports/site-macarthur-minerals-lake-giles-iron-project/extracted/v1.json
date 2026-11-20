@@ -1,0 +1,477 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Lake Giles Iron Project",
+  "title": "NI 43-101 Technical Report and Feasibility Study, Lake Giles Iron Project, Menzies, Western Australia",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "effective_date": "2022-04-04",
+  "effective_date_quote": "Effective Date:  4 April 2022",
+  "effective_date_page": 1,
+  "primary_commodity": "Fe",
+  "by_products": [],
+  "country": "Australia",
+  "region": "Western Australia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "review_note": "Costs taken from the USD columns of the summary tables (report also gives AUD); NPV/IRR are in AUD. Economic model uses ROM 9.7 Mtpa (Table 22-1) vs 10 Mtpa feed in the summary."
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "hpgr",
+   "magnetic_sep",
+   "flotation",
+   "conc_filter"
+  ],
+  "quote": "Two stages of conventional crushing would crush the ore to a size suitable for feed to a High-Pressure Grinding Rolls (HPGR) unit. The fine ore grinding section contains two streams in parallel each containing two stages of mills, with Low Intensity Magnetic Separation (LIMS) units after each stage. This is followed by reverse flotation and a final LIMS stage. The final concentrate moisture is reduced by pressure filtration",
+  "page": 43
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 10,
+   "unit": "Mt/a",
+   "quote": "10 Mtpa of feed to the process would be required",
+   "page": 43,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 28.2,
+   "unit": "%",
+   "quote": "total 236.6 Mt at an average grade of 28.2% Fe",
+   "page": 33,
+   "metal": "Fe",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "total Fe, Proven and Probable reserve grade (15% DTR cut-off)"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 66.1,
+   "unit": "%",
+   "quote": "Concentrate iron grade\n66.1",
+   "page": 49,
+   "metal": "Fe",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "conc_silica_pct",
+   "value": 4.9,
+   "unit": "%",
+   "quote": "66.1\n0.10\n4.9",
+   "page": 43,
+   "statistic": "design",
+   "context": {
+    "product": "magnetite concentrate (Table 1-9 product specification)"
+   }
+  },
+  {
+   "parameter": "mass_yield_pct",
+   "value": 31,
+   "unit": "%",
+   "quote": "assuming a weight recovery of 31%",
+   "page": 43,
+   "statistic": "design",
+   "context": {
+    "product": "magnetite concentrate"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 13.5,
+   "unit": "kWh/t",
+   "quote": "Moonshine\n75\n13.5",
+   "page": 120,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 75,
+    "ore_type": "Moonshine composite"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.9,
+   "unit": "kWh/t",
+   "quote": "Moonshine North\n75\n14.9",
+   "page": 120,
+   "statistic": "single",
+   "context": {
+    "test": "Bond ball mill",
+    "closing_screen_um": 75,
+    "ore_type": "Moonshine North composite"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 99,
+   "unit": "USD/t",
+   "quote": "Long-term iron ore price (P62)\nUS 99/t",
+   "page": 311,
+   "metal": "Fe",
+   "context": {
+    "product": "P62 long-term reference price, adjusted in model for grade/magnetite premium, freight and fees"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.71,
+   "unit": "USD/AUD",
+   "quote": "Exchange rate\n0.71",
+   "page": 311,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 443,
+   "unit": "MAUD",
+   "quote": "After tax the NPV is $443 M with an IRR of 10.1%",
+   "page": 49,
+   "context": {
+    "discount_rate_pct": 6,
+    "currency_note": "AUD"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 10.1,
+   "unit": "%",
+   "quote": "After tax the NPV is $443 M with an IRR of 10.1%",
+   "page": 49
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Facilities process plant",
+   "value": 11.6,
+   "quote": "Facilities process plant 11.6",
+   "page": 48,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process plant",
+   "value": 227.6,
+   "quote": "Process plant 227.6",
+   "page": 48,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Product transport logistics",
+   "value": 36.5,
+   "quote": "Product transport logistics 36.5",
+   "page": 48,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Port storage & ship loading",
+   "value": 24.2,
+   "quote": "Port storage & ship loading 24.2",
+   "page": 48,
+   "l1": "offsite_infra",
+   "l2": "port_rail",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure & headworks",
+   "value": 72.0,
+   "quote": "Infrastructure & headworks 72.0",
+   "page": 48,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "General and administration",
+   "value": 1.3,
+   "quote": "General and administration 1.3",
+   "page": 48,
+   "l1": "owners",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total direct costs",
+   "value": 373.1,
+   "quote": "Total direct costs 373.1",
+   "page": 48,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Indirects",
+   "value": 83.6,
+   "quote": "Construction Indirects 83.6",
+   "page": 48,
+   "l1": "indirects",
+   "l2": "construction",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "EPCM",
+   "value": 52.2,
+   "quote": "EPCM 52.2",
+   "page": 48,
+   "l1": "indirects",
+   "l2": "epcm",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Spares & Commissioning",
+   "value": 4.8,
+   "quote": "Spares & Commissioning 4.8",
+   "page": 48,
+   "l1": "indirects",
+   "l2": "first_fills_spares",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Freight",
+   "value": 11.2,
+   "quote": "Freight 11.2",
+   "page": 48,
+   "l1": "indirects",
+   "l2": "construction",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 43.9,
+   "quote": "Contingency 43.9",
+   "page": 48,
+   "l1": "contingency",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total indirect costs",
+   "value": 195.7,
+   "quote": "Total indirect costs 195.7",
+   "page": 48,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct & Indirects",
+   "value": 568.8,
+   "quote": "Total Direct & Indirects 568.8",
+   "page": 48,
+   "is_subtotal": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capitalised pre-strip",
+   "value": 43.8,
+   "quote": "Capitalised pre-strip 43.8",
+   "page": 48,
+   "l1": "mining",
+   "l2": "pre_production",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "TOTAL PROJECT CAPITAL",
+   "value": 612.5,
+   "quote": "TOTAL PROJECT CAPITAL 612.5",
+   "page": 48,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capex",
+   "value": 143.8,
+   "quote": "Sustaining Capex 143.8",
+   "page": 48,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailing Storage Facility Lifts",
+   "value": 28.2,
+   "quote": "Tailing Storage Facility Lifts 28.2",
+   "page": 48,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalised Non-Operational Waste Mining Costs",
+   "value": 252.5,
+   "quote": "Capitalised Non-Operational Waste Mining Costs 252.5",
+   "page": 48,
+   "l1": "mining",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Future Capital Expenditure",
+   "value": 424.6,
+   "quote": "Total Future Capital Expenditure 424.6",
+   "page": 48,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Rehabilitation Cash Expenses",
+   "value": 41.32,
+   "quote": "Closure and Rehabilitation Cash Expenses 41.32",
+   "page": 48,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 26.08,
+   "quote": "Mining 26.08 36.73",
+   "page": 49,
+   "l1": "mining",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate",
+   "review_note": "Per tonne of concentrate (dry/wet not stated in table)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Crushing & Processing",
+   "value": 22.41,
+   "quote": "Crushing & Processing 22.41 31.56",
+   "page": 49,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate",
+   "review_note": "Per tonne of concentrate (dry/wet not stated in table)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics",
+   "value": 21.25,
+   "quote": "Logistics 21.25 29.93",
+   "page": 49,
+   "l1": "offsite",
+   "l2": "transport",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate",
+   "review_note": "Per tonne of concentrate (dry/wet not stated in table)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration",
+   "value": 2.0,
+   "quote": "General & Administration 2.00 2.82",
+   "page": 49,
+   "l1": "ga",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate",
+   "review_note": "Per tonne of concentrate (dry/wet not stated in table)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Subtotal",
+   "value": 71.74,
+   "quote": "Subtotal 71.74 101.05",
+   "page": 49,
+   "is_subtotal": true,
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate",
+   "review_note": "Per tonne of concentrate (dry/wet not stated in table)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 6.05,
+   "quote": "Royalties 6.05 8.51",
+   "page": 49,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate",
+   "review_note": "Per tonne of concentrate (dry/wet not stated in table)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating costs ($/t concentrate)",
+   "value": 77.79,
+   "quote": "77.79 109.56",
+   "page": 49,
+   "is_total": true,
+   "multiplier": "",
+   "currency": "USD",
+   "basis_unit": "per_t_concentrate",
+   "review_note": "Per tonne of concentrate (dry/wet not stated in table)"
+  }
+ ]
+}

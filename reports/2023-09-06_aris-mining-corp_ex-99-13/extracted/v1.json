@@ -1,0 +1,451 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Marmato",
+  "title": "Technical Report for the Marmato Gold Mine, Caldas Department, Colombia - Pre-Feasibility Study of the Lower Mine Expansion Project",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2022-06-30",
+  "effective_date_quote": "Effective date: June 30, 2022",
+  "effective_date_page": 1,
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Colombia",
+  "region": "Caldas",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2022
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cip",
+   "elution_ew",
+   "cyanide_detox",
+   "tails_thickener",
+   "tails_filter"
+  ],
+  "quote": "includes grinding, gravity recovery, leach/CIP tanks, carbon elution and regeneration, cyanide detoxification, and tailings thickening and filtration",
+  "page": 29
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 4000,
+   "unit": "t/d",
+   "quote": "Plant throughput tpd 4,000",
+   "page": 162,
+   "statistic": "design",
+   "context": {
+    "phase": "Lower Mine expansion plant"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 1250,
+   "unit": "t/d",
+   "quote": "will enable the plant to operate consistently at 1,250 tpd",
+   "page": 29,
+   "statistic": "design",
+   "context": {
+    "phase": "Upper Mine existing plant (after Phase 1 optimization)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.87,
+   "unit": "g/t",
+   "quote": "Gold head grade g/t 2.87",
+   "page": 162,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "phase": "Lower Mine expansion plant"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.4,
+   "unit": "%",
+   "quote": "Overall gold recovery % 95.4",
+   "page": 162,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "phase": "Lower Mine expansion plant"
+   }
+  },
+  {
+   "parameter": "axb",
+   "value": 24.5,
+   "unit": "",
+   "quote": "SMC Axb - design - 24.5",
+   "page": 162,
+   "statistic": "design",
+   "context": {
+    "test": "SMC",
+    "ore_type": "Lower Mine"
+   }
+  },
+  {
+   "parameter": "ai",
+   "value": 0.578,
+   "unit": "g",
+   "quote": "Bond Abrasion Index (A i ), nominal g 0.578",
+   "page": 162,
+   "statistic": "design"
+  },
+  {
+   "parameter": "cwi",
+   "value": 23.4,
+   "unit": "kWh/t",
+   "quote": "Bond Impact Work Index (CW i ) - design kWh/t 23.4",
+   "page": 162,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 19.0,
+   "unit": "kWh/t",
+   "quote": "Bond Ball Mill Work Index (BW i ) - design kWh/t 19.0",
+   "page": 162,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill (design)",
+    "ore_type": "Lower Mine"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 105,
+   "unit": "µm",
+   "quote": "Grinding circuit product 80% passing size µm 105",
+   "page": 162,
+   "statistic": "design",
+   "context": {
+    "phase": "Lower Mine expansion plant"
+   }
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Plant availability % 92",
+   "page": 162,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1600,
+   "unit": "USD/oz",
+   "quote": "flat metal price assumption of $1,600 per ounce for gold",
+   "page": 34,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 19,
+   "unit": "USD/oz",
+   "quote": "$19 per ounce for silver",
+   "page": 34,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 341,
+   "unit": "MUSD",
+   "quote": "estimated after-tax NPV 5 % of $341 million",
+   "page": 34,
+   "context": {
+    "discount_rate_pct": 5
+   },
+   "review_note": "Integrated Upper Mine + Lower Mine expansion NPV"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 29.7,
+   "unit": "%",
+   "quote": "after-tax IRR of 29.7%",
+   "page": 34
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 4200,
+   "unit": "COP/USD",
+   "quote": "exchange rate of 4,200 COP to the US$",
+   "page": 34,
+   "context": {
+    "pair": "COP per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Process plant (Lower Mine)",
+   "value": 108.71,
+   "quote": "Process plant 18.56 90.15 108.71",
+   "page": 203,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Underground mine (Lower Mine)",
+   "value": 64.91,
+   "quote": "Underground mine 6.41 13.89 44.62 64.91",
+   "page": 203,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Paste plant",
+   "value": 18.37,
+   "quote": "Paste plant 6.03 12.34 18.37",
+   "page": 203,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings storage facilities",
+   "value": 15.96,
+   "quote": "Tailings storage facilities 5.24 10.72 15.96",
+   "page": 203,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Non-process infrastructure",
+   "value": 26.33,
+   "quote": "Non-process infrastructure 15.60 5.55 5.18 26.33",
+   "page": 203,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Owner’s costs",
+   "value": 45.28,
+   "quote": "Owner’s costs 7.51 17.01 20.77 45.28",
+   "page": 203,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "owners"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Lower Mine construction capital",
+   "value": 279.57,
+   "quote": "Total 29.52 66.27 183.78 279.57",
+   "page": 203,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Cascabel Remediation",
+   "value": 1.71,
+   "quote": "Cascabel Remediation 1.71 - 1.71",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 32.11,
+   "quote": "Contingency - 32.11 32.11",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "development",
+   "value": 187.6,
+   "quote": "development 28.98 158.62 187.60",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine equipment",
+   "value": 31.71,
+   "quote": "Mine equipment 29.30 2.40 31.71",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Owner’s Cost",
+   "value": 0.71,
+   "quote": "Owner’s Cost 0.11 0.60 0.71",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "owners"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant",
+   "value": 19.69,
+   "quote": "Process Plant 19.69 - 19.69",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "general"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Surface Infrastructure",
+   "value": 5.77,
+   "quote": "Surface Infrastructure 5.77 - 5.77",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings",
+   "value": 38.15,
+   "quote": "Tailings - 38.15 38.15",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining (Upper + Lower Mine)",
+   "value": 317.45,
+   "quote": "Total 85.56 231.89 317.45",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Upper Mine",
+   "value": 6.1,
+   "quote": "closure cost estimate is US$6.1 million for the Upper Mine",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Lower Mine",
+   "value": 27.25,
+   "quote": "US$27.25 million for the Lower Mine",
+   "page": 207,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total mining",
+   "value": 1372.86,
+   "quote": "Total mining (US$M ) 381.87 990.99 1,372.86",
+   "page": 209,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 550.93,
+   "quote": "Processing (US$M ) 161.97 388.96 550.93",
+   "page": 209,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site G&A and Social Investment",
+   "value": 324.27,
+   "quote": "Site G&A and Social Investment (US$M ) 125.02 199.25 324.27",
+   "page": 209,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total mining",
+   "value": 43.89,
+   "quote": "Unit cost per processed tonne (US$/t ) 53.47 41.06 43.89",
+   "page": 209,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 17.61,
+   "quote": "Unit cost per processed tonne (US$/t ) 22.68 16.12 17.61",
+   "page": 209,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site G&A and Social Investment",
+   "value": 10.37,
+   "quote": "Unit cost per processed tonnes (US$/t ) 17.50 8.26 10.37",
+   "page": 209,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating",
+   "value": 71.87,
+   "quote": "Total Operating Unit cost per processed tonnes (US$/t ) 93.65 65.43 71.87",
+   "page": 209,
+   "is_total": true,
+   "review_note": "Combined Upper Mine (owner-operated, 1,250 tpd) + Lower Mine (contractor, 4,000 tpd) LOM average",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

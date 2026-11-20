@@ -1,0 +1,363 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Rönnbäcken",
+  "title": "Preliminary Economic Assessment Update for the Rönnbäcken Nickel Project, Sweden",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2022-01-28",
+  "effective_date_quote": "The Effective date of the Mineral Resource Statement is 28 January 2022.",
+  "primary_commodity": "Ni",
+  "by_products": [
+   "Co",
+   "Fe"
+  ],
+  "country": "Sweden",
+  "region": "Västerbotten",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2022,
+  "review_note": "Report states resources/reserves follow CIM Definition Standards (not NI 43-101 as such; Nordic SME listing) - NI 43-101 used as closest. Effective date is that of the Mineral Resource Statement; report dated February 2022. Region not checked in text.",
+  "effective_date_page": 18
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ag_mill",
+   "flotation",
+   "regrind",
+   "magnetic_sep",
+   "conc_thickener",
+   "conc_filter"
+  ],
+  "quote": "primary autogenous grinding to 50% -50 μm followed by first stage rougher flotation, secondary autogenous grinding to 80% -50 μm followed by secondary rougher and rougher scavenger flotation. Combined rougher concentrate cleaning in 4-stages plus regrind, magnetite recovery from full flotation tailings including roughing and cleaning including regrind, and nickel and magnetite concentrate dewatering by thickening and filtration",
+  "page": 141
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 30,
+   "unit": "Mt/a",
+   "quote": "mining 30 Mtpa of ore over a life of mine of 20 years",
+   "page": 18,
+   "statistic": "design"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 20,
+   "unit": "years",
+   "quote": "mining 30 Mtpa of ore over a life of mine of 20 years",
+   "page": 18
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.116,
+   "unit": "%",
+   "quote": "approximately 0.116% Ni in years 1 to 5",
+   "page": 144,
+   "metal": "Ni",
+   "statistic": "single",
+   "context": {
+    "phase": "years 1 to 5 plant feed (0.103% Ni in later years)"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.103,
+   "unit": "%",
+   "quote": "approximately 0.103% Ni in later years",
+   "page": 144,
+   "metal": "Ni",
+   "statistic": "single",
+   "context": {
+    "phase": "years 6+ plant feed"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80,
+   "unit": "%",
+   "quote": "Ni recovery\n%\n80\nOutotec testwork",
+   "page": 107,
+   "metal": "Ni",
+   "statistic": "design",
+   "context": {
+    "to_product": "Ni concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 70,
+   "unit": "%",
+   "quote": "Co Recovery\n%\n70",
+   "page": 107,
+   "metal": "Co",
+   "statistic": "design",
+   "context": {
+    "to_product": "Ni concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "Fe Recovery\n%\n90",
+   "page": 107,
+   "metal": "Fe",
+   "statistic": "design",
+   "context": {
+    "to_product": "Fe concentrate"
+   }
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 28.0,
+   "unit": "%",
+   "quote": "Nickel in Ni-con\n%\n28.0",
+   "page": 107,
+   "metal": "Ni",
+   "statistic": "design"
+  },
+  {
+   "parameter": "conc_grade",
+   "value": 66.0,
+   "unit": "%",
+   "quote": "Iron in Fe-con\n%\n66.0",
+   "page": 107,
+   "metal": "Fe",
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.57,
+   "unit": "kWh/t",
+   "quote": "Vinberget\n17.57",
+   "page": 137,
+   "statistic": "single",
+   "context": {
+    "test": "Standard Bond grindability",
+    "ore_type": "Vinberget"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 16.44,
+   "unit": "kWh/t",
+   "quote": "Rönnbäcksnäset\n16.44",
+   "page": 137,
+   "statistic": "single",
+   "context": {
+    "test": "Standard Bond grindability",
+    "ore_type": "Rönnbäcksnäset"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 50,
+   "unit": "µm",
+   "quote": "secondary autogenous grinding to 80% -50 μm",
+   "page": 144,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 10,
+   "unit": "USD/lb",
+   "quote": "Nickel: USD 10/lb (USD 22,046/t)",
+   "page": 21,
+   "metal": "Ni"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20,
+   "unit": "USD/lb",
+   "quote": "Cobalt: USD 20/lb (USD 44,092/t)",
+   "page": 21,
+   "metal": "Co"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 465,
+   "unit": "MUSD",
+   "quote": "Post-tax NPV (8%)\n(USD M)\n465\n538\n547",
+   "page": 22,
+   "context": {
+    "discount_rate_pct": 8,
+    "scenario": "Scenario 1 Current Technology Case"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 13.5,
+   "unit": "%",
+   "quote": "Post-tax IRR\n(%)\n13.5",
+   "page": 22,
+   "context": {
+    "scenario": "Scenario 1"
+   }
+  },
+  {
+   "parameter": "payback_years",
+   "value": 6,
+   "unit": "years",
+   "quote": "Post-tax Payback Period\n(Years)\n6",
+   "page": 22,
+   "context": {
+    "scenario": "Scenario 1"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 249.2,
+   "quote": "Total\n249.2",
+   "page": 220,
+   "l1": "mining",
+   "review_note": "Table 21-1 mining capital for 30 Mtpa benchmark (excl. sustaining & working capital); Table 22-2 LoM mining capital is 309",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing plant",
+   "value": 870,
+   "quote": "The capital cost for a 30 Mtpa concentrator escalated to 2022 costs is USD 870 M",
+   "page": 222,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 232.0,
+   "quote": "Total\n232.0",
+   "page": 223,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Starter TMF",
+   "value": 45.1,
+   "quote": "Total Cost\n45.1",
+   "page": 226,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "TMF sustaining capital",
+   "value": 340.3,
+   "quote": "Total Cost\n45.1\n340.3",
+   "page": 226,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 50,
+   "quote": "Closure\n-\n50",
+   "page": 21,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (LoM)",
+   "value": 1567,
+   "quote": "Mining\n1.68 USD/t\n1,567",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (LoM)",
+   "value": 3514,
+   "quote": "Processing\n5.99 USD/t\n3,514",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty (LoM)",
+   "value": 20,
+   "quote": "Royalty\n0.2%\n20",
+   "page": 21,
+   "l1": "royalties_taxes",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Carbon Tax (LoM)",
+   "value": 131,
+   "quote": "Carbon Tax\n133 USD/t CO2\n131",
+   "page": 21,
+   "l1": "royalties_taxes",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total LoM operating cost",
+   "value": 5282,
+   "quote": "Total \n5,282",
+   "page": 21,
+   "is_total": true,
+   "review_note": "Total includes closure 50, royalty and carbon tax",
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining 1.68 USD/t (Scenario 1)",
+   "value": 1.68,
+   "quote": "Mining\n1.68 USD/t",
+   "page": 21,
+   "l1": "mining",
+   "basis_unit": "per_t_mined",
+   "review_note": "Rate unit stated as USD/t (basis assumed tonne mined per Table 21-6 'USD/t mined')",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing 5.99 USD/t",
+   "value": 5.99,
+   "quote": "Processing\n5.99 USD/t",
+   "page": 21,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  }
+ ]
+}

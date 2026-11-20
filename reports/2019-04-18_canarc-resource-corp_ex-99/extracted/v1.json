@@ -73,7 +73,7 @@
   {
    "parameter": "npv_after_tax",
    "value": 280,
-   "unit": "MUSD",
+   "unit": "MCAD",
    "quote": "Post-Tax NPV, 5% 280 $M",
    "page": 156,
    "currency": "CAD",
