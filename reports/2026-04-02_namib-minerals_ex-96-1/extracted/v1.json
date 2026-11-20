@@ -1,0 +1,228 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "How Mine",
+  "title": "How Mine S-K 1300 Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: 31 December 2025",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Zimbabwe",
+  "region": "Matabeleland",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cip"
+  ],
+  "quote": "Knelson gravity concentrator, while oversize flows back into the mill. 14.2.3 | Run of Mine CIP plant",
+  "page": 61
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 89.0,
+   "unit": "%",
+   "quote": "MET.Recovery ROM % 89.0",
+   "page": 59,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Crushed ore is ground in two stages to achieve 80% passing 75 μm",
+   "page": 60,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3272,
+   "unit": "USD/oz",
+   "quote": "A gold price of US$3,272/oz is applied",
+   "page": 81,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 22.1,
+   "unit": "MUSD",
+   "quote": "A positive project NPV of US$22.1 M",
+   "page": 11,
+   "currency": "USD",
+   "context": {
+    "discount_rate_pct": 19
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Plant & Equipment",
+   "value": 6302,
+   "quote": "Plant & Equipment 3,437 618 965 1,282 6,302",
+   "page": 78,
+   "l1": "mining",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Surface Plant & Equipment",
+   "value": 3844,
+   "quote": "2,807 461 82 494 3,844",
+   "page": 79,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other Surface Costs",
+   "value": 4936,
+   "quote": "Surface Costs 4,829 10 97 - 4,936",
+   "page": 79,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Housing & Amenities",
+   "value": 4976,
+   "quote": "Amenities 1,032 1,315 1,315 1,315 4,976",
+   "page": 79,
+   "l1": "onsite_infra",
+   "l2": "camp",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Furniture & Fittings",
+   "value": 597,
+   "quote": "Fittings 306 145 - 145 597",
+   "page": 79,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Insurance Spares",
+   "value": 2378,
+   "quote": "Spares 537 704 475 662 2,378",
+   "page": 79,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vehicles",
+   "value": 1554,
+   "quote": "Vehicles 1,038 90 336 90 1,554",
+   "page": 79,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Projects and Exploration",
+   "value": 12757,
+   "quote": "Exploration 3,586 3,130 3,380 2,661 12,757",
+   "page": 79,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal Sustaining Capex",
+   "value": 37344,
+   "quote": "Sustaining Capex 17,574 6,472 6,649 6,649 37,344",
+   "page": 79,
+   "is_subtotal": true,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "GRAND TOTAL",
+   "value": 37344,
+   "quote": "GRAND TOTAL 17,574 6,472 6,649 6,649 37,344",
+   "page": 79,
+   "is_total": true,
+   "review_note": "Table 18-1 total (37.3 M, FY2026-2029) conflicts with text 'Capital costs total US$30.0 M' (sustaining 27.6 M, growth 2.4 M) and cash flow table (sustaining 27.8 M, growth 17.3 M). Table values used.",
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": "k"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Total Mine Closure Costs (planned)",
+   "value": 8113976,
+   "quote": "Total Mine Closure Costs 8,113,976",
+   "page": 79,
+   "is_total": true,
+   "currency": "USD",
+   "basis_unit": "total",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Direct operating C1 costs",
+   "value": 67.81,
+   "quote": "direct operating C1 costs of US$108.5 M (US$67.81/t processed)",
+   "page": 78,
+   "l1": "other",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Fixed overheads",
+   "value": 9.33,
+   "quote": "fixed overheads US$14.9 M (US$9.33/t processed)",
+   "page": 78,
+   "l1": "ga",
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating costs",
+   "value": 77.12,
+   "quote": "averaging US$77.12/t processed",
+   "page": 78,
+   "is_total": true,
+   "currency": "USD",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  }
+ ]
+}
