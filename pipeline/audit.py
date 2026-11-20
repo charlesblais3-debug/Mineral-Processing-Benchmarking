@@ -40,7 +40,7 @@ def run() -> list[str]:
     flags: list[str] = []
     projects = data["projects"]
     for key, label in METRICS.items():
-        for group in ("all", "Au", "Cu", "Ni", "Fe"):
+        for group in ("all", "Au", "Cu", "Ni", "Fe", "Ag", "Zn"):
             pts = [(p, p["metrics"]["tpd"]["value"], p["metrics"][key]["value"]) for p in projects
                    if "tpd" in p["metrics"] and key in p["metrics"] and p["metrics"][key]["value"] > 0
                    and (group == "all" or p["commodity"] == group)]

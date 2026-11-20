@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1826836/000162828026024934/exhibit9986-technicalrepor.htm",
+  "source": "edgar",
+  "issuer": "Aya Gold & Silver Inc.",
+  "cik": "1826836",
+  "form": "40FR12B/A",
+  "exhibit": "EX-99.86",
+  "filed": "2026-04-13",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-04-13_aya-gold-silver-inc_ex-99-86",
+  "sha256": "2711f926d818426776685e4c22ef3e40e87529513d4ee4ad2aecd75f6b760f0d",
+  "bytes": 9831207,
+  "format": "html",
+  "pages": 213,
+  "parsed_on": "2026-11-20"
+}

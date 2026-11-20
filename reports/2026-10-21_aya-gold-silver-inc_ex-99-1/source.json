@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1826836/000162828026066584/ayaboumadine_peaupdatetech.htm",
+  "source": "edgar",
+  "issuer": "Aya Gold & Silver Inc.  (AYA)",
+  "cik": "1826836",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-10-21",
+  "standard": "",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-10-21_aya-gold-silver-inc_ex-99-1",
+  "sha256": "fd264909918b9ad4404dbb40cc738ddb1ed2de6b5b7bc4aeb8db1b1408834cfe",
+  "bytes": 12823940,
+  "format": "html",
+  "pages": 503,
+  "parsed_on": "2026-11-20"
+}

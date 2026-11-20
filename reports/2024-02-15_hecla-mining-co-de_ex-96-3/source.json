@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/719413/000095017024015673/hl-ex96_3.htm",
+  "source": "edgar",
+  "issuer": "HECLA MINING CO/DE/  (HL, HL-PB)",
+  "cik": "719413",
+  "form": "10-K",
+  "exhibit": "EX-96.3",
+  "filed": "2024-02-15",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-02-15_hecla-mining-co-de_ex-96-3",
+  "sha256": "8383266c5f11cff58c9988dc076e65ac95006cf9ff393ea4d44af2fbec5c8327",
+  "bytes": 7869611,
+  "format": "html",
+  "pages": 363,
+  "parsed_on": "2026-11-20"
+}

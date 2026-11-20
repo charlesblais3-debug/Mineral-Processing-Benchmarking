@@ -89,8 +89,34 @@ def currency_conflict(currency: str | None, quote: str) -> str | None:
     return None
 
 
-def normalize(param: dict, value: float, unit: str) -> tuple[float | None, str]:
+NATIVE_FACTORS = {          # (stated unit, native unit) -> factor, for per-metal ("native") parameters
+    ("g/t", "g/t"): 1.0, ("gpt", "g/t"): 1.0, ("oz/t", "g/t"): 34.2857, ("oz/st", "g/t"): 34.2857, ("oz/ton", "g/t"): 34.2857,
+    ("%", "%"): 1.0, ("ppm", "%"): 1e-4,
+    ("USD/oz", "USD/oz"): 1.0, ("US$/oz", "USD/oz"): 1.0,
+    ("USD/lb", "USD/lb"): 1.0, ("US$/lb", "USD/lb"): 1.0, ("USD/t", "USD/lb"): 1 / 2204.62, ("USD/tonne", "USD/lb"): 1 / 2204.62,
+    ("oz", "oz"): 1.0, ("koz", "oz"): 1e3, ("Moz", "oz"): 1e6, ("lb", "lb"): 1.0, ("Mlb", "lb"): 1e6, ("t", "lb"): 2204.62,
+    ("kt", "lb"): 2.20462e6,
+}
+NATIVE_KIND = {"native": "grade", "native_price": "price", "native_per_year": "production"}
+
+
+def native_unit(param: dict, metal: str | None) -> str | None:
+    kind = NATIVE_KIND.get(param["unit"])
+    if not kind or not metal:
+        return None
+    return (taxonomy.load("parameters").get("native_units", {}).get(metal) or {}).get(kind)
+
+
+def normalize(param: dict, value: float, unit: str, metal: str | None = None) -> tuple[float | None, str]:
     target = param["unit"]
+    if target in NATIVE_KIND:                    # per-metal unit (g/t Au, % Cu, USD/oz, USD/lb ...)
+        nat = native_unit(param, metal)
+        if not nat:
+            return None, target
+        if param["unit"] == "native_per_year":
+            unit = unit.replace("/a", "").replace("/y", "").replace("/yr", "").strip()
+        factor = NATIVE_FACTORS.get((unit, nat))
+        return (value * factor, nat) if factor is not None else (None, nat)
     if unit == target:
         return value, target
     factor = UNIT_FACTORS.get((unit, target))
@@ -163,7 +189,7 @@ def load_report(report_id: str, con: sqlite3.Connection | None = None) -> dict:
         p = params[key]
         verified = quote_on_page(folder, f["page"], f["quote"])
         value = f.get("value")
-        vnorm, unorm = (normalize(p, value, f.get("unit", p["unit"])) if isinstance(value, (int, float))
+        vnorm, unorm = (normalize(p, value, f.get("unit", p["unit"]), f.get("metal")) if isinstance(value, (int, float))
                         else (None, p["unit"]))
         status = "auto_accepted"
         if not verified:

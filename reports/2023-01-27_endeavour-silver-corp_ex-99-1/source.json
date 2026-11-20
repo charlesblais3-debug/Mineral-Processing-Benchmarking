@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1277866/000106299323001444/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "ENDEAVOUR SILVER CORP  (EXK)",
+  "cik": "1277866",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2023-01-27",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-01-27_endeavour-silver-corp_ex-99-1",
+  "sha256": "86dddb2cb984499818f327074d4ee6941f150e3024a7db144c42fbece6ea0397",
+  "bytes": 3874995,
+  "format": "html",
+  "pages": 207,
+  "parsed_on": "2026-11-20"
+}

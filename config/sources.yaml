@@ -49,6 +49,6 @@ inbox:
 
 # v1 scope (agreed): gold CIL/gravity first, then copper flotation, then nickel sulphide.
 scope_v1:
-  commodities: [Au, Cu, Ni, Fe]
+  commodities: [Au, Cu, Ni, Fe, Ag, Zn, Pb]
   study_levels: [PEA, PFS, FS, operating]
   report_years_min: 2012

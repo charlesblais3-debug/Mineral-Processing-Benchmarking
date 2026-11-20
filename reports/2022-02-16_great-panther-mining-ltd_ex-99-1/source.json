@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1300050/000127956922000231/ex991.htm",
+  "source": "edgar",
+  "issuer": "GREAT PANTHER MINING Ltd  (GPLDF)",
+  "cik": "1300050",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-02-16",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-02-16_great-panther-mining-ltd_ex-99-1",
+  "sha256": "d9607114c88a56f5ca91c3f62f682bad7e65f50b3c75c8475e31cfdc212dae19",
+  "bytes": 2597112,
+  "format": "html",
+  "pages": 86,
+  "parsed_on": "2026-11-20"
+}

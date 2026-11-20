@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1502377/000110465926109483/tm2625571d1_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Contango Silver & Gold Inc.  (CTGO)",
+  "cik": "1502377",
+  "form": "8-K",
+  "exhibit": "EX-99.3",
+  "filed": "2026-09-22",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-09-22_contango-silver-gold-inc_ex-99-3",
+  "sha256": "3d6c33e10a3cce2d6ac0ef05b03ad6fd7259a25927b4d46e7a834224889590b0",
+  "bytes": 3476565,
+  "format": "html",
+  "pages": 177,
+  "parsed_on": "2026-11-20"
+}

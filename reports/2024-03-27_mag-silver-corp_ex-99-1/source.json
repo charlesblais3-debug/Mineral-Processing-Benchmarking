@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1230992/000117184324001631/exh_991.htm",
+  "source": "edgar",
+  "issuer": "MAG SILVER CORP  (MAG)",
+  "cik": "1230992",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2024-03-27",
+  "standard": "",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-03-27_mag-silver-corp_ex-99-1",
+  "sha256": "1346ebf5507331dd88c2771168a5f9a69cffa428c11fd7199cbe79878b96a7b0",
+  "bytes": 666333,
+  "format": "html",
+  "pages": 130,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1263011/000149315223002002/ex99-2.htm",
+  "source": "edgar",
+  "issuer": "EXCELLON RESOURCES INC  (EXNRF)",
+  "cik": "1263011",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2023-01-20",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-01-20_excellon-resources-inc_ex-99-2",
+  "sha256": "43023db157d250d27f1ccdb32fa78f6b354516ce8290a4630235f9ce319384ca",
+  "bytes": 4845120,
+  "format": "html",
+  "pages": 155,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1542028/000106299325007233/exhibit99-58.htm",
+  "source": "edgar",
+  "issuer": "DOLLY VARDEN SILVER CORP",
+  "cik": "1542028",
+  "form": "40FR12B",
+  "exhibit": "EX-99.58",
+  "filed": "2025-04-08",
+  "standard": "",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-04-08_dolly-varden-silver-corp_ex-99-58",
+  "sha256": "1d3d6cec783fa4ed61f235f0676a8de64cb830a8b387ccc1bd895c0c0f2843e0",
+  "bytes": 2211068,
+  "format": "html",
+  "pages": 283,
+  "parsed_on": "2026-11-20"
+}

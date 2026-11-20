@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/910569/000127956918002111/ex991.htm",
+  "source": "edgar",
+  "issuer": "NORZINC LTD.",
+  "cik": "910569",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2018-10-25",
+  "standard": "NI 43-101",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2018-10-25_norzinc-ltd_ex-99-1",
+  "sha256": "54e77d188a9179c58cdd1fec60ced45ba425214e27ff440a925709c8546a8f97",
+  "bytes": 2163940,
+  "format": "html",
+  "pages": 200,
+  "parsed_on": "2026-11-20"
+}

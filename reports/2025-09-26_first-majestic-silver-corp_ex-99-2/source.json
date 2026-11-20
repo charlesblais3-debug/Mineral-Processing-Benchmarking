@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1308648/000119312525220751/d12444dex992.htm",
+  "source": "edgar",
+  "issuer": "FIRST MAJESTIC SILVER CORP  (AG)",
+  "cik": "1308648",
+  "form": "6-K",
+  "exhibit": "EX-99.2",
+  "filed": "2025-09-26",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-09-26_first-majestic-silver-corp_ex-99-2",
+  "sha256": "5ae28922d804527e563846cf0764da2c58cb9941df980229ff3cedc4deb92f09",
+  "bytes": 2203981,
+  "format": "html",
+  "pages": 217,
+  "parsed_on": "2026-11-20"
+}

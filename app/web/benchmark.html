@@ -8,7 +8,7 @@
 :root {
   --bg: #eef2f3; --surface: #ffffff; --sunk: #e3e9eb; --ink: #15212a; --muted: #5a6872; --line: #d3dce0;
   --accent: #1d5fa6; --accent-ink: #ffffff; --accent-soft: #dbe7f5;
-  --au: #a87a12; --cu: #b0532a; --ni: #2f8461; --fe: #4a6a8f; --ok: #2f8461; --warn: #a4660e;
+  --au: #a87a12; --cu: #b0532a; --ni: #2f8461; --fe: #4a6a8f; --ag: #7a5fae; --zn: #b0457a; --ok: #2f8461; --warn: #a4660e;
   --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
   --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -17,11 +17,11 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #0e1518; --surface: #152026; --sunk: #1b2a31; --ink: #e4ecef; --muted: #93a4ad; --line: #283840;
   --accent: #74a9ec; --accent-ink: #0e1518; --accent-soft: #1f3348;
-  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --fe: #92afd3; --ok: #67c497; --warn: #e2a64b; color-scheme: dark } }
+  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --fe: #92afd3; --ag: #b9a2e6; --zn: #e98ab6; --ok: #67c497; --warn: #e2a64b; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #0e1518; --surface: #152026; --sunk: #1b2a31; --ink: #e4ecef; --muted: #93a4ad; --line: #283840;
   --accent: #74a9ec; --accent-ink: #0e1518; --accent-soft: #1f3348;
-  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --fe: #92afd3; --ok: #67c497; --warn: #e2a64b; color-scheme: dark }
+  --au: #dcb04a; --cu: #e5875c; --ni: #67c497; --fe: #92afd3; --ag: #b9a2e6; --zn: #e98ab6; --ok: #67c497; --warn: #e2a64b; color-scheme: dark }
 
 * { box-sizing: border-box }
 [hidden] { display: none !important }
@@ -86,7 +86,7 @@ table.grid tbody tr { cursor: pointer }
 table.grid tbody tr:hover { background: var(--sunk) }
 .pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 1px 8px; border-radius: 999px; background: var(--sunk); white-space: nowrap }
 .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block }
-.Au { background: var(--au) } .Cu { background: var(--cu) } .Ni { background: var(--ni) } .Fe { background: var(--fe) }
+.Au { background: var(--au) } .Cu { background: var(--cu) } .Ni { background: var(--ni) } .Fe { background: var(--fe) } .Ag { background: var(--ag) } .Zn { background: var(--zn) }
 .stage-op { color: var(--ok) } .stage-st { color: var(--accent) }
 
 /* estimator */
@@ -208,7 +208,7 @@ footer.foot { font-size: 12px; color: var(--muted); padding-block: 8px 24px }
       <form class="panel form" id="est-form">
         <h2>Describe the project</h2>
         <div class="field"><label for="e-com">Commodity</label>
-          <select id="e-com"><option value="">Any</option><option>Au</option><option>Cu</option><option>Ni</option></select></div>
+          <select id="e-com"><option value="">Any</option></select></div>
         <div class="field"><label for="e-fam">Flowsheet</label><select id="e-fam"></select></div>
         <div class="field"><label for="e-tpd">Throughput (t/d)</label><input id="e-tpd" type="number" min="100" step="100" value="25000"></div>
         <div class="field"><label for="e-bwi">Bond ball mill work index (kWh/t, optional)</label><input id="e-bwi" type="number" min="4" max="30" step="0.1" placeholder="e.g. 15.5"></div>
@@ -239,6 +239,10 @@ const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).
 const OPERATING = p => p.study_level === "operating";
 const STAGE = p => OPERATING(p) ? "Operating" : ({ FS: "Feasibility", PFS: "Pre-feasibility", PEA: "PEA", resource: "Resource only" }[p.study_level] || p.study_level);
 const famLabel = k => L.families[k] || k;
+const COMS = [["Au", "Gold"], ["Cu", "Copper"], ["Ni", "Nickel"], ["Fe", "Iron ore"], ["Ag", "Silver"], ["Zn", "Zinc/lead"]]
+  .filter(([k]) => P.some(p => p.commodity === k));
+const comColors = () => Object.fromEntries(COMS.map(([k]) => [k, css("--" + k.toLowerCase())]));
+const comLegend = () => COMS.map(([k, n]) => `<span><i class="${k}"></i>${n}</span>`).join("");
 
 function fmt(v, d) {
   if (v == null || isNaN(v)) return "–";
@@ -299,6 +303,7 @@ function powerFit(pts) {
 
 /* ---------- filters ---------- */
 function renderFilters() {
+  if ($("#e-com").options.length === 1) $("#e-com").insertAdjacentHTML("beforeend", COMS.map(([k, n]) => `<option value="${k}">${n}</option>`).join(""));
   const fams = [...new Set(P.flatMap(p => p.families))].sort((a, b) => famLabel(a).localeCompare(famLabel(b)));
   const conts = (DATA.continents || []).filter(c => P.some(p => p.continent === c));
   const counts = {};
@@ -306,7 +311,7 @@ function renderFilters() {
   const ctrys = Object.keys(counts).sort((a, b) => (COUNTRY_LABEL[a] || a).localeCompare(COUNTRY_LABEL[b] || b));
   const chip = (grp, val, text) => `<button class="chip" data-g="${grp}" data-v="${val}" aria-pressed="${state[grp] === val}">${text}</button>`;
   $("#filters").innerHTML = `
-    <div class="group"><span class="lab">Commodity</span>${chip("com", "", "All")}${chip("com", "Au", '<span class="dot Au"></span> Gold')}${chip("com", "Cu", '<span class="dot Cu"></span> Copper')}${chip("com", "Ni", '<span class="dot Ni"></span> Nickel')}${chip("com", "Fe", '<span class="dot Fe"></span> Iron ore')}</div>
+    <div class="group"><span class="lab">Commodity</span>${chip("com", "", "All")}${COMS.map(([k, n]) => chip("com", k, `<span class="dot ${k}"></span> ${n}`)).join("")}</div>
     <div class="group"><span class="lab">Stage</span>${chip("stage", "", "All")}${chip("stage", "st", "Studies")}${chip("stage", "op", "Operating")}</div>
     <div class="group"><span class="lab">Flowsheet</span><select class="sel" id="f-fam" aria-label="Flowsheet"><option value="">All flowsheets</option>${fams.map(f => `<option value="${f}" ${state.fam === f ? "selected" : ""}>${esc(famLabel(f))}</option>`).join("")}</select></div>
     <div class="group"><span class="lab">Region</span>
@@ -340,8 +345,8 @@ function renderChart(rows) {
   const pts = pool.map(p => [p.metrics[pr.x].value, p.metrics[pr.y].value, p]);
   const fit = pr.fit && state.fit ? powerFit(pts) : null;
   const ink = css("--ink"), muted = css("--muted"), line = css("--line");
-  const colors = { Au: css("--au"), Cu: css("--cu"), Ni: css("--ni"), Fe: css("--fe") };
-  const series = ["Au", "Cu", "Ni", "Fe"].map(c => ({
+  const colors = comColors();
+  const series = COMS.map(([c]) => c).map(c => ({
     name: c, type: "scatter", symbolSize: 13,
     data: pts.filter(p => p[2].commodity === c).map(p => ({ value: [p[0], p[1]], name: p[2].name, id: p[2].id,
       itemStyle: OPERATING(p[2]) ? { color: "transparent", borderColor: colors[c], borderWidth: 2.5 } : { color: colors[c] } })),
@@ -374,7 +379,7 @@ function renderChart(rows) {
   $("#fitline").innerHTML = fit
     ? `Fit: <b>y = ${fmt(10 ** fit.a, 3)} · x<sup>${fmt(fit.b, 2)}</sup></b> · R² <b>${fmt(fit.r2, 2)}</b> · n = <b>${fit.n}</b> · dashed lines ±1 standard error of prediction`
     : pr.fit && state.fit ? `Not enough projects for a fit (${pts.length} with data; need 3).` : `${pts.length} projects with data.`;
-  const parts = [`<span><i class="Au"></i>Gold</span><span><i class="Cu"></i>Copper</span><span><i class="Ni"></i>Nickel</span><span><i class="Fe"></i>Iron ore</span>`,
+  const parts = [comLegend(),
     `<span><i style="background:var(--muted)"></i>Study</span><span><i class="hollow"></i>Operating</span>`];
   if (hidden) parts.push(`<span>${hidden} operating mine${hidden > 1 ? "s" : ""} hidden: they report sustaining capital, not initial CAPEX</span>`);
   const viaYield = pool.filter(p => p.metrics[pr.y]?.parts?.some(q => q.yield)).length;
@@ -431,10 +436,10 @@ function renderMap(refit) {
   const base = filteredBase(), sel = new Set(state.sel);
   const shown = base.filter(p => mapPoint(p));
   const ink = css("--ink"), muted = css("--muted"), line = css("--line"), land = css("--sunk"), surf = css("--surface");
-  const colors = { Au: css("--au"), Cu: css("--cu"), Ni: css("--ni"), Fe: css("--fe") };
+  const colors = comColors();
   const approx = p => p.location.method === "region" || p.location.method === "country";
   const k = Math.max(.5, Math.min(1, map.getWidth() / 1100));       // smaller markers on narrow screens
-  const series = ["Au", "Cu", "Ni", "Fe"].map(c => ({
+  const series = COMS.map(([c]) => c).map(c => ({
     name: c, type: "scatter", coordinateSystem: "geo", geoIndex: 0,
     symbolSize: d => k * (d[2] ? Math.max(7, Math.min(20, 3.2 * Math.log10(d[2]))) : 8),
     data: shown.filter(p => p.commodity === c).map(p => ({
@@ -479,7 +484,7 @@ function renderMap(refit) {
   $("#map-hint").textContent = state.sel.length
     ? `${state.sel.length} selected. Charts and tables in Explore use only these projects until you clear the selection.`
     : `Scroll or pinch to zoom, drag to pan. Use "Select area" and drag a box to pick projects for the charts.`;
-  $("#map-legend").innerHTML = `<span><i class="Au"></i>Gold</span><span><i class="Cu"></i>Copper</span><span><i class="Ni"></i>Nickel</span><span><i class="Fe"></i>Iron ore</span>
+  $("#map-legend").innerHTML = `${comLegend()}
     <span><i style="background:var(--muted)"></i>Location stated in report (${nStated})</span><span><i class="hollow"></i>Approximate: region centre (${shown.length - nStated})</span>
     <span>Marker size: throughput</span>${noLoc ? `<span>${noLoc} without a location</span>` : ""}`;
   $("#map-use").disabled = !state.sel.length;

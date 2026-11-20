@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1341335/000110465924024944/tm244557d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "FORTUNA SILVER MINES INC  (FSM)",
+  "cik": "1341335",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2024-02-16",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2024-02-16_fortuna-silver-mines-inc_ex-99-1_024944",
+  "sha256": "d3dffbeeaf2190b24b335d267ab062029314d890494e4918c79c44e0f8ad59d9",
+  "bytes": 3751801,
+  "format": "html",
+  "pages": 163,
+  "parsed_on": "2026-11-20"
+}

@@ -110,3 +110,15 @@ def test_multiplier_case_insensitive():
     assert multiplier("bn") == 1e9
     assert multiplier("") == 1
     assert multiplier("lakh") is None
+
+
+def test_normalize_native_units():
+    from pipeline.extract.load import normalize
+    grade = {"unit": "native"}; price = {"unit": "native_price"}
+    assert normalize(grade, 1.5, "g/t", "Au") == (1.5, "g/t")
+    assert normalize(grade, 0.1, "oz/st", "Ag")[0] == 3.42857
+    assert normalize(grade, 2.3, "%", "Zn") == (2.3, "%")
+    assert normalize(price, 25, "USD/oz", "Ag") == (25, "USD/oz")
+    v, u = normalize(price, 2645.5, "USD/t", "Zn"); assert u == "USD/lb" and abs(v - 1.2) < 0.001
+    assert normalize(price, 1900, "CAD/oz", "Au")[0] is None   # needs FX: left unnormalized
+    assert normalize(grade, 30, "%", None)[0] is None

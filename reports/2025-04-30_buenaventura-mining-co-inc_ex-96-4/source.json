@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1013131/000141057825001056/tmb-20241231xex96d4.pdf",
+  "source": "edgar",
+  "issuer": "BUENAVENTURA MINING CO INC  (BVN)",
+  "cik": "1013131",
+  "form": "20-F",
+  "exhibit": "EX-96.4",
+  "filed": "2025-04-30",
+  "standard": "",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-04-30_buenaventura-mining-co-inc_ex-96-4",
+  "sha256": "9397062f340b9046de39bc1c5ae55116920f5e8617cc56a39df64b706021d5c8",
+  "bytes": 15275832,
+  "format": "pdf",
+  "pages": 328,
+  "parsed_on": "2026-11-20"
+}

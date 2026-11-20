@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1502377/000115752323000976/a53418247ex96_1.htm",
+  "source": "edgar",
+  "issuer": "Contango ORE, Inc.  (CTGO)",
+  "cik": "1502377",
+  "form": "8-K",
+  "exhibit": "EX-96.1",
+  "filed": "2023-06-16",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-06-16_contango-ore-inc_ex-96-1",
+  "sha256": "61a1038e9f0bc01ceadf2ab52b91e9a3179e95c99a8054bd0eb27ca45340b312",
+  "bytes": 4523085,
+  "format": "html",
+  "pages": 149,
+  "parsed_on": "2026-11-20"
+}

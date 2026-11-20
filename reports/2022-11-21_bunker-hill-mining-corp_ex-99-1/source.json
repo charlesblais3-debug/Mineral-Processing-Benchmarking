@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1407583/000149315222033026/ex99-1.htm",
+  "source": "edgar",
+  "issuer": "Bunker Hill Mining Corp.  (BHLL)",
+  "cik": "1407583",
+  "form": "8-K",
+  "exhibit": "EX-99.1",
+  "filed": "2022-11-21",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2022-11-21_bunker-hill-mining-corp_ex-99-1",
+  "sha256": "f115dcbb43961b8d748da7a81df1ca04abf4834a2b43e5e26942bca5a7e20fc1",
+  "bytes": 2120121,
+  "format": "html",
+  "pages": 134,
+  "parsed_on": "2026-11-20"
+}

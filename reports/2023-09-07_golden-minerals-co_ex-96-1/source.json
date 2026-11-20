@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1011509/000110465923098997/tm2325506d2_ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Golden Minerals Co  (AUMN)",
+  "cik": "1011509",
+  "form": "S-1",
+  "exhibit": "EX-96.1",
+  "filed": "2023-09-07",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2023-09-07_golden-minerals-co_ex-96-1",
+  "sha256": "232b7a6a59e94c31e9acb801b9979956d71de15a016e8ff1d350a05df0bb261e",
+  "bytes": 257124,
+  "format": "html",
+  "pages": 97,
+  "parsed_on": "2026-11-20"
+}
