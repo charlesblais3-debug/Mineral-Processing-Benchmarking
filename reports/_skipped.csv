@@ -1,0 +1,66 @@
+report_id,reason
+2022-04-01_emx-royalty-corp_ex-99-1,royalty overview; sections 16-18 and 21 exempted
+2023-08-03_first-majestic-silver-corp_ex-99-1,Jerritt Canyon resource estimate only
+2024-03-25_agnico-eagle-mines-ltd_ex-99-3,annual reserves exhibit not a technical report
+2024-03-25_idaho-strategic-resources-inc_ex-96-1,Golden Chest older than report in DB
+2024-04-18_galiano-gold-inc_ex-99-1,press release
+2024-04-19_vale-s-a_ex-96-1,Serra Sul already in DB
+2024-04-25_lannister-mining-corp_ex-96-1,Basin Gulch exploration report
+2024-04-30_dakota-gold-corp_ex-96-1,Richmond Hill older IA (2025 version extracted)
+2024-05-14_harmony-gold-mining-co-ltd_ex-99-12,Tshepong North older than report in DB
+2024-06-03_caledonia-mining-corp-plc_ex-99-1,Bilboes 2024 PEA superseded by 2025 TRS
+2024-06-28_premium-nickel-resources-ltd_ex-96-1,Selkirk resource only
+2024-06-28_premium-nickel-resources-ltd_ex-96-2,Selebi resource only
+2024-07-10_collective-mining-ltd_ex-99-27,Guayabales resource only
+2024-07-31_lannister-mining-corp_ex-96-1,Basin Gulch exploration report
+2024-09-06_solaris-resources-inc_ex-99-1,Warintza resource only
+2024-04-12_solaris-resources-inc_ex-99-62,Warintza resource only
+2024-09-13_namib-minerals_ex-96-1,How Mine older than report in DB
+2024-09-13_namib-minerals_ex-96-2,Mazowe care and maintenance resource only
+2024-09-13_namib-minerals_ex-96-3,Redwing care and maintenance resource only
+2024-10-01_centerra-gold-inc_ex-99-1,Thompson Creek molybdenum out of scope
+2024-10-01_equinox-gold-corp_ex-99-1,Greenstone older than report in DB
+2024-10-07_u-s-goldmining-inc_ex-96-1,Whistler older than report in DB
+2024-11-19_ero-copper-corp_ex-99-2,Furnas older than report in DB
+2024-11-19_new-found-gold-corp_ex-99-1,resource only
+2024-12-05_lifezone-metals-ltd_ex-96-1,Kabanga resource update; IA in DB
+2024-12-16_caledonia-mining-corp-plc_ex-99-1,Bilboes 2024 superseded by 2025 TRS
+2025-02-04_namib-minerals_ex-96-1,How Mine older than report in DB
+2025-02-06_dakota-gold-corp_ex-96-1,resource summaries only
+2025-02-14_u-s-gold-corp_ex-96-1,CK Gold older than report in DB
+2025-02-24_i-80-gold-corp_ex-99-1,press release (Cove PEA in DB)
+2025-02-26_goldmining-inc_ex-99-1,resource only
+2025-03-14_mcewen-mining-inc_ex-96,resource only
+2025-04-01_i-80-gold-corp_ex-99-2,Lone Tree resource only
+2025-04-01_i-80-gold-corp_ex-99-3,Granite Creek older than report in DB
+2025-04-03_iamgold-corp_ex-99-1,resource only
+2025-06-02_lifezone-metals-ltd_ex-96-1,Kabanga already in DB
+2025-06-09_aura-minerals-inc_ex-96-5,Matupa already in DB
+2025-06-23_aura-minerals-inc_ex-96-7,Era Dorada IA superseded by FS
+2025-07-17_orla-mining-ltd_ex-99-1,2-page fragment
+2025-08-06_alamos-gold-inc_ex-99-1,Island Gold district older than report in DB
+2025-08-07_alamos-gold-inc_ex-99-1,information statement
+2025-08-28_equinox-gold-corp_ex-99-1,press release
+2025-09-16_equinox-gold-corp_ex-99-1,press release
+2025-10-28_aris-mining-corp_ex-99-1,Toroparu PEA superseded by PFS
+2025-10-30_drdgold-ltd_ex-96-2,Ergo FY2025 duplicate of report in DB
+2025-12-03_nexmetals-mining-corp_ex-99-1,press release
+2025-12-15_collective-mining-ltd_ex-99-1,Guayabales resource only
+2026-01-20_mayfair-gold-corp_ex-99-28,Fenn-Gib older report (PFS extracted)
+2026-01-20_mayfair-gold-corp_ex-99-52,press release
+2026-02-11_coppertech-metals-inc_ex-96-2,KCM duplicate of later filing in DB
+2026-02-20_hycroft-mining-holding-corp_ex-99,Hycroft older IA (June 2026 in DB)
+2026-03-27_hudbay-minerals-inc_ex-99-1,annual information form
+2026-03-30_gold-fields-ltd_ex-96-2,20-page reserves summary
+2026-04-02_namib-minerals_ex-96-2,Mazowe care and maintenance resource only
+2026-04-02_namib-minerals_ex-96-2_038846,Mazowe 2023 version
+2026-04-02_namib-minerals_ex-96-3,Redwing care and maintenance resource only
+2026-04-02_namib-minerals_ex-96-3_038846,Redwing 2023 version
+2026-04-17_u-s-goldmining-inc_ex-96-1,Whistler already in DB
+2026-06-30_fortuna-mining-corp_ex-99-1,press release (Diamba Sud FS in DB)
+2026-10-22_collective-mining-ltd_ex-99-1,Guayabales resource only
+2026-11-10_lion-copper-corp_ex-96-1,Bear project resource only
+2026-11-16_nexmetals-mining-corp_ex-96-1,Selebi resource only
+site-atalaya-mining-riotinto,older Riotinto report (San Dionisio version in DB)
+site-caravel-minerals-caravel-copper_45f8ky1gd5gk,10-page announcement
+site-talon-metals-tamarack-north,resource only
