@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023512/000162828026064355/exhibit961-fwgr_trsx2xoc.htm",
+  "source": "edgar",
+  "issuer": "DRDGOLD LTD  (DRD, DRDGF)",
+  "cik": "1023512",
+  "form": "20-F",
+  "exhibit": "EX-96.1",
+  "filed": "2026-10-02",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-10-02_drdgold-ltd_ex-96-1",
+  "sha256": "b4cd470502f194ff8ddf7a9e332606b68bc43d884d36bfad56d967b62eaad60a",
+  "bytes": 373380,
+  "format": "html",
+  "pages": 36,
+  "parsed_on": "2026-11-20"
+}

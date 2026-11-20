@@ -1,0 +1,388 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kalkaroo",
+  "title": "Kalkaroo Pre-Feasibility Study: Positive Kalkaroo PFS Supports Large Scale Copper Project (ASX release)",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "effective_date": "2019-06-18",
+  "effective_date_quote": "18 June 2019",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au"
+  ],
+  "country": "Australia",
+  "region": "South Australia",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2019,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation"
+  ],
+  "quote": "The final saleable product produced by the conventional flotation processing circuit is copper concentrate",
+  "page": 6
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 7,
+   "unit": "Mt/a",
+   "quote": "milling throughput rate of nominally 7 million tonnes per annum",
+   "page": 5,
+   "statistic": "design",
+   "context": {
+    "phase": "sulphide concentrator (from Year 4)"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 4,
+   "unit": "Mt/a",
+   "quote": "annual production rate averaging around 4 million tonnes per annum, which is the nominal capacity of the oxide",
+   "page": 5,
+   "statistic": "design",
+   "context": {
+    "phase": "oxide plant (Years 1-3)"
+   }
+  },
+  {
+   "parameter": "reserve_tonnes",
+   "value": 100.1,
+   "unit": "Mt",
+   "quote": "Total 100.1 0.47 0.44 474 1,407",
+   "page": 4
+  },
+  {
+   "parameter": "reserve_grade",
+   "value": 0.47,
+   "unit": "%",
+   "quote": "Total 100.1 0.47 0.44 474 1,407",
+   "page": 4,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "reserve_grade",
+   "value": 0.44,
+   "unit": "g/t",
+   "quote": "Total 100.1 0.47 0.44 474 1,407",
+   "page": 4,
+   "metal": "Au"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 3.5,
+   "unit": "t:t",
+   "quote": "giving an overall life of mine waste: ore ratio of 3.5:1",
+   "page": 5
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2.89,
+   "unit": "USD/lb",
+   "quote": "Long-term metal price of USD$2.89/lb for copper and USD$1,200/oz for gold",
+   "page": 10,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Long-term metal price of USD$2.89/lb for copper and USD$1,200/oz for gold",
+   "page": 10,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.75,
+   "unit": "USD/AUD",
+   "quote": "AUD:USD exchange rate of 0.75",
+   "page": 10,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 357,
+   "unit": "MAUD",
+   "quote": "478 357 258 21%",
+   "page": 10,
+   "context": {
+    "discount_rate_pct": 7.5
+   },
+   "review_note": "Post-tax NPV DCF @ 7.5% read from a jumbled table (post-tax: 5% 478, 7.5% 357, 10% 258, IRR 21%); assumed A$M as for the pre-tax NPV in the highlights."
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 21,
+   "unit": "%",
+   "quote": "478 357 258 21%",
+   "page": 10
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.67,
+   "unit": "USD/lb",
+   "quote": "Estimated C1 cost of USD$1.67/lb.",
+   "page": 1,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "C1 per lb Cu payable, gold expressed as copper equivalent"
+   },
+   "review_note": "Report states costs are per lb of copper-equivalent metal sold (gold converted to Cu at the stated prices)."
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining Fleet",
+   "value": 76,
+   "quote": "Mining Fleet 76 73 149",
+   "page": 6,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Oxide Process Plant",
+   "value": 83,
+   "quote": "Oxide Process Plant 83 9 92",
+   "page": 6,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 127,
+   "quote": "Infrastructure 127 30 5 162",
+   "page": 6,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 46,
+   "quote": "Contingency 46 36 82",
+   "page": 6,
+   "l1": "contingency",
+   "l2": "contingency",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost (Pre-Production)",
+   "value": 332,
+   "quote": "Total Capital Cost 332 246 102 680",
+   "page": 6,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Sulphide Process Plant",
+   "value": 145,
+   "quote": "Sulphide Process Plant 145 15 160",
+   "page": 6,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Infrastructure",
+   "value": 30,
+   "quote": "Infrastructure 127 30 5 162",
+   "page": 6,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency",
+   "value": 36,
+   "quote": "Contingency 46 36 82",
+   "page": 6,
+   "l1": "contingency",
+   "l2": "contingency",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Remaining Primary Capital",
+   "value": 246,
+   "quote": "Total Capital Cost 332 246 102 680",
+   "page": 6,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Remaining primary capex (sulphide plant built Years 3-4); total includes Mine Closure 35, recorded separately as closure. Sparse table columns inferred from column sums.",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining Fleet",
+   "value": 73,
+   "quote": "Mining Fleet 76 73 149",
+   "page": 6,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Oxide Process Plant",
+   "value": 9,
+   "quote": "Oxide Process Plant 83 9 92",
+   "page": 6,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sulphide Process Plant",
+   "value": 15,
+   "quote": "Sulphide Process Plant 145 15 160",
+   "page": 6,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 5,
+   "quote": "Infrastructure 127 30 5 162",
+   "page": 6,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining",
+   "value": 102,
+   "quote": "Total Capital Cost 332 246 102 680",
+   "page": 6,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Mine Closure",
+   "value": 35,
+   "quote": "Mine Closure 35 35",
+   "page": 6,
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 7.72,
+   "quote": "Mining 7.72 0.66",
+   "page": 7,
+   "l1": "mining",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 10.14,
+   "quote": "Processing 10.14 0.86",
+   "page": 7,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Transport/Smelting",
+   "value": 4.38,
+   "quote": "Transport/Smelting 4.38 0.37",
+   "page": 7,
+   "l1": "offsite",
+   "l2": "transport",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Admin/Infrastructure/Rehab",
+   "value": 1.57,
+   "quote": "Admin/Infrastructure/Rehab 1.57 0.13",
+   "page": 7,
+   "l1": "ga",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contingency",
+   "value": 2.38,
+   "quote": "Contingency 2.38 0.20",
+   "page": 7,
+   "l1": "other",
+   "l2": "unallocated",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total C1",
+   "value": 26.2,
+   "quote": "Total C1 26.20 2.23",
+   "page": 7,
+   "is_total": true,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

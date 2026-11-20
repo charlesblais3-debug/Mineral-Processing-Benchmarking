@@ -1,0 +1,279 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kanmantoo Underground",
+  "title": "Kanmantoo Underground Stage 1 Updated Economic Assessment 2023 (ASX release)",
+  "standard": "JORC",
+  "study_level": "PEA",
+  "effective_date": "2023-02-27",
+  "effective_date_quote": "Monday, 27 February 2023",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Australia",
+  "region": "South Australia",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "AUD",
+  "cost_base_year": 2023,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "screening",
+   "sag_mill",
+   "flotation"
+  ],
+  "quote": "Crushing & screening SAG mill Crusher ore stockpile Dewatering Flotation",
+  "page": 61
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.4,
+   "unit": "Mt/a",
+   "quote": "Milled Tonnes 1.4 million tonnes per annum (ave)",
+   "page": 61,
+   "statistic": "lom_average",
+   "context": {
+    "phase": "Stage 1 underground; existing plant > 3 Mtpa on care and maintenance"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.05,
+   "unit": "%",
+   "quote": "Copper Grade 1.05%",
+   "page": 11,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.15,
+   "unit": "g/t",
+   "quote": "Gold Grade 0.15g/t",
+   "page": 11,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93.1,
+   "unit": "%",
+   "quote": "Copper Recovery Average 93.1%",
+   "page": 61,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 55,
+   "unit": "%",
+   "quote": "Gold Recovery 55%",
+   "page": 61,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 212,
+   "unit": "um",
+   "quote": "Primary Grind Size P80 212 um",
+   "page": 61,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 9450,
+   "unit": "USD/t",
+   "quote": "Copper Price US$/t $9,450",
+   "page": 84,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 0.7,
+   "unit": "USD/AUD",
+   "quote": "Exchange Rate A$:US$ 0.70",
+   "page": 84,
+   "context": {
+    "pair": "USD per AUD"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 165,
+   "unit": "MAUD",
+   "quote": "Net Present Value A$ $165M",
+   "page": 83,
+   "context": {
+    "discount_rate_pct": 8
+   },
+   "review_note": "Report quotes post-tax free cash flow; income taxes are not payable in the base case (tax losses), so NPV is effectively post-tax."
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 231,
+   "unit": "%",
+   "quote": "Internal Rate of Return % 231%",
+   "page": 83
+  },
+  {
+   "parameter": "aisc",
+   "value": 8051,
+   "unit": "AUD/t",
+   "quote": "LOM All In Sustaining Cost A$/Tonne $8,051",
+   "page": 83,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "A$ per tonne payable Cu"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mining",
+   "value": 16,
+   "quote": "geotechnical rockfall controls. $16",
+   "page": 81,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Infrastructure",
+   "value": 3,
+   "quote": "Additional light vehicles $3",
+   "page": 81,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Processing",
+   "value": 1,
+   "quote": "Inventory replacement and minor maintenance $1",
+   "page": 81,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other",
+   "value": 5,
+   "quote": "negative cash flow in month 1 of processing $5",
+   "page": 81,
+   "l1": "other",
+   "l2": "unallocated",
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Pre-production Capital Requirements",
+   "value": 25,
+   "quote": "Pre-production Capital Requirements A$ $25M",
+   "page": 83,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "AUD",
+   "basis_unit": "total",
+   "review_note": "Restart of existing care-and-maintenance plant (underground Stage 1): treated as growth capital; the figure is largely working capital."
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 47,
+   "quote": "Mining Development, drill and blast, load and haul, underground diamond drilling mine services, labour, supervision, and technical support. $47",
+   "page": 82,
+   "l1": "mining",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 13,
+   "quote": "Average $13 per tonne.",
+   "page": 82,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 6,
+   "quote": "State government royalty payments $6",
+   "page": 82,
+   "l1": "royalties_taxes",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Offtake Charges",
+   "value": 8,
+   "quote": "Including treatment and refining charges $8",
+   "page": 82,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Logistics",
+   "value": 5,
+   "quote": "Land and sea freight. Ship loading. $5",
+   "page": 82,
+   "l1": "offsite",
+   "l2": "transport",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration",
+   "value": 3,
+   "quote": "insurance and legal. $3",
+   "page": 82,
+   "l1": "ga",
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 82,
+   "quote": "Total $82",
+   "page": 82,
+   "is_total": true,
+   "currency": "AUD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

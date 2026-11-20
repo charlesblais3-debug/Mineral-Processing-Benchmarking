@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1322422/000106299326005845/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Hudbay Minerals Inc.  (HBM)",
+  "cik": "1322422",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-11-09",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-11-09_hudbay-minerals-inc_ex-99-1",
+  "sha256": "9da5a59abfc115f2b9e2b7c3cb32607d60be792cafab4dc9e7df991356e65330",
+  "bytes": 3308180,
+  "format": "html",
+  "pages": 284,
+  "parsed_on": "2026-11-20"
+}

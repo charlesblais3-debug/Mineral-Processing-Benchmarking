@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1514860/000149315226046558/ex99-70.htm",
+  "source": "edgar",
+  "issuer": "Gunnison Copper Corp.  (GCUMF)",
+  "cik": "1514860",
+  "form": "40FR12B",
+  "exhibit": "EX-99.70",
+  "filed": "2026-10-09",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-10-09_gunnison-copper-corp_ex-99-70",
+  "sha256": "92831201d9c3cfe8db8be5c8439378f73d380e4ab902bc8547412ab9f4386992",
+  "bytes": 5918081,
+  "format": "html",
+  "pages": 230,
+  "parsed_on": "2026-11-20"
+}

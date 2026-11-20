@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828026068459/doornkop-sxk1300trs2026.htm",
+  "source": "edgar",
+  "issuer": "HARMONY GOLD MINING CO LTD  (HMY, HGMCF)",
+  "cik": "1023514",
+  "form": "20-F",
+  "exhibit": "EX-96.9",
+  "filed": "2026-10-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-10-30_harmony-gold-mining-co-ltd_ex-96-9",
+  "sha256": "2f1ff79cd774633593d156320329faae6758bc6efc1604926c6caf8243aee07f",
+  "bytes": 3476042,
+  "format": "html",
+  "pages": 89,
+  "parsed_on": "2026-11-20"
+}

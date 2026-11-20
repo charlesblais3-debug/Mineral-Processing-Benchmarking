@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023514/000162828026068459/tshepongsouthphakisas-k130.htm",
+  "source": "edgar",
+  "issuer": "HARMONY GOLD MINING CO LTD  (HMY, HGMCF)",
+  "cik": "1023514",
+  "form": "20-F",
+  "exhibit": "EX-96.12",
+  "filed": "2026-10-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-10-30_harmony-gold-mining-co-ltd_ex-96-12",
+  "sha256": "1fc5a733bc8544ccf41bb57fcec8e323fc6e97cefc72be9671f59e0fdb4209f7",
+  "bytes": 4358722,
+  "format": "html",
+  "pages": 96,
+  "parsed_on": "2026-11-20"
+}

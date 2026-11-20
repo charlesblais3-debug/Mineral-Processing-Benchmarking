@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1629210/000119312526278471/d161084dex992.htm",
+  "source": "edgar",
+  "issuer": "Paramount Gold Nevada Corp.  (PZG)",
+  "cik": "1629210",
+  "form": "8-K",
+  "exhibit": "EX-99.2",
+  "filed": "2026-06-23",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-06-23_paramount-gold-nevada-corp_ex-99-2",
+  "sha256": "3a335cc38bc822fa3e19c06568378069f8db88cf13d2b7c34f7edc59971a81a0",
+  "bytes": 3851447,
+  "format": "html",
+  "pages": 301,
+  "parsed_on": "2026-11-20"
+}

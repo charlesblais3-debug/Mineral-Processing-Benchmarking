@@ -8,12 +8,12 @@
   "filed": "2026-11-12",
   "standard": "NI 43-101",
   "study_level": "PFS",
-  "project": "Toroparu",
+  "project": "",
   "commodity": "",
   "report_id": "2026-11-12_aris-mining-corp_ex-99-1",
-  "sha256": "0fe9bd35b4794d5673d2b0b04f37ae7c2b1fd7c8bc4c7517d4cc4dc3b5ae090f",
-  "bytes": 3172792,
+  "sha256": "cd31975490dd4fc2f50a86e36e20e354c257124e66ae41d2c8d7c65b62d191ef",
+  "bytes": 3172806,
   "format": "html",
   "pages": 203,
-  "parsed_on": "2026-11-19"
+  "parsed_on": "2026-11-20"
 }

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1339688/000149315226050863/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "Lion Copper Corp.  (LCU)",
+  "cik": "1339688",
+  "form": "10-Q",
+  "exhibit": "EX-96.1",
+  "filed": "2026-11-10",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-11-10_lion-copper-corp_ex-96-1",
+  "sha256": "73ae377571c90c8ebe62b4d0cdc7d1454034ae065af0dadb21b7dd050e3b5c0e",
+  "bytes": 1582081,
+  "format": "html",
+  "pages": 55,
+  "parsed_on": "2026-11-20"
+}

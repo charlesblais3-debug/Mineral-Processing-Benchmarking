@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1515964/000110465926085075/tm2620533d1_ex99-67.htm",
+  "source": "edgar",
+  "issuer": "Goldgroup Mining Inc.  (GGAZD, GGAZF)",
+  "cik": "1515964",
+  "form": "8-K12B",
+  "exhibit": "EX-99.67",
+  "filed": "2026-07-20",
+  "standard": "",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-07-20_goldgroup-mining-inc_ex-99-67",
+  "sha256": "7db637278e57e5dec8d4e31400dca630c0a6cc42f3e846afd601b8579828e60a",
+  "bytes": 2887895,
+  "format": "html",
+  "pages": 127,
+  "parsed_on": "2026-11-20"
+}
