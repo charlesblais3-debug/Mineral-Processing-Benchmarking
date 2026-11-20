@@ -1,0 +1,208 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Fourmile",
+  "title": "S-K 1300 Technical Report Summary and Initial Assessment with Economic Analysis on the Fourmile Project, Nevada, USA",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "roasting",
+   "pox"
+  ],
+  "quote": "The proposed roasting and POX flowsheets at existing NGM facilities are conventional and proven",
+  "page": 19
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.0,
+   "unit": "Mt/a",
+   "quote": "a 2.0 Mtpa underground mine using vertical and horizontal longhole stoping",
+   "page": 19,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.8,
+   "unit": "%",
+   "quote": "The life-of-mine (LOM) average gold recovery applied in this TRS is 82.8%",
+   "page": 16,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 2000,
+   "unit": "USD/oz",
+   "quote": "At a gold price of US$2,000/oz",
+   "page": 18,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 4200,
+   "unit": "MUSD",
+   "quote": "the Project has an after-tax NPV of US$4.2 billion at a 5% discount rate",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 5,
+    "note": "case including Inferred Mineral Resources; excluding Inferred NPV is -$0.4 billion"
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 17,
+   "unit": "%",
+   "quote": "after-tax IRR of 17%",
+   "page": 18,
+   "context": {
+    "note": "case including Inferred Mineral Resources"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Studies and permitting",
+   "value": 64,
+   "quote": "Studies and permitting 64",
+   "page": 156,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "owners",
+   "l2": "owners"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining capital",
+   "value": 751,
+   "quote": "Mining capital 751",
+   "page": 156,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "equipment"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Development",
+   "value": 1252,
+   "quote": "Development 1,252",
+   "page": 156,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Capital contingency",
+   "value": 517,
+   "quote": "Capital contingency 517",
+   "page": 156,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 2583,
+   "quote": "Total 2,583",
+   "page": 156,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "review_note": "Project capital 2026-2035, case including Inferred; no standalone processing/tailings capital (existing NGM facilities)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining costs, net of stockpile and development",
+   "value": 102.59,
+   "quote": "Mining costs, net of stockpile and development US$/t $102.59",
+   "page": 157,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 34.95,
+   "quote": "Processing US$/t $34.95",
+   "page": 157,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & administration",
+   "value": 16.01,
+   "quote": "General & administration US$/t $16.01",
+   "page": 157,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Direct Operating Cost",
+   "value": 153.55,
+   "quote": "Total Direct Operating Cost US$/t $153.55",
+   "page": 157,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other operating costs",
+   "value": 10.05,
+   "quote": "Other operating costs US$/t $10.05",
+   "page": 157,
+   "l1": "other",
+   "outside_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Production taxes",
+   "value": 8.19,
+   "quote": "Production taxes US$/t $8.19",
+   "page": 157,
+   "l1": "royalties_taxes",
+   "l2": "taxes",
+   "outside_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalty",
+   "value": 56.21,
+   "quote": "Royalty US$/t $56.21",
+   "page": 157,
+   "l1": "royalties_taxes",
+   "l2": "royalties",
+   "outside_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

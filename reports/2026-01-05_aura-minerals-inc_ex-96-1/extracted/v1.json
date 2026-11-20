@@ -361,13 +361,12 @@
   {
    "cost_type": "opex",
    "raw_label": "Mining Cost",
-   "value": 71,
-   "quote": "Mining Cost US$/t $71",
-   "page": 33,
+   "value": 70.54,
+   "quote": "Mining Cost US$/t processed $70.54",
+   "page": 211,
    "l1": "mining",
    "multiplier": "",
-   "basis_unit": "per_t_milled",
-   "review_note": "Stated in US$/t; table is on a USD/t ore basis"
+   "basis_unit": "per_t_milled"
   },
   {
    "cost_type": "opex",
@@ -397,10 +396,8 @@
    "quote": "Total Operating Costs US$/t ore $176.37",
    "page": 33,
    "is_total": true,
-   "partial_breakdown": true,
    "multiplier": "",
-   "basis_unit": "per_t_milled",
-   "review_note": "Mining+processing+G&A shown sum to 169.46; remainder of total not itemized (refining/transport per oz and others)"
+   "basis_unit": "per_t_milled"
   },
   {
    "cost_type": "opex",
@@ -413,6 +410,17 @@
    "basis_unit": "per_oz_payable",
    "multiplier": "",
    "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailing costs",
+   "value": 7.37,
+   "quote": "Tailing costs US$/t processed $7.37",
+   "page": 211,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "category_l1": "tailings_water"
   }
  ]
 }

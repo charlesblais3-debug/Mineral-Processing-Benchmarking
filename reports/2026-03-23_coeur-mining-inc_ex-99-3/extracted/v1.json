@@ -1,0 +1,271 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "New Afton",
+  "title": "New Afton Operations, British Columbia, Technical Report Summary",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2025-12-31",
+  "effective_date_quote": "information in the technical report summary is current as at 31 December, 2025",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Au",
+   "Ag"
+  ],
+  "country": "Canada",
+  "region": "British Columbia",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 3
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "gravity"
+  ],
+  "quote": "conventional crushing and grinding circuits, a flotation circuit, and a gravity circuit to produce a copper-gold concentrate",
+  "page": 23
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 16000,
+   "unit": "t/d",
+   "quote": "full capacity of approximately 16,000 t/d",
+   "page": 23,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 88.4,
+   "unit": "%",
+   "quote": "LOM copper and gold recovery rates are estimated to be approximately 88.4% and 83.9%",
+   "page": 17,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 83.9,
+   "unit": "%",
+   "quote": "LOM copper and gold recovery rates are estimated to be approximately 88.4% and 83.9%",
+   "page": 17,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 2484.6,
+   "unit": "MUSD",
+   "quote": "NPV Pre-Tax/After-Tax @ 5% US$ M 3132/2,484.6",
+   "page": 30,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "C-Zone sustaining",
+   "value": 50.6,
+   "quote": "Sustaining Capital C-Zone 14.3 18.9 4.3 4.3 4.3 4.3 — 50.6",
+   "page": 27,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "East Extension sustaining",
+   "value": 3.1,
+   "quote": "East Extension — — 1.1 2.0 — — — 3.1",
+   "page": 27,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other sustaining",
+   "value": 30.5,
+   "quote": "Other 17.6 6.1 2.9 2.7 1.1 — — 30.5",
+   "page": 27,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining capital",
+   "value": 84.2,
+   "quote": "Total sustaining capital 32.0 25.0 8.4 9.0 5.4 4.3 — 84.2",
+   "page": 27,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "C-Zone growth",
+   "value": 27.8,
+   "quote": "Growth Capital C-Zone 27.3 0.5 — — — — — 27.8",
+   "page": 27,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "East Extension growth",
+   "value": 35.5,
+   "quote": "East Extension 0.4 1.2 34.0 — — — — 35.5",
+   "page": 27,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "K-Zone growth",
+   "value": 60.5,
+   "quote": "K-Zone 17.6 21.7 21.2 — — — — 60.5",
+   "page": 27,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other growth",
+   "value": 4.6,
+   "quote": "Other (0.6) 2.3 0.7 2.2 — — — 4.6",
+   "page": 27,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total growth capital",
+   "value": 128.4,
+   "quote": "Total growth capital 44.6 25.8 55.9 2.2 — — — 128.4",
+   "page": 27,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 430.3,
+   "quote": "Mining US$ M 65.7 65.2 58.7 83.7 75.7 69.8 11.6 430.3",
+   "page": 28,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 249.4,
+   "quote": "Processing US$ M 45.3 41.6 41.2 40.5 39.8 36.1 5.0 249.4",
+   "page": 28,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 319.5,
+   "quote": "G&A US$ M 66.1 62.1 59.9 46.4 42.6 38.2 4.2 319.5",
+   "page": 28,
+   "l1": "ga",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 86.4,
+   "quote": "Other US$ M 12.4 13.5 12.8 18.7 14.5 13.3 1.2 86.4",
+   "page": 28,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 1085.6,
+   "quote": "Total US$ M 189.5 182.4 172.6 189.2 172.5 157.3 22.0 1,085.6",
+   "page": 28,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 12.19,
+   "quote": "Mining $/t mined 11.51 10.67 9.94 14.23 12.87 11.87 14.25 12.19",
+   "page": 28,
+   "l1": "mining",
+   "basis_unit": "per_t_mined",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 6.73,
+   "quote": "Processing $/t milled 8.03 6.94 6.91 6.81 6.77 6.17 5.46 6.73",
+   "page": 28,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 8.33,
+   "quote": "G&A $/t milled 11.72 10.37 10.04 7.81 7.25 6.53 4.60 8.33",
+   "page": 28,
+   "l1": "ga",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other",
+   "value": 2.25,
+   "quote": "Other $/t milled 2.21 2.26 2.14 3.14 2.46 2.27 1.28 2.25",
+   "page": 28,
+   "l1": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 29.31,
+   "quote": "Total $/t milled 33.60 30.44 28.93 31.84 29.35 26.92 24.08 29.31",
+   "page": 28,
+   "is_total": true,
+   "partial_breakdown": true,
+   "review_note": "Mining is stated per t mined, not per t milled, so the per-t-milled lines do not add to the total.",
+   "basis_unit": "per_t_milled",
+   "multiplier": ""
+  }
+ ]
+}

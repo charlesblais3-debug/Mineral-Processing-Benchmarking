@@ -1,0 +1,318 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Sleeper",
+  "title": "S-K 1300 Technical Report Summary, Sleeper Gold Mine, Humboldt County, Nevada",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2026-04-29",
+  "effective_date_quote": "with an effective date of April 29, 2026, was prepared and signed by:",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 269
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "heap_leach",
+   "merrill_crowe"
+  ],
+  "page": 43,
+  "quote": "conventional crushing, agglomeration, and cyanide heap leach processing, followed by Merrill-Crowe zinc precipitation for recovery of gold and silver."
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 30000,
+   "unit": "t/d",
+   "quote": "30,000 tpd mineralized material stacked (approximately 10.8 Mt per year)",
+   "page": 20,
+   "statistic": "design",
+   "context": {
+    "phase": "Base Case"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.26,
+   "unit": "g/t",
+   "quote": "Au Head Grade (g/t) 0.26",
+   "page": 21,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 75.8,
+   "unit": "%",
+   "quote": "Average Recovery, Au 75.8 %",
+   "page": 21,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 22.1,
+   "unit": "%",
+   "quote": "Average Recovery, Ag 22.1 %",
+   "page": 21,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3600,
+   "unit": "USD/oz",
+   "quote": "Y2 to Y17: US$3,600/oz Au and US$48.00/oz Ag",
+   "page": 20,
+   "metal": "Au",
+   "context": {
+    "note": "Y1 price 4,000"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 48.0,
+   "unit": "USD/oz",
+   "quote": "Y2 to Y17: US$3,600/oz Au and US$48.00/oz Ag",
+   "page": 20,
+   "metal": "Ag",
+   "context": {
+    "note": "Y1 price 59.00"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 402,
+   "unit": "MUSD",
+   "quote": "The Project’s after-tax NPV at an 8% discount is approximately US$402 million",
+   "page": 24,
+   "context": {
+    "discount_rate_pct": 8
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 44.5,
+   "unit": "%",
+   "quote": "the after-tax IRR is approximately 44.5%",
+   "page": 24
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.4,
+   "unit": "years",
+   "quote": "the payback period is approximately 1.4 years from the start of production",
+   "page": 24
+  },
+  {
+   "parameter": "aisc",
+   "value": 2407,
+   "unit": "USD/oz",
+   "quote": "All-in Sustaining Cost (AISC) net of Ag by-products credits of US$2,407/oz Au payable",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Processing – Leach Pad / Ponds",
+   "value": 40.635,
+   "quote": "Processing – Leach Pad / Ponds 40,635 58,132 98,767",
+   "page": 221,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process – Recovery Plant",
+   "value": 56.964,
+   "quote": "Process – Recovery Plant 56,964 2,316 59,280",
+   "page": 221,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 23.497,
+   "quote": "Infrastructure 23,497 41,007 64,504",
+   "page": 221,
+   "l1": "onsite_infra",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 39.772,
+   "quote": "Indirects 39,772 33,714 73,486",
+   "page": 221,
+   "l1": "indirects",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 40.217,
+   "quote": "Contingency 40,217 68,509 108,726",
+   "page": 221,
+   "l1": "contingency",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Initial Growth and Development Capital",
+   "value": 201.085,
+   "quote": "Total Before Closure 201,085 342,544 543,629",
+   "page": 221,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining – Dewatering",
+   "value": 138.866,
+   "quote": "Mining – Dewatering — 138,866 138,866",
+   "page": 221,
+   "l1": "mining",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Processing – Leach Pad / Ponds",
+   "value": 58.132,
+   "quote": "Processing – Leach Pad / Ponds 40,635 58,132 98,767",
+   "page": 221,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process – Recovery Plant",
+   "value": 2.316,
+   "quote": "Process – Recovery Plant 56,964 2,316 59,280",
+   "page": 221,
+   "l1": "process",
+   "l2": "recovery",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure",
+   "value": 41.007,
+   "quote": "Infrastructure 23,497 41,007 64,504",
+   "page": 221,
+   "l1": "onsite_infra",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Indirects",
+   "value": 33.714,
+   "quote": "Indirects 39,772 33,714 73,486",
+   "page": 221,
+   "l1": "indirects",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingency",
+   "value": 68.509,
+   "quote": "Contingency 40,217 68,509 108,726",
+   "page": 221,
+   "l1": "contingency",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital total",
+   "value": 342.544,
+   "quote": "Total Before Closure 201,085 342,544 543,629",
+   "page": 221,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation / Closure Capital",
+   "value": 52.432,
+   "quote": "Reclamation / Closure Capital 52,432 52,432",
+   "page": 221,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Mining ($/t processed)",
+   "value": 6.37,
+   "quote": "Total Mining ($/t processed) $ 6.37",
+   "page": 221,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Dewatering ($/t processed)",
+   "value": 0.59,
+   "quote": "Total Dewatering ($/t processed) $ 0.59",
+   "page": 221,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing ($/t processed)",
+   "value": 5.55,
+   "quote": "Processing ($/t processed) $ 5.55",
+   "page": 221,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A ($/t processed)",
+   "value": 0.52,
+   "quote": "G&A ($/t processed) $ 0.52",
+   "page": 221,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total ($/t processed)",
+   "value": 13.03,
+   "quote": "Total ($/t processed) 13.03",
+   "page": 221,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open pit mining per t mined",
+   "value": 2.53,
+   "quote": "Open pit operating costs of US$2.53 per tonne mined",
+   "page": 21,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  }
+ ]
+}

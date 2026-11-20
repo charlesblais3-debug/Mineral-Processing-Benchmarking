@@ -1,0 +1,511 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Hycroft",
+  "title": "Hycroft Mine Project S-K 1300 Technical Report Summary and Initial Assessment with Economic Analysis",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2026-05-14",
+  "effective_date_quote": "The overall effective date of this report is May 14, 2026.",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 26
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "pox",
+   "tank_leach",
+   "merrill_crowe"
+  ],
+  "quote": "Milling, Flotation, POX, Hot Cure, and Lime Boil followed by Cyanide Leach and Merrill-Crowe of sulfide",
+  "page": 24
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 57100,
+   "unit": "st/d",
+   "quote": "The process plant is designed to treat 57,100 st/d of mineralized material",
+   "page": 157,
+   "statistic": "design",
+   "context": {
+    "note": "short tons; sulfide + oxide plant"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 50.5,
+   "unit": "years",
+   "quote": "Life of Mine years 50.5",
+   "page": 23
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 1.55,
+   "unit": "t:t",
+   "quote": "Average Strip Ratio w:o 1.55",
+   "page": 23,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.8,
+   "unit": "%",
+   "quote": "Average Mill Feed Gold Recovery % 82.8",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "mill feed (sulfide)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 77.5,
+   "unit": "%",
+   "quote": "Average Mill Feed Silver Recovery % 77.5",
+   "page": 23,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "mill feed (sulfide)"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 40.0,
+   "unit": "%",
+   "quote": "Average Leach Gold Recovery % 40.0",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "heap leach material"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3600,
+   "unit": "USD/oz",
+   "quote": "Gold Price US$/oz 3,600",
+   "page": 23,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 48.0,
+   "unit": "USD/oz",
+   "quote": "Silver Price US$/oz 48.00",
+   "page": 23,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 4344,
+   "unit": "MUSD",
+   "quote": "Post-Tax NPV (5%) US$M 4,344",
+   "page": 24,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 16.9,
+   "unit": "%",
+   "quote": "Post-Tax IRR % 16.9",
+   "page": 24
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.7,
+   "unit": "years",
+   "quote": "Post-Tax Payback years 4.7",
+   "page": 24
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1924,
+   "unit": "USD/oz",
+   "quote": "Cash Costs 1 US$/oz AuEq 1,924",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "per oz AuEq"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 2147,
+   "unit": "USD/oz",
+   "quote": "All-In Sustaining Cost 2 US$/oz AuEq 2,147",
+   "page": 23,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "per oz AuEq"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 194,
+   "quote": "1000 Mining 194 1,171 1,365",
+   "page": 22,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mining",
+   "value": 1171,
+   "quote": "1000 Mining 194 1,171 1,365",
+   "page": 22,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing",
+   "value": 48,
+   "quote": "2000 Crushing 48 60 109",
+   "page": 22,
+   "l1": "process",
+   "l2": "comminution",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Crushing",
+   "value": 60,
+   "quote": "2000 Crushing 48 60 109",
+   "page": 22,
+   "l1": "process",
+   "l2": "comminution",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Sulfide Process",
+   "value": 915,
+   "quote": "3000 Sulfide Process 915 776 1,692",
+   "page": 22,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sulfide Process",
+   "value": 776,
+   "quote": "3000 Sulfide Process 915 776 1,692",
+   "page": 22,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Oxide Process",
+   "value": 16,
+   "quote": "4000 Oxide Process 16 46 63",
+   "page": 22,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Oxide Process",
+   "value": 46,
+   "quote": "4000 Oxide Process 16 46 63",
+   "page": 22,
+   "l1": "process",
+   "l2": "recovery",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Waste Rock Storage & TMF",
+   "value": 208,
+   "quote": "5000 Waste Rock Storage & TMF 208 515 723",
+   "page": 22,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Waste Rock Storage & TMF",
+   "value": 515,
+   "quote": "5000 Waste Rock Storage & TMF 208 515 723",
+   "page": 22,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Onsite Infrastructure",
+   "value": 139,
+   "quote": "6000 Onsite Infrastructure 139 9 148",
+   "page": 22,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Onsite Infrastructure",
+   "value": 9,
+   "quote": "6000 Onsite Infrastructure 139 9 148",
+   "page": 22,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Offsite Infrastructure",
+   "value": 43,
+   "quote": "7000 Offsite Infrastructure 43 366 409",
+   "page": 22,
+   "l1": "offsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Offsite Infrastructure",
+   "value": 366,
+   "quote": "7000 Offsite Infrastructure 43 366 409",
+   "page": 22,
+   "l1": "offsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Direct Costs",
+   "value": 1563,
+   "quote": "Total Direct Costs 1,563 2,944 4,507",
+   "page": 22,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Direct Costs",
+   "value": 2944,
+   "quote": "Total Direct Costs 1,563 2,944 4,507",
+   "page": 22,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirects",
+   "value": 382,
+   "quote": "8000 Indirects 382 27 409",
+   "page": 22,
+   "l1": "indirects",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Indirects",
+   "value": 27,
+   "quote": "8000 Indirects 382 27 409",
+   "page": 22,
+   "l1": "indirects",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Provisions",
+   "value": 448,
+   "quote": "9000 Provisions 448 136 584",
+   "page": 22,
+   "l1": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Provisions",
+   "value": 136,
+   "quote": "9000 Provisions 448 136 584",
+   "page": 22,
+   "l1": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owner's Costs",
+   "value": 41,
+   "quote": "10000 Owner’s Costs 41 -",
+   "page": 22,
+   "l1": "owners",
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Capital Cost",
+   "value": 2434,
+   "quote": "Total Capital Cost 2,434 3,107 5,541",
+   "page": 22,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Capital Cost",
+   "value": 3107,
+   "quote": "Total Capital Cost 2,434 3,107 5,541",
+   "page": 22,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 243,
+   "quote": "Closure Costs US$M 243",
+   "page": 23,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 8683,
+   "quote": "Mining 8,683 2 6.91 31.5",
+   "page": 22,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 6.91,
+   "quote": "Mining 8,683 2 6.91 31.5",
+   "page": 22,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "per_short_ton": true,
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 18245,
+   "quote": "Process 18,245 14.52 66.1",
+   "page": 22,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process",
+   "value": 14.52,
+   "quote": "Process 18,245 14.52 66.1",
+   "page": 22,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "per_short_ton": true,
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 664,
+   "quote": "G&A 664 0.53 2.4",
+   "page": 22,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 0.53,
+   "quote": "G&A 664 0.53 2.4",
+   "page": 22,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "per_short_ton": true,
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 27592,
+   "quote": "Total 27,592 21.96 100",
+   "page": 22,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 21.96,
+   "quote": "Total 27,592 21.96 100",
+   "page": 22,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "per_short_ton": true,
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost per ton mined",
+   "value": 2.28,
+   "quote": "Mining Cost US$/st mined 2.28",
+   "page": 23,
+   "basis_unit": "per_t_mined",
+   "multiplier": "",
+   "per_short_ton": true,
+   "l1": "mining"
+  }
+ ]
+}

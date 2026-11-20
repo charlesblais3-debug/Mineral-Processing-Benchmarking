@@ -1,0 +1,348 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "CK Gold",
+  "title": "CK Gold Project S-K 1300 Technical Report (Feasibility Study)",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2026-03-30",
+  "effective_date_quote": "The effective date of this Report is March 30, 2026.",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Cu",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Wyoming",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2026,
+  "effective_date_page": 10
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "page": 19,
+  "quote": "a two-stage grinding circuit consisting of a semi-autogenous grinding (SAG) mill in closed circuit with a pebble crusher and a ball mill in closed circuit with hydrocyclones. Ground slurry feeds a multi-stage flotation circuit comprising rougher, scavenger, regrind, and cleaner stages"
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 20000,
+   "unit": "st/d",
+   "quote": "CK Gold processing facility has been designed to process 20,000 st/d of gold/copper sulfide ore.",
+   "page": 137,
+   "statistic": "design",
+   "context": {
+    "note": "short tons"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 71.5,
+   "unit": "%",
+   "quote": "LoM Average Gold Recovery % 71.5",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80.6,
+   "unit": "%",
+   "quote": "LoM Average Copper Recovery % 80.6",
+   "page": 26,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 68.7,
+   "unit": "%",
+   "quote": "LoM Average Silver Recovery % 68.7",
+   "page": 26,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 0.89,
+   "unit": "t:t",
+   "quote": "Strip Ratio (Waste: Ore) t:t 0.89",
+   "page": 26,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "lom_years",
+   "value": 11,
+   "unit": "years",
+   "quote": "Operating Mine Life years 11",
+   "page": 26
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3250,
+   "unit": "USD/oz",
+   "quote": "Gold Price (US$/oz) US$/oz Au 3,250",
+   "page": 26,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.5,
+   "unit": "USD/lb",
+   "quote": "Copper Price (US$/lb) US$/lb Cu 4.5",
+   "page": 26,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 40,
+   "unit": "USD/oz",
+   "quote": "Silver Price (US$/oz) US$/oz Ag 40",
+   "page": 26,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 632,
+   "unit": "MUSD",
+   "quote": "After-Tax NPV5% US$ million 632",
+   "page": 26,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 27,
+   "unit": "%",
+   "quote": "After-Tax IRR % 27",
+   "page": 26
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.5,
+   "unit": "years",
+   "quote": "Payback Period years 2.5",
+   "page": 26
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1007,
+   "unit": "USD/oz",
+   "quote": "LoM Total Cash Cost, Net-of-Copper-Silver By-Product US$/oz Au 1,007",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "aisc",
+   "value": 1094,
+   "unit": "USD/oz",
+   "quote": "LoM AISC, Net-of-Copper-Silver By-Product US$/oz Au 1,094",
+   "page": 26,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 5.5,
+   "quote": "Mining 5,500,000",
+   "page": 202,
+   "l1": "mining",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Process Plant",
+   "value": 219.193621,
+   "quote": "2000 - Process Plant 219,193,621",
+   "page": 202,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Geotechnical Structures",
+   "value": 21.622744,
+   "quote": "3000 - Geotechnical Structures 21,622,744",
+   "page": 202,
+   "l1": "tailings_water",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Infrastructure",
+   "value": 21.3881,
+   "quote": "4000 - Infrastructure 21,388,100",
+   "page": 202,
+   "l1": "onsite_infra",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Indirects",
+   "value": 43.913945,
+   "quote": "5000 - Construction Indirects 43,913,945",
+   "page": 202,
+   "l1": "indirects",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Consultants",
+   "value": 16.13612,
+   "quote": "6000 - Consultants 16,136,120",
+   "page": 202,
+   "l1": "indirects",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Other Indirect Costs",
+   "value": 20.116119,
+   "quote": "8000 - Other Indirect Costs 20,116,119",
+   "page": 202,
+   "l1": "indirects",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingencies",
+   "value": 46.513865,
+   "quote": "9000 - Contingencies 46,513,865",
+   "page": 202,
+   "l1": "contingency",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 394.384514,
+   "quote": "Total 394,384,514",
+   "page": 202,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Pre-Production Owners Costs",
+   "value": 28,
+   "quote": "Pre-Production Owners Costs US$ million 28",
+   "page": 26,
+   "outside_total": true,
+   "l1": "owners",
+   "multiplier": "M",
+   "review_note": "listed separately from Initial Capital incl. contingency (394)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 35,
+   "quote": "Sustaining Capital US$ million 35",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation Cost",
+   "value": 27,
+   "quote": "Reclamation Cost (US$ million) US$ million 27",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Cost",
+   "value": 7.33,
+   "quote": "Mining Cost 546.04 53.30 7.33",
+   "page": 202,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Cost",
+   "value": 8.16,
+   "quote": "Process Cost 600.53 59.41 8.16",
+   "page": 202,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Tailings Haulage",
+   "value": 1.41,
+   "quote": "Tailings Haulage 114.26 10.39 1.41",
+   "page": 202,
+   "l1": "tailings_water",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site G&A",
+   "value": 1.54,
+   "quote": "Site G&A 114.90 11.20 1.54",
+   "page": 202,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Project Operating Costs",
+   "value": 18.44,
+   "quote": "Total Project Operating Costs 1,375.73 134.30 18.44",
+   "page": 202,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Selling Cost, Royalties and Production Taxes",
+   "value": 3.37,
+   "quote": "Selling Cost, Royalties and Production Taxes US$3.37/t processed",
+   "page": 26,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true,
+   "review_note": "report text says per t processed; table units are US$/st"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining per st mined",
+   "value": 3.88,
+   "quote": "Mining Costs USS/st mined total 3.88",
+   "page": 26,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "per_short_ton": true
+  }
+ ]
+}
