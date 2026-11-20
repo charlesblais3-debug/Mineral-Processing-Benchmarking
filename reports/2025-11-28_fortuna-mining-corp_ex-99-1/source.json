@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1341335/000110465925116545/tm2532001d1_ex99-1.htm",
+  "source": "edgar",
+  "issuer": "FORTUNA MINING CORP.  (FSM)",
+  "cik": "1341335",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-11-28",
+  "standard": "",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-11-28_fortuna-mining-corp_ex-99-1",
+  "sha256": "2ebc7d43020c12888c4b9c84b5884dbb9e874bddc0bd38cf7a4ab83dddeb3f13",
+  "bytes": 5416613,
+  "format": "html",
+  "pages": 191,
+  "parsed_on": "2026-11-20"
+}

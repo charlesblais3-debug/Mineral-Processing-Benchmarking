@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1172724/000162828026021904/exhibit962_tarkwatrs.htm",
+  "source": "edgar",
+  "issuer": "GOLD FIELDS LTD  (GFI, GFIOF)",
+  "cik": "1172724",
+  "form": "20-F",
+  "exhibit": "EX-96.2",
+  "filed": "2026-03-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-03-30_gold-fields-ltd_ex-96-2",
+  "sha256": "fd79799687bc488e212ce0138e8976cd1e261de484cdff7289f38b3825cfad63",
+  "bytes": 320802,
+  "format": "html",
+  "pages": 20,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/27093/000149315226023905/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "U.S. GOLD CORP.  (USAU)",
+  "cik": "27093",
+  "form": "8-K",
+  "exhibit": "EX-99",
+  "filed": "2026-05-15",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-05-15_u-s-gold-corp_ex-99",
+  "sha256": "1e6bd29b90585de9bc143f051195058f43dccc4c986876b269675bb6d9fba0ec",
+  "bytes": 6066364,
+  "format": "html",
+  "pages": 244,
+  "parsed_on": "2026-11-20"
+}

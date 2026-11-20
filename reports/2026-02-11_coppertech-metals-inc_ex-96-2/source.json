@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2093018/000157587226000065/filename175.htm",
+  "source": "edgar",
+  "issuer": "CopperTech Metals Inc.",
+  "cik": "2093018",
+  "form": "DRS/A",
+  "exhibit": "EX-96.2",
+  "filed": "2026-02-11",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-02-11_coppertech-metals-inc_ex-96-2",
+  "sha256": "26298928fd09d87a2196280bdfb20d6433b9dfc2405ab90c00880f48ab3150e0",
+  "bytes": 4413503,
+  "format": "html",
+  "pages": 190,
+  "parsed_on": "2026-11-20"
+}

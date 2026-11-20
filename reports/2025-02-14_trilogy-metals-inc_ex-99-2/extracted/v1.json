@@ -17,7 +17,14 @@
   "cost_base_year": 2024,
   "effective_date_page": 12
  },
- "flowsheet": null,
+ "flowsheet": {
+  "unit_ops": [
+   "sag_mill",
+   "ball_mill"
+  ],
+  "quote": "Grinding SAG Mill, Ball Mill",
+  "page": 110
+ },
  "facts": [
   {
    "parameter": "throughput_tpd",

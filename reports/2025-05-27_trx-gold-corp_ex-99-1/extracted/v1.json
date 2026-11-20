@@ -1,0 +1,374 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Buckreef",
+  "title": "Preliminary Economic Assessment and Updated Mineral Resource Estimate of the Buckreef Gold Mine Project, Tanzania",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2025-04-15",
+  "effective_date_quote": "This Technical Report has an effective date of April 15 , 2025",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Tanzania",
+  "region": "Geita",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "effective_date_page": 13
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "regrind",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "The introduction of a flotation circuit to recover and regrind sulphide concentrates as well as regrinding, thickening, additional CIL capacity and elution circuit expansion",
+  "page": 18
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3000,
+   "unit": "t/d",
+   "quote": "an expansion and upgrade of the existing process plant to 3 , 000 tonnes per day (“tpd”)",
+   "page": 13,
+   "statistic": "design",
+   "context": {
+    "phase": "expanded plant (from YR 3)"
+   }
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 2824,
+   "unit": "t/d",
+   "quote": "87 % Recovery 2,824 tpd Rate",
+   "page": 20,
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87,
+   "unit": "%",
+   "quote": "87 % Recovery 2,824 tpd Rate",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 442.2,
+   "unit": "MUSD",
+   "quote": "442.2 US$M Post - tax NPV 5%",
+   "page": 20,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1024,
+   "unit": "USD/oz",
+   "quote": "1,024 US$/oz Cash Cost",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "includes royalties"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1206,
+   "unit": "USD/oz",
+   "quote": "1,206 US$/oz All - in Sustaining Cost",
+   "page": 20,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "strip_ratio",
+   "value": 6.0,
+   "unit": "t:t",
+   "quote": "6.0 w:o Open Pit - Strip Ratio",
+   "page": 20,
+   "statistic": "lom_average",
+   "context": {
+    "note": "open pit only"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 17.6,
+   "unit": "years",
+   "quote": "17.6 Years Mine life - Open Pit & Underground",
+   "page": 20
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant Expansion",
+   "value": 76.1,
+   "quote": "102.0 76.1 25.9 Process Plant Expansion",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Process Plant Expansion",
+   "value": 25.9,
+   "quote": "102.0 76.1 25.9 Process Plant Expansion",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "process",
+   "l2": "recovery"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Site Improvements",
+   "value": 1.7,
+   "quote": "1.7 - 1.7 Site Improvements",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "onsite_infra",
+   "l2": "other"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings Facility",
+   "value": 4.5,
+   "quote": "4.5 - 4.5 Tailings Facility",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "tailings_water",
+   "l2": "tailings"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mine Development",
+   "value": 78.9,
+   "quote": "197.1 78.9 118.2 Underground Mine Development",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Underground Mine Development",
+   "value": 118.2,
+   "quote": "197.1 78.9 118.2 Underground Mine Development",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining",
+   "l2": "ug_development"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal",
+   "value": 155.0,
+   "quote": "305.2 155.0 150.2 Subtotal",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Subtotal",
+   "value": 150.2,
+   "quote": "305.2 155.0 150.2 Subtotal",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_subtotal": true
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Contingencies",
+   "value": 29.4,
+   "quote": "53.6 29.4 24.3 Contingencies",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingencies",
+   "value": 24.3,
+   "quote": "53.6 29.4 24.3 Contingencies",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "contingency"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total",
+   "value": 184.4,
+   "quote": "358.9 184.4 174.5 Total",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total",
+   "value": 174.5,
+   "quote": "358.9 184.4 174.5 Total",
+   "page": 19,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Cost",
+   "value": 13.4,
+   "quote": "13.4 US$M Closure Cost",
+   "page": 20,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 91.7,
+   "quote": "3.77 26.38 91.7 Open Pit Mining",
+   "page": 19,
+   "l1": "mining",
+   "part_of": "Average LOM Mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining (incl. pastefill)",
+   "value": 475.0,
+   "quote": "N/A 33.09 475.0 Underground Mining (incl. pastefill)",
+   "page": 19,
+   "l1": "mining",
+   "part_of": "Average LOM Mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Average LOM Mining",
+   "value": 566.7,
+   "quote": "N/A 31.34 566.7 Average LOM Mining",
+   "page": 19,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process cost per tonne incl. tailings",
+   "value": 229.2,
+   "quote": "N/A 12.68 229.2 Process cost per tonne incl. tailings",
+   "page": 19,
+   "l1": "processing",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A per tonne processed",
+   "value": 117.5,
+   "quote": "N/A 6.50 117.5 G&A per tonne processed",
+   "page": 19,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total cost per tonne processed",
+   "value": 913.3,
+   "quote": "N/A 50.52 913.3 Total cost per tonne processed",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 3.77,
+   "quote": "3.77 26.38 91.7 Open Pit Mining",
+   "page": 19,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_mined",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Average LOM Mining",
+   "value": 31.34,
+   "quote": "N/A 31.34 566.7 Average LOM Mining",
+   "page": 19,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Total cost per tonne processed"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process cost per tonne incl. tailings",
+   "value": 12.68,
+   "quote": "N/A 12.68 229.2 Process cost per tonne incl. tailings",
+   "page": 19,
+   "l1": "processing",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Total cost per tonne processed"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A per tonne processed",
+   "value": 6.5,
+   "quote": "N/A 6.50 117.5 G&A per tonne processed",
+   "page": 19,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "part_of": "Total cost per tonne processed"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total cost per tonne processed",
+   "value": 50.52,
+   "quote": "N/A 50.52 913.3 Total cost per tonne processed",
+   "page": 19,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties and fees",
+   "value": 182,
+   "quote": "The royalties and fees total $ 182 M over the LOM",
+   "page": 19,
+   "l1": "royalties_taxes",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "outside_total": true
+  }
+ ]
+}

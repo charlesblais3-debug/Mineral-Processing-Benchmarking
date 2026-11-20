@@ -1,0 +1,320 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Proyecto Riotinto",
+  "title": "Proyecto Riotinto Preliminary Economic Assessment (NI 43-101), Huelva, Spain",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2022-10-31",
+  "effective_date_quote": "EFFECTIVE DATE: October 31, 2022",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Zn",
+   "Pb",
+   "Ag"
+  ],
+  "country": "Spain",
+  "region": "Huelva (Andalusia)",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "primary_jaw",
+   "secondary_crush",
+   "sag_mill",
+   "pebble_crush",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "to the rougher flotation circuit. The rougher tailings are thickened and pumped to the tailings storage facility. The rougher concentrate is then reground and floated in a cleaner circuit to achieve a concentrate grade between 21-25% Cu, depending on the ore type. Table 17-1: Design Criteria for Previous Facility and current 15 Mtpa Operation Unit 15 Mtpa Comments Throughput Feed Grade % Cu 0.49 Total Plant Feed t/y 15,000,000 Availabilities Hours per Year h 8,760 Crushing Plant % 65 Existing case includes 22% downtime Rest of Plant % 85 due to mining. Crushing Plant Parallel Trains Re-tasked New Configuration 2 Stage Crushing 1-Stage Crushing Operating Hours h 5,694 5,694 Crusher Plant Feed t/y 10,000,000 5,000,000 Combined throughput of 15 Mtpa t/h 1,756 878 F100 mm 1,000 1,000 F80 mm 399 400 Primary 1 x 460 kW Gyratory 1 x 250 kW Jaw Secondary 3 x 325 kW Cone Nil Tertiary Nil Nil P80 mm 65 Coarser product, suitable for SAG milling Primary Grinding Configuration ABC + 2 Stages Ball Operating Hours h 7,446 Grinding Feed Rate t/h 2,015 SAG 23 MW SAG New in Open Circuit Pebble Crushing 2 x 370 kW Cone Primary 1 x 7.6 MW Ball Open Circuit Secondary - Line 1 1 x 7.6 MW Ball Closed Circuit - Oversize Motor Secondary - Line 2 1 x 1.84 MW Ball Closed Circuit Secondary - Lines 3,4 2 x 2.47 MW Ball Closed Circuit Grind Product P80 µm 183 Comparable grind product sizing Configuration Parallel Ball Open/Closed Circuit Closed Regrind Mill 1 2.4 MW Ball",
+  "page": 124
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 15,
+   "unit": "Mt/a",
+   "quote": "Total Plant Feed t/y 15,000,000",
+   "page": 124,
+   "statistic": "design",
+   "context": {
+    "phase": "current 15 Mtpa operation (existing plant)"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 183,
+   "unit": "um",
+   "quote": "Grind Product P80 µm 183",
+   "page": 124,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 79.0,
+   "unit": "%",
+   "quote": "Average Recovery - Cu % 79.0",
+   "page": 18,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "ore_type": "blended stockwork + polymetallic LOM"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 74.7,
+   "unit": "%",
+   "quote": "Average Recovery - Zn % 74.7",
+   "page": 18,
+   "metal": "Zn",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 37.0,
+   "unit": "%",
+   "quote": "Average Recovery - Pb % 37.0",
+   "page": 18,
+   "metal": "Pb",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.5,
+   "unit": "USD/lb",
+   "quote": "Copper (Cu) 3.50 $/lb",
+   "page": 151,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1.2,
+   "unit": "USD/lb",
+   "quote": "Zinc (Zn) 1.20 $/lb",
+   "page": 151,
+   "metal": "Zn"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 915,
+   "unit": "MUSD",
+   "quote": "After-tax NPV10% US$ M 915",
+   "page": 18,
+   "context": {
+    "discount_rate_pct": 10
+   }
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 2.0,
+   "unit": "USD/lb",
+   "quote": "Cash Costs1 US$/lb-Cu 2.00",
+   "page": 18,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "per lb payable Cu, net of Zn and Pb by-product credits"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Development",
+   "value": 204,
+   "quote": "Mine Development 204",
+   "page": 17,
+   "l1": "mining",
+   "l2": "ug_development",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Process Plant",
+   "value": 92,
+   "quote": "Process Plant 92",
+   "page": 17,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other Surface Infrastructure",
+   "value": 93,
+   "quote": "Other Surface Infrastructure 93",
+   "page": 17,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Contingency",
+   "value": 74,
+   "quote": "Contingency 74",
+   "page": 17,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 71,
+   "quote": "Sustaining Capital 71",
+   "page": 17,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure",
+   "value": 32,
+   "quote": "Closure 32",
+   "page": 17,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 1875,
+   "quote": "Mining Costs 1,875 7.77",
+   "page": 17,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Costs",
+   "value": 7.77,
+   "quote": "Mining Costs 1,875 7.77",
+   "page": 17,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "mining",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 1962,
+   "quote": "Processing Costs 1,962 8.12",
+   "page": 17,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing Costs",
+   "value": 8.12,
+   "quote": "Processing Costs 1,962 8.12",
+   "page": 17,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 275,
+   "quote": "G&A 275 1.14",
+   "page": 17,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 1.14,
+   "quote": "G&A 275 1.14",
+   "page": 17,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "ga",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contingency",
+   "value": 206,
+   "quote": "Contingency 206 0.85",
+   "page": 17,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": false,
+   "l1": "other",
+   "l2": "unallocated",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Contingency",
+   "value": 0.85,
+   "quote": "Contingency 206 0.85",
+   "page": 17,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": false,
+   "l1": "other",
+   "l2": "unallocated",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 4318,
+   "quote": "Total 4,318 17.88",
+   "page": 17,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "is_total": true,
+   "review_note": "Table header says $000s but the economic summary (Table 1-7) gives the same figures in US$ M.",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 17.88,
+   "quote": "Total 4,318 17.88",
+   "page": 17,
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "is_total": true,
+   "currency": "USD"
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Matupá",
+  "title": "Technical Report Summary – Matupá Gold Project (Feasibility Study)",
+  "standard": "S-K 1300",
+  "study_level": "FS",
+  "effective_date": "2022-08-31",
+  "effective_date_quote": "Effective Date: August 31, 2022",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Brazil",
+  "region": "Mato Grosso",
+  "mine_type": "open_pit",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2025,
+  "qps": [],
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cil",
+   "cyanide_detox",
+   "tails_thickener",
+   "tails_filter"
+  ],
+  "quote": "The selected treatment flow sheet for Matupá includes crushing, grinding, gravity concentration, and intensive leaching, followed by leaching (leaching - carbon in leach), carbon adsorption, cyanide neutralization (Detox), tailing thickening, and filtering for final disposal in piles",
+  "page": 30
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.3,
+   "unit": "Mt/a",
+   "quote": "The stipulated capacity for the Matupá industrial circuit is 1.3 Mtpa",
+   "page": 30,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 3562,
+   "unit": "t/d",
+   "quote": "The crushing circuit is designed for a nominal capacity of 3,562 tpd and 70% availability",
+   "page": 30,
+   "statistic": "design",
+   "context": {
+    "note": "crushing circuit nominal capacity"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.14,
+   "unit": "g/t",
+   "quote": "Au (g/t) 1.14",
+   "page": 140,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "note": "Table 12-12 mining inventories of X1 deposit"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 7,
+   "unit": "years",
+   "quote": "Life of Mine (LOM) (years) 7.0",
+   "page": 140
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 125,
+   "unit": "µm",
+   "quote": "designed on the basis of feed and product P 80 of 90 mm and 0.125 mm respectively",
+   "page": 30,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1664,
+   "unit": "USD/oz",
+   "quote": "at a gold average price of $1,664/oz",
+   "page": 34,
+   "metal": "Au"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 96.1,
+   "unit": "MUSD",
+   "quote": "the post-tax net present value (“NPV”) of Aura Minerals Gold Almas Project base case amounts to US$ 96.1 million, at a Discount Rate of 5.0%",
+   "page": 34,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 27.5,
+   "unit": "%",
+   "quote": "The internal rate of return (“IRR”) is 27.5%",
+   "page": 34
+  },
+  {
+   "parameter": "payback_years",
+   "value": 2.04,
+   "unit": "years",
+   "quote": "Payback after the start-up of operations is 2.04 years",
+   "page": 34
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Services",
+   "value": 32177944,
+   "quote": "Services $ 32,177,944",
+   "page": 33,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Supplies",
+   "value": 40562051,
+   "quote": "Supplies $ 40,562,051",
+   "page": 33,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine, pile, and Transmission Line",
+   "value": 14109618,
+   "quote": "Mine, pile, and Transmission Line $ 14,109,618",
+   "page": 33,
+   "l1": "other",
+   "basis_unit": "total",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Indirect costs",
+   "value": 13008310,
+   "quote": "Indirect costs $ 13,008,310",
+   "page": 33,
+   "l1": "indirects",
+   "basis_unit": "total",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Subtotal",
+   "value": 99821923,
+   "quote": "Subtotal $ 99,821,923",
+   "page": 33,
+   "is_subtotal": true,
+   "basis_unit": "total",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 7300848,
+   "quote": "Contingency $ 7,300,848",
+   "page": 33,
+   "l1": "contingency",
+   "basis_unit": "total",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total Investment",
+   "value": 107122771,
+   "quote": "Total Investment $ 107,122,771",
+   "page": 33,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Labor (Fixed Costs)",
+   "value": 3.53,
+   "quote": "Labor (Fixed Costs) $ 3.53",
+   "page": 33,
+   "l1": "processing",
+   "l2": "labour",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD",
+   "review_note": "Table is per t ROM; scope of labour (plant vs. mine) not stated"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A (Fixed Cost)",
+   "value": 1.69,
+   "quote": "G&A (Fixed Cost) $ 1.69",
+   "page": 33,
+   "l1": "ga",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Laboratory (Fixed Cost)",
+   "value": 1.26,
+   "quote": "Laboratory (Fixed Cost) $ 1.26",
+   "page": 33,
+   "l1": "processing",
+   "l2": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Equipment rental (Fixed Cost)",
+   "value": 0.02,
+   "quote": "Equipment rental (Fixed Cost) $ 0.02",
+   "page": 33,
+   "l1": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Energy (Variable Costs)",
+   "value": 2.18,
+   "quote": "Energy (Variable Costs) $ 2.18",
+   "page": 33,
+   "l1": "processing",
+   "l2": "power",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Reagents and Consumables (Variable Costs)",
+   "value": 7.74,
+   "quote": "Reagents and Consumables (Variable Costs) $ 7.74",
+   "page": 33,
+   "l1": "processing",
+   "l2": "reagents",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Maintenance",
+   "value": 1.12,
+   "quote": "Maintenance $ 1.12",
+   "page": 33,
+   "l1": "processing",
+   "l2": "maintenance",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Water and sewage treatment plant",
+   "value": 0.01,
+   "quote": "Water and sewage treatment plant $ 0.01",
+   "page": 33,
+   "l1": "tailings_water",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Pile",
+   "value": 1.3,
+   "quote": "Pile $ 1.30",
+   "page": 33,
+   "l1": "tailings_water",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine",
+   "value": 3.84,
+   "quote": "Mine $ 3.84",
+   "page": 33,
+   "l1": "mining",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Operating Costs",
+   "value": 22.71,
+   "quote": "Total Operating Costs $ 22.71",
+   "page": 33,
+   "l1": "other",
+   "basis_unit": "per_t_milled",
+   "multiplier": "",
+   "currency": "USD",
+   "is_total": true,
+   "review_note": "Stated per tonne ROM; mapped to per_t_milled"
+  }
+ ]
+}

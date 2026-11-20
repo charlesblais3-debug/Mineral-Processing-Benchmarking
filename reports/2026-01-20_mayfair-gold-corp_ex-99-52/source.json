@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1823255/000119312526016557/d83619dex9952.htm",
+  "source": "edgar",
+  "issuer": "MAYFAIR GOLD CORP.  (MFGCD, MFGCF)",
+  "cik": "1823255",
+  "form": "40FR12B",
+  "exhibit": "EX-99.52",
+  "filed": "2026-01-20",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-01-20_mayfair-gold-corp_ex-99-52",
+  "sha256": "6b87c28a55243802998d3d57f0a6a5f376504de5d20c396d204108321d689b73",
+  "bytes": 164761,
+  "format": "html",
+  "pages": 21,
+  "parsed_on": "2026-11-20"
+}

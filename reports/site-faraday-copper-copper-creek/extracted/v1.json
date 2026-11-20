@@ -1,0 +1,433 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Copper Creek",
+  "title": "Copper Creek Project NI 43-101 Technical Report and Preliminary Economic Assessment, Arizona, USA",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "effective_date": "2023-05-03",
+  "effective_date_quote": "Effective Date: May 3, 2023",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Arizona",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_gyratory",
+   "sag_mill",
+   "ball_mill",
+   "flotation",
+   "regrind"
+  ],
+  "quote": "Primary crusher type Gyratory (1,270 x 1,651) ROM feed size F100 mm 1,000 Bond crushing work index kWh/t 23 Crusher product size P80 mm 95 Stockpile live capacity at reclaim rate h 12 Grinding plant capacity, for design (dry) t/h 1,495 SAG Mill specification dia (m) X EGL (m) 10.97 X 6.1 Grinding circuit product size, P80 – Sulphide μm 190 Grinding circuit product size, P80 – Transitional μm 160 SAG Mill specific energy kWh/t 9 Ball Mill specification dia (m) X EGL (m) 7.01 X 10.36 Bond ball mill work index kWh/t 14 Bond abrasion index g 0 Ball Mill specific energy kWh/t 7 Copper rougher # 1 operating line of 6 Residence time, design min 25 Regrind mill type stirred Regrind circuit product size, P80 μm 31",
+  "page": 285
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 30000,
+   "unit": "t/d",
+   "quote": "Plant design capacity Mt/y 11 t/d 30,000",
+   "page": 285,
+   "statistic": "design",
+   "context": {
+    "phase": "concentrator (Cu-Mo flotation plant)"
+   }
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 11,
+   "unit": "Mt/a",
+   "quote": "The processing plant nameplate capacity is 30,000 t/d (11.0 Mt/a)",
+   "page": 48,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.44,
+   "unit": "%",
+   "quote": "Mill Head Grade - Cu, Non-Oxide (%) 0.44",
+   "page": 52,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 1.17,
+   "unit": "g/t",
+   "quote": "Mill Head Grade - Ag, Non-Oxide (g/t) 1.17",
+   "page": 52,
+   "metal": "Ag",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 89.7,
+   "unit": "%",
+   "quote": "Mill Recovery Rate (Concentrate) - Cu (%) 89.7%",
+   "page": 52,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 75.2,
+   "unit": "%",
+   "quote": "Mill Recovery Rate (Concentrate) - Ag (%) 75.2%",
+   "page": 52,
+   "metal": "Ag",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 71.4,
+   "unit": "%",
+   "quote": "Mill Recovery Rate (Concentrate) - Mo (%) 71.4%",
+   "page": 52,
+   "metal": "Mo",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "concentrate"
+   }
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 190,
+   "unit": "um",
+   "quote": "Grinding circuit product size, P80 – Sulphide μm 190",
+   "page": 285,
+   "statistic": "design"
+  },
+  {
+   "parameter": "regrind_p80_um",
+   "value": 31,
+   "unit": "um",
+   "quote": "Regrind circuit product size, P80 μm 31",
+   "page": 285,
+   "statistic": "design"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14,
+   "unit": "kWh/t",
+   "quote": "Bond ball mill work index kWh/t 14",
+   "page": 285,
+   "statistic": "design",
+   "context": {
+    "test": "Bond ball mill work index (design criterion)"
+   }
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14.3,
+   "unit": "kWh/t",
+   "quote": "The average bond ball mill work index (BMWi) value of 14.3 kWh/t for the sulphide samples",
+   "page": 177,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill work index",
+    "ore_type": "sulphide variability samples"
+   }
+  },
+  {
+   "parameter": "cwi",
+   "value": 23,
+   "unit": "kWh/t",
+   "quote": "Bond crushing work index kWh/t 23",
+   "page": 285
+  },
+  {
+   "parameter": "axb",
+   "value": 41,
+   "unit": "",
+   "quote": "predicted Axb value of 41",
+   "page": 177,
+   "statistic": "mean",
+   "context": {
+    "test": "SMC / drop weight (predicted Axb)",
+    "ore_type": "sulphide samples"
+   }
+  },
+  {
+   "parameter": "plant_availability",
+   "value": 92,
+   "unit": "%",
+   "quote": "Grinding and flotation availability % 92",
+   "page": 285,
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 3.8,
+   "unit": "USD/lb",
+   "quote": "Copper Price ($/lb) 3.80",
+   "page": 52,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 20.0,
+   "unit": "USD/oz",
+   "quote": "Silver Price ($/oz) 20.00",
+   "page": 52,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 13.0,
+   "unit": "USD/lb",
+   "quote": "Molybdenum Price ($/lb) 13.00",
+   "page": 52,
+   "metal": "Mo"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 713,
+   "unit": "MUSD",
+   "quote": "On a post-tax basis, the NPV discounted at 7% is $713 million, the IRR is 15.6%, and the payback period is 4.1 years.",
+   "page": 50,
+   "context": {
+    "discount_rate_pct": 7
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 15.6,
+   "unit": "%",
+   "quote": "On a post-tax basis, the NPV discounted at 7% is $713 million, the IRR is 15.6%, and the payback period is 4.1 years.",
+   "page": 50
+  },
+  {
+   "parameter": "payback_years",
+   "value": 4.1,
+   "unit": "years",
+   "quote": "On a post-tax basis, the NPV discounted at 7% is $713 million, the IRR is 15.6%, and the payback period is 4.1 years.",
+   "page": 50
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 1.67,
+   "unit": "USD/lb",
+   "quote": "Cash Costs ($/lb Cu)a 1.67",
+   "page": 52,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "basis": "cash costs per lb Cu incl. mining, processing, G&A, refining charges and royalties"
+   }
+  },
+  {
+   "parameter": "aisc",
+   "value": 1.85,
+   "unit": "USD/lb",
+   "quote": "All-in Sustaining Cost (AISC) ($/lb Cu)b 1.85",
+   "page": 52,
+   "metal": "Cu",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Installed Process Plant",
+   "value": 280,
+   "quote": "Installed Process Plant a 280 48 328",
+   "page": 48,
+   "l1": "process",
+   "l2": "general",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Crushing and Materials Handling",
+   "value": 108,
+   "quote": "Crushing and Materials Handling b 108 7 115",
+   "page": 48,
+   "l1": "process",
+   "l2": "comminution",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings",
+   "value": 117,
+   "quote": "Tailings 117 9 126",
+   "page": 48,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Site Infrastructure",
+   "value": 67,
+   "quote": "Site Infrastructure 67 50 117",
+   "page": 48,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining",
+   "value": 80,
+   "quote": "Mining 80 1,376 1,457",
+   "page": 48,
+   "l1": "mining",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Owners Cost",
+   "value": 23,
+   "quote": "Owners Cost 23 2 25",
+   "page": 48,
+   "l1": "owners",
+   "l2": "owners",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency",
+   "value": 122,
+   "quote": "Contingency 122 197 319",
+   "page": 48,
+   "l1": "contingency",
+   "l2": "contingency",
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Total",
+   "value": 798,
+   "quote": "Total c 798 1,859 2,657",
+   "page": 48,
+   "is_total": true,
+   "basis_unit": "total",
+   "multiplier": "M",
+   "currency": "USD"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansion Capital (underground mine development and expansion)",
+   "value": 1620.6,
+   "quote": "Expansion Capital ($M) 1,620.6",
+   "page": 52,
+   "is_total": true,
+   "partial_breakdown": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total",
+   "review_note": "Expansion capital (underground block-cave development after year 3); Table 1-10 gives only a combined sustaining+expansion column, so no area breakdown is extracted."
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 68.8,
+   "quote": "Sustaining Capital ($M) 68.8",
+   "page": 52,
+   "is_total": true,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure Costs",
+   "value": 169.8,
+   "quote": "Closure Costs ($M) 169.8",
+   "page": 52,
+   "multiplier": "M",
+   "currency": "USD",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (open pit)",
+   "value": 2.43,
+   "quote": "Mining a $/t mined $2.43 $7.30",
+   "page": 49,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_mined"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing (open pit column)",
+   "value": 6.26,
+   "quote": "Processing b $/t processed $6.26 $6.30",
+   "page": 49,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Off-site charges",
+   "value": 2.51,
+   "quote": "Off-site charges c $2.51 $2.51",
+   "page": 49,
+   "l1": "offsite",
+   "l2": "tc_rc",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and administrative (non-mill)",
+   "value": 1.45,
+   "quote": "General and administrative (non-mill) d $1.45 $1.45",
+   "page": 49,
+   "l1": "ga",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total unit costs (open pit column)",
+   "value": 13.01,
+   "quote": "Total unit costs e $/t processed $13.01 $17.56",
+   "page": 49,
+   "is_total": true,
+   "partial_breakdown": true,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "review_note": "Open Pit column of Table 1-11 (underground column: processing 6.30, total 17.56 per t processed). Total includes mining expressed per t processed, which the report does not give separately."
+  }
+ ]
+}

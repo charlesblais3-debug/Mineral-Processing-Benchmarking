@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1722387/000106299326000533/exhibit99-1.htm",
+  "source": "edgar",
+  "issuer": "Integra Resources Corp.  (ITRG)",
+  "cik": "1722387",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2026-02-02",
+  "standard": "",
+  "study_level": "FS",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-02-02_integra-resources-corp_ex-99-1",
+  "sha256": "6a0c9df9ef6ac261024234cb487428f6a379c995cd60bff115bb72cd9193207b",
+  "bytes": 5620985,
+  "format": "html",
+  "pages": 390,
+  "parsed_on": "2026-11-20"
+}

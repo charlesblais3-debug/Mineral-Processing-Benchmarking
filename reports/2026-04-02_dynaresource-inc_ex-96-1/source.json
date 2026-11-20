@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1111741/000119312526138286/dynr-ex96_1.htm",
+  "source": "edgar",
+  "issuer": "DYNARESOURCE, INC.  (DYNR)",
+  "cik": "1111741",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2026-04-02",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-04-02_dynaresource-inc_ex-96-1",
+  "sha256": "27e2f944dd376e92e7906d7afc25bc924aec5eb23a54e4c49cd4462d617fc66a",
+  "bytes": 10266647,
+  "format": "html",
+  "pages": 415,
+  "parsed_on": "2026-11-20"
+}

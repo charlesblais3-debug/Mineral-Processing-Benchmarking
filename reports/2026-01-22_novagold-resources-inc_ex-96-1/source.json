@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1173420/000117184326000374/ex_909308.htm",
+  "source": "edgar",
+  "issuer": "NOVAGOLD RESOURCES INC  (NG)",
+  "cik": "1173420",
+  "form": "10-K",
+  "exhibit": "EX-96.1",
+  "filed": "2026-01-22",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-01-22_novagold-resources-inc_ex-96-1",
+  "sha256": "fab3f22d6b513be2f957ddebe501e966c27fec73fa4afc015e23d140e60dbe62",
+  "bytes": 4997824,
+  "format": "html",
+  "pages": 348,
+  "parsed_on": "2026-11-20"
+}

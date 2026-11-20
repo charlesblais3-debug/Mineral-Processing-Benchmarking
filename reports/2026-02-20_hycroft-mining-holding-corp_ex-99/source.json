@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1718405/000149315226007512/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "HYCROFT MINING HOLDING CORP  (HYMC, HYMCW)",
+  "cik": "1718405",
+  "form": "8-K/A",
+  "exhibit": "EX-99",
+  "filed": "2026-02-20",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-02-20_hycroft-mining-holding-corp_ex-99",
+  "sha256": "f6a61884de674f5722a4fa25ad8491f6b8a78ca4a870ec326d65143df96763a3",
+  "bytes": 8395042,
+  "format": "html",
+  "pages": 160,
+  "parsed_on": "2026-11-20"
+}

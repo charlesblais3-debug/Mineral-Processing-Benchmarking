@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/2026514/000121390026038846/ea024623309ex96-3.htm",
+  "source": "edgar",
+  "issuer": "Namib Minerals  (NAMM, NAMMW)",
+  "cik": "2026514",
+  "form": "POS AM",
+  "exhibit": "EX-96.3",
+  "filed": "2026-04-02",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-04-02_namib-minerals_ex-96-3_038846",
+  "sha256": "203a32892206d9facba43a045de9d0b3937bca6f255060839e79a1025ff945ee",
+  "bytes": 942391,
+  "format": "html",
+  "pages": 64,
+  "parsed_on": "2026-11-20"
+}

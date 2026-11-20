@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1947244/000149315226017119/ex96-1.htm",
+  "source": "edgar",
+  "issuer": "U.S. GoldMining Inc.  (USGO, USGOW)",
+  "cik": "1947244",
+  "form": "POS AM",
+  "exhibit": "EX-96.1",
+  "filed": "2026-04-17",
+  "standard": "S-K 1300",
+  "study_level": "resource",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-04-17_u-s-goldmining-inc_ex-96-1",
+  "sha256": "699f57b4c0313f93906650cf8e757165c6f5c10c888d733543c8ebeda0325e97",
+  "bytes": 5892322,
+  "format": "html",
+  "pages": 187,
+  "parsed_on": "2026-11-20"
+}

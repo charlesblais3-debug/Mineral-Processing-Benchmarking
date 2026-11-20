@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1023512/000162828025047346/drdgold2025trs-draft4.htm",
+  "source": "edgar",
+  "issuer": "DRDGOLD LTD  (DRD, DRDGF)",
+  "cik": "1023512",
+  "form": "20-F",
+  "exhibit": "EX-96.2",
+  "filed": "2025-10-30",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-10-30_drdgold-ltd_ex-96-2",
+  "sha256": "3c7de894cbbfa281e7c175f2349910167b7a6f64aa25972c59439487cd9f3f51",
+  "bytes": 443516,
+  "format": "html",
+  "pages": 178,
+  "parsed_on": "2026-11-20"
+}

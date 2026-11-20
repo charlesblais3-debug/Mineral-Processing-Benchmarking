@@ -8,12 +8,12 @@
   "filed": "2026-01-20",
   "standard": "NI 43-101",
   "study_level": "PFS",
-  "project": "Fenn-Gib",
+  "project": "",
   "commodity": "",
   "report_id": "2026-01-20_mayfair-gold-corp_ex-99-54",
-  "sha256": "d7a3ad0a5f8b15cd060de34f40b33a319f90d54dcf0ca76afcff6bd7f2462e52",
-  "bytes": 4168241,
+  "sha256": "55688ccf7217565ff5d12baa69a469628ea63ac3016b4b58cbff51f8c2ce5954",
+  "bytes": 4168255,
   "format": "html",
   "pages": 332,
-  "parsed_on": "2026-11-19"
+  "parsed_on": "2026-11-20"
 }

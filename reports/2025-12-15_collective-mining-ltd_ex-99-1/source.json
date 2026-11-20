@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/1953575/000121390025121463/ea026896701ex99-1_collective.htm",
+  "source": "edgar",
+  "issuer": "Collective Mining Ltd.  (CNL)",
+  "cik": "1953575",
+  "form": "6-K",
+  "exhibit": "EX-99.1",
+  "filed": "2025-12-15",
+  "standard": "NI 43-101",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2025-12-15_collective-mining-ltd_ex-99-1",
+  "sha256": "400099c3cf308775348f43eb0da9757e199dee46d1c8e3110123944bdd9d87a3",
+  "bytes": 4393872,
+  "format": "html",
+  "pages": 87,
+  "parsed_on": "2026-11-20"
+}

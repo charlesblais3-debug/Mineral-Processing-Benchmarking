@@ -1,0 +1,19 @@
+{
+  "url": "https://www.sec.gov/Archives/edgar/data/215466/000114036126010650/ef20066748_ex99-4.htm",
+  "source": "edgar",
+  "issuer": "Coeur Mining, Inc.  (CDE)",
+  "cik": "215466",
+  "form": "8-K",
+  "exhibit": "EX-99.4",
+  "filed": "2026-03-23",
+  "standard": "S-K 1300",
+  "study_level": "",
+  "project": "",
+  "commodity": "",
+  "report_id": "2026-03-23_coeur-mining-inc_ex-99-4",
+  "sha256": "560da5e853df336d783c19a9e4d8aa2a7871cdec552f2a889aeb63ca0ad96dea",
+  "bytes": 5546797,
+  "format": "html",
+  "pages": 222,
+  "parsed_on": "2026-11-20"
+}
