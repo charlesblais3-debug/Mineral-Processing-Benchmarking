@@ -1,0 +1,19 @@
+{
+  "url": "https://wp-atalaya-mining-2022.s3.eu-west-2.amazonaws.com/media/2023/03/2023.02.21-ATYM-Riotinto-NI-43-101-Technical-Report-PEA-vF.pdf",
+  "source": "agent_search",
+  "issuer": "Atalaya Mining",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Riotinto (incl. San Dionisio)",
+  "commodity": "Cu",
+  "report_id": "site-atalaya-mining-riotinto-incl-san-dionisio",
+  "sha256": "79aa936f2da84579a160a014dd7c331426a09a971feca43c1a27f1aca91c5c91",
+  "bytes": 9555057,
+  "format": "pdf",
+  "pages": 166,
+  "parsed_on": "2026-11-20"
+}

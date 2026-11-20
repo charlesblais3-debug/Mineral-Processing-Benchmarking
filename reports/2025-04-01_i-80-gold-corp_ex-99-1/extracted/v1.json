@@ -1,0 +1,229 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Ruby Hill (Archimedes Underground)",
+  "title": "S-K 1300 Technical Report Summary Initial Assessment of the Ruby Hill Project, Eureka County NV",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2024-12-31",
+  "effective_date_quote": "Effective Date: December 31, 2024",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "USA",
+  "region": "Nevada",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": null,
+ "facts": [
+  {
+   "parameter": "metal_price",
+   "value": 2175,
+   "unit": "USD/oz",
+   "quote": "Gold Price (US$/oz) $2,175 $2,175",
+   "page": 28,
+   "metal": "Au"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 27.25,
+   "unit": "USD/oz",
+   "quote": "Silver Price (US$/oz) $27.25 $27.25",
+   "page": 28,
+   "metal": "Ag"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "Average Gold Recovery (Autoclave %) 90% 90%",
+   "page": 28,
+   "metal": "Au",
+   "statistic": "lom_average",
+   "context": {
+    "to_product": "autoclave (third-party toll processing)"
+   }
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 127,
+   "unit": "MUSD",
+   "quote": "Project After-Tax NPV 5% (M$) $127 ($113)",
+   "page": 28,
+   "context": {
+    "discount_rate_pct": 5
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 23,
+   "unit": "%",
+   "quote": "Project After-Tax IRR 23% NA",
+   "page": 28
+  },
+  {
+   "parameter": "payback_years",
+   "value": 7.8,
+   "unit": "years",
+   "quote": "Payback Period 7.8 Years NA Years",
+   "page": 28
+  },
+  {
+   "parameter": "aisc",
+   "value": 1893,
+   "unit": "USD/oz",
+   "quote": "All in Sustaining Costs 2 $1,757 $349.01 $1,893",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction Capital",
+   "value": 49,
+   "quote": "Construction Capital $49 $9.81 $53",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining Capital",
+   "value": 106,
+   "quote": "Sustaining Capital $106 $21.08 $114",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure and Reclamation",
+   "value": 8.9,
+   "quote": "Closure and Reclamation $8.9 $1.77 $10",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 750,
+   "quote": "Mining $750 $148.98 $808",
+   "page": 27,
+   "l1": "mining",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing and Transportation",
+   "value": 682,
+   "quote": "Processing and Transportation $682 $135.51 $735",
+   "page": 27,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Processing is by a third-party toll facility (Turquoise Ridge / Sage Mill) and includes transportation"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A, Royalties and Net Proceeds Tax",
+   "value": 210,
+   "quote": "G&A, Royalties and Net Proceeds Tax $210 $41.80 $227",
+   "page": 27,
+   "l1": "ga",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Lump line includes royalties and net proceeds tax"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By Product Credits",
+   "value": -0.7,
+   "quote": "By Product Credits ($0.7) ($0.1) ($1)",
+   "page": 27,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 1642,
+   "quote": "Total Cash Cost $1,642 $326.17 $1,769",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining",
+   "value": 148.98,
+   "quote": "Mining $750 $148.98 $808",
+   "page": 27,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing and Transportation",
+   "value": 135.51,
+   "quote": "Processing and Transportation $682 $135.51 $735",
+   "page": 27,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A, Royalties and Net Proceeds Tax",
+   "value": 41.8,
+   "quote": "G&A, Royalties and Net Proceeds Tax $210 $41.80 $227",
+   "page": 27,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "By Product Credits",
+   "value": -0.1,
+   "quote": "By Product Credits ($0.7) ($0.1) ($1)",
+   "page": 27,
+   "outside_total": true,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total Cash Cost",
+   "value": 326.17,
+   "quote": "Total Cash Cost $1,642 $326.17 $1,769",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "per_short_ton": true
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Blyvoor",
+  "title": "S-K 1300 Technical Report Summary on the Blyvoor Gold Mine, South Africa",
+  "standard": "S-K 1300",
+  "study_level": "operating",
+  "effective_date": "2024-02-29",
+  "effective_date_quote": "The effective date of this Report is 29 February 2024.",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "South Africa",
+  "region": "Gauteng",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "gravity",
+   "ilr",
+   "cip",
+   "elution_ew"
+  ],
+  "quote": "primary milling - two off ball mills in closed circuit with cyclones; ● gravity concentration - Falcon concentrator; ● intensive leach for gravity concentrate; ● thickening - thickener; ● leaching - carousel carbon-in-pulp (CIP); ● elution and electrowinning - Zadra batch mode; ● casting - smelt house",
+  "page": 64
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 0.96,
+   "unit": "Mt/a",
+   "quote": "it is planned to ramp up production to 80 ktpm",
+   "page": 9,
+   "statistic": "design",
+   "derived": true,
+   "context": {
+    "derived_note": "80 ktpm x 12 months = 0.96 Mt/a; plant expansion target, current mining rate does not exceed 30 ktpm"
+   }
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 91.5,
+   "unit": "%",
+   "quote": "The overall recoveries varied between 86.6% and 92.9% with an average of 91.5%.",
+   "page": 64,
+   "metal": "Au",
+   "statistic": "mean",
+   "context": {
+    "ore_type": "historical plant performance, before expansion"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1900,
+   "unit": "USD/oz",
+   "quote": "Gold Price USD/oz 2,086 2,040 1,900 1,900 1,900 1,900",
+   "page": 12,
+   "metal": "Au",
+   "review_note": "Long-term real gold price; first-year prices higher. Report also cites average USD1,909/oz used in the model"
+  },
+  {
+   "parameter": "npv_after_tax",
+   "value": 539,
+   "unit": "MUSD",
+   "quote": "NPV @ 11.9% USD million 539 399",
+   "page": 14,
+   "context": {
+    "discount_rate_pct": 11.9
+   }
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 96.2,
+   "unit": "%",
+   "quote": "IRR % 96.2%",
+   "page": 14
+  },
+  {
+   "parameter": "aisc",
+   "value": 905,
+   "unit": "USD/oz",
+   "quote": "All-in Sustaining Costs (AISC) USD/Gold oz 905",
+   "page": 13,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "cash_cost",
+   "value": 815,
+   "unit": "USD/oz",
+   "quote": "Operating Costs USD/Gold oz 815",
+   "page": 13,
+   "metal": "Au",
+   "statistic": "lom_average"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Expansion Capital",
+   "value": 202.5,
+   "quote": "Total Expansion Capital USDm 202.5",
+   "page": 83,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total",
+   "review_note": "Expansion 15 ktpm to 80 ktpm; includes mining and plant expansion lines (before contingency)"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total SIB Capital",
+   "value": 421.5,
+   "quote": "Total SIB Capital USDm 421.5",
+   "page": 83,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Cost",
+   "value": 78,
+   "quote": "Mine Cost USD/Milled tonne 78",
+   "page": 87,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant Costs",
+   "value": 24,
+   "quote": "Plant Costs USD/Milled tonne 24",
+   "page": 87,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Costs",
+   "value": 21,
+   "quote": "Other Costs USD/Milled tonne 21 Royalties",
+   "page": 87,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 14,
+   "quote": "Royalties USD/Milled tonne 14",
+   "page": 87,
+   "l1": "royalties_taxes",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Costs",
+   "value": 137,
+   "quote": "Operating Costs USD/Milled tonne 137",
+   "page": 87,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

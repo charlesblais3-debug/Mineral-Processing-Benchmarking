@@ -1,0 +1,344 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Kumtor",
+  "title": "Technical Report on the Kumtor Mine, Kyrgyz Republic",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-07-01",
+  "effective_date_quote": "Effective Date: July 1, 2020",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Kyrgyz Republic",
+  "region": "Issyk-Kul",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "flotation",
+   "regrind",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "consists of crushing, grinding, pyrite flotation, and two-stage re-grinding of the flotation concentrate. Two separate CIL circuits extract the gold from the re-ground concentrate and from the flotation tails, with final gold recovery",
+  "page": 285
+ },
+ "facts": [
+  {
+   "parameter": "throughput_mtpa",
+   "value": 6.3,
+   "unit": "Mt/a",
+   "quote": "operating at 6.3 Mtpy, or a nominal capacity of 17,400 tpd",
+   "page": 285,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_tpd",
+   "value": 17400,
+   "unit": "t/d",
+   "quote": "operating at 6.3 Mtpy, or a nominal capacity of 17,400 tpd",
+   "page": 285,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 2.7,
+   "unit": "g/t",
+   "quote": "Au Head Grade g/t 2.70 3.18",
+   "page": 202,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 82.9,
+   "unit": "%",
+   "quote": "Au Recovery % 82.9 % 82.4",
+   "page": 202,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1350,
+   "unit": "USD/oz",
+   "quote": "Gold price of $1,350/oz",
+   "page": 321,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 70,
+   "unit": "KGS/USD",
+   "quote": "Exchange rate: 70 KGS/USD",
+   "page": 321,
+   "context": {
+    "pair": "KGS per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine Equipment Replacement",
+   "value": 88684,
+   "quote": "Mine Equipment Replacement 22,558 6,968 20,308 20,390 6,308 5,182 6,972 — — 88,684",
+   "page": 321,
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Equipment Component Replacement",
+   "value": 333298,
+   "quote": "33,376 5,737 3,133 4,580 333,298",
+   "page": 321,
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam (sustaining)",
+   "value": 32590,
+   "quote": "Tailings Dam — 7,100 5,045 5,680 5,125 3,115 3,215 3,310 32,590",
+   "page": 321,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Other mining sustaining",
+   "value": 37513,
+   "quote": "2,295 470 150 150 37,513",
+   "page": 321,
+   "l1": "mining",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant Equipment Replacement",
+   "value": 30992,
+   "quote": "1,250 700 300 30,992",
+   "page": 321,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Process Plant Equipment Improvement",
+   "value": 2674,
+   "quote": "2,674",
+   "page": 321,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Site Facility Improvement and Other Administration",
+   "value": 15321,
+   "quote": "Site Facility Improvement and Other Administration 2,524 7,219 2,056 1,479 592 557 370 250 174 50 50 15,321",
+   "page": 321,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 541071,
+   "quote": "541,071",
+   "page": 321,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine Equipment for LOM extension",
+   "value": 71692,
+   "quote": "Mine Equipment for LOM extension 6,000 65,692 71,692",
+   "page": 321,
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings Dam (growth)",
+   "value": 33525,
+   "quote": "8,493 8,850 8,091 8,091 33,525",
+   "page": 321,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other mining growth",
+   "value": 4308,
+   "quote": "Other 4,308 4,308",
+   "page": 321,
+   "l1": "mining",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tower Mill",
+   "value": 20869,
+   "quote": "Tower Mill 662 20,207 — — — — 20,869",
+   "page": 321,
+   "l1": "process",
+   "l2": "comminution",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Other processing growth",
+   "value": 9218,
+   "quote": "Other 9,218 — — 9,218",
+   "page": 321,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total Growth Capital",
+   "value": 139612,
+   "quote": "139,612",
+   "page": 321,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (including Capital Stripping) LOM",
+   "value": 2366,
+   "quote": "Mining (including Capital Stripping) 2,366 30.92",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing LOM",
+   "value": 868,
+   "quote": "Processing 868 11.35",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administration LOM",
+   "value": 602,
+   "quote": "Administration 602 7.87",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total LOM",
+   "value": 3836,
+   "quote": "Total 3,836 50.14",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining (including Capital Stripping)",
+   "value": 30.92,
+   "quote": "Mining (including Capital Stripping) 2,366 30.92",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing",
+   "value": 11.35,
+   "quote": "Processing 868 11.35",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Administration",
+   "value": 7.87,
+   "quote": "Administration 602 7.87",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 50.14,
+   "quote": "Total 3,836 50.14",
+   "page": 322,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

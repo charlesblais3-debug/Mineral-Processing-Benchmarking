@@ -1,0 +1,287 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Fazenda (Fazenda Brasileiro)",
+  "title": "Technical Report on the Fazenda Gold Mine, Bahia State, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2024-06-30",
+  "effective_date_quote": "EFFECTIVE DATE: June 30, 2024",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Bahia",
+  "mine_type": "open_pit_and_underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2024,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "elution_ew",
+   "cil"
+  ],
+  "quote": "Two grinding ball mills, closed circuit with hydrocyclones Thickener to produce a leach feed of 50% solids Cyanide leaching circuit Zadra pressure-stripping of the carbon Electrowinning of the carbon eluent Casting of gold doré bars in an induction furnace. 1.2.12 Project Infrastructure All necessary infrastructure for the operation is in place, which includes, but is not limited to: a 470 m vertical shaft; a series of underground ramps; underground ventilation and dewatering facilities; explosives magazines; power supply system; CIL milling and processing facility",
+  "page": 25
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 3945,
+   "unit": "t/d",
+   "quote": "The plant is scheduled to process approximately 3,945 t/d (1.44 Mt/a).",
+   "page": 25,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 1.44,
+   "unit": "Mt/a",
+   "quote": "The plant is scheduled to process approximately 3,945 t/d (1.44 Mt/a).",
+   "page": 25,
+   "statistic": "design"
+  },
+  {
+   "parameter": "grind_p80_um",
+   "value": 75,
+   "unit": "µm",
+   "quote": "Fazenda operates at P 80 75 µm, at a feed rate of 168 t/h",
+   "page": 28,
+   "statistic": "single"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 14,
+   "unit": "kWh/t",
+   "quote": "Hardness (Bond ball mill work index [BWi]) = 14 kWh/t",
+   "page": 187,
+   "statistic": "single",
+   "context": {
+    "ore_type": "Fazenda CLX formation"
+   }
+  },
+  {
+   "parameter": "lom_years",
+   "value": 9.5,
+   "unit": "years",
+   "quote": "Mining operations and processing LOM is 9.5 years",
+   "page": 28,
+   "statistic": "single"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Buildings & Infrastructure",
+   "value": 5.849,
+   "quote": "Buildings & Infrastructure 0.566 1.834 0.901 0.819 1.730 5.849",
+   "page": 26,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Hardware, Software & Automation",
+   "value": 1.291,
+   "quote": "Hardware, Software & Automation 0.073 0.780 0.278 0.160 0.000 1.291",
+   "page": 26,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Underground + Open Pit",
+   "value": 60.499,
+   "quote": "Capitalized Underground + Open Pit 9.691 19.228 12.696 16.389 2.495 60.499",
+   "page": 26,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mine Development",
+   "value": 12.609,
+   "quote": "Underground Mine Development 2.635 7.895 0.397 1.383 0.298 12.609",
+   "page": 26,
+   "l1": "mining",
+   "l2": "ug_development",
+   "part_of": "Capitalized Underground + Open Pit",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Open Pit Mine Development",
+   "value": 47.89,
+   "quote": "Open Pit Mine Development 7.056 11.332 12.299 15.005 2.197 47.890",
+   "page": 26,
+   "l1": "mining",
+   "l2": "pre_production",
+   "part_of": "Capitalized Underground + Open Pit",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Land Acquisition",
+   "value": 0.72,
+   "quote": "Land Acquisition - 0.720 - - - 0.720",
+   "page": 26,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Machinery & Equipment",
+   "value": 29.342,
+   "quote": "Machinery & Equipment 3.968 8.116 8.254 6.061 2.944 29.342",
+   "page": 26,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Furniture & Fixture",
+   "value": 0.268,
+   "quote": "Furniture & Fixture 0.023 0.096 0.062 0.048 0.041 0.268",
+   "page": 26,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam Sustaining",
+   "value": 15.06,
+   "quote": "Tailings Dam Sustaining - - 7.023 - 8.037 15.060",
+   "page": 26,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal Sustaining",
+   "value": 113.029,
+   "quote": "Subtotal Sustaining 14.321 30.773 29.213 23.476 15.247 113.029",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Underground Mine Development (non-sustaining)",
+   "value": 8.261,
+   "quote": "Underground Mine Development 0.837 0.650 2.269 4.425 0.080 8.261",
+   "page": 26,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capacity Increases",
+   "value": 1.777,
+   "quote": "Capacity Increases - - 0.889 0.889 - 1.777",
+   "page": 26,
+   "l1": "process",
+   "l2": "general",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Exploration",
+   "value": 17.047,
+   "quote": "Exploration 2.288 4.919 4.919 4.919 - 17.047",
+   "page": 26,
+   "l1": "other",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Subtotal Non-Sustaining",
+   "value": 27.085,
+   "quote": "Subtotal Non-Sustaining 3.125 5.569 8.077 10.233 0.080 27.085",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure & Reclamation",
+   "value": 19.141,
+   "quote": "Closure & Reclamation 0.346 1.912 0.083 0.232 16.568 19.141",
+   "page": 26,
+   "is_total": true,
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Open Pit Mining",
+   "value": 19.2,
+   "quote": "Open Pit Mining 12.21 13.21 22.42 19.13 20.13 19.20",
+   "page": 27,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Underground Mining",
+   "value": 9.65,
+   "quote": "Underground Mining 39.79 28.41 24.03 16.38 0.83 9.65",
+   "page": 27,
+   "l1": "mining",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Milling",
+   "value": 15.6,
+   "quote": "Milling 15.60 15.60 15.60 15.60 15.60 15.60",
+   "page": 27,
+   "l1": "processing",
+   "l2": "other",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "G&A",
+   "value": 10.7,
+   "quote": "G&A 10.70 10.70 10.70 10.70 10.70 10.70",
+   "page": 27,
+   "l1": "ga",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 55.15,
+   "quote": "Total 78.30 67.92 72.75 61.81 47.26 55.15",
+   "page": 27,
+   "is_total": true,
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

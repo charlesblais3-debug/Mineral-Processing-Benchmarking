@@ -1,0 +1,505 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Fiel Rosita",
+  "title": "S-K 1300 Technical Report Summary - Fiel Rosita",
+  "standard": "S-K 1300",
+  "study_level": "PEA",
+  "effective_date": "2023-03-31",
+  "effective_date_quote": "based on a scoping, effective as of March 31, 2023",
+  "primary_commodity": "Cu",
+  "by_products": [
+   "Mo",
+   "Zn",
+   "Au",
+   "Ag"
+  ],
+  "country": "Chile",
+  "region": "Region III (Atacama)",
+  "mine_type": "underground",
+  "project_status": "study",
+  "currency": "USD",
+  "cost_base_year": 2023,
+  "effective_date_page": 5
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "secondary_crush",
+   "sag_mill",
+   "ball_mill",
+   "flotation"
+  ],
+  "quote": "primary and secondary crushing, wet grinding in a single semi-autogenous (SAG) mill and single ball mill, followed by conventional selective flotation",
+  "page": 5
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 7000,
+   "unit": "t/d",
+   "quote": "Mill Throughput 7,000 Dry tonnes/day",
+   "page": 65,
+   "statistic": "design"
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.47,
+   "unit": "%",
+   "quote": "Copper Grade % 0.47",
+   "page": 64,
+   "metal": "Cu",
+   "statistic": "lom_average",
+   "context": {
+    "note": "including Inferred; base case"
+   }
+  },
+  {
+   "parameter": "head_grade_lom",
+   "value": 0.27,
+   "unit": "g/t",
+   "quote": "Gold Grade g/t 0.27",
+   "page": 64,
+   "metal": "Au",
+   "statistic": "lom_average"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 90,
+   "unit": "%",
+   "quote": "The metallurgical recovery was estimated at 90% Cu, 62% Au, 45% Ag, 68% Mo, and 80% Zn.",
+   "page": 63,
+   "metal": "Cu",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 62,
+   "unit": "%",
+   "quote": "The metallurgical recovery was estimated at 90% Cu, 62% Au, 45% Ag, 68% Mo, and 80% Zn.",
+   "page": 63,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 68,
+   "unit": "%",
+   "quote": "The metallurgical recovery was estimated at 90% Cu, 62% Au, 45% Ag, 68% Mo, and 80% Zn.",
+   "page": 63,
+   "metal": "Mo",
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 80,
+   "unit": "%",
+   "quote": "The metallurgical recovery was estimated at 90% Cu, 62% Au, 45% Ag, 68% Mo, and 80% Zn.",
+   "page": 63,
+   "metal": "Zn",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 4.1,
+   "unit": "USD/lb",
+   "quote": "Copper USD/lb 4.1",
+   "page": 64,
+   "metal": "Cu"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1802,
+   "unit": "USD/oz",
+   "quote": "Gold USD/oz 1,802",
+   "page": 64,
+   "metal": "Au"
+  },
+  {
+   "parameter": "irr_after_tax",
+   "value": 40,
+   "unit": "%",
+   "quote": "Post-Tax IRR 40 %",
+   "page": 65
+  },
+  {
+   "parameter": "payback_years",
+   "value": 1.9,
+   "unit": "years",
+   "quote": "Post-Tax Payback 1.9 Years",
+   "page": 65
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mining CAPEX total",
+   "value": 92.26,
+   "quote": "Total $92.26",
+   "page": 61,
+   "is_subtotal": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction of Portals",
+   "value": 2.25,
+   "quote": "Construction of Portals $2.25",
+   "page": 61,
+   "l1": "mining",
+   "l2": "ug_development",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Main ramps, accesses, and development",
+   "value": 17.05,
+   "quote": "Main ramps, accesses, and development $17.05",
+   "page": 61,
+   "l1": "mining",
+   "l2": "ug_development",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Main Mine Shafts - Ore Pass",
+   "value": 3.4,
+   "quote": "Main Mine Shafts – Ore Pass $3.40",
+   "page": 61,
+   "l1": "mining",
+   "l2": "ug_development",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Vertical shafts",
+   "value": 1.85,
+   "quote": "Vertical shafts $1.85",
+   "page": 61,
+   "l1": "mining",
+   "l2": "ug_development",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Skip and operating system",
+   "value": 10.6,
+   "quote": "Skip and operating system $10.60",
+   "page": 61,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Development Equipment",
+   "value": 10.41,
+   "quote": "Development Equipment $10.41",
+   "page": 61,
+   "l1": "mining",
+   "l2": "equipment",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Production Equipment",
+   "value": 13.06,
+   "quote": "Production Equipment $13.06",
+   "page": 61,
+   "l1": "mining",
+   "l2": "equipment",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Electrical System",
+   "value": 6.0,
+   "quote": "Electrical System $6.00",
+   "page": 61,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Ventilation",
+   "value": 1.18,
+   "quote": "Ventilation $1.18",
+   "page": 61,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Refuge stations",
+   "value": 0.54,
+   "quote": "Refuge stations $0.54",
+   "page": 61,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Mine workshops",
+   "value": 1.2,
+   "quote": "Mine workshops $1.20",
+   "page": 61,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "CW and Services",
+   "value": 6.76,
+   "quote": "CW and Services $6.76",
+   "page": 61,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency (25%) - mining",
+   "value": 17.96,
+   "quote": "Contingency (25%) $17.96",
+   "page": 61,
+   "l1": "contingency",
+   "part_of": "Mining CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Plant CAPEX total",
+   "value": 236.55,
+   "quote": "Total $236.55",
+   "page": 62,
+   "is_subtotal": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Concentrator",
+   "value": 72.22,
+   "quote": "Concentrator $72.22",
+   "page": 62,
+   "l1": "process",
+   "l2": "general",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Tailings Management",
+   "value": 2.7,
+   "quote": "Tailings Management $2.70",
+   "page": 62,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Seawater",
+   "value": 61.75,
+   "quote": "Seawater $61.75",
+   "page": 62,
+   "l1": "offsite_infra",
+   "l2": "other",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Energy Supply",
+   "value": 14.85,
+   "quote": "Energy Supply $14.85",
+   "page": 62,
+   "l1": "offsite_infra",
+   "l2": "power",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Construction",
+   "value": 26.83,
+   "quote": "Construction $26.83",
+   "page": 62,
+   "l1": "indirects",
+   "l2": "construction",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Camp and Civic Area",
+   "value": 7.2,
+   "quote": "Camp and Civic Area $7.20",
+   "page": 62,
+   "l1": "onsite_infra",
+   "l2": "camp",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Contingency (25%) - plant",
+   "value": 46.39,
+   "quote": "Contingency (25%) $46.39",
+   "page": 62,
+   "l1": "contingency",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "Cost of the Owner",
+   "value": 4.61,
+   "quote": "Cost of the Owner $4.61",
+   "page": 62,
+   "l1": "owners",
+   "part_of": "Plant CAPEX total",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "initial_capex",
+   "raw_label": "CAPEX - Initial",
+   "value": 328.8,
+   "quote": "CAPEX – Initial 328.8 US$Million",
+   "page": 65,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "CAPEX - Sustaining",
+   "value": 14.1,
+   "quote": "CAPEX – Sustaining 14.1 US$Million",
+   "page": 65,
+   "is_total": true,
+   "l1": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation",
+   "value": 20,
+   "quote": "Reclamation 20 US$Million",
+   "page": 65,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "OPEX Mine",
+   "value": 19.2,
+   "quote": "OPEX Mine $19.2",
+   "page": 62,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "Report states US$/t mined; underground plan feeds all mined ore to the plant, treated as per t milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant OPEX",
+   "value": 10.08,
+   "quote": "Plant OPEX $10.08",
+   "page": 63,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General",
+   "value": 0.8,
+   "quote": "OPEX – G&A 0.8 US$/t mined/processed",
+   "page": 65,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total operating cost",
+   "value": 30.1,
+   "quote": "The operational cost of Fiel Rosita amounts to US$30.1/t",
+   "page": 63,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine - Production",
+   "value": 4.9,
+   "quote": "Production $4.9",
+   "page": 62,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "part_of": "OPEX Mine"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine - Preparation",
+   "value": 3.4,
+   "quote": "Preparation $3.4",
+   "page": 62,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "part_of": "OPEX Mine"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine - Maintenance",
+   "value": 4.3,
+   "quote": "Maintenance $4.3",
+   "page": 62,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "part_of": "OPEX Mine"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine - Backfill",
+   "value": 4.9,
+   "quote": "Backfill $4.9",
+   "page": 62,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "part_of": "OPEX Mine"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine - G&A (10% operation cost)",
+   "value": 1.7,
+   "quote": "G&A (10% operation cost) $1.7",
+   "page": 62,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "part_of": "OPEX Mine"
+  }
+ ]
+}

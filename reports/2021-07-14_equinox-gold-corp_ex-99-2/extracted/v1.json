@@ -1,0 +1,317 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Mercedes",
+  "title": "NI 43-101 Technical Report on the Mercedes Gold-Silver Mine, Sonora State, Mexico",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-12-31",
+  "effective_date_quote": "This technical report is effective as of the 31 st day of December 2020.",
+  "primary_commodity": "Au",
+  "by_products": [
+   "Ag"
+  ],
+  "country": "Mexico",
+  "region": "Sonora",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "tertiary_crush",
+   "gravity",
+   "tank_leach",
+   "merrill_crowe",
+   "cyanide_detox"
+  ],
+  "quote": "Three-stage crushing with closed circuit tertiary crushing operating at 2,000 tpd;",
+  "page": 22
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2000,
+   "unit": "t/d",
+   "quote": "The plant is capable of processing approximately 2,000 tpd",
+   "page": 110,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 95.5,
+   "unit": "%",
+   "quote": "a 95.5% gold metallurgical recovery",
+   "page": 21,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "recovery assumed in reserve cut-off grade"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1350,
+   "unit": "USD/oz",
+   "quote": "Cut-off grade assumes a price of gold of US$1,350 per ounce",
+   "page": 21,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Buildings & Infrastructure",
+   "value": 5729,
+   "quote": "Buildings & Infrastructure US$ 000 797 1,918 1,838 298 654 224 5,729",
+   "page": 119,
+   "l1": "onsite_infra",
+   "l2": "buildings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Hardware & Software",
+   "value": 73,
+   "quote": "Hardware & Software US$ 000 73",
+   "page": 119,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Machinery & Equipment",
+   "value": 10281,
+   "quote": "Machinery & Equipment US$ 000 4,261 2,241 1,890 1,890 - - 10,281",
+   "page": 119,
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Vehicles",
+   "value": 491,
+   "quote": "Vehicles US$ 000 491",
+   "page": 119,
+   "l1": "mining",
+   "l2": "equipment",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Underground Mine Development",
+   "value": 20765,
+   "quote": "Underground Mine Development US$ 000 3,168 6,960 6,543 1,086 2,237 771 20,765",
+   "page": 119,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Delineation Drilling- Sustaining",
+   "value": 11119,
+   "quote": "Delineation Drilling- Sustaining US$ 000 3,988 2,377 2,377 2,377 - - 11,119",
+   "page": 119,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal Sustaining Capital Cost",
+   "value": 48458,
+   "quote": "Subtotal Sustaining Capital Cost US$ 000 12,777 13,496 12,648 5,651 2,891 996 48,458",
+   "page": 119,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Expansionary Mine Development",
+   "value": 881,
+   "quote": "Expansionary Mine Development US$ 000 881 - - - - - 881",
+   "page": 119,
+   "l1": "mining",
+   "l2": "ug_development",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings Dam Expansion -TSF2",
+   "value": 3173,
+   "quote": "Tailings Dam Expansion -TSF2 US$ 000 3,173 - - 3,173",
+   "page": 119,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Tailings Dam Construction - TSF3",
+   "value": 3900,
+   "quote": "Tailings Dam Construction - TSF3 US$ 000 222 1,928 1,750 3,900",
+   "page": 119,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Subtotal Expansionary Capital Cost",
+   "value": 7954,
+   "quote": "7,954",
+   "page": 119,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Administration (LOM)",
+   "value": 22190,
+   "quote": "Mine Administration US$ 000 3,845 4,019 4,079 3,442 3,451 3,353 22,190",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Underground (LOM)",
+   "value": 113423,
+   "quote": "Mine Underground US$ 000 16,818 19,738 20,063 18,671 18,946 19,188 113,423",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant (LOM)",
+   "value": 72943,
+   "quote": "Plant US$ 000 10,960 12,765 12,672 12,665 11,942 11,940 72,943",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration (LOM)",
+   "value": 36612,
+   "quote": "General & Administration US$ 000 6,160 6,110 6,066 6,092 6,092 6,092 36,612",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Overhead (LOM)",
+   "value": 11174,
+   "quote": "Site Overhead US$ 000 1,853 1,910 1,849 1,854 1,854 1,854 11,174",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total (LOM)",
+   "value": 256342,
+   "quote": "Total US$ 000 39,636 44,541 44,730 42,723 42,285 42,427 256,342",
+   "page": 120,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine per t ore (avg 2021-2026)",
+   "value": 37,
+   "quote": "Mine US$/t ore 59 61 43 43 37 38 34 37 37 37",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant per t ore (avg 2021-2026)",
+   "value": 20,
+   "quote": "Plant US$/t ore 24 23 19 23 20 20 19 20 20 20",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General and Administration per t ore (avg 2021-2026)",
+   "value": 10,
+   "quote": "General and Administration US$/t ore 10 9 11 13 10 10 9 10 10 10",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Site Overhead per t ore (avg 2021-2026)",
+   "value": 3,
+   "quote": "Site Overhead US$/t ore 3 3 3 4 3 3 3 3 3 3",
+   "page": 120,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Overall per t ore (avg 2021-2026)",
+   "value": 71,
+   "quote": "Overall US$/t ore 96 96 76 83 69 70 65 70 70 71",
+   "page": 120,
+   "is_total": true,
+   "tolerance_pct": 3,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

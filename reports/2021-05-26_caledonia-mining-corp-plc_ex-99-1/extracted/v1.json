@@ -1,0 +1,189 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Blanket",
+  "title": "NI 43-101 Technical Report on the Blanket Gold Mine, Zimbabwe",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-01-01",
+  "effective_date_quote": "The effective date of this Report is 1 January 2020.",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Zimbabwe",
+  "region": "Matabeleland South",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2020,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "primary_jaw",
+   "secondary_crush",
+   "rod_mill",
+   "regrind",
+   "gravity",
+   "ilr",
+   "cil",
+   "elution_ew"
+  ],
+  "quote": "· | Primary crushing - jaw crushing\n· | Secondary crushing - cone crushing in closed circuit with a screen\n· | Primary Milling - rod mills in open circuit\n· | Regrind - ball mill in closed circuit with cyclones\n· | Gravity Concentration – Knelson concentrators and Gemini table\n· | Intensive leach for gravity concentrate\n· | Thickening - Dewatering cyclones\n· | Leaching - Carbon in Leach (CIL)\n· | Elution and electrowinning – Combined in batch mode",
+  "page": 85
+ },
+ "facts": [
+  {
+   "parameter": "recovery_lom",
+   "value": 93.5,
+   "unit": "%",
+   "quote": "The recovery used was 93.5%",
+   "page": 75,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1660,
+   "unit": "USD/oz",
+   "quote": "The average gold price over the LoM is USD1,660/oz.",
+   "page": 75,
+   "metal": "Au"
+  },
+  {
+   "parameter": "aisc",
+   "value": 960,
+   "unit": "USD/oz",
+   "quote": "All-in Sustainable Costs (AISC) USD/Gold oz 960",
+   "page": 110,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Sustaining Mining Capital",
+   "value": 56.8,
+   "quote": "Sustaining Mining Capital USDm 56.8",
+   "page": 107,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Sustaining Plant Capital",
+   "value": 8.7,
+   "quote": "Sustaining Plant Capital USDm 8.7",
+   "page": 107,
+   "l1": "process",
+   "l2": "general",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sub-Total Sustaining Other Capital",
+   "value": 16.0,
+   "quote": "Sustaining Other Capital USDm 16.0",
+   "page": 107,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total Sustaining Capital",
+   "value": 81.5,
+   "quote": "Total Sustaining Capital USDm 81.5",
+   "page": 107,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "New TSF (Expansion Plant Capital)",
+   "value": 2.8,
+   "quote": "Total Expansion Capital USDm 2.8",
+   "page": 107,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Closure cost estimate (Knight Piésold)",
+   "value": 2.7,
+   "quote": "The closure cost estimate was calculated at USD2.7 million",
+   "page": 106,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "M",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mine Cost",
+   "value": 22,
+   "quote": "Mine Cost USD/Feed tonne 22",
+   "page": 110,
+   "l1": "mining",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Plant Costs",
+   "value": 12,
+   "quote": "Plant Costs USD/Feed tonne 12",
+   "page": 110,
+   "l1": "processing",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Other Costs",
+   "value": 34,
+   "quote": "Other Costs USD/Feed tonne 34",
+   "page": 110,
+   "l1": "other",
+   "review_note": "'Other Costs' within operating costs not defined in the table (likely G&A/engineering etc.)",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Royalties",
+   "value": 8,
+   "quote": "Royalties USD/Feed tonne 8",
+   "page": 110,
+   "l1": "royalties_taxes",
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Operating Costs",
+   "value": 76,
+   "quote": "Operating Costs USD/Feed tonne 76",
+   "page": 110,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled"
+  }
+ ]
+}

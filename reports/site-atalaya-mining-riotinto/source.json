@@ -1,0 +1,19 @@
+{
+  "url": "https://wp-atalaya-mining-2022.s3.eu-west-2.amazonaws.com/media/2023/01/2022.09-ATYM-Riotinto-NI-43-101-Technical-Report-vF.pdf",
+  "source": "agent_search",
+  "issuer": "Atalaya Mining",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "project": "Riotinto",
+  "commodity": "Cu",
+  "report_id": "site-atalaya-mining-riotinto",
+  "sha256": "12728454251983ab1eff5efee894a1f36429edb7e2760af3a7d4b101894b7f3b",
+  "bytes": 11375574,
+  "format": "pdf",
+  "pages": 330,
+  "parsed_on": "2026-11-20"
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20220712/pdf/45bs9rvznn1mt5.pdf",
+  "source": "agent_search",
+  "issuer": "Caravel Minerals",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "PFS",
+  "project": "Caravel Copper",
+  "commodity": "Cu",
+  "report_id": "site-caravel-minerals-caravel-copper",
+  "sha256": "59ed05aaa0ad46ec30e2f958ce79f1473213c7d95fc5e2e51e0a82918ce6a603",
+  "bytes": 7296482,
+  "format": "pdf",
+  "pages": 60,
+  "parsed_on": "2026-11-20"
+}

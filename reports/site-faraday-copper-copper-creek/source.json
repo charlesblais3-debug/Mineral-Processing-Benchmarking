@@ -1,0 +1,19 @@
+{
+  "url": "https://faradaycopper.com/site/assets/files/6463/2023-copper-creek-ni-43-101.pdf",
+  "source": "agent_search",
+  "issuer": "Faraday Copper",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Copper Creek",
+  "commodity": "Cu",
+  "report_id": "site-faraday-copper-copper-creek",
+  "sha256": "cc625fb1b535a6639d023ca5dff8e72dc7b607f90ee3254235b418ed4e1e4840",
+  "bytes": 23536353,
+  "format": "pdf",
+  "pages": 425,
+  "parsed_on": "2026-11-20"
+}

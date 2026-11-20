@@ -1,0 +1,19 @@
+{
+  "url": "https://losandescopper.com/site/assets/files/3685/techreport.pdf",
+  "source": "agent_search",
+  "issuer": "Los Andes Copper",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PFS",
+  "project": "Vizcachitas",
+  "commodity": "Cu",
+  "report_id": "site-los-andes-copper-vizcachitas",
+  "sha256": "b32c6fa193934d0336830009ae4a1e5441f1e584e6499fbebe35dcbfa6aba4ff",
+  "bytes": 28282582,
+  "format": "pdf",
+  "pages": 413,
+  "parsed_on": "2026-11-20"
+}

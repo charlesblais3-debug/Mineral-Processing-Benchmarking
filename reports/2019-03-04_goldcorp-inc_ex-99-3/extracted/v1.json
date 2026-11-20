@@ -1,0 +1,203 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Éléonore",
+  "title": "Éléonore Operations, Quebec, Canada, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2018-11-30",
+  "effective_date_quote": "that has an effective date of 30 November 2018",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Quebec",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2019,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "flotation",
+   "regrind",
+   "cip"
+  ],
+  "quote": "a grinding and gravity gold recovery circuit, a flotation circuit, a flotation tails cyanidation and CIP circuit, a flotation concentrate regrinding, cyanidation and CIP circuit",
+  "page": 30
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 7000,
+   "unit": "t/d",
+   "quote": "designed for a processing capacity of 7,000 t/d at 95% availability (2.55 Mt/a)",
+   "page": 30,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 93,
+   "unit": "%",
+   "quote": "a metallurgical recovery of 93%",
+   "page": 27,
+   "metal": "Au",
+   "statistic": "design",
+   "context": {
+    "note": "reserve-estimate metallurgical recovery"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are based on a gold price of US$1,200/oz",
+   "page": 27,
+   "metal": "Au"
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 1.3,
+   "unit": "CAD/USD",
+   "quote": "an exchange rate of C$/US$1.30",
+   "page": 27,
+   "context": {
+    "pair": "CAD per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mine infrastructure",
+   "value": 105,
+   "quote": "Mine infrastructure 105 17 122",
+   "page": 179,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Development",
+   "value": 135,
+   "quote": "Development 135 3 139",
+   "page": 179,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Mobile",
+   "value": 63,
+   "quote": "Mobile 63 3 67",
+   "page": 179,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Exploration",
+   "value": 61,
+   "quote": "Exploration 61 — 61",
+   "page": 179,
+   "l1": "other",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Total sustaining",
+   "value": 365,
+   "quote": "Total 365 24 389",
+   "page": 179,
+   "is_total": true,
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mine infrastructure (expansionary)",
+   "value": 17,
+   "quote": "Mine infrastructure 105 17 122",
+   "page": 179,
+   "l1": "mining",
+   "l2": "infrastructure",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Development (expansionary)",
+   "value": 3,
+   "quote": "Development 135 3 139",
+   "page": 179,
+   "l1": "mining",
+   "l2": "ug_development",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Mobile (expansionary)",
+   "value": 3,
+   "quote": "Mobile 63 3 67",
+   "page": 179,
+   "l1": "mining",
+   "l2": "equipment",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Total expansionary",
+   "value": 24,
+   "quote": "Total 365 24 389",
+   "page": 179,
+   "is_total": true,
+   "tolerance_pct": 10,
+   "review_note": "rounded table; lines sum to 23",
+   "multiplier": "M"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 29.29,
+   "quote": "Process Plant 29.29",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Operations",
+   "value": 62.19,
+   "quote": "Mining Operations 62.19",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "US$/t basis not stated explicitly (assumed per tonne milled)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration",
+   "value": 21.89,
+   "quote": "General & Administration 21.89",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Total",
+   "value": 113.38,
+   "quote": "Total 113.38",
+   "page": 179,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

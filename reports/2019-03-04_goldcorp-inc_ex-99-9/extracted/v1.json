@@ -1,0 +1,106 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Red Lake",
+  "title": "Red Lake Operations, Ontario, Canada, NI 43-101 Technical Report",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2018-12-31",
+  "effective_date_quote": "that has an effective date of 31 December 2018",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Canada",
+  "region": "Ontario",
+  "mine_type": "underground",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2019,
+  "effective_date_page": 2
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "gravity",
+   "cip",
+   "elution_ew",
+   "cyanide_detox",
+   "flotation"
+  ],
+  "quote": "gravity concentrating, cyanidation, carbon-in-pulp (CIP), carbon elution and reactivation, electrowinning, bullion smelting/refining, cyanide destruction, flotation",
+  "page": 29
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 2600,
+   "unit": "t/d",
+   "quote": "Operation as a whole: 2,600 t/d",
+   "page": 22,
+   "statistic": "design",
+   "context": {
+    "phase": "effective mill capacity (Campbell 1,620 + Red Lake 980)"
+   }
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1200,
+   "unit": "USD/oz",
+   "quote": "Mineral Reserves are reported at a gold price of US$1,200/oz Au",
+   "page": 26,
+   "metal": "Au"
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Sustaining",
+   "value": 222.9,
+   "quote": "Sustaining 222.9",
+   "page": 159,
+   "multiplier": "M",
+   "l1": "other",
+   "review_note": "LOM sustaining capital, single line"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Process Plant",
+   "value": 33.75,
+   "quote": "Process Plant 33.75",
+   "page": 159,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining Operations",
+   "value": 177.61,
+   "quote": "Mining Operations 177.61",
+   "page": 159,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "mining",
+   "review_note": "US$/t basis not stated explicitly (assumed per tonne milled)"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "General & Administration",
+   "value": 60.08,
+   "quote": "General & Administration 60.08",
+   "page": 159,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "ga"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Grand Total",
+   "value": 271.44,
+   "quote": "Total 271.44",
+   "page": 159,
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "is_total": true
+  }
+ ]
+}

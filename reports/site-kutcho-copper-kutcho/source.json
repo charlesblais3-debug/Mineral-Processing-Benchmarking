@@ -1,0 +1,19 @@
+{
+  "url": "https://kutcho.ca/wp-content/uploads/2021/12/R533.2021-Kutcho-Feasibility-NI-43-101.pdf",
+  "source": "agent_search",
+  "issuer": "Kutcho Copper",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "FS",
+  "project": "Kutcho",
+  "commodity": "Cu",
+  "report_id": "site-kutcho-copper-kutcho",
+  "sha256": "7de34c003c912b181121f4cd9360c1344ff7d08e1f5667af597b2c992a18416c",
+  "bytes": 26243288,
+  "format": "pdf",
+  "pages": 468,
+  "parsed_on": "2026-11-20"
+}

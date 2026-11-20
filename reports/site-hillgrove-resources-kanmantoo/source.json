@@ -1,0 +1,19 @@
+{
+  "url": "https://announcements.asx.com.au/asxpdf/20230227/pdf/45m1vzyxfkyh44.pdf",
+  "source": "agent_search",
+  "issuer": "Hillgrove Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "JORC",
+  "study_level": "scoping",
+  "project": "Kanmantoo",
+  "commodity": "Cu",
+  "report_id": "site-hillgrove-resources-kanmantoo",
+  "sha256": "97731ae0b5f787333075920c1b8bc6f2c05117296b3f02032ebf6569ca5bc13d",
+  "bytes": 8950849,
+  "format": "pdf",
+  "pages": 89,
+  "parsed_on": "2026-11-20"
+}

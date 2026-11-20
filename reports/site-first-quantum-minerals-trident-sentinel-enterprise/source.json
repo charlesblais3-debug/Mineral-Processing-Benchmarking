@@ -1,0 +1,19 @@
+{
+  "url": "https://www.first-quantum.com/wp-content/uploads/2025/08/NI-43-101-Technical-Report-Trident.pdf",
+  "source": "agent_search",
+  "issuer": "First Quantum Minerals",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "project": "Trident (Sentinel/Enterprise)",
+  "commodity": "Cu",
+  "report_id": "site-first-quantum-minerals-trident-sentinel-enterprise",
+  "sha256": "62a149664ce3f94bec9fc951ae7fc795e6360b734012da77ec7517e3a657cd95",
+  "bytes": 20289255,
+  "format": "pdf",
+  "pages": 284,
+  "parsed_on": "2026-11-20"
+}

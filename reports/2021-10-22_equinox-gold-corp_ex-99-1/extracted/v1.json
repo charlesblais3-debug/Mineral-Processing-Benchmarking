@@ -1,0 +1,203 @@
+{
+ "extractor": "claude-code",
+ "report": {
+  "project": "Riacho dos Machados",
+  "title": "NI 43-101 Technical Report on the Riacho dos Machados Gold Mine, Minas Gerais, Brazil",
+  "standard": "NI 43-101",
+  "study_level": "operating",
+  "effective_date": "2020-12-31",
+  "effective_date_quote": "EFFECTIVE DATE: December 31, 2020",
+  "primary_commodity": "Au",
+  "by_products": [],
+  "country": "Brazil",
+  "region": "Minas Gerais",
+  "mine_type": "open_pit",
+  "project_status": "operating",
+  "currency": "USD",
+  "cost_base_year": 2021,
+  "effective_date_page": 1
+ },
+ "flowsheet": {
+  "unit_ops": [
+   "ball_mill",
+   "cil",
+   "cyanide_detox"
+  ],
+  "quote": "Ball mill grinding, in closed circuit with hydrocyclones",
+  "page": 62
+ },
+ "facts": [
+  {
+   "parameter": "throughput_tpd",
+   "value": 7890,
+   "unit": "t/d",
+   "quote": "scheduled to process up to 7,890 t/d (2.88 Mt/a)",
+   "page": 6,
+   "statistic": "design"
+  },
+  {
+   "parameter": "throughput_mtpa",
+   "value": 2.88,
+   "unit": "Mt/a",
+   "quote": "scheduled to process up to 7,890 t/d (2.88 Mt/a)",
+   "page": 6,
+   "statistic": "design"
+  },
+  {
+   "parameter": "recovery_lom",
+   "value": 87,
+   "unit": "%",
+   "quote": "using a gold price of US$1,350/oz Au and an overall metal recovery of 87%",
+   "page": 56,
+   "metal": "Au",
+   "statistic": "design"
+  },
+  {
+   "parameter": "metal_price",
+   "value": 1350,
+   "unit": "USD/oz",
+   "quote": "using a gold price of US$1,350/oz Au and an overall metal recovery of 87%",
+   "page": 56,
+   "metal": "Au"
+  },
+  {
+   "parameter": "bwi_ball",
+   "value": 17.4,
+   "unit": "kWh/t",
+   "quote": "The ball mill BWi of open pit ores averages 17.4 kWh/t",
+   "page": 63,
+   "statistic": "mean",
+   "context": {
+    "test": "Bond ball mill",
+    "ore_type": "open pit ores"
+   }
+  },
+  {
+   "parameter": "exchange_rate",
+   "value": 4.75,
+   "unit": "BRL/USD",
+   "quote": "R$4.75:US$1 exchange rate",
+   "page": 73,
+   "context": {
+    "pair": "BRL per USD"
+   }
+  }
+ ],
+ "costs": [
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Infrastructure and Equipment",
+   "value": 20476,
+   "quote": "Infrastructure and Equipment 20,476",
+   "page": 73,
+   "l1": "onsite_infra",
+   "l2": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Properties and Land Acquisition",
+   "value": 1263,
+   "quote": "Properties and Land Acquisition 1,263",
+   "page": 73,
+   "l1": "other",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Capitalized Stripping (sustaining)",
+   "value": 27998,
+   "quote": "Capitalized Stripping 27,998",
+   "page": 73,
+   "l1": "mining",
+   "l2": "pre_production",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Tailings Dam",
+   "value": 19003,
+   "quote": "Tailings Dam 19,003",
+   "page": 73,
+   "l1": "tailings_water",
+   "l2": "tailings",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "sustaining",
+   "raw_label": "Subtotal Sustaining",
+   "value": 68740,
+   "quote": "Subtotal Sustaining 68,740",
+   "page": 73,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Capitalized Stripping (non-sustaining)",
+   "value": 25611,
+   "quote": "Capitalized Stripping 25,611",
+   "page": 73,
+   "l1": "mining",
+   "l2": "pre_production",
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "growth",
+   "raw_label": "Subtotal Non-Sustaining",
+   "value": 25611,
+   "quote": "Subtotal Non-Sustaining 25,611",
+   "page": 73,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "closure",
+   "raw_label": "Reclamation",
+   "value": 9741,
+   "quote": "Reclamation 9,741",
+   "page": 73,
+   "is_total": true,
+   "currency": "USD",
+   "multiplier": "k",
+   "basis_unit": "total"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Processing LOM average",
+   "value": 10.38,
+   "quote": "Processing costs are estimated to be US$10.38/t milled for the LOM",
+   "page": 74,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_milled",
+   "l1": "processing",
+   "l2": "other"
+  },
+  {
+   "cost_type": "opex",
+   "raw_label": "Mining LOM average",
+   "value": 2.27,
+   "quote": "to be US$2.27/t of total material",
+   "page": 74,
+   "currency": "USD",
+   "multiplier": "",
+   "basis_unit": "per_t_moved",
+   "l1": "mining"
+  }
+ ]
+}

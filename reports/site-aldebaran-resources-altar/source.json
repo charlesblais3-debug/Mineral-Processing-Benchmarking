@@ -1,0 +1,19 @@
+{
+  "url": "https://wp-aldebaranresources-2023.s3.ca-central-1.amazonaws.com/media/2025/11/23145121/NI-43-101-Technical-Report-Altar-PEA-2025.pdf",
+  "source": "agent_search",
+  "issuer": "Aldebaran Resources",
+  "cik": "",
+  "form": "",
+  "exhibit": "",
+  "filed": "",
+  "standard": "NI 43-101",
+  "study_level": "PEA",
+  "project": "Altar",
+  "commodity": "Cu",
+  "report_id": "site-aldebaran-resources-altar",
+  "sha256": "7611c8f95f09ebebd58f0b24c55c71c4b5e6a9aa682594d7a31e709483290523",
+  "bytes": 26590107,
+  "format": "pdf",
+  "pages": 472,
+  "parsed_on": "2026-11-20"
+}

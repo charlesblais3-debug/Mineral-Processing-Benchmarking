@@ -10,3 +10,7 @@
 - { name: Havilah Resources, site: https://havilah-resources.com.au/, commodity: Cu, projects: [Kalkaroo], pages: [https://havilah-resources.com.au/] }
 - { name: Sandfire Resources, site: https://www.sandfire.com.au/, commodity: Cu, projects: [Motheo, MATSA], pages: [https://www.sandfire.com.au/] }
 - { name: Hudbay Minerals, site: https://hudbayminerals.com/, commodity: Cu, projects: [Mason, Copper Mountain], pages: [https://hudbayminerals.com/investors/reserves-and-resources/default.aspx] }
+- { name: Faraday Copper, site: https://faradaycopper.com/, commodity: Cu, projects: [Copper Creek], pages: [https://faradaycopper.com/projects/copper-creek-project/] }
+- { name: Atalaya Mining, site: https://atalayamining.com/, commodity: Cu, projects: [Riotinto, San Dionisio, Touro, Ossa Morena], pages: [https://atalayamining.com/operations/riotinto-district/san-dionisio/, https://atalayamining.com/operations/reserves-resources/] }
+- { name: Kutcho Copper, site: https://kutcho.ca/, commodity: Cu, projects: [Kutcho], pages: [https://kutcho.ca/kutcho-project/] }
+- { name: Aldebaran Resources, site: https://aldebaranresources.com/, commodity: Cu, projects: [Altar], pages: [https://aldebaranresources.com/projects/altar-copper-gold/technical-report/] }
