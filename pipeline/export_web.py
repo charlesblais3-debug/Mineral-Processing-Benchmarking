@@ -10,10 +10,12 @@ Every number in the export carries its source (report link, page, verbatim quote
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from pathlib import Path
 
 from pipeline import geo, taxonomy
+from pipeline.normalize.costs import study_fx
 from pipeline.db.init_db import DEFAULT_DB
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -24,6 +26,19 @@ DESIGN_STATS = ("design", "p75", "p80", "p90")
 
 def _src(row: dict, url: str) -> dict:
     return {"page": row["page"], "quote": row["quote"], "url": url, "verified": bool(row["quote_verified"])}
+
+
+def _conv(c: dict, fx_src: dict, year_of) -> dict:
+    """How a cost went from the report's figure to escalated US$: reported value and currency, the exchange rate
+    and where it came from, and the escalation factor. Lets the page show the arithmetic next to the quote."""
+    if c.get("value_usd") is None or not c.get("value"):
+        return {}
+    fx = c["value_usd"] / c["value"]
+    esc = c["value_usd_escalated"] / c["value_usd"] if c["value_usd"] else None
+    m = re.search(r"converted from (-?[\d.]+) per (short|long) ton", c.get("review_note") or "")
+    return {"raw": c["value"], "ccy": c["currency"], "fx": round(fx, 5), "fx_src": fx_src.get(c["currency"]),
+            "esc": round(esc, 4) if esc else None, "year": year_of(c),
+            **({"per_ton": [float(m.group(1)), m.group(2)]} if m else {})}
 
 
 def build(db_path: Path = DEFAULT_DB) -> dict:
@@ -42,6 +57,13 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
         facts = [dict(f) for f in con.execute("SELECT * FROM facts WHERE report_id=? ORDER BY id", (r["id"],))]
         costs = [dict(c) for c in con.execute("SELECT * FROM cost_items WHERE report_id=? ORDER BY id", (r["id"],))]
         fs = con.execute("SELECT * FROM flowsheets WHERE report_id=?", (r["id"],)).fetchone()
+        fx_src = {}
+        for ccy in {c["currency"] for c in costs}:
+            fx_src[ccy] = None if ccy == "USD" else ("rate stated in the report" if study_fx(con, r["id"], ccy)
+                                                     else "Bank of Canada annual average")
+        eff_year = int(r["effective_date"][:4]) if r["effective_date"] else None
+        year_of = lambda c, ey=eff_year: min(c["base_year"] or r["cost_base_year"] or ey or ppi_year, ppi_year)
+        cv = lambda c: _conv(c, fx_src, year_of)
 
         def best_fact(key: str, metal: str | None = None):
             cands = [f for f in facts if f["parameter_key"] == key and (metal is None or f["metal"] == metal)
@@ -60,7 +82,7 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
                 return None
             c = max(rows, key=lambda r: r["value_usd_escalated"])   # loader allows one; be safe if several
             scale = 1e6 if basis == "total" else 1
-            return {"value": c["value_usd_escalated"] / scale, "label": c["raw_label"], **_src(c, url)}
+            return {"value": c["value_usd_escalated"] / scale, "label": c["raw_label"], **_src(c, url), **cv(c)}
 
         def category_sum(ctype: str, l1: str, basis: str):
             rows = [c for c in costs if c["cost_type"] == ctype and c["category_l1"] == l1 and c["basis_unit"] == basis
@@ -69,7 +91,9 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
                 return None
             scale = 1e6 if basis == "total" else 1
             return {"value": sum(c["value_usd_escalated"] for c in rows) / scale,
-                    "label": " + ".join(c["raw_label"] for c in rows), **_src(rows[0], url)}
+                    "label": " + ".join(c["raw_label"] for c in rows), **_src(rows[0], url),
+                    "parts": [{"label": c["raw_label"], "page": c["page"], "usd_esc": c["value_usd_escalated"] / scale, **cv(c)}
+                              for c in rows] if len(rows) > 1 else None, **(cv(rows[0]) if len(rows) == 1 else {})}
 
         SITE_L1 = ("mining", "processing", "ga", "tailings_water")
 
@@ -81,7 +105,8 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
             if {"mining", "processing"} <= {c["category_l1"] for c in rows}:
                 return {"value": sum(c["value_usd_escalated"] for c in rows),
                         "label": "Sum of site lines: " + " + ".join(c["raw_label"] for c in rows),
-                        "derived": "mining + processing + G&A + tailings/water lines", **_src(rows[0], url)}
+                        "derived": "mining + processing + G&A + tailings/water lines", **_src(rows[0], url),
+                        "parts": [{"label": c["raw_label"], "page": c["page"], "usd_esc": c["value_usd_escalated"], **cv(c)} for c in rows]}
             total = grand_total("opex", "per_t_milled")
             return {**total, "derived": "report's stated total (scope as reported)"} if total else None
 
@@ -127,7 +152,7 @@ def build(db_path: Path = DEFAULT_DB) -> dict:
             "costs": [{"type": c["cost_type"], "l1": c["category_l1"], "l2": c["category_l2"], "label": c["raw_label"],
                        "value": c["value"], "currency": c["currency"], "usd": c["value_usd"],
                        "usd_esc": c["value_usd_escalated"], "basis": c["basis_unit"], "subtotal": bool(c["is_subtotal"]),
-                       "note": c["review_note"], **_src(c, url)} for c in costs],
+                       "note": c["review_note"], **_src(c, url), **cv(c)} for c in costs],
         })
 
     projects = latest_per_project(projects)

@@ -137,6 +137,9 @@ aside.sheet { position: fixed; top: 0; right: 0; bottom: 0; width: min(640px, 10
 .srcbox q { font-family: var(--font-data); font-size: 12px; quotes: "“" "”"; display: block; max-height: 7.5em; overflow-y: auto }
 .srcbox .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center }
 .srcbox a { color: var(--accent) }
+.conv { margin-top: 8px; font-size: 12.5px; color: var(--muted); line-height: 1.6 }
+.conv b { color: var(--ink); font-weight: 600 }
+.conv table { margin-top: 6px; font-size: 12px }
 .linkbtn { border: 1px solid var(--line); background: var(--surface); border-radius: var(--r); padding: 3px 9px; cursor: pointer; font-size: 12px }
 footer.foot { font-size: 12px; color: var(--muted); padding-block: 8px 24px }
 
@@ -595,11 +598,34 @@ function renderSheet(p) {
   $("#sheet").querySelectorAll(".seg button").forEach(b => b.onclick = () => { money = b.dataset.m; renderSheet(p); });
   $("#sheet").querySelectorAll(".src").forEach(b => b.onclick = () => showSrc(SRC[+b.dataset.s]));
 }
+/* How a reported figure becomes the escalated US$ number on the charts, shown under the quote. */
+const CCY = { USD: "US$", CAD: "C$", AUD: "A$", ZAR: "R", EUR: "€", BRL: "R$", GBP: "£", MXN: "MX$", CLP: "CLP", PEN: "S/" };
+const fmtMoney = (v, ccy) => { const big = Math.abs(v) >= 1e5; return `${CCY[ccy] || (ccy + " ")}${big ? fmt(v / 1e6, 1) : fmt(v, Math.abs(v) < 1000 ? 2 : 0)}${big ? " M" : ""}`; };
+function convSteps(c) {
+  if (c.raw == null || c.fx == null) return "";
+  const usd = c.raw * c.fx, out = [];
+  if (c.per_ton) out.push(`Reported <b>${fmtMoney(c.per_ton[0], c.ccy)} per ${c.per_ton[1]} ton</b>`, `per tonne: <b>${fmtMoney(c.raw, c.ccy)}</b>`);
+  else out.push(`Reported <b>${fmtMoney(c.raw, c.ccy)}</b>`);
+  if (c.ccy !== "USD") out.push(`× ${fmt(c.fx, 4)} US$ per ${CCY[c.ccy] || c.ccy} (${esc(c.fx_src || "exchange rate")}) = <b>${fmtMoney(usd, "USD")}</b>`);
+  if (c.esc != null) out.push(Math.abs(c.esc - 1) < 0.0005 ? `no escalation needed (${c.year} cost base, shown as ${Y} dollars)`
+    : `× ${fmt(c.esc, 3)} escalation from ${c.year} to ${Y} = <b>${fmtMoney(usd * c.esc, "USD")}</b>`);
+  return out.join(" → ");
+}
+function convHtml(s) {
+  if (s.parts && s.parts.length) {
+    const tot = s.parts.reduce((a, p) => a + (p.usd_esc || 0), 0);
+    return `<div class="conv"><b>This figure is a sum of ${s.parts.length} lines</b>${s.derived ? ` (${esc(s.derived)})` : ""}. The quote above is the first line; each line converts as follows:
+      <table class="grid"><tbody>${s.parts.map(p => `<tr><td>${esc(p.label)} <span class="muted">p.${p.page}</span></td><td>${convSteps(p) || "–"}</td></tr>`).join("")}
+      <tr><td><b>Sum</b></td><td><b>${fmt(tot)}</b> ${Y} US$</td></tr></tbody></table></div>`;
+  }
+  const steps = convSteps(s);
+  return steps ? `<div class="conv">${steps}</div>` : "";
+}
 function showSrc(s) {
   const box = $("#srcbox");
   box.innerHTML = `<div class="row"><b>Page ${s.page}</b><span class="${s.verified ? "stage-op" : ""}" style="${s.verified ? "" : "color:var(--warn)"}">${s.verified ? "Quote verified on this page" : "Quote not verified, needs review"}</span>
     <span style="margin-left:auto; display:flex; gap:8px"><button class="linkbtn" id="copyq">Copy quote</button><a class="linkbtn" href="${esc(s.url)}" target="_blank" rel="noopener" style="text-decoration:none">Open report</a><button class="linkbtn" id="closeq">Close</button></span></div>
-    <q id="qtext">${esc(s.quote)}</q>`;
+    <q id="qtext">${esc(s.quote)}</q>${convHtml(s)}`;
   box.hidden = false;
   $("#closeq").onclick = () => box.hidden = true;
   $("#copyq").onclick = e => {
